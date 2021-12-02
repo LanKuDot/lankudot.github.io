@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2021-12-01T23:32:44+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">\[筆記\] 避免 Boxing/Unboxing 效能問題</title><link href="https://lankudot.github.io/blog/2021-12-csharp-boxing-and-unboxing/" rel="alternate" type="text/html" title="\[筆記\] 避免 Boxing/Unboxing 效能問題" /><published>2021-12-01T00:00:00+08:00</published><updated>2021-12-01T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/csharp-boxing-and-unboxing</id><content type="html" xml:base="https://lankudot.github.io/blog/2021-12-csharp-boxing-and-unboxing/">&lt;p&gt;之前在撰寫 Unity 套件的時候，因為不知道使用者會用什麼類別來傳資料，所以都轉成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; 型別來傳遞，後來發現這會有效能上的問題。本篇文章就來探討這個問題以及解法。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2021-12-02T22:12:58+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">\[筆記\] 避免 Boxing/Unboxing 效能問題</title><link href="https://lankudot.github.io/blog/2021-12-csharp-boxing-and-unboxing/" rel="alternate" type="text/html" title="\[筆記\] 避免 Boxing/Unboxing 效能問題" /><published>2021-12-01T00:00:00+08:00</published><updated>2021-12-01T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/csharp-boxing-and-unboxing</id><content type="html" xml:base="https://lankudot.github.io/blog/2021-12-csharp-boxing-and-unboxing/">&lt;p&gt;之前在撰寫 Unity 套件的時候，因為不知道使用者會用什麼類別來傳資料，所以都轉成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; 型別來傳遞，後來發現這會有效能上的問題。本篇文章就來探討這個問題以及解法。&lt;/p&gt;
 
 &lt;h2 id=&quot;問題&quot;&gt;問題&lt;/h2&gt;
 
@@ -181,7 +181,7 @@
 
 &lt;h3 id=&quot;傳遞-struct&quot;&gt;傳遞 struct&lt;/h3&gt;
 
-&lt;p&gt;struct 是 value type，所以轉換 struct 成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; type 也對遇到 boxing 的問題。例如有個 struct 是這樣：&lt;/p&gt;
+&lt;p&gt;struct 是 value type，所以轉換 struct 成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; type 也會遇到 boxing 的問題。例如有個 struct 是這樣：&lt;/p&gt;
 
 &lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PlayerData&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -202,7 +202,7 @@
 
 &lt;h3 id=&quot;傳遞-reference-type&quot;&gt;傳遞 reference type&lt;/h3&gt;
 
-&lt;p&gt;如果傳遞的資料本來就是 refernce type 的話，如：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt;、類別等。這邊用一個字串陣列：&lt;/p&gt;
+&lt;p&gt;如果傳遞的資料本來就是 reference type 的話，如：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt;、類別等。這邊用一個字串陣列：&lt;/p&gt;
 
 &lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;readonly&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_strings&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;c&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;

@@ -505,7 +505,7 @@
 
 <h3 id="傳遞-struct">傳遞 struct</h3>
 
-<p>struct 是 value type，所以轉換 struct 成 <code class="language-plaintext highlighter-rouge">object</code> type 也對遇到 boxing 的問題。例如有個 struct 是這樣：</p>
+<p>struct 是 value type，所以轉換 struct 成 <code class="language-plaintext highlighter-rouge">object</code> type 也會遇到 boxing 的問題。例如有個 struct 是這樣：</p>
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">struct</span> <span class="nc">PlayerData</span>
 <span class="p">{</span>
@@ -526,7 +526,7 @@
 
 <h3 id="傳遞-reference-type">傳遞 reference type</h3>
 
-<p>如果傳遞的資料本來就是 refernce type 的話，如：<code class="language-plaintext highlighter-rouge">string</code>、類別等。這邊用一個字串陣列：</p>
+<p>如果傳遞的資料本來就是 reference type 的話，如：<code class="language-plaintext highlighter-rouge">string</code>、類別等。這邊用一個字串陣列：</p>
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">private</span> <span class="k">readonly</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">_strings</span> <span class="p">=</span> <span class="p">{</span><span class="s">"a"</span><span class="p">,</span> <span class="s">"b"</span><span class="p">,</span> <span class="s">"c"</span><span class="p">,</span> <span class="s">"d"</span><span class="p">,</span> <span class="s">"f"</span><span class="p">};</span>
 </code></pre></div></div>
