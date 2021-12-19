@@ -1,4 +1,176 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2021-12-16T22:54:48+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[筆記] 避免 Boxing/Unboxing 效能問題</title><link href="https://lankudot.github.io/blog/2021-12-csharp-boxing-and-unboxing/" rel="alternate" type="text/html" title="[筆記] 避免 Boxing/Unboxing 效能問題" /><published>2021-12-01T00:00:00+08:00</published><updated>2021-12-01T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/csharp-boxing-and-unboxing</id><content type="html" xml:base="https://lankudot.github.io/blog/2021-12-csharp-boxing-and-unboxing/">&lt;p&gt;之前在撰寫 Unity 套件的時候，因為不知道使用者會用什麼類別來傳資料，所以都轉成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; 型別來傳遞，後來發現這會有效能上的問題。本篇文章就來探討這個問題以及解法。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2021-12-19T22:48:24+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[心得] 轉換到嘸蝦米半年心得</title><link href="https://lankudot.github.io/blog/2021-12-switch-to-boshiamy/" rel="alternate" type="text/html" title="[心得] 轉換到嘸蝦米半年心得" /><published>2021-12-19T00:00:00+08:00</published><updated>2021-12-19T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/switch-to-boshiamy</id><content type="html" xml:base="https://lankudot.github.io/blog/2021-12-switch-to-boshiamy/">&lt;p&gt;在受不了輸入法神奇的選字跟換了沒有方向鍵的 60% 鍵盤的因素下，決定學習新的輸入法，享受不用選字的爽感。在以字形為主的輸入法中，最後選擇嘸蝦米，這篇分享學習方法與使用半年的心得。&lt;/p&gt;
+
+&lt;h2 id=&quot;為何選擇嘸蝦米&quot;&gt;為何選擇嘸蝦米&lt;/h2&gt;
+
+&lt;p&gt;在挑選輸入法時，也有考慮過倉頡跟行列，但最後選擇嘸蝦米的原因是：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;聯想直覺：嘸蝦米將字形拆解成字根，而字根以形、音或義與英文字母做連結&lt;/li&gt;
+  &lt;li&gt;不用記鍵盤配置：因為以英文字母做為輸入，所以不用再學鍵盤配置，而且對英打也有幫助&lt;/li&gt;
+  &lt;li&gt;完整學習資源：官網有完整的學習資源，從字根練習、拼字練習、文章測驗，到查字碼應有盡有&lt;/li&gt;
+  &lt;li&gt;幾乎不用選字：即使以字形為主，還是會遇到需要選字的情況，但嘸蝦米需要選字的機會非常小&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;綜合以上四點，以及因為寫程式，而對英打有一定熟悉度，我覺得嘸蝦米是可以快速上手的輸入法。&lt;/p&gt;
+
+&lt;h2 id=&quot;簡介嘸蝦米&quot;&gt;簡介嘸蝦米&lt;/h2&gt;
+
+&lt;h3 id=&quot;字根&quot;&gt;字根&lt;/h3&gt;
+
+&lt;p&gt;嘸蝦米將字根以形、音或義與對應的英文字母聯想在一起：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;形：取字根的外形，如：「口」→「O」、「冊」→「M」&lt;/li&gt;
+  &lt;li&gt;音：取字根的讀音，如：「大」→「D」、「耳」→「R」&lt;/li&gt;
+  &lt;li&gt;義：取字根對應的英文單字，如：「車」→「Car」→「C」、「斤」→「Kilogram」→「K」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;拆字&quot;&gt;拆字&lt;/h3&gt;
+
+&lt;p&gt;基本上一個字的拆解原則是：由上而下，由左而右，由外而內，也就是以眼睛看到的順序為主，如下面的例子：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2021-12-19-switch-to-boshiamy/word-root-example.PNG&quot; alt=&quot;拆字例子&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;紅色代表形，藍色代表音，綠色代表義。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;「部」可以拆為「立」「口」「阝」，所以字碼是「LOB」&lt;/li&gt;
+  &lt;li&gt;「圓」可以拆為「囗」「口」「目」「八」，所以字碼是「OOMB」&lt;/li&gt;
+  &lt;li&gt;「新」可以拆為「立」「木」「斤」，所以字碼是「LTK」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;更詳細的拆字原則請參考&lt;a href=&quot;https://boshiamy.com/tutorial_beginner.php?page=4&quot;&gt;官網&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;大根原則&quot;&gt;大根原則&lt;/h3&gt;
+
+&lt;p&gt;即盡可能的以最大的字根涵蓋字形。例如「立」雖然可以被拆為「亠」「八」「一」三個字根，但是「立」也是一個字根，所以在上面的「部」字的拆解上不會是「亠」「八」「一」「口」「阝」。&lt;/p&gt;
+
+&lt;p&gt;除了基礎字根外，嘸蝦米還有「簡速字根」把基礎字根組合成更大的字根，進而減少要輸入的字碼。&lt;/p&gt;
+
+&lt;h3 id=&quot;截長補短&quot;&gt;截長補短&lt;/h3&gt;
+
+&lt;p&gt;「截長」意為當一個字需要四個以上的字根組成時，取前三個加上最後一個做為其字碼：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2021-12-19-switch-to-boshiamy/more-than-four-example.PNG&quot; alt=&quot;截長例子&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;「優」取前三個「亻」「T」「目」及最後一個「夂」，「冖」「心」省略，所以字碼為「PTMP」&lt;/li&gt;
+  &lt;li&gt;「腳」取前三個「⺼」「八」「八」及最後一個「卩」，「口」省略，所以字碼為「UBBP」&lt;/li&gt;
+  &lt;li&gt;「靈」取前三個「雨」「口」「口」及最後一個「巫」，「口」省略，所以字碼為「UOOW」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;「補短」則是當字碼不足三個時，要再補「最後一筆」的根：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2021-12-19-switch-to-boshiamy/fill-root-example.PNG&quot; alt=&quot;補短例子&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;加上官網的補根定義：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://boshiamy.com/images/root_end.jpg&quot; alt=&quot;補根定義&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;「方」只有一個字根「方」，需補根，所以字碼為「FY」&lt;/li&gt;
+  &lt;li&gt;「來」只有一個字根「來」，需補根，所以字碼為「LN」&lt;/li&gt;
+  &lt;li&gt;「問」只有兩個字根「門」「口」，需補根，所以字碼為「MOO」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;詳細的截長補短原則詳見&lt;a href=&quot;https://boshiamy.com/tutorial_beginner.php?page=4#tab_tab2&quot;&gt;官網&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;一二碼字與簡速字根&quot;&gt;一二碼字與簡速字根&lt;/h3&gt;
+
+&lt;p&gt;這是嘸蝦米為了減少輸入的字碼數而設計的，讓輸入過程更快，算進階版，在學會基礎字根後會比較好理解。&lt;/p&gt;
+
+&lt;h4 id=&quot;一碼字&quot;&gt;一碼字&lt;/h4&gt;
+
+&lt;p&gt;雖然只有一個字根的字都要補根成為二碼字，但也有只要一個字碼就可以打出來的字，稱為「一碼字」。小寫數字（一到十，加上○）即為此類，另外還有常用的字組成剩下的 15 個一碼字。如：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;「一」的字碼是「E」&lt;/li&gt;
+  &lt;li&gt;「對」的字碼是「A」&lt;/li&gt;
+  &lt;li&gt;「有」的字碼是「X」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;二碼字&quot;&gt;二碼字&lt;/h4&gt;
+
+&lt;p&gt;而二碼字除了因補根而成的之外，還有為了減少輸入字根數而成的，一共 26 乘 26 個。如：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;「說」的字碼是「IBOR」，但打「IR」也可以&lt;/li&gt;
+  &lt;li&gt;「想」的字碼是「TMH」，但打「TH」也可以&lt;/li&gt;
+  &lt;li&gt;「資」的字碼是「BIMB」，但打「BB」也可以&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;簡速字根&quot;&gt;簡速字根&lt;/h4&gt;
+
+&lt;p&gt;簡速字根則是將基礎字根併成更大的字根，除了比較好判斷字根，也減少需要輸入四個字碼的機會。如：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;「就」的字碼是「LOSK」，但它也是一個簡速字根「G」，所以只要再補根成「GL」&lt;/li&gt;
+  &lt;li&gt;「做」的字碼是「PLOP」，但「故」是一個簡速字根「J」，所以它也可以用「PJ」再補根成「PJX」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;學習方式&quot;&gt;學習方式&lt;/h2&gt;
+
+&lt;p&gt;我的學習方式可以分成三個階段：記字根 → 嘸蝦米併用 → 完全使用嘸蝦米。&lt;/p&gt;
+
+&lt;h3 id=&quot;記字根&quot;&gt;記字根&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://boshiamy.com/cai.php&quot;&gt;官網&lt;/a&gt;有提供學習資源相當方便，我學習都是使用官網的工具。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2021-12-19-switch-to-boshiamy/learn-boshiamy-homepage.PNG&quot; alt=&quot;嘸蝦米學習首頁&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;教學網頁將字根分成一個一個章節，章節會隨機排列字根出現的順序。每個字根都會有例字，有些會有提示，答錯的字根還會幫忙整理起來。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2021-12-19-switch-to-boshiamy/learn-root-example.PNG&quot; alt=&quot;字根頁面範例&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我從第一個章節開始，每天練習同一個章節，等覺得一個章節的字根都熟悉之後，就練下一個。但練新的章節時，還是會先複習前一個章節，跟對應的單字練習。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2021-12-19-switch-to-boshiamy/word-practice-example.PNG&quot; alt=&quot;單字練習範例&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在對字根有一定的概念後，就開始作文章練習，裡面的文字都是常用字，使用文章練習會對文字的拆解更有概念。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2021-12-19-switch-to-boshiamy/article-practice-example.PNG&quot; alt=&quot;文章練習範例&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;使用嘸蝦米&quot;&gt;使用嘸蝦米&lt;/h3&gt;
+
+&lt;p&gt;其實我在跑完英文字根的章節後，就開始使用嘸蝦米了，並沒有等全熟才開始。一開始先在做筆記上使用，平常打字對話也會，但如果是跟人討論事情，我還是先會用注音輪入法。&lt;/p&gt;
+
+&lt;p&gt;最後跑完基礎字根後，就完全用嘸蝦米輸入了。在學習半年之後，現在開始在記簡速字根。學習方式與基礎字根一樣。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2021-12-19-switch-to-boshiamy/quick-root-learn-example.PNG&quot; alt=&quot;簡速字根學習範例&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;查字碼&quot;&gt;查字碼&lt;/h3&gt;
+
+&lt;p&gt;如果遇到不會的字，輸入法也提供查尋的功能，按下「’;」，就可以用注音輸入，找到該字的字碼。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2021-12-19-switch-to-boshiamy/search-word.png&quot; alt=&quot;輸入法查字碼&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;另外官網上也可以&lt;a href=&quot;https://boshiamy.com/liuquery.php&quot;&gt;查字碼&lt;/a&gt;，我會找常遇到的四碼字有沒有更簡單的字碼，藉此記下二碼字。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2021-12-19-switch-to-boshiamy/search-root.PNG&quot; alt=&quot;網頁查字碼&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;困難點&quot;&gt;困難點&lt;/h3&gt;
+
+&lt;p&gt;在學習上當然會遇到困難。有些字根的聯想沒有那麼直覺，如：「乃」就形來說，我直覺想到是「B」，但它是「R」。音似的字根更容易遇到，如：「夾」跟「臼」是「G」，但同樣是「ㄐ」發音的「井」跟「夬（決）」是「J」。花了很多時間才記下來，我想大概是為了盡量不要有重複的字碼，才會這樣設計的吧。&lt;/p&gt;
+
+&lt;p&gt;另外一個是有些字碼的順序不是照筆順，如：「式」（AXI）的「丶」（A）是最後一畫，但以嘸蝦米是以眼順為主，所以「丶」是在第一碼。&lt;/p&gt;
+
+&lt;p&gt;雖然在學習上有一些挫折，也有一部份的字根需要特別背，但我想比起要一直忍受神奇選字，這點不便可以接受。&lt;/p&gt;
+
+&lt;h2 id=&quot;結語&quot;&gt;結語&lt;/h2&gt;
+
+&lt;p&gt;在使用嘸蝦米之後，我覺得最有趣的是打字的觀點會不一樣，之前是想字的讀音，但是現在變成要想字的外形。一開始會卡卡的，但平常就有手寫筆記的習慣，所以在想字形時不會思考太久。&lt;/p&gt;
+
+&lt;p&gt;學習半年後，在&lt;a href=&quot;https://typing.tw/&quot;&gt;中打測速&lt;/a&gt;使用十分鐘的測驗上是 30 WPM。我想用越久，越可以直接反應出文字的字碼。現在打字也順暢許多，一打就是想要的字，這點真令人高興。&lt;/p&gt;
+
+&lt;h2 id=&quot;線上工具&quot;&gt;線上工具&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://boshiamy.com/cai.php&quot;&gt;學習資源&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://boshiamy.com/liuquery.php&quot;&gt;查字碼&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://boshiamy.com/tutorial_beginner.php?page=3&quot;&gt;基礎字根表&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://boshiamy.com/tutorial_advance.php?page=1&quot;&gt;簡速字根表&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://boshiamy.com/tutorial_advance.php?page=2&quot;&gt;二碼字分類&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="心得" /><summary type="html">在受不了輸入法神奇的選字跟換了沒有方向鍵的 60% 鍵盤的因素下，決定學習新的輸入法，享受不用選字的爽感。在以字形為主的輸入法中，最後選擇嘸蝦米，這篇分享學習方法與使用半年的心得。</summary></entry><entry><title type="html">[筆記] 避免 Boxing/Unboxing 效能問題</title><link href="https://lankudot.github.io/blog/2021-12-csharp-boxing-and-unboxing/" rel="alternate" type="text/html" title="[筆記] 避免 Boxing/Unboxing 效能問題" /><published>2021-12-01T00:00:00+08:00</published><updated>2021-12-01T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/csharp-boxing-and-unboxing</id><content type="html" xml:base="https://lankudot.github.io/blog/2021-12-csharp-boxing-and-unboxing/">&lt;p&gt;之前在撰寫 Unity 套件的時候，因為不知道使用者會用什麼類別來傳資料，所以都轉成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; 型別來傳遞，後來發現這會有效能上的問題。本篇文章就來探討這個問題以及解法。&lt;/p&gt;
 
 &lt;h2 id=&quot;問題&quot;&gt;問題&lt;/h2&gt;
 
