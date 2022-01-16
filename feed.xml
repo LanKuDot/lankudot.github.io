@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2021-12-19T22:48:24+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[心得] 轉換到嘸蝦米半年心得</title><link href="https://lankudot.github.io/blog/2021-12-switch-to-boshiamy/" rel="alternate" type="text/html" title="[心得] 轉換到嘸蝦米半年心得" /><published>2021-12-19T00:00:00+08:00</published><updated>2021-12-19T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/switch-to-boshiamy</id><content type="html" xml:base="https://lankudot.github.io/blog/2021-12-switch-to-boshiamy/">&lt;p&gt;在受不了輸入法神奇的選字跟換了沒有方向鍵的 60% 鍵盤的因素下，決定學習新的輸入法，享受不用選字的爽感。在以字形為主的輸入法中，最後選擇嘸蝦米，這篇分享學習方法與使用半年的心得。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2022-01-16T22:34:12+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[雜談] 身為工具開發者的二三事</title><link href="https://lankudot.github.io/blog/2022-01-advice-for-tool-developers/" rel="alternate" type="text/html" title="[雜談] 身為工具開發者的二三事" /><published>2022-01-16T00:00:00+08:00</published><updated>2022-01-16T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/advice-for-tool-developers</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-01-advice-for-tool-developers/">&lt;p&gt;最近終於有機會可以跟到大專案，而專案中有一人負責提供開發工具。為了方便進行 code review，所有成員要使用該工具。但沒有想到才剛使用一週，就遇上開發者大改架構，而且連個事前通知都沒有，一個禮拜的進度化為烏有。崩潰之餘只好來寫一下自己認知中，身為工具開發者時應該要有的觀念。&lt;/p&gt;
+
+&lt;h2 id=&quot;提供文件&quot;&gt;提供文件&lt;/h2&gt;
+
+&lt;p&gt;我知道如果工具還在開發中的話，撰寫文件會比較麻煩，因為只要工具一更新，文件就過時了。但是別忘記，可以多利用註解幫忙生成文件，而且只要符合對應的註解格式，IDE 或編輯器也會為工具的 API 加上提示，讓團隊成員能了解函式或變數的用途。工具完成後也可以用 doxygen 等工具生成 API 文件。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2022-01-16-advice-for-tool-developers/comment-documentation.PNG&quot; alt=&quot;文件註解範例&quot; /&gt;
+&lt;em&gt;例如 C# 可以&lt;a href=&quot;https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/language-specification/documentation-comments&quot; title=&quot;C# 文件註解 - Microsoft Documentation&quot;&gt;使用 xml 格式&lt;/a&gt;的註解，配合 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;///&lt;/code&gt; 或是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/**&lt;/code&gt; 來撰寫文件註解，而 Visual Studio 就會為函式加上提示&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;提供範例&quot;&gt;提供範例&lt;/h2&gt;
+
+&lt;p&gt;範例是說明工具如何使用最有效的手段。每個範例最好只介紹一個功能，配合常見的使用情況，例如：如何發出事件，就用 UI 的按鈕做為例子、如何生成一個物件，就用生成敵人做為例子。除了能夠讓團隊成員容易理解如何使用這個工具，也可以用來驗證自己的設計是否合理，以及測試功能是否正常。&lt;/p&gt;
+
+&lt;h2 id=&quot;記錄版本與修改&quot;&gt;記錄版本與修改&lt;/h2&gt;
+
+&lt;p&gt;API 更動時常發生，最好能夠用版本來區分改動，並且記錄 changelog。而不是讓團隊成員在合併分支時，才知道工具又更新了，然後伴隨各種崩慣的錯誤訊息。&lt;/p&gt;
+
+&lt;p&gt;使用者可以利用版本號確認自己是否使用最新的工具。我習慣 &lt;a href=&quot;https://medium.com/fiverr-engineering/major-minor-patch-a5298e2e1798&quot; title=&quot;Major.Minor.Patch - An illustrated guide to semantic versioning&quot;&gt;「Major.Minor.Patch」&lt;/a&gt; 的格式，只是修正錯誤就增加 Patch 的數字，增加一些功能就增加 Minor 的數字，如果這次的更新會造成使用舊版工具的程式出錯的話，就增加 Major 的數字。要注意的是，對於 Minor 跟 Patch 的版本變更，都應該要相容前面的版本，即不會因更新而報錯。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2022-01-16-advice-for-tool-developers/version-explain.png&quot; alt=&quot;版本號說明&quot; /&gt;
+&lt;em&gt;版本號的簡單說明&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;而 changelog 應該忠實記錄每個版本做了哪些修改，讓團隊成員能夠知道如何修正程式以跟上最新版本。我覺得 &lt;a href=&quot;https://keepachangelog.com/en/1.0.0/&quot; title=&quot;Keep a Changelog&quot;&gt;changelog&lt;/a&gt; 至少需要包含增加（Added）、刪去（Removed）、改動（Changed）、修正（Fixed）這幾項記錄。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2022-01-16-advice-for-tool-developers/changelog-example.PNG&quot; alt=&quot;Changelog 範例&quot; /&gt;
+&lt;em&gt;之前開發的工具所維護的 &lt;a href=&quot;https://github.com/LanKuDot/MLGame/blob/master/CHANGELOG.md&quot;&gt;changelog&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;開個會吧&quot;&gt;開個會吧&lt;/h2&gt;
+
+&lt;p&gt;如果真的沒有時間可以維護這些文件，那至少集合大家開個會，花個半小時講解一下工具有什麼更新及如何使用。還可以順便收集大家的使用意見，為下一次更新作準備。&lt;/p&gt;
+
+&lt;h2 id=&quot;結語&quot;&gt;結語&lt;/h2&gt;
+
+&lt;p&gt;我這次參與的專案的工具開發者，上面一項都沒有作到。雖然在專案啟動前有個工具說明會，但是開始後就大改架構，也就是說說明會提到的內容都過時了。我還是看到 commit 才知道工具有改跟改了哪裡，更甚者，那位開發者會直接將更動直接合併到主開發分支。也就是說，每次做 pull request 得要再修改出錯的地方，才能讓實作的功能正常。在緊湊的開發日程上，遇到這種情況只能寫個慘字，啊，可能連寫的時間都沒有了吧。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="雜談" /><summary type="html">最近終於有機會可以跟到大專案，而專案中有一人負責提供開發工具。為了方便進行 code review，所有成員要使用該工具。但沒有想到才剛使用一週，就遇上開發者大改架構，而且連個事前通知都沒有，一個禮拜的進度化為烏有。崩潰之餘只好來寫一下自己認知中，身為工具開發者時應該要有的觀念。</summary></entry><entry><title type="html">[心得] 轉換到嘸蝦米半年心得</title><link href="https://lankudot.github.io/blog/2021-12-switch-to-boshiamy/" rel="alternate" type="text/html" title="[心得] 轉換到嘸蝦米半年心得" /><published>2021-12-19T00:00:00+08:00</published><updated>2021-12-19T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/switch-to-boshiamy</id><content type="html" xml:base="https://lankudot.github.io/blog/2021-12-switch-to-boshiamy/">&lt;p&gt;在受不了輸入法神奇的選字跟換了沒有方向鍵的 60% 鍵盤的因素下，決定學習新的輸入法，享受不用選字的爽感。在以字形為主的輸入法中，最後選擇嘸蝦米，這篇分享學習方法與使用半年的心得。&lt;/p&gt;
 
 &lt;h2 id=&quot;為何選擇嘸蝦米&quot;&gt;為何選擇嘸蝦米&lt;/h2&gt;
 
