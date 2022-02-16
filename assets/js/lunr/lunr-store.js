@@ -16,4 +16,10 @@ var store = [{
         "tags": ["雜談"],
         "url": "/blog/2022-01-advice-for-tool-developers/",
         "teaser": null
+      },{
+        "title": "[筆記] C# 類別成員存取關係一覧",
+        "excerpt":"本篇用圖表來介紹 C# 類別成員的存取關係，有 private、protected、public。以及比較一般繼承與多型繼承中，會取得什麼版本的方法。 類別成員的存取 存取來源 private protected public 自己類別中 :heavy_check_mark: :heavy_check_mark: :heavy_check_mark: 衍伸類別中 :x: :heavy_check_mark: :heavy_check_mark: 外部 :x: :x: :heavy_check_mark: 自己類別中 在自己類別中存取的情況是： 在類別定義中，存取類別的成員，如 Test1。 在類別定義中，透過該類別的物件存取成員，如 Test2。 所有 private、protected、public 的成員都可以存取。 public class Bar { private int x; private void Func() { Console.WriteLine(\"Func called\"); } public void Test1() { x =...","categories": ["blog"],
+        "tags": ["筆記","C#"],
+        "url": "/blog/2022-02-csharp-inheritance-member-accessing/",
+        "teaser": null
       }]
