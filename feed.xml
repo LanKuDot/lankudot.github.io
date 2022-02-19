@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2022-02-16T21:59:55+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[筆記] C# 類別成員存取關係一覧</title><link href="https://lankudot.github.io/blog/2022-02-csharp-inheritance-member-accessing/" rel="alternate" type="text/html" title="[筆記] C# 類別成員存取關係一覧" /><published>2022-02-16T00:00:00+08:00</published><updated>2022-02-16T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/csharp-inheritance-member-accessing</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-02-csharp-inheritance-member-accessing/">&lt;p&gt;本篇用圖表來介紹 C# 類別成員的存取關係，有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;。以及比較一般繼承與多型繼承中，會取得什麼版本的方法。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2022-02-19T18:12:31+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[筆記] C# 類別成員存取關係一覧</title><link href="https://lankudot.github.io/blog/2022-02-csharp-inheritance-member-accessing/" rel="alternate" type="text/html" title="[筆記] C# 類別成員存取關係一覧" /><published>2022-02-16T00:00:00+08:00</published><updated>2022-02-16T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/csharp-inheritance-member-accessing</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-02-csharp-inheritance-member-accessing/">&lt;p&gt;本篇用圖表來介紹 C# 類別成員的存取關係，有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;，跟跨組件的成員存取，有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected internal&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private protected&lt;/code&gt;。以及比較一般繼承與多型繼承中，會取得什麼版本的方法。&lt;/p&gt;
 
 &lt;h2 id=&quot;類別成員的存取&quot;&gt;類別成員的存取&lt;/h2&gt;
 
@@ -127,6 +127,76 @@
   &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;跨組件的類別成員存取&quot;&gt;跨組件的類別成員存取&lt;/h2&gt;
+
+&lt;p&gt;在 C# 中，程式碼可以編譯到不同的組件（Assembly）中，並像模組或函式庫一樣，可以放到不同的程式中供取用。上述的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;privated&lt;/code&gt; 成員不受組件不同的影響，如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; 成員在也可以被不同組件的類別取用，但 C# 另外提供可以控制不同組件的類別成員存取的修飾詞。&lt;/p&gt;
+
+&lt;h3 id=&quot;相同組件中&quot;&gt;相同組件中&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;存取來源&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected internal&lt;/code&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private protected&lt;/code&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;自己類別中&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;衍伸類別中&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;外部&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;不同組件中&quot;&gt;不同組件中&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;存取來源&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected internal&lt;/code&gt;&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private protected&lt;/code&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;衍伸類別中&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;外部&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt; 與 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; 相似，但只在相同組件中才是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected internal&lt;/code&gt; 比起 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt; 的權限稍為大一點，讓不同元件的衍伸類別可以取用。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private protected&lt;/code&gt; 與 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt; 相似，但只在相同組件中才是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&quot;外部存取方法的版本&quot;&gt;外部存取方法的版本&lt;/h2&gt;
 
@@ -330,7 +400,7 @@
       &lt;p&gt;方法簽章（method signature）由存取層級（access level，如：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;）、選擇性修飾詞（optional modifier，如：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;abstract&lt;/code&gt;）、回傳值、方法名稱、方法參數（parameters）構成。 &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="C#" /><summary type="html">本篇用圖表來介紹 C# 類別成員的存取關係，有 private、protected、public。以及比較一般繼承與多型繼承中，會取得什麼版本的方法。</summary></entry><entry><title type="html">[雜談] 身為工具開發者的二三事</title><link href="https://lankudot.github.io/blog/2022-01-advice-for-tool-developers/" rel="alternate" type="text/html" title="[雜談] 身為工具開發者的二三事" /><published>2022-01-16T00:00:00+08:00</published><updated>2022-01-16T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/advice-for-tool-developers</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-01-advice-for-tool-developers/">&lt;p&gt;最近終於有機會可以跟到大專案，而專案中有一人負責提供開發工具。為了方便進行 code review，所有成員要使用該工具。但沒有想到才剛使用一週，就遇上開發者大改架構，而且連個事前通知都沒有，一個禮拜的進度化為烏有。崩潰之餘只好來寫一下自己認知中，身為工具開發者時應該要有的觀念。&lt;/p&gt;
+&lt;/div&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="C#" /><summary type="html">本篇用圖表來介紹 C# 類別成員的存取關係，有 private、protected、public，跟跨組件的成員存取，有 internal、protected internal、private protected。以及比較一般繼承與多型繼承中，會取得什麼版本的方法。</summary></entry><entry><title type="html">[雜談] 身為工具開發者的二三事</title><link href="https://lankudot.github.io/blog/2022-01-advice-for-tool-developers/" rel="alternate" type="text/html" title="[雜談] 身為工具開發者的二三事" /><published>2022-01-16T00:00:00+08:00</published><updated>2022-01-16T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/advice-for-tool-developers</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-01-advice-for-tool-developers/">&lt;p&gt;最近終於有機會可以跟到大專案，而專案中有一人負責提供開發工具。為了方便進行 code review，所有成員要使用該工具。但沒有想到才剛使用一週，就遇上開發者大改架構，而且連個事前通知都沒有，一個禮拜的進度化為烏有。崩潰之餘只好來寫一下自己認知中，身為工具開發者時應該要有的觀念。&lt;/p&gt;
 
 &lt;h2 id=&quot;提供文件&quot;&gt;提供文件&lt;/h2&gt;
 
