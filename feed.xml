@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2022-02-19T18:12:31+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[筆記] C# 類別成員存取關係一覧</title><link href="https://lankudot.github.io/blog/2022-02-csharp-inheritance-member-accessing/" rel="alternate" type="text/html" title="[筆記] C# 類別成員存取關係一覧" /><published>2022-02-16T00:00:00+08:00</published><updated>2022-02-16T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/csharp-inheritance-member-accessing</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-02-csharp-inheritance-member-accessing/">&lt;p&gt;本篇用圖表來介紹 C# 類別成員的存取關係，有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;，跟跨組件的成員存取，有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected internal&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private protected&lt;/code&gt;。以及比較一般繼承與多型繼承中，會取得什麼版本的方法。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2022-02-23T00:18:53+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[影集] Apple TV-基地 Foundation</title><link href="https://lankudot.github.io/blog/2022-02-foundation-apple-tv-series-reviews/" rel="alternate" type="text/html" title="[影集] Apple TV-基地 Foundation" /><published>2022-02-22T00:00:00+08:00</published><updated>2022-02-22T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/foundation-apple-tv-series-reviews</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-02-foundation-apple-tv-series-reviews/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2022-02-22-foundation-apple-tv-series-reviews/cover.png&quot; alt=&quot;Cover Image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在一個由帝國長久統治銀河的時代中，帝國的主星「川陀」上出現了一名數學教授ー哈里．謝頓。他用「心理史學」預測帝國將在未來衰敗，整個銀河會陷入黑暗時期，人們必須建立一個「基地」來保存科技與文化，以在黑暗時期過後，讓銀河文明能快速恢復。&lt;/p&gt;
+
+&lt;h2 id=&quot;劇情&quot;&gt;劇情&lt;/h2&gt;
+
+&lt;p&gt;影集改編自以撒．艾西莫夫（Issac Asimov）的基地系列小說，第一季的劇情從到銀河邊緣「端點星」建立基地，到基地的第一次危機結束之後。基地的團隊從川陀出發後，劇情分為三條路線，同時推移：&lt;/p&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;em&gt;本篇圖片及劇照皆取自 Apple TV 網站及其在 YouTube 上的預告片&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;蓋兒與哈里&quot;&gt;蓋兒與哈里&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2022-02-22-foundation-apple-tv-series-reviews/gaal_and_seldon.png&quot; alt=&quot;gaal_and_seldon&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;蓋兒因其數學的天賦而受邀成為哈里的助手，是最接近哈里的預測模型的人，知道他的預測是正確的，但哈里因「天機不可洩漏」而不願透露其基地計劃的細節與理由。隨著劇情的推移，會逐漸理解到蓋兒受到沉重壓力的痛苦，跟哈里不被諒解的無奈。&lt;/p&gt;
+
+&lt;h3 id=&quot;帝國&quot;&gt;帝國&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2022-02-22-foundation-apple-tv-series-reviews/empire.png&quot; alt=&quot;empire&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;深信帝國永不滅亡的「白晝」皇帝克里昴十二世在聽到哈里的理論後相當生氣，憤而將哈里與其追隨者流放到端點星。但是帝國境內的情勢開始出現變化，發生的事情都跟哈里的預測相符。繼任「白晝」的克里昴十三世為了避免預測成真，開始「導正」事件的發展。但在這過程中，即使是一脈相傳的複製人王朝也會開始出現岐異，開始擔心帝國的存亡。&lt;/p&gt;
+
+&lt;h3 id=&quot;基地&quot;&gt;基地&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2022-02-22-foundation-apple-tv-series-reviews/hardin.png&quot; alt=&quot;hardin&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;基地線則圍繞在守護者ー賽佛．哈定身上。在團隊抵達端點星之初就存在非自然造物「穹窿」，穹窿會發出「零場」，無論人類還是生物都無法接近，但只有賽佛可以不受影響。在基地建立不久，就受到臨近星球，為了報復帝國的安納克利安人的入侵，即基地的第一次危機。賽佛肩負起保護基地的責任，傾全力對抗敵人的攻擊。&lt;/p&gt;
+
+&lt;p&gt;在第一季的結尾，三條劇情線都作了收束，劇情拋下的每個疑問都有解答，同時也看到他們在未來有不同的發展，為下一季作了起頭。&lt;/p&gt;
+
+&lt;h2 id=&quot;觀後感&quot;&gt;觀後感&lt;/h2&gt;
+
+&lt;p&gt;我覺得劇情的剪輯完美的呈現「天機不可洩露」的精隨，所謂要欺騙敵人就得先欺騙自己人，觀眾也是自己人之一。每次看到驚人的一幕時，都想著為什麼要這麼作，或危機來臨時，這樣作是對的嗎？帶著滿滿的不解，直到後面解答時才豁然開朗。因為基地團隊不知道計劃的細節，所以哈里與蓋兒的劇情線就有著解答疑問的角色。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2022-02-22-foundation-apple-tv-series-reviews/clion_clones.png&quot; alt=&quot;clion_clones&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;角色中滿喜歡複製人皇帝的設定，同時會有「黎明」、「白晝」、「黃昏」三個皇帝在位，分別是少年、壯年、老年的克里昴，而在黃昏任期到的時候，會變成「黑夜」，最後會直接被雷射安樂死燒成灰，此後新的「黎明」誕生，而其它皇帝則繼承下個位子。老實說，在看黑夜皇帝（克里昴十一世）最後一天在世的告別行程時，心中有股強烈的哀傷，尤其是最後走到雷射光束下的那一段。而劇情中期的白晝皇帝（克里昴十三世），原本以為他完全抱有憐憫心了，但是少女星之後的事，理解到他內心還是流有克里昴的冷血，對他是喜怒參半。最可憐的莫過於克里昴十四世，一出生就是個「錯誤」的存在，完全沒有克里昴的特點，就是一個無邪的少年，但最後的下場令人痛心。原本想說如果克里昴十三世真的打算改變帝國的統治方式，那就有可能「破解」哈里的預言了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2022-02-22-foundation-apple-tv-series-reviews/customs.png&quot; alt=&quot;customs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;另外星際科幻的一大看點就是對外星文化的想像，從服裝、手勢、器物的設定來呈現那個星球的文化跟環境。安納克利安人的最偉大狩獵者以及用最古老的樹雕成的弓，代表入侵基地的首領菲拉不容小覷。瑟斯皮斯人的藍眼睛跟他們以礦業為主，同是瑟斯皮斯人的雨果也擁有藍眼睛。少女星上的水源有很多鹽份而且純水很珍貴，所以會用鹽晶製成的容器裝水給皇帝代表對他的敬重。&lt;/p&gt;
+
+&lt;p&gt;真得滿喜歡影集的改編，看完第一集就覺得這會很對我的胃口，片頭的音樂跟動畫也很棒。雖然有看過原著小說，但是細節忘得差不多了，只記得大致的走向，看完影集之後就想回去重看一次小說。如果有第二季的話，我會滿期待騾的登場。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="影集" /><category term="觀後感" /><summary type="html">在一個由帝國長久統治銀河的時代中，帝國的主星「川陀」上出現了一名數學教授ー哈里．謝頓。他用「心理史學」預測帝國將在未來衰敗，整個銀河會陷入黑暗時期，人們必須建立一個「基地」來保存科技與文化，以在黑暗時期過後，讓銀河文明能快速恢復。</summary></entry><entry><title type="html">[筆記] C# 類別成員存取關係一覧</title><link href="https://lankudot.github.io/blog/2022-02-csharp-inheritance-member-accessing/" rel="alternate" type="text/html" title="[筆記] C# 類別成員存取關係一覧" /><published>2022-02-16T00:00:00+08:00</published><updated>2022-02-16T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/csharp-inheritance-member-accessing</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-02-csharp-inheritance-member-accessing/">&lt;p&gt;本篇用圖表來介紹 C# 類別成員的存取關係，有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;，跟跨組件的成員存取，有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected internal&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private protected&lt;/code&gt;。以及比較一般繼承與多型繼承中，會取得什麼版本的方法。&lt;/p&gt;
 
 &lt;h2 id=&quot;類別成員的存取&quot;&gt;類別成員的存取&lt;/h2&gt;
 
