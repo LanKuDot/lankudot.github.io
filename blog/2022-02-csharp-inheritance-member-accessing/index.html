@@ -324,7 +324,7 @@
 <li>
 <a href="#%E9%A1%9E%E5%88%A5%E6%88%90%E5%93%A1%E7%9A%84%E5%AD%98%E5%8F%96">類別成員的存取</a><ul>
 <li><a href="#%E8%87%AA%E5%B7%B1%E9%A1%9E%E5%88%A5%E4%B8%AD">自己類別中</a></li>
-<li><a href="#%E8%A1%8D%E4%BC%B8%E9%A1%9E%E5%88%A5%E4%B8%AD">衍伸類別中</a></li>
+<li><a href="#%E8%A1%8D%E7%94%9F%E9%A1%9E%E5%88%A5%E4%B8%AD">衍生類別中</a></li>
 <li><a href="#%E5%A4%96%E9%83%A8">外部</a></li>
 </ul>
 </li>
@@ -377,7 +377,7 @@
       <td style="text-align: center"><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"></td>
     </tr>
     <tr>
-      <td>衍伸類別中</td>
+      <td>衍生類別中</td>
       <td style="text-align: center"><img class="emoji" title=":x:" alt=":x:" src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png" height="20" width="20"></td>
       <td style="text-align: center"><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"></td>
       <td style="text-align: center"><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"></td>
@@ -424,13 +424,13 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h3 id="衍伸類別中">衍伸類別中</h3>
+<h3 id="衍生類別中">衍生類別中</h3>
 
-<p>在衍伸類別中存取的情況是：</p>
+<p>在衍生類別中存取的情況是：</p>
 
 <ol>
-  <li>在衍伸類別的定義中，存取基礎類別的成員，如 Test1。</li>
-  <li>在衍伸類別的定義中，透過該類別物件存取基礎類別的成員，如 Test2。</li>
+  <li>在衍生類別的定義中，存取基礎類別的成員，如 Test1。</li>
+  <li>在衍生類別的定義中，透過該類別物件存取基礎類別的成員，如 Test2。</li>
 </ol>
 
 <p><code class="language-plaintext highlighter-rouge">protected</code>、<code class="language-plaintext highlighter-rouge">public</code> 的成員都可以存取，但 <code class="language-plaintext highlighter-rouge">private</code> 的成員不行。</p>
@@ -462,7 +462,7 @@
 
 <h3 id="外部">外部</h3>
 
-<p>在外部存取是指：在非衍伸類別中，透過該類別的物件存取。</p>
+<p>在外部存取是指：在非衍生類別中，透過該類別的物件存取。</p>
 
 <p>只有 <code class="language-plaintext highlighter-rouge">public</code> 成員才可以存取。</p>
 
@@ -509,7 +509,7 @@
       <td style="text-align: center"><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"></td>
     </tr>
     <tr>
-      <td>衍伸類別中</td>
+      <td>衍生類別中</td>
       <td style="text-align: center"><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"></td>
       <td style="text-align: center"><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"></td>
       <td style="text-align: center"><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"></td>
@@ -536,7 +536,7 @@
   </thead>
   <tbody>
     <tr>
-      <td>衍伸類別中</td>
+      <td>衍生類別中</td>
       <td style="text-align: center"><img class="emoji" title=":x:" alt=":x:" src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png" height="20" width="20"></td>
       <td style="text-align: center"><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"></td>
       <td style="text-align: center"><img class="emoji" title=":x:" alt=":x:" src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png" height="20" width="20"></td>
@@ -554,14 +554,14 @@
   <li>
 <code class="language-plaintext highlighter-rouge">internal</code> 與 <code class="language-plaintext highlighter-rouge">public</code> 相似，但只在相同組件中才是 <code class="language-plaintext highlighter-rouge">public</code>。</li>
   <li>
-<code class="language-plaintext highlighter-rouge">protected internal</code> 比起 <code class="language-plaintext highlighter-rouge">internal</code> 的權限稍為大一點，讓不同元件的衍伸類別可以取用。</li>
+<code class="language-plaintext highlighter-rouge">protected internal</code> 比起 <code class="language-plaintext highlighter-rouge">internal</code> 的權限稍為大一點，讓不同元件的衍生類別可以取用。</li>
   <li>
 <code class="language-plaintext highlighter-rouge">private protected</code> 與 <code class="language-plaintext highlighter-rouge">protected</code> 相似，但只在相同組件中才是 <code class="language-plaintext highlighter-rouge">protected</code>。</li>
 </ul>
 
 <h2 id="外部存取方法的版本">外部存取方法的版本</h2>
 
-<p>在基礎類別跟衍伸類別中的 <code class="language-plaintext highlighter-rouge">public</code> 方法有相同簽章<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>時，會因為關鍵字（如：<code class="language-plaintext highlighter-rouge">new</code>、<code class="language-plaintext highlighter-rouge">virtual</code>）的不同而讓類別物件存取到不同版本的方法。</p>
+<p>在基礎類別跟衍生類別中的 <code class="language-plaintext highlighter-rouge">public</code> 方法有相同簽章<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>時，會因為關鍵字（如：<code class="language-plaintext highlighter-rouge">new</code>、<code class="language-plaintext highlighter-rouge">virtual</code>）的不同而讓類別物件存取到不同版本的方法。</p>
 
 <h3 id="一般繼承">一般繼承</h3>
 
@@ -612,7 +612,7 @@
 
 <h4 id="如果有同簽章的方法">如果有同簽章的方法</h4>
 
-<p>如果衍伸類別中有跟基礎類別同簽章的方法，則會「隱藏」基礎類別的方法，編譯器會發出警告，加上 <code class="language-plaintext highlighter-rouge">new</code> 關鍵字則可以告訴編譯器就是要這樣作。</p>
+<p>如果衍生類別中有跟基礎類別同簽章的方法，則會「隱藏」基礎類別的方法，編譯器會發出警告，加上 <code class="language-plaintext highlighter-rouge">new</code> 關鍵字則可以告訴編譯器就是要這樣作。</p>
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">Bar</span>
 <span class="p">{</span>
@@ -654,13 +654,13 @@
 </table>
 
 <ol>
-  <li>在一般繼承中，如果將衍伸類別的物件賦值給基礎類別的變數，該物件會被隱含轉換（implict type conversion）成基礎類別的物件，所以會使用到基礎類別的版本。</li>
-  <li>因為衍伸類別中「隱藏」了基礎類別的方法，所以衍伸類別的物件會使用衍伸類別的版本。</li>
+  <li>在一般繼承中，如果將衍生類別的物件賦值給基礎類別的變數，該物件會被隱含轉換（implict type conversion）成基礎類別的物件，所以會使用到基礎類別的版本。</li>
+  <li>因為衍生類別中「隱藏」了基礎類別的方法，所以衍生類別的物件會使用衍生類別的版本。</li>
 </ol>
 
 <h3 id="多型繼承">多型繼承</h3>
 
-<p>如果基礎類別有 <code class="language-plaintext highlighter-rouge">virtual</code> 方法，而且在衍伸類別中用 <code class="language-plaintext highlighter-rouge">override</code>「覆寫」該方法的話，即使把衍伸類別的物件賦值給基礎類別的變數，也可以取用到衍伸類別的版本，稱為多型繼承。在多型繼承下，就可以讓基礎類別的變數因給與不同的衍伸類別的物件，呼叫同個方法而有衍伸類別上的行為，不需使用多個衍伸類別的物件。</p>
+<p>如果基礎類別有 <code class="language-plaintext highlighter-rouge">virtual</code> 方法，而且在衍生類別中用 <code class="language-plaintext highlighter-rouge">override</code>「覆寫」該方法的話，即使把衍生類別的物件賦值給基礎類別的變數，也可以取用到衍生類別的版本，稱為多型繼承。在多型繼承下，就可以讓基礎類別的變數因給與不同的衍生類別的物件，呼叫同個方法而有衍生類別上的行為，不需使用多個衍生類別的物件。</p>
 
 <h4 id="如果沒有同簽章的方法-1">如果沒有同簽章的方法</h4>
 
@@ -743,7 +743,7 @@
 </table>
 
 <ol>
-  <li>把衍伸類別的物件賦值給基礎類別的變數，雖然會被隱含轉換，但是在多型繼承下，基礎類別的方法會被「覆寫」，所以會取用到衍伸類別的版本。</li>
+  <li>把衍生類別的物件賦值給基礎類別的變數，雖然會被隱含轉換，但是在多型繼承下，基礎類別的方法會被「覆寫」，所以會取用到衍生類別的版本。</li>
 </ol>
 
 <h2 id="參考資料">參考資料</h2>

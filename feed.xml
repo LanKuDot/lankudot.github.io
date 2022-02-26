@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2022-02-23T00:18:53+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[影集] Apple TV-基地 Foundation</title><link href="https://lankudot.github.io/blog/2022-02-foundation-apple-tv-series-reviews/" rel="alternate" type="text/html" title="[影集] Apple TV-基地 Foundation" /><published>2022-02-22T00:00:00+08:00</published><updated>2022-02-22T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/foundation-apple-tv-series-reviews</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-02-foundation-apple-tv-series-reviews/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2022-02-22-foundation-apple-tv-series-reviews/cover.png&quot; alt=&quot;Cover Image&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2022-02-26T23:30:12+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[影集] Apple TV-基地 Foundation</title><link href="https://lankudot.github.io/blog/2022-02-foundation-apple-tv-series-reviews/" rel="alternate" type="text/html" title="[影集] Apple TV-基地 Foundation" /><published>2022-02-22T00:00:00+08:00</published><updated>2022-02-22T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/foundation-apple-tv-series-reviews</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-02-foundation-apple-tv-series-reviews/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2022-02-22-foundation-apple-tv-series-reviews/cover.png&quot; alt=&quot;Cover Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;在一個由帝國長久統治銀河的時代中，帝國的主星「川陀」上出現了一名數學教授ー哈里．謝頓。他用「心理史學」預測帝國將在未來衰敗，整個銀河會陷入黑暗時期，人們必須建立一個「基地」來保存科技與文化，以在黑暗時期過後，讓銀河文明能快速恢復。&lt;/p&gt;
 
@@ -61,7 +61,7 @@
       &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;衍伸類別中&lt;/td&gt;
+      &lt;td&gt;衍生類別中&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
@@ -108,13 +108,13 @@
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;衍伸類別中&quot;&gt;衍伸類別中&lt;/h3&gt;
+&lt;h3 id=&quot;衍生類別中&quot;&gt;衍生類別中&lt;/h3&gt;
 
-&lt;p&gt;在衍伸類別中存取的情況是：&lt;/p&gt;
+&lt;p&gt;在衍生類別中存取的情況是：&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;在衍伸類別的定義中，存取基礎類別的成員，如 Test1。&lt;/li&gt;
-  &lt;li&gt;在衍伸類別的定義中，透過該類別物件存取基礎類別的成員，如 Test2。&lt;/li&gt;
+  &lt;li&gt;在衍生類別的定義中，存取基礎類別的成員，如 Test1。&lt;/li&gt;
+  &lt;li&gt;在衍生類別的定義中，透過該類別物件存取基礎類別的成員，如 Test2。&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; 的成員都可以存取，但 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private&lt;/code&gt; 的成員不行。&lt;/p&gt;
@@ -146,7 +146,7 @@
 
 &lt;h3 id=&quot;外部&quot;&gt;外部&lt;/h3&gt;
 
-&lt;p&gt;在外部存取是指：在非衍伸類別中，透過該類別的物件存取。&lt;/p&gt;
+&lt;p&gt;在外部存取是指：在非衍生類別中，透過該類別的物件存取。&lt;/p&gt;
 
 &lt;p&gt;只有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; 成員才可以存取。&lt;/p&gt;
 
@@ -193,7 +193,7 @@
       &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
-      &lt;td&gt;衍伸類別中&lt;/td&gt;
+      &lt;td&gt;衍生類別中&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
@@ -220,7 +220,7 @@
   &lt;/thead&gt;
   &lt;tbody&gt;
     &lt;tr&gt;
-      &lt;td&gt;衍伸類別中&lt;/td&gt;
+      &lt;td&gt;衍生類別中&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
       &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
@@ -236,13 +236,13 @@
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt; 與 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; 相似，但只在相同組件中才是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected internal&lt;/code&gt; 比起 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt; 的權限稍為大一點，讓不同元件的衍伸類別可以取用。&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected internal&lt;/code&gt; 比起 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt; 的權限稍為大一點，讓不同元件的衍生類別可以取用。&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private protected&lt;/code&gt; 與 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt; 相似，但只在相同組件中才是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt;。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;外部存取方法的版本&quot;&gt;外部存取方法的版本&lt;/h2&gt;
 
-&lt;p&gt;在基礎類別跟衍伸類別中的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; 方法有相同簽章&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;時，會因為關鍵字（如：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtual&lt;/code&gt;）的不同而讓類別物件存取到不同版本的方法。&lt;/p&gt;
+&lt;p&gt;在基礎類別跟衍生類別中的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; 方法有相同簽章&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;時，會因為關鍵字（如：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtual&lt;/code&gt;）的不同而讓類別物件存取到不同版本的方法。&lt;/p&gt;
 
 &lt;h3 id=&quot;一般繼承&quot;&gt;一般繼承&lt;/h3&gt;
 
@@ -293,7 +293,7 @@
 
 &lt;h4 id=&quot;如果有同簽章的方法&quot;&gt;如果有同簽章的方法&lt;/h4&gt;
 
-&lt;p&gt;如果衍伸類別中有跟基礎類別同簽章的方法，則會「隱藏」基礎類別的方法，編譯器會發出警告，加上 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new&lt;/code&gt; 關鍵字則可以告訴編譯器就是要這樣作。&lt;/p&gt;
+&lt;p&gt;如果衍生類別中有跟基礎類別同簽章的方法，則會「隱藏」基礎類別的方法，編譯器會發出警告，加上 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new&lt;/code&gt; 關鍵字則可以告訴編譯器就是要這樣作。&lt;/p&gt;
 
 &lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -335,13 +335,13 @@
 &lt;/table&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;在一般繼承中，如果將衍伸類別的物件賦值給基礎類別的變數，該物件會被隱含轉換（implict type conversion）成基礎類別的物件，所以會使用到基礎類別的版本。&lt;/li&gt;
-  &lt;li&gt;因為衍伸類別中「隱藏」了基礎類別的方法，所以衍伸類別的物件會使用衍伸類別的版本。&lt;/li&gt;
+  &lt;li&gt;在一般繼承中，如果將衍生類別的物件賦值給基礎類別的變數，該物件會被隱含轉換（implict type conversion）成基礎類別的物件，所以會使用到基礎類別的版本。&lt;/li&gt;
+  &lt;li&gt;因為衍生類別中「隱藏」了基礎類別的方法，所以衍生類別的物件會使用衍生類別的版本。&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&quot;多型繼承&quot;&gt;多型繼承&lt;/h3&gt;
 
-&lt;p&gt;如果基礎類別有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtual&lt;/code&gt; 方法，而且在衍伸類別中用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;override&lt;/code&gt;「覆寫」該方法的話，即使把衍伸類別的物件賦值給基礎類別的變數，也可以取用到衍伸類別的版本，稱為多型繼承。在多型繼承下，就可以讓基礎類別的變數因給與不同的衍伸類別的物件，呼叫同個方法而有衍伸類別上的行為，不需使用多個衍伸類別的物件。&lt;/p&gt;
+&lt;p&gt;如果基礎類別有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtual&lt;/code&gt; 方法，而且在衍生類別中用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;override&lt;/code&gt;「覆寫」該方法的話，即使把衍生類別的物件賦值給基礎類別的變數，也可以取用到衍生類別的版本，稱為多型繼承。在多型繼承下，就可以讓基礎類別的變數因給與不同的衍生類別的物件，呼叫同個方法而有衍生類別上的行為，不需使用多個衍生類別的物件。&lt;/p&gt;
 
 &lt;h4 id=&quot;如果沒有同簽章的方法-1&quot;&gt;如果沒有同簽章的方法&lt;/h4&gt;
 
@@ -424,7 +424,7 @@
 &lt;/table&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;把衍伸類別的物件賦值給基礎類別的變數，雖然會被隱含轉換，但是在多型繼承下，基礎類別的方法會被「覆寫」，所以會取用到衍伸類別的版本。&lt;/li&gt;
+  &lt;li&gt;把衍生類別的物件賦值給基礎類別的變數，雖然會被隱含轉換，但是在多型繼承下，基礎類別的方法會被「覆寫」，所以會取用到衍生類別的版本。&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h2 id=&quot;參考資料&quot;&gt;參考資料&lt;/h2&gt;
