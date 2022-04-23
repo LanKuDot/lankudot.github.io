@@ -9,22 +9,24 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>所有文章 | 烏龜漫遊 2.0</title>
-<meta name="description" content="記錄分享在 Unity 上製作遊戲的筆記與心得">
+<!-- begin _includes/seo.html --><title>[筆記] 設定 Android 不要備份 PlayerPrefs | 烏龜漫遊 2.0</title>
+<meta name="description" content="用 Unity 開發 Android 上的遊戲時，如果有用到 PlayerPrefs 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。">
 
 
   <meta name="author" content="烏龜">
   
+  <meta property="article:author" content="烏龜">
+  
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:site_name" content="烏龜漫遊 2.0">
-<meta property="og:title" content="所有文章">
-<meta property="og:url" content="https://lankudot.github.io/posts/">
+<meta property="og:title" content="[筆記] 設定 Android 不要備份 PlayerPrefs">
+<meta property="og:url" content="https://lankudot.github.io/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/">
 
 
-  <meta property="og:description" content="記錄分享在 Unity 上製作遊戲的筆記與心得">
+  <meta property="og:description" content="用 Unity 開發 Android 上的遊戲時，如果有用到 PlayerPrefs 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。">
 
 
 
@@ -33,9 +35,9 @@
 
 
   <meta name="twitter:site" content="@LanKuDot">
-  <meta name="twitter:title" content="所有文章">
-  <meta name="twitter:description" content="記錄分享在 Unity 上製作遊戲的筆記與心得">
-  <meta name="twitter:url" content="https://lankudot.github.io/posts/">
+  <meta name="twitter:title" content="[筆記] 設定 Android 不要備份 PlayerPrefs">
+  <meta name="twitter:description" content="用 Unity 開發 Android 上的遊戲時，如果有用到 PlayerPrefs 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。">
+  <meta name="twitter:url" content="https://lankudot.github.io/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/">
 
   
     <meta name="twitter:card" content="summary">
@@ -48,6 +50,8 @@
 
 
 
+  <meta property="article:published_time" content="2022-04-23T00:00:00+08:00">
+
 
 
 
@@ -57,7 +61,7 @@
   
 
 
-<link rel="canonical" href="https://lankudot.github.io/posts/">
+<link rel="canonical" href="https://lankudot.github.io/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/">
 
 
 
@@ -108,7 +112,7 @@
 
   </head>
 
-  <body class="layout--posts">
+  <body class="layout--single">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">轉至主導航欄</a></li>
@@ -276,51 +280,20 @@
 
 
 
-  <div class="archive">
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[筆記] 設定 Android 不要備份 PlayerPrefs">
+    <meta itemprop="description" content="用 Unity 開發 Android 上的遊戲時，如果有用到 PlayerPrefs 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。">
+    <meta itemprop="datePublished" content="2022-04-23T00:00:00+08:00">
     
-      <h1 id="page-title" class="page__title">所有文章</h1>
-    
-    
 
-
-<ul class="taxonomy__index">
-  
-  
-    <li>
-      <a href="#2022">
-        <strong>2022</strong> <span class="taxonomy__count">4</span>
-      </a>
-    </li>
-  
-    <li>
-      <a href="#2021">
-        <strong>2021</strong> <span class="taxonomy__count">2</span>
-      </a>
-    </li>
-  
-</ul>
-
-
-
-
-  <section id="2022" class="taxonomy__section">
-    <h2 class="archive__subtitle">2022</h2>
-    <div class="entries-list">
+    <div class="page__inner-wrap">
       
-        
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/" rel="permalink">[筆記] 設定 Android 不要備份 PlayerPrefs
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://lankudot.github.io/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/" class="u-url" itemprop="url">[筆記] 設定 Android 不要備份 PlayerPrefs
 </a>
-      
-    </h2>
-    
+          </h1>
+          
 
   <p class="page__meta">
     
@@ -338,18 +311,153 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">用 Unity 開發 Android 上的遊戲時，如果有用到 PlayerPrefs 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。
-
-</p>
-  </article>
-</div>
-
+        </header>
       
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 本頁</h4></header>
+              <ul class="toc__menu"><li><a href="#關閉-android-自動備份資料">關閉 Android 自動備份資料</a></li><li><a href="#參考資料">參考資料</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p>用 Unity 開發 Android 上的遊戲時，如果有用到 <code class="language-plaintext highlighter-rouge">PlayerPrefs</code> 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。</p>
+
+<h2 id="關閉-android-自動備份資料">關閉 Android 自動備份資料</h2>
+
+<p>如果要關閉 Android 自動備份應用程式的資料，可以在 Unity 的專案中設定。</p>
+
+<ol>
+  <li>開啟 Project Settings → Player → Publishing Settings → 勾選 Custom Main Manifest <br />
+  <img src="/assets/images/blog/2022-04-23-prevent-android-from-backing-up-playerprefs-unity/step1.png" alt="step 1" /></li>
+  <li>編輯新增的檔案 Assets/Plugins/Android/AndroidManifest.xml <br />
+  <img src="/assets/images/blog/2022-04-23-prevent-android-from-backing-up-playerprefs-unity/step2.png" alt="step 2" /></li>
+  <li>在 <code class="language-plaintext highlighter-rouge">application</code> 標籤中加入 <code class="language-plaintext highlighter-rouge">android.allowBackup</code> 屬性，並設為 <code class="language-plaintext highlighter-rouge">false</code> <br />
+  <img src="/assets/images/blog/2022-04-23-prevent-android-from-backing-up-playerprefs-unity/step3.png" alt="step 3" /></li>
+  <li>這樣就完成設定了</li>
+</ol>
+
+<p class="notice--info"><strong>補充</strong> 在 Android Developers 的文件中有註明，如果應用程式跑在 Android 12 以上的版本，則這個選項不會影響手機之間的資料轉存，也就是說 <code class="language-plaintext highlighter-rouge">PlayerPrefs</code> 的資料還是會一起傳過去</p>
+
+<h2 id="參考資料">參考資料</h2>
+
+<ul>
+  <li><a href="https://developer.android.com/guide/topics/data/autobackup#EnablingAutoBackup">Enable and disable backup - Android Developers</a></li>
+  <li><a href="https://forum.unity.com/threads/are-playerprefs-deleted-on-application-uninstall-on-android-device.845989/">Are PlayerPrefs deleted on application uninstall on Android device? - Unity Forum</a></li>
+  <li><a href="https://forum.unity.com/threads/playerprefs-persist-between-installs-on-android.434886/#post-3414613">PlayerPrefs persist between installs on Android - Unity Forum</a></li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 標籤: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#unity" class="page__taxonomy-item p-category" rel="tag">Unity</a><span class="sep">, </span>
+    
+      <a href="/tags/#%E7%AD%86%E8%A8%98" class="page__taxonomy-item p-category" rel="tag">筆記</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 分類: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#blog" class="page__taxonomy-item p-category" rel="tag">blog</a>
+    
+    </span>
+  </p>
+
+
         
 
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新時間:</strong> <time class="dt-published" datetime="2022-04-23T00:00:00+08:00">April 23, 2022</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">分享到</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=LanKuDot&text=%5B%E7%AD%86%E8%A8%98%5D+%E8%A8%AD%E5%AE%9A+Android+%E4%B8%8D%E8%A6%81%E5%82%99%E4%BB%BD+PlayerPrefs%20https%3A%2F%2Flankudot.github.io%2Fblog%2F2022-04-prevent-android-from-backing-up-playerprefs-unity%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flankudot.github.io%2Fblog%2F2022-04-prevent-android-from-backing-up-playerprefs-unity%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flankudot.github.io%2Fblog%2F2022-04-prevent-android-from-backing-up-playerprefs-unity%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
 
 
-<div class="list__item">
+      
+  <nav class="pagination">
+    
+      <a href="/blog/2022-02-foundation-apple-tv-series-reviews/" class="pagination--pager" title="[影集] Apple TV-基地 Foundation
+">前一頁</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">後一頁</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <script src="https://giscus.app/client.js"
+        data-repo="LanKuDot/lankudot.github.io"
+        data-repo-id="R_kgDOGYHitw"
+        data-category="Page comments"
+        data-category-id="DIC_kwDOGYHit84B_-lB"
+        data-mapping="title"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  
+</div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">猜您有與趣</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -381,12 +489,12 @@
   </article>
 </div>
 
-      
         
+          
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -419,12 +527,12 @@
   </article>
 </div>
 
-      
         
+          
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -457,20 +565,12 @@
   </article>
 </div>
 
-      
-    </div>
-    <a href="#page-title" class="back-to-top">回到頂部 &uarr;</a>
-  </section>
-
-  <section id="2021" class="taxonomy__section">
-    <h2 class="archive__subtitle">2021</h2>
-    <div class="entries-list">
-      
         
+          
 
 
 
-<div class="list__item">
+<div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -503,51 +603,11 @@
   </article>
 </div>
 
-      
         
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/2021-12-csharp-boxing-and-unboxing/" rel="permalink">[筆記] 避免 Boxing/Unboxing 效能問題
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2021-12-01T00:00:00+08:00">December 1, 2021</time>
-      </span>
-    
-
-    
-
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">之前在撰寫 Unity 套件的時候，因為不知道使用者會用什麼類別來傳資料，所以都轉成 object 型別來傳遞，後來發現這會有效能上的問題。本篇文章就來探討這個問題以及解法。
-
-</p>
-  </article>
-</div>
-
-      
+      </div>
     </div>
-    <a href="#page-title" class="back-to-top">回到頂部 &uarr;</a>
-  </section>
-
-
-  </div>
+  
+  
 </div>
     </div>
 
@@ -617,6 +677,12 @@
 
 
 
+
+
+
+    <!-- start custom comments scripts -->
+
+<!-- end custom comments scripts -->
 
 
 

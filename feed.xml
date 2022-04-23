@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2022-02-26T23:30:12+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[影集] Apple TV-基地 Foundation</title><link href="https://lankudot.github.io/blog/2022-02-foundation-apple-tv-series-reviews/" rel="alternate" type="text/html" title="[影集] Apple TV-基地 Foundation" /><published>2022-02-22T00:00:00+08:00</published><updated>2022-02-22T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/foundation-apple-tv-series-reviews</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-02-foundation-apple-tv-series-reviews/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2022-02-22-foundation-apple-tv-series-reviews/cover.png&quot; alt=&quot;Cover Image&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2022-04-23T16:14:27+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[筆記] 設定 Android 不要備份 PlayerPrefs</title><link href="https://lankudot.github.io/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/" rel="alternate" type="text/html" title="[筆記] 設定 Android 不要備份 PlayerPrefs" /><published>2022-04-23T00:00:00+08:00</published><updated>2022-04-23T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/prevent-android-from-backing-up-playerprefs-unity</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/">&lt;p&gt;用 Unity 開發 Android 上的遊戲時，如果有用到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PlayerPrefs&lt;/code&gt; 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。&lt;/p&gt;
+
+&lt;h2 id=&quot;關閉-android-自動備份資料&quot;&gt;關閉 Android 自動備份資料&lt;/h2&gt;
+
+&lt;p&gt;如果要關閉 Android 自動備份應用程式的資料，可以在 Unity 的專案中設定。&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;開啟 Project Settings → Player → Publishing Settings → 勾選 Custom Main Manifest &lt;br /&gt;
+  &lt;img src=&quot;/assets/images/blog/2022-04-23-prevent-android-from-backing-up-playerprefs-unity/step1.png&quot; alt=&quot;step 1&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;編輯新增的檔案 Assets/Plugins/Android/AndroidManifest.xml &lt;br /&gt;
+  &lt;img src=&quot;/assets/images/blog/2022-04-23-prevent-android-from-backing-up-playerprefs-unity/step2.png&quot; alt=&quot;step 2&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;application&lt;/code&gt; 標籤中加入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;android.allowBackup&lt;/code&gt; 屬性，並設為 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; &lt;br /&gt;
+  &lt;img src=&quot;/assets/images/blog/2022-04-23-prevent-android-from-backing-up-playerprefs-unity/step3.png&quot; alt=&quot;step 3&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;這樣就完成設定了&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;補充&lt;/strong&gt; 在 Android Developers 的文件中有註明，如果應用程式跑在 Android 12 以上的版本，則這個選項不會影響手機之間的資料轉存，也就是說 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PlayerPrefs&lt;/code&gt; 的資料還是會一起傳過去&lt;/p&gt;
+
+&lt;h2 id=&quot;參考資料&quot;&gt;參考資料&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.android.com/guide/topics/data/autobackup#EnablingAutoBackup&quot;&gt;Enable and disable backup - Android Developers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://forum.unity.com/threads/are-playerprefs-deleted-on-application-uninstall-on-android-device.845989/&quot;&gt;Are PlayerPrefs deleted on application uninstall on Android device? - Unity Forum&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://forum.unity.com/threads/playerprefs-persist-between-installs-on-android.434886/#post-3414613&quot;&gt;PlayerPrefs persist between installs on Android - Unity Forum&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="Unity" /><summary type="html">用 Unity 開發 Android 上的遊戲時，如果有用到 PlayerPrefs 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。</summary></entry><entry><title type="html">[影集] Apple TV-基地 Foundation</title><link href="https://lankudot.github.io/blog/2022-02-foundation-apple-tv-series-reviews/" rel="alternate" type="text/html" title="[影集] Apple TV-基地 Foundation" /><published>2022-02-22T00:00:00+08:00</published><updated>2022-02-22T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/foundation-apple-tv-series-reviews</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-02-foundation-apple-tv-series-reviews/">&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2022-02-22-foundation-apple-tv-series-reviews/cover.png&quot; alt=&quot;Cover Image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;在一個由帝國長久統治銀河的時代中，帝國的主星「川陀」上出現了一名數學教授ー哈里．謝頓。他用「心理史學」預測帝國將在未來衰敗，整個銀河會陷入黑暗時期，人們必須建立一個「基地」來保存科技與文化，以在黑暗時期過後，讓銀河文明能快速恢復。&lt;/p&gt;
 

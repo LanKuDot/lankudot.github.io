@@ -28,4 +28,10 @@ var store = [{
         "tags": ["影集","觀後感"],
         "url": "/blog/2022-02-foundation-apple-tv-series-reviews/",
         "teaser": null
+      },{
+        "title": "[筆記] 設定 Android 不要備份 PlayerPrefs",
+        "excerpt":"用 Unity 開發 Android 上的遊戲時，如果有用到 PlayerPrefs 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。 關閉 Android 自動備份資料 如果要關閉 Android 自動備份應用程式的資料，可以在 Unity 的專案中設定。 開啟 Project Settings → Player → Publishing Settings → 勾選 Custom Main Manifest 編輯新增的檔案 Assets/Plugins/Android/AndroidManifest.xml 在 application 標籤中加入 android.allowBackup 屬性，並設為 false 這樣就完成設定了 補充 在 Android Developers 的文件中有註明，如果應用程式跑在 Android 12 以上的版本，則這個選項不會影響手機之間的資料轉存，也就是說 PlayerPrefs...","categories": ["blog"],
+        "tags": ["筆記","Unity"],
+        "url": "/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/",
+        "teaser": null
       }]
