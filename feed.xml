@@ -1,4 +1,56 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2022-04-23T16:14:27+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[筆記] 設定 Android 不要備份 PlayerPrefs</title><link href="https://lankudot.github.io/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/" rel="alternate" type="text/html" title="[筆記] 設定 Android 不要備份 PlayerPrefs" /><published>2022-04-23T00:00:00+08:00</published><updated>2022-04-23T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/prevent-android-from-backing-up-playerprefs-unity</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/">&lt;p&gt;用 Unity 開發 Android 上的遊戲時，如果有用到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PlayerPrefs&lt;/code&gt; 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://lankudot.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.github.io/" rel="alternate" type="text/html" /><updated>2022-05-14T23:27:40+08:00</updated><id>https://lankudot.github.io/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[C#] 用 interface 模擬多類別繼承</title><link href="https://lankudot.github.io/blog/2022-05-csharp-simulating-multi-class-inheritance/" rel="alternate" type="text/html" title="[C#] 用 interface 模擬多類別繼承" /><published>2022-05-14T00:00:00+08:00</published><updated>2022-05-14T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/csharp-simulating-multi-class-inheritance</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-05-csharp-simulating-multi-class-inheritance/">&lt;p&gt;最近負責的 Unity 專案中，有很多 UI 有返回的按鈕，而這些按鈕也要可以透過程式觸發。如果為每個 UI 撰寫觸發的函式，一但觸發的邏輯改變，修改會是個大工程。如果為了這個小功能撰寫基礎類別，又顯得大才小用，而且 C# 的類別只能同時繼承一個類別，擴充性也不高。但 C# 類別可以繼承多個 interface，所以就思考能不能讓類別繼承 interface 的同時，也能提供功能，就好像是繼承了一個類別。&lt;/p&gt;
+
+&lt;h2 id=&quot;實作&quot;&gt;實作&lt;/h2&gt;
+
+&lt;p&gt;作法是利用 interface 指定對象成員，再配合一個 static 類別來擴充 interface 的函式實作，來讓 interface 看起來也能提供功能。&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;IPressBack&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UnityEvent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onBack&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PressBackCaller&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;PressBack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IPressBack&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;onBack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Invoke&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;主要是在 static 類別上的函式參數用了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;this&lt;/code&gt;，讓 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PressBackCaller.PressBack(IPressBack)&lt;/code&gt; 函式能以 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IPressBack.PressBack()&lt;/code&gt; 的形式呼叫。如此一來，繼承 interface &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IPressBack&lt;/code&gt; 的類別，就會因為 static 類別 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PressBackCaller&lt;/code&gt; 而多了 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PressBack()&lt;/code&gt; 的函式。這種作法稱為「&lt;a href=&quot;https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/extension-methods&quot;&gt;擴充方法（Extension Method）&lt;/a&gt;」。&lt;/p&gt;
+
+&lt;p&gt;使用的感覺如下：&lt;/p&gt;
+
+&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SomeUI&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MonoBehaviour&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IPressBack&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SerializeField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Button&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_backButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UnityEvent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;onBack&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_backButton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;OtherComponent&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MonoBehaviour&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SerializeField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SomeUI&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_someUI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;SomeOperation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;_someUI&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;PressBack&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;優缺點&quot;&gt;優缺點&lt;/h2&gt;
+
+&lt;h3 id=&quot;優點&quot;&gt;優點&lt;/h3&gt;
+
+&lt;p&gt;擴充性高，能針對不同的用途提供對應的功能，而且一個類別能夠繼承多個 interface。彈性也高，如果這個 UI 不需要透過程式來觸發事件的話，就不繼承 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IPressBack&lt;/code&gt; 就好了，就像是在「開關」這個功能。&lt;/p&gt;
+
+&lt;h3 id=&quot;缺點&quot;&gt;缺點&lt;/h3&gt;
+
+&lt;p&gt;因為是繼承自 interface，所以對象成員跟能提供的功能都必需是 public 的。所以在上面的例子裡我只開放按鈕的事件，而不是按鈕本身，除了可以保護按鈕不被修改，而且外部也只需要註冊事件的 callback 就夠了。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="C#" /><category term="Unity" /><category term="筆記" /><summary type="html">最近負責的 Unity 專案中，有很多 UI 有返回的按鈕，而這些按鈕也要可以透過程式觸發。如果為每個 UI 撰寫觸發的函式，一但觸發的邏輯改變，修改會是個大工程。如果為了這個小功能撰寫基礎類別，又顯得大才小用，而且 C# 的類別只能同時繼承一個類別，擴充性也不高。但 C# 類別可以繼承多個 interface，所以就思考能不能讓類別繼承 interface 的同時，也能提供功能，就好像是繼承了一個類別。</summary></entry><entry><title type="html">[筆記] 設定 Android 不要備份 PlayerPrefs</title><link href="https://lankudot.github.io/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/" rel="alternate" type="text/html" title="[筆記] 設定 Android 不要備份 PlayerPrefs" /><published>2022-04-23T00:00:00+08:00</published><updated>2022-04-23T00:00:00+08:00</updated><id>https://lankudot.github.io/blog/prevent-android-from-backing-up-playerprefs-unity</id><content type="html" xml:base="https://lankudot.github.io/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/">&lt;p&gt;用 Unity 開發 Android 上的遊戲時，如果有用到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PlayerPrefs&lt;/code&gt; 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。&lt;/p&gt;
 
 &lt;h2 id=&quot;關閉-android-自動備份資料&quot;&gt;關閉 Android 自動備份資料&lt;/h2&gt;
 

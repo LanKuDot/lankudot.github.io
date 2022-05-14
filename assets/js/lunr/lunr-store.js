@@ -34,4 +34,10 @@ var store = [{
         "tags": ["筆記","Unity"],
         "url": "/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/",
         "teaser": null
+      },{
+        "title": "[C#] 用 interface 模擬多類別繼承",
+        "excerpt":"最近負責的 Unity 專案中，有很多 UI 有返回的按鈕，而這些按鈕也要可以透過程式觸發。如果為每個 UI 撰寫觸發的函式，一但觸發的邏輯改變，修改會是個大工程。如果為了這個小功能撰寫基礎類別，又顯得大才小用，而且 C# 的類別只能同時繼承一個類別，擴充性也不高。但 C# 類別可以繼承多個 interface，所以就思考能不能讓類別繼承 interface 的同時，也能提供功能，就好像是繼承了一個類別。 實作 作法是利用 interface 指定對象成員，再配合一個 static 類別來擴充 interface 的函式實作，來讓 interface 看起來也能提供功能。 public interface IPressBack { public UnityEvent onBack { get; } } public static class PressBackCaller { public static void PressBack(this IPressBack i) { i.onBack.Invoke(); } }...","categories": ["blog"],
+        "tags": ["C#","Unity","筆記"],
+        "url": "/blog/2022-05-csharp-simulating-multi-class-inheritance/",
+        "teaser": null
       }]
