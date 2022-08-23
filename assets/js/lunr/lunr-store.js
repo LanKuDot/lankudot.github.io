@@ -40,4 +40,10 @@ var store = [{
         "tags": ["C#","Unity","筆記"],
         "url": "/blog/2022-05-csharp-simulating-multi-class-inheritance/",
         "teaser": null
+      },{
+        "title": "[筆記] 利用 Attribute 為繼承類別給與不同的 Static 成員值",
+        "excerpt":"在專案開發上遇到這樣的問題：每個繼承類別要提供類似的 static 函式，功能差不多，但只有要取用的值不一樣。就在想能不能把 static 函式拉到基礎類別上，但又可以依照繼承類別給與不同的 static 成員值。 如果把 static 函式放在繼承類別上，就得每個繼承類別寫類似的函式。如果把 static 函式放在基礎類別，又不能在基礎類別上取得繼承類別的 static 成員值，因為 static 函式不能宣告為 abstract 或是 virtual，所以基礎類別無法知道繼承類別有那個 static 成員。最後想到的方法是透過 attribute 配合 reflection 來取得繼承類別上的不同 static 成員值。 實作 在專案中，每個 Unity 場景都有一個啟動的程式碼，程式碼會提供對應的場景名稱。在場景載入後，就要執行這個程式碼。所以載入場景跟執行啟動程式碼的功能放在基礎類別上，而對應的場景名稱就在繼承類別上指定。 首先建立一個 attribute 類別用來儲存場景名稱的資訊，並限制 TargetSceneAttribute 只能用在類別上： [AttributeUsage(AttributeTargets.Class)] public class TargetSceneAttribute : Attribute { public readonly string SceneName; public TargetSceneAttribute(string sceneName)...","categories": ["blog"],
+        "tags": ["C#","Unity","筆記"],
+        "url": "/blog/2022-08-csharp-use-attribute-to-provide-varient-static-member/",
+        "teaser": null
       }]
