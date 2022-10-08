@@ -46,4 +46,10 @@ var store = [{
         "tags": ["C#","Unity","筆記"],
         "url": "/blog/2022-08-csharp-use-attribute-to-provide-varient-static-member/",
         "teaser": null
+      },{
+        "title": "[筆記] Unity 2021 LTS - C# 9.0 的新語法",
+        "excerpt":"Unity 2021 LTS 也出來好一陣子了，在 2021.2 版後就開始導入 C# 9.0。使用了半年後，發覺 C# 9.0 當中新增的語法可以讓程式碼更加簡潔易讀，整理成本篇來介紹個人常用的語法。 C# 9.0 的支援 Unity 2021 LTS 並非完全支援 C# 9.0 的語法[1]，只有其中一部份可以使用，而如果要使用下面介紹的 init-only setter 跟 record 類型的話，則要再自行新增一個程式碼，檔名我會命名為 IsExternalInit.cs： namespace System.Runtime.CompilerServices { public class IsExternalInit { } } 否則會出現編譯錯誤： error CS0518: Predefined type 'System.Runtime.CompilerServices.IsExternalInit' is not defined or imported 這是因為 Unity 是使用...","categories": ["blog"],
+        "tags": ["C#","Unity","筆記"],
+        "url": "/blog/2022-10-csharp-9-in-unity-2021/",
+        "teaser": null
       }]
