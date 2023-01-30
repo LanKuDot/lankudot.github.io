@@ -1,0 +1,759 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="zh" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[筆記] 重構專案中的古老元件 | 烏龜漫遊 2.0</title>
+<meta name="description" content="在最近參與的遊戲專案中，我負責重新撰寫經過時間累積、充滿不同想法的核心元件。隨處可見複製的程式碼，元件之間交互使用，亦或是為了加新功能而繞路。可以看出每個新功能為了不影響之前的功能，正維持著微妙的平衡。對於負責重寫元件的我來說就好像是在茂密的遠古森林裡一路披荊斬棘，充滿挑戰。就想寫來記錄過程和心得。">
+
+
+  <meta name="author" content="烏龜">
+  
+  <meta property="article:author" content="烏龜">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="烏龜漫遊 2.0">
+<meta property="og:title" content="[筆記] 重構專案中的古老元件">
+<meta property="og:url" content="https://lankudot.airfishlab.com/blog/2023-01-refactor-legacy-component-in-project/">
+
+
+  <meta property="og:description" content="在最近參與的遊戲專案中，我負責重新撰寫經過時間累積、充滿不同想法的核心元件。隨處可見複製的程式碼，元件之間交互使用，亦或是為了加新功能而繞路。可以看出每個新功能為了不影響之前的功能，正維持著微妙的平衡。對於負責重寫元件的我來說就好像是在茂密的遠古森林裡一路披荊斬棘，充滿挑戰。就想寫來記錄過程和心得。">
+
+
+
+  <meta property="og:image" content="https://lankudot.airfishlab.com/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/refactor-is-like.jpg">
+
+
+
+  <meta name="twitter:site" content="@LanKuDot">
+  <meta name="twitter:title" content="[筆記] 重構專案中的古老元件">
+  <meta name="twitter:description" content="在最近參與的遊戲專案中，我負責重新撰寫經過時間累積、充滿不同想法的核心元件。隨處可見複製的程式碼，元件之間交互使用，亦或是為了加新功能而繞路。可以看出每個新功能為了不影響之前的功能，正維持著微妙的平衡。對於負責重寫元件的我來說就好像是在茂密的遠古森林裡一路披荊斬棘，充滿挑戰。就想寫來記錄過程和心得。">
+  <meta name="twitter:url" content="https://lankudot.airfishlab.com/blog/2023-01-refactor-legacy-component-in-project/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://lankudot.airfishlab.com/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/refactor-is-like.jpg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2023-01-30T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://lankudot.airfishlab.com/blog/2023-01-refactor-legacy-component-in-project/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "LanKuDot",
+      "url": "https://lankudot.airfishlab.com/",
+      "sameAs": ["https://twitter.com/LanKuDot"]
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="烏龜漫遊 2.0 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+</style>
+
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">轉至主導航欄</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">轉至内容</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">轉至頁脚</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          烏龜漫遊 2.0
+          <span class="site-subtitle">遊戲、程式、心得</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/blog/">部落格</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切換選單</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://lankudot.airfishlab.com/">
+        <img src="/assets/images/bio-photo.jpg" alt="烏龜" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://lankudot.airfishlab.com/" itemprop="url">烏龜</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>喜歡玩與作遊戲的工程師，對 shader 領域充滿好奇。喜歡爵士樂、反烏托邦小說與電影</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">追蹤</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Taiwan</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:kyle.li@airfishlab.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-youtube" aria-hidden="true"></i><span class="label">Youtube</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/LanKuDot" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/LanKuDot" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://assetstore.unity.com/publishers/52019" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-unity" aria-hidden="true"></i><span class="label">Unity</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[筆記] 重構專案中的古老元件">
+    <meta itemprop="description" content="在最近參與的遊戲專案中，我負責重新撰寫經過時間累積、充滿不同想法的核心元件。隨處可見複製的程式碼，元件之間交互使用，亦或是為了加新功能而繞路。可以看出每個新功能為了不影響之前的功能，正維持著微妙的平衡。對於負責重寫元件的我來說就好像是在茂密的遠古森林裡一路披荊斬棘，充滿挑戰。就想寫來記錄過程和心得。">
+    <meta itemprop="datePublished" content="2023-01-30T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://lankudot.airfishlab.com/blog/2023-01-refactor-legacy-component-in-project/" class="u-url" itemprop="url">[筆記] 重構專案中的古老元件
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-01-30T00:00:00+08:00">January 30, 2023</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 本頁</h4></header>
+              <ul class="toc__menu"><li><a href="#理解需求">理解需求</a><ul><li><a href="#找出運作流程">找出運作流程</a></li><li><a href="#理解程式碼">理解程式碼</a></li></ul></li><li><a href="#重新設計">重新設計</a><ul><li><a href="#單向相依性">單向相依性</a></li><li><a href="#只負責一件事">只負責一件事</a></li><li><a href="#只開放需要的功能">只開放需要的功能</a></li></ul></li><li><a href="#實做新架構">實做新架構</a></li><li><a href="#總結">總結</a></li><li><a href="#後記">後記</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p>在最近參與的遊戲專案中，我負責重新撰寫經過時間累積、充滿不同想法的核心元件。隨處可見複製的程式碼，元件之間交互使用，亦或是為了加新功能而繞路。可以看出每個新功能為了不影響之前的功能，正維持著微妙的平衡。對於負責重寫元件的我來說就好像是在茂密的遠古森林裡一路披荊斬棘，充滿挑戰。就想寫來記錄過程和心得。</p>
+
+<p><img src="/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/refactor-is-like.jpg" alt="refactor-is-like" />
+<em>重構元件大概是這樣的感覺吧</em></p>
+
+<h2 id="理解需求">理解需求</h2>
+
+<p>要作重構還是要回歸需求，<strong>知道這些元件或這個功能的目的是什麼</strong>，這樣在重新設計時比較容易掌握方向。不過萬事起頭難，這也是最痛苦的階段，尤其是靈力不足以通靈出程式的想法的時候。</p>
+
+<p>如果有文件或是之前的開發者還在的話是最好，就可以快速理解它們的作用，找到切入點。但通常不會那麼美好，可能因為趕時限沒時間作文件，或是之前的開發者不在了。這時候就只能自己看程式碼通靈了。</p>
+
+<h3 id="找出運作流程">找出運作流程</h3>
+
+<p>我會先找出元件在運作流程中的位置，利用 debug 大法先看事件是如何發生。例如想知道攻擊演出是怎麼播放的，就在覺得可能發生的地方插入 <code class="language-plaintext highlighter-rouge">Debug.Log</code>，當演出時就可以知道那個地方有沒有被呼叫到。而且 Unity 的 <code class="language-plaintext highlighter-rouge">Debug.Log</code> 也會包含 call stack，可以知道發生的起點。</p>
+
+<p><img src="/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/unity-debug-message.JPG" alt="unity-debug-message" /></p>
+
+<p>有 call stack 的幫助，可以知道要重構的元件在流程中的位置，與牽涉的哪些元件，例如演出播放會跟素材載入的元件有關，而發起演出請求的元件有哪些等。如果遇到非同步的程式碼就會麻煩一點，得要找出哪裡呼叫到斷點，再從斷點另一頭開始找。有這些資訊就可以拉出這次重構的界線要到哪裡，因為當牽涉到的元件很多時，一次改動太多東西反而不好掌握。</p>
+
+<p><img src="/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/old-structure.jpg" alt="old-structure" />
+<em>原本的問題是類型 B 的特效生成與管理跟類型 A 完全不同，想見類型 B 的特效是後來新增的</em></p>
+
+<h3 id="理解程式碼">理解程式碼</h3>
+
+<p>即使有文件或是有人可以問，要到能有修改想法前，還是得實際看程式碼，<del>痛苦的開始</del>。在拉出重構界線後，就去看目標元件內的功能是如何運作的，重點在於理解需求，也就是它是為了作什麼事情而存在。最好是能抓出元件內每個功能的作用，還有偷偷幫你做的功能，例如是在意料之外的地方做到不會重複播放特效的功能。這樣在重新設計時會有比較好的藍圖。</p>
+
+<p><img src="/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/old-structure-functions.jpg" alt="old-structure-functions" />
+<em>找出舊架構每個元件的功能和用途，紅色是有問題的使用方式</em></p>
+
+<p>在理解程式碼的過程中，也會發現原本的功能有什麼問題。例如生成的特效物件沒有統一管理、使用的資料結構有效能問題等。當然在重新設計時，也得一併考慮解決這些問題。</p>
+
+<p><img src="/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/reading-legacy-code.jpg" alt="reading-legacy-code" /></p>
+
+<h2 id="重新設計">重新設計</h2>
+
+<p>有時候在理解功能的時候，也會有想法冒出來，所以不會等完全理解完才開始重新設計。有想法時先設計新的架構大致要長什麼樣，漸漸體悟出功能後，再逐步更新設計。</p>
+
+<p><img src="/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/redesign-structure.jpg" alt="redesign-structure" /></p>
+
+<p>重新設計是規劃元件之間要如何互動，要提供什麼樣的功能給其它元件使用，目標是讓程式能直覺好讀與方便後續維護。我習慣的設計方向如下：</p>
+
+<h3 id="單向相依性">單向相依性</h3>
+
+<p>同一個系統中，元件之間的相依性是單向的。也就是不會繞過使用的元件，再去取用後面的元件，或是元件之間的相依性不該有迴圈，這很常出現在那個元件是 static 的情況下。這樣在後續追縱程式碼時，路徑會比較單純。</p>
+
+<p><img src="/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/keep-single-reference-direction.jpg" alt="keep-single-reference-direction" />
+<em>以專案的例子來說，應該要把類型 B 的特效管理元件合併進來</em></p>
+
+<h3 id="只負責一件事">只負責一件事</h3>
+
+<p>每個元件只負責一件事。如果規劃出來的元件作的事情太多，就可以考慮將它切出來作成另一個元件。好處是命名更容易，可以直覺知道這個元件負責的功能。但也不用為了一個小功能而切出新元件，反而會使程式更複雜。通常在實作時會意識到這個元件太大或太小，在規劃階段不用一直考慮切的好不好。</p>
+
+<p><img src="/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/one-component-one-job.jpg" alt="one-component-one-job" />
+<em>每個元件專心做它負責的事就好</em></p>
+
+<p><img src="/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/seperate-large-component.jpg" alt="seperate-large-component" />
+<em>像共用跟個別使用的特效的管理方式不同，就分出次元件來，EffectManager 再依照請求的特效決定（透過 flag 之類的）從哪邊取資料，EffectUser 不用管這件事</em></p>
+
+<h3 id="只開放需要的功能">只開放需要的功能</h3>
+
+<p>元件之間能看到的功能是有限的，也就是作抽象化。元件只開放需要的功能給外部，讓外部要求元件去做事，而不是把元件的資料拿出來做事，或是操作元件內的流程。這樣實際運作的地方會集中在元件內，如果出現問題，也容易找到出問題的地方。如果要修改功能也不會牽一髮而動全身，只需要在元件內修改，而不影響使用這個功能的其它元件。</p>
+
+<p><img src="/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/only-expose-necessary-functions.jpg" alt="only-expose-necessary-functions" />
+<em>限制元件能看到的功能的話，假如 EffectManager 要改用不同的流程來管理特效元件，就只要改那個元件，其它元件不會有感覺的</em></p>
+
+<h2 id="實做新架構">實做新架構</h2>
+
+<p>在設計好重構的藍圖後，再來就是決定先從哪邊下手。先從改動比較小的部份開始修改，再來是修改有關連的元件，例如要實作的功能，需要其它元件先提供對應的功能，最後是重構目標元件。所以在重新設計階段時，就可以先列出修改任務了，而且比較好掌握有哪些任務要先做，哪些有相依性。重構目標元件的任務可能會很大，像是包含設計資料結構、資源的運作流程、有多個功能要提供等，就要再把任務細分成子任務了。</p>
+
+<p><img src="/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/seperate-the-task.jpg" alt="seperate-the-task" /></p>
+
+<p>如果要改動的部份很大的話或是要重寫的話，我會先保留原本的元件或功能，然後直接寫新的功能，再逐步替換上去，最後取代舊有的元件。另外我也會保留沒有問題的 API 的使用方式，因為只有後面做的事情有改，所以不影響外面的元件。每個新功能完成後，就測試行為是不是跟原來的功能一樣，如果有搭配版控，可以方便的在新舊功能間切換。</p>
+
+<p>因為最後還是要看實作去調整架構，所以在前面的設計階段並不用設計得太完整，有主要的架構出來就可以開始實作了。再依照每個元件的功能需求個別設計。</p>
+
+<h2 id="總結">總結</h2>
+
+<p>這次在專案中重構元件的過程可以整理成下圖的樣子，其實每個階段不會只做那個階段的事情，也會牽涉到其它階段。</p>
+
+<p><img src="/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/refactor-progress.jpg" alt="refactor-progress" /></p>
+
+<p>此外有筆記的好處是，在重構完成後，可以幫助撰寫文件。像是運作流程、元件關係等，這些要回顧程式碼的資訊，如果在製作過程中一邊記錄的話，會大大減少整理文件的時間。</p>
+
+<h2 id="後記">後記</h2>
+
+<p>這次重構比較大的失誤是，我發現目標元件有兩個功能是比較特別的，所以就沒有詳細看它們是怎麼運作的，等做好其它功能後，回來處理。結果沒想到那兩個功能就是那麼特別，給了已經設計好的資料結構跟流程重重一拳，花了好一陣子才修改完成。當初就應該意識到這兩個功能會很難處理，不然在舊的程式碼中也不會繞過原本的架構去達成了。</p>
+
+<p>另外要隨時做筆記，記錄設計想法還有要修改的元件，在下個階段才不會漏掉。我因為少記了一些要改的功能，結果在開始實作後，發現要先去改其它元件，錯估了任務的數量，造成時程預估要更長了。</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 標籤: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#%E7%AD%86%E8%A8%98" class="page__taxonomy-item p-category" rel="tag">筆記</a><span class="sep">, </span>
+    
+      <a href="/tags/#%E9%9B%9C%E8%AB%87" class="page__taxonomy-item p-category" rel="tag">雜談</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 分類: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#blog" class="page__taxonomy-item p-category" rel="tag">blog</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新時間:</strong> <time class="dt-published" datetime="2023-01-30T00:00:00+08:00">January 30, 2023</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">分享到</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?via=LanKuDot&text=%5B%E7%AD%86%E8%A8%98%5D+%E9%87%8D%E6%A7%8B%E5%B0%88%E6%A1%88%E4%B8%AD%E7%9A%84%E5%8F%A4%E8%80%81%E5%85%83%E4%BB%B6%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2023-01-refactor-legacy-component-in-project%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2023-01-refactor-legacy-component-in-project%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2023-01-refactor-legacy-component-in-project%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/blog/2023-01-this-is-sengoku-period/" class="pagination--pager" title="[閱讀] 日本戰國這樣讀
+">前一頁</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">後一頁</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <script src="https://giscus.app/client.js"
+        data-repo="LanKuDot/lankudot.github.io"
+        data-repo-id="R_kgDOGYHitw"
+        data-category="Page comments"
+        data-category-id="DIC_kwDOGYHit84B_-lB"
+        data-mapping="title"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  
+</div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">猜您有與趣</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2023-01-08-this-is-sengoku-period/cover-image.JPG" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2023-01-this-is-sengoku-period/" rel="permalink">[閱讀] 日本戰國這樣讀
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-01-08T00:00:00+08:00">January 8, 2023</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">在接觸戰國題材的遊戲後，就一直很想要認識日本戰國時期的歷史，在朋友的推薦下，選擇《日本戰國這樣讀》作為入門。
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2022-10-csharp-9-in-unity-2021/" rel="permalink">[筆記] Unity 2021 LTS - C# 9.0 的新語法
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-10-08T00:00:00+08:00">October 8, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Unity 2021 LTS 也出來好一陣子了，在 2021.2 版後就開始導入 C# 9.0。使用了半年後，發覺 C# 9.0 當中新增的語法可以讓程式碼更加簡潔易讀，整理成本篇來介紹個人常用的語法。
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2022-08-csharp-use-attribute-to-provide-varient-static-member/" rel="permalink">[筆記] 利用 Attribute 為繼承類別給與不同的 Static 成員值
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-08-23T00:00:00+08:00">August 23, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">在專案開發上遇到這樣的問題：每個繼承類別要提供類似的 static 函式，功能差不多，但只有要取用的值不一樣。就在想能不能把 static 函式拉到基礎類別上，但又可以依照繼承類別給與不同的 static 成員值。
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2022-05-csharp-simulating-multi-class-inheritance/" rel="permalink">[C#] 用 interface 模擬多類別繼承
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-05-14T00:00:00+08:00">May 14, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">最近負責的 Unity 專案中，有很多 UI 有返回的按鈕，而這些按鈕也要可以透過程式觸發。如果為每個 UI 撰寫觸發的函式，一但觸發的邏輯改變，修改會是個大工程。如果為了這個小功能撰寫基礎類別，又顯得大才小用，而且 C# 的類別只能同時繼承一個類別，擴充性也不高。但 C# 類別可以繼承多個 interface，...</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <div class="page__footer-cc4-0">
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
+    本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">創用 CC 姓名標示 4.0 國際 授權條款</a>授權
+</div>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>追蹤:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/LanKuDot" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/LanKuDot" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://assetstore.unity.com/publishers/52019" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-unity" aria-hidden="true"></i> Unity</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> RSS Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 烏龜. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VXPNSTXB5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VXPNSTXB5L', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+    <!-- start custom comments scripts -->
+
+<!-- end custom comments scripts -->
+
+
+
+
+
+
+  </body>
+</html>

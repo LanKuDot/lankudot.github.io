@@ -1,4 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2023-01-08T21:09:19+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[閱讀] 日本戰國這樣讀</title><link href="https://lankudot.airfishlab.com/blog/2023-01-this-is-sengoku-period/" rel="alternate" type="text/html" title="[閱讀] 日本戰國這樣讀" /><published>2023-01-08T00:00:00+08:00</published><updated>2023-01-08T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/this-is-sengoku-period</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-01-this-is-sengoku-period/">&lt;p&gt;在接觸戰國題材的遊戲後，就一直很想要認識日本戰國時期的歷史，在朋友的推薦下，選擇《日本戰國這樣讀》作為入門。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2023-01-30T22:13:20+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[筆記] 重構專案中的古老元件</title><link href="https://lankudot.airfishlab.com/blog/2023-01-refactor-legacy-component-in-project/" rel="alternate" type="text/html" title="[筆記] 重構專案中的古老元件" /><published>2023-01-30T00:00:00+08:00</published><updated>2023-01-30T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-legacy-component-in-project</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-01-refactor-legacy-component-in-project/">&lt;p&gt;在最近參與的遊戲專案中，我負責重新撰寫經過時間累積、充滿不同想法的核心元件。隨處可見複製的程式碼，元件之間交互使用，亦或是為了加新功能而繞路。可以看出每個新功能為了不影響之前的功能，正維持著微妙的平衡。對於負責重寫元件的我來說就好像是在茂密的遠古森林裡一路披荊斬棘，充滿挑戰。就想寫來記錄過程和心得。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/refactor-is-like.jpg&quot; alt=&quot;refactor-is-like&quot; /&gt;
+&lt;em&gt;重構元件大概是這樣的感覺吧&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;理解需求&quot;&gt;理解需求&lt;/h2&gt;
+
+&lt;p&gt;要作重構還是要回歸需求，&lt;strong&gt;知道這些元件或這個功能的目的是什麼&lt;/strong&gt;，這樣在重新設計時比較容易掌握方向。不過萬事起頭難，這也是最痛苦的階段，尤其是靈力不足以通靈出程式的想法的時候。&lt;/p&gt;
+
+&lt;p&gt;如果有文件或是之前的開發者還在的話是最好，就可以快速理解它們的作用，找到切入點。但通常不會那麼美好，可能因為趕時限沒時間作文件，或是之前的開發者不在了。這時候就只能自己看程式碼通靈了。&lt;/p&gt;
+
+&lt;h3 id=&quot;找出運作流程&quot;&gt;找出運作流程&lt;/h3&gt;
+
+&lt;p&gt;我會先找出元件在運作流程中的位置，利用 debug 大法先看事件是如何發生。例如想知道攻擊演出是怎麼播放的，就在覺得可能發生的地方插入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Debug.Log&lt;/code&gt;，當演出時就可以知道那個地方有沒有被呼叫到。而且 Unity 的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Debug.Log&lt;/code&gt; 也會包含 call stack，可以知道發生的起點。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/unity-debug-message.JPG&quot; alt=&quot;unity-debug-message&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;有 call stack 的幫助，可以知道要重構的元件在流程中的位置，與牽涉的哪些元件，例如演出播放會跟素材載入的元件有關，而發起演出請求的元件有哪些等。如果遇到非同步的程式碼就會麻煩一點，得要找出哪裡呼叫到斷點，再從斷點另一頭開始找。有這些資訊就可以拉出這次重構的界線要到哪裡，因為當牽涉到的元件很多時，一次改動太多東西反而不好掌握。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/old-structure.jpg&quot; alt=&quot;old-structure&quot; /&gt;
+&lt;em&gt;原本的問題是類型 B 的特效生成與管理跟類型 A 完全不同，想見類型 B 的特效是後來新增的&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;理解程式碼&quot;&gt;理解程式碼&lt;/h3&gt;
+
+&lt;p&gt;即使有文件或是有人可以問，要到能有修改想法前，還是得實際看程式碼，&lt;del&gt;痛苦的開始&lt;/del&gt;。在拉出重構界線後，就去看目標元件內的功能是如何運作的，重點在於理解需求，也就是它是為了作什麼事情而存在。最好是能抓出元件內每個功能的作用，還有偷偷幫你做的功能，例如是在意料之外的地方做到不會重複播放特效的功能。這樣在重新設計時會有比較好的藍圖。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/old-structure-functions.jpg&quot; alt=&quot;old-structure-functions&quot; /&gt;
+&lt;em&gt;找出舊架構每個元件的功能和用途，紅色是有問題的使用方式&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;在理解程式碼的過程中，也會發現原本的功能有什麼問題。例如生成的特效物件沒有統一管理、使用的資料結構有效能問題等。當然在重新設計時，也得一併考慮解決這些問題。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/reading-legacy-code.jpg&quot; alt=&quot;reading-legacy-code&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;重新設計&quot;&gt;重新設計&lt;/h2&gt;
+
+&lt;p&gt;有時候在理解功能的時候，也會有想法冒出來，所以不會等完全理解完才開始重新設計。有想法時先設計新的架構大致要長什麼樣，漸漸體悟出功能後，再逐步更新設計。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/redesign-structure.jpg&quot; alt=&quot;redesign-structure&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;重新設計是規劃元件之間要如何互動，要提供什麼樣的功能給其它元件使用，目標是讓程式能直覺好讀與方便後續維護。我習慣的設計方向如下：&lt;/p&gt;
+
+&lt;h3 id=&quot;單向相依性&quot;&gt;單向相依性&lt;/h3&gt;
+
+&lt;p&gt;同一個系統中，元件之間的相依性是單向的。也就是不會繞過使用的元件，再去取用後面的元件，或是元件之間的相依性不該有迴圈，這很常出現在那個元件是 static 的情況下。這樣在後續追縱程式碼時，路徑會比較單純。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/keep-single-reference-direction.jpg&quot; alt=&quot;keep-single-reference-direction&quot; /&gt;
+&lt;em&gt;以專案的例子來說，應該要把類型 B 的特效管理元件合併進來&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;只負責一件事&quot;&gt;只負責一件事&lt;/h3&gt;
+
+&lt;p&gt;每個元件只負責一件事。如果規劃出來的元件作的事情太多，就可以考慮將它切出來作成另一個元件。好處是命名更容易，可以直覺知道這個元件負責的功能。但也不用為了一個小功能而切出新元件，反而會使程式更複雜。通常在實作時會意識到這個元件太大或太小，在規劃階段不用一直考慮切的好不好。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/one-component-one-job.jpg&quot; alt=&quot;one-component-one-job&quot; /&gt;
+&lt;em&gt;每個元件專心做它負責的事就好&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/seperate-large-component.jpg&quot; alt=&quot;seperate-large-component&quot; /&gt;
+&lt;em&gt;像共用跟個別使用的特效的管理方式不同，就分出次元件來，EffectManager 再依照請求的特效決定（透過 flag 之類的）從哪邊取資料，EffectUser 不用管這件事&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;只開放需要的功能&quot;&gt;只開放需要的功能&lt;/h3&gt;
+
+&lt;p&gt;元件之間能看到的功能是有限的，也就是作抽象化。元件只開放需要的功能給外部，讓外部要求元件去做事，而不是把元件的資料拿出來做事，或是操作元件內的流程。這樣實際運作的地方會集中在元件內，如果出現問題，也容易找到出問題的地方。如果要修改功能也不會牽一髮而動全身，只需要在元件內修改，而不影響使用這個功能的其它元件。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/only-expose-necessary-functions.jpg&quot; alt=&quot;only-expose-necessary-functions&quot; /&gt;
+&lt;em&gt;限制元件能看到的功能的話，假如 EffectManager 要改用不同的流程來管理特效元件，就只要改那個元件，其它元件不會有感覺的&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;實做新架構&quot;&gt;實做新架構&lt;/h2&gt;
+
+&lt;p&gt;在設計好重構的藍圖後，再來就是決定先從哪邊下手。先從改動比較小的部份開始修改，再來是修改有關連的元件，例如要實作的功能，需要其它元件先提供對應的功能，最後是重構目標元件。所以在重新設計階段時，就可以先列出修改任務了，而且比較好掌握有哪些任務要先做，哪些有相依性。重構目標元件的任務可能會很大，像是包含設計資料結構、資源的運作流程、有多個功能要提供等，就要再把任務細分成子任務了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/seperate-the-task.jpg&quot; alt=&quot;seperate-the-task&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果要改動的部份很大的話或是要重寫的話，我會先保留原本的元件或功能，然後直接寫新的功能，再逐步替換上去，最後取代舊有的元件。另外我也會保留沒有問題的 API 的使用方式，因為只有後面做的事情有改，所以不影響外面的元件。每個新功能完成後，就測試行為是不是跟原來的功能一樣，如果有搭配版控，可以方便的在新舊功能間切換。&lt;/p&gt;
+
+&lt;p&gt;因為最後還是要看實作去調整架構，所以在前面的設計階段並不用設計得太完整，有主要的架構出來就可以開始實作了。再依照每個元件的功能需求個別設計。&lt;/p&gt;
+
+&lt;h2 id=&quot;總結&quot;&gt;總結&lt;/h2&gt;
+
+&lt;p&gt;這次在專案中重構元件的過程可以整理成下圖的樣子，其實每個階段不會只做那個階段的事情，也會牽涉到其它階段。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/refactor-progress.jpg&quot; alt=&quot;refactor-progress&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;此外有筆記的好處是，在重構完成後，可以幫助撰寫文件。像是運作流程、元件關係等，這些要回顧程式碼的資訊，如果在製作過程中一邊記錄的話，會大大減少整理文件的時間。&lt;/p&gt;
+
+&lt;h2 id=&quot;後記&quot;&gt;後記&lt;/h2&gt;
+
+&lt;p&gt;這次重構比較大的失誤是，我發現目標元件有兩個功能是比較特別的，所以就沒有詳細看它們是怎麼運作的，等做好其它功能後，回來處理。結果沒想到那兩個功能就是那麼特別，給了已經設計好的資料結構跟流程重重一拳，花了好一陣子才修改完成。當初就應該意識到這兩個功能會很難處理，不然在舊的程式碼中也不會繞過原本的架構去達成了。&lt;/p&gt;
+
+&lt;p&gt;另外要隨時做筆記，記錄設計想法還有要修改的元件，在下個階段才不會漏掉。我因為少記了一些要改的功能，結果在開始實作後，發現要先去改其它元件，錯估了任務的數量，造成時程預估要更長了。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="雜談" /><summary type="html">在最近參與的遊戲專案中，我負責重新撰寫經過時間累積、充滿不同想法的核心元件。隨處可見複製的程式碼，元件之間交互使用，亦或是為了加新功能而繞路。可以看出每個新功能為了不影響之前的功能，正維持著微妙的平衡。對於負責重寫元件的我來說就好像是在茂密的遠古森林裡一路披荊斬棘，充滿挑戰。就想寫來記錄過程和心得。</summary></entry><entry><title type="html">[閱讀] 日本戰國這樣讀</title><link href="https://lankudot.airfishlab.com/blog/2023-01-this-is-sengoku-period/" rel="alternate" type="text/html" title="[閱讀] 日本戰國這樣讀" /><published>2023-01-08T00:00:00+08:00</published><updated>2023-01-08T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/this-is-sengoku-period</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-01-this-is-sengoku-period/">&lt;p&gt;在接觸戰國題材的遊戲後，就一直很想要認識日本戰國時期的歷史，在朋友的推薦下，選擇《日本戰國這樣讀》作為入門。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-08-this-is-sengoku-period/cover-image.JPG&quot; alt=&quot;cover-image&quot; /&gt;&lt;/p&gt;
 
@@ -1209,234 +1296,4 @@
   &lt;li&gt;&lt;a href=&quot;https://boshiamy.com/tutorial_beginner.php?page=3&quot;&gt;基礎字根表&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://boshiamy.com/tutorial_advance.php?page=1&quot;&gt;簡速字根表&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://boshiamy.com/tutorial_advance.php?page=2&quot;&gt;二碼字分類&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="心得" /><summary type="html">在受不了輸入法神奇的選字跟換了沒有方向鍵的 60% 鍵盤的因素下，決定學習新的輸入法，享受不用選字的爽感。在以字形為主的輸入法中，最後選擇嘸蝦米，這篇分享學習方法與使用半年的心得。</summary></entry><entry><title type="html">[筆記] 避免 Boxing/Unboxing 效能問題</title><link href="https://lankudot.airfishlab.com/blog/2021-12-csharp-boxing-and-unboxing/" rel="alternate" type="text/html" title="[筆記] 避免 Boxing/Unboxing 效能問題" /><published>2021-12-01T00:00:00+08:00</published><updated>2021-12-01T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/csharp-boxing-and-unboxing</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2021-12-csharp-boxing-and-unboxing/">&lt;p&gt;之前在撰寫 Unity 套件的時候，因為不知道使用者會用什麼類別來傳資料，所以都轉成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; 型別來傳遞，後來發現這會有效能上的問題。本篇文章就來探討這個問題以及解法。&lt;/p&gt;
-
-&lt;h2 id=&quot;問題&quot;&gt;問題&lt;/h2&gt;
-
-&lt;p&gt;根據&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing&quot;&gt;官方文件&lt;/a&gt;，在 value type（如：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; 等）與 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; type 之間轉換會有效能問題：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;如果將一個 value type 轉成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; type 的話，C# 會額外在 heap 建立一個 instance 來儲存 value type 的值。這稱為 &lt;strong&gt;boxing&lt;/strong&gt;。&lt;/li&gt;
-  &lt;li&gt;反之將 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; type 轉回 value type 的話，C# 會先檢查該 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; 存的值（boxed value）是否可以轉到指定的 value type，然後將值複製回 value type。這稱為 &lt;strong&gt;unboxing&lt;/strong&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;如下圖（參考官方文件繪製）：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2021-12-01-csharp-boxing-and-unboxing/boxing-unboxing.png&quot; alt=&quot;boxing-unboxing&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;再依&lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/framework/performance/performance-tips#boxing-and-unboxing&quot;&gt;這篇官方文件&lt;/a&gt;，boxing 比直接的 reference 賦值 &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; 最多差 20 倍的效能，unboxing 則最多差 4 倍。&lt;/p&gt;
-
-&lt;h2 id=&quot;解法&quot;&gt;解法&lt;/h2&gt;
-
-&lt;p&gt;避免這種情況的解法是：建立一個資料類別來包裝要傳的值，並用這個類別的物件來傳遞。&lt;/p&gt;
-
-&lt;h3 id=&quot;傳送方&quot;&gt;傳送方&lt;/h3&gt;
-
-&lt;p&gt;第一個類別 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ContentBankA&lt;/code&gt; 會直接將 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt; 轉成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; type 傳出去，這會有 boxing 的情況發生：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ContentBankA&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MonoBehaviour&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;readonly&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_contents&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GetContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;第二個類別 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ContentBankB&lt;/code&gt; 則是將 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt; 先包在類別 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DataWrapper&lt;/code&gt; 裡再傳出去：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ContentBankB&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MonoBehaviour&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;readonly&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_contents&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DataWrapper&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_dataWrapper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Awake&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;_dataWrapper&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;DataWrapper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GetContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;_dataWrapper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_dataWrapper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DataWrapper&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;取用方&quot;&gt;取用方&lt;/h3&gt;
-
-&lt;p&gt;取用方也會依照傳送方使用對應的方式。第一個是類別是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ContentDisplayerA&lt;/code&gt;，它會直接將 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; type 轉回 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt;，這會有 unboxing 的情況發生：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ContentDisplayerA&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MonoBehaviour&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SerializeField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ContentBankA&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_contentBank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;LoadContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;_content&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-            &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_contentBank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;第二個類別 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ContentDisplayerB&lt;/code&gt; 則是從收到的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DataWrapper&lt;/code&gt; 物件中取值：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ContentDisplayerB&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MonoBehaviour&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SerializeField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ContentBankB&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_contentBank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;LoadContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;_content&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; 
-            &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DataWrapper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_contentBank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))).&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;效能測試&quot;&gt;效能測試&lt;/h2&gt;
-
-&lt;h3 id=&quot;測試類別&quot;&gt;測試類別&lt;/h3&gt;
-
-&lt;p&gt;建立一個測試類別來分別執行這兩個類別數次：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TesterA&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MonoBehaviour&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SerializeField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ContentDisplayerA&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_contentDisplayer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_loadTimes&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_testIteration&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;totalTicks&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stopWatch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Stopwatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_testIteration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;stopWatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Restart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_loadTimes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;_contentDisplayer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;LoadContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;stopWatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Stop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-            &lt;span class=&quot;n&quot;&gt;totalTicks&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stopWatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ElapsedTicks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-        &lt;span class=&quot;n&quot;&gt;Debug&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-            &lt;span class=&quot;s&quot;&gt;$&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;: &quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+&lt;/span&gt;
-            &lt;span class=&quot;s&quot;&gt;$&quot;Average &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;totalTicks&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_testIteration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;F1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; ticks&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;每一個測試會傳送與讀取資料十萬次，用 C# 的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;StopWatch&lt;/code&gt; 來記錄執行時間，執行十次後，取平均做為結果。&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesterB&lt;/code&gt; 與 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesterA&lt;/code&gt; 一樣，只是是取用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ContentDisplayerB&lt;/code&gt;。&lt;/p&gt;
-
-&lt;p&gt;設置起來會像這個樣子：&lt;br /&gt;
-&lt;img src=&quot;/assets/images/blog/2021-12-01-csharp-boxing-and-unboxing/tester-setup.PNG&quot; alt=&quot;Tester setup&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;測試結果&quot;&gt;測試結果&lt;/h3&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesterA&lt;/code&gt; 是有 boxing/unboxing 的，而 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesterB&lt;/code&gt; 是用一個資料類別物件傳的，其結果是：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesterA&lt;/code&gt;: Average 75541.1 ticks&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesterB&lt;/code&gt;: Average 17795.3 ticks&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;可以看到效能約差 4.5 倍。&lt;/p&gt;
-
-&lt;h3 id=&quot;每次都建立資料類別物件&quot;&gt;每次都建立資料類別物件&lt;/h3&gt;
-
-&lt;p&gt;要注意的是，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ContebtBankB&lt;/code&gt; 在使用資料類別傳送資料都是使用同一個物件。如果每次傳送都建立一個物件的話，其實就跟 boxing 的情況沒有兩樣了。如果 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ContentBankB&lt;/code&gt; 長這樣：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ContentBankB&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MonoBehaviour&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;readonly&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_contents&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GetContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dataWrapper&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;DataWrapper&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_contents&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dataWrapper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;DataWrapper&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;結果為：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesterA&lt;/code&gt;: Average 78446.0 ticks&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesterB&lt;/code&gt;: Average 77913.0 ticks&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;接著來測試傳送不同的資料。&lt;/p&gt;
-
-&lt;h3 id=&quot;傳遞-struct&quot;&gt;傳遞 struct&lt;/h3&gt;
-
-&lt;p&gt;struct 是 value type，所以轉換 struct 成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; type 也會遇到 boxing 的問題。例如有個 struct 是這樣：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;struct&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PlayerData&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;則執行結果：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesterA&lt;/code&gt;: Average 108210.3 ticks&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesterB&lt;/code&gt;: Average 38747.1 ticks&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;效能差約 3 倍。&lt;/p&gt;
-
-&lt;h3 id=&quot;傳遞-reference-type&quot;&gt;傳遞 reference type&lt;/h3&gt;
-
-&lt;p&gt;如果傳遞的資料本來就是 reference type 的話，如：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt;、類別等。這邊用一個字串陣列：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;readonly&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_strings&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;a&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;c&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;f&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;結果為：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesterA&lt;/code&gt;: Average 26283.7 ticks&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesterB&lt;/code&gt;: Average 31247.4 ticks&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;可以看到因為都是 reference type，所以效能差不多。甚至 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TesterB&lt;/code&gt; 因為多一個資料類別的轉換而稍為慢一點。&lt;/p&gt;
-
-&lt;h2 id=&quot;總結&quot;&gt;總結&lt;/h2&gt;
-
-&lt;p&gt;如果有需要從 value type 轉成 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; type 的情況，就用一個資料類別來攜帶要傳送的值，並在使用方取出使用。要注意的是因為用的都是同一個資料類別物件，使用方要避免直接改到該物件的內容。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;即 reference type 傳給另一個 reference type，&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;object&lt;/code&gt; type 也是 reference type &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="Unity" /><category term="C#" /><summary type="html">之前在撰寫 Unity 套件的時候，因為不知道使用者會用什麼類別來傳資料，所以都轉成 object 型別來傳遞，後來發現這會有效能上的問題。本篇文章就來探討這個問題以及解法。</summary></entry></feed>
+&lt;/ul&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="心得" /><summary type="html">在受不了輸入法神奇的選字跟換了沒有方向鍵的 60% 鍵盤的因素下，決定學習新的輸入法，享受不用選字的爽感。在以字形為主的輸入法中，最後選擇嘸蝦米，這篇分享學習方法與使用半年的心得。</summary></entry></feed>
