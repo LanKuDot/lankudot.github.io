@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2023-01-31T00:20:53+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[筆記] 重構專案中的舊元件</title><link href="https://lankudot.airfishlab.com/blog/2023-01-refactor-legacy-component-in-project/" rel="alternate" type="text/html" title="[筆記] 重構專案中的舊元件" /><published>2023-01-30T00:00:00+08:00</published><updated>2023-01-30T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-legacy-component-in-project</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-01-refactor-legacy-component-in-project/">&lt;p&gt;在最近參與的遊戲專案中，我負責重新撰寫經過時間累積、充滿不同想法的核心元件。隨處可見複製的程式碼，元件之間交互使用，亦或是為了加新功能而繞路。可以看出每個新功能為了不影響之前的功能，正維持著微妙的平衡。對於負責重寫元件的我來說就好像是在茂密的遠古森林裡一路披荊斬棘，充滿挑戰。就想寫來記錄過程和心得。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2023-01-31T21:56:18+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[筆記] 重構專案中的舊元件</title><link href="https://lankudot.airfishlab.com/blog/2023-01-refactor-legacy-component-in-project/" rel="alternate" type="text/html" title="[筆記] 重構專案中的舊元件" /><published>2023-01-30T00:00:00+08:00</published><updated>2023-01-30T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-legacy-component-in-project</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-01-refactor-legacy-component-in-project/">&lt;p&gt;在最近參與的遊戲專案中，我負責重新撰寫經過時間累積、充滿不同想法的核心元件。隨處可見複製的程式碼，元件之間交互使用，亦或是為了加新功能而繞路。可以看出每個新功能為了不影響之前的功能，正維持著微妙的平衡。對於負責重寫元件的我來說就好像是在茂密的遠古森林裡一路披荊斬棘，充滿挑戰。就想寫來記錄過程和心得。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/refactor-is-like.jpg&quot; alt=&quot;refactor-is-like&quot; /&gt;
 &lt;em&gt;重構元件大概是這樣的感覺吧&lt;/em&gt;&lt;/p&gt;
@@ -44,11 +44,11 @@
 &lt;p&gt;同一個系統中，元件之間的相依性是單向的。也就是不會繞過使用的元件，再去取用後面的元件，或是元件之間的相依性不該有迴圈，這很常出現在那個元件是 static 的情況下。這樣在後續追縱程式碼時，路徑會比較單純。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/keep-single-reference-direction.jpg&quot; alt=&quot;keep-single-reference-direction&quot; /&gt;
-&lt;em&gt;以專案的例子來說，應該要把類型 B 的特效管理元件合併進來&lt;/em&gt;&lt;/p&gt;
+&lt;em&gt;以這次的例子來說，應該要把類型 B 的特效管理元件合併進來&lt;/em&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;只負責一件事&quot;&gt;只負責一件事&lt;/h3&gt;
 
-&lt;p&gt;每個元件只負責一件事。如果規劃出來的元件作的事情太多，就可以考慮將它切出來作成另一個元件。好處是命名更容易，可以直覺知道這個元件負責的功能。但也不用為了一個小功能而切出新元件，反而會使程式更複雜。通常在實作時會意識到這個元件太大或太小，在規劃階段不用一直考慮切的好不好。&lt;/p&gt;
+&lt;p&gt;每個元件只負責一件事。如果規劃出來的元件作的事情太多，就可以考慮將它切出來作成另一個元件。好處是命名更容易，可以直覺知道這個元件負責的功能。但也不用為了一個小功能而切出新元件，反而會使程式更複雜。通常在實作時會意識到這個元件太大或太小，在設計階段不用一直考慮切的好不好。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/one-component-one-job.jpg&quot; alt=&quot;one-component-one-job&quot; /&gt;
 &lt;em&gt;每個元件專心做它負責的事就好&lt;/em&gt;&lt;/p&gt;
@@ -69,9 +69,9 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/seperate-the-task.jpg&quot; alt=&quot;seperate-the-task&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;如果要改動的部份很大的話或是要重寫的話，我會先保留原本的元件或功能，然後直接寫新的功能，再逐步替換上去，最後取代舊有的元件。另外我也會保留沒有問題的 API 的使用方式，因為只有後面做的事情有改，所以不影響外面的元件。每個新功能完成後，就測試行為是不是跟原來的功能一樣，如果有搭配版控，可以方便的在新舊功能間切換。&lt;/p&gt;
+&lt;p&gt;如果要改動的部份很大的話或是要重寫的話，我會先保留原本的元件或功能，然後直接寫新的功能，再逐步替換上去，最後取代舊有的元件。另外我也會保留沒有問題的 API 的使用方式。每個新功能完成後，就測試行為是不是跟原來的功能一樣，如果有搭配版控，可以方便的在新舊功能間切換。&lt;/p&gt;
 
-&lt;p&gt;因為最後還是要看實作去調整架構，所以在前面的設計階段並不用設計得太完整，有主要的架構出來就可以開始實作了。再依照每個元件的功能需求個別設計。&lt;/p&gt;
+&lt;p&gt;因為最後還是要看實作去調整架構，重構也不太可能一次就到位，所以在前面的設計階段並不用設計得太完整，有主要的架構出來就可以開始實作了，再依照每個元件的功能需求個別設計。&lt;/p&gt;
 
 &lt;h2 id=&quot;總結&quot;&gt;總結&lt;/h2&gt;
 
