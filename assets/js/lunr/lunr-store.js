@@ -64,4 +64,10 @@ var store = [{
         "tags": ["筆記","雜談"],
         "url": "/blog/2023-01-refactor-legacy-component-in-project/",
         "teaser": "/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/refactor-is-like.jpg"
+      },{
+        "title": "[推廣] 空氣魚實驗室",
+        "excerpt":"來介紹一下空氣魚實驗室與現有的專案~      YouTube 頻道 - 來做遊戲啊系列   因喜歡 Nier: Automata 中的 9S 的駭客小遊戲而製作。這系列以程式為主，從機制、關卡設置，到 Boss 製作，逐步完成一個 3D STG。除了程式講解外，也分享設計思路。      YouTube 頻道:      來做遊戲啊系列:      Unity 套件 - Circular Scrolling List   Circular Scrolling List 用有限個選單物件來顯示無限個內容，支援直向跟橫向捲動、可用滑鼠及滾輪操作，也可透過程式來控制。      可以在 Unity Asset Store 上下載：         這個月第 6 版上架啦，新加了編輯器預覽、支援兩端停止選單、程式碼控制：               有問題也可以在 Github Page 上提問:        ","categories": ["blog"],
+        "tags": [],
+        "url": "/blog/2023-03-airfishlab-promotion/",
+        "teaser": null
       }]
