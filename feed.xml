@@ -1,10 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2023-04-19T22:39:13+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[閱讀] Kon’s Tone 「千年女優」之道</title><link href="https://lankudot.airfishlab.com/blog/2023-04-kons-tone/" rel="alternate" type="text/html" title="[閱讀] Kon’s Tone 「千年女優」之道" /><published>2023-04-18T00:00:00+08:00</published><updated>2023-04-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/kons-tone</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-04-kons-tone/">&lt;p&gt;2022 年在高雄電影館看了《今敏：造夢魔術師》這部記錄片才知道今敏導演，之後就對他的作品很感興趣，還買了所有電影的 BD 來看。當時看完記錄片，朋友就借我這本書看，不過因為工作關係，只看了一半就先還回去了，但是意猶未盡，後來就自己再買了一本來看。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2023-05-01T23:07:31+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[分享] 獨立遊戲在 Steam 頁面上的宣傳影片建議</title><link href="https://lankudot.airfishlab.com/blog/2023-05-slow-trailer-is-not-good-for-indie-game/" rel="alternate" type="text/html" title="[分享] 獨立遊戲在 Steam 頁面上的宣傳影片建議" /><published>2023-05-01T00:00:00+08:00</published><updated>2023-05-01T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/slow-trailer-is-not-good-for-indie-game</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-05-slow-trailer-is-not-good-for-indie-game/">&lt;p&gt;在推特上看到&lt;a href=&quot;https://twitter.com/Derek_Lieu/status/1650504969970147331&quot;&gt;貼文&lt;/a&gt;分享一則在 &lt;a href=&quot;https://www.reddit.com/r/Steam/comments/12raw4o/anybody_else_skips_the_videos_and_jumps_straight/?utm_name=iossmf&quot;&gt;Reddit 的討論串&lt;/a&gt;，討論串的樓主問其它人是不是也一樣，在逛 Steam 遊戲頁面時，會跳過宣傳影片直接去看遊戲擷圖或是評論。結果許多人回覆都有類似的習慣，因為覺得宣傳影片沒有傳達出遊戲玩法，所以直接去看遊戲擷圖的話，反而可以更快知道這個遊戲合不合自己的胃口。原推的作者就分享獨立遊戲要如何避免這種情況，讓玩家能在宣傳影片上停留久一點，增加購買或是加入願望清單的機會。&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Here&amp;#39;s your wake up call if you have a trailer with a slow intro and lots of logos on your Steam page.&lt;br /&gt;&lt;br /&gt;This post is full of people who skip past the trailers to click on the screenshots because it&amp;#39;s quicker and they assume the trailer won&amp;#39;t show gameplay.&lt;a href=&quot;https://t.co/bptoFu1c94&quot;&gt;https://t.co/bptoFu1c94&lt;/a&gt;&lt;/p&gt;&amp;mdash; Derek Lieu (@Derek_Lieu) &lt;a href=&quot;https://twitter.com/Derek_Lieu/status/1650504969970147331?ref_src=twsrc%5Etfw&quot;&gt;April 24, 2023&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;在 Reddit 討論串的回覆提到，大多對宣傳影片中提到「榮獲XXX獎」、「媒體評分XX分」等得獎資訊，或是「這是一個扣人心弦的故事」這類劇情式宣傳沒有興趣，會快速跳到中段可能有遊戲畫面的部份；或是發現看了整個影片還是不知道這款遊戲在玩什麼，最後就選擇直接跳過宣傳影片。&lt;/p&gt;
+
+&lt;p&gt;原推主在自己的遊戲上也遇到這樣的情況，他認為玩家在 Steam 上逛遊戲的時，就像在逛櫥窗商品，會停留的時間很短，所以建議在宣傳影片的開頭 5 到 10 秒就揭示遊戲的玩法或是遊戲畫面，來增加玩家的興趣。推主在他的&lt;a href=&quot;https://www.derek-lieu.com/blog/2022/12/3/why-indie-game-trailers-shouldnt-take-inspiration-from-aaa-games&quot;&gt;文章&lt;/a&gt;中建議獨立遊戲在 Steam 上的宣傳影片不要學 3A 大作的宣傳影片，因為玩家對大廠出的遊戲有一定的熟悉度，其宣傳影片的畫面細緻華麗，另外影片登場平台也不一樣（在 YouTube 或是遊戲展上），玩家會願意看完整個宣傳影片。&lt;/p&gt;
+
+&lt;p&gt;但也不是要完全捨棄這類電影式宣傳影片（slow trailer），而是可以針對在 Steam 上的宣傳影片做點修改。推文中舉例的&lt;a href=&quot;https://store.steampowered.com/app/1201270/__A_Space_for_the_Unbound/&quot;&gt;《A Space for the Unbound》&lt;/a&gt;這款遊戲，在 Steam 上的宣傳影片比起在 YouTube 上的 PS 與 NS 宣傳影片，開頭多了一段遊戲畫面，接著才是劇情式的內容，而得獎資訊則是放在最後面。&lt;/p&gt;
+
+&lt;!-- Courtesy of embedresponsively.com --&gt;
+
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/5QYVQhVd_-M&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;因此如果不想讓玩家跳過自己辛辛苦苦做好的宣傳影片的話，不妨在影片一開頭就放上遊戲的畫面，讓玩家可以快速知道遊戲的類型或玩法，增加宣傳的效益。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html">在推特上看到貼文分享一則在 Reddit 的討論串，討論串的樓主問其它人是不是也一樣，在逛 Steam 遊戲頁面時，會跳過宣傳影片直接去看遊戲擷圖或是評論。結果許多人回覆都有類似的習慣，因為覺得宣傳影片沒有傳達出遊戲玩法，所以直接去看遊戲擷圖的話，反而可以更快知道這個遊戲合不合自己的胃口。原推的作者就分享獨立遊戲要如何避免這種情況，讓玩家能在宣傳影片上停留久一點，增加購買或是加入願望清單的機會。</summary></entry><entry><title type="html">[閱讀] Kon’s Tone 「千年女優」之道</title><link href="https://lankudot.airfishlab.com/blog/2023-04-kons-tone/" rel="alternate" type="text/html" title="[閱讀] Kon’s Tone 「千年女優」之道" /><published>2023-04-18T00:00:00+08:00</published><updated>2023-04-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/kons-tone</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-04-kons-tone/">&lt;p&gt;2022 年在高雄電影館看了《今敏：造夢魔術師》這部記錄片才知道今敏導演，之後就對他的作品很感興趣，還買了所有電影的 BD 來看。當時看完記錄片，朋友就借我這本書看，不過因為工作關係，只看了一半就先還回去了，但是意猶未盡，後來就自己再買了一本來看。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-04-18-kons-tone/cover-image.png&quot; alt=&quot;cover-image&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;《Kon’s Tone 「千年女優」之道》收錄今敏其中兩部作品《藍色恐懼》跟《千年女優》是如何成案，以及製作過程的秘辛，還有收錄幾篇在個人部落格的文章，分享他是如何踏上動畫導演的路，還有人生觀等等。其中分享《藍色恐懼》的製作過程的「《藍色恐懼》戰記」就佔了全書一半以上的內容，從成案開始就遭遇不合理的要求，在製作過程中被製作助理雷到的事情更是層出不窮，真的是充滿「恐懼」的「戰記」，看了人都 blue 了起來。很佩服整個團隊可以在如此艱難的環境下完成《藍色恐懼》，也蠻佩服今敏的脾氣，還可以自嘲地寫出這篇文章。我再看一次電影的話應該會有不同的感覺吧。&lt;/p&gt;
 
-&lt;p&gt;成書應該是在製作《東京教父》時。比較可惜的是這本書可能是從簡體中文直接轉換過來的，所以一些用語上還是有差別，在閱讀的時候要稍微思考一下。今敏每部作品都很吸引我，無論是劇情，還是畫面呈現上，他的作品更影響其它了電影，像是我最喜歡的《盜夢偵探》，也影響了電影《全面啟動》。如果你還沒看過他的作品的話，一定要找機會去看。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><summary type="html">2022 年在高雄電影館看了《今敏：造夢魔術師》這部記錄片才知道今敏導演，之後就對他的作品很感興趣，還買了所有電影的 BD 來看。當時看完記錄片，朋友就借我這本書看，不過因為工作關係，只看了一半就先還回去了，但是意猶未盡，後來就自己再買了一本來看。</summary></entry><entry><title type="html">[推廣] 空氣魚實驗室</title><link href="https://lankudot.airfishlab.com/blog/2023-03-airfishlab-promotion/" rel="alternate" type="text/html" title="[推廣] 空氣魚實驗室" /><published>2023-03-26T00:00:00+08:00</published><updated>2023-03-26T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/airfishlab-promotion</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-03-airfishlab-promotion/">&lt;p&gt;來介紹一下空氣魚實驗室與現有的專案~&lt;/p&gt;
+&lt;p&gt;成書應該是在製作《東京教父》時。比較可惜的是這本書可能是從簡體中文直接轉換過來的，所以一些用語上還是有差別，在閱讀的時候要稍微思考一下。今敏每部作品都很吸引我，無論是劇情，還是畫面呈現上，他的作品更影響其它了電影，像是我最喜歡的《盜夢偵探》，也影響了電影《全面啟動》。如果你還沒看過他的作品的話，一定要找機會去看。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html">2022 年在高雄電影館看了《今敏：造夢魔術師》這部記錄片才知道今敏導演，之後就對他的作品很感興趣，還買了所有電影的 BD 來看。當時看完記錄片，朋友就借我這本書看，不過因為工作關係，只看了一半就先還回去了，但是意猶未盡，後來就自己再買了一本來看。</summary></entry><entry><title type="html">[推廣] 空氣魚實驗室</title><link href="https://lankudot.airfishlab.com/blog/2023-03-airfishlab-promotion/" rel="alternate" type="text/html" title="[推廣] 空氣魚實驗室" /><published>2023-03-26T00:00:00+08:00</published><updated>2023-03-26T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/airfishlab-promotion</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-03-airfishlab-promotion/">&lt;p&gt;來介紹一下空氣魚實驗室與現有的專案~&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-03-26-airfishlab-promotion/logo.png&quot; alt=&quot;logo&quot; /&gt;&lt;/p&gt;
 
@@ -139,7 +156,7 @@
 
 &lt;p&gt;書中介紹武田、上杉、北條、織田、豐臣、德川這六家在戰國時期的主角，並用便利超商的加盟體系來幫助理解幕府體制下的關係，例如天皇是名譽董事長、幕府將軍是執行長、守護是地區經理等。書中是以各家分章節，縱觀他們在戰國時期的故事，不只有經典的戰役或事件，還有他們如何經營勢力與對那個時期帶來的影響。所以除了為人所知的名將之外，還可以認識到各家是怎麼崛起的，以及是如何沒落或稱霸日本。&lt;/p&gt;
 
-&lt;p&gt;因為是以各家視點分章節，所以牽涉到多家的事件，會著重在單一家的歷史。如果要看其它家同時做了什麼事，書中也有標記在各章節提及的部分。也可以搭配書尾的歷史年表一同閱讀，會對各事件有全局的理解。另外可以放一個日本古地圖搭配閱讀，可以幫助了解各家的地盤與戰役位在日本的哪裡。歷史是土地上的故事，有了故事的連結，日後到日本參觀古蹟的時候，應該會更有感覺。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><summary type="html">在接觸戰國題材的遊戲後，就一直很想要認識日本戰國時期的歷史，在朋友的推薦下，選擇《日本戰國這樣讀》作為入門。</summary></entry><entry><title type="html">[筆記] Unity 2021 LTS - C# 9.0 的新語法</title><link href="https://lankudot.airfishlab.com/blog/2022-10-csharp-9-in-unity-2021/" rel="alternate" type="text/html" title="[筆記] Unity 2021 LTS - C# 9.0 的新語法" /><published>2022-10-08T00:00:00+08:00</published><updated>2022-10-08T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/csharp-9-in-unity-2021</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2022-10-csharp-9-in-unity-2021/">&lt;p&gt;Unity 2021 LTS 也出來好一陣子了，在 2021.2 版後就開始導入 C# 9.0。使用了半年後，發覺 C# 9.0 當中新增的語法可以讓程式碼更加簡潔易讀，整理成本篇來介紹個人常用的語法。&lt;/p&gt;
+&lt;p&gt;因為是以各家視點分章節，所以牽涉到多家的事件，會著重在單一家的歷史。如果要看其它家同時做了什麼事，書中也有標記在各章節提及的部分。也可以搭配書尾的歷史年表一同閱讀，會對各事件有全局的理解。另外可以放一個日本古地圖搭配閱讀，可以幫助了解各家的地盤與戰役位在日本的哪裡。歷史是土地上的故事，有了故事的連結，日後到日本參觀古蹟的時候，應該會更有感覺。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html">在接觸戰國題材的遊戲後，就一直很想要認識日本戰國時期的歷史，在朋友的推薦下，選擇《日本戰國這樣讀》作為入門。</summary></entry><entry><title type="html">[筆記] Unity 2021 LTS - C# 9.0 的新語法</title><link href="https://lankudot.airfishlab.com/blog/2022-10-csharp-9-in-unity-2021/" rel="alternate" type="text/html" title="[筆記] Unity 2021 LTS - C# 9.0 的新語法" /><published>2022-10-08T00:00:00+08:00</published><updated>2022-10-08T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/csharp-9-in-unity-2021</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2022-10-csharp-9-in-unity-2021/">&lt;p&gt;Unity 2021 LTS 也出來好一陣子了，在 2021.2 版後就開始導入 C# 9.0。使用了半年後，發覺 C# 9.0 當中新增的語法可以讓程式碼更加簡潔易讀，整理成本篇來介紹個人常用的語法。&lt;/p&gt;
 
 &lt;h2 id=&quot;c-90-的支援&quot;&gt;C# 9.0 的支援&lt;/h2&gt;
 
@@ -619,7 +636,7 @@
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/attributes/&quot;&gt;屬性(C#) - Microsoft Docs&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection&quot;&gt;使用反射存取屬性(C#) - Microsoft Docs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="C#" /><category term="Unity" /><category term="筆記" /><summary type="html">在專案開發上遇到這樣的問題：每個繼承類別要提供類似的 static 函式，功能差不多，但只有要取用的值不一樣。就在想能不能把 static 函式拉到基礎類別上，但又可以依照繼承類別給與不同的 static 成員值。</summary></entry><entry><title type="html">[C#] 用 interface 模擬多類別繼承</title><link href="https://lankudot.airfishlab.com/blog/2022-05-csharp-simulating-multi-class-inheritance/" rel="alternate" type="text/html" title="[C#] 用 interface 模擬多類別繼承" /><published>2022-05-14T00:00:00+08:00</published><updated>2022-05-14T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/csharp-simulating-multi-class-inheritance</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2022-05-csharp-simulating-multi-class-inheritance/">&lt;p&gt;最近負責的 Unity 專案中，有很多 UI 有返回的按鈕，而這些按鈕也要可以透過程式觸發。如果為每個 UI 撰寫觸發的函式，一但觸發的邏輯改變，修改會是個大工程。如果為了這個小功能撰寫基礎類別，又顯得大才小用，而且 C# 的類別只能同時繼承一個類別，擴充性也不高。但 C# 類別可以繼承多個 interface，所以就思考能不能讓類別繼承 interface 的同時，也能提供功能，就好像是繼承了一個類別。&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="C#" /><category term="Unity" /><category term="筆記" /><summary type="html">在專案開發上遇到這樣的問題：每個繼承類別要提供類似的 static 函式，功能差不多，但只有要取用的值不一樣。就在想能不能把 static 函式拉到基礎類別上，但又可以依照繼承類別給與不同的 static 成員值。</summary></entry><entry><title type="html">[筆記] C# 用 interface 模擬多類別繼承</title><link href="https://lankudot.airfishlab.com/blog/2022-05-csharp-simulating-multi-class-inheritance/" rel="alternate" type="text/html" title="[筆記] C# 用 interface 模擬多類別繼承" /><published>2022-05-14T00:00:00+08:00</published><updated>2022-05-14T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/csharp-simulating-multi-class-inheritance</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2022-05-csharp-simulating-multi-class-inheritance/">&lt;p&gt;最近負責的 Unity 專案中，有很多 UI 有返回的按鈕，而這些按鈕也要可以透過程式觸發。如果為每個 UI 撰寫觸發的函式，一但觸發的邏輯改變，修改會是個大工程。如果為了這個小功能撰寫基礎類別，又顯得大才小用，而且 C# 的類別只能同時繼承一個類別，擴充性也不高。但 C# 類別可以繼承多個 interface，所以就思考能不能讓類別繼承 interface 的同時，也能提供功能，就好像是繼承了一個類別。&lt;/p&gt;
 
 &lt;h2 id=&quot;實作&quot;&gt;實作&lt;/h2&gt;
 
@@ -737,406 +754,4 @@
 
 &lt;p&gt;另外星際科幻的一大看點就是對外星文化的想像，從服裝、手勢、器物的設定來呈現那個星球的文化跟環境。安納克利安人的最偉大狩獵者以及用最古老的樹雕成的弓，代表入侵基地的首領菲拉不容小覷。瑟斯皮斯人的藍眼睛跟他們以礦業為主，同是瑟斯皮斯人的雨果也擁有藍眼睛。少女星上的水源有很多鹽份而且純水很珍貴，所以會用鹽晶製成的容器裝水給皇帝代表對他的敬重。&lt;/p&gt;
 
-&lt;p&gt;真得滿喜歡影集的改編，看完第一集就覺得這會很對我的胃口，片頭的音樂跟動畫也很棒。雖然有看過原著小說，但是細節忘得差不多了，只記得大致的走向，看完影集之後就想回去重看一次小說。如果有第二季的話，我會滿期待騾的登場。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="影集" /><category term="觀後感" /><summary type="html">在一個由帝國長久統治銀河的時代中，帝國的主星「川陀」上出現了一名數學教授ー哈里．謝頓。他用「心理史學」預測帝國將在未來衰敗，整個銀河會陷入黑暗時期，人們必須建立一個「基地」來保存科技與文化，以在黑暗時期過後，讓銀河文明能快速恢復。</summary></entry><entry><title type="html">[筆記] C# 類別成員存取關係一覧</title><link href="https://lankudot.airfishlab.com/blog/2022-02-csharp-inheritance-member-accessing/" rel="alternate" type="text/html" title="[筆記] C# 類別成員存取關係一覧" /><published>2022-02-16T00:00:00+08:00</published><updated>2022-02-16T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/csharp-inheritance-member-accessing</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2022-02-csharp-inheritance-member-accessing/">&lt;p&gt;本篇用圖表來介紹 C# 類別成員的存取關係，有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;，跟跨組件的成員存取，有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected internal&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private protected&lt;/code&gt;。以及比較一般繼承與多型繼承中，會取得什麼版本的方法。&lt;/p&gt;
-
-&lt;h2 id=&quot;類別成員的存取&quot;&gt;類別成員的存取&lt;/h2&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;存取來源&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private&lt;/code&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;自己類別中&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;衍生類別中&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;外部&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;自己類別中&quot;&gt;自己類別中&lt;/h3&gt;
-
-&lt;p&gt;在自己類別中存取的情況是：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;在類別定義中，存取類別的成員，如 Test1。&lt;/li&gt;
-  &lt;li&gt;在類別定義中，透過該類別的物件存取成員，如 Test2。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;所有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; 的成員都可以存取。&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Func called&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Test1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Test2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Bar&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;衍生類別中&quot;&gt;衍生類別中&lt;/h3&gt;
-
-&lt;p&gt;在衍生類別中存取的情況是：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;在衍生類別的定義中，存取基礎類別的成員，如 Test1。&lt;/li&gt;
-  &lt;li&gt;在衍生類別的定義中，透過該類別物件存取基礎類別的成員，如 Test2。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; 的成員都可以存取，但 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private&lt;/code&gt; 的成員不行。&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Func called&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bar&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Test1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Test2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;foo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;外部&quot;&gt;外部&lt;/h3&gt;
-
-&lt;p&gt;在外部存取是指：在非衍生類別中，透過該類別的物件存取。&lt;/p&gt;
-
-&lt;p&gt;只有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; 成員才可以存取。&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Func called&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SomeClass&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;跨組件的類別成員存取&quot;&gt;跨組件的類別成員存取&lt;/h2&gt;
-
-&lt;p&gt;在 C# 中，程式碼可以編譯到不同的組件（Assembly）中，並像模組或函式庫一樣，可以放到不同的程式中供取用。上述的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;privated&lt;/code&gt; 成員不受組件不同的影響，如 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; 成員在也可以被不同組件的類別取用，但 C# 另外提供可以控制不同組件的類別成員存取的修飾詞。&lt;/p&gt;
-
-&lt;h3 id=&quot;相同組件中&quot;&gt;相同組件中&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;存取來源&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected internal&lt;/code&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private protected&lt;/code&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;自己類別中&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;衍生類別中&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;外部&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;h3 id=&quot;不同組件中&quot;&gt;不同組件中&lt;/h3&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;存取來源&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected internal&lt;/code&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private protected&lt;/code&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;衍生類別中&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:heavy_check_mark:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;外部&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt; 與 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; 相似，但只在相同組件中才是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected internal&lt;/code&gt; 比起 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;internal&lt;/code&gt; 的權限稍為大一點，讓不同元件的衍生類別可以取用。&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;private protected&lt;/code&gt; 與 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt; 相似，但只在相同組件中才是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;protected&lt;/code&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;外部存取方法的版本&quot;&gt;外部存取方法的版本&lt;/h2&gt;
-
-&lt;p&gt;在基礎類別跟衍生類別中的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt; 方法有相同簽章&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;時，會因為關鍵字（如：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new&lt;/code&gt;、&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtual&lt;/code&gt;）的不同而讓類別物件存取到不同版本的方法。&lt;/p&gt;
-
-&lt;h3 id=&quot;一般繼承&quot;&gt;一般繼承&lt;/h3&gt;
-
-&lt;h4 id=&quot;如果沒有同簽章的方法&quot;&gt;如果沒有同簽章的方法&lt;/h4&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Bar.Func&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bar&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bar b&lt;/code&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Foo f&lt;/code&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new Bar()&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“Bar.Func”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new Foo()&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“Bar.Func”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“Bar.Func”&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;上方表格以 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bar b&lt;/code&gt; 和 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new Bar()&lt;/code&gt; 為例，代表的是：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Bar&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;欄位內則是會輸出的訊息。&lt;/p&gt;
-
-&lt;h4 id=&quot;如果有同簽章的方法&quot;&gt;如果有同簽章的方法&lt;/h4&gt;
-
-&lt;p&gt;如果衍生類別中有跟基礎類別同簽章的方法，則會「隱藏」基礎類別的方法，編譯器會發出警告，加上 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new&lt;/code&gt; 關鍵字則可以告訴編譯器就是要這樣作。&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Bar.Func&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bar&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Foo.Func&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bar b&lt;/code&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Foo f&lt;/code&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new Bar()&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“Bar.Func”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new Foo()&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“Bar.Func” (1.)&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“Foo.Func” (2.)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;在一般繼承中，如果將衍生類別的物件賦值給基礎類別的變數，該物件會被隱含轉換（implict type conversion）成基礎類別的物件，所以會使用到基礎類別的版本。&lt;/li&gt;
-  &lt;li&gt;因為衍生類別中「隱藏」了基礎類別的方法，所以衍生類別的物件會使用衍生類別的版本。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;多型繼承&quot;&gt;多型繼承&lt;/h3&gt;
-
-&lt;p&gt;如果基礎類別有 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtual&lt;/code&gt; 方法，而且在衍生類別中用 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;override&lt;/code&gt;「覆寫」該方法的話，即使把衍生類別的物件賦值給基礎類別的變數，也可以取用到衍生類別的版本，稱為多型繼承。在多型繼承下，就可以讓基礎類別的變數因給與不同的衍生類別的物件，呼叫同個方法而有衍生類別上的行為，不需使用多個衍生類別的物件。&lt;/p&gt;
-
-&lt;h4 id=&quot;如果沒有同簽章的方法-1&quot;&gt;如果沒有同簽章的方法&lt;/h4&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Bar.Func&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bar&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bar b&lt;/code&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Foo f&lt;/code&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new Bar()&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“Bar.Func”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new Foo()&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“Bar.Func”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“Bar.Func”&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;如果基礎類別的方法沒有被「覆寫」的話，就跟一般繼承一樣，都是基礎類別的版本。&lt;/p&gt;
-
-&lt;h4 id=&quot;如果有同簽章的方法-1&quot;&gt;如果有同簽章的方法&lt;/h4&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bar&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;virtual&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Bar.Func&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Foo&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Bar&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;Console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;WriteLine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Foo.Func&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt; &lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Bar b&lt;/code&gt;&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Foo f&lt;/code&gt;&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new Bar()&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“Bar.Func”&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;:x:&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new Foo()&lt;/code&gt;&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“Foo.Func” (1.)&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;“Foo.Func”&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;把衍生類別的物件賦值給基礎類別的變數，雖然會被隱含轉換，但是在多型繼承下，基礎類別的方法會被「覆寫」，所以會取用到衍生類別的版本。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;參考資料&quot;&gt;參考資料&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers&quot;&gt;存取修飾詞 - Microsoft Docs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/methods#method-signatures&quot;&gt;方法簽章 - Microsoft Docs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/zh-tw/dotnet/csharp/fundamentals/object-oriented/polymorphism&quot;&gt;多型繼承 - Microsoft Docs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords&quot;&gt;了解使用 Override 和 New 關鍵字的時機 - Microsoft Docs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
-  &lt;ol&gt;
-    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
-      &lt;p&gt;方法簽章（method signature）由存取層級（access level，如：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;public&lt;/code&gt;）、選擇性修飾詞（optional modifier，如：&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;abstract&lt;/code&gt;）、回傳值、方法名稱、方法參數（parameters）構成。 &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-    &lt;/li&gt;
-  &lt;/ol&gt;
-&lt;/div&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="C#" /><summary type="html">本篇用圖表來介紹 C# 類別成員的存取關係，有 private、protected、public，跟跨組件的成員存取，有 internal、protected internal、private protected。以及比較一般繼承與多型繼承中，會取得什麼版本的方法。</summary></entry></feed>
+&lt;p&gt;真得滿喜歡影集的改編，看完第一集就覺得這會很對我的胃口，片頭的音樂跟動畫也很棒。雖然有看過原著小說，但是細節忘得差不多了，只記得大致的走向，看完影集之後就想回去重看一次小說。如果有第二季的話，我會滿期待騾的登場。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="影集" /><category term="觀後感" /><summary type="html">在一個由帝國長久統治銀河的時代中，帝國的主星「川陀」上出現了一名數學教授ー哈里．謝頓。他用「心理史學」預測帝國將在未來衰敗，整個銀河會陷入黑暗時期，人們必須建立一個「基地」來保存科技與文化，以在黑暗時期過後，讓銀河文明能快速恢復。</summary></entry></feed>
