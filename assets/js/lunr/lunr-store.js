@@ -82,4 +82,10 @@ var store = [{
         "tags": ["分享"],
         "url": "/blog/2023-05-slow-trailer-is-not-good-for-indie-game/",
         "teaser": null
+      },{
+        "title": "[筆記] 將共用的資料定義獨立出來",
+        "excerpt":"當不同元件有相似的資料時，應該把相同的部份整理出來成為一個獨立的資料定義，並在用到的地方使用這個資料定義。如果元件之間各自定義的話，當要新增或修改資料時，所有用到的地方都得要一併更新，既秏時又費力，且容易出錯，會是一場災難。 資料各自定義的問題 例如在程式中有個代表玩家資訊的資料，在玩家物件、公會成員、排行榜中都有用到： public class PlayerData { public string Name; public uint AvatarId; public uint Level; public uint ExperiencePoints; } public class GuildMemberData { public string Name; public uint AvatarId; public uint Level; public GuildRole Role; } public class LeaderboardPlayerData { public string Name; public uint AvatarId; public uint Level;...","categories": ["blog"],
+        "tags": ["筆記","C#"],
+        "url": "/blog/2023-08-extract-common-data-definition/",
+        "teaser": null
       }]
