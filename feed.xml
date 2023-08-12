@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2023-08-03T22:15:04+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[筆記] 將共用的資料定義獨立出來</title><link href="https://lankudot.airfishlab.com/blog/2023-08-extract-common-data-definition/" rel="alternate" type="text/html" title="[筆記] 將共用的資料定義獨立出來" /><published>2023-08-03T00:00:00+08:00</published><updated>2023-08-03T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/extract-common-data-definition</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-08-extract-common-data-definition/">&lt;p&gt;當不同元件有相似的資料時，應該把相同的部份整理出來成為一個獨立的資料定義，並在用到的地方使用這個資料定義。如果元件之間各自定義的話，當要新增或修改資料時，所有用到的地方都得要一併更新，既秏時又費力，且容易出錯，會是一場災難。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2023-08-12T18:17:25+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[閱讀] 古騰堡的學徒</title><link href="https://lankudot.airfishlab.com/blog/2023-08-gutenbergs-apprentice/" rel="alternate" type="text/html" title="[閱讀] 古騰堡的學徒" /><published>2023-08-12T00:00:00+08:00</published><updated>2023-08-12T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/gutenbergs-apprentice</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-08-gutenbergs-apprentice/">&lt;p&gt;買書總是比看書還快，買了還沒看的書只會越來越多。雖然是幾年前買的，但還記得當初是在誠品敦南店購入的，因為聽聞全世界第一間 24 小時營業的書店就要關了，於是趁著到台北參加活動的機會，去書店買了幾本書，這本就是其中之一。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-08-12-gutenbergs-apprentice/cover-image.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;古騰堡是歐洲地區第一位發明活字印刷術的人，而這本小說是以「古騰堡的學徒」ー彼得．薛佛為主角，第一位偉大的印刷師傅。在 15 世紀，書籍的製作主要靠抄寫員來撰寫文字，而出版的書籍又以宗教書籍為主，撰寫的文字就是在傳達神的話語，因此抄寫員在當時是很神聖的職業。而彼得原本也是抄寫員出生，但在成為一名出色的抄寫員之前，卻被養父約翰尼斯．法斯特叫回美因茲。理由是古騰堡開發出活字印刷的技術，而法斯特做為出資人，要求彼得在古騰堡門下學習這項新術，並監視古騰堡。因為手抄是一項神聖且藝術的事情，彼得起初視活字印刷術為「惡魔的行為」，如此直接複製神的話語，而沒有靈魂的文字。&lt;/p&gt;
+
+&lt;p&gt;小說的故事就由彼得加入古騰堡的印刷工坊開始，到成功印製出舉世聞名的「古騰堡聖經」為止。描述彼得從抵抗這項技術，到利用身為抄寫員的美感，幫助設計文字，還有改進這項技術。為了保護這項技術，尤其可能被視為瀆神的行為，因此印刷工坊在聖經印製完成之前，只能低調進行。期間又遭遇許多困難，整個過程相當坎坷。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-08-12-gutenbergs-apprentice/first-page.png&quot; alt=&quot;&quot; /&gt;
+&lt;em&gt;第一頁有著日星鑄字行的鉛字印刷&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;看完小說覺得最有趣的是，原來在當時手寫是一項相當重要的工作，而且還有精神上的意涵。而活字印刷可以快速完成一本書、減少手抄的失誤、加速知識的傳遞，無疑會對時代帶來巨大的改變，卻是一項惡魔的技術。就好像 2023 年正在經歷的 AI 生成內容崛起，也是興奮與恐懼交雜。人類透過時間與心力製作出來的藝術品，被拿去做機器學習訓練後，軟體便能快速產出。目前我不太能接受 AI 生成內容，但不禁好奇十年、二十年後，再回來看這項技術會有什麼想法。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html">買書總是比看書還快，買了還沒看的書只會越來越多。雖然是幾年前買的，但還記得當初是在誠品敦南店購入的，因為聽聞全世界第一間 24 小時營業的書店就要關了，於是趁著到台北參加活動的機會，去書店買了幾本書，這本就是其中之一。</summary></entry><entry><title type="html">[筆記] 將共用的資料定義獨立出來</title><link href="https://lankudot.airfishlab.com/blog/2023-08-extract-common-data-definition/" rel="alternate" type="text/html" title="[筆記] 將共用的資料定義獨立出來" /><published>2023-08-03T00:00:00+08:00</published><updated>2023-08-03T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/extract-common-data-definition</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-08-extract-common-data-definition/">&lt;p&gt;當不同元件有相似的資料時，應該把相同的部份整理出來成為一個獨立的資料定義，並在用到的地方使用這個資料定義。如果元件之間各自定義的話，當要新增或修改資料時，所有用到的地方都得要一併更新，既秏時又費力，且容易出錯，會是一場災難。&lt;/p&gt;
 
 &lt;h2 id=&quot;資料各自定義的問題&quot;&gt;資料各自定義的問題&lt;/h2&gt;
 
@@ -841,28 +852,4 @@
 
 &lt;h3 id=&quot;缺點&quot;&gt;缺點&lt;/h3&gt;
 
-&lt;p&gt;因為是繼承自 interface，所以對象成員跟能提供的功能都必需是 public 的。所以在上面的例子裡我只開放按鈕的事件，而不是按鈕本身，除了可以保護按鈕不被修改，而且外部也只需要註冊事件的 callback 就夠了。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="C#" /><category term="Unity" /><category term="筆記" /><summary type="html">最近負責的 Unity 專案中，有很多 UI 有返回的按鈕，而這些按鈕也要可以透過程式觸發。如果為每個 UI 撰寫觸發的函式，一但觸發的邏輯改變，修改會是個大工程。如果為了這個小功能撰寫基礎類別，又顯得大才小用，而且 C# 的類別只能同時繼承一個類別，擴充性也不高。但 C# 類別可以繼承多個 interface，所以就思考能不能讓類別繼承 interface 的同時，也能提供功能，就好像是繼承了一個類別。</summary></entry><entry><title type="html">[筆記] 設定 Android 不要備份 PlayerPrefs</title><link href="https://lankudot.airfishlab.com/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/" rel="alternate" type="text/html" title="[筆記] 設定 Android 不要備份 PlayerPrefs" /><published>2022-04-23T00:00:00+08:00</published><updated>2022-04-23T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/prevent-android-from-backing-up-playerprefs-unity</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/">&lt;p&gt;用 Unity 開發 Android 上的遊戲時，如果有用到 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PlayerPrefs&lt;/code&gt; 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。&lt;/p&gt;
-
-&lt;h2 id=&quot;關閉-android-自動備份資料&quot;&gt;關閉 Android 自動備份資料&lt;/h2&gt;
-
-&lt;p&gt;如果要關閉 Android 自動備份應用程式的資料，可以在 Unity 的專案中設定。&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;開啟 Project Settings → Player → Publishing Settings → 勾選 Custom Main Manifest &lt;br /&gt;
-  &lt;img src=&quot;/assets/images/blog/2022-04-23-prevent-android-from-backing-up-playerprefs-unity/step1.png&quot; alt=&quot;step 1&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;編輯新增的檔案 Assets/Plugins/Android/AndroidManifest.xml &lt;br /&gt;
-  &lt;img src=&quot;/assets/images/blog/2022-04-23-prevent-android-from-backing-up-playerprefs-unity/step2.png&quot; alt=&quot;step 2&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;application&lt;/code&gt; 標籤中加入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;android.allowBackup&lt;/code&gt; 屬性，並設為 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; &lt;br /&gt;
-  &lt;img src=&quot;/assets/images/blog/2022-04-23-prevent-android-from-backing-up-playerprefs-unity/step3.png&quot; alt=&quot;step 3&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;這樣就完成設定了&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p class=&quot;notice--info&quot;&gt;&lt;strong&gt;補充&lt;/strong&gt; 在 Android Developers 的文件中有註明，如果應用程式跑在 Android 12 以上的版本，則這個選項不會影響手機之間的資料轉存，也就是說 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PlayerPrefs&lt;/code&gt; 的資料還是會一起傳過去&lt;/p&gt;
-
-&lt;h2 id=&quot;參考資料&quot;&gt;參考資料&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developer.android.com/guide/topics/data/autobackup#EnablingAutoBackup&quot;&gt;Enable and disable backup - Android Developers&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://forum.unity.com/threads/are-playerprefs-deleted-on-application-uninstall-on-android-device.845989/&quot;&gt;Are PlayerPrefs deleted on application uninstall on Android device? - Unity Forum&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://forum.unity.com/threads/playerprefs-persist-between-installs-on-android.434886/#post-3414613&quot;&gt;PlayerPrefs persist between installs on Android - Unity Forum&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="Unity" /><summary type="html">用 Unity 開發 Android 上的遊戲時，如果有用到 PlayerPrefs 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。</summary></entry></feed>
+&lt;p&gt;因為是繼承自 interface，所以對象成員跟能提供的功能都必需是 public 的。所以在上面的例子裡我只開放按鈕的事件，而不是按鈕本身，除了可以保護按鈕不被修改，而且外部也只需要註冊事件的 callback 就夠了。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="C#" /><category term="Unity" /><category term="筆記" /><summary type="html">最近負責的 Unity 專案中，有很多 UI 有返回的按鈕，而這些按鈕也要可以透過程式觸發。如果為每個 UI 撰寫觸發的函式，一但觸發的邏輯改變，修改會是個大工程。如果為了這個小功能撰寫基礎類別，又顯得大才小用，而且 C# 的類別只能同時繼承一個類別，擴充性也不高。但 C# 類別可以繼承多個 interface，所以就思考能不能讓類別繼承 interface 的同時，也能提供功能，就好像是繼承了一個類別。</summary></entry></feed>
