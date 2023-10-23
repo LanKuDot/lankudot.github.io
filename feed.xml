@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2023-10-21T12:36:04+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[閱讀] 小島秀夫《創作的基因》</title><link href="https://lankudot.airfishlab.com/blog/2023-10-the-gifted-gene-and-my-lovable-memes/" rel="alternate" type="text/html" title="[閱讀] 小島秀夫《創作的基因》" /><published>2023-10-07T00:00:00+08:00</published><updated>2023-10-07T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-gifted-gene-and-my-lovable-memes</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-10-the-gifted-gene-and-my-lovable-memes/">&lt;p&gt;《創作的基因》收錄小島秀夫對看過的小說與影視作品所寫下的心得文章。對小島來說，透過閱讀與觀影能帶來平常沒有的「體驗」，體驗到來自不同世界的精神，認識到更多的想法。這些作者透過創作出作品這個「MEME」，將自己的想法傳達給它人，從而讓受到影響的人創作出更多的「MEME」傳承下去，構成「創作的基因」。這本書就是收錄這些影響小島的「MEME」。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2023-10-23T23:44:29+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[雜談] 程式專案的一人負責與多人協作</title><link href="https://lankudot.airfishlab.com/blog/2023-10-collaboration-of-programming/" rel="alternate" type="text/html" title="[雜談] 程式專案的一人負責與多人協作" /><published>2023-10-23T00:00:00+08:00</published><updated>2023-10-23T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/collaboration-of-programming</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-10-collaboration-of-programming/">&lt;p&gt;之前的工作模式偏向個人負責一個專案或一個完整的功能，跟別人的互動主要是確認需求、處理反饋。現在的工作參與專案的規模則大上許多，一個元件或功能會由不同人接手，模式跟以往大不相同。這兩個月因為專案上線，所以從系統架構的工作轉去支援功能的維護。這段時間體驗到許多觀念衝擊，就在思考為什麼會如此適應不良。&lt;/p&gt;
+
+&lt;h2 id=&quot;差別&quot;&gt;差別&lt;/h2&gt;
+
+&lt;p&gt;我想這兩者最大的差別就是需不需要去改變自己的工作模式。跟不同領域的人合作時（如企劃與美術），主要專注在功能的規格上，至於要如何在程式上實現，則可以依自己習慣的方式去完成。但如果是跟同是程式的人合作的話，尤其參與時專案已經進行一陣子了，就得要依循既有的工作模式了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-10-23-collaboration-of-programming/self-vs-cooperation.png&quot; alt=&quot;self-vs-cooperation&quot; class=&quot;align-center&quot; /&gt;
+&lt;em&gt;自己做可以不受限制，但多人協作就得配合他人了&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;如果有特別規定，則還可以依循規定去調整工作模式，像是縮排用 tab 還是 space、類別框架、分支命名等。但如果沒有的話，就得要照著前人的 coding style 去撰寫，配合這些「潛規則」。像是覺得用 switch-case 做條件判定比較好，但如果前人已經用一連串的 if-else 來判定，就只能再加新的 else 上去。或是因為習慣用垂直分割一次看兩份程式碼，因此設定在 80 字元後會換行，但原本程式碼在 120 字元才換行，甚至一行寫到底的話，較短的換行就會顯得突兀。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-10-23-collaboration-of-programming/different-coding-style.png&quot; alt=&quot;different-coding-style&quot; class=&quot;align-center&quot; /&gt;
+&lt;em&gt;不同的 coding style 會讓程式碼不協調&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;如果為了 coding style 去改別人的程式碼，則可能會讓責任到自己身上。因為功能出錯時，會先找最近一次的 commit 者是誰。而且專案已經運作一陣子的話，改動功能正常的地方，可能會有風險。&lt;/p&gt;
+
+&lt;h2 id=&quot;溝通&quot;&gt;溝通&lt;/h2&gt;
+
+&lt;p&gt;但也不是就此束手無策，還是可以透過溝通來改善這樣的情況。像是推薦工具外掛來改善程式碼排版，例如可以在存檔時把行尾空白去除的 &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=MadsKristensen.TrailingWhitespace64&quot;&gt;Trailing Whitespace Visualizer&lt;/a&gt;，還有顯示換行字元位置的 &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelinesPreview&quot;&gt;Editor Guidelines&lt;/a&gt;，最後設定換行區間在 80 到 120 字元。再進一步的話，也可以導入 lint 工具跟 git hook，來統一 coding style。&lt;/p&gt;
+
+&lt;p&gt;雖然現在還處在適應轉換期，確實因為觀點不同帶來蠻大的低潮，而且要習慣不同的 coding style 還要一段時間。但也趁著這次機會，來嘗試推薦自己認為比較好的寫法，也希望可以進一步改善專案的品質。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="雜談" /><summary type="html">之前的工作模式偏向個人負責一個專案或一個完整的功能，跟別人的互動主要是確認需求、處理反饋。現在的工作參與專案的規模則大上許多，一個元件或功能會由不同人接手，模式跟以往大不相同。這兩個月因為專案上線，所以從系統架構的工作轉去支援功能的維護。這段時間體驗到許多觀念衝擊，就在思考為什麼會如此適應不良。</summary></entry><entry><title type="html">[閱讀] 小島秀夫《創作的基因》</title><link href="https://lankudot.airfishlab.com/blog/2023-10-the-gifted-gene-and-my-lovable-memes/" rel="alternate" type="text/html" title="[閱讀] 小島秀夫《創作的基因》" /><published>2023-10-07T00:00:00+08:00</published><updated>2023-10-07T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-gifted-gene-and-my-lovable-memes</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-10-the-gifted-gene-and-my-lovable-memes/">&lt;p&gt;《創作的基因》收錄小島秀夫對看過的小說與影視作品所寫下的心得文章。對小島來說，透過閱讀與觀影能帶來平常沒有的「體驗」，體驗到來自不同世界的精神，認識到更多的想法。這些作者透過創作出作品這個「MEME」，將自己的想法傳達給它人，從而讓受到影響的人創作出更多的「MEME」傳承下去，構成「創作的基因」。這本書就是收錄這些影響小島的「MEME」。&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-10-07-the-gifted-gene-and-my-lovable-memes/cover-image.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -708,102 +728,4 @@
   &lt;li&gt;&lt;a href=&quot;https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/functional/deconstruct#user-defined-types&quot;&gt;Deconstructing tuples and other types - Microsoft Learn&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/64326511/custom-equality-check-for-c-sharp-9-records&quot;&gt;Custom equality check for C# 9 records - StackOverflow&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/switch-expression&quot;&gt;Switch Expression - Microsoft Learn&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="C#" /><category term="Unity" /><category term="筆記" /><summary type="html">Unity 2021 LTS 也出來好一陣子了，在 2021.2 版後就開始導入 C# 9.0。使用了半年後，發覺 C# 9.0 當中新增的語法可以讓程式碼更加簡潔易讀，整理成本篇來介紹個人常用的語法。</summary></entry><entry><title type="html">[筆記] 利用 Attribute 為繼承類別給與不同的 Static 成員值</title><link href="https://lankudot.airfishlab.com/blog/2022-08-csharp-use-attribute-to-provide-varient-static-member/" rel="alternate" type="text/html" title="[筆記] 利用 Attribute 為繼承類別給與不同的 Static 成員值" /><published>2022-08-23T00:00:00+08:00</published><updated>2022-08-23T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/csharp-use-attribute-to-provide-varient-static-member</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2022-08-csharp-use-attribute-to-provide-varient-static-member/">&lt;p&gt;在專案開發上遇到這樣的問題：每個繼承類別要提供類似的 static 函式，功能差不多，但只有要取用的值不一樣。就在想能不能把 static 函式拉到基礎類別上，但又可以依照繼承類別給與不同的 static 成員值。&lt;/p&gt;
-
-&lt;p&gt;如果把 static 函式放在繼承類別上，就得每個繼承類別寫類似的函式。如果把 static 函式放在基礎類別，又不能在基礎類別上取得繼承類別的 static 成員值，因為 static 函式不能宣告為 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;abstract&lt;/code&gt; 或是 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;virtual&lt;/code&gt;，所以基礎類別無法知道繼承類別有那個 static 成員。最後想到的方法是透過 attribute 配合 reflection 來取得繼承類別上的不同 static 成員值。&lt;/p&gt;
-
-&lt;h2 id=&quot;實作&quot;&gt;實作&lt;/h2&gt;
-
-&lt;p&gt;在專案中，每個 Unity 場景都有一個啟動的程式碼，程式碼會提供對應的場景名稱。在場景載入後，就要執行這個程式碼。所以載入場景跟執行啟動程式碼的功能放在基礎類別上，而對應的場景名稱就在繼承類別上指定。&lt;/p&gt;
-
-&lt;p&gt;首先建立一個 attribute 類別用來儲存場景名稱的資訊，並限制 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TargetSceneAttribute&lt;/code&gt; 只能用在類別上：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;AttributeUsage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AttributeTargets&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TargetSceneAttribute&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Attribute&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;readonly&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SceneName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;TargetSceneAttribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sceneName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;SceneName&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sceneName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;接著在基礎類別上的 static 函式取得繼承類別上的 attribute 值。attribute 只是記錄資訊而已，要透過 reflection 來取得上面的值：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EntryPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MonoBehaviour&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EntryPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GetSceneName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Attribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetCustomAttributes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;foreach&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attr&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attr&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TargetSceneAttribute&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;targetSceneAttr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;targetSceneAttr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SceneName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;MissingMemberException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;&quot;The class which inherits from the &apos;EntryPoint&apos; &quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;&quot;must have the &apos;TargetScene&apos; attribute&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;最後在繼承的類別上加上指定場景名稱的屬性：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;TargetScene&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Home&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;HomeEntryPoint&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EntryPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HomeEntryPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;這樣基礎類別就可以透過它的 static 函式去取得繼承類別上的 static 成員了：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;Debug&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HomeEntryPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetSceneName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// &quot;Home&quot;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;如果有一系列的繼承類別擁有不同的 static 成員值，就可以透過這樣的方式，由基礎類別提供 static 函式來取得值或是做後續處理。&lt;/p&gt;
-
-&lt;h2 id=&quot;應用&quot;&gt;應用&lt;/h2&gt;
-
-&lt;p&gt;例如在專案中，在載入場景後就要去執行起始的程式碼，所以就在 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EntryPoint&lt;/code&gt; 提供這樣的功能：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;EntryPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;MonoBehaviour&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;where&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;T&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EntryPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GetSceneName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Attribute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetCustomAttributes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;foreach&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attr&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;attr&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TargetSceneAttribute&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;targetSceneAttr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;targetSceneAttr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SceneName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;throw&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;MissingMemberException&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;&quot;The class which inherits from the &apos;EntryPoint&apos; &quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;+&lt;/span&gt;
-      &lt;span class=&quot;s&quot;&gt;&quot;must have the &apos;TargetScene&apos; attribute&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;c1&quot;&gt;// Load the target scene and execute the entry point&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;LoadScene&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;SceneManager&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;LoadScene&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;GetSceneName&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;entryPoint&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;FindObjectOfType&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;typeof&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;T&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;entryPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;StartCoroutine&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
-  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;abstract&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IEnumerator&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Execute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;這樣就可以透過基礎類別提供的 static 函式來載入場景跟對應的程式碼，而不用為每一個類別寫 static 的載入函式了：&lt;/p&gt;
-
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;HomeEntryPoint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;LoadScene&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;參考資料&quot;&gt;參考資料&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/attributes/&quot;&gt;屬性(C#) - Microsoft Docs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection&quot;&gt;使用反射存取屬性(C#) - Microsoft Docs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="C#" /><category term="Unity" /><category term="筆記" /><summary type="html">在專案開發上遇到這樣的問題：每個繼承類別要提供類似的 static 函式，功能差不多，但只有要取用的值不一樣。就在想能不能把 static 函式拉到基礎類別上，但又可以依照繼承類別給與不同的 static 成員值。</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="C#" /><category term="Unity" /><category term="筆記" /><summary type="html">Unity 2021 LTS 也出來好一陣子了，在 2021.2 版後就開始導入 C# 9.0。使用了半年後，發覺 C# 9.0 當中新增的語法可以讓程式碼更加簡潔易讀，整理成本篇來介紹個人常用的語法。</summary></entry></feed>
