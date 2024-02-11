@@ -1,425 +1,423 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2024-01-28T16:49:21+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[電影] 2023 年進電影院看過的那些電影們</title><link href="https://lankudot.airfishlab.com/blog/2024-01-watched-movies-in-theater-in-2023/" rel="alternate" type="text/html" title="[電影] 2023 年進電影院看過的那些電影們" /><published>2024-01-28T00:00:00+08:00</published><updated>2024-01-28T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/watched-movies-in-theater-in-2023</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-01-watched-movies-in-theater-in-2023/">&lt;p&gt;回想去年看的電影比起以往還要來得多，沒想到也漸漸喜歡看電影的感覺。就想來記錄去年看過的電影，以後也可以回味喜歡的作品。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2024-02-11T18:10:48+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[電影] 2023 年在家裡看過的那些電影們</title><link href="https://lankudot.airfishlab.com/blog/2024-02-watched-movies-at-home-in-2023/" rel="alternate" type="text/html" title="[電影] 2023 年在家裡看過的那些電影們" /><published>2024-02-10T00:00:00+08:00</published><updated>2024-02-10T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/watched-movies-at-home-in-2023</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-02-watched-movies-at-home-in-2023/"><![CDATA[<p>2023 年除了在電影院看了許多電影外，也透過 Netflix 等串流平台收看了經典以及想要補齊的電影。就用這篇來整理這段時間的心得。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<h3 id="今敏的動畫電影">今敏的動畫電影</h3>
 
-&lt;h3 id=&quot;捍衛任務-4&quot;&gt;捍衛任務 4&lt;/h3&gt;
+<p>前年看過《今敏：造夢魔術師》後才認識這位動畫導演，知道他的作品影響其他電影導演，可以在他們的電影中看到今敏作品的影子。看完這部紀錄片後就對他的作品非常感興趣，就下訂四部動畫電影的 BD 了，就為了能一看再看。這四部作品風格與劇情走向完全不同，但每一部內容毫不馬虎且令人印象深刻，知道他已經年紀輕輕就過世時覺得非常可惜。</p>
 
-&lt;p&gt;這系列從第 1 集看到第 3 集，也終於迎來結局。最喜歡在廢棄房屋中，以 top-down 視角拍攝的戰鬥場景。流暢的運鏡，搭配龍息霰彈擊發時噴射出來的火焰，從上方看著 John Wick 從一個房間打到另一個房間，視覺一大滿足。另外沒想到飾演先驅者的 Clancy Brown，就是《刺激 1995》的警備隊長，兩者之間的氣場完全不一樣。可惜看得出基哥體力不如以前，肢體打鬥顯得單調。劇情上越來越多過場角色，防彈西裝也人人都有。而且這系列對上的主要敵人最後都讓人感覺只是個小屁孩。&lt;/p&gt;
+<p><img src="/assets/images/blog/2024-02-10-watched-movies-at-home-in-2023/movie-posters-1.png" alt="movie-posters-1" /></p>
 
-&lt;h3 id=&quot;龍與地下城盜賊榮耀&quot;&gt;龍與地下城：盜賊榮耀&lt;/h3&gt;
+<h4 id="藍色恐懼">藍色恐懼</h4>
 
-&lt;p&gt;2023 年最喜歡的電影就是這一部了！整部電影就像是在跑團，演員們在開拍前還跟導演跑過一場 D&amp;amp;D 來加深對角色的印象。雖然有玩過 TRPG，但沒有跑過 D&amp;amp;D 系統，但同行的朋友說，電影中的場所、怪物、法術完全是 D&amp;amp;D 裡面的設定。所有角色中最喜歡 Doric，可以算是整個冒險的 MVP 了，能變形成各種生物，變大可以擊退敵人，變小則可以潛入，而且演員也很可愛。電影中有一段逃離追擊的過程，看著 Doric 流暢地變形成各種不同的生物來躲避攻擊、穿越障礙，讓人感到非常過癮。&lt;/p&gt;
+<p>之前就有聽說《藍色恐懼》是部心理驚悚類型的電影，對恐怖電影沒有抗性的我，真慶幸自己選早上來看這部電影。女主角未麻從偶像轉為演員後，就一直遭受未知的粉絲騷擾，另一方面又與過去的自己拉扯，逐漸對自己轉戰演員這個決定感到迷惑。電影把未知恐懼還有心理壓力營造的很好，可以感受到整部電影詭譎的氣氛。在進入解明階段後，才發現原來還有一層真相，把之前對劇情的理解完全推翻，看到這裡時感到非常驚訝。尤其電影最後未麻在車內對後照鏡講的那句話，更是耐人尋味。BD 有附錄今敏對電影的訪談，談到電影中場景隱含的未麻心理狀態。另外也一直呈現「看與被看」的關係，玻璃就是之間的界線，未麻與水族箱裡的魚、房間與窗外世界，甚至到觀眾與劇情，這也是電影中值得注意的地方。</p>
 
-&lt;h3 id=&quot;超級瑪利歐兄弟電影版&quot;&gt;超級瑪利歐兄弟電影版&lt;/h3&gt;
+<h4 id="千年女優">千年女優</h4>
 
-&lt;p&gt;偏粉絲向的作品，看到熟悉的場景出現，像是開頭的 World 1-1、對上 Donkey Kong 的名星大亂鬥場地、瑪利歐賽車等，就比較不會在意劇情不通順了。還蠻喜歡開場設定瑪利歐跟路易吉在現實世界只是普通的水電工，還得要拍廣告來招攬生意（這一段廣告做的很棒），好不容易接到生意，卻又花式搞雜。&lt;/p&gt;
+<p>《千年女優》是戲中戲類型的電影。劇中立花導演為了拍攝傳奇女星，同時也是自己的偶像—藤原千代子的紀錄片，而到她隱居的地方拜訪。電影以立花導演帶來的一把鑰匙貫穿整部劇情，就從這把鑰匙開始，回憶起過去的種種。或許千代子年紀大了，把自己的記憶跟拍攝過的電影劇情混在一起了，但沒想到的是立花導演跟他的助手也被捲入到劇情裡面了。每一段跟電影混雜在一起的回憶，千代子都在尋找當初給她這把鑰匙的那位男子，但男子同時受到壞人的追捕，每次都是立花導演扮演的角色挺身而出，排除阻礙。每一段回憶就像一個輪迴，雖然時空不同，但是主要人物與過程卻十分相似，一路從戰前到上太空，千代子總是在追尋那位男子。有時是回憶劇，有時突然來個導演喊卡，才理解這段是現實，這種似夢非夢的敘事方式，稍一不注意就會跟不上。電影結局的意涵，讓情緒完全爆發出來，最好是多準備幾張衛生紙。</p>
 
-&lt;hr /&gt;
+<h4 id="東京教父">東京教父</h4>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p>《東京教父》充滿聖誕節奇蹟，還有如親情般的溫暖氛圍，是最適合在聖誕節看的電影之一了。三名留宿街頭的流浪漢—阿仁、小花、美由紀，在聖誕節前夕撿到一名棄嬰，因為不忍嬰兒被遺棄，於是踏上找尋其生父母的路。一路上的遭遇，逐漸道出三名流浪漢的過去，以及他們對「家庭」的價值觀與衝突。雖然他們都在冷颼颼的戶外，但越看心裡越覺得溫暖，算是今敏作品中最能直覺理解的一部了。劇情一樣毫不馬虎，每位角色的個性也很分明，當中也不乏幽默感。最喜歡流浪漢與小屁孩們打架的場景，後面辦公大樓一排房間的燈，呈現兩方的體力狀態，就跟格鬥遊戲沒兩樣。</p>
 
-&lt;h3 id=&quot;blue-giant&quot;&gt;Blue Giant&lt;/h3&gt;
+<h4 id="盜夢偵探">盜夢偵探</h4>
 
-&lt;p&gt;身為爵士樂的喜好者，當然是不能錯過這部以爵士樂為主題的動畫電影。當初日本在 2 月上映時，就很期望台灣也能上映，看到消息真的非常高興。在上映前，Spotify 上的原聲帶早以聽了無數次，上原廣美的編曲實在迷人。電影開場第一首 Impression 出來時，眼淚就忍不住掉下來了，果然在有好的電影院設備聽爵士樂是一大享受。雖然演奏的演出是用 3D 呈現，會讓人有點出戲，而且比較沒有力量，但我想這是為了演奏到位而做的取捨。不過最後玉田有一段鼓的 solo 完全是手繪，就可以完全感受到演奏的張力，看完又哭了一次。劇場版也補足原作漫畫劇情的缺憾，是我第二部 2023 年最喜歡的電影。&lt;/p&gt;
+<p>與前面的作品不同，《盜夢偵探》就偏向科幻電影了。研究所的森啟發明的「DC 迷你」可以具現化人類的夢境，但長期使用儀器卻會使人分不清現實與夢境，而且還可以植入別人的夢境到其他使用者身上。然而研究所內的 DC 迷你被竊，主角千葉博士為了防止被拿來犯罪，開始追查兇手，甚至進入夢境中調查。很喜歡今敏能夠如此具體呈現夢境的無厘頭，像是原本看著的人，下一秒就是自己，或是跑不完的長廊，抑或是講著毫無邏輯的話，下一幕就呈現話中的場景。如果有看過《全面啟動》的話，就會發現這兩者之間有相似之處。算是四部作品中最喜歡的一部。</p>
 
-&lt;h3 id=&quot;印第安納瓊斯命運輪盤&quot;&gt;印第安納瓊斯：命運輪盤&lt;/h3&gt;
+<hr />
 
-&lt;p&gt;老實說我就是為了麥叔而去看這一部電影，整場也只有麥叔的演出吸引人，把身為物理學家，醉心於穿越時空的神物發揮的淋漓盡致。最喜歡麥叔在二戰戰場剛登場時，還有最後在機場整隊準備回到過去時這兩個場景，散發出身為主要敵人的強大氣場。相比之下，劇情非常無趣，電影中三段你追我跑的情節，過程相似，只是場景不同。敵人手下的手段也相當粗糙，遇到阻礙、不合意的人就只會開槍。更遑論有些角色在劇情中可有可無。&lt;/p&gt;
+<p><img src="/assets/images/blog/2024-02-10-watched-movies-at-home-in-2023/movie-posters-2.png" alt="movie-posters-2" /></p>
 
-&lt;h3 id=&quot;不可能的任務致命清算-第一章&quot;&gt;不可能的任務：致命清算 第一章&lt;/h3&gt;
+<h3 id="亨利休格的神奇故事">亨利．休格的神奇故事</h3>
 
-&lt;p&gt;看到阿湯哥在電影中一樣生龍活虎，只能佩服再佩服了。相比之前，本集就直接進入事件核心，動作場景也多了很多，簡單來說就是部爽片。因為預告就有介紹躍下懸崖的特技是怎麼執行的，所以在看這一段時，反而可以注意觀察視覺特效是怎麼處理這個場景。對於上集角色再次登場感到驚訝，再加上這集的女主角，實在佩服阿湯哥的選角眼光。&lt;/p&gt;
+<p>改編自羅爾德．達爾德《亨利．休格和其他六人的精彩故事》，由魏斯．安德森導演的喜劇電影，在 Netflix 上映書中的四個故事《亨利．休格的神奇故事》、《殺鼠之鼠》、《心腹之毒》、《天鵝之翼》。魏斯．安德森是我喜歡的導演之一，他的風格強烈，場景對稱、用色鮮明、角色演出方式，讓他的作品有「魏式美學」之稱。這系列的作品的特色是角色在做事的同時也會講出他正在作的事，或是在講完別人會做的事後，那個角色做出對應的行為，就像口述影像。有時其他角色還會疑惑地看著正在講故事的角色，想著這個人在幹嘛。另外有趣的是，角色幾乎一直面對觀眾，但透過站位來表達之間的關係。而場景佈景就像舞台劇機關，隨著劇情推進，佈景會被移出移入，也會有小幫手幫忙佈置前景道具。雖然是看影像，但感覺是在看一本立體有聲書，這就是魏斯．安德森的作品吸引人的地方。</p>
 
-&lt;hr /&gt;
+<h3 id="玩命再劫">玩命再劫</h3>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p>《玩命再劫》（Baby Driver）的主角 Baby 是搶罪集團的車手，負責接應做案同夥到現場與逃離追捕。主角因為小時候耳朵受過傷，所以經常帶著 iPod 聽音樂以抑制耳鳴聲，而他聽的音樂就會是那一段的背景音樂。看《玩命再劫》最過癮的就是每個動作場景都有對上音樂的鼓點，不僅僅只有演員的動作，連跟週遭物件的互動也都會對上音樂。像是電影開場的搶案，一開始還以為只有主角去對上正在聽的音樂，再看一次才發現同夥開門、拿東西的動作也有對上節拍，甚至飆車經過柱子的風切聲也配合著鼓點。還有主角買咖啡回程的路上經過的塗鴉是在聽得歌曲的歌詞。我很喜歡電影中透過小動作來傳達主角的個性，像是主角對殺人感到害怕，所以開場同夥舉槍對人時，還緊張地把墨鏡拿下來看。執導的 Edger Wright 也是我喜歡的導演，他的《血與冰淇淋三部曲》與《歪小子史考特》也在我最喜歡的電影名單中，尤其是《歪小子史考特》是必看電影之一。</p>
 
-&lt;h3 id=&quot;奧本海默&quot;&gt;奧本海默&lt;/h3&gt;
+<h3 id="終極警探">終極警探</h3>
 
-&lt;p&gt;第一次看 IMAX 的體驗就給了奧本海默，沒想到 IMAX 的螢幕這麼大，太晚買票只能座前排的我，整場電影脖子撐得很痠。當時諾蘭的作品還沒看過很多，中場才意識到黑白畫面是之後的時間點，彩色畫面則是現在的時間點。所以前面這兩者的穿插，讓我有點跟不上劇情，但發覺這一點之後，就跟上劇情的發展了。二戰當時除了軍備競賽之外，還包含了共產主義的盛行，電影完整呈現這兩者。電影中奧本海默在原子彈一步一步完成的過程中，僅管興奮，更多的是問自己做出這個武器是否是正確的。最後在原子彈完成後的慶功演說中，對比參與人員的歡慶，只有奧本海默感受到原子彈爆炸的強光，在離場時踩到焦黑的屍體，這個橋段的象徵不言而喻，也是我覺得最棒的一段。&lt;/p&gt;
+<p>「Yippee ki-yay, MDFK.」在朋友強力推薦下，在聖誕節看了這部經典的聖誕節電影。主角紐約警探約翰．麥克連為了挽回與妻子霍莉逐漸殊遠的關係，趁聖誕節假期到洛杉機，前往妻子任職的公司所舉辦的晚宴探望她。卻沒想到中途一群武裝恐怖份子闖入公司，為了取得數億元債券劫持所有人。然而約翰趁亂逃離現場，開始個個擊倒這群恐佈份子。這部電影令我驚訝的地方就是整個劇情的時間跨度就只有一個晚上，卻毫無冷場。約翰的獨自對抗、恐怖份子的無情、媒體的噬血、當地警方的無能，每一方的對比明顯，整場就看著約翰如何支身對抗敵人。開頭那一句就是約翰對恐怖份子說的經典台詞。當時的英雄動作片流行是像史特龍那樣的肌肉男主角，但主演這部電影的布魯斯．威利反而沒有如此壯碩，卻呈現出「是一個遇到極端險境而誕生的平凡英雄」。另外沒有想到飾演恐怖份子首腦的演員是艾倫．瑞克曼，也就是在哈利波特飾演石內卜的演員，在《終極警探》中完全認不出這是他年輕的樣子。</p>
 
-&lt;h3 id=&quot;拿破崙&quot;&gt;拿破崙&lt;/h3&gt;
+<hr />
 
-&lt;p&gt;歷史故事也是我喜歡的題材之一，預告出來後就很期待進電影院觀賞。雖然觀影前就有看到一些評論，但是秉持著對於歷史的喜愛，還是堅持去看。沒想到法國大革命後還有這麼精彩的歷史。開場就是瑪麗皇后上斷頭台，確立拿破崙能力的土倫圍城戰，在霧月政變後如何稱帝，後面當然就是耳熟能詳的法俄戰爭與滑鐵盧戰爭。沒想到可以在兩小時半的電影中，演出這麼豐富的歷史過程。在觀影後，完全激起我對這段歷史的興趣，到 wiki 查了跟拿破崙有關的歷史，並對照電影中不同的地方。整部電影的戰爭場面做的很棒，用心在戰法與佈陣上。後來才知道飾演約瑟芬的是 Vanessa Kirby，在《不可能的任務》中飾演白寡婦，難怪覺得很熟悉。&lt;/p&gt;
+<p><img src="/assets/images/blog/2024-02-10-watched-movies-at-home-in-2023/movie-posters-3.png" alt="movie-posters-3" /></p>
 
-&lt;h3 id=&quot;旺卡&quot;&gt;旺卡&lt;/h3&gt;
+<h3 id="醉好的時光">醉好的時光</h3>
 
-&lt;p&gt;適合闔家觀賞的聖誕節電影，沒想到會是像迪士尼電影那樣，在劇情中穿插歌舞的形式。電影算是《歡樂糖果屋》的前傳，也就是威利旺卡建立巧克力工廠之前的故事，其中有很多《歡樂糖果屋》的彩蛋，連歐帕倫普人的造型也是一樣的。因為是闔家觀賞的電影，所以反派的行為會比較溫合，而且受到報應時通常很滑稽，但我很喜歡這種幽默的設計。電影歌舞中，也最喜歡反派在賄賂警長這一首。這部電影對我來說算是倒吃甘蔗，前半場節奏偏慢，差點撐不下去，但在事件開始後逐漸好轉，最後抵擋不住淚腺攻擊。&lt;/p&gt;
+<p>在《死亡擱淺》深深地被麥叔的氣質給吸引後，就一直很想補他有演出的電影，《醉好的時光》就在我的片單中。電影裡四位學校老師在學校遭遇挫折，被評論教課無趣。於是嘗試實驗透過控制血液中的酒精濃度，來驗證在微醉的狀態下，表現反而會更好的理論。在之前看到麥叔的訪談影片中，他提到為了讓表演更真實，演員們還事先舉辦體驗營，錄下自己真的喝醉時的表現作為參考。乍聽之下是喜劇電影，但更深的是中年不被認同的危機感，到後段進入爛醉實驗階段後，情況反而急轉直下，甚至當中有人無法自拔而發生悲劇，越感沈重。電影結尾麥叔邊跳著舞邊與慶祝畢業的高中生喝酒的一鏡到底的片段，搭配著 Scarlet Pleasure 的《What A Life》，是電影的經典一段。只是最後看到這一段時，不知道自己是該高興還是該哀傷。</p>
 
-&lt;hr /&gt;
+<h3 id="極地">極地</h3>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p>在《極地》中，麥叔釋演一名過著退休生活的殺手，但前雇主找來一群年輕的殺手來斬草除根。麥叔這邊的劇情用沉穩、色調偏暗的風格進行，讓人覺得他是一位資歷豐富的殺手；而年輕殺手的劇情則是使用節奏強烈的音樂、嘻鬧、色調明亮的風格進行，呈現出他們的自信與自大。但這兩者間直接切換讓情緒不能連貫，就好像乘著一台車，原本在公路上穩穩地開著，忽然間大甩尾，接著開始飆山路，過一陣子又跑回公路上，乘客也只能暈車了。不過在這當中，看著麥叔的演技是很令人享受，舉手投足間就可以感受到角色的氣場。</p>
 
-&lt;h3 id=&quot;王立宇宙軍-歐尼亞米斯之翼&quot;&gt;王立宇宙軍 ～歐尼亞米斯之翼～&lt;/h3&gt;
+<hr />
 
-&lt;p&gt;當初聽聞這部動畫電影主要是為了炫技而製作的，在劇情方面並沒有很好，就抱持著享受作畫的心情，去看這次重上電影院的《王立宇宙軍》。作畫真的非常精製，幾乎每個場景都是不同的背景，機械管線的設計也令人著迷。最終火箭發射時，全場音樂停止，因液態燃料的低溫而生成的霜片紛飛，這個場面讓人暫時忘記呼吸，劇情的不足拋之腦後。不知是不是製作年代的關係，電影內的文化、宗教、服飾設定還是偏民族感，但這也是電影的另一個看點。&lt;/p&gt;
+<p><img src="/assets/images/blog/2024-02-10-watched-movies-at-home-in-2023/movie-posters-4.png" alt="movie-posters-4" /></p>
 
-&lt;h3 id=&quot;星際牛仔天國之門&quot;&gt;星際牛仔：天國之門&lt;/h3&gt;
+<h3 id="全面啟動">全面啟動</h3>
 
-&lt;p&gt;身為 Spike 的粉絲，看到有人在揪團包場看這部星際牛仔的電影版，理所當然立刻報了名。跟著一群星際牛仔的粉絲看電影，感受完全不同。在主角群的部份，劇情主要著重在 Spike 的身上。還蠻喜歡用蒙太奇來推進劇情的手法，像是 Spike 為了打探情報，到處問人的過程。沒有台詞，只有呈現 Spike 到不同地方跟不同人互動，從他們之間的互動就可以看出詢問的結果。搭配背景音樂，又可以同時呈現當地的文化氛圍，在《王立宇宙軍》中，也是以這樣的手法呈現警探在找尋主角下落的過程。看星際牛仔的另一個享受就是菅野洋子的音樂了，開場的 AsK DNA 配上日常畫面，立刻把人拉入電影的氛圍中。還有片尾的 Gotta knock a little harder 配上結局，只能顧好自己的淚腺了。SEE YOU SPACE COWBOY…&lt;/p&gt;
+<p>老實說我到 2023 年才接觸到諾蘭導演的作品，但是在這之前就大概知道《全面啟動》的故事，還有經典的轉陀螺的橋段。《全面啟動》劇情讓人回味無窮，為了讓雇主能在商業競爭中得利，雇用了一群可以進入別人夢中的主角群，利用夢來修改目標的記憶，迫使他放棄事業。過程中也一點一滴的帶出主角的過去，而個人覺得這才是電影的主軸。另外世界觀也引人入勝，「盜夢者」可以進入別人的夢中竊取資訊，所以理所當然有人為了防止侵入，會透過訓練潛意識來陪養軍隊以對付這類人。而盜夢者為了讓自己可以分辦是現實還是別人假造的夢，也會隨身攜帶作為「Token」的物品，只有自己知道它的觸感、大小等資訊，就是為了防止別人在夢中假造一樣的物品，來誤認自己是在現實，李奧納多釋演的柯布的 token 就是小陀螺。另外夢境可以由淺層進入到深層的設定也很有趣，當然進入的越深風險也越高。</p>
 
-&lt;h3 id=&quot;歡迎來到駒田蒸餾所&quot;&gt;歡迎來到駒田蒸餾所&lt;/h3&gt;
+<h3 id="星際效應">星際效應</h3>
 
-&lt;p&gt;以威士忌為主題的動畫電影，因為是冷門題材，又是動畫電影，在上映後就把握時間買票觀看了。女主角駒田琉生繼承家族的蒸餾所後，一肩扛起整個家族的未來，研發出「若葉」這款威士忌而聲名大噪，但最終是為了能讓「獨樂」這款屬於家人的威士忌能再次誕生。劇情路線是可預期的，但我對全靠熱情與精神喊話就能成功的故事，感到這實在是太理想美好了。電影場景的原型是若鶴三郎丸蒸餾所，用 Google 街景查就可以看到電影中出現的建築。三郎丸也有出現在電影中，生產劇情中登場的兩款威士忌「獨樂」與「若葉」的募資計劃，也都是由三郎丸生產。電影比較可惜的是沒有深入介紹威士忌的製程，只在開頭以蒙太奇的方式快速帶過，比較注重在調合的部份。但也讓我對威士忌的製程產生興趣，觀影後就到 YouTube 查了許多相關的介紹。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="觀後感" /><summary type="html">回想去年看的電影比起以往還要來得多，沒想到也漸漸喜歡看電影的感覺。就想來記錄去年看過的電影，以後也可以回味喜歡的作品。</summary></entry><entry><title type="html">[閱讀] 石川祐基 - 解構鐵道文字設計</title><link href="https://lankudot.airfishlab.com/blog/2023-11-dive-into-font-design-in-train-station/" rel="alternate" type="text/html" title="[閱讀] 石川祐基 - 解構鐵道文字設計" /><published>2023-11-05T00:00:00+08:00</published><updated>2023-11-05T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/dive-into-font-design-in-train-station</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-11-dive-into-font-design-in-train-station/">&lt;p&gt;不知道從何時開始，就一直對鐵道很有興趣，去日本都會拜訪當地的鐵道博物館，或是搭乘比較獨特的鐵路路線，偶爾看到列車經過平交道時，也會想拍下它行經的過程。但是對於車站內的站牌卻沒有特別留意，在快速取得上面的資訊後，就沒有再看過一眼了，直到我在書店遇到這本《解構鐵道文字設計》。&lt;/p&gt;
+<p>《星際效應》是我最喜歡的科幻電影之一了。地球的農作物因為氣候變遷與病害的關係，產量越來越少，原本為太空人的主角庫柏被迫成為農夫，來幫助解決糧食問題。然而在家中的女兒墨菲發現書櫃的書會無故落下，沙塵暴在地上留下二進制座標的奇怪現象，引導庫柏到 NASA 的秘密基地。在那邊的負責人布蘭德教授說，在土星也有觀測到蟲洞，認為這是外星生命對地球發出的信號，指引人類到外太空生活。於事庫柏答應教授，與組員一同前往探索。即然是太空科幻電影，外太空的景緻肯定不能馬忽，尤其是就近到黑洞時，再配上漢斯．季默的配樂，完全能感受到黑洞的壯闊感。電影到了後段也解開為何庫柏與墨菲會遇到那些奇怪的現象，並不是單單為了推進劇情而設的橋段，同時也把劇情昇華到另一個層次，可以體會到諾蘭兄弟厲害的編劇功力。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/cover-image.jpg&quot; alt=&quot;cover-image&quot; /&gt;&lt;/p&gt;
+<h3 id="記憶拼圖">記憶拼圖</h3>
 
-&lt;p&gt;《解構鐵道文字設計》介紹日本各地鐵道站點的文字設計，從大家比較熟知的 JR、都營地下鐵，到江之島電鐵、越前鐵道等地方鐵路。範圍從站名牌、指示牌，到商標應有盡有。書中不只詳細介紹站名牌、指示牌所使用的字體，還有訪問到設計的公司，講解排版、裝飾等設計目地，如何達到易讀又能兼顧美感。另外收錄地下鐵站名牌的進化，可以一窺從充滿懷舊感轉換到現代化設計，最後還有風格獨特的站名牌特輯。&lt;/p&gt;
+<p>《記憶拼圖》的主角藍納因為被歹徒襲擊而失去了妻子，同時也患上了「順行性失憶症」，之後的記憶只能持續幾分鐘，因而無法有新的記憶。所以藍納為了找出犯案的歹徒，除了在身上刺青之外，也用照片記錄人事物，並做下筆記來讓未來的自己能有行動的依據。這部電影同時帶有順敘與倒敘的時間線，我看到一半才意識到，原來黑白畫面是順敘，是從較早的時間點開始；彩色畫面是倒敘，是從後來的時間點開始，一段一段的回到之前的時間點。讓我感到厲害的是倒敘的處理方式，雖然是從後來的時間點往回敘事，但是每段都能帶來完整的資訊，而不是只留下謎題。而看了下一段後，對於上一段的理解又不一樣了，會有個「什麼，居然是這樣啊！」的感覺。而電影最後這兩條時間線交集在一起，同時也是真相大白的時候，當下只有震驚與讚嘆。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="觀後感" /><summary type="html"><![CDATA[2023 年除了在電影院看了許多電影外，也透過 Netflix 等串流平台收看了經典以及想要補齊的電影。就用這篇來整理這段時間的心得。]]></summary></entry><entry><title type="html">[電影] 2023 年進電影院看過的那些電影們</title><link href="https://lankudot.airfishlab.com/blog/2024-01-watched-movies-in-theater-in-2023/" rel="alternate" type="text/html" title="[電影] 2023 年進電影院看過的那些電影們" /><published>2024-01-28T00:00:00+08:00</published><updated>2024-01-28T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/watched-movies-in-theater-in-2023</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-01-watched-movies-in-theater-in-2023/"><![CDATA[<p>回想去年看的電影比起以往還要來得多，沒想到也漸漸喜歡看電影的感覺。就想來記錄去年看過的電影，以後也可以回味喜歡的作品。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/content-1.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/content-2.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;em&gt;書中詳細介紹站名牌的設計概念，看完後對站名牌肯定有不同的看法&lt;/em&gt;&lt;/p&gt;
+<p><img src="/assets/images/blog/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-1.png" alt="" /></p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/station-name-board-1.jpg&quot; alt=&quot;鐮倉高校前站名牌&quot; /&gt;
-&lt;em&gt;今年去江之島玩時，看到跟點心麵合作的站名牌，覺得有趣就拍下來了&lt;/em&gt;&lt;/p&gt;
+<h3 id="捍衛任務-4">捍衛任務 4</h3>
 
-&lt;p&gt;自認算輕度鐵道迷的我，每次去日本玩最期待的就是搭乘鐵路運輸。今年九月去江之島真的是大滿足，從大船站搭乘湘南單軌電車到湘南江之島站，這條路線是懸垂式單軌列車，軌道隨丘陵地起伏，有如雲宵飛車。還搭乘江之島電鐵到鎌倉高校與鎌倉大佛，路線沿途可以一覽海景，另外在腰越站與江之島站之間還行駛在馬路上，有如路面電車。書中就有介紹到湘南單軌電車獨特的站名牌設計，這趟沒有注意到實在可惜。不過再訪日本時，我就會特別留意鐵道的文字設計了！&lt;/p&gt;
+<p>這系列從第 1 集看到第 3 集，也終於迎來結局。最喜歡在廢棄房屋中，以 top-down 視角拍攝的戰鬥場景。流暢的運鏡，搭配龍息霰彈擊發時噴射出來的火焰，從上方看著 John Wick 從一個房間打到另一個房間，視覺一大滿足。另外沒想到飾演先驅者的 Clancy Brown，就是《刺激 1995》的警備隊長，兩者之間的氣場完全不一樣。可惜看得出基哥體力不如以前，肢體打鬥顯得單調。劇情上越來越多過場角色，防彈西裝也人人都有。而且這系列對上的主要敵人最後都讓人感覺只是個小屁孩。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/shonan-monorail.jpg&quot; alt=&quot;湘南單軌電車&quot; /&gt;
-&lt;em&gt;湘南單軌電車，軌道就在上方&lt;/em&gt;&lt;/p&gt;
+<h3 id="龍與地下城盜賊榮耀">龍與地下城：盜賊榮耀</h3>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/enoshima-dentetsu.jpg&quot; alt=&quot;江之島電鐵&quot; /&gt;
-&lt;img src=&quot;/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/station-name-board-2.jpg&quot; alt=&quot;鐮倉高校前站名牌&quot; /&gt;
-&lt;em&gt;江之島電鐵一看就可以認出來，車身與車站牌基底都是墨綠色&lt;/em&gt;&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html">不知道從何時開始，就一直對鐵道很有興趣，去日本都會拜訪當地的鐵道博物館，或是搭乘比較獨特的鐵路路線，偶爾看到列車經過平交道時，也會想拍下它行經的過程。但是對於車站內的站牌卻沒有特別留意，在快速取得上面的資訊後，就沒有再看過一眼了，直到我在書店遇到這本《解構鐵道文字設計》。</summary></entry><entry><title type="html">[雜談] 程式專案的一人負責與多人協作</title><link href="https://lankudot.airfishlab.com/blog/2023-10-collaboration-of-programming/" rel="alternate" type="text/html" title="[雜談] 程式專案的一人負責與多人協作" /><published>2023-10-23T00:00:00+08:00</published><updated>2023-10-23T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/collaboration-of-programming</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-10-collaboration-of-programming/">&lt;p&gt;之前的工作模式偏向個人負責一個專案或一個完整的功能，跟別人的互動主要是確認需求、處理反饋。現在的工作參與專案的規模則大上許多，一個元件或功能會由不同人接手，模式跟以往大不相同。這兩個月因為專案上線，所以從系統架構的工作轉去支援功能的維護。這段時間體驗到許多觀念衝擊，就在思考為什麼會如此適應不良。&lt;/p&gt;
+<p>2023 年最喜歡的電影就是這一部了！整部電影就像是在跑團，演員們在開拍前還跟導演跑過一場 D&amp;D 來加深對角色的印象。雖然有玩過 TRPG，但沒有跑過 D&amp;D 系統，但同行的朋友說，電影中的場所、怪物、法術完全是 D&amp;D 裡面的設定。所有角色中最喜歡 Doric，可以算是整個冒險的 MVP 了，能變形成各種生物，變大可以擊退敵人，變小則可以潛入，而且演員也很可愛。電影中有一段逃離追擊的過程，看著 Doric 流暢地變形成各種不同的生物來躲避攻擊、穿越障礙，讓人感到非常過癮。</p>
 
-&lt;h2 id=&quot;差別&quot;&gt;差別&lt;/h2&gt;
+<h3 id="超級瑪利歐兄弟電影版">超級瑪利歐兄弟電影版</h3>
 
-&lt;p&gt;我想這兩者最大的差別就是需不需要去改變自己的工作模式。跟不同領域的人合作時（如企劃與美術），主要專注在功能的規格上，至於要如何在程式上實現，則可以依自己習慣的方式去完成。但如果是跟同是程式的人合作的話，尤其參與時專案已經進行一陣子了，就得要依循既有的工作模式了。&lt;/p&gt;
+<p>偏粉絲向的作品，看到熟悉的場景出現，像是開頭的 World 1-1、對上 Donkey Kong 的名星大亂鬥場地、瑪利歐賽車等，就比較不會在意劇情不通順了。還蠻喜歡開場設定瑪利歐跟路易吉在現實世界只是普通的水電工，還得要拍廣告來招攬生意（這一段廣告做的很棒），好不容易接到生意，卻又花式搞雜。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-10-23-collaboration-of-programming/self-vs-cooperation.png&quot; alt=&quot;self-vs-cooperation&quot; class=&quot;align-center&quot; /&gt;
-&lt;em&gt;自己做可以不受限制，但多人協作就得配合他人了&lt;/em&gt;&lt;/p&gt;
+<hr />
 
-&lt;p&gt;如果有特別規定，則還可以依循規定去調整工作模式，像是縮排用 tab 還是 space、類別框架、分支命名等。但如果沒有的話，就得要照著前人的 coding style 去撰寫，配合這些「潛規則」。像是覺得用 switch-case 做條件判定比較好，但如果前人已經用一連串的 if-else 來判定，就只能再加新的 else 上去。或是因為習慣用垂直分割一次看兩份程式碼，因此設定在 80 字元後會換行，但原本程式碼在 120 字元才換行，甚至一行寫到底的話，較短的換行就會顯得突兀。&lt;/p&gt;
+<p><img src="/assets/images/blog/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-2.png" alt="" /></p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-10-23-collaboration-of-programming/different-coding-style.png&quot; alt=&quot;different-coding-style&quot; class=&quot;align-center&quot; /&gt;
-&lt;em&gt;不同的 coding style 會讓程式碼不協調&lt;/em&gt;&lt;/p&gt;
+<h3 id="blue-giant">Blue Giant</h3>
 
-&lt;p&gt;如果為了 coding style 去改別人的程式碼，則可能會讓責任到自己身上。因為功能出錯時，會先找最近一次的 commit 者是誰。而且專案已經運作一陣子的話，改動功能正常的地方，可能會有風險。&lt;/p&gt;
+<p>身為爵士樂的喜好者，當然是不能錯過這部以爵士樂為主題的動畫電影。當初日本在 2 月上映時，就很期望台灣也能上映，看到消息真的非常高興。在上映前，Spotify 上的原聲帶早以聽了無數次，上原廣美的編曲實在迷人。電影開場第一首 Impression 出來時，眼淚就忍不住掉下來了，果然在有好的電影院設備聽爵士樂是一大享受。雖然演奏的演出是用 3D 呈現，會讓人有點出戲，而且比較沒有力量，但我想這是為了演奏到位而做的取捨。不過最後玉田有一段鼓的 solo 完全是手繪，就可以完全感受到演奏的張力，看完又哭了一次。劇場版也補足原作漫畫劇情的缺憾，是我第二部 2023 年最喜歡的電影。</p>
 
-&lt;h2 id=&quot;溝通&quot;&gt;溝通&lt;/h2&gt;
+<h3 id="印第安納瓊斯命運輪盤">印第安納瓊斯：命運輪盤</h3>
 
-&lt;p&gt;但也不是就此束手無策，還是可以透過溝通來改善這樣的情況。像是推薦工具外掛來改善程式碼排版，例如可以在存檔時把行尾空白去除的 &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=MadsKristensen.TrailingWhitespace64&quot;&gt;Trailing Whitespace Visualizer&lt;/a&gt;，還有顯示換行字元位置的 &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelinesPreview&quot;&gt;Editor Guidelines&lt;/a&gt;，最後設定換行區間在 80 到 120 字元。再進一步的話，也可以導入 lint 工具跟 git hook，來統一 coding style。&lt;/p&gt;
+<p>老實說我就是為了麥叔而去看這一部電影，整場也只有麥叔的演出吸引人，把身為物理學家，醉心於穿越時空的神物發揮的淋漓盡致。最喜歡麥叔在二戰戰場剛登場時，還有最後在機場整隊準備回到過去時這兩個場景，散發出身為主要敵人的強大氣場。相比之下，劇情非常無趣，電影中三段你追我跑的情節，過程相似，只是場景不同。敵人手下的手段也相當粗糙，遇到阻礙、不合意的人就只會開槍。更遑論有些角色在劇情中可有可無。</p>
 
-&lt;p&gt;雖然現在還處在適應轉換期，確實因為觀點不同帶來蠻大的低潮，而且要習慣不同的 coding style 還要一段時間。但也趁著這次機會，來嘗試推薦自己認為比較好的寫法，也希望可以進一步改善專案的品質。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="雜談" /><summary type="html">之前的工作模式偏向個人負責一個專案或一個完整的功能，跟別人的互動主要是確認需求、處理反饋。現在的工作參與專案的規模則大上許多，一個元件或功能會由不同人接手，模式跟以往大不相同。這兩個月因為專案上線，所以從系統架構的工作轉去支援功能的維護。這段時間體驗到許多觀念衝擊，就在思考為什麼會如此適應不良。</summary></entry><entry><title type="html">[閱讀] 小島秀夫《創作的基因》</title><link href="https://lankudot.airfishlab.com/blog/2023-10-the-gifted-gene-and-my-lovable-memes/" rel="alternate" type="text/html" title="[閱讀] 小島秀夫《創作的基因》" /><published>2023-10-07T00:00:00+08:00</published><updated>2023-10-07T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-gifted-gene-and-my-lovable-memes</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-10-the-gifted-gene-and-my-lovable-memes/">&lt;p&gt;《創作的基因》收錄小島秀夫對看過的小說與影視作品所寫下的心得文章。對小島來說，透過閱讀與觀影能帶來平常沒有的「體驗」，體驗到來自不同世界的精神，認識到更多的想法。這些作者透過創作出作品這個「MEME」，將自己的想法傳達給它人，從而讓受到影響的人創作出更多的「MEME」傳承下去，構成「創作的基因」。這本書就是收錄這些影響小島的「MEME」。&lt;/p&gt;
+<h3 id="不可能的任務致命清算-第一章">不可能的任務：致命清算 第一章</h3>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-10-07-the-gifted-gene-and-my-lovable-memes/cover-image.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p>看到阿湯哥在電影中一樣生龍活虎，只能佩服再佩服了。相比之前，本集就直接進入事件核心，動作場景也多了很多，簡單來說就是部爽片。因為預告就有介紹躍下懸崖的特技是怎麼執行的，所以在看這一段時，反而可以注意觀察視覺特效是怎麼處理這個場景。對於上集角色再次登場感到驚訝，再加上這集的女主角，實在佩服阿湯哥的選角眼光。</p>
 
-&lt;p&gt;小島到現在無論有多忙都還是會跑書店，親手翻書，喜歡就買，憑自己的眼光找到「中獎」的書籍。透過這個過程塑造出個人的品味，進而化為有創意的作品。《創作的基因》收錄了應該有三四十個作品。沒想到小島秀夫能對這麼多小說、影視作品有共感，有些是受父親影響或要求而看的作品，有些是跟小時候的生活經驗有關，有些則是泡在書店找到的「中獎」書籍。科幻與偵探作品佔多數，我想這就是小島喜歡的類型，也影響遊戲風格的原因吧。&lt;/p&gt;
+<hr />
 
-&lt;p&gt;閱讀的過程雖然漫長，但為了融入書中，在這過程中要發揮對書中人物、場景、情節的想像力，將抽象的文字化作腦內具體的畫面，就是「創作」的一種。我覺得不同的人閱讀同一本書，體驗會有些微的不同，這些不同可能來自於讀過的作品，看過的電影，或是生活經驗，這就是閱讀的魅力。而把閱讀後的心得寫出來也是一種「創作」，挖掘內心的想法，透過文字將自己的感受具體地表達出來。閱讀故事讓人經歷一到二次的創作，還有可能再創造出自己的故事，這就是「創作的基因」的傳遞吧。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html">《創作的基因》收錄小島秀夫對看過的小說與影視作品所寫下的心得文章。對小島來說，透過閱讀與觀影能帶來平常沒有的「體驗」，體驗到來自不同世界的精神，認識到更多的想法。這些作者透過創作出作品這個「MEME」，將自己的想法傳達給它人，從而讓受到影響的人創作出更多的「MEME」傳承下去，構成「創作的基因」。這本書就是收錄這些影響小島的「MEME」。</summary></entry><entry><title type="html">[閱讀] Alix Christie《古騰堡的學徒》</title><link href="https://lankudot.airfishlab.com/blog/2023-08-gutenbergs-apprentice/" rel="alternate" type="text/html" title="[閱讀] Alix Christie《古騰堡的學徒》" /><published>2023-08-12T00:00:00+08:00</published><updated>2023-08-12T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/gutenbergs-apprentice</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-08-gutenbergs-apprentice/">&lt;p&gt;買書總是比看書還快，買了還沒看的書只會越來越多。雖然是幾年前買的，但還記得當初是在誠品敦南店購入的，因為聽聞全世界第一間 24 小時營業的書店就要關了，於是趁著到台北參加活動的機會，去書店買了幾本書，這本就是其中之一。&lt;/p&gt;
+<p><img src="/assets/images/blog/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-3.png" alt="" /></p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-08-12-gutenbergs-apprentice/cover-image.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<h3 id="奧本海默">奧本海默</h3>
 
-&lt;p&gt;古騰堡是歐洲地區第一位發明活字印刷術的人，而這本小說是以「古騰堡的學徒」ー彼得．薛佛為主角，第一位偉大的印刷師傅。在 15 世紀，書籍的製作主要靠抄寫員來撰寫文字，而出版的書籍又以宗教書籍為主，撰寫的文字就是在傳達神的話語，因此抄寫員在當時是很神聖的職業。而彼得原本也是抄寫員出生，但在成為一名出色的抄寫員之前，卻被養父約翰尼斯．法斯特叫回美因茲。理由是古騰堡開發出活字印刷的技術，而法斯特做為出資人，要求彼得在古騰堡門下學習這項新術，並監視古騰堡。因為手抄是一項神聖且藝術的事情，彼得起初視活字印刷術為「惡魔的行為」，如此直接複製神的話語，而沒有靈魂的文字。&lt;/p&gt;
+<p>第一次看 IMAX 的體驗就給了奧本海默，沒想到 IMAX 的螢幕這麼大，太晚買票只能座前排的我，整場電影脖子撐得很痠。當時諾蘭的作品還沒看過很多，中場才意識到黑白畫面是之後的時間點，彩色畫面則是現在的時間點。所以前面這兩者的穿插，讓我有點跟不上劇情，但發覺這一點之後，就跟上劇情的發展了。二戰當時除了軍備競賽之外，還包含了共產主義的盛行，電影完整呈現這兩者。電影中奧本海默在原子彈一步一步完成的過程中，僅管興奮，更多的是問自己做出這個武器是否是正確的。最後在原子彈完成後的慶功演說中，對比參與人員的歡慶，只有奧本海默感受到原子彈爆炸的強光，在離場時踩到焦黑的屍體，這個橋段的象徵不言而喻，也是我覺得最棒的一段。</p>
 
-&lt;p&gt;小說的故事就由彼得加入古騰堡的印刷工坊開始，到成功印製出舉世聞名的「古騰堡聖經」為止。描述彼得從抵抗這項技術，到利用身為抄寫員的美感，幫助設計文字，還有改進這項技術。為了保護這項技術，尤其可能被視為瀆神的行為，因此印刷工坊在聖經印製完成之前，只能低調進行。期間又遭遇許多困難，整個過程相當坎坷。&lt;/p&gt;
+<h3 id="拿破崙">拿破崙</h3>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-08-12-gutenbergs-apprentice/first-page.png&quot; alt=&quot;&quot; /&gt;
-&lt;em&gt;第一頁有著日星鑄字行的鉛字印刷&lt;/em&gt;&lt;/p&gt;
+<p>歷史故事也是我喜歡的題材之一，預告出來後就很期待進電影院觀賞。雖然觀影前就有看到一些評論，但是秉持著對於歷史的喜愛，還是堅持去看。沒想到法國大革命後還有這麼精彩的歷史。開場就是瑪麗皇后上斷頭台，確立拿破崙能力的土倫圍城戰，在霧月政變後如何稱帝，後面當然就是耳熟能詳的法俄戰爭與滑鐵盧戰爭。沒想到可以在兩小時半的電影中，演出這麼豐富的歷史過程。在觀影後，完全激起我對這段歷史的興趣，到 wiki 查了跟拿破崙有關的歷史，並對照電影中不同的地方。整部電影的戰爭場面做的很棒，用心在戰法與佈陣上。後來才知道飾演約瑟芬的是 Vanessa Kirby，在《不可能的任務》中飾演白寡婦，難怪覺得很熟悉。</p>
 
-&lt;p&gt;看完小說覺得最有趣的是，原來在當時手寫是一項相當重要的工作，而且還有精神上的意涵。而活字印刷可以快速完成一本書、減少手抄的失誤、加速知識的傳遞，無疑會對時代帶來巨大的改變，卻是一項惡魔的技術。就好像 2023 年正在經歷的 AI 生成內容崛起，也是興奮與恐懼交雜。人類透過時間與心力製作出來的藝術品，被拿去做機器學習訓練後，軟體便能快速產出。目前我不太能接受 AI 生成內容，但不禁好奇十年、二十年後，再回來看這項技術會有什麼想法。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html">買書總是比看書還快，買了還沒看的書只會越來越多。雖然是幾年前買的，但還記得當初是在誠品敦南店購入的，因為聽聞全世界第一間 24 小時營業的書店就要關了，於是趁著到台北參加活動的機會，去書店買了幾本書，這本就是其中之一。</summary></entry><entry><title type="html">[筆記] 將共用的資料定義獨立出來</title><link href="https://lankudot.airfishlab.com/blog/2023-08-extract-common-data-definition/" rel="alternate" type="text/html" title="[筆記] 將共用的資料定義獨立出來" /><published>2023-08-03T00:00:00+08:00</published><updated>2023-08-03T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/extract-common-data-definition</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-08-extract-common-data-definition/">&lt;p&gt;當不同元件有相似的資料時，應該把相同的部份整理出來成為一個獨立的資料定義，並在用到的地方使用這個資料定義。如果元件之間各自定義的話，當要新增或修改資料時，所有用到的地方都得要一併更新，既秏時又費力，且容易出錯，會是一場災難。&lt;/p&gt;
+<h3 id="旺卡">旺卡</h3>
 
-&lt;h2 id=&quot;資料各自定義的問題&quot;&gt;資料各自定義的問題&lt;/h2&gt;
+<p>適合闔家觀賞的聖誕節電影，沒想到會是像迪士尼電影那樣，在劇情中穿插歌舞的形式。電影算是《歡樂糖果屋》的前傳，也就是威利旺卡建立巧克力工廠之前的故事，其中有很多《歡樂糖果屋》的彩蛋，連歐帕倫普人的造型也是一樣的。因為是闔家觀賞的電影，所以反派的行為會比較溫合，而且受到報應時通常很滑稽，但我很喜歡這種幽默的設計。電影歌舞中，也最喜歡反派在賄賂警長這一首。這部電影對我來說算是倒吃甘蔗，前半場節奏偏慢，差點撐不下去，但在事件開始後逐漸好轉，最後抵擋不住淚腺攻擊。</p>
 
-&lt;p&gt;例如在程式中有個代表玩家資訊的資料，在玩家物件、公會成員、排行榜中都有用到：&lt;/p&gt;
+<hr />
 
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PlayerData&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AvatarId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Level&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+<p><img src="/assets/images/blog/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-4.png" alt="" /></p>
 
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ExperiencePoints&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+<h3 id="王立宇宙軍-歐尼亞米斯之翼">王立宇宙軍 ～歐尼亞米斯之翼～</h3>
 
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GuildMemberData&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AvatarId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Level&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+<p>當初聽聞這部動畫電影主要是為了炫技而製作的，在劇情方面並沒有很好，就抱持著享受作畫的心情，去看這次重上電影院的《王立宇宙軍》。作畫真的非常精製，幾乎每個場景都是不同的背景，機械管線的設計也令人著迷。最終火箭發射時，全場音樂停止，因液態燃料的低溫而生成的霜片紛飛，這個場面讓人暫時忘記呼吸，劇情的不足拋之腦後。不知是不是製作年代的關係，電影內的文化、宗教、服飾設定還是偏民族感，但這也是電影的另一個看點。</p>
 
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GuildRole&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Role&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+<h3 id="星際牛仔天國之門">星際牛仔：天國之門</h3>
 
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LeaderboardPlayerData&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AvatarId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Level&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+<p>身為 Spike 的粉絲，看到有人在揪團包場看這部星際牛仔的電影版，理所當然立刻報了名。跟著一群星際牛仔的粉絲看電影，感受完全不同。在主角群的部份，劇情主要著重在 Spike 的身上。還蠻喜歡用蒙太奇來推進劇情的手法，像是 Spike 為了打探情報，到處問人的過程。沒有台詞，只有呈現 Spike 到不同地方跟不同人互動，從他們之間的互動就可以看出詢問的結果。搭配背景音樂，又可以同時呈現當地的文化氛圍，在《王立宇宙軍》中，也是以這樣的手法呈現警探在找尋主角下落的過程。看星際牛仔的另一個享受就是菅野洋子的音樂了，開場的 AsK DNA 配上日常畫面，立刻把人拉入電影的氛圍中。還有片尾的 Gotta knock a little harder 配上結局，只能顧好自己的淚腺了。SEE YOU SPACE COWBOY…</p>
 
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Rank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;如果各自定義的話，一個問題是，每次要傳送資料時，所有的欄位資料都要同步一次：&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-08-03-extract-common-data-definition/separated-definition-sync-data.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<h3 id="歡迎來到駒田蒸餾所">歡迎來到駒田蒸餾所</h3>
 
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GuildMember&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GuildMemberData&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_data&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GuildMemberData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+<p>以威士忌為主題的動畫電影，因為是冷門題材，又是動畫電影，在上映後就把握時間買票觀看了。女主角駒田琉生繼承家族的蒸餾所後，一肩扛起整個家族的未來，研發出「若葉」這款威士忌而聲名大噪，但最終是為了能讓「獨樂」這款屬於家人的威士忌能再次誕生。劇情路線是可預期的，但我對全靠熱情與精神喊話就能成功的故事，感到這實在是太理想美好了。電影場景的原型是若鶴三郎丸蒸餾所，用 Google 街景查就可以看到電影中出現的建築。三郎丸也有出現在電影中，生產劇情中登場的兩款威士忌「獨樂」與「若葉」的募資計劃，也都是由三郎丸生產。電影比較可惜的是沒有深入介紹威士忌的製程，只在開頭以蒙太奇的方式快速帶過，比較注重在調合的部份。但也讓我對威士忌的製程產生興趣，觀影後就到 YouTube 查了許多相關的介紹。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="觀後感" /><summary type="html"><![CDATA[回想去年看的電影比起以往還要來得多，沒想到也漸漸喜歡看電影的感覺。就想來記錄去年看過的電影，以後也可以回味喜歡的作品。]]></summary></entry><entry><title type="html">[閱讀] 石川祐基 - 解構鐵道文字設計</title><link href="https://lankudot.airfishlab.com/blog/2023-11-dive-into-font-design-in-train-station/" rel="alternate" type="text/html" title="[閱讀] 石川祐基 - 解構鐵道文字設計" /><published>2023-11-05T00:00:00+08:00</published><updated>2023-11-05T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/dive-into-font-design-in-train-station</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-11-dive-into-font-design-in-train-station/"><![CDATA[<p>不知道從何時開始，就一直對鐵道很有興趣，去日本都會拜訪當地的鐵道博物館，或是搭乘比較獨特的鐵路路線，偶爾看到列車經過平交道時，也會想拍下它行經的過程。但是對於車站內的站牌卻沒有特別留意，在快速取得上面的資訊後，就沒有再看過一眼了，直到我在書店遇到這本《解構鐵道文字設計》。</p>
 
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;UpdateData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PlayerData&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;playerData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;playerData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AvatarId&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;playerData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AvatarId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Level&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;playerData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Level&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+<p><img src="/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/cover-image.jpg" alt="cover-image" /></p>
 
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LeaderboardPlayer&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LeaderboardPlayerData&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_data&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;LeaderboardPlayerData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+<p>《解構鐵道文字設計》介紹日本各地鐵道站點的文字設計，從大家比較熟知的 JR、都營地下鐵，到江之島電鐵、越前鐵道等地方鐵路。範圍從站名牌、指示牌，到商標應有盡有。書中不只詳細介紹站名牌、指示牌所使用的字體，還有訪問到設計的公司，講解排版、裝飾等設計目地，如何達到易讀又能兼顧美感。另外收錄地下鐵站名牌的進化，可以一窺從充滿懷舊感轉換到現代化設計，最後還有風格獨特的站名牌特輯。</p>
 
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;UpdateData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PlayerData&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;playerData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;playerData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AvatarId&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;playerData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AvatarId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Level&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;playerData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Level&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<p><img src="/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/content-1.jpg" alt="" />
+<img src="/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/content-2.jpg" alt="" />
+<em>書中詳細介紹站名牌的設計概念，看完後對站名牌肯定有不同的看法</em></p>
 
-&lt;p&gt;另一個問題是，如果要新增資料欄位的話，每個用到的地方都得要各別新增，而且有同步資料的地方，也要新增對應的功能：&lt;/p&gt;
+<p><img src="/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/station-name-board-1.jpg" alt="鐮倉高校前站名牌" />
+<em>今年去江之島玩時，看到跟點心麵合作的站名牌，覺得有趣就拍下來了</em></p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-08-03-extract-common-data-definition/separated-definition-add-field.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<p>自認算輕度鐵道迷的我，每次去日本玩最期待的就是搭乘鐵路運輸。今年九月去江之島真的是大滿足，從大船站搭乘湘南單軌電車到湘南江之島站，這條路線是懸垂式單軌列車，軌道隨丘陵地起伏，有如雲宵飛車。還搭乘江之島電鐵到鎌倉高校與鎌倉大佛，路線沿途可以一覽海景，另外在腰越站與江之島站之間還行駛在馬路上，有如路面電車。書中就有介紹到湘南單軌電車獨特的站名牌設計，這趟沒有注意到實在可惜。不過再訪日本時，我就會特別留意鐵道的文字設計了！</p>
 
-&lt;h2 id=&quot;取出共用定義&quot;&gt;取出共用定義&lt;/h2&gt;
+<p><img src="/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/shonan-monorail.jpg" alt="湘南單軌電車" />
+<em>湘南單軌電車，軌道就在上方</em></p>
 
-&lt;p&gt;如果將這些重複的資料獨立出來的話，要新增資料只要找到那個定義就可以：&lt;/p&gt;
+<p><img src="/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/enoshima-dentetsu.jpg" alt="江之島電鐵" />
+<img src="/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/station-name-board-2.jpg" alt="鐮倉高校前站名牌" />
+<em>江之島電鐵一看就可以認出來，車身與車站牌基底都是墨綠色</em></p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html"><![CDATA[不知道從何時開始，就一直對鐵道很有興趣，去日本都會拜訪當地的鐵道博物館，或是搭乘比較獨特的鐵路路線，偶爾看到列車經過平交道時，也會想拍下它行經的過程。但是對於車站內的站牌卻沒有特別留意，在快速取得上面的資訊後，就沒有再看過一眼了，直到我在書店遇到這本《解構鐵道文字設計》。]]></summary></entry><entry><title type="html">[雜談] 程式專案的一人負責與多人協作</title><link href="https://lankudot.airfishlab.com/blog/2023-10-collaboration-of-programming/" rel="alternate" type="text/html" title="[雜談] 程式專案的一人負責與多人協作" /><published>2023-10-23T00:00:00+08:00</published><updated>2023-10-23T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/collaboration-of-programming</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-10-collaboration-of-programming/"><![CDATA[<p>之前的工作模式偏向個人負責一個專案或一個完整的功能，跟別人的互動主要是確認需求、處理反饋。現在的工作參與專案的規模則大上許多，一個元件或功能會由不同人接手，模式跟以往大不相同。這兩個月因為專案上線，所以從系統架構的工作轉去支援功能的維護。這段時間體驗到許多觀念衝擊，就在思考為什麼會如此適應不良。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-08-03-extract-common-data-definition/extract-common-definition.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<h2 id="差別">差別</h2>
 
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PlayerBasicData&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AvatarId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Level&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TitleId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+<p>我想這兩者最大的差別就是需不需要去改變自己的工作模式。跟不同領域的人合作時（如企劃與美術），主要專注在功能的規格上，至於要如何在程式上實現，則可以依自己習慣的方式去完成。但如果是跟同是程式的人合作的話，尤其參與時專案已經進行一陣子了，就得要依循既有的工作模式了。</p>
 
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PlayerData&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PlayerBasicData&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PlayerBasicData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ExperiencePoints&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+<p><img src="/assets/images/blog/2023-10-23-collaboration-of-programming/self-vs-cooperation.png" alt="self-vs-cooperation" class="align-center" />
+<em>自己做可以不受限制，但多人協作就得配合他人了</em></p>
 
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GuildMemberData&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PlayerBasicData&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PlayerBasicData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GuildRole&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Role&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+<p>如果有特別規定，則還可以依循規定去調整工作模式，像是縮排用 tab 還是 space、類別框架、分支命名等。但如果沒有的話，就得要照著前人的 coding style 去撰寫，配合這些「潛規則」。像是覺得用 switch-case 做條件判定比較好，但如果前人已經用一連串的 if-else 來判定，就只能再加新的 else 上去。或是因為習慣用垂直分割一次看兩份程式碼，因此設定在 80 字元後會換行，但原本程式碼在 120 字元才換行，甚至一行寫到底的話，較短的換行就會顯得突兀。</p>
 
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;LeaderboardPlayerData&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PlayerBasicData&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PlayerBasicData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Rank&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<p><img src="/assets/images/blog/2023-10-23-collaboration-of-programming/different-coding-style.png" alt="different-coding-style" class="align-center" />
+<em>不同的 coding style 會讓程式碼不協調</em></p>
 
-&lt;p&gt;也可以集中提供資料同步的函式，而不是定義在每個元件中：&lt;/p&gt;
+<p>如果為了 coding style 去改別人的程式碼，則可能會讓責任到自己身上。因為功能出錯時，會先找最近一次的 commit 者是誰。而且專案已經運作一陣子的話，改動功能正常的地方，可能會有風險。</p>
 
-&lt;div class=&quot;language-csharp highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PlayerBasicData&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AvatarId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Level&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;uint&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;TitleId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+<h2 id="溝通">溝通</h2>
 
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;PlayerBasicData&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PlayerBasicData&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AvatarId&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;AvatarId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Level&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Level&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TitleId&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;TitleId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+<p>但也不是就此束手無策，還是可以透過溝通來改善這樣的情況。像是推薦工具外掛來改善程式碼排版，例如可以在存檔時把行尾空白去除的 <a href="https://marketplace.visualstudio.com/items?itemName=MadsKristensen.TrailingWhitespace64">Trailing Whitespace Visualizer</a>，還有顯示換行字元位置的 <a href="https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelinesPreview">Editor Guidelines</a>，最後設定換行區間在 80 到 120 字元。再進一步的話，也可以導入 lint 工具跟 git hook，來統一 coding style。</p>
 
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GuildMember&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;GuildMemberData&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_data&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;GuildMemberData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+<p>雖然現在還處在適應轉換期，確實因為觀點不同帶來蠻大的低潮，而且要習慣不同的 coding style 還要一段時間。但也趁著這次機會，來嘗試推薦自己認為比較好的寫法，也希望可以進一步改善專案的品質。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="雜談" /><summary type="html"><![CDATA[之前的工作模式偏向個人負責一個專案或一個完整的功能，跟別人的互動主要是確認需求、處理反饋。現在的工作參與專案的規模則大上許多，一個元件或功能會由不同人接手，模式跟以往大不相同。這兩個月因為專案上線，所以從系統架構的工作轉去支援功能的維護。這段時間體驗到許多觀念衝擊，就在思考為什麼會如此適應不良。]]></summary></entry><entry><title type="html">[閱讀] 小島秀夫《創作的基因》</title><link href="https://lankudot.airfishlab.com/blog/2023-10-the-gifted-gene-and-my-lovable-memes/" rel="alternate" type="text/html" title="[閱讀] 小島秀夫《創作的基因》" /><published>2023-10-07T00:00:00+08:00</published><updated>2023-10-07T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-gifted-gene-and-my-lovable-memes</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-10-the-gifted-gene-and-my-lovable-memes/"><![CDATA[<p>《創作的基因》收錄小島秀夫對看過的小說與影視作品所寫下的心得文章。對小島來說，透過閱讀與觀影能帶來平常沒有的「體驗」，體驗到來自不同世界的精神，認識到更多的想法。這些作者透過創作出作品這個「MEME」，將自己的想法傳達給它人，從而讓受到影響的人創作出更多的「MEME」傳承下去，構成「創作的基因」。這本書就是收錄這些影響小島的「MEME」。</p>
 
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;UpdateData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PlayerBasicData&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;playerBasicData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;PlayerBasicData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;Copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;playerBasicData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PlayerBasicData&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+<p><img src="/assets/images/blog/2023-10-07-the-gifted-gene-and-my-lovable-memes/cover-image.jpg" alt="" /></p>
 
-&lt;p&gt;如此一來，如果有新增資料欄位的話，也可以方便找到要更新的地方。&lt;/p&gt;
+<p>小島到現在無論有多忙都還是會跑書店，親手翻書，喜歡就買，憑自己的眼光找到「中獎」的書籍。透過這個過程塑造出個人的品味，進而化為有創意的作品。《創作的基因》收錄了應該有三四十個作品。沒想到小島秀夫能對這麼多小說、影視作品有共感，有些是受父親影響或要求而看的作品，有些是跟小時候的生活經驗有關，有些則是泡在書店找到的「中獎」書籍。科幻與偵探作品佔多數，我想這就是小島喜歡的類型，也影響遊戲風格的原因吧。</p>
 
-&lt;h2 id=&quot;總結&quot;&gt;總結&lt;/h2&gt;
+<p>閱讀的過程雖然漫長，但為了融入書中，在這過程中要發揮對書中人物、場景、情節的想像力，將抽象的文字化作腦內具體的畫面，就是「創作」的一種。我覺得不同的人閱讀同一本書，體驗會有些微的不同，這些不同可能來自於讀過的作品，看過的電影，或是生活經驗，這就是閱讀的魅力。而把閱讀後的心得寫出來也是一種「創作」，挖掘內心的想法，透過文字將自己的感受具體地表達出來。閱讀故事讓人經歷一到二次的創作，還有可能再創造出自己的故事，這就是「創作的基因」的傳遞吧。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html"><![CDATA[《創作的基因》收錄小島秀夫對看過的小說與影視作品所寫下的心得文章。對小島來說，透過閱讀與觀影能帶來平常沒有的「體驗」，體驗到來自不同世界的精神，認識到更多的想法。這些作者透過創作出作品這個「MEME」，將自己的想法傳達給它人，從而讓受到影響的人創作出更多的「MEME」傳承下去，構成「創作的基因」。這本書就是收錄這些影響小島的「MEME」。]]></summary></entry><entry><title type="html">[閱讀] Alix Christie《古騰堡的學徒》</title><link href="https://lankudot.airfishlab.com/blog/2023-08-gutenbergs-apprentice/" rel="alternate" type="text/html" title="[閱讀] Alix Christie《古騰堡的學徒》" /><published>2023-08-12T00:00:00+08:00</published><updated>2023-08-12T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/gutenbergs-apprentice</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-08-gutenbergs-apprentice/"><![CDATA[<p>買書總是比看書還快，買了還沒看的書只會越來越多。雖然是幾年前買的，但還記得當初是在誠品敦南店購入的，因為聽聞全世界第一間 24 小時營業的書店就要關了，於是趁著到台北參加活動的機會，去書店買了幾本書，這本就是其中之一。</p>
 
-&lt;p&gt;當發現有些資料在不同的地方重複出現時，就應該考慮把這些資料整理出來。尤其越是基本的資料，越晚改動的成本就越高。因為越晚修改，用到的地方只會越來越多，而且對應元件的功能也是基於拿到的資料製作的，所以要改動時，牽涉的程式範圍就會很廣。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="C#" /><summary type="html">當不同元件有相似的資料時，應該把相同的部份整理出來成為一個獨立的資料定義，並在用到的地方使用這個資料定義。如果元件之間各自定義的話，當要新增或修改資料時，所有用到的地方都得要一併更新，既秏時又費力，且容易出錯，會是一場災難。</summary></entry><entry><title type="html">[分享] 獨立遊戲在 Steam 頁面上的宣傳影片建議</title><link href="https://lankudot.airfishlab.com/blog/2023-05-slow-trailer-is-not-good-for-indie-game/" rel="alternate" type="text/html" title="[分享] 獨立遊戲在 Steam 頁面上的宣傳影片建議" /><published>2023-05-01T00:00:00+08:00</published><updated>2023-05-01T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/slow-trailer-is-not-good-for-indie-game</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-05-slow-trailer-is-not-good-for-indie-game/">&lt;p&gt;在推特上看到&lt;a href=&quot;https://twitter.com/Derek_Lieu/status/1650504969970147331&quot;&gt;貼文&lt;/a&gt;分享一則在 &lt;a href=&quot;https://www.reddit.com/r/Steam/comments/12raw4o/anybody_else_skips_the_videos_and_jumps_straight/?utm_name=iossmf&quot;&gt;Reddit 的討論串&lt;/a&gt;，討論串的樓主問其它人是不是也一樣，在逛 Steam 遊戲頁面時，會跳過宣傳影片直接去看遊戲擷圖或是評論。結果許多人回覆都有類似的習慣，因為覺得宣傳影片沒有傳達出遊戲玩法，所以直接去看遊戲擷圖的話，反而可以更快知道這個遊戲合不合自己的胃口。原推的作者就分享獨立遊戲要如何避免這種情況，讓玩家能在宣傳影片上停留久一點，增加購買或是加入願望清單的機會。&lt;/p&gt;
+<p><img src="/assets/images/blog/2023-08-12-gutenbergs-apprentice/cover-image.jpg" alt="" /></p>
 
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;Here&amp;#39;s your wake up call if you have a trailer with a slow intro and lots of logos on your Steam page.&lt;br /&gt;&lt;br /&gt;This post is full of people who skip past the trailers to click on the screenshots because it&amp;#39;s quicker and they assume the trailer won&amp;#39;t show gameplay.&lt;a href=&quot;https://t.co/bptoFu1c94&quot;&gt;https://t.co/bptoFu1c94&lt;/a&gt;&lt;/p&gt;&amp;mdash; Derek Lieu (@Derek_Lieu) &lt;a href=&quot;https://twitter.com/Derek_Lieu/status/1650504969970147331?ref_src=twsrc%5Etfw&quot;&gt;April 24, 2023&lt;/a&gt;&lt;/blockquote&gt;
-&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+<p>古騰堡是歐洲地區第一位發明活字印刷術的人，而這本小說是以「古騰堡的學徒」ー彼得．薛佛為主角，第一位偉大的印刷師傅。在 15 世紀，書籍的製作主要靠抄寫員來撰寫文字，而出版的書籍又以宗教書籍為主，撰寫的文字就是在傳達神的話語，因此抄寫員在當時是很神聖的職業。而彼得原本也是抄寫員出生，但在成為一名出色的抄寫員之前，卻被養父約翰尼斯．法斯特叫回美因茲。理由是古騰堡開發出活字印刷的技術，而法斯特做為出資人，要求彼得在古騰堡門下學習這項新術，並監視古騰堡。因為手抄是一項神聖且藝術的事情，彼得起初視活字印刷術為「惡魔的行為」，如此直接複製神的話語，而沒有靈魂的文字。</p>
 
-&lt;p&gt;在 Reddit 討論串的回覆提到，大多對宣傳影片中提到「榮獲XXX獎」、「媒體評分XX分」等得獎資訊，或是「這是一個扣人心弦的故事」這類劇情式宣傳沒有興趣，會快速跳到中段可能有遊戲畫面的部份；或是發現看了整個影片還是不知道這款遊戲在玩什麼，最後就選擇直接跳過宣傳影片。&lt;/p&gt;
+<p>小說的故事就由彼得加入古騰堡的印刷工坊開始，到成功印製出舉世聞名的「古騰堡聖經」為止。描述彼得從抵抗這項技術，到利用身為抄寫員的美感，幫助設計文字，還有改進這項技術。為了保護這項技術，尤其可能被視為瀆神的行為，因此印刷工坊在聖經印製完成之前，只能低調進行。期間又遭遇許多困難，整個過程相當坎坷。</p>
 
-&lt;p&gt;原推主在自己的遊戲上也遇到這樣的情況，他認為玩家在 Steam 上逛遊戲的時，就像在逛櫥窗商品，會停留的時間很短，所以建議在宣傳影片的開頭 5 到 10 秒就揭示遊戲的玩法或是遊戲畫面，來增加玩家的興趣。推主在他的&lt;a href=&quot;https://www.derek-lieu.com/blog/2022/12/3/why-indie-game-trailers-shouldnt-take-inspiration-from-aaa-games&quot;&gt;文章&lt;/a&gt;中建議獨立遊戲在 Steam 上的宣傳影片不要學 3A 大作的宣傳影片，因為玩家對大廠出的遊戲有一定的熟悉度，其宣傳影片的畫面細緻華麗，另外影片登場平台也不一樣（在 YouTube 或是遊戲展上），玩家會願意看完整個宣傳影片。&lt;/p&gt;
+<p><img src="/assets/images/blog/2023-08-12-gutenbergs-apprentice/first-page.png" alt="" />
+<em>第一頁有著日星鑄字行的鉛字印刷</em></p>
 
-&lt;p&gt;但也不是要完全捨棄這類電影式宣傳影片（slow trailer），而是可以針對在 Steam 上的宣傳影片做點修改。推文中舉例的&lt;a href=&quot;https://store.steampowered.com/app/1201270/__A_Space_for_the_Unbound/&quot;&gt;《A Space for the Unbound》&lt;/a&gt;這款遊戲，在 Steam 上的宣傳影片比起在 YouTube 上的 PS 與 NS 宣傳影片，開頭多了一段遊戲畫面，接著才是劇情式的內容，而得獎資訊則是放在最後面。&lt;/p&gt;
+<p>看完小說覺得最有趣的是，原來在當時手寫是一項相當重要的工作，而且還有精神上的意涵。而活字印刷可以快速完成一本書、減少手抄的失誤、加速知識的傳遞，無疑會對時代帶來巨大的改變，卻是一項惡魔的技術。就好像 2023 年正在經歷的 AI 生成內容崛起，也是興奮與恐懼交雜。人類透過時間與心力製作出來的藝術品，被拿去做機器學習訓練後，軟體便能快速產出。目前我不太能接受 AI 生成內容，但不禁好奇十年、二十年後，再回來看這項技術會有什麼想法。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html"><![CDATA[買書總是比看書還快，買了還沒看的書只會越來越多。雖然是幾年前買的，但還記得當初是在誠品敦南店購入的，因為聽聞全世界第一間 24 小時營業的書店就要關了，於是趁著到台北參加活動的機會，去書店買了幾本書，這本就是其中之一。]]></summary></entry><entry><title type="html">[筆記] 將共用的資料定義獨立出來</title><link href="https://lankudot.airfishlab.com/blog/2023-08-extract-common-data-definition/" rel="alternate" type="text/html" title="[筆記] 將共用的資料定義獨立出來" /><published>2023-08-03T00:00:00+08:00</published><updated>2023-08-03T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/extract-common-data-definition</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-08-extract-common-data-definition/"><![CDATA[<p>當不同元件有相似的資料時，應該把相同的部份整理出來成為一個獨立的資料定義，並在用到的地方使用這個資料定義。如果元件之間各自定義的話，當要新增或修改資料時，所有用到的地方都得要一併更新，既秏時又費力，且容易出錯，會是一場災難。</p>
 
-&lt;!-- Courtesy of embedresponsively.com --&gt;
+<h2 id="資料各自定義的問題">資料各自定義的問題</h2>
 
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/5QYVQhVd_-M&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
+<p>例如在程式中有個代表玩家資訊的資料，在玩家物件、公會成員、排行榜中都有用到：</p>
 
-&lt;p&gt;因此如果不想讓玩家跳過自己辛辛苦苦做好的宣傳影片的話，不妨在影片一開頭就放上遊戲的畫面，讓玩家可以快速知道遊戲的類型或玩法，增加宣傳的效益。&lt;/p&gt;
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">PlayerData</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">AvatarId</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">Level</span><span class="p">;</span>
 
-&lt;h4 id=&quot;202355-追記&quot;&gt;2023/5/5 追記&lt;/h4&gt;
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">ExperiencePoints</span><span class="p">;</span>
+<span class="p">}</span>
 
-&lt;p&gt;結果 Steam 在 5 月 3 日發布&lt;a href=&quot;https://steamcommunity.com/groups/steamworks/announcements/detail/5358762517221792489&quot;&gt;新的宣傳片規範與指導原則&lt;/a&gt;，有兩點更動：&lt;/p&gt;
+<span class="k">public</span> <span class="k">class</span> <span class="nc">GuildMemberData</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">AvatarId</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">Level</span><span class="p">;</span>
 
-&lt;ol&gt;
-  &lt;li&gt;遊戲頁面中，最前面只會有兩部影片，剩下的會在遊戲擷圖之後；&lt;/li&gt;
-  &lt;li&gt;宣傳片可以指定標題與類型，類型有：一般/劇情、預告、玩法、訪談/日誌。玩家在影片左上角會看到這些資訊&lt;/li&gt;
-&lt;/ol&gt;
+    <span class="k">public</span> <span class="n">GuildRole</span> <span class="n">Role</span><span class="p">;</span>
+<span class="p">}</span>
 
-&lt;p&gt;另外也一樣建議宣傳影片開頭就先揭示玩法：&lt;/p&gt;
+<span class="k">public</span> <span class="k">class</span> <span class="nc">LeaderboardPlayerData</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">AvatarId</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">Level</span><span class="p">;</span>
 
-&lt;blockquote&gt;
-  &lt;p&gt;理想情況下，應該讓玩家們能夠在最短的時間內清楚瞭解遊戲的玩法。 我們建議第一支宣傳片主要展示遊戲玩法，清楚地示範玩家會在遊戲中進行哪些活動及他們會和你打造的世界有什麼樣的互動。 在吸引到玩家的注意後，再把公司的標誌和敘事劇情放在宣傳片後段。&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html">在推特上看到貼文分享一則在 Reddit 的討論串，討論串的樓主問其它人是不是也一樣，在逛 Steam 遊戲頁面時，會跳過宣傳影片直接去看遊戲擷圖或是評論。結果許多人回覆都有類似的習慣，因為覺得宣傳影片沒有傳達出遊戲玩法，所以直接去看遊戲擷圖的話，反而可以更快知道這個遊戲合不合自己的胃口。原推的作者就分享獨立遊戲要如何避免這種情況，讓玩家能在宣傳影片上停留久一點，增加購買或是加入願望清單的機會。</summary></entry><entry><title type="html">[閱讀] 今敏《Kon’s Tone 「千年女優」之道》</title><link href="https://lankudot.airfishlab.com/blog/2023-04-kons-tone/" rel="alternate" type="text/html" title="[閱讀] 今敏《Kon’s Tone 「千年女優」之道》" /><published>2023-04-18T00:00:00+08:00</published><updated>2023-04-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/kons-tone</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-04-kons-tone/">&lt;p&gt;2022 年在高雄電影館看了《今敏：造夢魔術師》這部記錄片才知道今敏導演，之後就對他的作品很感興趣，還買了所有電影的 BD 來看。當時看完記錄片，朋友就借我這本書看，不過因為工作關係，只看了一半就先還回去了，但是意猶未盡，後來就自己再買了一本來看。&lt;/p&gt;
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">Rank</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-04-18-kons-tone/cover-image.png&quot; alt=&quot;cover-image&quot; /&gt;&lt;/p&gt;
+<p>如果各自定義的話，一個問題是，每次要傳送資料時，所有的欄位資料都要同步一次：</p>
 
-&lt;p&gt;《Kon’s Tone 「千年女優」之道》收錄今敏其中兩部作品《藍色恐懼》跟《千年女優》是如何成案，以及製作過程的秘辛，還有收錄幾篇在個人部落格的文章，分享他是如何踏上動畫導演的路，還有人生觀等等。其中分享《藍色恐懼》的製作過程的「《藍色恐懼》戰記」就佔了全書一半以上的內容，從成案開始就遭遇不合理的要求，在製作過程中被製作助理雷到的事情更是層出不窮，真的是充滿「恐懼」的「戰記」，看了人都 blue 了起來。很佩服整個團隊可以在如此艱難的環境下完成《藍色恐懼》，也蠻佩服今敏的脾氣，還可以自嘲地寫出這篇文章。我再看一次電影的話應該會有不同的感覺吧。&lt;/p&gt;
+<p><img src="/assets/images/blog/2023-08-03-extract-common-data-definition/separated-definition-sync-data.png" alt="" /></p>
 
-&lt;p&gt;成書應該是在製作《東京教父》時。比較可惜的是這本書可能是從簡體中文直接轉換過來的，所以一些用語上還是有差別，在閱讀的時候要稍微思考一下。今敏每部作品都很吸引我，無論是劇情，還是畫面呈現上，他的作品更影響其它了電影，像是我最喜歡的《盜夢偵探》，也影響了電影《全面啟動》。如果你還沒看過他的作品的話，一定要找機會去看。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html">2022 年在高雄電影館看了《今敏：造夢魔術師》這部記錄片才知道今敏導演，之後就對他的作品很感興趣，還買了所有電影的 BD 來看。當時看完記錄片，朋友就借我這本書看，不過因為工作關係，只看了一半就先還回去了，但是意猶未盡，後來就自己再買了一本來看。</summary></entry><entry><title type="html">[推廣] 空氣魚實驗室</title><link href="https://lankudot.airfishlab.com/blog/2023-03-airfishlab-promotion/" rel="alternate" type="text/html" title="[推廣] 空氣魚實驗室" /><published>2023-03-26T00:00:00+08:00</published><updated>2023-03-26T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/airfishlab-promotion</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-03-airfishlab-promotion/">&lt;p&gt;來介紹一下空氣魚實驗室與現有的專案~&lt;/p&gt;
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">GuildMember</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="n">GuildMemberData</span> <span class="n">_data</span> <span class="p">=</span>
+        <span class="k">new</span> <span class="nf">GuildMemberData</span><span class="p">();</span>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-03-26-airfishlab-promotion/logo.png&quot; alt=&quot;logo&quot; /&gt;&lt;/p&gt;
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">UpdateData</span><span class="p">(</span><span class="n">PlayerData</span> <span class="n">playerData</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">_data</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="n">playerData</span><span class="p">.</span><span class="n">Name</span><span class="p">;</span>
+        <span class="n">_data</span><span class="p">.</span><span class="n">AvatarId</span> <span class="p">=</span> <span class="n">playerData</span><span class="p">.</span><span class="n">AvatarId</span><span class="p">;</span>
+        <span class="n">_data</span><span class="p">.</span><span class="n">Level</span> <span class="p">=</span> <span class="n">playerData</span><span class="p">.</span><span class="n">Level</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 
-&lt;h2 id=&quot;youtube-頻道---來做遊戲啊系列&quot;&gt;YouTube 頻道 - 來做遊戲啊系列&lt;/h2&gt;
+<span class="k">public</span> <span class="k">class</span> <span class="nc">LeaderboardPlayer</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="n">LeaderboardPlayerData</span> <span class="n">_data</span> <span class="p">=</span>
+        <span class="k">new</span> <span class="nf">LeaderboardPlayerData</span><span class="p">();</span>
 
-&lt;p&gt;因喜歡 Nier: Automata 中的 9S 的駭客小遊戲而製作。這系列以程式為主，從機制、關卡設置，到 Boss 製作，逐步完成一個 3D STG。除了程式講解外，也分享設計思路。&lt;/p&gt;
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">UpdateData</span><span class="p">(</span><span class="n">PlayerData</span> <span class="n">playerData</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">_data</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="n">playerData</span><span class="p">.</span><span class="n">Name</span><span class="p">;</span>
+        <span class="n">_data</span><span class="p">.</span><span class="n">AvatarId</span> <span class="p">=</span> <span class="n">playerData</span><span class="p">.</span><span class="n">AvatarId</span><span class="p">;</span>
+        <span class="n">_data</span><span class="p">.</span><span class="n">Level</span> <span class="p">=</span> <span class="n">playerData</span><span class="p">.</span><span class="n">Level</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-03-26-airfishlab-promotion/3d-stg-screenshot.png&quot; alt=&quot;3d-stg-screenshot&quot; /&gt;&lt;/p&gt;
+<p>另一個問題是，如果要新增資料欄位的話，每個用到的地方都得要各別新增，而且有同步資料的地方，也要新增對應的功能：</p>
 
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA&quot;&gt;YouTube 頻道&lt;/a&gt;:&lt;/p&gt;
+<p><img src="/assets/images/blog/2023-08-03-extract-common-data-definition/separated-definition-add-field.png" alt="" /></p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-03-26-airfishlab-promotion/youtube-channel-qr-code.png&quot; alt=&quot;youtube-channel-qr-code&quot; /&gt;&lt;/p&gt;
+<h2 id="取出共用定義">取出共用定義</h2>
 
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/playlist?list=PLlXVWz0Qhs7t94ma16tJwELM0_1HNq8Rz&quot;&gt;來做遊戲啊系列&lt;/a&gt;:&lt;/p&gt;
+<p>如果將這些重複的資料獨立出來的話，要新增資料只要找到那個定義就可以：</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-03-26-airfishlab-promotion/channel-playlist.png&quot; alt=&quot;channel-playlist&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/images/blog/2023-08-03-extract-common-data-definition/extract-common-definition.png" alt="" /></p>
 
-&lt;h2 id=&quot;unity-套件---circular-scrolling-list&quot;&gt;Unity 套件 - Circular Scrolling List&lt;/h2&gt;
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">PlayerBasicData</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">AvatarId</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">Level</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">TitleId</span><span class="p">;</span>
+<span class="p">}</span>
 
-&lt;p&gt;Circular Scrolling List 用有限個選單物件來顯示無限個內容，支援直向跟橫向捲動、可用滑鼠及滾輪操作，也可透過程式來控制。&lt;/p&gt;
+<span class="k">public</span> <span class="k">class</span> <span class="nc">PlayerData</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="n">PlayerBasicData</span> <span class="n">PlayerBasicData</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">ExperiencePoints</span><span class="p">;</span>
+<span class="p">}</span>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-03-26-airfishlab-promotion/circular-scrolling-list-demo.gif&quot; alt=&quot;circular-scrolling-list-demo&quot; /&gt;&lt;/p&gt;
+<span class="k">public</span> <span class="k">class</span> <span class="nc">GuildMemberData</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="n">PlayerBasicData</span> <span class="n">PlayerBasicData</span><span class="p">;</span>
+    <span class="k">public</span> <span class="n">GuildRole</span> <span class="n">Role</span><span class="p">;</span>
+<span class="p">}</span>
 
-&lt;p&gt;可以在 &lt;a href=&quot;https://assetstore.unity.com/packages/tools/gui/circular-scrolling-list-187418&quot;&gt;Unity Asset Store 上下載&lt;/a&gt;：&lt;/p&gt;
+<span class="k">public</span> <span class="k">class</span> <span class="nc">LeaderboardPlayerData</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="n">PlayerBasicData</span> <span class="n">PlayerBasicData</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">Rank</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-03-26-airfishlab-promotion/circular-scrolling-list-unity-store-page.png&quot; alt=&quot;circular-scrolling-list-unity-store-page&quot; /&gt;&lt;/p&gt;
+<p>也可以集中提供資料同步的函式，而不是定義在每個元件中：</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-03-26-airfishlab-promotion/circular-scrolling-list-asset-qr-code.png&quot; alt=&quot;circular-scrolling-list-asset-qr-code&quot; /&gt;&lt;/p&gt;
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">PlayerBasicData</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">AvatarId</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">Level</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">TitleId</span><span class="p">;</span>
 
-&lt;p&gt;這個月第 6 版上架啦，新加了編輯器預覽、支援兩端停止選單、程式碼控制：&lt;/p&gt;
+    <span class="k">public</span> <span class="k">static</span> <span class="k">void</span> <span class="nf">Copy</span><span class="p">(</span>
+        <span class="n">PlayerBasicData</span> <span class="k">from</span><span class="p">,</span> <span class="n">PlayerBasicData</span> <span class="n">to</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">to</span><span class="p">.</span><span class="n">Name</span> <span class="p">=</span> <span class="k">from</span><span class="p">.</span><span class="n">Name</span><span class="p">;</span>
+        <span class="n">to</span><span class="p">.</span><span class="n">AvatarId</span> <span class="p">=</span> <span class="k">from</span><span class="p">.</span><span class="n">AvatarId</span><span class="p">;</span>
+        <span class="n">to</span><span class="p">.</span><span class="n">Level</span> <span class="p">=</span> <span class="k">from</span><span class="p">.</span><span class="n">Level</span><span class="p">;</span>
+        <span class="n">to</span><span class="p">.</span><span class="n">TitleId</span> <span class="p">=</span> <span class="k">from</span><span class="p">.</span><span class="n">TitleId</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 
-&lt;!-- Courtesy of embedresponsively.com --&gt;
+<span class="k">public</span> <span class="k">class</span> <span class="nc">GuildMember</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="n">GuildMemberData</span> <span class="n">_data</span> <span class="p">=</span>
+        <span class="k">new</span> <span class="nf">GuildMemberData</span><span class="p">();</span>
 
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/6y-_MaeWIAg&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">UpdateData</span><span class="p">(</span><span class="n">PlayerBasicData</span> <span class="n">playerBasicData</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">PlayerBasicData</span><span class="p">.</span><span class="nf">Copy</span><span class="p">(</span>
+            <span class="n">playerBasicData</span><span class="p">,</span> <span class="n">_data</span><span class="p">.</span><span class="n">PlayerBasicData</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
-&lt;p&gt;有問題也可以在 &lt;a href=&quot;https://github.com/LanKuDot/game_modules/tree/master/CircularScrollingList&quot;&gt;Github Page&lt;/a&gt; 上提問:&lt;/p&gt;
+<p>如此一來，如果有新增資料欄位的話，也可以方便找到要更新的地方。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-03-26-airfishlab-promotion/circular-scrolling-list-repo-page.png&quot; alt=&quot;circular-scrolling-list-repo-page&quot; /&gt;&lt;/p&gt;
+<h2 id="總結">總結</h2>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-03-26-airfishlab-promotion/circular-scrolling-list-repo-qr-code.png&quot; alt=&quot;circular-scrolling-list-repo-qr-code&quot; /&gt;&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><summary type="html">來介紹一下空氣魚實驗室與現有的專案~</summary></entry><entry><title type="html">[筆記] 重構專案中的舊元件</title><link href="https://lankudot.airfishlab.com/blog/2023-01-refactor-legacy-component-in-project/" rel="alternate" type="text/html" title="[筆記] 重構專案中的舊元件" /><published>2023-01-30T00:00:00+08:00</published><updated>2023-01-30T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-legacy-component-in-project</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-01-refactor-legacy-component-in-project/">&lt;p&gt;在最近參與的遊戲專案中，我負責重新撰寫經過時間累積、充滿不同想法的核心元件。隨處可見複製的程式碼，元件之間交互使用，亦或是為了加新功能而繞路。可以看出每個新功能為了不影響之前的功能，正維持著微妙的平衡。對於負責重寫元件的我來說就好像是在茂密的遠古森林裡一路披荊斬棘，充滿挑戰。就想寫來記錄過程和心得。&lt;/p&gt;
+<p>當發現有些資料在不同的地方重複出現時，就應該考慮把這些資料整理出來。尤其越是基本的資料，越晚改動的成本就越高。因為越晚修改，用到的地方只會越來越多，而且對應元件的功能也是基於拿到的資料製作的，所以要改動時，牽涉的程式範圍就會很廣。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="C#" /><summary type="html"><![CDATA[當不同元件有相似的資料時，應該把相同的部份整理出來成為一個獨立的資料定義，並在用到的地方使用這個資料定義。如果元件之間各自定義的話，當要新增或修改資料時，所有用到的地方都得要一併更新，既秏時又費力，且容易出錯，會是一場災難。]]></summary></entry><entry><title type="html">[遊戲] 女神異聞錄5 亂戰：魅影攻手 P5S</title><link href="https://lankudot.airfishlab.com/blog/2023-06-persona-5-scramble/" rel="alternate" type="text/html" title="[遊戲] 女神異聞錄5 亂戰：魅影攻手 P5S" /><published>2023-06-23T00:00:00+08:00</published><updated>2023-06-23T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/persona-5-scramble</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-06-persona-5-scramble/"><![CDATA[<p>沒有小兵海、沒有據點兵長、也不會說敵將討伐，P5S 還是承襲著 P5 的風格，不過戰鬥從回合制變成即時戰鬥，原本以為跟光榮合作會變成無雙割草遊戲，沒想到他們把 P5S 變成一款很棒的 ARPG。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/refactor-is-like.jpg&quot; alt=&quot;refactor-is-like&quot; /&gt;
-&lt;em&gt;重構元件大概是這樣的感覺吧&lt;/em&gt;&lt;/p&gt;
+<p>我很享受遊玩 P5S 的過程，無論是戰鬥、音樂、畫面風格，這款遊戲完完全全打中我的胃口。即使劇情通關了，還是想繼續把任務解完，體驗戰鬥的快感。</p>
 
-&lt;h2 id=&quot;理解需求&quot;&gt;理解需求&lt;/h2&gt;
+<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/game-status.jpg" alt="通關時數" />
+<em>通關時數 55 小時半</em></p>
 
-&lt;p&gt;要作重構還是要回歸需求，&lt;strong&gt;知道這些元件或這個功能的目的是什麼&lt;/strong&gt;，這樣在重新設計時比較容易掌握方向。不過萬事起頭難，這也是最痛苦的階段，尤其是靈力不足以通靈出程式的想法的時候。&lt;/p&gt;
+<p>感覺在遊戲業工作後，玩遊戲會注意的地方就會比較不同，所以就想要來分析這款遊戲為什麼會這麼吸引我，以及當中的設計。另外本篇的遊戲擷圖中，因為是在通關後拍的，所以有把一些可能會劇透的地方遮起來。</p>
 
-&lt;p&gt;如果有文件或是之前的開發者還在的話是最好，就可以快速理解它們的作用，找到切入點。但通常不會那麼美好，可能因為趕時限沒時間作文件，或是之前的開發者不在了。這時候就只能自己看程式碼通靈了。&lt;/p&gt;
+<h2 id="戰鬥機制">戰鬥機制</h2>
 
-&lt;h3 id=&quot;找出運作流程&quot;&gt;找出運作流程&lt;/h3&gt;
+<h3 id="遇敵">遇敵</h3>
 
-&lt;p&gt;我會先找出元件在運作流程中的位置，利用 debug 大法先看事件是如何發生。例如想知道攻擊演出是怎麼播放的，就在覺得可能發生的地方插入 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Debug.Log&lt;/code&gt;，當演出時就可以知道那個地方有沒有被呼叫到。而且 Unity 的 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Debug.Log&lt;/code&gt; 也會包含 call stack，可以知道發生的起點。&lt;/p&gt;
+<p>遇敵的機制跟 P5 一樣，在監獄中會有敵人在走動，要接觸敵人才會觸發戰鬥。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/unity-debug-message.JPG&quot; alt=&quot;unity-debug-message&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/finding-enemy.jpg" alt="尋找敵人" /></p>
 
-&lt;p&gt;有 call stack 的幫助，可以知道要重構的元件在流程中的位置，與牽涉的哪些元件，例如演出播放會跟素材載入的元件有關，而發起演出請求的元件有哪些等。如果遇到非同步的程式碼就會麻煩一點，得要找出哪裡呼叫到斷點，再從斷點另一頭開始找。有這些資訊就可以拉出這次重構的界線要到哪裡，因為當牽涉到的元件很多時，一次改動太多東西反而不好掌握。&lt;/p&gt;
+<p>如果從背後偷襲敵人，戰鬥會以「優勢」開始，敵人一開始會無法行動。反之如果被敵人撞見，戰鬥會以「劣勢」開始，一開始角色會陷入暈眩的狀態。鼓勵玩家維持「怪盜」的作風，這跟無雙類型遊戲，角色就是要衝入敵陣大殺四方完全不同。不過提高監獄警戒度並非完全是壞事，在這樣的情況下，會比較容易遇到「寶魔」，擊倒它能獲得大量的金錢。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/old-structure.jpg&quot; alt=&quot;old-structure&quot; /&gt;
-&lt;em&gt;原本的問題是類型 B 的特效生成與管理跟類型 A 完全不同，想見類型 B 的特效是後來新增的&lt;/em&gt;&lt;/p&gt;
+<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/hiding.jpg" alt="躲藏位置" />
+<em>監獄中會有可躲藏的位置，用來發動偷襲</em></p>
 
-&lt;h3 id=&quot;理解程式碼&quot;&gt;理解程式碼&lt;/h3&gt;
+<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/hiding-then-attack.jpg" alt="發動偷襲" />
+<em>成功發動偷襲對戰鬥有優勢</em></p>
 
-&lt;p&gt;即使有文件或是有人可以問，要到能有修改想法前，還是得實際看程式碼，&lt;del&gt;痛苦的開始&lt;/del&gt;。在拉出重構界線後，就去看目標元件內的功能是如何運作的，重點在於理解需求，也就是它是為了作什麼事情而存在。最好是能抓出元件內每個功能的作用，還有偷偷幫你做的功能，例如是在意料之外的地方做到不會重複播放特效的功能。這樣在重新設計時會有比較好的藍圖。&lt;/p&gt;
+<h3 id="戰鬥">戰鬥</h3>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/old-structure-functions.jpg&quot; alt=&quot;old-structure-functions&quot; /&gt;
-&lt;em&gt;找出舊架構每個元件的功能和用途，紅色是有問題的使用方式&lt;/em&gt;&lt;/p&gt;
+<p>P5S 採用即時戰鬥，讓整個遊戲的節奏變快了，配合無雙遊戲經典的「輕連擊-重收尾」的操作模式，讓攻擊也有一種「節奏」。有攻擊就有閃躲，如果在被打到的瞬間按下閃躲，就會自動反擊，讓攻擊接續下去，這是個人覺得讓即時戰鬥刺激的要素之一。
+(閃躲成功的圖我截的到嗎)</p>
 
-&lt;p&gt;在理解程式碼的過程中，也會發現原本的功能有什麼問題。例如生成的特效物件沒有統一管理、使用的資料結構有效能問題等。當然在重新設計時，也得一併考慮解決這些問題。&lt;/p&gt;
+<p>每個角色的攻擊節奏不一樣也是有趣的地方，在輕攻擊動作的過程中無法再輸攻擊指令，因此不能一昧狂按攻擊，而且 Sophia 更要求要正確的時間點按下攻擊 (Just Catch) 才能接續連段。能夠掌握攻擊節奏，避免被敵人偷刀，適當的放重攻擊收尾，在 Boss 戰中格外重要。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/reading-legacy-code.jpg&quot; alt=&quot;reading-legacy-code&quot; /&gt;&lt;/p&gt;
+<p>都跟光榮合作了，不免俗的還是會有無雙的戰鬥模式，在 P5S 中是以特殊關卡的方式呈現。在需要 Navi 駭入機關的場合中，會有一波波敵人向 Navi 攻擊，玩家就要在這段駭入時間中擊敗敵人海，保護 Navi 以免她被擊倒。
+(放 Navi 的關卡樣式)</p>
 
-&lt;h2 id=&quot;重新設計&quot;&gt;重新設計&lt;/h2&gt;
+<h3 id="總攻擊與-show-time">總攻擊與 Show Time</h3>
 
-&lt;p&gt;有時候在理解功能的時候，也會有想法冒出來，所以不會等完全理解完才開始重新設計。有想法時先設計新的架構大致要長什麼樣，漸漸體悟出功能後，再逐步更新設計。&lt;/p&gt;
+<p>敵人身上擁有倒地值，透過屬性相剋的攻擊或是附加攻擊都會削減倒地值。如果倒地值歸零，玩家就可以發動總攻擊，造成大量傷害。在 Boss 戰中也是很重要的攻擊手段。總攻擊的過程呈現一陣暴打，再配每個角色不同的收尾動作，打擊爽感直線上升。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/redesign-structure.jpg&quot; alt=&quot;redesign-structure&quot; /&gt;&lt;/p&gt;
+<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/total-attack.jpg" alt="總攻擊" />
+<em>對小兵發動總攻擊可以造成大量傷害</em></p>
 
-&lt;p&gt;重新設計是規劃元件之間要如何互動，要提供什麼樣的功能給其它元件使用，目標是讓程式能直覺好讀與方便後續維護。我習慣的設計方向如下：&lt;/p&gt;
+<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/total-attack-ends.jpg" alt="總攻擊結束" />
+<em>總攻擊結束後的特寫</em></p>
 
-&lt;h3 id=&quot;單向相依性&quot;&gt;單向相依性&lt;/h3&gt;
+<p>如果總攻擊是團隊的大招的話，那 Show Time 就是個人的大招了。遊戲鼓勵玩家在戰鬥多多切換編成的四位角色，角色換手會加速累積個人的 Show Time 值，在戰鬥中也會提示切換角色，讓他發動攻擊，延續攻勢。發動 Show Time 後就是角色跟面具的表演時間了，角色的大招表演充滿個人特色，看 Show Time 是一種享受。</p>
 
-&lt;p&gt;同一個系統中，元件之間的相依性是單向的。也就是不會繞過使用的元件，再去取用後面的元件，或是元件之間的相依性不該有迴圈，這很常出現在那個元件是 static 的情況下。這樣在後續追縱程式碼時，路徑會比較單純。&lt;/p&gt;
+<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/show-time.jpg" alt="Show Time" />
+<em>每個角色的 Show Time 充滿個人特色</em></p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/keep-single-reference-direction.jpg&quot; alt=&quot;keep-single-reference-direction&quot; /&gt;
-&lt;em&gt;以這次的例子來說，應該要把類型 B 的特效管理元件合併進來&lt;/em&gt;&lt;/p&gt;
+<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/show-over.jpg" alt="Show Over" />
+<em>Show Time 結束後的特寫</em></p>
 
-&lt;h3 id=&quot;只負責一件事&quot;&gt;只負責一件事&lt;/h3&gt;
+<h2 id="音樂">音樂</h2>
 
-&lt;p&gt;每個元件只負責一件事。如果規劃出來的元件作的事情太多，就可以考慮將它切出來作成另一個元件。好處是命名更容易，可以直覺知道這個元件負責的功能。但也不用為了一個小功能而切出新元件，反而會使程式更複雜。通常在實作時會意識到這個元件太大或太小，在設計階段不用一直考慮切的好不好。&lt;/p&gt;
+<p>音樂就不用多述了，放克跟爵士的風格讓遊戲潮到不行，每次開遊戲我一定不會跳過 OP。每個監獄的背景音樂契合監獄氛圍跟所屬王的個性。澀谷監獄用頑皮的風格，帶出愛麗絲愛搗蛋的個性，仙台監獄則是三拍子的莊嚴管弦樂，感覺這裡就是一個 RPG 的魔王城。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/one-component-one-job.jpg&quot; alt=&quot;one-component-one-job&quot; /&gt;
-&lt;em&gt;每個元件專心做它負責的事就好&lt;/em&gt;&lt;/p&gt;
+<p>當監獄進度到攻略王的時候，監獄的背景音樂會變成熱血的搖滾樂，讓氣氛更加狂熱。其中最喜歡的音樂是在攻略近衛明時的音樂，因為他是最後的主要敵人，所以有專屬的王房音樂，兩個階段有不同的音樂，都是放克搖滾風格，配上近衛明機人登場與英雄戰隊的裝扮，實在是潮到不行，他也是我最喜歡的王。熱血戰鬥配上放克音樂真是一大享受。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/seperate-large-component.jpg&quot; alt=&quot;seperate-large-component&quot; /&gt;
-&lt;em&gt;像共用跟個別使用的特效的管理方式不同，就分出次元件來，EffectManager 再依照請求的特效決定（透過 flag 之類的）從哪邊取資料，EffectUser 不用管這件事&lt;/em&gt;&lt;/p&gt;
+<h2 id="結語">結語</h2>
 
-&lt;h3 id=&quot;只開放需要的功能&quot;&gt;只開放需要的功能&lt;/h3&gt;
+<p>真的很喜歡這款遊戲，從頭到尾營造出既熱血又有怪盜個性的風格。每個王的設定也很鮮明，除了所屬監獄的設計，王的攻擊招式也都反應出這個王的個性。讓我滿享受遊戲的過程。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="遊戲" /><category term="心得" /><summary type="html"><![CDATA[沒有小兵海、沒有據點兵長、也不會說敵將討伐，P5S 還是承襲著 P5 的風格，不過戰鬥從回合制變成即時戰鬥，原本以為跟光榮合作會變成無雙割草遊戲，沒想到他們把 P5S 變成一款很棒的 ARPG。]]></summary></entry><entry><title type="html">[分享] 獨立遊戲在 Steam 頁面上的宣傳影片建議</title><link href="https://lankudot.airfishlab.com/blog/2023-05-slow-trailer-is-not-good-for-indie-game/" rel="alternate" type="text/html" title="[分享] 獨立遊戲在 Steam 頁面上的宣傳影片建議" /><published>2023-05-01T00:00:00+08:00</published><updated>2023-05-01T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/slow-trailer-is-not-good-for-indie-game</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-05-slow-trailer-is-not-good-for-indie-game/"><![CDATA[<p>在推特上看到<a href="https://twitter.com/Derek_Lieu/status/1650504969970147331">貼文</a>分享一則在 <a href="https://www.reddit.com/r/Steam/comments/12raw4o/anybody_else_skips_the_videos_and_jumps_straight/?utm_name=iossmf">Reddit 的討論串</a>，討論串的樓主問其它人是不是也一樣，在逛 Steam 遊戲頁面時，會跳過宣傳影片直接去看遊戲擷圖或是評論。結果許多人回覆都有類似的習慣，因為覺得宣傳影片沒有傳達出遊戲玩法，所以直接去看遊戲擷圖的話，反而可以更快知道這個遊戲合不合自己的胃口。原推的作者就分享獨立遊戲要如何避免這種情況，讓玩家能在宣傳影片上停留久一點，增加購買或是加入願望清單的機會。</p>
 
-&lt;p&gt;元件之間能看到的功能是有限的，也就是作抽象化。元件只開放需要的功能給外部，讓外部要求元件去做事，而不是把元件的資料拿出來做事，或是操作元件內的流程。這樣實際運作的地方會集中在元件內，如果出現問題，也容易找到出問題的地方。如果要修改功能也不會牽一髮而動全身，只需要在元件內修改，而不影響使用這個功能的其它元件。&lt;/p&gt;
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Here&#39;s your wake up call if you have a trailer with a slow intro and lots of logos on your Steam page.<br /><br />This post is full of people who skip past the trailers to click on the screenshots because it&#39;s quicker and they assume the trailer won&#39;t show gameplay.<a href="https://t.co/bptoFu1c94">https://t.co/bptoFu1c94</a></p>&mdash; Derek Lieu (@Derek_Lieu) <a href="https://twitter.com/Derek_Lieu/status/1650504969970147331?ref_src=twsrc%5Etfw">April 24, 2023</a></blockquote>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/only-expose-necessary-functions.jpg&quot; alt=&quot;only-expose-necessary-functions&quot; /&gt;
-&lt;em&gt;限制元件能看到的功能的話，假如 EffectManager 要改用不同的流程來管理特效元件，就只要改那個元件，其它元件不會有感覺的&lt;/em&gt;&lt;/p&gt;
+<p>在 Reddit 討論串的回覆提到，大多對宣傳影片中提到「榮獲XXX獎」、「媒體評分XX分」等得獎資訊，或是「這是一個扣人心弦的故事」這類劇情式宣傳沒有興趣，會快速跳到中段可能有遊戲畫面的部份；或是發現看了整個影片還是不知道這款遊戲在玩什麼，最後就選擇直接跳過宣傳影片。</p>
 
-&lt;h2 id=&quot;實做新架構&quot;&gt;實做新架構&lt;/h2&gt;
+<p>原推主在自己的遊戲上也遇到這樣的情況，他認為玩家在 Steam 上逛遊戲的時，就像在逛櫥窗商品，會停留的時間很短，所以建議在宣傳影片的開頭 5 到 10 秒就揭示遊戲的玩法或是遊戲畫面，來增加玩家的興趣。推主在他的<a href="https://www.derek-lieu.com/blog/2022/12/3/why-indie-game-trailers-shouldnt-take-inspiration-from-aaa-games">文章</a>中建議獨立遊戲在 Steam 上的宣傳影片不要學 3A 大作的宣傳影片，因為玩家對大廠出的遊戲有一定的熟悉度，其宣傳影片的畫面細緻華麗，另外影片登場平台也不一樣（在 YouTube 或是遊戲展上），玩家會願意看完整個宣傳影片。</p>
 
-&lt;p&gt;在設計好重構的藍圖後，再來就是決定先從哪邊下手。先從改動比較小的部份開始修改，再來是修改有關連的元件，例如要實作的功能，需要其它元件先提供對應的功能，最後是重構目標元件。所以在重新設計階段時，就可以先列出修改任務了，而且比較好掌握有哪些任務要先做，哪些有相依性。重構目標元件的任務可能會很大，像是包含設計資料結構、資源的運作流程、有多個功能要提供等，就要再把任務細分成子任務了。&lt;/p&gt;
+<p>但也不是要完全捨棄這類電影式宣傳影片（slow trailer），而是可以針對在 Steam 上的宣傳影片做點修改。推文中舉例的<a href="https://store.steampowered.com/app/1201270/__A_Space_for_the_Unbound/">《A Space for the Unbound》</a>這款遊戲，在 Steam 上的宣傳影片比起在 YouTube 上的 PS 與 NS 宣傳影片，開頭多了一段遊戲畫面，接著才是劇情式的內容，而得獎資訊則是放在最後面。</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/seperate-the-task.jpg&quot; alt=&quot;seperate-the-task&quot; /&gt;&lt;/p&gt;
+<!-- Courtesy of embedresponsively.com -->
 
-&lt;p&gt;如果要改動的部份很大的話或是要重寫的話，我會先保留原本的元件或功能，然後直接寫新的功能，再逐步替換上去，最後取代舊有的元件。另外我也會保留沒有問題的 API 的使用方式。每個新功能完成後，就測試行為是不是跟原來的功能一樣，如果有搭配版控，可以方便的在新舊功能間切換。&lt;/p&gt;
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/5QYVQhVd_-M" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
 
-&lt;p&gt;因為最後還是要看實作去調整架構，重構也不太可能一次就到位，所以在前面的設計階段並不用設計得太完整，有主要的架構出來就可以開始實作了，再依照每個元件的功能需求個別設計。&lt;/p&gt;
+<p>因此如果不想讓玩家跳過自己辛辛苦苦做好的宣傳影片的話，不妨在影片一開頭就放上遊戲的畫面，讓玩家可以快速知道遊戲的類型或玩法，增加宣傳的效益。</p>
 
-&lt;h2 id=&quot;總結&quot;&gt;總結&lt;/h2&gt;
+<h4 id="202355-追記">2023/5/5 追記</h4>
 
-&lt;p&gt;這次在專案中重構元件的過程可以整理成下圖的樣子，其實每個階段不會只做那個階段的事情，也會牽涉到其它階段。&lt;/p&gt;
+<p>結果 Steam 在 5 月 3 日發布<a href="https://steamcommunity.com/groups/steamworks/announcements/detail/5358762517221792489">新的宣傳片規範與指導原則</a>，有兩點更動：</p>
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2023-01-30-refactor-legacy-component-in-project/refactor-progress.jpg&quot; alt=&quot;refactor-progress&quot; /&gt;&lt;/p&gt;
+<ol>
+  <li>遊戲頁面中，最前面只會有兩部影片，剩下的會在遊戲擷圖之後；</li>
+  <li>宣傳片可以指定標題與類型，類型有：一般/劇情、預告、玩法、訪談/日誌。玩家在影片左上角會看到這些資訊</li>
+</ol>
 
-&lt;p&gt;此外有筆記的好處是，在重構完成後，可以幫助撰寫文件。像是運作流程、元件關係等，這些要回顧程式碼的資訊，如果在製作過程中一邊記錄的話，會大大減少整理文件的時間。&lt;/p&gt;
+<p>另外也一樣建議宣傳影片開頭就先揭示玩法：</p>
 
-&lt;h2 id=&quot;後記&quot;&gt;後記&lt;/h2&gt;
+<blockquote>
+  <p>理想情況下，應該讓玩家們能夠在最短的時間內清楚瞭解遊戲的玩法。 我們建議第一支宣傳片主要展示遊戲玩法，清楚地示範玩家會在遊戲中進行哪些活動及他們會和你打造的世界有什麼樣的互動。 在吸引到玩家的注意後，再把公司的標誌和敘事劇情放在宣傳片後段。</p>
+</blockquote>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[在推特上看到貼文分享一則在 Reddit 的討論串，討論串的樓主問其它人是不是也一樣，在逛 Steam 遊戲頁面時，會跳過宣傳影片直接去看遊戲擷圖或是評論。結果許多人回覆都有類似的習慣，因為覺得宣傳影片沒有傳達出遊戲玩法，所以直接去看遊戲擷圖的話，反而可以更快知道這個遊戲合不合自己的胃口。原推的作者就分享獨立遊戲要如何避免這種情況，讓玩家能在宣傳影片上停留久一點，增加購買或是加入願望清單的機會。]]></summary></entry><entry><title type="html">[閱讀] 今敏《Kon’s Tone 「千年女優」之道》</title><link href="https://lankudot.airfishlab.com/blog/2023-04-kons-tone/" rel="alternate" type="text/html" title="[閱讀] 今敏《Kon’s Tone 「千年女優」之道》" /><published>2023-04-18T00:00:00+08:00</published><updated>2023-04-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/kons-tone</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-04-kons-tone/"><![CDATA[<p>2022 年在高雄電影館看了《今敏：造夢魔術師》這部記錄片才知道今敏導演，之後就對他的作品很感興趣，還買了所有電影的 BD 來看。當時看完記錄片，朋友就借我這本書看，不過因為工作關係，只看了一半就先還回去了，但是意猶未盡，後來就自己再買了一本來看。</p>
 
-&lt;p&gt;這次重構比較大的失誤是，我發現目標元件有兩個功能是比較特別的，所以就沒有詳細看它們是怎麼運作的，等做好其它功能後，回來處理。結果沒想到那兩個功能就是那麼特別，給了已經設計好的資料結構跟流程重重一拳，花了好一陣子才修改完成。當初就應該意識到這兩個功能會很難處理，不然在舊的程式碼中也不會繞過原本的架構去達成了。&lt;/p&gt;
+<p><img src="/assets/images/blog/2023-04-18-kons-tone/cover-image.png" alt="cover-image" /></p>
 
-&lt;p&gt;另外要隨時做筆記，記錄設計想法還有要修改的元件，在下個階段才不會漏掉。我因為少記了一些要改的功能，結果在開始實作後，發現要先去改其它元件，錯估了任務的數量，造成時程預估要更長了。&lt;/p&gt;</content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="雜談" /><summary type="html">在最近參與的遊戲專案中，我負責重新撰寫經過時間累積、充滿不同想法的核心元件。隨處可見複製的程式碼，元件之間交互使用，亦或是為了加新功能而繞路。可以看出每個新功能為了不影響之前的功能，正維持著微妙的平衡。對於負責重寫元件的我來說就好像是在茂密的遠古森林裡一路披荊斬棘，充滿挑戰。就想寫來記錄過程和心得。</summary></entry></feed>
+<p>《Kon’s Tone 「千年女優」之道》收錄今敏其中兩部作品《藍色恐懼》跟《千年女優》是如何成案，以及製作過程的秘辛，還有收錄幾篇在個人部落格的文章，分享他是如何踏上動畫導演的路，還有人生觀等等。其中分享《藍色恐懼》的製作過程的「《藍色恐懼》戰記」就佔了全書一半以上的內容，從成案開始就遭遇不合理的要求，在製作過程中被製作助理雷到的事情更是層出不窮，真的是充滿「恐懼」的「戰記」，看了人都 blue 了起來。很佩服整個團隊可以在如此艱難的環境下完成《藍色恐懼》，也蠻佩服今敏的脾氣，還可以自嘲地寫出這篇文章。我再看一次電影的話應該會有不同的感覺吧。</p>
+
+<p>成書應該是在製作《東京教父》時。比較可惜的是這本書可能是從簡體中文直接轉換過來的，所以一些用語上還是有差別，在閱讀的時候要稍微思考一下。今敏每部作品都很吸引我，無論是劇情，還是畫面呈現上，他的作品更影響其它了電影，像是我最喜歡的《盜夢偵探》，也影響了電影《全面啟動》。如果你還沒看過他的作品的話，一定要找機會去看。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html"><![CDATA[2022 年在高雄電影館看了《今敏：造夢魔術師》這部記錄片才知道今敏導演，之後就對他的作品很感興趣，還買了所有電影的 BD 來看。當時看完記錄片，朋友就借我這本書看，不過因為工作關係，只看了一半就先還回去了，但是意猶未盡，後來就自己再買了一本來看。]]></summary></entry></feed>
