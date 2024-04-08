@@ -1,4 +1,294 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2024-02-14T23:34:57+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[電影] 2023 年在家裡看過的那些電影們</title><link href="https://lankudot.airfishlab.com/blog/2024-02-watched-movies-at-home-in-2023/" rel="alternate" type="text/html" title="[電影] 2023 年在家裡看過的那些電影們" /><published>2024-02-10T00:00:00+08:00</published><updated>2024-02-10T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/watched-movies-at-home-in-2023</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-02-watched-movies-at-home-in-2023/"><![CDATA[<p>2023 年除了在電影院看了許多電影外，也透過 Netflix 等串流平台收看了經典以及想要補齊的電影。就用這篇來整理這段時間的心得。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2024-04-08T23:49:17+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[Unity] 事件訂閱與問題（上）- `UnityEvent` 與 C# `event`</title><link href="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-1/" rel="alternate" type="text/html" title="[Unity] 事件訂閱與問題（上）- `UnityEvent` 與 C# `event`" /><published>2024-04-08T00:00:00+08:00</published><updated>2024-04-08T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/unity-event-subscription-and-problem-1</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-1/"><![CDATA[<p>在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 與 C# <code class="language-plaintext highlighter-rouge">event</code> 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 與 C# <code class="language-plaintext highlighter-rouge">event</code>，並講解可能的問題，而下篇則會介紹利用 C# interface 做為事件介面的第三種方式。</p>
+
+<h2 id="unityevent"><code class="language-plaintext highlighter-rouge">UnityEvent</code></h2>
+
+<p><code class="language-plaintext highlighter-rouge">UnityEvent</code> 在 Unity 中是最常見的訂閱事件方法，好處是讓其它物件可以在 inspector 上直接設定事件的處理函式（event handler）。通常在設計套件時，會經常使用 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 來讓使用者可以從介面設定處理函式，但這也是 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 的唯一好處了。</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="p">[</span><span class="n">SerializedField</span><span class="p">]</span>
+    <span class="k">private</span> <span class="n">UnityEvent</span> <span class="n">_onLevelStart</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="unityevent-的問題"><code class="language-plaintext highlighter-rouge">UnityEvent</code> 的問題</h3>
+
+<h4 id="讓訂閱的物件提供過多的-public-函式">讓訂閱的物件提供過多的 <code class="language-plaintext highlighter-rouge">public</code> 函式</h4>
+
+<p>使用 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 的一個大問題就是想要訂閱事件的物件得要提供 <code class="language-plaintext highlighter-rouge">public</code> 函式才能在 inspector 中設置處理函式，這會讓其它物件也有機會去呼叫這個處理函式。</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">Enemy</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">OnLevelStart</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnLevelStart"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>例如：敵人物件為了在 inspector 上能訂閱關卡開始的事件，就得要提供一個 <code class="language-plaintext highlighter-rouge">public</code> 的函式，這讓其它有參考這個敵人的物件也有機會呼叫 <code class="language-plaintext highlighter-rouge">OnLevelStart</code>。</p>
+
+<p>而且如果該物件需要接入不同的事件時，這些 <code class="language-plaintext highlighter-rouge">public</code> 函式就會越來越多。在寫程式時，就會多出許多不必要的候選函式，造成困擾。</p>
+
+<h4 id="外部物件能觸發事件">外部物件能觸發事件</h4>
+
+<p>除了透過 inspector 設置處理函式之外，通常也會讓處理函式能在程式中設置。雖然可以讓要訂閱事件的物件在自己內部訂閱，而能將處理函式設為 <code class="language-plaintext highlighter-rouge">private</code> 的，但為此將 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 設為 <code class="language-plaintext highlighter-rouge">public</code> 的話，反而會讓其它物件有機會呼叫 <code class="language-plaintext highlighter-rouge">Invoke()</code> 來觸發事件。</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="n">LevelManager</span> <span class="n">Instance</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="n">UnityEvent</span> <span class="n">OnLevelStart</span><span class="p">;</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">Awake</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Instance</span> <span class="p">=</span> <span class="k">this</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">Enemy</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnLevelStart</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnLevelStart</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnLevelStart"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">SomeObject</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">SomeFunc</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 不相關的物件可以呼叫</span>
+        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>例如：為了能在程式中訂閱事件，<code class="language-plaintext highlighter-rouge">LevelManager</code> 將 <code class="language-plaintext highlighter-rouge">OnLevelStart</code> 事件設為 <code class="language-plaintext highlighter-rouge">public</code>，雖然可以讓 <code class="language-plaintext highlighter-rouge">Eneny</code> 物件在程式中訂閱事件，但可能讓其它物件不小心觸發到關卡開始的事件，造成意外的結果。</p>
+
+<p>要避免這種情況的話，就還是把 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 物件宣告為 <code class="language-plaintext highlighter-rouge">private</code> 的，並讓物件提供訂閱事件的函式。如果還是要保留在 inspector 設置處理函式的功能，則加上 <code class="language-plaintext highlighter-rouge">SerializedField</code> 屬性。</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="p">[</span><span class="n">SerializedField</span><span class="p">]</span>
+    <span class="k">private</span> <span class="n">UnityEvent</span> <span class="n">_onLevelStart</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">SubscribeOnLevelStart</span><span class="p">(</span><span class="n">UnityAction</span> <span class="n">callback</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">_onLevelStart</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">callback</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">UnsubscribeOnLevelStart</span><span class="p">(</span><span class="n">UnityAction</span> <span class="n">callback</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">_onLevelStart</span><span class="p">.</span><span class="nf">RemoveListener</span><span class="p">(</span><span class="n">callback</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="重複訂閱事件">重複訂閱事件</h4>
+
+<p>無論是透過 inspector 還是 <code class="language-plaintext highlighter-rouge">AddListener()</code> 來訂閱事件，都有可能會重複訂閱，造成同一個事件處理函式被呼叫數次。</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">PlayerInputManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="n">PlayerInputManager</span> <span class="n">Instance</span><span class="p">;</span>
+
+    <span class="p">[</span><span class="n">NonSerialized</span><span class="p">]</span>
+    <span class="k">public</span> <span class="n">UnityEvent</span> <span class="n">OnFire</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">UnityEvent</span><span class="p">();</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">Awake</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Instance</span> <span class="p">=</span> <span class="k">this</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">Update</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">Input</span><span class="p">.</span><span class="nf">GetKeyDown</span><span class="p">(</span><span class="n">KeyCode</span><span class="p">.</span><span class="n">F</span><span class="p">))</span>
+            <span class="n">OnFire</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">Player</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">PlayerInputManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnFire</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnPlayerFire</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">Init</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 重複訂閱</span>
+        <span class="n">PlayerInputManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnFire</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnPlayerFire</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnPlayerFire</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnPlayerFire"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>例如：在 <code class="language-plaintext highlighter-rouge">Player</code> 物件在訂閱玩家的輸入事件時，不小心在 <code class="language-plaintext highlighter-rouge">Start()</code> 跟給外部呼叫的 <code class="language-plaintext highlighter-rouge">Init()</code> 中各訂閱一次 <code class="language-plaintext highlighter-rouge">OnFire</code> 事件，讓玩家在按下發射按鍵時，執行兩次發射行為。而且更有可能在玩家復活時，呼叫 <code class="language-plaintext highlighter-rouge">Init()</code> 來重置 <code class="language-plaintext highlighter-rouge">Player</code> 物件的狀態，造成每次復活後，會執行更多次發射行為。</p>
+
+<h2 id="c-event">C# <code class="language-plaintext highlighter-rouge">event</code></h2>
+
+<p>在 Unity 中，另一個訂閱事件的方式是使用 C# 的 <code class="language-plaintext highlighter-rouge">event</code>。</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="n">LevelManager</span> <span class="n">Instance</span><span class="p">;</span>
+
+    <span class="k">public</span> <span class="k">event</span> <span class="n">Action</span> <span class="n">OnLevelStart</span><span class="p">;</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">Awake</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Instance</span> <span class="p">=</span> <span class="k">this</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>C# <code class="language-plaintext highlighter-rouge">event</code> 的優點是外部物件只能訂閱事件，而無法觸發事件，只能由宣告事件的物件呼叫 <code class="language-plaintext highlighter-rouge">Invoke()</code>：</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">LevelStart</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">OnLevelStart</span><span class="p">?.</span><span class="nf">Invoke</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">Enemy</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span> <span class="p">+=</span> <span class="n">OnLevelStart</span><span class="p">;</span>
+        <span class="c1">// 無法呼叫 Invoke</span>
+        <span class="c1">// LevelManager.Instance.OnLevelStart.Invoke();</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnLevelStart</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnLevelStart"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>而且比起 <code class="language-plaintext highlighter-rouge">UnityEvent</code>，C# <code class="language-plaintext highlighter-rouge">event</code> 呼叫處理函式的時間相對少很多。</p>
+
+<h3 id="c-event-的問題">C# <code class="language-plaintext highlighter-rouge">event</code> 的問題</h3>
+
+<h4 id="重複訂閱事件-1">重複訂閱事件</h4>
+
+<p>不過 C# <code class="language-plaintext highlighter-rouge">event</code> 還是會發生重複訂閱事件的問題，如果同一個處理函式被重複訂閱，一樣會被呼叫數次。另一個問題是，在取消訂閱時，重複訂閱的函式只會被移除一個。但是這個情況在 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 中反而不會發生，因為呼叫 <code class="language-plaintext highlighter-rouge">RemoveListener()</code> 取消訂閱時，重複的訂閱函式都會被移除。</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">Enemy</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span> <span class="p">+=</span> <span class="n">OnLevelStart</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">Init</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span> <span class="p">+=</span> <span class="n">OnLevelStart</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnDisable</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 只會移除其中一個處理函式</span>
+        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span> <span class="p">-=</span> <span class="n">OnLevelStart</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnLevelStart</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnLevelStart"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>例如：<code class="language-plaintext highlighter-rouge">Enemy</code> 物件在 <code class="language-plaintext highlighter-rouge">Start()</code> 跟 <code class="language-plaintext highlighter-rouge">Init()</code> 各訂閱一次 <code class="language-plaintext highlighter-rouge">OnLevelStart</code> 事件，在 <code class="language-plaintext highlighter-rouge">OnDisable</code> 中取消訂閱時，就只會移除一個處理函式。當 <code class="language-plaintext highlighter-rouge">OnLevelStart</code> 事件觸發時，還是會看到有訊息輸出，讓原本被關閉的 <code class="language-plaintext highlighter-rouge">Enemy</code> 物件又開始執行。</p>
+
+<h4 id="無物件訂閱">無物件訂閱</h4>
+
+<p>在觸發 C# <code class="language-plaintext highlighter-rouge">event</code> 時，要注意如果該 event 沒有任何物件訂閱，或是因為取消訂閱到空時，此時事件物件會被設為 <code class="language-plaintext highlighter-rouge">null</code>，如果這時觸發事件會出現 null reference exception，所以最好以 <code class="language-plaintext highlighter-rouge">onEvent?.Invoke()</code> 來觸發事件。</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">event</span> <span class="n">Action</span> <span class="n">OnLevelStart</span><span class="p">;</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">LevelStart</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">OnLevelStart</span><span class="p">?.</span><span class="nf">Invoke</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="匿名函式">匿名函式</h4>
+
+<p>如果以匿名函式訂閱事件時，該函式就再也無法被取消訂閱了，這也會發生在 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 上。因為就算內容完全一樣，在不同地方宣告的匿名函式是不同的。所以應該要避免用匿名函式訂閱事件。</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">Enemy</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">Init</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span> <span class="p">+=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnLevelStart"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnDisable</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// 無法取消在 Init() 訂閱的事件</span>
+        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span> <span class="p">-=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnLevelStart"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>例如：敵人物件在 <code class="language-plaintext highlighter-rouge">Init()</code> 用匿名函式訂閱了 <code class="language-plaintext highlighter-rouge">OnLevelStart</code> 事件，但在 <code class="language-plaintext highlighter-rouge">OnDisable()</code> 取消訂閱時，無法移除前面用來訂閱的函式。</p>
+
+<h2 id="小結">小結</h2>
+
+<p>這邊小結這兩種事件訂閱方式的優點與要注意的問題：</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">UnityEvent</code>
+    <ul>
+      <li>優點
+        <ul>
+          <li>可以在 inspector 中設定處理函式</li>
+        </ul>
+      </li>
+      <li>問題
+        <ul>
+          <li>讓訂閱的物件提供過多的 <code class="language-plaintext highlighter-rouge">public</code> 函式</li>
+          <li>外部物件能觸發事件</li>
+          <li>重複註冊</li>
+          <li>可以用匿名函式註冊</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>C# <code class="language-plaintext highlighter-rouge">event</code>
+    <ul>
+      <li>優點
+        <ul>
+          <li>只有宣告事件的物件才能觸發事件</li>
+          <li>執行速度快</li>
+        </ul>
+      </li>
+      <li>問題
+        <ul>
+          <li>重複註冊</li>
+          <li>無物件訂閱時，會是 <code class="language-plaintext highlighter-rouge">null</code></li>
+          <li>可以用匿名函式註冊</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="Unity" /><category term="C#" /><summary type="html"><![CDATA[在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 UnityEvent 與 C# event 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 UnityEvent 與 C# event，並講解可能的問題，而下篇則會介紹利用 C# interface 做為事件介面的第三種方式。]]></summary></entry><entry><title type="html">[電影] 2023 年在家裡看過的那些電影們</title><link href="https://lankudot.airfishlab.com/blog/2024-02-watched-movies-at-home-in-2023/" rel="alternate" type="text/html" title="[電影] 2023 年在家裡看過的那些電影們" /><published>2024-02-10T00:00:00+08:00</published><updated>2024-02-10T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/watched-movies-at-home-in-2023</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-02-watched-movies-at-home-in-2023/"><![CDATA[<p>2023 年除了在電影院看了許多電影外，也透過 Netflix 等串流平台收看了經典以及想要補齊的電影。就用這篇來整理這段時間的心得。</p>
 
 <h3 id="今敏的動畫電影">今敏的動畫電影</h3>
 
@@ -414,10 +704,4 @@
 
 <blockquote>
   <p>理想情況下，應該讓玩家們能夠在最短的時間內清楚瞭解遊戲的玩法。 我們建議第一支宣傳片主要展示遊戲玩法，清楚地示範玩家會在遊戲中進行哪些活動及他們會和你打造的世界有什麼樣的互動。 在吸引到玩家的注意後，再把公司的標誌和敘事劇情放在宣傳片後段。</p>
-</blockquote>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[在推特上看到貼文分享一則在 Reddit 的討論串，討論串的樓主問其它人是不是也一樣，在逛 Steam 遊戲頁面時，會跳過宣傳影片直接去看遊戲擷圖或是評論。結果許多人回覆都有類似的習慣，因為覺得宣傳影片沒有傳達出遊戲玩法，所以直接去看遊戲擷圖的話，反而可以更快知道這個遊戲合不合自己的胃口。原推的作者就分享獨立遊戲要如何避免這種情況，讓玩家能在宣傳影片上停留久一點，增加購買或是加入願望清單的機會。]]></summary></entry><entry><title type="html">[閱讀] 今敏《Kon’s Tone 「千年女優」之道》</title><link href="https://lankudot.airfishlab.com/blog/2023-04-kons-tone/" rel="alternate" type="text/html" title="[閱讀] 今敏《Kon’s Tone 「千年女優」之道》" /><published>2023-04-18T00:00:00+08:00</published><updated>2023-04-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/kons-tone</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-04-kons-tone/"><![CDATA[<p>2022 年在高雄電影館看了《今敏：造夢魔術師》這部記錄片才知道今敏導演，之後就對他的作品很感興趣，還買了所有電影的 BD 來看。當時看完記錄片，朋友就借我這本書看，不過因為工作關係，只看了一半就先還回去了，但是意猶未盡，後來就自己再買了一本來看。</p>
-
-<p><img src="/assets/images/blog/2023-04-18-kons-tone/cover-image.png" alt="cover-image" /></p>
-
-<p>《Kon’s Tone 「千年女優」之道》收錄今敏其中兩部作品《藍色恐懼》跟《千年女優》是如何成案，以及製作過程的秘辛，還有收錄幾篇在個人部落格的文章，分享他是如何踏上動畫導演的路，還有人生觀等等。其中分享《藍色恐懼》的製作過程的「《藍色恐懼》戰記」就佔了全書一半以上的內容，從成案開始就遭遇不合理的要求，在製作過程中被製作助理雷到的事情更是層出不窮，真的是充滿「恐懼」的「戰記」，看了人都 blue 了起來。很佩服整個團隊可以在如此艱難的環境下完成《藍色恐懼》，也蠻佩服今敏的脾氣，還可以自嘲地寫出這篇文章。我再看一次電影的話應該會有不同的感覺吧。</p>
-
-<p>成書應該是在製作《東京教父》時。比較可惜的是這本書可能是從簡體中文直接轉換過來的，所以一些用語上還是有差別，在閱讀的時候要稍微思考一下。今敏每部作品都很吸引我，無論是劇情，還是畫面呈現上，他的作品更影響其它了電影，像是我最喜歡的《盜夢偵探》，也影響了電影《全面啟動》。如果你還沒看過他的作品的話，一定要找機會去看。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html"><![CDATA[2022 年在高雄電影館看了《今敏：造夢魔術師》這部記錄片才知道今敏導演，之後就對他的作品很感興趣，還買了所有電影的 BD 來看。當時看完記錄片，朋友就借我這本書看，不過因為工作關係，只看了一半就先還回去了，但是意猶未盡，後來就自己再買了一本來看。]]></summary></entry></feed>
+</blockquote>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[在推特上看到貼文分享一則在 Reddit 的討論串，討論串的樓主問其它人是不是也一樣，在逛 Steam 遊戲頁面時，會跳過宣傳影片直接去看遊戲擷圖或是評論。結果許多人回覆都有類似的習慣，因為覺得宣傳影片沒有傳達出遊戲玩法，所以直接去看遊戲擷圖的話，反而可以更快知道這個遊戲合不合自己的胃口。原推的作者就分享獨立遊戲要如何避免這種情況，讓玩家能在宣傳影片上停留久一點，增加購買或是加入願望清單的機會。]]></summary></entry></feed>
