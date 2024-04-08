@@ -331,7 +331,7 @@
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
-    <span class="p">[</span><span class="n">SerializedField</span><span class="p">]</span>
+    <span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span>
     <span class="k">private</span> <span class="n">UnityEvent</span> <span class="n">_onLevelStart</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
@@ -396,11 +396,11 @@
 
 <p>例如：為了能在程式中訂閱事件，<code class="language-plaintext highlighter-rouge">LevelManager</code> 將 <code class="language-plaintext highlighter-rouge">OnLevelStart</code> 事件設為 <code class="language-plaintext highlighter-rouge">public</code>，雖然可以讓 <code class="language-plaintext highlighter-rouge">Eneny</code> 物件在程式中訂閱事件，但可能讓其它物件不小心觸發到關卡開始的事件，造成意外的結果。</p>
 
-<p>要避免這種情況的話，就還是把 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 物件宣告為 <code class="language-plaintext highlighter-rouge">private</code> 的，並讓物件提供訂閱事件的函式。如果還是要保留在 inspector 設置處理函式的功能，則加上 <code class="language-plaintext highlighter-rouge">SerializedField</code> 屬性。</p>
+<p>要避免這種情況的話，就還是把 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 物件宣告為 <code class="language-plaintext highlighter-rouge">private</code> 的，並讓物件提供訂閱事件的函式。如果還是要保留在 inspector 設置處理函式的功能，則加上 <code class="language-plaintext highlighter-rouge">SerializeField</code> 屬性。</p>
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
-    <span class="p">[</span><span class="n">SerializedField</span><span class="p">]</span>
+    <span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span>
     <span class="k">private</span> <span class="n">UnityEvent</span> <span class="n">_onLevelStart</span><span class="p">;</span>
 
     <span class="k">public</span> <span class="k">void</span> <span class="nf">SubscribeOnLevelStart</span><span class="p">(</span><span class="n">UnityAction</span> <span class="n">callback</span><span class="p">)</span>

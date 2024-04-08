@@ -132,7 +132,7 @@ var store = [{
         "teaser": null
       },{
         "title": "[Unity] 事件訂閱與問題（上）- `UnityEvent` 與 C# `event`",
-        "excerpt":"在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 UnityEvent 與 C# event 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 UnityEvent 與 C# event，並講解可能的問題，而下篇則會介紹利用 C# interface 做為事件介面的第三種方式。 UnityEvent UnityEvent 在 Unity 中是最常見的訂閱事件方法，好處是讓其它物件可以在 inspector 上直接設定事件的處理函式（event handler）。通常在設計套件時，會經常使用 UnityEvent 來讓使用者可以從介面設定處理函式，但這也是 UnityEvent 的唯一好處了。 public class LevelManager : MonoBehaviour { [SerializedField] private UnityEvent _onLevelStart; } UnityEvent 的問題 讓訂閱的物件提供過多的 public 函式 使用 UnityEvent 的一個大問題就是想要訂閱事件的物件得要提供 public 函式才能在 inspector 中設置處理函式，這會讓其它物件也有機會去呼叫這個處理函式。...","categories": ["blog"],
+        "excerpt":"在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 UnityEvent 與 C# event 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 UnityEvent 與 C# event，並講解可能的問題，而下篇則會介紹利用 C# interface 做為事件介面的第三種方式。 UnityEvent UnityEvent 在 Unity 中是最常見的訂閱事件方法，好處是讓其它物件可以在 inspector 上直接設定事件的處理函式（event handler）。通常在設計套件時，會經常使用 UnityEvent 來讓使用者可以從介面設定處理函式，但這也是 UnityEvent 的唯一好處了。 public class LevelManager : MonoBehaviour { [SerializeField] private UnityEvent _onLevelStart; } UnityEvent 的問題 讓訂閱的物件提供過多的 public 函式 使用 UnityEvent 的一個大問題就是想要訂閱事件的物件得要提供 public 函式才能在 inspector 中設置處理函式，這會讓其它物件也有機會去呼叫這個處理函式。...","categories": ["blog"],
         "tags": ["筆記","Unity","C#"],
         "url": "/blog/2024-04-unity-event-subscription-and-problem-1/",
         "teaser": null

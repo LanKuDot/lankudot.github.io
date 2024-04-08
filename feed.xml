@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2024-04-08T23:49:17+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[Unity] 事件訂閱與問題（上）- `UnityEvent` 與 C# `event`</title><link href="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-1/" rel="alternate" type="text/html" title="[Unity] 事件訂閱與問題（上）- `UnityEvent` 與 C# `event`" /><published>2024-04-08T00:00:00+08:00</published><updated>2024-04-08T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/unity-event-subscription-and-problem-1</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-1/"><![CDATA[<p>在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 與 C# <code class="language-plaintext highlighter-rouge">event</code> 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 與 C# <code class="language-plaintext highlighter-rouge">event</code>，並講解可能的問題，而下篇則會介紹利用 C# interface 做為事件介面的第三種方式。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2024-04-08T23:56:35+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[Unity] 事件訂閱與問題（上）- `UnityEvent` 與 C# `event`</title><link href="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-1/" rel="alternate" type="text/html" title="[Unity] 事件訂閱與問題（上）- `UnityEvent` 與 C# `event`" /><published>2024-04-08T00:00:00+08:00</published><updated>2024-04-08T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/unity-event-subscription-and-problem-1</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-1/"><![CDATA[<p>在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 與 C# <code class="language-plaintext highlighter-rouge">event</code> 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 與 C# <code class="language-plaintext highlighter-rouge">event</code>，並講解可能的問題，而下篇則會介紹利用 C# interface 做為事件介面的第三種方式。</p>
 
 <h2 id="unityevent"><code class="language-plaintext highlighter-rouge">UnityEvent</code></h2>
 
@@ -6,7 +6,7 @@
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
-    <span class="p">[</span><span class="n">SerializedField</span><span class="p">]</span>
+    <span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span>
     <span class="k">private</span> <span class="n">UnityEvent</span> <span class="n">_onLevelStart</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
@@ -71,11 +71,11 @@
 
 <p>例如：為了能在程式中訂閱事件，<code class="language-plaintext highlighter-rouge">LevelManager</code> 將 <code class="language-plaintext highlighter-rouge">OnLevelStart</code> 事件設為 <code class="language-plaintext highlighter-rouge">public</code>，雖然可以讓 <code class="language-plaintext highlighter-rouge">Eneny</code> 物件在程式中訂閱事件，但可能讓其它物件不小心觸發到關卡開始的事件，造成意外的結果。</p>
 
-<p>要避免這種情況的話，就還是把 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 物件宣告為 <code class="language-plaintext highlighter-rouge">private</code> 的，並讓物件提供訂閱事件的函式。如果還是要保留在 inspector 設置處理函式的功能，則加上 <code class="language-plaintext highlighter-rouge">SerializedField</code> 屬性。</p>
+<p>要避免這種情況的話，就還是把 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 物件宣告為 <code class="language-plaintext highlighter-rouge">private</code> 的，並讓物件提供訂閱事件的函式。如果還是要保留在 inspector 設置處理函式的功能，則加上 <code class="language-plaintext highlighter-rouge">SerializeField</code> 屬性。</p>
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
 <span class="p">{</span>
-    <span class="p">[</span><span class="n">SerializedField</span><span class="p">]</span>
+    <span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span>
     <span class="k">private</span> <span class="n">UnityEvent</span> <span class="n">_onLevelStart</span><span class="p">;</span>
 
     <span class="k">public</span> <span class="k">void</span> <span class="nf">SubscribeOnLevelStart</span><span class="p">(</span><span class="n">UnityAction</span> <span class="n">callback</span><span class="p">)</span>
