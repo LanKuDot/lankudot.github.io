@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2024-04-13T23:56:22+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[Unity] 事件訂閱與問題（下）- C# 介面</title><link href="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/" rel="alternate" type="text/html" title="[Unity] 事件訂閱與問題（下）- C# 介面" /><published>2024-04-13T00:00:00+08:00</published><updated>2024-04-13T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/unity-event-subscription-and-problem-2</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/"><![CDATA[<p>本篇繼續<a href="/blog/2024-04-unity-event-subscription-and-problem-1/">上一篇</a>的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2024-04-13T23:59:27+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[Unity] 事件訂閱與問題（下）- C# 介面</title><link href="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/" rel="alternate" type="text/html" title="[Unity] 事件訂閱與問題（下）- C# 介面" /><published>2024-04-13T00:00:00+08:00</published><updated>2024-04-13T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/unity-event-subscription-and-problem-2</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/"><![CDATA[<p>本篇繼續<a href="/blog/2024-04-unity-event-subscription-and-problem-1/">上一篇</a>的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。</p>
 
 <h2 id="c-介面">C# 介面</h2>
 
@@ -93,7 +93,7 @@
 
 <h3 id="c-介面的問題">C# 介面的問題</h3>
 
-<h3 id="讓訂閱物件提供過多的-public-函式">讓訂閱物件提供過多的 <code class="language-plaintext highlighter-rouge">public</code> 函式</h3>
+<h4 id="讓訂閱物件提供過多的-public-函式">讓訂閱物件提供過多的 <code class="language-plaintext highlighter-rouge">public</code> 函式</h4>
 
 <p>會發現使用介面可能會讓物件提供過多的 <code class="language-plaintext highlighter-rouge">public</code> 函式，但是可以透過明確介面實作，讓實作的介面函式，只能透過介面型別呼叫。要注意在明確介面實作中，實作的函式是沒有 <code class="language-plaintext highlighter-rouge">public</code> 的。</p>
 

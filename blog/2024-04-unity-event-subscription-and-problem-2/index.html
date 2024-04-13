@@ -318,7 +318,7 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 本頁</h4></header>
-              <ul class="toc__menu"><li><a href="#c-介面">C# 介面</a><ul><li><a href="#實作事件系統">實作事件系統</a></li><li><a href="#c-介面的問題">C# 介面的問題</a></li><li><a href="#讓訂閱物件提供過多的-public-函式">讓訂閱物件提供過多的 public 函式</a></li></ul></li><li><a href="#事件觸發測試">事件觸發測試</a></li><li><a href="#總結">總結</a></li></ul>
+              <ul class="toc__menu"><li><a href="#c-介面">C# 介面</a><ul><li><a href="#實作事件系統">實作事件系統</a></li><li><a href="#c-介面的問題">C# 介面的問題</a><ul><li><a href="#讓訂閱物件提供過多的-public-函式">讓訂閱物件提供過多的 public 函式</a></li></ul></li></ul></li><li><a href="#事件觸發測試">事件觸發測試</a></li><li><a href="#總結">總結</a></li></ul>
 
             </nav>
           </aside>
@@ -418,7 +418,7 @@
 
 <h3 id="c-介面的問題">C# 介面的問題</h3>
 
-<h3 id="讓訂閱物件提供過多的-public-函式">讓訂閱物件提供過多的 <code class="language-plaintext highlighter-rouge">public</code> 函式</h3>
+<h4 id="讓訂閱物件提供過多的-public-函式">讓訂閱物件提供過多的 <code class="language-plaintext highlighter-rouge">public</code> 函式</h4>
 
 <p>會發現使用介面可能會讓物件提供過多的 <code class="language-plaintext highlighter-rouge">public</code> 函式，但是可以透過明確介面實作，讓實作的介面函式，只能透過介面型別呼叫。要注意在明確介面實作中，實作的函式是沒有 <code class="language-plaintext highlighter-rouge">public</code> 的。</p>
 
