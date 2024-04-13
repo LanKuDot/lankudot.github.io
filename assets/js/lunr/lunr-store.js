@@ -132,8 +132,14 @@ var store = [{
         "teaser": null
       },{
         "title": "[Unity] 事件訂閱與問題（上）- `UnityEvent` 與 C# `event`",
-        "excerpt":"在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 UnityEvent 與 C# event 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 UnityEvent 與 C# event，並講解可能的問題，而下篇則會介紹利用 C# interface 做為事件介面的第三種方式。 UnityEvent UnityEvent 在 Unity 中是最常見的訂閱事件方法，好處是讓其它物件可以在 inspector 上直接設定事件的處理函式（event handler）。通常在設計套件時，會經常使用 UnityEvent 來讓使用者可以從介面設定處理函式，但這也是 UnityEvent 的唯一好處了。 public class LevelManager : MonoBehaviour { [SerializeField] private UnityEvent _onLevelStart; } UnityEvent 的問題 讓訂閱的物件提供過多的 public 函式 使用 UnityEvent 的一個大問題就是想要訂閱事件的物件得要提供 public 函式才能在 inspector 中設置處理函式，這會讓其它物件也有機會去呼叫這個處理函式。...","categories": ["blog"],
+        "excerpt":"在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 UnityEvent 與 C# event 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 UnityEvent 與 C# event，並講解可能的問題，而下篇則會介紹利用 C# 介面做為事件介面的第三種方式。 UnityEvent UnityEvent 在 Unity 中是最常見的訂閱事件方法，好處是讓其它物件可以在 inspector 上直接設定事件的處理函式（event handler）。通常在設計套件時，會經常使用 UnityEvent 來讓使用者可以從介面設定處理函式，但這也是 UnityEvent 的唯一好處了。 public class LevelManager : MonoBehaviour { [SerializeField] private UnityEvent _onLevelStart; } UnityEvent 的問題 讓訂閱的物件提供過多的 public 函式 使用 UnityEvent 的一個大問題就是想要訂閱事件的物件得要提供 public 函式才能在 inspector 中設置處理函式，這會讓其它物件也有機會去呼叫這個處理函式。 public...","categories": ["blog"],
         "tags": ["筆記","Unity","C#"],
         "url": "/blog/2024-04-unity-event-subscription-and-problem-1/",
+        "teaser": null
+      },{
+        "title": "[Unity] 事件訂閱與問題（下）- C# 介面",
+        "excerpt":"本篇繼續上一篇的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。 C# 介面 使用 C# 介面讓物件提供事件的處理函式，並把物件註冊到事件系統上以訂閱事件。在 Unity 的 EventSystems 中就是使用 C# 介面讓物件訂閱操作事件。 public class UIPuzzleImage : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler { public void OnBeginDrag(PointerEventData data) { Debug.Log(\"OnBeginDrag\"); } public void OnDrag(PointerEventData data) { Debug.Log(\"OnDrag\"); } public void OnEndDrag(PointerEventData data) { Debug.Log(\"OnEndDrag\"); } } 實作事件系統 使用 C# 介面做為事件訂閱的方式，還需要自行管理訂閱的物件，以觸發事件。這邊使用 HashSet 來儲存訂閱的物件，好處是就算物件重複訂閱，在...","categories": ["blog"],
+        "tags": ["筆記","Unity","C#"],
+        "url": "/blog/2024-04-unity-event-subscription-and-problem-2/",
         "teaser": null
       }]
