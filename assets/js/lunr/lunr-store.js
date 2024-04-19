@@ -1,5 +1,5 @@
 var store = [{
-        "title": "[筆記] 避免 Boxing/Unboxing 效能問題",
+        "title": "[C#] 避免 Boxing/Unboxing 效能問題",
         "excerpt":"之前在撰寫 Unity 套件的時候，因為不知道使用者會用什麼類別來傳資料，所以都轉成 object 型別來傳遞，後來發現這會有效能上的問題。本篇文章就來探討這個問題以及解法。 問題 根據官方文件，在 value type（如：int、float 等）與 object type 之間轉換會有效能問題： 如果將一個 value type 轉成 object type 的話，C# 會額外在 heap 建立一個 instance 來儲存 value type 的值。這稱為 boxing。 反之將 object type 轉回 value type 的話，C# 會先檢查該 object 存的值（boxed value）是否可以轉到指定的 value type，然後將值複製回 value type。這稱為 unboxing。 如下圖（參考官方文件繪製）： 再依這篇官方文件，boxing 比直接的 reference 賦值...","categories": ["blog"],
         "tags": ["筆記","Unity","C#"],
         "url": "/blog/2021-12-csharp-boxing-and-unboxing/",
@@ -17,7 +17,7 @@ var store = [{
         "url": "/blog/2022-01-advice-for-tool-developers/",
         "teaser": null
       },{
-        "title": "[筆記] C# 類別成員存取關係一覧",
+        "title": "[C#] 類別成員存取關係一覧",
         "excerpt":"本篇用圖表來介紹 C# 類別成員的存取關係，有 private、protected、public，跟跨組件的成員存取，有 internal、protected internal、private protected。以及比較一般繼承與多型繼承中，會取得什麼版本的方法。 類別成員的存取 存取來源 private protected public 自己類別中 :heavy_check_mark: :heavy_check_mark: :heavy_check_mark: 衍生類別中 :x: :heavy_check_mark: :heavy_check_mark: 外部 :x: :x: :heavy_check_mark: 自己類別中 在自己類別中存取的情況是： 在類別定義中，存取類別的成員，如 Test1。 在類別定義中，透過該類別的物件存取成員，如 Test2。 所有 private、protected、public 的成員都可以存取。 public class Bar { private int x; private void Func() { Console.WriteLine(\"Func called\"); } public void Test1()...","categories": ["blog"],
         "tags": ["筆記","C#"],
         "url": "/blog/2022-02-csharp-inheritance-member-accessing/",
@@ -29,25 +29,25 @@ var store = [{
         "url": "/blog/2022-02-foundation-apple-tv-series-reviews/",
         "teaser": null
       },{
-        "title": "[筆記] 設定 Android 不要備份 PlayerPrefs",
+        "title": "[Unity] 設定 Android 不要備份 PlayerPrefs",
         "excerpt":"用 Unity 開發 Android 上的遊戲時，如果有用到 PlayerPrefs 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。 關閉 Android 自動備份資料 如果要關閉 Android 自動備份應用程式的資料，可以在 Unity 的專案中設定。 開啟 Project Settings → Player → Publishing Settings → 勾選 Custom Main Manifest 編輯新增的檔案 Assets/Plugins/Android/AndroidManifest.xml 在 application 標籤中加入 android.allowBackup 屬性，並設為 false 這樣就完成設定了 補充 在 Android Developers 的文件中有註明，如果應用程式跑在 Android 12 以上的版本，則這個選項不會影響手機之間的資料轉存，也就是說 PlayerPrefs...","categories": ["blog"],
         "tags": ["筆記","Unity"],
         "url": "/blog/2022-04-prevent-android-from-backing-up-playerprefs-unity/",
         "teaser": null
       },{
-        "title": "[筆記] C# 用 interface 模擬多類別繼承",
+        "title": "[C#] 用 interface 模擬多類別繼承",
         "excerpt":"最近負責的 Unity 專案中，有很多 UI 有返回的按鈕，而這些按鈕也要可以透過程式觸發。如果為每個 UI 撰寫觸發的函式，一但觸發的邏輯改變，修改會是個大工程。如果為了這個小功能撰寫基礎類別，又顯得大才小用，而且 C# 的類別只能同時繼承一個類別，擴充性也不高。但 C# 類別可以繼承多個 interface，所以就思考能不能讓類別繼承 interface 的同時，也能提供功能，就好像是繼承了一個類別。 實作 作法是利用 interface 指定對象成員，再配合一個 static 類別來擴充 interface 的函式實作，來讓 interface 看起來也能提供功能。 public interface IPressBack { public UnityEvent onBack { get; } } public static class PressBackCaller { public static void PressBack(this IPressBack i) { i.onBack.Invoke(); } }...","categories": ["blog"],
         "tags": ["C#","Unity","筆記"],
         "url": "/blog/2022-05-csharp-simulating-multi-class-inheritance/",
         "teaser": null
       },{
-        "title": "[筆記] 利用 Attribute 為繼承類別給與不同的 Static 成員值",
+        "title": "[C#] 利用 Attribute 為繼承類別給與不同的 Static 成員值",
         "excerpt":"在專案開發上遇到這樣的問題：每個繼承類別要提供類似的 static 函式，功能差不多，但只有要取用的值不一樣。就在想能不能把 static 函式拉到基礎類別上，但又可以依照繼承類別給與不同的 static 成員值。 如果把 static 函式放在繼承類別上，就得每個繼承類別寫類似的函式。如果把 static 函式放在基礎類別，又不能在基礎類別上取得繼承類別的 static 成員值，因為 static 函式不能宣告為 abstract 或是 virtual，所以基礎類別無法知道繼承類別有那個 static 成員。最後想到的方法是透過 attribute 配合 reflection 來取得繼承類別上的不同 static 成員值。 實作 在專案中，每個 Unity 場景都有一個啟動的程式碼，程式碼會提供對應的場景名稱。在場景載入後，就要執行這個程式碼。所以載入場景跟執行啟動程式碼的功能放在基礎類別上，而對應的場景名稱就在繼承類別上指定。 首先建立一個 attribute 類別用來儲存場景名稱的資訊，並限制 TargetSceneAttribute 只能用在類別上： [AttributeUsage(AttributeTargets.Class)] public class TargetSceneAttribute : Attribute { public readonly string SceneName; public TargetSceneAttribute(string sceneName)...","categories": ["blog"],
         "tags": ["C#","Unity","筆記"],
         "url": "/blog/2022-08-csharp-use-attribute-to-provide-varient-static-member/",
         "teaser": null
       },{
-        "title": "[筆記] Unity 2021 LTS - C# 9.0 的新語法",
+        "title": "[Unity] Unity 2021 LTS - C# 9.0 的新語法",
         "excerpt":"Unity 2021 LTS 也出來好一陣子了，在 2021.2 版後就開始導入 C# 9.0。使用了半年後，發覺 C# 9.0 當中新增的語法可以讓程式碼更加簡潔易讀，整理成本篇來介紹個人常用的語法。 C# 9.0 的支援 Unity 2021 LTS 並非完全支援 C# 9.0 的語法[1]，只有其中一部份可以使用，而如果要使用下面介紹的 init-only setter 跟 record 類型的話，則要再自行新增一個程式碼，檔名我會命名為 IsExternalInit.cs： namespace System.Runtime.CompilerServices { public class IsExternalInit { } } 否則會出現編譯錯誤： error CS0518: Predefined type 'System.Runtime.CompilerServices.IsExternalInit' is not defined or imported 這是因為 Unity 是使用...","categories": ["blog"],
         "tags": ["C#","Unity","筆記"],
         "url": "/blog/2022-10-csharp-9-in-unity-2021/",
