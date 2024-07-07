@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2024-04-19T20:49:08+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[Unity] 事件訂閱與問題（下）- C# 介面</title><link href="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/" rel="alternate" type="text/html" title="[Unity] 事件訂閱與問題（下）- C# 介面" /><published>2024-04-13T00:00:00+08:00</published><updated>2024-04-13T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/unity-event-subscription-and-problem-2</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/"><![CDATA[<p>本篇繼續<a href="/blog/2024-04-unity-event-subscription-and-problem-1/">上一篇</a>的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2024-07-07T21:56:42+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[閱讀] 布莉琪．柯林斯《裝幀師》</title><link href="https://lankudot.airfishlab.com/blog/2024-07-the-binding/" rel="alternate" type="text/html" title="[閱讀] 布莉琪．柯林斯《裝幀師》" /><published>2024-07-07T00:00:00+08:00</published><updated>2024-07-07T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-binding</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-07-the-binding/"><![CDATA[<p>當回憶可以被「裝幀」到書中，自此忘卻這段痛苦的經歷，從而開始新的人生，對一個人來說或許是救贖。但如果被有心人用來裝幀受害者的回憶，抑或是這些不想記起的回憶成為收藏家的玩物時，這童話故事般的能力對被裝幀的人來說是慈悲與救贖，還是自私與痛苦。</p>
+
+<p>主角艾墨特天生擁有裝幀師的能力，但是生長的地方卻把書視為詛咒之物，碰到書只有挨打的份。然而艾墨特生了一場重病，才發現患有「裝幀師熱」，家人在萬般不願意之下，只能將他送到裝幀所當學老裝幀師ー瑟芮狄絲ー的學徒。雖然艾墨特在成為學徒後，症狀逐漸改善，瑟芮狄絲卻遲遲不教導他關於「裝幀」的技術。隨著日子推移，艾墨特發病時會夢到的景象也越來越清晰，然而卻發現這個夢似乎是解答自己遭遇的關鍵，這背後隱藏著更大的事件。</p>
+
+<p>一個故事讓人想要繼續閱讀，就是因為有許多問號等著解答。在知道解答時，會有種「原來是這樣啊」的感覺，但《裝幀師》在解答問題的時候，則是讓人有「什麼！居然是這樣」的感覺。意識到原來前面只知道真相的一半，對劇情的認知是錯的，每個人物看似平常的行為，其實背後都是有原因的。當初進入解答的篇章時，還一直來回對照前面的劇情，看得速度也越來越快，就是希望快點知道整個事件的全貌。</p>
+
+<p>《裝幀師》故事分成三個篇章，舖陳與事件篇、解答篇、解決篇，個人覺得解答篇是全書的高潮，但進入解答篇之前放的劇情高點更是畫龍點睛，從這裡才意識到「有什麼認真的要來了」。而解決篇也很有趣，是從另一個人的觀點繼續把故事延續下去，同時也在收束前面的伏筆。在看之前，原本以為《裝幀師》是奇幻故事，看了才發現是一個充滿人心黑暗的故事。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html"><![CDATA[當回憶可以被「裝幀」到書中，自此忘卻這段痛苦的經歷，從而開始新的人生，對一個人來說或許是救贖。但如果被有心人用來裝幀受害者的回憶，抑或是這些不想記起的回憶成為收藏家的玩物時，這童話故事般的能力對被裝幀的人來說是慈悲與救贖，還是自私與痛苦。]]></summary></entry><entry><title type="html">[Unity] 事件訂閱與問題（下）- C# 介面</title><link href="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/" rel="alternate" type="text/html" title="[Unity] 事件訂閱與問題（下）- C# 介面" /><published>2024-04-13T00:00:00+08:00</published><updated>2024-04-13T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/unity-event-subscription-and-problem-2</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/"><![CDATA[<p>本篇繼續<a href="/blog/2024-04-unity-event-subscription-and-problem-1/">上一篇</a>的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。</p>
 
 <h2 id="c-介面">C# 介面</h2>
 
@@ -846,65 +852,4 @@
 
 <h2 id="總結">總結</h2>
 
-<p>當發現有些資料在不同的地方重複出現時，就應該考慮把這些資料整理出來。尤其越是基本的資料，越晚改動的成本就越高。因為越晚修改，用到的地方只會越來越多，而且對應元件的功能也是基於拿到的資料製作的，所以要改動時，牽涉的程式範圍就會很廣。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="C#" /><summary type="html"><![CDATA[當不同元件有相似的資料時，應該把相同的部份整理出來成為一個獨立的資料定義，並在用到的地方使用這個資料定義。如果元件之間各自定義的話，當要新增或修改資料時，所有用到的地方都得要一併更新，既秏時又費力，且容易出錯，會是一場災難。]]></summary></entry><entry><title type="html">[遊戲] 女神異聞錄5 亂戰：魅影攻手 P5S</title><link href="https://lankudot.airfishlab.com/blog/2023-06-persona-5-scramble/" rel="alternate" type="text/html" title="[遊戲] 女神異聞錄5 亂戰：魅影攻手 P5S" /><published>2023-06-23T00:00:00+08:00</published><updated>2023-06-23T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/persona-5-scramble</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-06-persona-5-scramble/"><![CDATA[<p>沒有小兵海、沒有據點兵長、也不會說敵將討伐，P5S 還是承襲著 P5 的風格，不過戰鬥從回合制變成即時戰鬥，原本以為跟光榮合作會變成無雙割草遊戲，沒想到他們把 P5S 變成一款很棒的 ARPG。</p>
-
-<p>我很享受遊玩 P5S 的過程，無論是戰鬥、音樂、畫面風格，這款遊戲完完全全打中我的胃口。即使劇情通關了，還是想繼續把任務解完，體驗戰鬥的快感。</p>
-
-<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/game-status.jpg" alt="通關時數" />
-<em>通關時數 55 小時半</em></p>
-
-<p>感覺在遊戲業工作後，玩遊戲會注意的地方就會比較不同，所以就想要來分析這款遊戲為什麼會這麼吸引我，以及當中的設計。另外本篇的遊戲擷圖中，因為是在通關後拍的，所以有把一些可能會劇透的地方遮起來。</p>
-
-<h2 id="戰鬥機制">戰鬥機制</h2>
-
-<h3 id="遇敵">遇敵</h3>
-
-<p>遇敵的機制跟 P5 一樣，在監獄中會有敵人在走動，要接觸敵人才會觸發戰鬥。</p>
-
-<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/finding-enemy.jpg" alt="尋找敵人" /></p>
-
-<p>如果從背後偷襲敵人，戰鬥會以「優勢」開始，敵人一開始會無法行動。反之如果被敵人撞見，戰鬥會以「劣勢」開始，一開始角色會陷入暈眩的狀態。鼓勵玩家維持「怪盜」的作風，這跟無雙類型遊戲，角色就是要衝入敵陣大殺四方完全不同。不過提高監獄警戒度並非完全是壞事，在這樣的情況下，會比較容易遇到「寶魔」，擊倒它能獲得大量的金錢。</p>
-
-<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/hiding.jpg" alt="躲藏位置" />
-<em>監獄中會有可躲藏的位置，用來發動偷襲</em></p>
-
-<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/hiding-then-attack.jpg" alt="發動偷襲" />
-<em>成功發動偷襲對戰鬥有優勢</em></p>
-
-<h3 id="戰鬥">戰鬥</h3>
-
-<p>P5S 採用即時戰鬥，讓整個遊戲的節奏變快了，配合無雙遊戲經典的「輕連擊-重收尾」的操作模式，讓攻擊也有一種「節奏」。有攻擊就有閃躲，如果在被打到的瞬間按下閃躲，就會自動反擊，讓攻擊接續下去，這是個人覺得讓即時戰鬥刺激的要素之一。
-(閃躲成功的圖我截的到嗎)</p>
-
-<p>每個角色的攻擊節奏不一樣也是有趣的地方，在輕攻擊動作的過程中無法再輸攻擊指令，因此不能一昧狂按攻擊，而且 Sophia 更要求要正確的時間點按下攻擊 (Just Catch) 才能接續連段。能夠掌握攻擊節奏，避免被敵人偷刀，適當的放重攻擊收尾，在 Boss 戰中格外重要。</p>
-
-<p>都跟光榮合作了，不免俗的還是會有無雙的戰鬥模式，在 P5S 中是以特殊關卡的方式呈現。在需要 Navi 駭入機關的場合中，會有一波波敵人向 Navi 攻擊，玩家就要在這段駭入時間中擊敗敵人海，保護 Navi 以免她被擊倒。
-(放 Navi 的關卡樣式)</p>
-
-<h3 id="總攻擊與-show-time">總攻擊與 Show Time</h3>
-
-<p>敵人身上擁有倒地值，透過屬性相剋的攻擊或是附加攻擊都會削減倒地值。如果倒地值歸零，玩家就可以發動總攻擊，造成大量傷害。在 Boss 戰中也是很重要的攻擊手段。總攻擊的過程呈現一陣暴打，再配每個角色不同的收尾動作，打擊爽感直線上升。</p>
-
-<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/total-attack.jpg" alt="總攻擊" />
-<em>對小兵發動總攻擊可以造成大量傷害</em></p>
-
-<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/total-attack-ends.jpg" alt="總攻擊結束" />
-<em>總攻擊結束後的特寫</em></p>
-
-<p>如果總攻擊是團隊的大招的話，那 Show Time 就是個人的大招了。遊戲鼓勵玩家在戰鬥多多切換編成的四位角色，角色換手會加速累積個人的 Show Time 值，在戰鬥中也會提示切換角色，讓他發動攻擊，延續攻勢。發動 Show Time 後就是角色跟面具的表演時間了，角色的大招表演充滿個人特色，看 Show Time 是一種享受。</p>
-
-<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/show-time.jpg" alt="Show Time" />
-<em>每個角色的 Show Time 充滿個人特色</em></p>
-
-<p><img src="/assets/images/blog/2023-06-23-persona-5-scramble/show-over.jpg" alt="Show Over" />
-<em>Show Time 結束後的特寫</em></p>
-
-<h2 id="音樂">音樂</h2>
-
-<p>音樂就不用多述了，放克跟爵士的風格讓遊戲潮到不行，每次開遊戲我一定不會跳過 OP。每個監獄的背景音樂契合監獄氛圍跟所屬王的個性。澀谷監獄用頑皮的風格，帶出愛麗絲愛搗蛋的個性，仙台監獄則是三拍子的莊嚴管弦樂，感覺這裡就是一個 RPG 的魔王城。</p>
-
-<p>當監獄進度到攻略王的時候，監獄的背景音樂會變成熱血的搖滾樂，讓氣氛更加狂熱。其中最喜歡的音樂是在攻略近衛明時的音樂，因為他是最後的主要敵人，所以有專屬的王房音樂，兩個階段有不同的音樂，都是放克搖滾風格，配上近衛明機人登場與英雄戰隊的裝扮，實在是潮到不行，他也是我最喜歡的王。熱血戰鬥配上放克音樂真是一大享受。</p>
-
-<h2 id="結語">結語</h2>
-
-<p>真的很喜歡這款遊戲，從頭到尾營造出既熱血又有怪盜個性的風格。每個王的設定也很鮮明，除了所屬監獄的設計，王的攻擊招式也都反應出這個王的個性。讓我滿享受遊戲的過程。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="遊戲" /><category term="心得" /><summary type="html"><![CDATA[沒有小兵海、沒有據點兵長、也不會說敵將討伐，P5S 還是承襲著 P5 的風格，不過戰鬥從回合制變成即時戰鬥，原本以為跟光榮合作會變成無雙割草遊戲，沒想到他們把 P5S 變成一款很棒的 ARPG。]]></summary></entry></feed>
+<p>當發現有些資料在不同的地方重複出現時，就應該考慮把這些資料整理出來。尤其越是基本的資料，越晚改動的成本就越高。因為越晚修改，用到的地方只會越來越多，而且對應元件的功能也是基於拿到的資料製作的，所以要改動時，牽涉的程式範圍就會很廣。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="C#" /><summary type="html"><![CDATA[當不同元件有相似的資料時，應該把相同的部份整理出來成為一個獨立的資料定義，並在用到的地方使用這個資料定義。如果元件之間各自定義的話，當要新增或修改資料時，所有用到的地方都得要一併更新，既秏時又費力，且容易出錯，會是一場災難。]]></summary></entry></feed>
