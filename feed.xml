@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2024-08-03T23:04:29+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[遊記] 來去逛逛 2024 BitSummit</title><link href="https://lankudot.airfishlab.com/blog/2024-08-visit-bitsummit/" rel="alternate" type="text/html" title="[遊記] 來去逛逛 2024 BitSummit" /><published>2024-08-03T00:00:00+08:00</published><updated>2024-08-03T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/visit-bitsummit</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-08-visit-bitsummit/"><![CDATA[<p>去年 9 月逛了東京電玩展之後，就決定今年要來日本最大的獨立遊戲展ーBitSummit。BitSummit 每年夏天固定在京都市勸業館舉辦，為期三天，吸引世界各地的開發者與發行商來參加。而今年舉辦在 7/19 ~ 7/21（第一天為商務日），副標題為「Drift」。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2024-08-08T22:19:31+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[遊記] 來去逛逛 2024 BitSummit</title><link href="https://lankudot.airfishlab.com/blog/2024-08-visit-bitsummit/" rel="alternate" type="text/html" title="[遊記] 來去逛逛 2024 BitSummit" /><published>2024-08-03T00:00:00+08:00</published><updated>2024-08-03T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/visit-bitsummit</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-08-visit-bitsummit/"><![CDATA[<p>去年 9 月逛了東京電玩展之後，就決定今年要來日本最大的獨立遊戲展ーBitSummit。BitSummit 每年夏天固定在京都市勸業館舉辦，為期三天，吸引世界各地的開發者與發行商來參加。而今年舉辦在 7/19 ~ 7/21（第一天為商務日），副標題為「Drift」。</p>
 
-<p><img src="/assets/images/blog/2024-08-03-visit-bitsummit/cover-image.jpg" alt="cover-image" /></p>
+<p><img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/cover-image.jpg" alt="cover-image" /></p>
 
 <p>勸業館地點就位在平安神宮附近，搭公車就可以抵達。一般入場票為 2000 日圓，門票在一般公開日的這兩天都可以入場，要事先在網路上購票，再到日本的 7-11 請店員把票券印出來，而現場也有販售當日門票。參觀時間從早上 10 點到下午 5 點，以體驗來說算是相當超值。這次會場在場館的一樓與三樓，一樓攤位有合作夥伴、學校、桌遊、Game Jam 發表等，而三樓攤位則有主舞台、開發者、發行商等。這次跟同行友人主要目標就是三樓的攤位。</p>
 
-<p><img src="/assets/images/blog/2024-08-03-visit-bitsummit/torii-gate.jpg" alt="torii-gate" />
+<p><img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/torii-gate.jpg" alt="torii-gate" />
 <em>搭公車的話，就會看到平安神宮的巨大鳥居</em></p>
 
 <p>來現場的好處一個是可以先玩到還沒發售的遊戲，另一個就是可以跟開發者交流了。交流語言的話，體感英文 7 成，日文 3 成，當然也有會中文的開發者。話題的部份，可以聊聊遊戲開發了多久、用什麼遊戲引擎開發、當初是怎麼開始的等，或是自己喜歡遊戲的哪個部份或機制，開發者都很樂意分享自己的經驗，或是接受玩家的意見。我在這過程中，才後悔自己的英文能力怎麼那麼差，不能順利表達自己有多喜歡他們的遊戲，這次回來要多多加強口說能力了:laughing:。</p>
 
-<p><img src="/assets/images/blog/2024-08-03-visit-bitsummit/motionrec-1.jpg" alt="motionrec-1" />
-<img src="/assets/images/blog/2024-08-03-visit-bitsummit/motionrec-2.jpg" alt="motionrec-2" />
+<p><img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/motionrec-1.jpg" alt="motionrec-1" />
+<img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/motionrec-2.jpg" alt="motionrec-2" />
 <em>這次在會場先玩到一直有在關注的《MOTIONREC》</em></p>
 
 <p>這兩天下來，也試玩了十幾款遊戲，因為個人喜好大多是解謎類的遊戲。像是以錄製角色移動路徑，再播放路徑讓角色移動到原本無法到達的地方的<a href="https://store.steampowered.com/app/2602230/MOTIONREC/" target="_blank">《MOTIONREC》</a>。自己是顆易碎的蛋，要怎麼安全地跳到高處，或是下降到低處的<a href="https://store.steampowered.com/app/2617090/Fowl_Damage/" target="_blank">《Fowl Damage》</a>。還有非常喜歡日本工學院專門學校蒲田校的遊戲設計科的兩款遊戲：一個是結合倉庫番與光與影，透過移動箱子與光源，利用箱子的陰影在上方形成平台，讓影之貓可以抵達目標門的<a href="https://www.youtube.com/watch?v=fafYsxdEn04" target="_blank">《迷暗》</a>。另一個是透過複製一部份區域，來取代另一部份區域，以開啟不能通過的地方的<a href="https://www.youtube.com/watch?v=nKVWYKYurAc" target="_blank">《うつルーム》</a>。同行友人與開發者聊過之後，才知道他們是直接以 C++ 寫成遊戲，物理碰撞也都是自己寫的，真心佩服。</p>
 
-<p><img src="/assets/images/blog/2024-08-03-visit-bitsummit/miann.jpg" alt="miann" />
-<img src="/assets/images/blog/2024-08-03-visit-bitsummit/utsu-room.jpg" alt="utsu-room" />
+<p><img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/miann.jpg" alt="miann" />
+<img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/utsu-room.jpg" alt="utsu-room" />
 <em>由學生製作的《迷暗》與《うつルーム》除了機制很吸引人之外，關卡設計也很用心</em></p>
 
 <p>會場空間不會太擁擠，在開發者區就算兩側有人排隊，中間還是有足夠空間讓一個人通過，整天逛下來很舒服。而且很多攤位有準備二台以上的試玩設備，所以如果當下想玩的遊戲需要等待的話，先去逛其它攤位再回來都還有機會玩到。另外在一樓入場後，會拿到一個主辦發的提袋，最大可以裝下 A4 L 夾，拿來裝各家文宣相當方便，不用擔心折到，也可以不用在試玩時，煩惱要如何暫放文宣品。比較可惜的是，現場並沒有宣傳袋子中有可以拿來投最喜歡遊戲的貼紙，位在三樓的投票板上的貼紙數很少，而且如果直接到三樓會場的話，也不會拿到袋子。開發《迷暗》的學生說如果有拿到人氣獎的話，就有機會出版了，感到有點可惜。</p>
 
-<p><img src="/assets/images/blog/2024-08-03-visit-bitsummit/nice-bag.jpg" alt="nice-bag" /></p>
+<p><img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/nice-bag.jpg" alt="nice-bag" /></p>
 
 <p>最後飲食的部份，在一樓會場內有食物攤，會場外也有餐車，附近只有一間小小的全家。午餐時間人很多，在外面排食物也很熱。如果本來就打算一整天就在會場，建議事先就買好午餐跟飲料。</p>
 
-<p><img src="/assets/images/blog/2024-08-03-visit-bitsummit/heian-shrine.jpg" alt="heian-shrine" />
+<p><img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/heian-shrine.jpg" alt="heian-shrine" />
 <em>BitSummit 逛完不妨到平安神宮參拜</em></p>
 
 <p>喜歡獨立遊戲的話，BitSummit 非常值得來逛一次，可以感受到來自世界各地的開發者的熱情，很有「祭典」的氛圍。會後也公布了 2025 年的 BitSummit 在 7/18 ~ 7/20 舉辦，副標題為「XIII」，也呼應下一次是第十三屆。而這時間也恰逢日本三大祭之一「祇園祭」的期間，有機會的話，不妨安排一趟京都之旅。</p>
@@ -33,7 +33,7 @@
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">HOT NEWS (literally)<br /><br />BitSummit XIII⛩️<br />July 18, 19, 20, 2025<br /><br />SAVE THE DATES! <br /><br />SEE YOU NEXT YEAR EVERYONE &lt;3 <a href="https://t.co/1JnvSuTwxI">pic.twitter.com/1JnvSuTwxI</a></p>&mdash; BitSummit (@BitSummit) <a href="https://twitter.com/BitSummit/status/1814944601741939104?ref_src=twsrc%5Etfw">July 21, 2024</a></blockquote>
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="遊記" /><category term="遊戲展" /><summary type="html"><![CDATA[去年 9 月逛了東京電玩展之後，就決定今年要來日本最大的獨立遊戲展ーBitSummit。BitSummit 每年夏天固定在京都市勸業館舉辦，為期三天，吸引世界各地的開發者與發行商來參加。而今年舉辦在 7/19 ~ 7/21（第一天為商務日），副標題為「Drift」。]]></summary></entry><entry><title type="html">[閱讀] 布莉琪．柯林斯《裝幀師》</title><link href="https://lankudot.airfishlab.com/blog/2024-07-the-binding/" rel="alternate" type="text/html" title="[閱讀] 布莉琪．柯林斯《裝幀師》" /><published>2024-07-07T00:00:00+08:00</published><updated>2024-07-07T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-binding</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-07-the-binding/"><![CDATA[<p>當回憶可以被「裝幀」到書中，自此忘卻這段痛苦的經歷，從而開始新的人生，對一個人來說或許是救贖。但如果被有心人用來裝幀受害者的回憶，抑或是這些不想記起的回憶成為收藏家的玩物時，這童話故事般的能力對被裝幀的人來說是慈悲與救贖，還是自私與痛苦。</p>
 
-<p><img src="/assets/images/blog/2024-07-07-the-binding/cover-image.jpg" alt="cover-image" /></p>
+<p><img src="/assets/images/blog/2024/2024-07-07-the-binding/cover-image.jpg" alt="cover-image" /></p>
 
 <p>主角艾墨特天生擁有裝幀師的能力，但是生長的地方卻把書視為詛咒之物，碰到書只有挨打的份。然而艾墨特生了一場重病，才發現患有「裝幀師熱」，家人在萬般不願意之下，只能將他送到裝幀所當學老裝幀師ー瑟芮狄絲ー的學徒。雖然艾墨特在成為學徒後，症狀逐漸改善，瑟芮狄絲卻遲遲不教導他關於「裝幀」的技術。隨著日子推移，艾墨特發病時會夢到的景象也越來越清晰，然而卻發現這個夢似乎是解答自己遭遇的關鍵，這背後隱藏著更大的事件。</p>
 
@@ -570,7 +570,7 @@
 
 <p>前年看過《今敏：造夢魔術師》後才認識這位動畫導演，知道他的作品影響其他電影導演，可以在他們的電影中看到今敏作品的影子。看完這部紀錄片後就對他的作品非常感興趣，就下訂四部動畫電影的 BD 了，就為了能一看再看。這四部作品風格與劇情走向完全不同，但每一部內容毫不馬虎且令人印象深刻，知道他已經年紀輕輕就過世時覺得非常可惜。</p>
 
-<p><img src="/assets/images/blog/2024-02-10-watched-movies-at-home-in-2023/movie-posters-1.png" alt="movie-posters-1" /></p>
+<p><img src="/assets/images/blog/2024/2024-02-10-watched-movies-at-home-in-2023/movie-posters-1.png" alt="movie-posters-1" /></p>
 
 <h4 id="藍色恐懼">藍色恐懼</h4>
 
@@ -590,7 +590,7 @@
 
 <hr />
 
-<p><img src="/assets/images/blog/2024-02-10-watched-movies-at-home-in-2023/movie-posters-2.png" alt="movie-posters-2" /></p>
+<p><img src="/assets/images/blog/2024/2024-02-10-watched-movies-at-home-in-2023/movie-posters-2.png" alt="movie-posters-2" /></p>
 
 <h3 id="亨利休格的神奇故事">亨利．休格的神奇故事</h3>
 
@@ -606,7 +606,7 @@
 
 <hr />
 
-<p><img src="/assets/images/blog/2024-02-10-watched-movies-at-home-in-2023/movie-posters-3.png" alt="movie-posters-3" /></p>
+<p><img src="/assets/images/blog/2024/2024-02-10-watched-movies-at-home-in-2023/movie-posters-3.png" alt="movie-posters-3" /></p>
 
 <h3 id="醉好的時光">醉好的時光</h3>
 
@@ -618,7 +618,7 @@
 
 <hr />
 
-<p><img src="/assets/images/blog/2024-02-10-watched-movies-at-home-in-2023/movie-posters-4.png" alt="movie-posters-4" /></p>
+<p><img src="/assets/images/blog/2024/2024-02-10-watched-movies-at-home-in-2023/movie-posters-4.png" alt="movie-posters-4" /></p>
 
 <h3 id="全面啟動">全面啟動</h3>
 
@@ -632,7 +632,7 @@
 
 <p>《記憶拼圖》的主角藍納因為被歹徒襲擊而失去了妻子，同時也患上了「順行性失憶症」，之後的記憶只能持續幾分鐘，因而無法有新的記憶。所以藍納為了找出犯案的歹徒，除了在身上刺青之外，也用照片記錄人事物，並做下筆記來讓未來的自己能有行動的依據。這部電影同時帶有順敘與倒敘的時間線，我看到一半才意識到，原來黑白畫面是順敘，是從較早的時間點開始；彩色畫面是倒敘，是從後來的時間點開始，一段一段的回到之前的時間點。讓我感到厲害的是倒敘的處理方式，雖然是從後來的時間點往回敘事，但是每段都能帶來完整的資訊，而不是只留下謎題。而看了下一段後，對於上一段的理解又不一樣了，會有個「什麼，居然是這樣啊！」的感覺。而電影最後這兩條時間線交集在一起，同時也是真相大白的時候，當下只有震驚與讚嘆。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="觀後感" /><summary type="html"><![CDATA[2023 年除了在電影院看了許多電影外，也透過 Netflix 等串流平台收看了經典以及想要補齊的電影。就用這篇來整理這段時間的心得。]]></summary></entry><entry><title type="html">[電影] 2023 年進電影院看過的那些電影們</title><link href="https://lankudot.airfishlab.com/blog/2024-01-watched-movies-in-theater-in-2023/" rel="alternate" type="text/html" title="[電影] 2023 年進電影院看過的那些電影們" /><published>2024-01-28T00:00:00+08:00</published><updated>2024-01-28T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/watched-movies-in-theater-in-2023</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-01-watched-movies-in-theater-in-2023/"><![CDATA[<p>回想去年看的電影比起以往還要來得多，沒想到也漸漸喜歡看電影的感覺。就想來記錄去年看過的電影，以後也可以回味喜歡的作品。</p>
 
-<p><img src="/assets/images/blog/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-1.png" alt="" /></p>
+<p><img src="/assets/images/blog/2024/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-1.png" alt="" /></p>
 
 <h3 id="捍衛任務-4">捍衛任務 4</h3>
 
@@ -648,7 +648,7 @@
 
 <hr />
 
-<p><img src="/assets/images/blog/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-2.png" alt="" /></p>
+<p><img src="/assets/images/blog/2024/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-2.png" alt="" /></p>
 
 <h3 id="blue-giant">Blue Giant</h3>
 
@@ -664,7 +664,7 @@
 
 <hr />
 
-<p><img src="/assets/images/blog/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-3.png" alt="" /></p>
+<p><img src="/assets/images/blog/2024/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-3.png" alt="" /></p>
 
 <h3 id="奧本海默">奧本海默</h3>
 
@@ -680,7 +680,7 @@
 
 <hr />
 
-<p><img src="/assets/images/blog/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-4.png" alt="" /></p>
+<p><img src="/assets/images/blog/2024/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-4.png" alt="" /></p>
 
 <h3 id="王立宇宙軍-歐尼亞米斯之翼">王立宇宙軍 ～歐尼亞米斯之翼～</h3>
 
@@ -694,36 +694,36 @@
 
 <p>以威士忌為主題的動畫電影，因為是冷門題材，又是動畫電影，在上映後就把握時間買票觀看了。女主角駒田琉生繼承家族的蒸餾所後，一肩扛起整個家族的未來，研發出「若葉」這款威士忌而聲名大噪，但最終是為了能讓「獨樂」這款屬於家人的威士忌能再次誕生。劇情路線是可預期的，但我對全靠熱情與精神喊話就能成功的故事，感到這實在是太理想美好了。電影場景的原型是若鶴三郎丸蒸餾所，用 Google 街景查就可以看到電影中出現的建築。三郎丸也有出現在電影中，生產劇情中登場的兩款威士忌「獨樂」與「若葉」的募資計劃，也都是由三郎丸生產。電影比較可惜的是沒有深入介紹威士忌的製程，只在開頭以蒙太奇的方式快速帶過，比較注重在調合的部份。但也讓我對威士忌的製程產生興趣，觀影後就到 YouTube 查了許多相關的介紹。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="觀後感" /><summary type="html"><![CDATA[回想去年看的電影比起以往還要來得多，沒想到也漸漸喜歡看電影的感覺。就想來記錄去年看過的電影，以後也可以回味喜歡的作品。]]></summary></entry><entry><title type="html">[閱讀] 石川祐基 - 解構鐵道文字設計</title><link href="https://lankudot.airfishlab.com/blog/2023-11-dive-into-font-design-in-train-station/" rel="alternate" type="text/html" title="[閱讀] 石川祐基 - 解構鐵道文字設計" /><published>2023-11-05T00:00:00+08:00</published><updated>2023-11-05T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/dive-into-font-design-in-train-station</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-11-dive-into-font-design-in-train-station/"><![CDATA[<p>不知道從何時開始，就一直對鐵道很有興趣，去日本都會拜訪當地的鐵道博物館，或是搭乘比較獨特的鐵路路線，偶爾看到列車經過平交道時，也會想拍下它行經的過程。但是對於車站內的站牌卻沒有特別留意，在快速取得上面的資訊後，就沒有再看過一眼了，直到我在書店遇到這本《解構鐵道文字設計》。</p>
 
-<p><img src="/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/cover-image.jpg" alt="cover-image" /></p>
+<p><img src="/assets/images/blog/2023/2023-11-05-dive-into-font-design-in-train-station/cover-image.jpg" alt="cover-image" /></p>
 
 <p>《解構鐵道文字設計》介紹日本各地鐵道站點的文字設計，從大家比較熟知的 JR、都營地下鐵，到江之島電鐵、越前鐵道等地方鐵路。範圍從站名牌、指示牌，到商標應有盡有。書中不只詳細介紹站名牌、指示牌所使用的字體，還有訪問到設計的公司，講解排版、裝飾等設計目地，如何達到易讀又能兼顧美感。另外收錄地下鐵站名牌的進化，可以一窺從充滿懷舊感轉換到現代化設計，最後還有風格獨特的站名牌特輯。</p>
 
-<p><img src="/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/content-1.jpg" alt="" />
-<img src="/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/content-2.jpg" alt="" />
+<p><img src="/assets/images/blog/2023/2023-11-05-dive-into-font-design-in-train-station/content-1.jpg" alt="" />
+<img src="/assets/images/blog/2023/2023-11-05-dive-into-font-design-in-train-station/content-2.jpg" alt="" />
 <em>書中詳細介紹站名牌的設計概念，看完後對站名牌肯定有不同的看法</em></p>
 
-<p><img src="/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/station-name-board-1.jpg" alt="鐮倉高校前站名牌" />
+<p><img src="/assets/images/blog/2023/2023-11-05-dive-into-font-design-in-train-station/station-name-board-1.jpg" alt="鐮倉高校前站名牌" />
 <em>今年去江之島玩時，看到跟點心麵合作的站名牌，覺得有趣就拍下來了</em></p>
 
 <p>自認算輕度鐵道迷的我，每次去日本玩最期待的就是搭乘鐵路運輸。今年九月去江之島真的是大滿足，從大船站搭乘湘南單軌電車到湘南江之島站，這條路線是懸垂式單軌列車，軌道隨丘陵地起伏，有如雲宵飛車。還搭乘江之島電鐵到鎌倉高校與鎌倉大佛，路線沿途可以一覽海景，另外在腰越站與江之島站之間還行駛在馬路上，有如路面電車。書中就有介紹到湘南單軌電車獨特的站名牌設計，這趟沒有注意到實在可惜。不過再訪日本時，我就會特別留意鐵道的文字設計了！</p>
 
-<p><img src="/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/shonan-monorail.jpg" alt="湘南單軌電車" />
+<p><img src="/assets/images/blog/2023/2023-11-05-dive-into-font-design-in-train-station/shonan-monorail.jpg" alt="湘南單軌電車" />
 <em>湘南單軌電車，軌道就在上方</em></p>
 
-<p><img src="/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/enoshima-dentetsu.jpg" alt="江之島電鐵" />
-<img src="/assets/images/blog/2023-11-05-dive-into-font-design-in-train-station/station-name-board-2.jpg" alt="鐮倉高校前站名牌" />
+<p><img src="/assets/images/blog/2023/2023-11-05-dive-into-font-design-in-train-station/enoshima-dentetsu.jpg" alt="江之島電鐵" />
+<img src="/assets/images/blog/2023/2023-11-05-dive-into-font-design-in-train-station/station-name-board-2.jpg" alt="鐮倉高校前站名牌" />
 <em>江之島電鐵一看就可以認出來，車身與車站牌基底都是墨綠色</em></p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html"><![CDATA[不知道從何時開始，就一直對鐵道很有興趣，去日本都會拜訪當地的鐵道博物館，或是搭乘比較獨特的鐵路路線，偶爾看到列車經過平交道時，也會想拍下它行經的過程。但是對於車站內的站牌卻沒有特別留意，在快速取得上面的資訊後，就沒有再看過一眼了，直到我在書店遇到這本《解構鐵道文字設計》。]]></summary></entry><entry><title type="html">[雜談] 程式專案的一人負責與多人協作</title><link href="https://lankudot.airfishlab.com/blog/2023-10-collaboration-of-programming/" rel="alternate" type="text/html" title="[雜談] 程式專案的一人負責與多人協作" /><published>2023-10-23T00:00:00+08:00</published><updated>2023-10-23T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/collaboration-of-programming</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-10-collaboration-of-programming/"><![CDATA[<p>之前的工作模式偏向個人負責一個專案或一個完整的功能，跟別人的互動主要是確認需求、處理反饋。現在的工作參與專案的規模則大上許多，一個元件或功能會由不同人接手，模式跟以往大不相同。這兩個月因為專案上線，所以從系統架構的工作轉去支援功能的維護。這段時間體驗到許多觀念衝擊，就在思考為什麼會如此適應不良。</p>
 
 <h2 id="差別">差別</h2>
 
 <p>我想這兩者最大的差別就是需不需要去改變自己的工作模式。跟不同領域的人合作時（如企劃與美術），主要專注在功能的規格上，至於要如何在程式上實現，則可以依自己習慣的方式去完成。但如果是跟同是程式的人合作的話，尤其參與時專案已經進行一陣子了，就得要依循既有的工作模式了。</p>
 
-<p><img src="/assets/images/blog/2023-10-23-collaboration-of-programming/self-vs-cooperation.png" alt="self-vs-cooperation" class="align-center" />
+<p><img src="/assets/images/blog/2023/2023-10-23-collaboration-of-programming/self-vs-cooperation.png" alt="self-vs-cooperation" class="align-center" />
 <em>自己做可以不受限制，但多人協作就得配合他人了</em></p>
 
 <p>如果有特別規定，則還可以依循規定去調整工作模式，像是縮排用 tab 還是 space、類別框架、分支命名等。但如果沒有的話，就得要照著前人的 coding style 去撰寫，配合這些「潛規則」。像是覺得用 switch-case 做條件判定比較好，但如果前人已經用一連串的 if-else 來判定，就只能再加新的 else 上去。或是因為習慣用垂直分割一次看兩份程式碼，因此設定在 80 字元後會換行，但原本程式碼在 120 字元才換行，甚至一行寫到底的話，較短的換行就會顯得突兀。</p>
 
-<p><img src="/assets/images/blog/2023-10-23-collaboration-of-programming/different-coding-style.png" alt="different-coding-style" class="align-center" />
+<p><img src="/assets/images/blog/2023/2023-10-23-collaboration-of-programming/different-coding-style.png" alt="different-coding-style" class="align-center" />
 <em>不同的 coding style 會讓程式碼不協調</em></p>
 
 <p>如果為了 coding style 去改別人的程式碼，則可能會讓責任到自己身上。因為功能出錯時，會先找最近一次的 commit 者是誰。而且專案已經運作一陣子的話，改動功能正常的地方，可能會有風險。</p>
@@ -734,19 +734,19 @@
 
 <p>雖然現在還處在適應轉換期，確實因為觀點不同帶來蠻大的低潮，而且要習慣不同的 coding style 還要一段時間。但也趁著這次機會，來嘗試推薦自己認為比較好的寫法，也希望可以進一步改善專案的品質。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="雜談" /><summary type="html"><![CDATA[之前的工作模式偏向個人負責一個專案或一個完整的功能，跟別人的互動主要是確認需求、處理反饋。現在的工作參與專案的規模則大上許多，一個元件或功能會由不同人接手，模式跟以往大不相同。這兩個月因為專案上線，所以從系統架構的工作轉去支援功能的維護。這段時間體驗到許多觀念衝擊，就在思考為什麼會如此適應不良。]]></summary></entry><entry><title type="html">[閱讀] 小島秀夫《創作的基因》</title><link href="https://lankudot.airfishlab.com/blog/2023-10-the-gifted-gene-and-my-lovable-memes/" rel="alternate" type="text/html" title="[閱讀] 小島秀夫《創作的基因》" /><published>2023-10-07T00:00:00+08:00</published><updated>2023-10-07T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-gifted-gene-and-my-lovable-memes</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-10-the-gifted-gene-and-my-lovable-memes/"><![CDATA[<p>《創作的基因》收錄小島秀夫對看過的小說與影視作品所寫下的心得文章。對小島來說，透過閱讀與觀影能帶來平常沒有的「體驗」，體驗到來自不同世界的精神，認識到更多的想法。這些作者透過創作出作品這個「MEME」，將自己的想法傳達給它人，從而讓受到影響的人創作出更多的「MEME」傳承下去，構成「創作的基因」。這本書就是收錄這些影響小島的「MEME」。</p>
 
-<p><img src="/assets/images/blog/2023-10-07-the-gifted-gene-and-my-lovable-memes/cover-image.jpg" alt="" /></p>
+<p><img src="/assets/images/blog/2023/2023-10-07-the-gifted-gene-and-my-lovable-memes/cover-image.jpg" alt="" /></p>
 
 <p>小島到現在無論有多忙都還是會跑書店，親手翻書，喜歡就買，憑自己的眼光找到「中獎」的書籍。透過這個過程塑造出個人的品味，進而化為有創意的作品。《創作的基因》收錄了應該有三四十個作品。沒想到小島秀夫能對這麼多小說、影視作品有共感，有些是受父親影響或要求而看的作品，有些是跟小時候的生活經驗有關，有些則是泡在書店找到的「中獎」書籍。科幻與偵探作品佔多數，我想這就是小島喜歡的類型，也影響遊戲風格的原因吧。</p>
 
 <p>閱讀的過程雖然漫長，但為了融入書中，在這過程中要發揮對書中人物、場景、情節的想像力，將抽象的文字化作腦內具體的畫面，就是「創作」的一種。我覺得不同的人閱讀同一本書，體驗會有些微的不同，這些不同可能來自於讀過的作品，看過的電影，或是生活經驗，這就是閱讀的魅力。而把閱讀後的心得寫出來也是一種「創作」，挖掘內心的想法，透過文字將自己的感受具體地表達出來。閱讀故事讓人經歷一到二次的創作，還有可能再創造出自己的故事，這就是「創作的基因」的傳遞吧。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html"><![CDATA[《創作的基因》收錄小島秀夫對看過的小說與影視作品所寫下的心得文章。對小島來說，透過閱讀與觀影能帶來平常沒有的「體驗」，體驗到來自不同世界的精神，認識到更多的想法。這些作者透過創作出作品這個「MEME」，將自己的想法傳達給它人，從而讓受到影響的人創作出更多的「MEME」傳承下去，構成「創作的基因」。這本書就是收錄這些影響小島的「MEME」。]]></summary></entry><entry><title type="html">[閱讀] Alix Christie《古騰堡的學徒》</title><link href="https://lankudot.airfishlab.com/blog/2023-08-gutenbergs-apprentice/" rel="alternate" type="text/html" title="[閱讀] Alix Christie《古騰堡的學徒》" /><published>2023-08-12T00:00:00+08:00</published><updated>2023-08-12T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/gutenbergs-apprentice</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-08-gutenbergs-apprentice/"><![CDATA[<p>買書總是比看書還快，買了還沒看的書只會越來越多。雖然是幾年前買的，但還記得當初是在誠品敦南店購入的，因為聽聞全世界第一間 24 小時營業的書店就要關了，於是趁著到台北參加活動的機會，去書店買了幾本書，這本就是其中之一。</p>
 
-<p><img src="/assets/images/blog/2023-08-12-gutenbergs-apprentice/cover-image.jpg" alt="" /></p>
+<p><img src="/assets/images/blog/2023/2023-08-12-gutenbergs-apprentice/cover-image.jpg" alt="" /></p>
 
 <p>古騰堡是歐洲地區第一位發明活字印刷術的人，而這本小說是以「古騰堡的學徒」ー彼得．薛佛為主角，第一位偉大的印刷師傅。在 15 世紀，書籍的製作主要靠抄寫員來撰寫文字，而出版的書籍又以宗教書籍為主，撰寫的文字就是在傳達神的話語，因此抄寫員在當時是很神聖的職業。而彼得原本也是抄寫員出生，但在成為一名出色的抄寫員之前，卻被養父約翰尼斯．法斯特叫回美因茲。理由是古騰堡開發出活字印刷的技術，而法斯特做為出資人，要求彼得在古騰堡門下學習這項新術，並監視古騰堡。因為手抄是一項神聖且藝術的事情，彼得起初視活字印刷術為「惡魔的行為」，如此直接複製神的話語，而沒有靈魂的文字。</p>
 
 <p>小說的故事就由彼得加入古騰堡的印刷工坊開始，到成功印製出舉世聞名的「古騰堡聖經」為止。描述彼得從抵抗這項技術，到利用身為抄寫員的美感，幫助設計文字，還有改進這項技術。為了保護這項技術，尤其可能被視為瀆神的行為，因此印刷工坊在聖經印製完成之前，只能低調進行。期間又遭遇許多困難，整個過程相當坎坷。</p>
 
-<p><img src="/assets/images/blog/2023-08-12-gutenbergs-apprentice/first-page.png" alt="" />
+<p><img src="/assets/images/blog/2023/2023-08-12-gutenbergs-apprentice/first-page.png" alt="" />
 <em>第一頁有著日星鑄字行的鉛字印刷</em></p>
 
 <p>看完小說覺得最有趣的是，原來在當時手寫是一項相當重要的工作，而且還有精神上的意涵。而活字印刷可以快速完成一本書、減少手抄的失誤、加速知識的傳遞，無疑會對時代帶來巨大的改變，卻是一項惡魔的技術。就好像 2023 年正在經歷的 AI 生成內容崛起，也是興奮與恐懼交雜。人類透過時間與心力製作出來的藝術品，被拿去做機器學習訓練後，軟體便能快速產出。目前我不太能接受 AI 生成內容，但不禁好奇十年、二十年後，再回來看這項技術會有什麼想法。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html"><![CDATA[買書總是比看書還快，買了還沒看的書只會越來越多。雖然是幾年前買的，但還記得當初是在誠品敦南店購入的，因為聽聞全世界第一間 24 小時營業的書店就要關了，於是趁著到台北參加活動的機會，去書店買了幾本書，這本就是其中之一。]]></summary></entry></feed>

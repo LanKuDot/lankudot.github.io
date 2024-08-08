@@ -321,7 +321,7 @@
 
 <p>我知道如果工具還在開發中的話，撰寫文件會比較麻煩，因為只要工具一更新，文件就過時了。但是別忘記，可以多利用註解幫忙生成文件，而且只要符合對應的註解格式，IDE 或編輯器也會為工具的 API 加上提示，讓團隊成員能了解函式或變數的用途。工具完成後也可以用 doxygen 等工具生成 API 文件。</p>
 
-<p><img src="/assets/images/blog/2022-01-16-advice-for-tool-developers/comment-documentation.PNG" alt="文件註解範例" />
+<p><img src="/assets/images/blog/2022/2022-01-16-advice-for-tool-developers/comment-documentation.PNG" alt="文件註解範例" />
 <em>例如 C# 可以<a href="https://docs.microsoft.com/zh-tw/dotnet/csharp/language-reference/language-specification/documentation-comments" title="C# 文件註解 - Microsoft Documentation">使用 xml 格式</a>的註解，配合 <code class="language-plaintext highlighter-rouge">///</code> 或是 <code class="language-plaintext highlighter-rouge">/**</code> 來撰寫文件註解，而 Visual Studio 就會為函式加上提示</em></p>
 
 <h2 id="提供範例">提供範例</h2>
@@ -334,12 +334,12 @@
 
 <p>使用者可以利用版本號確認自己是否使用最新的工具。我習慣 <a href="https://medium.com/fiverr-engineering/major-minor-patch-a5298e2e1798" title="Major.Minor.Patch - An illustrated guide to semantic versioning">「Major.Minor.Patch」</a> 的格式，只是修正錯誤就增加 Patch 的數字，增加一些功能就增加 Minor 的數字，如果這次的更新會造成使用舊版工具的程式出錯的話，就增加 Major 的數字。要注意的是，對於 Minor 跟 Patch 的版本變更，都應該要相容前面的版本，即不會因更新而報錯。</p>
 
-<p><img src="/assets/images/blog/2022-01-16-advice-for-tool-developers/version-explain.png" alt="版本號說明" />
+<p><img src="/assets/images/blog/2022/2022-01-16-advice-for-tool-developers/version-explain.png" alt="版本號說明" />
 <em>版本號的簡單說明</em></p>
 
 <p>而 changelog 應該忠實記錄每個版本做了哪些修改，讓團隊成員能夠知道如何修正程式以跟上最新版本。我覺得 <a href="https://keepachangelog.com/en/1.0.0/" title="Keep a Changelog">changelog</a> 至少需要包含增加（Added）、刪去（Removed）、改動（Changed）、修正（Fixed）這幾項記錄。</p>
 
-<p><img src="/assets/images/blog/2022-01-16-advice-for-tool-developers/changelog-example.PNG" alt="Changelog 範例" />
+<p><img src="/assets/images/blog/2022/2022-01-16-advice-for-tool-developers/changelog-example.PNG" alt="Changelog 範例" />
 <em>之前開發的工具所維護的 <a href="https://github.com/LanKuDot/MLGame/blob/master/CHANGELOG.md">changelog</a></em></p>
 
 <h2 id="開個會吧">開個會吧</h2>
@@ -467,7 +467,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/images/blog/2024-08-03-visit-bitsummit/cover-image.jpg" alt="">
+        <img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/cover-image.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -510,7 +510,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/images/blog/2024-07-07-the-binding/cover-image.jpg" alt="">
+        <img src="/assets/images/blog/2024/2024-07-07-the-binding/cover-image.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">

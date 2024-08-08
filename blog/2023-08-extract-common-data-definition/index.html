@@ -351,7 +351,7 @@
 
 <p>如果各自定義的話，一個問題是，每次要傳送資料時，所有的欄位資料都要同步一次：</p>
 
-<p><img src="/assets/images/blog/2023-08-03-extract-common-data-definition/separated-definition-sync-data.png" alt="" /></p>
+<p><img src="/assets/images/blog/2023/2023-08-03-extract-common-data-definition/separated-definition-sync-data.png" alt="" /></p>
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">GuildMember</span>
 <span class="p">{</span>
@@ -382,13 +382,13 @@
 
 <p>另一個問題是，如果要新增資料欄位的話，每個用到的地方都得要各別新增，而且有同步資料的地方，也要新增對應的功能：</p>
 
-<p><img src="/assets/images/blog/2023-08-03-extract-common-data-definition/separated-definition-add-field.png" alt="" /></p>
+<p><img src="/assets/images/blog/2023/2023-08-03-extract-common-data-definition/separated-definition-add-field.png" alt="" /></p>
 
 <h2 id="取出共用定義">取出共用定義</h2>
 
 <p>如果將這些重複的資料獨立出來的話，要新增資料只要找到那個定義就可以：</p>
 
-<p><img src="/assets/images/blog/2023-08-03-extract-common-data-definition/extract-common-definition.png" alt="" /></p>
+<p><img src="/assets/images/blog/2023/2023-08-03-extract-common-data-definition/extract-common-definition.png" alt="" /></p>
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">PlayerBasicData</span>
 <span class="p">{</span>
@@ -573,7 +573,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/images/blog/2024-08-03-visit-bitsummit/cover-image.jpg" alt="">
+        <img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/cover-image.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
@@ -616,7 +616,7 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
       <div class="archive__item-teaser">
-        <img src="/assets/images/blog/2024-07-07-the-binding/cover-image.jpg" alt="">
+        <img src="/assets/images/blog/2024/2024-07-07-the-binding/cover-image.jpg" alt="">
       </div>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
