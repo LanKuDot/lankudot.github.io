@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2024-12-02T18:15:27+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[雜談] 理想與現實：大公司的價值觀洗禮</title><link href="https://lankudot.airfishlab.com/blog/2024-12-work-experience-in-big-company/" rel="alternate" type="text/html" title="[雜談] 理想與現實：大公司的價值觀洗禮" /><published>2024-12-02T00:00:00+08:00</published><updated>2024-12-02T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/work-experience-in-big-company</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-12-work-experience-in-big-company/"><![CDATA[<p>之前工作參與的專案規模不大，或是能切分出互不影響的功能，讓每個人各自負責，所以程式功能只要顧好自己的部份就好。在進入大公司後，專案規模變大，開發勢必得要多人一起進行。然而一人開發與多人開發的情景完全不同，大公司專案專注的面向也不一樣，理所當然，就面臨了不少價值觀的衝擊。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2025-01-30T22:41:59+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[分享] 2025 亞太遊戲高峰會 -《聖騎士之戰 -奮戰-》的全球化挑戰</title><link href="https://lankudot.airfishlab.com/blog/2025-01-2025-apgs-ggst-share/" rel="alternate" type="text/html" title="[分享] 2025 亞太遊戲高峰會 -《聖騎士之戰 -奮戰-》的全球化挑戰" /><published>2025-01-30T00:00:00+08:00</published><updated>2025-01-30T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-apgs-ggst-share</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-01-2025-apgs-ggst-share/"><![CDATA[<p>在台北電玩展舉行期間，也會同時進行亞太遊戲高峰會。高峰會邀請遊戲業相關商業人士前來分享經驗，議題涵蓋開發、技術、行銷、社群推廣等。不過對我來說，與其說是去聽演講，不如說是粉絲見面會。而今年最有興趣的演講之一是 GGST 的製作人宮內健的分享，在這場演講中也獲益良多，所以用這篇文章來分享演講的內容。</p>
+
+<p><img src="/assets/images/blog/2025/2025-01-30-2025-apgs-ggst-share/ggst-cover-image.jpg" alt="ggst-cover-image" /></p>
+
+<p>製作人宮內健在這場演講中主要分享在開發《聖騎士之戰 -奮戰-》（GGST）中，為了能吸引新玩家，又要兼顧舊玩家，所做的改變以及面臨的問題。</p>
+
+<h2 id="格鬥遊戲的困境">格鬥遊戲的困境</h2>
+
+<p>以往格鬥遊戲給人難度很高的印象，緒如只要逮到就會被連段到底，無法反擊、招式又多又複雜、需要即時反應以應對場上情況。造成格鬥遊戲很難吸引新玩家，也有玩家年齡越來越高的趨勢。在 GGST 一次封測的問券調查中，有前作遊玩經驗的人高達約 95%，而且這當中有約 74% 是 25 歲以上的玩家，而剩下的 5% 沒玩過的人中，有約 60% 是 25 歲以下的玩家。為了能讓續作繼續下去，吸引新玩家變得很重要。</p>
+
+<h2 id="內外在進行改變">內外在進行改變</h2>
+
+<p>為了能夠吸引新玩家，在 GGST 的外在與內在都做了改變。外在的部份是讓遊戲畫面變得乾淨，該玩家容易搞清楚場上發生的狀況。內在則是不用連段或是必殺技就可以打出高傷或是華麗的招式，而在角色的攻略影片中也避免給連段的攻略，讓玩家覺得這種程度的控制我也可以。</p>
+
+<p><img src="/assets/images/blog/2025/2025-01-30-2025-apgs-ggst-share/ggxrd-gameplay.png" alt="ggxrd-gameplay" />
+<img src="/assets/images/blog/2025/2025-01-30-2025-apgs-ggst-share/ggst-gameplay.png" alt="ggst-gameplay" />
+<em>與前作相比，GGST 的介面變得簡潔。上圖擷圖<a href="https://youtu.be/Mis6bx43XII">來源</a>，下圖擷圖<a href="https://youtu.be/Yr-PY1K0j_8">來源</a></em></p>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/H0ha3-S926k" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p class="video-caption"><em>在官方的角色攻略影片中介紹單招及簡單的指令</em></p>
+
+<h2 id="注重線上對戰">注重線上對戰</h2>
+
+<p>在對戰環境上也要順應線上對戰變為主流的趨勢。日本的機廳文化較為盛行，習慣面對面的對戰，所以線下的本地對戰容易進行。但是在美國地域廣大，要進行線下對戰就得長途跋涉。在線上的部份，網路狀態好的地方也相對有優勢，但美國的網路在各地也有差別。然而玩家比較喜歡找到同樣程度的人對戰，如果對戰一面倒的話，贏家沒有成就感，輸家也會覺得遊戲太難，因而留不住玩家。因此在 GGST 中也導入 Rollback Netcode，它可以讓網路環境不好的玩家也能有順暢的遊戲體驗，在疫情期間舉辦的線上賽也獲得好評。</p>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/7yVrUcav6DI" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p class="video-caption"><em>Rollback Netcode 在收到下個指令之前，先假設玩家沒有改變輸入的指令，直到收到下個指令。如果跟預測一樣，就不改變角色的行為，如果不一樣，則柔順地將角色轉到對應的動作。避免以往沒收到指令角色就不動作所造成的卡頓感</em></p>
+
+<h2 id="現代化的角色形象">現代化的角色形象</h2>
+
+<p>再來就是角色外觀的喜好也在改變，而且歐美人覺得美少女互歐是一件很奇怪的事情。因此在 GGST 中讓角色的視覺形象現代化，只保留覺得「很酷」的元素，也在角色年齡與服裝上做改變。而在劇情中加入對應的故事，讓角色的改變合理化。</p>
+
+<p><img src="/assets/images/blog/2025/2025-01-30-2025-apgs-ggst-share/may-appearance-changing.png" alt="may-appearance-changing" />
+<img src="/assets/images/blog/2025/2025-01-30-2025-apgs-ggst-share/dizzy-appearance-changing.png" alt="dizzy_appearance-changing" />
+<em>可以看到 May 與 Dizzy 這兩個角色在前作 GGXrd 與續作 GGST 的形象改變，服裝也以日常服為為主，但還是保留主要元素</em></p>
+
+<h2 id="與老玩家溝通">與老玩家溝通</h2>
+
+<p>但這些改動可能會違背老玩家想要的內容，老玩家因自己喜歡的遊戲元素被去除了而反彈，造成遊戲評價下降。所以在遊戲開發階段就開始傳達想要改變的消息，透過官網（<a href="https://www.guiltygear.com/ggst/en/news/post-category/column/">開發者後花園</a>）、社群平台、媒體等管道來發佈創作意圖與未來方針。並利用問卷調查與 beta 測試，來與玩家共同討論意見，並且會公布調查結果與開發者意見。</p>
+
+<h2 id="消費者鴻溝">消費者鴻溝</h2>
+
+<p>他們在問卷調查中也發現了「消費者鴻溝」（<a href="https://www.business-to-you.com/crossing-the-chasm-technology-adoption-life-cycle/">The Chasm</a>）的現象。消費者對新產品的消費習慣可以分成五個族群，這邊用遊戲做為例子：</p>
+
+<ul>
+  <li>創新者（Innovators）：只要是新遊戲就一定會玩，而且會是遊戲的改進來源</li>
+  <li>早期採用者（Early Adopters）：與創新者類似，但他們會依賴自己的直覺來挑選遊戲，通常也不太在意價格，而且很樂意作為其它消費者的參考對象</li>
+  <li>早期大眾（Early Majority）：不會立刻玩新遊戲，而且會參考其它人的意見來決定要不要玩這款遊戲</li>
+  <li>晚期大眾（Late Majority）：等遊戲有穩定評價以及價格符合期望時，才會決定玩這款遊戲</li>
+  <li>落後者（Laggards）：完全不會玩新遊戲的人</li>
+</ul>
+
+<p><img src="/assets/images/blog/2025/2025-01-30-2025-apgs-ggst-share/the-chasm.png" alt="the-chasm" /></p>
+
+<p>這些族群的人數分佈呈現常態分佈，但是可以看到早期採用者與早期大眾之間有一個間隔，被稱為「消費者鴻溝」。這是因為早期採用者的意見會成為早期大眾的參考，如果早期採用者給出負評的話，早期大眾就不會購買這款遊戲，進而流失這部份的客群。</p>
+
+<h2 id="總結">總結</h2>
+
+<p>因此能在開發階段主動取得玩家的意見，對於開發方向有很大的幫助。在幾次的 beta 測試中，問卷的滿意程度也大幅提升。相比前作只有 26% 的 25 歲以下的玩家，在 GGST 中則達到 72%，讓 GGST 成為 ARC System Works 第一款擁有 300 萬玩家的格鬥遊戲，成功留下系列作玩家，也吸引了新玩家。該遊戲也在 2021 年的 TGA 中獲得最佳格鬥遊戲的獎項。</p>
+
+<p>製作人最後提到，雖然成功模式不能直接複製，但是如果可以帶來幫助的話是再好也不過。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[在台北電玩展舉行期間，也會同時進行亞太遊戲高峰會。高峰會邀請遊戲業相關商業人士前來分享經驗，議題涵蓋開發、技術、行銷、社群推廣等。不過對我來說，與其說是去聽演講，不如說是粉絲見面會。而今年最有興趣的演講之一是 GGST 的製作人宮內健的分享，在這場演講中也獲益良多，所以用這篇文章來分享演講的內容。]]></summary></entry><entry><title type="html">[雜談] 理想與現實：大公司的價值觀洗禮</title><link href="https://lankudot.airfishlab.com/blog/2024-12-work-experience-in-big-company/" rel="alternate" type="text/html" title="[雜談] 理想與現實：大公司的價值觀洗禮" /><published>2024-12-02T00:00:00+08:00</published><updated>2024-12-02T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/work-experience-in-big-company</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-12-work-experience-in-big-company/"><![CDATA[<p>之前工作參與的專案規模不大，或是能切分出互不影響的功能，讓每個人各自負責，所以程式功能只要顧好自己的部份就好。在進入大公司後，專案規模變大，開發勢必得要多人一起進行。然而一人開發與多人開發的情景完全不同，大公司專案專注的面向也不一樣，理所當然，就面臨了不少價值觀的衝擊。</p>
 
 <p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/ideal-vs-reality.png" alt="ideal-vs-reality" class="align-center" /></p>
 
@@ -89,7 +159,7 @@
 
 <p>一個故事讓人想要繼續閱讀，就是因為有許多問號等著解答。在知道解答時，會有種「原來是這樣啊」的感覺，但《裝幀師》在解答問題的時候，則是讓人有「什麼！居然是這樣」的感覺。意識到原來前面只知道真相的一半，對劇情的認知是錯的，每個人物看似平常的行為，其實背後都是有原因的。當初進入解答的篇章時，還一直來回對照前面的劇情，看得速度也越來越快，就是希望快點知道整個事件的全貌。</p>
 
-<p>《裝幀師》故事分成三個篇章，鋪陳與事件篇、解答篇、解決篇，個人覺得解答篇是全書的高潮，但進入解答篇之前放的劇情高點更是畫龍點睛，從這裡才意識到「有什麼認真的要來了」。而解決篇也很有趣，是從另一個人的觀點繼續把故事延續下去，同時也在收束前面的伏筆。在看之前，原本以為《裝幀師》是奇幻故事，看了才發現是一個充滿人心黑暗的故事。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html"><![CDATA[當回憶可以被「裝幀」到書中，自此忘卻這段痛苦的經歷，從而開始新的人生，對一個人來說或許是救贖。但如果被有心人用來裝幀受害者的回憶，抑或是這些不想記起的回憶成為收藏家的玩物時，這童話故事般的能力對被裝幀的人來說是慈悲與救贖，還是自私與痛苦。]]></summary></entry><entry><title type="html">[Unity] 事件訂閱與問題（下）- C# 介面</title><link href="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/" rel="alternate" type="text/html" title="[Unity] 事件訂閱與問題（下）- C# 介面" /><published>2024-04-13T00:00:00+08:00</published><updated>2024-04-13T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/unity-event-subscription-and-problem-2</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/"><![CDATA[<p>本篇繼續<a href="/blog/2024-04-unity-event-subscription-and-problem-1/">上一篇</a>的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。</p>
+<p>《裝幀師》故事分成三個篇章，鋪陳與事件篇、解答篇、解決篇，個人覺得解答篇是全書的高潮，但進入解答篇之前放的劇情高點更是畫龍點睛，從這裡才意識到「有什麼認真的要來了」。而解決篇也很有趣，是從另一個人的觀點繼續把故事延續下去，同時也在收束前面的伏筆。在看之前，原本以為《裝幀師》是奇幻故事，看了才發現是一個充滿人心黑暗的故事。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="心得" /><summary type="html"><![CDATA[當回憶可以被「裝幀」到書中，自此忘卻這段痛苦的經歷，從而開始新的人生，對一個人來說或許是救贖。但如果被有心人用來裝幀受害者的回憶，抑或是這些不想記起的回憶成為收藏家的玩物時，這童話故事般的能力對被裝幀的人來說是慈悲與救贖，還是自私與痛苦。]]></summary></entry><entry><title type="html">[Unity] 事件訂閱與問題（下）- C# 介面</title><link href="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/" rel="alternate" type="text/html" title="[Unity] 事件訂閱與問題（下）- C# 介面" /><published>2024-04-13T00:00:00+08:00</published><updated>2024-04-13T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/unity-event-subscription-and-problem-2</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/"><![CDATA[<p>本篇繼續<a href="/blog/2024-04-unity-event-subscription-and-problem-1/">上一篇</a>的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。</p>
 
 <h2 id="c-介面">C# 介面</h2>
 
@@ -680,7 +750,7 @@
 
 <h3 id="記憶拼圖">記憶拼圖</h3>
 
-<p>《記憶拼圖》的主角藍納因為被歹徒襲擊而失去了妻子，同時也患上了「順行性失憶症」，之後的記憶只能持續幾分鐘，因而無法有新的記憶。所以藍納為了找出犯案的歹徒，除了在身上刺青之外，也用照片記錄人事物，並做下筆記來讓未來的自己能有行動的依據。這部電影同時帶有順敘與倒敘的時間線，我看到一半才意識到，原來黑白畫面是順敘，是從較早的時間點開始；彩色畫面是倒敘，是從後來的時間點開始，一段一段的回到之前的時間點。讓我感到厲害的是倒敘的處理方式，雖然是從後來的時間點往回敘事，但是每段都能帶來完整的資訊，而不是只留下謎題。而看了下一段後，對於上一段的理解又不一樣了，會有個「什麼，居然是這樣啊！」的感覺。而電影最後這兩條時間線交集在一起，同時也是真相大白的時候，當下只有震驚與讚嘆。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="觀後感" /><summary type="html"><![CDATA[2023 年除了在電影院看了許多電影外，也透過 Netflix 等串流平台收看了經典以及想要補齊的電影。就用這篇來整理這段時間的心得。]]></summary></entry><entry><title type="html">[電影] 2023 年進電影院看過的那些電影們</title><link href="https://lankudot.airfishlab.com/blog/2024-01-watched-movies-in-theater-in-2023/" rel="alternate" type="text/html" title="[電影] 2023 年進電影院看過的那些電影們" /><published>2024-01-28T00:00:00+08:00</published><updated>2024-01-28T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/watched-movies-in-theater-in-2023</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-01-watched-movies-in-theater-in-2023/"><![CDATA[<p>回想去年看的電影比起以往還要來得多，沒想到也漸漸喜歡看電影的感覺。就想來記錄去年看過的電影，以後也可以回味喜歡的作品。</p>
+<p>《記憶拼圖》的主角藍納因為被歹徒襲擊而失去了妻子，同時也患上了「順行性失憶症」，之後的記憶只能持續幾分鐘，因而無法有新的記憶。所以藍納為了找出犯案的歹徒，除了在身上刺青之外，也用照片記錄人事物，並做下筆記來讓未來的自己能有行動的依據。這部電影同時帶有順敘與倒敘的時間線，我看到一半才意識到，原來黑白畫面是順敘，是從較早的時間點開始；彩色畫面是倒敘，是從後來的時間點開始，一段一段的回到之前的時間點。讓我感到厲害的是倒敘的處理方式，雖然是從後來的時間點往回敘事，但是每段都能帶來完整的資訊，而不是只留下謎題。而看了下一段後，對於上一段的理解又不一樣了，會有個「什麼，居然是這樣啊！」的感覺。而電影最後這兩條時間線交集在一起，同時也是真相大白的時候，當下只有震驚與讚嘆。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="心得" /><summary type="html"><![CDATA[2023 年除了在電影院看了許多電影外，也透過 Netflix 等串流平台收看了經典以及想要補齊的電影。就用這篇來整理這段時間的心得。]]></summary></entry><entry><title type="html">[電影] 2023 年進電影院看過的那些電影們</title><link href="https://lankudot.airfishlab.com/blog/2024-01-watched-movies-in-theater-in-2023/" rel="alternate" type="text/html" title="[電影] 2023 年進電影院看過的那些電影們" /><published>2024-01-28T00:00:00+08:00</published><updated>2024-01-28T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/watched-movies-in-theater-in-2023</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-01-watched-movies-in-theater-in-2023/"><![CDATA[<p>回想去年看的電影比起以往還要來得多，沒想到也漸漸喜歡看電影的感覺。就想來記錄去年看過的電影，以後也可以回味喜歡的作品。</p>
 
 <p><img src="/assets/images/blog/2024/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-1.png" alt="" /></p>
 
@@ -742,7 +812,7 @@
 
 <h3 id="歡迎來到駒田蒸餾所">歡迎來到駒田蒸餾所</h3>
 
-<p>以威士忌為主題的動畫電影，因為是冷門題材，又是動畫電影，在上映後就把握時間買票觀看了。女主角駒田琉生繼承家族的蒸餾所後，一肩扛起整個家族的未來，研發出「若葉」這款威士忌而聲名大噪，但最終是為了能讓「獨樂」這款屬於家人的威士忌能再次誕生。劇情路線是可預期的，但我對全靠熱情與精神喊話就能成功的故事，感到這實在是太理想美好了。電影場景的原型是若鶴三郎丸蒸餾所，用 Google 街景查就可以看到電影中出現的建築。三郎丸也有出現在電影中，生產劇情中登場的兩款威士忌「獨樂」與「若葉」的募資計劃，也都是由三郎丸生產。電影比較可惜的是沒有深入介紹威士忌的製程，只在開頭以蒙太奇的方式快速帶過，比較注重在調合的部份。但也讓我對威士忌的製程產生興趣，觀影後就到 YouTube 查了許多相關的介紹。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="觀後感" /><summary type="html"><![CDATA[回想去年看的電影比起以往還要來得多，沒想到也漸漸喜歡看電影的感覺。就想來記錄去年看過的電影，以後也可以回味喜歡的作品。]]></summary></entry><entry><title type="html">[閱讀] 石川祐基 - 解構鐵道文字設計</title><link href="https://lankudot.airfishlab.com/blog/2023-11-dive-into-font-design-in-train-station/" rel="alternate" type="text/html" title="[閱讀] 石川祐基 - 解構鐵道文字設計" /><published>2023-11-05T00:00:00+08:00</published><updated>2023-11-05T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/dive-into-font-design-in-train-station</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-11-dive-into-font-design-in-train-station/"><![CDATA[<p>不知道從何時開始，就一直對鐵道很有興趣，去日本都會拜訪當地的鐵道博物館，或是搭乘比較獨特的鐵路路線，偶爾看到列車經過平交道時，也會想拍下它行經的過程。但是對於車站內的站牌卻沒有特別留意，在快速取得上面的資訊後，就沒有再看過一眼了，直到我在書店遇到這本《解構鐵道文字設計》。</p>
+<p>以威士忌為主題的動畫電影，因為是冷門題材，又是動畫電影，在上映後就把握時間買票觀看了。女主角駒田琉生繼承家族的蒸餾所後，一肩扛起整個家族的未來，研發出「若葉」這款威士忌而聲名大噪，但最終是為了能讓「獨樂」這款屬於家人的威士忌能再次誕生。劇情路線是可預期的，但我對全靠熱情與精神喊話就能成功的故事，感到這實在是太理想美好了。電影場景的原型是若鶴三郎丸蒸餾所，用 Google 街景查就可以看到電影中出現的建築。三郎丸也有出現在電影中，生產劇情中登場的兩款威士忌「獨樂」與「若葉」的募資計劃，也都是由三郎丸生產。電影比較可惜的是沒有深入介紹威士忌的製程，只在開頭以蒙太奇的方式快速帶過，比較注重在調合的部份。但也讓我對威士忌的製程產生興趣，觀影後就到 YouTube 查了許多相關的介紹。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="心得" /><summary type="html"><![CDATA[回想去年看的電影比起以往還要來得多，沒想到也漸漸喜歡看電影的感覺。就想來記錄去年看過的電影，以後也可以回味喜歡的作品。]]></summary></entry><entry><title type="html">[閱讀] 石川祐基 - 解構鐵道文字設計</title><link href="https://lankudot.airfishlab.com/blog/2023-11-dive-into-font-design-in-train-station/" rel="alternate" type="text/html" title="[閱讀] 石川祐基 - 解構鐵道文字設計" /><published>2023-11-05T00:00:00+08:00</published><updated>2023-11-05T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/dive-into-font-design-in-train-station</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-11-dive-into-font-design-in-train-station/"><![CDATA[<p>不知道從何時開始，就一直對鐵道很有興趣，去日本都會拜訪當地的鐵道博物館，或是搭乘比較獨特的鐵路路線，偶爾看到列車經過平交道時，也會想拍下它行經的過程。但是對於車站內的站牌卻沒有特別留意，在快速取得上面的資訊後，就沒有再看過一眼了，直到我在書店遇到這本《解構鐵道文字設計》。</p>
 
 <p><img src="/assets/images/blog/2023/2023-11-05-dive-into-font-design-in-train-station/cover-image.jpg" alt="cover-image" /></p>
 
@@ -762,7 +832,7 @@
 
 <p><img src="/assets/images/blog/2023/2023-11-05-dive-into-font-design-in-train-station/enoshima-dentetsu.jpg" alt="江之島電鐵" />
 <img src="/assets/images/blog/2023/2023-11-05-dive-into-font-design-in-train-station/station-name-board-2.jpg" alt="鐮倉高校前站名牌" />
-<em>江之島電鐵一看就可以認出來，車身與車站牌基底都是墨綠色</em></p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html"><![CDATA[不知道從何時開始，就一直對鐵道很有興趣，去日本都會拜訪當地的鐵道博物館，或是搭乘比較獨特的鐵路路線，偶爾看到列車經過平交道時，也會想拍下它行經的過程。但是對於車站內的站牌卻沒有特別留意，在快速取得上面的資訊後，就沒有再看過一眼了，直到我在書店遇到這本《解構鐵道文字設計》。]]></summary></entry><entry><title type="html">[雜談] 程式專案的一人負責與多人協作</title><link href="https://lankudot.airfishlab.com/blog/2023-10-collaboration-of-programming/" rel="alternate" type="text/html" title="[雜談] 程式專案的一人負責與多人協作" /><published>2023-10-23T00:00:00+08:00</published><updated>2023-10-23T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/collaboration-of-programming</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-10-collaboration-of-programming/"><![CDATA[<p>之前的工作模式偏向個人負責一個專案或一個完整的功能，跟別人的互動主要是確認需求、處理反饋。現在的工作參與專案的規模則大上許多，一個元件或功能會由不同人接手，模式跟以往大不相同。這兩個月因為專案上線，所以從系統架構的工作轉去支援功能的維護。這段時間體驗到許多觀念衝擊，就在思考為什麼會如此適應不良。</p>
+<em>江之島電鐵一看就可以認出來，車身與車站牌基底都是墨綠色</em></p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="心得" /><summary type="html"><![CDATA[不知道從何時開始，就一直對鐵道很有興趣，去日本都會拜訪當地的鐵道博物館，或是搭乘比較獨特的鐵路路線，偶爾看到列車經過平交道時，也會想拍下它行經的過程。但是對於車站內的站牌卻沒有特別留意，在快速取得上面的資訊後，就沒有再看過一眼了，直到我在書店遇到這本《解構鐵道文字設計》。]]></summary></entry><entry><title type="html">[雜談] 程式專案的一人負責與多人協作</title><link href="https://lankudot.airfishlab.com/blog/2023-10-collaboration-of-programming/" rel="alternate" type="text/html" title="[雜談] 程式專案的一人負責與多人協作" /><published>2023-10-23T00:00:00+08:00</published><updated>2023-10-23T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/collaboration-of-programming</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-10-collaboration-of-programming/"><![CDATA[<p>之前的工作模式偏向個人負責一個專案或一個完整的功能，跟別人的互動主要是確認需求、處理反饋。現在的工作參與專案的規模則大上許多，一個元件或功能會由不同人接手，模式跟以往大不相同。這兩個月因為專案上線，所以從系統架構的工作轉去支援功能的維護。這段時間體驗到許多觀念衝擊，就在思考為什麼會如此適應不良。</p>
 
 <h2 id="差別">差別</h2>
 
@@ -782,10 +852,4 @@
 
 <p>但也不是就此束手無策，還是可以透過溝通來改善這樣的情況。像是推薦工具外掛來改善程式碼排版，例如可以在存檔時把行尾空白去除的 <a href="https://marketplace.visualstudio.com/items?itemName=MadsKristensen.TrailingWhitespace64">Trailing Whitespace Visualizer</a>，還有顯示換行字元位置的 <a href="https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelinesPreview">Editor Guidelines</a>，最後設定換行區間在 80 到 120 字元。再進一步的話，也可以導入 lint 工具跟 git hook，來統一 coding style。</p>
 
-<p>雖然現在還處在適應轉換期，確實因為觀點不同帶來蠻大的低潮，而且要習慣不同的 coding style 還要一段時間。但也趁著這次機會，來嘗試推薦自己認為比較好的寫法，也希望可以進一步改善專案的品質。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="雜談" /><summary type="html"><![CDATA[之前的工作模式偏向個人負責一個專案或一個完整的功能，跟別人的互動主要是確認需求、處理反饋。現在的工作參與專案的規模則大上許多，一個元件或功能會由不同人接手，模式跟以往大不相同。這兩個月因為專案上線，所以從系統架構的工作轉去支援功能的維護。這段時間體驗到許多觀念衝擊，就在思考為什麼會如此適應不良。]]></summary></entry><entry><title type="html">[閱讀] 小島秀夫《創作的基因》</title><link href="https://lankudot.airfishlab.com/blog/2023-10-the-gifted-gene-and-my-lovable-memes/" rel="alternate" type="text/html" title="[閱讀] 小島秀夫《創作的基因》" /><published>2023-10-07T00:00:00+08:00</published><updated>2023-10-07T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-gifted-gene-and-my-lovable-memes</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2023-10-the-gifted-gene-and-my-lovable-memes/"><![CDATA[<p>《創作的基因》收錄小島秀夫對看過的小說與影視作品所寫下的心得文章。對小島來說，透過閱讀與觀影能帶來平常沒有的「體驗」，體驗到來自不同世界的精神，認識到更多的想法。這些作者透過創作出作品這個「MEME」，將自己的想法傳達給它人，從而讓受到影響的人創作出更多的「MEME」傳承下去，構成「創作的基因」。這本書就是收錄這些影響小島的「MEME」。</p>
-
-<p><img src="/assets/images/blog/2023/2023-10-07-the-gifted-gene-and-my-lovable-memes/cover-image.jpg" alt="" /></p>
-
-<p>小島到現在無論有多忙都還是會跑書店，親手翻書，喜歡就買，憑自己的眼光找到「中獎」的書籍。透過這個過程塑造出個人的品味，進而化為有創意的作品。《創作的基因》收錄了應該有三四十個作品。沒想到小島秀夫能對這麼多小說、影視作品有共感，有些是受父親影響或要求而看的作品，有些是跟小時候的生活經驗有關，有些則是泡在書店找到的「中獎」書籍。科幻與偵探作品佔多數，我想這就是小島喜歡的類型，也影響遊戲風格的原因吧。</p>
-
-<p>閱讀的過程雖然漫長，但為了融入書中，在這過程中要發揮對書中人物、場景、情節的想像力，將抽象的文字化作腦內具體的畫面，就是「創作」的一種。我覺得不同的人閱讀同一本書，體驗會有些微的不同，這些不同可能來自於讀過的作品，看過的電影，或是生活經驗，這就是閱讀的魅力。而把閱讀後的心得寫出來也是一種「創作」，挖掘內心的想法，透過文字將自己的感受具體地表達出來。閱讀故事讓人經歷一到二次的創作，還有可能再創造出自己的故事，這就是「創作的基因」的傳遞吧。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="觀後感" /><summary type="html"><![CDATA[《創作的基因》收錄小島秀夫對看過的小說與影視作品所寫下的心得文章。對小島來說，透過閱讀與觀影能帶來平常沒有的「體驗」，體驗到來自不同世界的精神，認識到更多的想法。這些作者透過創作出作品這個「MEME」，將自己的想法傳達給它人，從而讓受到影響的人創作出更多的「MEME」傳承下去，構成「創作的基因」。這本書就是收錄這些影響小島的「MEME」。]]></summary></entry></feed>
+<p>雖然現在還處在適應轉換期，確實因為觀點不同帶來蠻大的低潮，而且要習慣不同的 coding style 還要一段時間。但也趁著這次機會，來嘗試推薦自己認為比較好的寫法，也希望可以進一步改善專案的品質。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="雜談" /><summary type="html"><![CDATA[之前的工作模式偏向個人負責一個專案或一個完整的功能，跟別人的互動主要是確認需求、處理反饋。現在的工作參與專案的規模則大上許多，一個元件或功能會由不同人接手，模式跟以往大不相同。這兩個月因為專案上線，所以從系統架構的工作轉去支援功能的維護。這段時間體驗到許多觀念衝擊，就在思考為什麼會如此適應不良。]]></summary></entry></feed>
