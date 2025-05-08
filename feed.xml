@@ -1,7 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2025-05-06T00:00:30+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[遊記] 2025 F1 日本大獎賽 - 行程準備</title><link href="https://lankudot.airfishlab.com/blog/2025-05-f1-japan-grand-prix-trip-planning/" rel="alternate" type="text/html" title="[遊記] 2025 F1 日本大獎賽 - 行程準備" /><published>2025-05-03T00:00:00+08:00</published><updated>2025-05-03T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/f1-japan-grand-prix-trip-planning</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-05-f1-japan-grand-prix-trip-planning/"><![CDATA[<p>自 2020 年入坑以來，看 F1 也進入第 6 年了。大概從前年萌生到現場看比賽的念頭，也看了一些現場觀賽的分享文後，毅然決然選定了今年的日本大獎賽。選擇日本場的原因除了日本旅遊環境友善之外，比賽舉辦的時間剛好落在清明連假，賽道當地的鈴鹿與鄰近的名古屋也是櫻花季的時期，因此這趟現地之旅就成行了。受惠於前人的分享文，所以這篇文章也來分享如何規劃行程。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2025-05-08T23:45:28+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[開發日誌 #1] 狀態機奮鬥記</title><link href="https://lankudot.airfishlab.com/blog/2025-05-fight-with-state-machine/" rel="alternate" type="text/html" title="[開發日誌 #1] 狀態機奮鬥記" /><published>2025-05-08T00:00:00+08:00</published><updated>2025-05-08T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/fight-with-state-machine</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-05-fight-with-state-machine/"><![CDATA[<p>時光荏苒，參與新專案到現在也超過半年了。因為是第一次做動作遊戲，面對沒開發過的機制，看了許多資料，也踩了不少的坑，就覺得應該來寫個開發日誌，多少記錄一下開發過程的酸甜苦辣鹹。開張第一篇先來分享開發狀態機時的碰壁。</p>
+
+<blockquote>
+  <p>成功的經驗很棒，但失敗的經驗也值得參考啊</p>
+</blockquote>
+
+<p>在新專案之前，沒想到都沒有開發過狀態機，就算有需要狀態的地方，也因為是線性流程，所以不需要用狀態機。但在動作遊戲中，狀態機是遊戲的核心，角色要狀態機，關卡流程也要狀態機，然後狀態機裡面也可能要有自己的狀態機。</p>
+
+<h2 id="狀態轉換機">狀態（轉換）機</h2>
+
+<p>雖然知道通常會在狀態機中執行角色的行為，但是一開始功能單純，就設計成讓狀態機專責處理狀態轉換的判斷，而狀態的執行還是在角色中：</p>
+
+<p><img src="/assets/images/blog/2025/2025-05-08-fight-with-state-machine/bad-state-machine.svg" alt="bad-state-machine" /></p>
+
+<p>角色會提供角色狀態（status）給狀態機判斷，狀態機中對每個狀態（state）提供不同的判斷函式，在角色中則是提供不同的執行函式。當狀態機判斷要切換狀態後，會通知角色也切換執行函式，角色執行函式就會更新角色狀態。</p>
+
+<p>但當狀態開始變多與功能變複雜時，這樣的設計出現了兩個問題。第一個問題是因為狀態（state）要用到的狀態（status）都是由角色提供與更新，所以就算那個變數只是為了給某個狀態使用（像是控制一個狀態執行多久的計時器），也要宣告在角色上，造成那個變數有機會被其它狀態更新到：</p>
+
+<p><img src="/assets/images/blog/2025/2025-05-08-fight-with-state-machine/bad-state-machine-variable-problem.svg" alt="bad-state-machine-variable-problem" /></p>
+
+<p>另外這些類變數一多起來，管理上也不方便。</p>
+
+<p>第二個問題是如果狀態中要額外做其它事會變得相當麻煩。由於判斷都是交由狀態機執行，所以狀態機判斷要做額外的事情時（像是在攻擊狀態中被打時，不轉換成硬直狀態，而是只改變一點位移），得要另外傳資料出來，因為原本狀態機回傳的資料是告知狀態轉換的資訊：</p>
+
+<p><img src="/assets/images/blog/2025/2025-05-08-fight-with-state-machine/bad-state-machine-sub-operation-problem.svg" alt="bad-state-machine-sub-operation-problem" /></p>
+
+<p>再者，用來傳遞額外資訊的物件，可能會因為每個狀態需要做不同的額外事情，而讓變數越來越多，出現與第一個問題同樣的情況。</p>
+
+<h2 id="繞了遠路">繞了遠路</h2>
+
+<p>為了解決這個有問題的狀態機，就開始想：</p>
+
+<ul>
+  <li>為什麼不讓狀態判斷函式變成類別，讓它自己管理需要的變數就好？</li>
+  <li>為什麼不讓狀態執行函式自己判斷需要額外做的事情就好？</li>
+</ul>
+
+<p>然後就想到：<strong>為什麼不直接把狀態自己的判斷跟執行函式都放在同一個類別就好？</strong></p>
+
+<p>唉呀，繞了一圈，結果還是做最典型的狀態機就好了啊：</p>
+
+<p><img src="/assets/images/blog/2025/2025-05-08-fight-with-state-machine/state-machine-redesign.svg" alt="state-machine-redesign" /></p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[時光荏苒，參與新專案到現在也超過半年了。因為是第一次做動作遊戲，面對沒開發過的機制，看了許多資料，也踩了不少的坑，就覺得應該來寫個開發日誌，多少記錄一下開發過程的酸甜苦辣鹹。開張第一篇先來分享開發狀態機時的碰壁。]]></summary></entry><entry><title type="html">[遊記] 2025 F1 日本大獎賽 - 行程準備</title><link href="https://lankudot.airfishlab.com/blog/2025-05-f1-japan-grand-prix-trip-planning/" rel="alternate" type="text/html" title="[遊記] 2025 F1 日本大獎賽 - 行程準備" /><published>2025-05-03T00:00:00+08:00</published><updated>2025-05-03T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/f1-japan-grand-prix-trip-planning</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-05-f1-japan-grand-prix-trip-planning/"><![CDATA[<p>自 2020 年入坑以來，看 F1 也進入第 6 年了。大概從前年萌生到現場看比賽的念頭，也看了一些現場觀賽的分享文後，毅然決然選定了今年的日本大獎賽。選擇日本場的原因除了日本旅遊環境友善之外，比賽舉辦的時間剛好落在清明連假，賽道當地的鈴鹿與鄰近的名古屋也是櫻花季的時期，因此這趟現地之旅就成行了。受惠於前人的分享文，所以這篇文章也來分享如何規劃行程。</p>
 
 <p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/suzuka-circuit-gp-entrance.png" alt="suzuka-circuit-gp-entrance" /></p>
-
 
 <h2 id="門票">門票</h2>
 
@@ -992,66 +1032,4 @@
 
 <h3 id="記憶拼圖">記憶拼圖</h3>
 
-<p>《記憶拼圖》的主角藍納因為被歹徒襲擊而失去了妻子，同時也患上了「順行性失憶症」，之後的記憶只能持續幾分鐘，因而無法有新的記憶。所以藍納為了找出犯案的歹徒，除了在身上刺青之外，也用照片記錄人事物，並做下筆記來讓未來的自己能有行動的依據。這部電影同時帶有順敘與倒敘的時間線，我看到一半才意識到，原來黑白畫面是順敘，是從較早的時間點開始；彩色畫面是倒敘，是從後來的時間點開始，一段一段的回到之前的時間點。讓我感到厲害的是倒敘的處理方式，雖然是從後來的時間點往回敘事，但是每段都能帶來完整的資訊，而不是只留下謎題。而看了下一段後，對於上一段的理解又不一樣了，會有個「什麼，居然是這樣啊！」的感覺。而電影最後這兩條時間線交集在一起，同時也是真相大白的時候，當下只有震驚與讚嘆。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="心得" /><summary type="html"><![CDATA[2023 年除了在電影院看了許多電影外，也透過 Netflix 等串流平台收看了經典以及想要補齊的電影。就用這篇來整理這段時間的心得。]]></summary></entry><entry><title type="html">[電影] 2023 年進電影院看過的那些電影們</title><link href="https://lankudot.airfishlab.com/blog/2024-01-watched-movies-in-theater-in-2023/" rel="alternate" type="text/html" title="[電影] 2023 年進電影院看過的那些電影們" /><published>2024-01-28T00:00:00+08:00</published><updated>2024-01-28T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/watched-movies-in-theater-in-2023</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-01-watched-movies-in-theater-in-2023/"><![CDATA[<p>回想去年看的電影比起以往還要來得多，沒想到也漸漸喜歡看電影的感覺。就想來記錄去年看過的電影，以後也可以回味喜歡的作品。</p>
-
-<p><img src="/assets/images/blog/2024/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-1.png" alt="" /></p>
-
-<h3 id="捍衛任務-4">捍衛任務 4</h3>
-
-<p>這系列從第 1 集看到第 3 集，也終於迎來結局。最喜歡在廢棄房屋中，以 top-down 視角拍攝的戰鬥場景。流暢的運鏡，搭配龍息霰彈擊發時噴射出來的火焰，從上方看著 John Wick 從一個房間打到另一個房間，視覺一大滿足。另外沒想到飾演先驅者的 Clancy Brown，就是《刺激 1995》的警備隊長，兩者之間的氣場完全不一樣。可惜看得出基哥體力不如以前，肢體打鬥顯得單調。劇情上越來越多過場角色，防彈西裝也人人都有。而且這系列對上的主要敵人最後都讓人感覺只是個小屁孩。</p>
-
-<h3 id="龍與地下城盜賊榮耀">龍與地下城：盜賊榮耀</h3>
-
-<p>2023 年最喜歡的電影就是這一部了！整部電影就像是在跑團，演員們在開拍前還跟導演跑過一場 D&amp;D 來加深對角色的印象。雖然有玩過 TRPG，但沒有跑過 D&amp;D 系統，但同行的朋友說，電影中的場所、怪物、法術完全是 D&amp;D 裡面的設定。所有角色中最喜歡 Doric，可以算是整個冒險的 MVP 了，能變形成各種生物，變大可以擊退敵人，變小則可以潛入，而且演員也很可愛。電影中有一段逃離追擊的過程，看著 Doric 流暢地變形成各種不同的生物來躲避攻擊、穿越障礙，讓人感到非常過癮。</p>
-
-<h3 id="超級瑪利歐兄弟電影版">超級瑪利歐兄弟電影版</h3>
-
-<p>偏粉絲向的作品，看到熟悉的場景出現，像是開頭的 World 1-1、對上 Donkey Kong 的名星大亂鬥場地、瑪利歐賽車等，就比較不會在意劇情不通順了。還蠻喜歡開場設定瑪利歐跟路易吉在現實世界只是普通的水電工，還得要拍廣告來招攬生意（這一段廣告做的很棒），好不容易接到生意，卻又花式搞雜。</p>
-
-<hr />
-
-<p><img src="/assets/images/blog/2024/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-2.png" alt="" /></p>
-
-<h3 id="blue-giant">Blue Giant</h3>
-
-<p>身為爵士樂的喜好者，當然是不能錯過這部以爵士樂為主題的動畫電影。當初日本在 2 月上映時，就很期望台灣也能上映，看到消息真的非常高興。在上映前，Spotify 上的原聲帶早以聽了無數次，上原廣美的編曲實在迷人。電影開場第一首 Impression 出來時，眼淚就忍不住掉下來了，果然在有好的電影院設備聽爵士樂是一大享受。雖然演奏的演出是用 3D 呈現，會讓人有點出戲，而且比較沒有力量，但我想這是為了演奏到位而做的取捨。不過最後玉田有一段鼓的 solo 完全是手繪，就可以完全感受到演奏的張力，看完又哭了一次。劇場版也補足原作漫畫劇情的缺憾，是我第二部 2023 年最喜歡的電影。</p>
-
-<h3 id="印第安納瓊斯命運輪盤">印第安納瓊斯：命運輪盤</h3>
-
-<p>老實說我就是為了麥叔而去看這一部電影，整場也只有麥叔的演出吸引人，把身為物理學家，醉心於穿越時空的神物發揮的淋漓盡致。最喜歡麥叔在二戰戰場剛登場時，還有最後在機場整隊準備回到過去時這兩個場景，散發出身為主要敵人的強大氣場。相比之下，劇情非常無趣，電影中三段你追我跑的情節，過程相似，只是場景不同。敵人手下的手段也相當粗糙，遇到阻礙、不合意的人就只會開槍。更遑論有些角色在劇情中可有可無。</p>
-
-<h3 id="不可能的任務致命清算-第一章">不可能的任務：致命清算 第一章</h3>
-
-<p>看到阿湯哥在電影中一樣生龍活虎，只能佩服再佩服了。相比之前，本集就直接進入事件核心，動作場景也多了很多，簡單來說就是部爽片。因為預告就有介紹躍下懸崖的特技是怎麼執行的，所以在看這一段時，反而可以注意觀察視覺特效是怎麼處理這個場景。對於上集角色再次登場感到驚訝，再加上這集的女主角，實在佩服阿湯哥的選角眼光。</p>
-
-<hr />
-
-<p><img src="/assets/images/blog/2024/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-3.png" alt="" /></p>
-
-<h3 id="奧本海默">奧本海默</h3>
-
-<p>第一次看 IMAX 的體驗就給了奧本海默，沒想到 IMAX 的螢幕這麼大，太晚買票只能座前排的我，整場電影脖子撐得很痠。當時諾蘭的作品還沒看過很多，中場才意識到黑白畫面是之後的時間點，彩色畫面則是現在的時間點。所以前面這兩者的穿插，讓我有點跟不上劇情，但發覺這一點之後，就跟上劇情的發展了。二戰當時除了軍備競賽之外，還包含了共產主義的盛行，電影完整呈現這兩者。電影中奧本海默在原子彈一步一步完成的過程中，僅管興奮，更多的是問自己做出這個武器是否是正確的。最後在原子彈完成後的慶功演說中，對比參與人員的歡慶，只有奧本海默感受到原子彈爆炸的強光，在離場時踩到焦黑的屍體，這個橋段的象徵不言而喻，也是我覺得最棒的一段。</p>
-
-<h3 id="拿破崙">拿破崙</h3>
-
-<p>歷史故事也是我喜歡的題材之一，預告出來後就很期待進電影院觀賞。雖然觀影前就有看到一些評論，但是秉持著對於歷史的喜愛，還是堅持去看。沒想到法國大革命後還有這麼精彩的歷史。開場就是瑪麗皇后上斷頭台，確立拿破崙能力的土倫圍城戰，在霧月政變後如何稱帝，後面當然就是耳熟能詳的法俄戰爭與滑鐵盧戰爭。沒想到可以在兩小時半的電影中，演出這麼豐富的歷史過程。在觀影後，完全激起我對這段歷史的興趣，到 wiki 查了跟拿破崙有關的歷史，並對照電影中不同的地方。整部電影的戰爭場面做的很棒，用心在戰法與佈陣上。後來才知道飾演約瑟芬的是 Vanessa Kirby，在《不可能的任務》中飾演白寡婦，難怪覺得很熟悉。</p>
-
-<h3 id="旺卡">旺卡</h3>
-
-<p>適合闔家觀賞的聖誕節電影，沒想到會是像迪士尼電影那樣，在劇情中穿插歌舞的形式。電影算是《歡樂糖果屋》的前傳，也就是威利旺卡建立巧克力工廠之前的故事，其中有很多《歡樂糖果屋》的彩蛋，連歐帕倫普人的造型也是一樣的。因為是闔家觀賞的電影，所以反派的行為會比較溫合，而且受到報應時通常很滑稽，但我很喜歡這種幽默的設計。電影歌舞中，也最喜歡反派在賄賂警長這一首。這部電影對我來說算是倒吃甘蔗，前半場節奏偏慢，差點撐不下去，但在事件開始後逐漸好轉，最後抵擋不住淚腺攻擊。</p>
-
-<hr />
-
-<p><img src="/assets/images/blog/2024/2024-01-28-watched-movies-in-theater-in-2023/movie-posters-4.png" alt="" /></p>
-
-<h3 id="王立宇宙軍-歐尼亞米斯之翼">王立宇宙軍 ～歐尼亞米斯之翼～</h3>
-
-<p>當初聽聞這部動畫電影主要是為了炫技而製作的，在劇情方面並沒有很好，就抱持著享受作畫的心情，去看這次重上電影院的《王立宇宙軍》。作畫真的非常精製，幾乎每個場景都是不同的背景，機械管線的設計也令人著迷。最終火箭發射時，全場音樂停止，因液態燃料的低溫而生成的霜片紛飛，這個場面讓人暫時忘記呼吸，劇情的不足拋之腦後。不知是不是製作年代的關係，電影內的文化、宗教、服飾設定還是偏民族感，但這也是電影的另一個看點。</p>
-
-<h3 id="星際牛仔天國之門">星際牛仔：天國之門</h3>
-
-<p>身為 Spike 的粉絲，看到有人在揪團包場看這部星際牛仔的電影版，理所當然立刻報了名。跟著一群星際牛仔的粉絲看電影，感受完全不同。在主角群的部份，劇情主要著重在 Spike 的身上。還蠻喜歡用蒙太奇來推進劇情的手法，像是 Spike 為了打探情報，到處問人的過程。沒有台詞，只有呈現 Spike 到不同地方跟不同人互動，從他們之間的互動就可以看出詢問的結果。搭配背景音樂，又可以同時呈現當地的文化氛圍，在《王立宇宙軍》中，也是以這樣的手法呈現警探在找尋主角下落的過程。看星際牛仔的另一個享受就是菅野洋子的音樂了，開場的 AsK DNA 配上日常畫面，立刻把人拉入電影的氛圍中。還有片尾的 Gotta knock a little harder 配上結局，只能顧好自己的淚腺了。SEE YOU SPACE COWBOY…</p>
-
-<h3 id="歡迎來到駒田蒸餾所">歡迎來到駒田蒸餾所</h3>
-
-<p>以威士忌為主題的動畫電影，因為是冷門題材，又是動畫電影，在上映後就把握時間買票觀看了。女主角駒田琉生繼承家族的蒸餾所後，一肩扛起整個家族的未來，研發出「若葉」這款威士忌而聲名大噪，但最終是為了能讓「獨樂」這款屬於家人的威士忌能再次誕生。劇情路線是可預期的，但我對全靠熱情與精神喊話就能成功的故事，感到這實在是太理想美好了。電影場景的原型是若鶴三郎丸蒸餾所，用 Google 街景查就可以看到電影中出現的建築。三郎丸也有出現在電影中，生產劇情中登場的兩款威士忌「獨樂」與「若葉」的募資計劃，也都是由三郎丸生產。電影比較可惜的是沒有深入介紹威士忌的製程，只在開頭以蒙太奇的方式快速帶過，比較注重在調合的部份。但也讓我對威士忌的製程產生興趣，觀影後就到 YouTube 查了許多相關的介紹。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="心得" /><summary type="html"><![CDATA[回想去年看的電影比起以往還要來得多，沒想到也漸漸喜歡看電影的感覺。就想來記錄去年看過的電影，以後也可以回味喜歡的作品。]]></summary></entry></feed>
+<p>《記憶拼圖》的主角藍納因為被歹徒襲擊而失去了妻子，同時也患上了「順行性失憶症」，之後的記憶只能持續幾分鐘，因而無法有新的記憶。所以藍納為了找出犯案的歹徒，除了在身上刺青之外，也用照片記錄人事物，並做下筆記來讓未來的自己能有行動的依據。這部電影同時帶有順敘與倒敘的時間線，我看到一半才意識到，原來黑白畫面是順敘，是從較早的時間點開始；彩色畫面是倒敘，是從後來的時間點開始，一段一段的回到之前的時間點。讓我感到厲害的是倒敘的處理方式，雖然是從後來的時間點往回敘事，但是每段都能帶來完整的資訊，而不是只留下謎題。而看了下一段後，對於上一段的理解又不一樣了，會有個「什麼，居然是這樣啊！」的感覺。而電影最後這兩條時間線交集在一起，同時也是真相大白的時候，當下只有震驚與讚嘆。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="心得" /><summary type="html"><![CDATA[2023 年除了在電影院看了許多電影外，也透過 Netflix 等串流平台收看了經典以及想要補齊的電影。就用這篇來整理這段時間的心得。]]></summary></entry></feed>
