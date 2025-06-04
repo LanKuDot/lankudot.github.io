@@ -1,0 +1,790 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.1 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="zh-TW" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[開發日誌 #2] A 需要跑步但 B 只要走路 | 烏龜漫遊 2.0</title>
+<meta name="description" content="在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。">
+
+
+  <meta name="author" content="烏龜">
+  
+  <meta property="article:author" content="烏龜">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="烏龜漫遊 2.0">
+<meta property="og:title" content="[開發日誌 #2] A 需要跑步但 B 只要走路">
+<meta property="og:url" content="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/">
+
+
+  <meta property="og:description" content="在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。">
+
+
+
+  <meta property="og:image" content="https://lankudot.airfishlab.com/assets/images/bio-photo.jpg">
+
+
+
+  <meta name="twitter:site" content="@LanKuDot">
+  <meta name="twitter:title" content="[開發日誌 #2] A 需要跑步但 B 只要走路">
+  <meta name="twitter:description" content="在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。">
+  <meta name="twitter:url" content="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://lankudot.airfishlab.com/assets/images/bio-photo.jpg">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2025-06-04T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="烏龜漫遊 2.0 Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+</style>
+
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">轉至主導航欄</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">轉至内容</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">轉至頁脚</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          烏龜漫遊 2.0
+          <span class="site-subtitle">遊戲、程式、心得</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/blog/">部落格</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切換選單</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://lankudot.airfishlab.com/">
+        <img src="/assets/images/bio-photo.jpg" alt="烏龜" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://lankudot.airfishlab.com/" itemprop="url">烏龜</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>喜歡玩與作遊戲的工程師，對 shader 領域充滿好奇。喜歡爵士樂、反烏托邦小說與電影</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">追蹤</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Taiwan</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:kyle.li@airfishlab.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-youtube" aria-hidden="true"></i><span class="label">Youtube</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/LanKuDot" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/LanKuDot" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://assetstore.unity.com/publishers/52019" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-unity" aria-hidden="true"></i><span class="label">Unity</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[開發日誌 #2] A 需要跑步但 B 只要走路">
+    <meta itemprop="description" content="在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。">
+    <meta itemprop="datePublished" content="2025-06-04T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/" itemprop="url">[開發日誌 #2] A 需要跑步但 B 只要走路
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-06-04T00:00:00+08:00">June 4, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> 本頁</h4></header>
+              <ul class="toc__menu">
+<li>
+<a href="#%E9%80%9A%E7%94%A8%E6%A8%A1%E7%B5%84%E7%9A%84%E5%95%8F%E9%A1%8C">通用模組的問題</a><ul>
+<li><a href="#%E6%8F%90%E4%BE%9B%E7%94%A8%E4%B8%8D%E5%88%B0%E7%9A%84%E5%8A%9F%E8%83%BD">提供用不到的功能</a></li>
+<li><a href="#%E4%B8%8D%E6%98%93%E6%93%B4%E5%85%85">不易擴充</a></li>
+</ul>
+</li>
+<li><a href="#%E9%87%8D%E6%A7%8B%E7%89%88%E6%9C%AC">重構版本</a></li>
+<li><a href="#%E7%B8%BD%E7%B5%90">總結</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p>在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。</p>
+
+<h2 id="通用模組的問題">通用模組的問題</h2>
+
+<p>一開始通用模組設計如下圖：</p>
+
+<p><img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/original-design-uml.svg" alt="original-design-uml"></p>
+
+<ul>
+  <li>通用移動模組 <code class="language-plaintext highlighter-rouge">CharacterMovementModule</code> 中提供不同的移動方式的子模組：
+    <ul>
+      <li>靜止的 <code class="language-plaintext highlighter-rouge">IdleMovement</code>
+</li>
+      <li>以速度向量為主的 <code class="language-plaintext highlighter-rouge">VelocityMovement</code>
+</li>
+      <li>以距離為主的 <code class="language-plaintext highlighter-rouge">DashMovement</code>
+</li>
+      <li>以路徑為主的 <code class="language-plaintext highlighter-rouge">PathMovement</code>
+</li>
+    </ul>
+  </li>
+  <li>移動模組同時只會有一個子模組在執行，當子模組執行結束後（如：移動路徑走完了），會自動轉到 <code class="language-plaintext highlighter-rouge">IdleMovement</code>
+</li>
+  <li>尋路用的模組 <code class="language-plaintext highlighter-rouge">PathFindingModule</code>
+</li>
+</ul>
+
+<h3 id="提供用不到的功能">提供用不到的功能</h3>
+
+<p>這是遊戲中各類角色需要的移動功能：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>移動方式</th>
+      <th>玩家角色</th>
+      <th>敵人角色</th>
+      <th>NPC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>靜止</td>
+      <td><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"></td>
+      <td><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"></td>
+      <td><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"></td>
+    </tr>
+    <tr>
+      <td>速度向量</td>
+      <td><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"></td>
+      <td><img class="emoji" title=":x:" alt=":x:" src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png" height="20" width="20"></td>
+      <td><img class="emoji" title=":x:" alt=":x:" src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png" height="20" width="20"></td>
+    </tr>
+    <tr>
+      <td>距離</td>
+      <td><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"></td>
+      <td><img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20"></td>
+      <td><img class="emoji" title=":x:" alt=":x:" src="https://github.githubassets.com/images/icons/emoji/unicode/274c.png" height="20" width="20"></td>
+    </tr>
+    <tr>
+      <td>路徑</td>
+      <td>
+<img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20">（路徑更新一次）</td>
+      <td>
+<img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20">（路徑定期更新）</td>
+      <td>
+<img class="emoji" title=":heavy_check_mark:" alt=":heavy_check_mark:" src="https://github.githubassets.com/images/icons/emoji/unicode/2714.png" height="20" width="20">（一次跟定期更新都要）</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>設計成通用模組的問題是，使用的角色會有用不到的功能。敵人角色用不到速度向量的移動功能，而 NPC 一樣用不到速度向量的移動功能之外，也用不到距離為主的移動功能。</p>
+
+<h3 id="不易擴充">不易擴充</h3>
+
+<p>另外從上面的表可以看到，以路徑移動的形式有兩種：只要更新一次路徑（移動到指定位置）跟定期更新路徑（持續追隨）。為了讓移動模組能「通用」，所以只提供傳入路徑再移動的功能。這時玩家角色需要實作讓尋路模組來找路徑後傳入移動模組的功能，而敵人角色則需要實作定期更新路徑的功能，然而 NPC 卻兩種形式都要，所以就得要再各實作一次一樣的功能。雖然可以把這兩種路徑移動形式連同尋路模組一起整合到移動模組內，但這樣移動模組就會相依於尋路模組，而且爾後有需要其它模組的移動方式的話，都會讓移動模組相依更多模組。如果有新的角色是不需要路徑移動方式的話，為了移動模組還要再生成尋路模組就顯得多餘了。</p>
+
+<p><img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/original-design-coupling.svg" alt="original-design-coupling">
+<em>讓模組相依於其它模組的問題是無論用不用的到對應的模組，都得要生成依賴的模組</em></p>
+
+<h2 id="重構版本">重構版本</h2>
+
+<p>這是重構後的版本：</p>
+
+<p><img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/refactor-design-player-uml.svg" alt="refactor-design-player-uml"></p>
+
+<ul>
+  <li>移動方式各自獨立成外部子模組，繼承自 <code class="language-plaintext highlighter-rouge">IMovement</code>，並自行提供所需要的建構子與初始化函式</li>
+  <li>
+<code class="language-plaintext highlighter-rouge">CharacterMovementModule</code> 只保留移動方式切換的功能，透過 <code class="language-plaintext highlighter-rouge">IMovment</code> 介面存取移動方式子模組</li>
+  <li>角色需要實作自己所需的移動模組，像玩家要實作 <code class="language-plaintext highlighter-rouge">PlayerMovementModule</code>，在裡面建立與初始化所需的移動方式子模組，並註冊給 <code class="language-plaintext highlighter-rouge">CharacterMovementModule</code> 管理</li>
+  <li>角色自己的移動模組也會存建立的移動方式子模組，在需要切換移動方式時，先設置好參數，再切換移動方式</li>
+</ul>
+
+<p>如此一來，通用移動模組就不用依賴其它模組了，而是由角色自己的移動模組傳入需要的模組。另外移動方式獨立成子模組後，就可以像積木一樣，由角色自己的移動模組拼出所需要的移動功能。如敵人與 NPC 的移動模組會像這樣：</p>
+
+<p><img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/refactor-design-enemy-uml.svg" alt="refactor-design-enemy-uml">
+<img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/refactor-design-npc-uml.svg" alt="refactor-design-npc-uml"></p>
+
+<p>另外兩種不同的路徑移動方式也分成路徑走一次的 <code class="language-plaintext highlighter-rouge">PathMovement</code> 與路徑定期更新的 <code class="language-plaintext highlighter-rouge">FollowMovement</code>，而這兩個移動方式的共同邏輯則是取出做成一個 <code class="language-plaintext highlighter-rouge">PathHelper</code> 來幫助執行路徑移動。</p>
+
+<h2 id="總結">總結</h2>
+
+<p>使用情境差不多的話，做成通用模組是合適的方法，而且一開始規格還不明確的時候，太早設計成這樣也可能殺雞用牛刀。但當出現一些清況，就得要開始思考這樣做適不適合了，像是：</p>
+
+<ul>
+  <li>有部份功能只是為了某些使用者存在</li>
+  <li>模組是不是開始相依其它模組的功能</li>
+  <li>每次加入新功能時，模組邏輯是否得要大幅修改</li>
+  <li>為了配合新功能，其它使用者是否也要改變使用方式</li>
+</ul>
+
+<p>如果有這樣的情況就得要考慮重構了。</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 標籤: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C" class="page__taxonomy-item p-category" rel="tag">開發日誌</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 分類: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#blog" class="page__taxonomy-item p-category" rel="tag">blog</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新時間:</strong> <time class="dt-published" datetime="2025-06-04T00:00:00+08:00">June 4, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">分享到</h4>
+
+  <a href="https://x.com/intent/tweet?via=LanKuDot&amp;text=%5B%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C+%232%5D+A+%E9%9C%80%E8%A6%81%E8%B7%91%E6%AD%A5%E4%BD%86+B+%E5%8F%AA%E8%A6%81%E8%B5%B0%E8%B7%AF%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2025-06-refactor-general-module%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2025-06-refactor-general-module%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=%5B%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C+%232%5D+A+%E9%9C%80%E8%A6%81%E8%B7%91%E6%AD%A5%E4%BD%86+B+%E5%8F%AA%E8%A6%81%E8%B5%B0%E8%B7%AF%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2025-06-refactor-general-module%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/blog/2025-05-fight-with-state-machine/" class="pagination--pager" title="[開發日誌 #1] 狀態機奮鬥記">前一頁</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">後一頁</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+      
+        <div class="page__comments">
+  
+  
+      <script src="https://giscus.app/client.js" data-repo="LanKuDot/lankudot.github.io" data-repo-id="R_kgDOGYHitw" data-category="Page comments" data-category-id="DIC_kwDOGYHit84B_-lB" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="zh-TW" data-loading="lazy" crossorigin="anonymous" async>
+</script>
+
+
+  
+</div>
+
+      
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">猜您有與趣</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2025-05-fight-with-state-machine/" rel="permalink">[開發日誌 #1] 狀態機奮鬥記
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-05-08T00:00:00+08:00">May 8, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">時光荏苒，參與新專案到現在也超過半年了。因為是第一次做動作遊戲，面對沒開發過的機制，看了許多資料，也踩了不少的坑，就覺得應該來寫個開發日誌，多少記錄一下開發過程的酸甜苦辣鹹。開張第一篇先來分享開發狀態機時的碰壁。
+
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/suzuka-circuit-gp-entrance.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2025-05-f1-japan-grand-prix-trip-planning/" rel="permalink">[遊記] 2025 F1 日本大獎賽 - 行程準備
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-05-03T00:00:00+08:00">May 3, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">自 2020 年入坑以來，看 F1 也進入第 6 年了。大概從前年萌生到現場看比賽的念頭，也看了一些現場觀賽的分享文後，毅然決然選定了今年的日本大獎賽。選擇日本場的原因除了日本旅遊環境友善之外，比賽舉辦的時間剛好落在清明連假，賽道當地的鈴鹿與鄰近的名古屋也是櫻花季的時期，因此這趟現地之旅就成行了。受惠於前人的分享...</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2025-03-watched-movies-in-2024/" rel="permalink">[電影] 2024 看過的那些電影們
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-03-30T00:00:00+08:00">March 30, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">去年因為工作變得比較繁重，所以電影看的不多，不過這樣反而可以寫得比較詳細。為了篇幅，就簡單分成真人電影與動畫電影兩篇，這篇就記錄真人電影的部份。去年最喜歡的電影就是《沙丘：第二部》了，去二刷的時候還選了 IMAX 的版本，對於太空科幻的題材真的愛不釋手啊。
+
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2025/2025-01-30-2025-apgs-ggst-share/ggst-cover-image.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2025-01-2025-apgs-ggst-share/" rel="permalink">[分享] 2025 亞太遊戲高峰會 -《聖騎士之戰 -奮戰-》的全球化挑戰
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-01-30T00:00:00+08:00">January 30, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">在台北電玩展舉行期間，也會同時進行亞太遊戲高峰會。高峰會邀請遊戲業相關商業人士前來分享經驗，議題涵蓋開發、技術、行銷、社群推廣等。不過對我來說，與其說是去聽演講，不如說是粉絲見面會。而今年最有興趣的演講之一是 GGST 的製作人宮內健的分享，在這場演講中也獲益良多，所以用這篇文章來分享演講的內容。
+
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <div class="page__footer-cc4-0">
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>
+    本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">創用 CC 姓名標示 4.0 國際 授權條款</a>授權
+</div>
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>追蹤:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/LanKuDot" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/LanKuDot" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://assetstore.unity.com/publishers/52019" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-unity" aria-hidden="true"></i> Unity</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> RSS Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">© 2025 <a href="https://lankudot.airfishlab.com">烏龜漫遊 2.0</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VXPNSTXB5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VXPNSTXB5L', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+    <!-- start custom comments scripts -->
+
+<!-- end custom comments scripts -->
+
+
+
+
+
+  </body>
+</html>

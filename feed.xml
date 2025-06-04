@@ -1,4 +1,106 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2025-05-08T23:45:28+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[開發日誌 #1] 狀態機奮鬥記</title><link href="https://lankudot.airfishlab.com/blog/2025-05-fight-with-state-machine/" rel="alternate" type="text/html" title="[開發日誌 #1] 狀態機奮鬥記" /><published>2025-05-08T00:00:00+08:00</published><updated>2025-05-08T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/fight-with-state-machine</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-05-fight-with-state-machine/"><![CDATA[<p>時光荏苒，參與新專案到現在也超過半年了。因為是第一次做動作遊戲，面對沒開發過的機制，看了許多資料，也踩了不少的坑，就覺得應該來寫個開發日誌，多少記錄一下開發過程的酸甜苦辣鹹。開張第一篇先來分享開發狀態機時的碰壁。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2025-06-04T23:18:00+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[開發日誌 #2] A 需要跑步但 B 只要走路</title><link href="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/" rel="alternate" type="text/html" title="[開發日誌 #2] A 需要跑步但 B 只要走路" /><published>2025-06-04T00:00:00+08:00</published><updated>2025-06-04T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-general-module</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/"><![CDATA[<p>在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。</p>
+
+<h2 id="通用模組的問題">通用模組的問題</h2>
+
+<p>一開始通用模組設計如下圖：</p>
+
+<p><img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/original-design-uml.svg" alt="original-design-uml" /></p>
+
+<ul>
+  <li>通用移動模組 <code class="language-plaintext highlighter-rouge">CharacterMovementModule</code> 中提供不同的移動方式的子模組：
+    <ul>
+      <li>靜止的 <code class="language-plaintext highlighter-rouge">IdleMovement</code></li>
+      <li>以速度向量為主的 <code class="language-plaintext highlighter-rouge">VelocityMovement</code></li>
+      <li>以距離為主的 <code class="language-plaintext highlighter-rouge">DashMovement</code></li>
+      <li>以路徑為主的 <code class="language-plaintext highlighter-rouge">PathMovement</code></li>
+    </ul>
+  </li>
+  <li>移動模組同時只會有一個子模組在執行，當子模組執行結束後（如：移動路徑走完了），會自動轉到 <code class="language-plaintext highlighter-rouge">IdleMovement</code></li>
+  <li>尋路用的模組 <code class="language-plaintext highlighter-rouge">PathFindingModule</code></li>
+</ul>
+
+<h3 id="提供用不到的功能">提供用不到的功能</h3>
+
+<p>這是遊戲中各類角色需要的移動功能：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>移動方式</th>
+      <th>玩家角色</th>
+      <th>敵人角色</th>
+      <th>NPC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>靜止</td>
+      <td>:heavy_check_mark:</td>
+      <td>:heavy_check_mark:</td>
+      <td>:heavy_check_mark:</td>
+    </tr>
+    <tr>
+      <td>速度向量</td>
+      <td>:heavy_check_mark:</td>
+      <td>:x:</td>
+      <td>:x:</td>
+    </tr>
+    <tr>
+      <td>距離</td>
+      <td>:heavy_check_mark:</td>
+      <td>:heavy_check_mark:</td>
+      <td>:x:</td>
+    </tr>
+    <tr>
+      <td>路徑</td>
+      <td>:heavy_check_mark:（路徑更新一次）</td>
+      <td>:heavy_check_mark:（路徑定期更新）</td>
+      <td>:heavy_check_mark:（一次跟定期更新都要）</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>設計成通用模組的問題是，使用的角色會有用不到的功能。敵人角色用不到速度向量的移動功能，而 NPC 一樣用不到速度向量的移動功能之外，也用不到距離為主的移動功能。</p>
+
+<h3 id="不易擴充">不易擴充</h3>
+
+<p>另外從上面的表可以看到，以路徑移動的形式有兩種：只要更新一次路徑（移動到指定位置）跟定期更新路徑（持續追隨）。為了讓移動模組能「通用」，所以只提供傳入路徑再移動的功能。這時玩家角色需要實作讓尋路模組來找路徑後傳入移動模組的功能，而敵人角色則需要實作定期更新路徑的功能，然而 NPC 卻兩種形式都要，所以就得要再各實作一次一樣的功能。雖然可以把這兩種路徑移動形式連同尋路模組一起整合到移動模組內，但這樣移動模組就會相依於尋路模組，而且爾後有需要其它模組的移動方式的話，都會讓移動模組相依更多模組。如果有新的角色是不需要路徑移動方式的話，為了移動模組還要再生成尋路模組就顯得多餘了。</p>
+
+<p><img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/original-design-coupling.svg" alt="original-design-coupling" />
+<em>讓模組相依於其它模組的問題是無論用不用的到對應的模組，都得要生成依賴的模組</em></p>
+
+<h2 id="重構版本">重構版本</h2>
+
+<p>這是重構後的版本：</p>
+
+<p><img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/refactor-design-player-uml.svg" alt="refactor-design-player-uml" /></p>
+
+<ul>
+  <li>移動方式各自獨立成外部子模組，繼承自 <code class="language-plaintext highlighter-rouge">IMovement</code>，並自行提供所需要的建構子與初始化函式</li>
+  <li><code class="language-plaintext highlighter-rouge">CharacterMovementModule</code> 只保留移動方式切換的功能，透過 <code class="language-plaintext highlighter-rouge">IMovment</code> 介面存取移動方式子模組</li>
+  <li>角色需要實作自己所需的移動模組，像玩家要實作 <code class="language-plaintext highlighter-rouge">PlayerMovementModule</code>，在裡面建立與初始化所需的移動方式子模組，並註冊給 <code class="language-plaintext highlighter-rouge">CharacterMovementModule</code> 管理</li>
+  <li>角色自己的移動模組也會存建立的移動方式子模組，在需要切換移動方式時，先設置好參數，再切換移動方式</li>
+</ul>
+
+<p>如此一來，通用移動模組就不用依賴其它模組了，而是由角色自己的移動模組傳入需要的模組。另外移動方式獨立成子模組後，就可以像積木一樣，由角色自己的移動模組拼出所需要的移動功能。如敵人與 NPC 的移動模組會像這樣：</p>
+
+<p><img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/refactor-design-enemy-uml.svg" alt="refactor-design-enemy-uml" />
+<img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/refactor-design-npc-uml.svg" alt="refactor-design-npc-uml" /></p>
+
+<p>另外兩種不同的路徑移動方式也分成路徑走一次的 <code class="language-plaintext highlighter-rouge">PathMovement</code> 與路徑定期更新的 <code class="language-plaintext highlighter-rouge">FollowMovement</code>，而這兩個移動方式的共同邏輯則是取出做成一個 <code class="language-plaintext highlighter-rouge">PathHelper</code> 來幫助執行路徑移動。</p>
+
+<h2 id="總結">總結</h2>
+
+<p>使用情境差不多的話，做成通用模組是合適的方法，而且一開始規格還不明確的時候，太早設計成這樣也可能殺雞用牛刀。但當出現一些清況，就得要開始思考這樣做適不適合了，像是：</p>
+
+<ul>
+  <li>有部份功能只是為了某些使用者存在</li>
+  <li>模組是不是開始相依其它模組的功能</li>
+  <li>每次加入新功能時，模組邏輯是否得要大幅修改</li>
+  <li>為了配合新功能，其它使用者是否也要改變使用方式</li>
+</ul>
+
+<p>如果有這樣的情況就得要考慮重構了。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。]]></summary></entry><entry><title type="html">[開發日誌 #1] 狀態機奮鬥記</title><link href="https://lankudot.airfishlab.com/blog/2025-05-fight-with-state-machine/" rel="alternate" type="text/html" title="[開發日誌 #1] 狀態機奮鬥記" /><published>2025-05-08T00:00:00+08:00</published><updated>2025-05-08T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/fight-with-state-machine</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-05-fight-with-state-machine/"><![CDATA[<p>時光荏苒，參與新專案到現在也超過半年了。因為是第一次做動作遊戲，面對沒開發過的機制，看了許多資料，也踩了不少的坑，就覺得應該來寫個開發日誌，多少記錄一下開發過程的酸甜苦辣鹹。開張第一篇先來分享開發狀態機時的碰壁。</p>
 
 <blockquote>
   <p>成功的經驗很棒，但失敗的經驗也值得參考啊</p>
@@ -966,70 +1068,4 @@
       </li>
     </ul>
   </li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="Unity" /><category term="C#" /><summary type="html"><![CDATA[在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 UnityEvent 與 C# event 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 UnityEvent 與 C# event，並講解可能的問題，而下篇則會介紹利用 C# 介面做為事件介面的第三種方式。]]></summary></entry><entry><title type="html">[電影] 2023 年在家裡看過的那些電影們</title><link href="https://lankudot.airfishlab.com/blog/2024-02-watched-movies-at-home-in-2023/" rel="alternate" type="text/html" title="[電影] 2023 年在家裡看過的那些電影們" /><published>2024-02-10T00:00:00+08:00</published><updated>2024-02-10T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/watched-movies-at-home-in-2023</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-02-watched-movies-at-home-in-2023/"><![CDATA[<p>2023 年除了在電影院看了許多電影外，也透過 Netflix 等串流平台收看了經典以及想要補齊的電影。就用這篇來整理這段時間的心得。</p>
-
-<h3 id="今敏的動畫電影">今敏的動畫電影</h3>
-
-<p>前年看過《今敏：造夢魔術師》後才認識這位動畫導演，知道他的作品影響其他電影導演，可以在他們的電影中看到今敏作品的影子。看完這部紀錄片後就對他的作品非常感興趣，就下訂四部動畫電影的 BD 了，就為了能一看再看。這四部作品風格與劇情走向完全不同，但每一部內容毫不馬虎且令人印象深刻，知道他已經年紀輕輕就過世時覺得非常可惜。</p>
-
-<p><img src="/assets/images/blog/2024/2024-02-10-watched-movies-at-home-in-2023/movie-posters-1.png" alt="movie-posters-1" /></p>
-
-<h4 id="藍色恐懼">藍色恐懼</h4>
-
-<p>之前就有聽說《藍色恐懼》是部心理驚悚類型的電影，對恐怖電影沒有抗性的我，真慶幸自己選早上來看這部電影。女主角未麻從偶像轉為演員後，就一直遭受未知的粉絲騷擾，另一方面又與過去的自己拉扯，逐漸對自己轉戰演員這個決定感到迷惑。電影把未知恐懼還有心理壓力營造的很好，可以感受到整部電影詭譎的氣氛。在進入解明階段後，才發現原來還有一層真相，把之前對劇情的理解完全推翻，看到這裡時感到非常驚訝。尤其電影最後未麻在車內對後照鏡講的那句話，更是耐人尋味。BD 有附錄今敏對電影的訪談，談到電影中場景隱含的未麻心理狀態。另外也一直呈現「看與被看」的關係，玻璃就是之間的界線，未麻與水族箱裡的魚、房間與窗外世界，甚至到觀眾與劇情，這也是電影中值得注意的地方。</p>
-
-<h4 id="千年女優">千年女優</h4>
-
-<p>《千年女優》是戲中戲類型的電影。劇中立花導演為了拍攝傳奇女星，同時也是自己的偶像—藤原千代子的紀錄片，而到她隱居的地方拜訪。電影以立花導演帶來的一把鑰匙貫穿整部劇情，就從這把鑰匙開始，回憶起過去的種種。或許千代子年紀大了，把自己的記憶跟拍攝過的電影劇情混在一起了，但沒想到的是立花導演跟他的助手也被捲入到劇情裡面了。每一段跟電影混雜在一起的回憶，千代子都在尋找當初給她這把鑰匙的那位男子，但男子同時受到壞人的追捕，每次都是立花導演扮演的角色挺身而出，排除阻礙。每一段回憶就像一個輪迴，雖然時空不同，但是主要人物與過程卻十分相似，一路從戰前到上太空，千代子總是在追尋那位男子。有時是回憶劇，有時突然來個導演喊卡，才理解這段是現實，這種似夢非夢的敘事方式，稍一不注意就會跟不上。電影結局的意涵，讓情緒完全爆發出來，最好是多準備幾張衛生紙。</p>
-
-<h4 id="東京教父">東京教父</h4>
-
-<p>《東京教父》充滿聖誕節奇蹟，還有如親情般的溫暖氛圍，是最適合在聖誕節看的電影之一了。三名留宿街頭的流浪漢—阿仁、小花、美由紀，在聖誕節前夕撿到一名棄嬰，因為不忍嬰兒被遺棄，於是踏上找尋其生父母的路。一路上的遭遇，逐漸道出三名流浪漢的過去，以及他們對「家庭」的價值觀與衝突。雖然他們都在冷颼颼的戶外，但越看心裡越覺得溫暖，算是今敏作品中最能直覺理解的一部了。劇情一樣毫不馬虎，每位角色的個性也很分明，當中也不乏幽默感。最喜歡流浪漢與小屁孩們打架的場景，後面辦公大樓一排房間的燈，呈現兩方的體力狀態，就跟格鬥遊戲沒兩樣。</p>
-
-<h4 id="盜夢偵探">盜夢偵探</h4>
-
-<p>與前面的作品不同，《盜夢偵探》就偏向科幻電影了。研究所的森啟發明的「DC 迷你」可以具現化人類的夢境，但長期使用儀器卻會使人分不清現實與夢境，而且還可以植入別人的夢境到其他使用者身上。然而研究所內的 DC 迷你被竊，主角千葉博士為了防止被拿來犯罪，開始追查兇手，甚至進入夢境中調查。很喜歡今敏能夠如此具體呈現夢境的無厘頭，像是原本看著的人，下一秒就是自己，或是跑不完的長廊，抑或是講著毫無邏輯的話，下一幕就呈現話中的場景。如果有看過《全面啟動》的話，就會發現這兩者之間有相似之處。算是四部作品中最喜歡的一部。</p>
-
-<hr />
-
-<p><img src="/assets/images/blog/2024/2024-02-10-watched-movies-at-home-in-2023/movie-posters-2.png" alt="movie-posters-2" /></p>
-
-<h3 id="亨利休格的神奇故事">亨利．休格的神奇故事</h3>
-
-<p>改編自羅爾德．達爾德《亨利．休格和其他六人的精彩故事》，由魏斯．安德森導演的喜劇電影，在 Netflix 上映書中的四個故事《亨利．休格的神奇故事》、《殺鼠之鼠》、《心腹之毒》、《天鵝之翼》。魏斯．安德森是我喜歡的導演之一，他的風格強烈，場景對稱、用色鮮明、角色演出方式，讓他的作品有「魏式美學」之稱。這系列的作品的特色是角色在做事的同時也會講出他正在作的事，或是在講完別人會做的事後，那個角色做出對應的行為，就像口述影像。有時其他角色還會疑惑地看著正在講故事的角色，想著這個人在幹嘛。另外有趣的是，角色幾乎一直面對觀眾，但透過站位來表達之間的關係。而場景佈景就像舞台劇機關，隨著劇情推進，佈景會被移出移入，也會有小幫手幫忙佈置前景道具。雖然是看影像，但感覺是在看一本立體有聲書，這就是魏斯．安德森的作品吸引人的地方。</p>
-
-<h3 id="玩命再劫">玩命再劫</h3>
-
-<p>《玩命再劫》（Baby Driver）的主角 Baby 是搶罪集團的車手，負責接應做案同夥到現場與逃離追捕。主角因為小時候耳朵受過傷，所以經常帶著 iPod 聽音樂以抑制耳鳴聲，而他聽的音樂就會是那一段的背景音樂。看《玩命再劫》最過癮的就是每個動作場景都有對上音樂的鼓點，不僅僅只有演員的動作，連跟週遭物件的互動也都會對上音樂。像是電影開場的搶案，一開始還以為只有主角去對上正在聽的音樂，再看一次才發現同夥開門、拿東西的動作也有對上節拍，甚至飆車經過柱子的風切聲也配合著鼓點。還有主角買咖啡回程的路上經過的塗鴉是在聽得歌曲的歌詞。我很喜歡電影中透過小動作來傳達主角的個性，像是主角對殺人感到害怕，所以開場同夥舉槍對人時，還緊張地把墨鏡拿下來看。執導的 Edger Wright 也是我喜歡的導演，他的《血與冰淇淋三部曲》與《歪小子史考特》也在我最喜歡的電影名單中，尤其是《歪小子史考特》是必看電影之一。</p>
-
-<h3 id="終極警探">終極警探</h3>
-
-<p>「Yippee ki-yay, MDFK.」在朋友強力推薦下，在聖誕節看了這部經典的聖誕節電影。主角紐約警探約翰．麥克連為了挽回與妻子霍莉逐漸殊遠的關係，趁聖誕節假期到洛杉機，前往妻子任職的公司所舉辦的晚宴探望她。卻沒想到中途一群武裝恐怖份子闖入公司，為了取得數億元債券劫持所有人。然而約翰趁亂逃離現場，開始個個擊倒這群恐佈份子。這部電影令我驚訝的地方就是整個劇情的時間跨度就只有一個晚上，卻毫無冷場。約翰的獨自對抗、恐怖份子的無情、媒體的噬血、當地警方的無能，每一方的對比明顯，整場就看著約翰如何支身對抗敵人。開頭那一句就是約翰對恐怖份子說的經典台詞。當時的英雄動作片流行是像史特龍那樣的肌肉男主角，但主演這部電影的布魯斯．威利反而沒有如此壯碩，卻呈現出「是一個遇到極端險境而誕生的平凡英雄」。另外沒有想到飾演恐怖份子首腦的演員是艾倫．瑞克曼，也就是在哈利波特飾演石內卜的演員，在《終極警探》中完全認不出這是他年輕的樣子。</p>
-
-<hr />
-
-<p><img src="/assets/images/blog/2024/2024-02-10-watched-movies-at-home-in-2023/movie-posters-3.png" alt="movie-posters-3" /></p>
-
-<h3 id="醉好的時光">醉好的時光</h3>
-
-<p>在《死亡擱淺》深深地被麥叔的氣質給吸引後，就一直很想補他有演出的電影，《醉好的時光》就在我的片單中。電影裡四位學校老師在學校遭遇挫折，被評論教課無趣。於是嘗試實驗透過控制血液中的酒精濃度，來驗證在微醉的狀態下，表現反而會更好的理論。在之前看到麥叔的訪談影片中，他提到為了讓表演更真實，演員們還事先舉辦體驗營，錄下自己真的喝醉時的表現作為參考。乍聽之下是喜劇電影，但更深的是中年不被認同的危機感，到後段進入爛醉實驗階段後，情況反而急轉直下，甚至當中有人無法自拔而發生悲劇，越感沈重。電影結尾麥叔邊跳著舞邊與慶祝畢業的高中生喝酒的一鏡到底的片段，搭配著 Scarlet Pleasure 的《What A Life》，是電影的經典一段。只是最後看到這一段時，不知道自己是該高興還是該哀傷。</p>
-
-<h3 id="極地">極地</h3>
-
-<p>在《極地》中，麥叔釋演一名過著退休生活的殺手，但前雇主找來一群年輕的殺手來斬草除根。麥叔這邊的劇情用沉穩、色調偏暗的風格進行，讓人覺得他是一位資歷豐富的殺手；而年輕殺手的劇情則是使用節奏強烈的音樂、嘻鬧、色調明亮的風格進行，呈現出他們的自信與自大。但這兩者間直接切換讓情緒不能連貫，就好像乘著一台車，原本在公路上穩穩地開著，忽然間大甩尾，接著開始飆山路，過一陣子又跑回公路上，乘客也只能暈車了。不過在這當中，看著麥叔的演技是很令人享受，舉手投足間就可以感受到角色的氣場。</p>
-
-<hr />
-
-<p><img src="/assets/images/blog/2024/2024-02-10-watched-movies-at-home-in-2023/movie-posters-4.png" alt="movie-posters-4" /></p>
-
-<h3 id="全面啟動">全面啟動</h3>
-
-<p>老實說我到 2023 年才接觸到諾蘭導演的作品，但是在這之前就大概知道《全面啟動》的故事，還有經典的轉陀螺的橋段。《全面啟動》劇情讓人回味無窮，為了讓雇主能在商業競爭中得利，雇用了一群可以進入別人夢中的主角群，利用夢來修改目標的記憶，迫使他放棄事業。過程中也一點一滴的帶出主角的過去，而個人覺得這才是電影的主軸。另外世界觀也引人入勝，「盜夢者」可以進入別人的夢中竊取資訊，所以理所當然有人為了防止侵入，會透過訓練潛意識來陪養軍隊以對付這類人。而盜夢者為了讓自己可以分辦是現實還是別人假造的夢，也會隨身攜帶作為「Token」的物品，只有自己知道它的觸感、大小等資訊，就是為了防止別人在夢中假造一樣的物品，來誤認自己是在現實，李奧納多釋演的柯布的 token 就是小陀螺。另外夢境可以由淺層進入到深層的設定也很有趣，當然進入的越深風險也越高。</p>
-
-<h3 id="星際效應">星際效應</h3>
-
-<p>《星際效應》是我最喜歡的科幻電影之一了。地球的農作物因為氣候變遷與病害的關係，產量越來越少，原本為太空人的主角庫柏被迫成為農夫，來幫助解決糧食問題。然而在家中的女兒墨菲發現書櫃的書會無故落下，沙塵暴在地上留下二進制座標的奇怪現象，引導庫柏到 NASA 的秘密基地。在那邊的負責人布蘭德教授說，在土星也有觀測到蟲洞，認為這是外星生命對地球發出的信號，指引人類到外太空生活。於事庫柏答應教授，與組員一同前往探索。即然是太空科幻電影，外太空的景緻肯定不能馬忽，尤其是就近到黑洞時，再配上漢斯．季默的配樂，完全能感受到黑洞的壯闊感。電影到了後段也解開為何庫柏與墨菲會遇到那些奇怪的現象，並不是單單為了推進劇情而設的橋段，同時也把劇情昇華到另一個層次，可以體會到諾蘭兄弟厲害的編劇功力。</p>
-
-<h3 id="記憶拼圖">記憶拼圖</h3>
-
-<p>《記憶拼圖》的主角藍納因為被歹徒襲擊而失去了妻子，同時也患上了「順行性失憶症」，之後的記憶只能持續幾分鐘，因而無法有新的記憶。所以藍納為了找出犯案的歹徒，除了在身上刺青之外，也用照片記錄人事物，並做下筆記來讓未來的自己能有行動的依據。這部電影同時帶有順敘與倒敘的時間線，我看到一半才意識到，原來黑白畫面是順敘，是從較早的時間點開始；彩色畫面是倒敘，是從後來的時間點開始，一段一段的回到之前的時間點。讓我感到厲害的是倒敘的處理方式，雖然是從後來的時間點往回敘事，但是每段都能帶來完整的資訊，而不是只留下謎題。而看了下一段後，對於上一段的理解又不一樣了，會有個「什麼，居然是這樣啊！」的感覺。而電影最後這兩條時間線交集在一起，同時也是真相大白的時候，當下只有震驚與讚嘆。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="心得" /><summary type="html"><![CDATA[2023 年除了在電影院看了許多電影外，也透過 Netflix 等串流平台收看了經典以及想要補齊的電影。就用這篇來整理這段時間的心得。]]></summary></entry></feed>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="Unity" /><category term="C#" /><summary type="html"><![CDATA[在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 UnityEvent 與 C# event 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 UnityEvent 與 C# event，並講解可能的問題，而下篇則會介紹利用 C# 介面做為事件介面的第三種方式。]]></summary></entry></feed>
