@@ -1,4 +1,526 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2025-06-04T23:18:00+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[開發日誌 #2] A 需要跑步但 B 只要走路</title><link href="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/" rel="alternate" type="text/html" title="[開發日誌 #2] A 需要跑步但 B 只要走路" /><published>2025-06-04T00:00:00+08:00</published><updated>2025-06-04T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-general-module</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/"><![CDATA[<p>在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2025-08-18T23:46:46+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[分享] 2025 TGDF 筆記 - CDPR 篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - CDPR 篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-01-cdpr</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/"><![CDATA[<p>今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。</p>
+
+<p><img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/pass.png" alt="參加證" /></p>
+
+<h2 id="電馭叛客-2077解碼電影動畫的祕密">《電馭叛客 2077》：解碼電影動畫的祕密</h2>
+
+<p>這場演講是 CDPR 帶來的兩場演講之一。首席電影動畫師 David Cordero Iglesias 介紹在《電馭叛客 2077》中，如何讓 NPC 更生動自然，以及更真實的第一人稱敘事運鏡，讓玩家更有沉浸感。</p>
+
+<h3 id="模擬現實互動">模擬現實互動</h3>
+
+<ul>
+  <li>減少黑幕切換
+    <ul>
+      <li>NPC 在場景中會自然對話，直到玩家進來互動後，會自然結束跟其它 NPC 的對話，並轉頭過來開始跟玩家的劇情對話</li>
+      <li>利用牆面設置位置來避免玩家看到 NPC 重置的不連續感。例如：在一個追逐從後門逃跑的 NPC 的劇情中，玩家可以選擇追上去，或是從前門繞路追上他，而 NPC 一定會在暗巷中被夥伴給攔住。利用牆面的 90 度轉角，讓玩家走過牆面後，才會看到事件發生。</li>
+      <li>但遊戲中還是會為了玩家昏厥或是醒來的情境使用黑幕</li>
+    </ul>
+  </li>
+  <li>玩家控制角色的能力可以分成四個層級，增強敘事能力
+    <ul>
+      <li>第一階：玩家可以自由控制角色</li>
+      <li>第二階：部份控制被限制。例如：搬重物時，移動速度變慢</li>
+      <li>第三階：只能移動視角，而且角度有限制。例如：被壓制在地上時</li>
+      <li>第四階：劇情控制，玩家完全無法操作</li>
+    </ul>
+  </li>
+  <li>NPC 自然動作
+    <ul>
+      <li>NPC 的動作反應這個 NPC 的個性</li>
+      <li>NPC 在等待玩家回答時，會繼續做手邊正在做的事情，例如：吃一口飯、繼續看雜誌，而不會呆呆看著你</li>
+    </ul>
+  </li>
+  <li>敘事運鏡要視野清晰
+    <ul>
+      <li>要避免 3D 暈，可以找會 3D 暈的同事來測試 :D</li>
+      <li>利用 Framing（決定什麼內容要出現在畫面中） 與 Composition（排列在畫面中的這些內容），讓玩家快速理解目前正在發生的事情。例如：在跑酷劇情下，讓手腳一部份出現在畫面中，提示動作的來源，並用攝影機的位移來呈現慣性</li>
+    </ul>
+  </li>
+  <li>身體意識
+    <ul>
+      <li>玩家坐定後，仍然可以自由移動視角，模擬現實談話人會亂看</li>
+      <li>在劇情拿槍時，攝影機會照向拿槍的手，模擬現實的視線移動</li>
+      <li>被 NPC 拉著走時，無法控制位移或是視角</li>
+    </ul>
+  </li>
+  <li>環境意識
+    <ul>
+      <li>角色會自然看向環境中可以互動的物件</li>
+      <li>在場景中也要標記這些可互動的物件，及如何互動</li>
+    </ul>
+  </li>
+  <li>手指細節
+    <ul>
+      <li>真實的手指反應，例如：把完拿取的物件，或是彈吉它時的手指行為</li>
+      <li>有一整個手指資料庫</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="動畫技術">動畫技術</h3>
+
+<ul>
+  <li>動捕很重要
+    <ul>
+      <li>自然真實的動畫源自現實的動作</li>
+      <li>即使是第一人稱視角遊戲，還是會錄玩家角色的動作</li>
+    </ul>
+  </li>
+  <li>還是有 key frame 動畫
+    <ul>
+      <li>機具行為，車輛的互動</li>
+      <li>整理動捕資料</li>
+    </ul>
+  </li>
+  <li>提供跨軟體平台的整合資料庫
+    <ul>
+      <li>動畫師可以自由選擇製作的動畫軟體</li>
+    </ul>
+  </li>
+  <li>動畫類型可以分成待機動作（Idle Animation）與象徵動作（Gesture Animation）
+    <ul>
+      <li>以抽煙來說，待機動作是拿著煙，而象徵動作則可以是吸一口煙或是丟煙等動作</li>
+      <li>動作之間也會設定轉換（Transition）</li>
+      <li>也有完全設定好的客制動畫，例如：彈吉他、劇情用動畫</li>
+      <li>在《電馭叛客 2077》中有七千多個待機動作，三萬五千多個象徵作，以及更多的動畫轉換</li>
+    </ul>
+  </li>
+  <li>有內部工具來管理與編輯動畫的轉換
+    <ul>
+      <li>角色的動畫為 workspot，編輯工具可以設置轉換條件與觸發來效果</li>
+      <li>workspot 之間的互動也可以編輯，例如：兩個 NPC 在聊天時的動作</li>
+      <li>在開放世界中，讓 workspot 自行決定要做的事情，讓玩家經過同一個地方時，NPC 的行為也會不一樣</li>
+      <li>在劇情場景中，workspot 可以在玩家回答前，自由播放待機動畫，使 NPC 更自然</li>
+    </ul>
+  </li>
+  <li>臉部動畫也有對應的待機動作及象徵動作
+    <ul>
+      <li>對於有真實演員的 NPC，也會把臉部變化（如皺紋）key frame 進去</li>
+    </ul>
+  </li>
+  <li>嘴型會隨輸入聲音變化，不同語言的語音會呈現不同嘴型</li>
+</ul>
+
+<h3 id="劇情動畫製作流程">劇情動畫製作流程</h3>
+
+<ol>
+  <li>分鏡：簡單場景設置與運鏡來驗證劇情動畫的觸發流程</li>
+  <li>動捕：分段拍攝劇情所需的動畫</li>
+  <li>Alpha：直接把動捕資料套入場景中並加入運鏡</li>
+  <li>Beta：消除鏡頭過度晃動，套入 IK 並跟場景物件互動</li>
+  <li>加入失敗動畫，如 QTE 失敗後的結果</li>
+</ol>
+
+<h2 id="解鎖隱藏價值cdpr-式最終產品背後的-ux">解鎖隱藏價值：CDPR 式「最終產品背後的 UX」</h2>
+
+<p>CDPR 的第二場演講則是以內部工具的 UX 體驗為主題，資深 UX/UI 設計師 Anna Nojek 認為，有好的內部開發工具，能讓開發人員能有好的開發體驗，進而能開發出好的遊戲。</p>
+
+<h3 id="好的開發環境造就好的遊戲體驗">好的開發環境造就好的遊戲體驗</h3>
+
+<ul>
+  <li>讓玩家能享受遊戲的要素很多，像是故事、玩法、挑戰性等，但對開發者來說讓玩家能享受遊戲的要素是來自好的開發體驗。以開發體驗為優先，能讓開發者發揮能力，最後做出好的遊戲體驗。</li>
+  <li>以往開發環境的問題
+    <ul>
+      <li>資源及知識過於分散：asset 散佈在不同平台且不同格式，要找一個 asset 很困難</li>
+      <li>資訊透明度差：大家各自做各自的</li>
+      <li>客制的開發流程：鎖碎及複雜的開發流程，甚至佔了開發 50% 的時間</li>
+      <li>過度依賴其它人：如果一個人卡住了，其它人也不能做事</li>
+      <li>只專注在功能：開發工具的人不熟使用者的習慣，只專注在實作功能上，讓工具不好使用</li>
+    </ul>
+  </li>
+  <li>當開發者面臨的問題沒有解決的話，會感到挫折，讓作品延期、容易出 bug，甚至感到心累，最後產出不好玩的遊戲</li>
+</ul>
+
+<h3 id="了解問題">了解問題</h3>
+
+<ul>
+  <li>製作工具先暫時處理問題，再改善解法
+    <ul>
+      <li>情境：企劃要找一個素材得要問一堆人才找的到</li>
+      <li>暫時解法：開一個共用的 excel 表單，請製作人員匯出素材時，去更新表單的狀態</li>
+      <li>長期解法：製作人員匯出素材後，自動更新資料庫</li>
+      <li>暫時解法得由人工操作，但可以暫時解決企劃要依賴他人的問題。而長期解法則是自動化，是改善後的解法，一樣解決依賴問題，也讓製作人員不用手動更新</li>
+      <li>會先有暫時解法，等待時機成熟後，再實作長期解法</li>
+    </ul>
+  </li>
+  <li>開發出內部用的素材管理工具：Asset Hive
+    <ul>
+      <li>支援集中管理，能搜尋、複用、預覽素材的工具</li>
+    </ul>
+  </li>
+  <li>工具是提供問題的解法，但如果不了解問題，則作出工具也不能解決
+    <ul>
+      <li>要去了解、觀察、討論才能知道真正的問題所在</li>
+      <li>也不要只追隨請求，而是問為何需要這個請求</li>
+      <li>當有人傾聽別人的請求時，別人也會更有動力，且更積極</li>
+    </ul>
+  </li>
+  <li>作出好的工具讓開發人員能專注在創造工作，改善遊戲成品。透過使用體驗回報，也能培養反饋與支援的氛圍</li>
+</ul>
+
+<h3 id="工具與-ux">工具與 UX</h3>
+
+<ul>
+  <li>UX 是為了簡化執行某個特別任務的手段</li>
+  <li>UX 開發流程，每個階段都有機會退回上個階段
+    <ol>
+      <li>有人提出問題</li>
+      <li>討論、分析、面談問題</li>
+      <li>設計工具需要的功能有什麼</li>
+      <li>測試</li>
+      <li>設計介面</li>
+      <li>測試</li>
+      <li>交由工程人員開發功能</li>
+      <li>測試</li>
+    </ol>
+  </li>
+  <li>以使用者為中心的溝通
+    <ul>
+      <li>同理心地圖（Empathy Map）：展示使用者在使用工具時的想法、行為、言論、感受</li>
+      <li>使用者體驗地圖（User Journey Map）：展示使用者在使用工具達成任務時的使用流程，並標示每個階段的情緒、優缺點，以及如何改善</li>
+    </ul>
+  </li>
+  <li>省下來的時間 = 原本所需要的時間 - 改善後的時間 - 開發工具所需要的時間</li>
+  <li>UX 與所有人相關
+    <ul>
+      <li>團隊的製程：製程的架構流程</li>
+      <li>明確的目標：什麼樣的目標才算成功/完成</li>
+      <li>透明度與反饋回圈：工具一定是持續迭代的過程</li>
+    </ul>
+  </li>
+  <li>回到一開始的問題：是什麼要素讓玩家能享受遊戲? 所有創作遊戲的人</li>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 遊戲設計篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 遊戲設計篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-03-game-design</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/"><![CDATA[<p>這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。</p>
+
+<h2 id="當敵人先出剪刀淺談戰鬥關卡設計的四個層級與選擇引導">當敵人先出剪刀：淺談戰鬥關卡設計的四個層級與選擇引導</h2>
+
+<p>侍達遊戲的戰鬥設計部主管帶來的這場演講，介紹如何設計遊戲中的戰鬥，讓玩家有跡可遁而能做出對應的策略。</p>
+
+<ul>
+  <li>什麼是戰鬥設計？
+    <ul>
+      <li>戰鬥是什麼？是勝負，像是擊敗敵人、審判攻防，甚至克服地形也可以是戰鬥</li>
+      <li>設計是什麼？有資訊讓玩家判斷如何贏，以及有對錯，玩家有輸的風險，答對則讓玩家有成就感</li>
+    </ul>
+  </li>
+  <li>以剪刀石頭布為例：
+    <ul>
+      <li>1/3 隨機出拳 → 玩家不知道如何對應，不是設計</li>
+      <li>看到敵人要出剪刀 → 玩家可以選擇出石頭，是設計</li>
+      <li>看到敵人要出剪刀，但敵人很狡猾 → 玩家可以改出剪刀，是設計</li>
+    </ul>
+  </li>
+  <li>所以戰鬥設計是：有勝負、有資訊（判斷他要做什麼）、有對錯（知道什麼選擇是對的）</li>
+  <li>戰鬥設計的四個層級
+    <ul>
+      <li>設計什麼：想像力是你的超能力
+        <ul>
+          <li>把非戰鬥情境變成戰鬥情境</li>
+          <li>選定戰鬥主題，例如：「按摩」</li>
+        </ul>
+      </li>
+      <li>如何設計：如何表現「按摩」的戰鬥
+        <ul>
+          <li>按摩要合適的力道 → 傷害要恰當 → 每回合的傷害控制</li>
+        </ul>
+      </li>
+      <li>玩法打磨：以提問建構內容
+        <ul>
+          <li>如何判斷按摩力道？傷害區間</li>
+          <li>玩家如何知道要控制力道？敵人說教，傷害太高 → 按太大力 → 「太痛了吧！」</li>
+          <li>玩家如何知道具體區間？包裝成管家指南，指示傷害值對應的力道</li>
+          <li>被按摩者會攻擊嗎？不會，現實中被按摩的人也不會打按摩師</li>
+          <li>但確立核心要避免機械解法，要避免讓玩家一直以 10% 傷害攻擊
+            <ul>
+              <li>要讓核心有變化</li>
+              <li>代入現實體驗，痠的地方要按的力一點</li>
+              <li>再發展成機制，加入傷害 buff，所以傷害要高一點</li>
+            </ul>
+          </li>
+          <li>答對能對敵人造成傷害，但答錯要如何懲罰？
+            <ul>
+              <li>錯三次才會失敗，但是有漏洞</li>
+              <li>玩家可以打兩次大傷害，再打一個成功的傷害 → 修正：打太大力直接失敗</li>
+              <li>打太小，慢慢打完 → 回合限制及每回合回血</li>
+            </ul>
+          </li>
+          <li>強制完家每次都要控傷害</li>
+        </ul>
+      </li>
+      <li>驗證 × 觀察 × 修正
+        <ul>
+          <li>正向測試：以預期方式去測，看有無符合預期</li>
+          <li>反向測試：以預期外方式去測，看要不要修漏洞</li>
+          <li>觀察：體驗不如預期時，先記錄感受，不要提示及反駁</li>
+          <li>分析修正：整理問題，思考原因，並改善</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>玩家體驗是準則，如果不符預期，就要改變設計</li>
+</ul>
+
+<h2 id="patricks-parabox的解謎設計挑戰">《Patrick’s Parabox》的解謎設計挑戰</h2>
+
+<p>《Patrick’s Parabox》是一款以遞迴為主題的解謎遊戲，講者 Patrick Traynor 分享開發過程中遇到的困難，以及如何精煉關卡，讓玩家在解題過程中能一直得到新鮮感。</p>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/HAvS-RwkjdA" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<ul>
+  <li>動機：我有個很酷的系統想秀給朋友看，及玩家想看酷系統如何發揮</li>
+  <li>核心系統：遞迴與自我參照</li>
+  <li>花了四年的時間迭代遊戲玩法
+    <ul>
+      <li>一開始是兩人的倉庫番解謎，但兩人玩家在不同的尺度下運作</li>
+      <li>變成三人的倉庫番解謎，且尺度更多層</li>
+      <li>改成單人，而且玩家自己可以穿越不同的尺度</li>
+      <li>不同的尺度間都有個自己，而且尺度空間是一樣的（就像俄羅斯娃娃），只要移動，不同尺度的自己都會移動</li>
+    </ul>
+  </li>
+  <li>如果觸發悖論要怎麼辦？
+    <ul>
+      <li>直接設計一個悖論發生場景，而且不能再回原來的場景</li>
+      <li>等同於跟玩家說你贏了！比起不能發生還要更好</li>
+      <li>而且還可以用悖論做為機制來設計新關卡</li>
+    </ul>
+  </li>
+  <li>背景音樂符合關卡的調性，音效也很重要</li>
+  <li>關卡設計
+    <ul>
+      <li>玩家是來玩機制的！</li>
+      <li>專注在機制上，<strong>簡單</strong>，不混合大量不同機制，也不堆疊謎題難度
+        <ul>
+          <li>玩家是來玩遞迴的謎題，而不是很難走出去的迷宮</li>
+          <li>設計者覺得很棒，但是困難的關卡可以放在支線關卡中，讓玩家可跳過，想挑戰的人可以去玩</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>在新機制出現時，先放直覺的教學關來教玩家機制，才放真的想讓玩家玩的關卡及支線關卡</li>
+  <li>刪除不好的關卡也很重要！
+    <ul>
+      <li>遊戲中一共有 364 個關卡，但也有 600 多個沒用上的關卡</li>
+      <li>持續試錯，找到最好的謎題</li>
+    </ul>
+  </li>
+  <li>幫助思考的法則
+    <ul>
+      <li>夠自然嗎？</li>
+      <li>要多少關卡才有樂趣？</li>
+      <li>做關卡簡單嗎？</li>
+      <li>夠豐富嗎？能做越少得越多嗎？</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="玩音樂節奏遊戲之外的更多可能">玩音樂：節奏遊戲之外的更多可能</h2>
+
+<p>這場演講是線上日的議程之一（<a href="https://www.twitch.tv/videos/2511224346?t=03h53m14s">Twitch 連結</a>），身為一名節奏遊戲的愛好者，所以也對這場演講很有興趣。講者 Ferran 擁有豐富的音樂遊戲開發經驗，對這類遊戲的研究也很有經驗，分享音樂遊戲不只有節奏遊戲，還有更多的探索方向。</p>
+
+<ul>
+  <li>雖然電玩的英文是「Video Game」，但音樂也一直存在在電玩遊戲之中</li>
+  <li>聲音場景（Soundscape）：背景音樂 + 音效</li>
+  <li>音樂遊戲一開始想到的就是「節奏遊戲」
+    <ul>
+      <li>在正確的時間按下正確的按鍵</li>
+      <li>再來有下落式，甚至跳脫按鍵，以觸控為主</li>
+      <li>除了手指之外，這有全身舞動的玩法</li>
+      <li>後來發展越來展多元，將節奏遊戲與不同遊戲類型結合，像結合彈幕的《Just Shape &amp; Beats》、結合策略的《Patapon》</li>
+      <li>甚至強調格檔的動作遊戲也可以是節奏遊戲，如《九日》</li>
+    </ul>
+  </li>
+  <li>節奏遊戲可以算是動作遊戲的一類，是即時的、需要配合時機</li>
+  <li>但音樂不只有「節奏」，音樂遊戲不是只有節奏遊戲，如《Ape Out》猩猩角色的動作會影響音樂的組成</li>
+  <li>而且音樂也不只是「背景」，如：瑪利歐 wii 版，敵人會隨音樂反應，是世界的一部份</li>
+  <li>不止節奏
+    <ul>
+      <li>用玩具形式「創作」出一首音樂，如《ODDADA》、《Poly-60》</li>
+      <li>探索弦律線
+        <ul>
+          <li>玩家可以自由創造弦律，而遊戲會配合弦律演奏，如《Wii Music》的 Instrument Improv 模式</li>
+          <li>非同步錄製，玩家只能演奏一個樂器，然後跟其它人合，如《10 Second Mixtape》</li>
+        </ul>
+      </li>
+      <li>探索和聲，在基礎弦律上找出正確和聲，如《Blob Opera》、《Pianobots》</li>
+      <li>探索歌詞，即時選擇歌詞，遊戲隨選擇演唱，如《Kentucky Route Zero》的第三幕、《Evergreen Blues》</li>
+      <li>互動式音樂專輯，每首歌是一個互動小遊戲，如《Off-Score: A game of songs》</li>
+    </ul>
+  </li>
+  <li>遊戲是互動媒體，讓玩家可以玩你的音樂，而且音樂不只有節奏</li>
+  <li>如果遊戲中有音樂的話
+    <ul>
+      <li>越早加入越好（包含音效），讓音樂能激發靈感，也可以讓早期遊戲像個遊戲</li>
+      <li>讓遊戲會對音樂互動</li>
+    </ul>
+  </li>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 九日篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 九日篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-02-nine-sols</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/"><![CDATA[<p>今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。</p>
+
+<h2 id="兩年的噩夢找尋九日類隻狼系統的誕生">兩年的噩夢找尋，九日類隻狼系統的誕生</h2>
+
+<p>這場分享《九日》是如何找到現在的類隻狼玩法，要找到突破點花了相當多的時間，其中的過程也很辛苦。</p>
+
+<ul>
+  <li>世界觀設定
+    <ul>
+      <li>「道龐克」</li>
+      <li>一個太陽對九個太陽的復仇</li>
+      <li>外星人來到地球留下了道教科技與故事</li>
+    </ul>
+  </li>
+  <li>想到以動作加上銀河戰士的玩法
+    <ul>
+      <li>九個太陽所在的九個區域對應他們各自的設定</li>
+    </ul>
+  </li>
+  <li>八個月就完成有基本玩法與畫面的「Hollow Cat」</li>
+  <li>但為了避免 Hollow Knight 感花了一陣子，也打掉第一版，並重新思考機制
+    <ul>
+      <li>2D 版隻狼？但慢節奏、沒 Y 軸戰鬥、沒平台挑戰</li>
+      <li>參考《Katana Zero》為了要快節奏，不加入對峙，也沒有體幹值</li>
+      <li>想要有平台挑戰，加入空中格擋</li>
+      <li>但如《Katana Zero》的快節奏，敵人看一兩次就被打倒，與隻狼要對招一兩次所帶來的深度不同</li>
+    </ul>
+  </li>
+  <li>又回到類銀河的玩法上，但把體幹值改成點數制
+    <ul>
+      <li>要格擋才有氣能貼符</li>
+      <li>為了避免等格擋時機而太被動，加入普攻來算節奏</li>
+      <li>為了以格擋為主，普攻的攻擊力比貼符還要低很多</li>
+      <li>避免一直按普攻，普攻三連擊的第三下無法直接進入格擋</li>
+      <li>敵人被普攻打中後，會減攻擊 cd，讓敵人更容易主動攻擊，來讓玩家有機會格擋</li>
+    </ul>
+  </li>
+  <li>加入潛行？
+    <ul>
+      <li>2D 畫面視野很小，而且角色動很快不適合潛行，而且每個敵人也要設計暗殺動畫</li>
+      <li>最後改成「背襲」</li>
+      <li>但關卡還是有潛行的設計，如被電之後行動不便，只能潛行</li>
+    </ul>
+  </li>
+  <li>貼符的體驗
+    <ul>
+      <li>貼符到懸崖邊會自動停住，避免瞬移距離過長而掉落</li>
+      <li>在地面貼符時，會先瞬步到敵人前再貼符，再繼續瞬步一段距離，但是在空中貼符則會直接貼</li>
+    </ul>
+  </li>
+  <li>把技能樹當教學用
+    <ul>
+      <li>例如：點了背襲技能，知道可以背襲</li>
+    </ul>
+  </li>
+  <li>大家對技能功效有不同的想像，有人想加有人不想，做成玉石系統來讓玩家自已選</li>
+  <li>如何知道找到醬汁了？成功讓玩家想要一做再做</li>
+</ul>
+
+<h2 id="九日戰鬥設計雜談">《九日》戰鬥設計雜談</h2>
+
+<p>這場一樣有分享到《九日》開案時的構想，並且著重在怪物行為的設計，以及攻擊模式的小技巧，讓戰鬥更豐富。</p>
+
+<ul>
+  <li>開案起源
+    <ul>
+      <li>《返校》跟《還願》還是以華語圈為主，新作方向能否打入歐美市場？</li>
+      <li>以玩法為核心能否有文化穿透力？像《Dead Cells》跟《Hollow Knight》</li>
+    </ul>
+  </li>
+  <li>參考《Hollow Knight》，但是不是只能做出劣化版的《Hollow Knight》</li>
+  <li>風格找尋：<br />
+<img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/nine-sols-style-coordinate.svg" alt="nine-sols-style-coordinate" />
+    <ul>
+      <li>當然在 2D 以格擋為主的風格下，還是有其它遊戲</li>
+    </ul>
+  </li>
+  <li>以格擋為主，所以要引導玩家用格擋
+    <ul>
+      <li>普攻傷害低，貼符有大傷害 ← 要格擋才有氣能貼符</li>
+    </ul>
+  </li>
+  <li>怪物製作流程，實際執行時沒有清楚細分步驟，但為了演講還是整理出大致統程
+    <ol>
+      <li>前期溝通：確定怪物定位，如：難度、外貌、參考對象</li>
+      <li>灰盒驗證：設計戰鬥的 fantasy（要帶來什麼樣的感覺）
+        <ul>
+          <li>讓玩家要用什麼 pattern 來對應</li>
+          <li>Boss 攻擊前的動作能不能讓玩家找到對招時機</li>
+          <li>這時就會在 animation clip 上做怪物行為</li>
+        </ul>
+      </li>
+      <li>美術原型：在 animation clip 上套皮，看感覺</li>
+      <li>程式美術整合：在套皮後重調數值，再看感覺</li>
+      <li>內部測試：內部回饋、改善</li>
+      <li>後期：套音效、特效</li>
+      <li>外測：玩家公開測試</li>
+    </ol>
+  </li>
+  <li>在量產期會做前五個步驟，但是在打磨階段才會做後期與外測</li>
+  <li>戰鬥難，讓玩家克服時有成就感，感覺「原來我可以做到」</li>
+  <li>怪的攻擊有一定節奏，但是後期怪的攻擊脫離前面的節奏會帶來難度，也會有新奇感</li>
+  <li>一些攻擊模式的技巧
+    <ul>
+      <li>利用位移來做攻擊前置動作，如：水鬼</li>
+      <li>過身：攻擊時，怪物會穿過玩家到另一邊</li>
+      <li>脫手攻擊：出招後，那招會延遲攻擊（如：緩慢的投射物），讓怪物可以再開其它招</li>
+      <li>以預期讓玩家的輸入 pattern 來設計招式</li>
+      <li>玩家一直按格擋會縮段精準格擋的窗口</li>
+      <li>終結技可以輸出大傷害，作為獎勵
+        <ul>
+          <li>boss 打完一輪的休息窗口，讓玩家可以輸出大量傷害</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="為九日而研發的狀態機架構monofsm">為《九日》而研發的狀態機架構《MonoFSM》</h2>
+
+<p>最近在開發上在煩惱角色狀態機的設計，所以這場也是有興趣的演講之一。演講主要圍繞在 MonoFSM 為什麼會誕生，雖然沒有著墨太多技術上的細節，但是在製作 prototype 時的經驗分享也很受用。</p>
+
+<ul>
+  <li>第一階段為了開發要快而硬 A，使出戰術龍捲風！
+    <ul>
+      <li>但當內容一多就開始 A 不動，程式碼耦合重、bug 不好修，而且很難加入新功能</li>
+    </ul>
+  </li>
+  <li>遊戲開發架構金字塔由底層到塔頂依序為：
+    <ul>
+      <li>引擎：開發使用的遊戲引擎</li>
+      <li>系統：為遊戲功能開發的功能</li>
+      <li>資料：功能所需要的設定、數值、素材等</li>
+      <li>設計：遊戲玩法、功能、行為等</li>
+      <li>體驗：遊戲給玩家的殘體驗</li>
+    </ul>
+  </li>
+  <li>而戰術龍捲風就是把系統、資料、設計全部混在一起做</li>
+  <li>第二階段開始把資料抽離出來，利用 animation clip 來綁定動畫及開關元件或事件（絕對不要用 Event 來開關）
+    <ul>
+      <li>好處是可以在同一個地方編輯動畫及事件，也可以視覺化資料</li>
+    </ul>
+  </li>
+  <li>到量產期後發現需要重新設計架構
+    <ul>
+      <li>參考 visual scripting 把邏輯跟系統分離</li>
+      <li>要支援 prefab</li>
+      <li>可以通用的 FSM 設計</li>
+    </ul>
+  </li>
+  <li>用 MonoBehaviour 來描述狀態與狀態轉換，且基於 prefab 的 MonoFSM 誕生了
+    <ul>
+      <li>在 Hierarchy 顯示 FSM 的狀態及相關變數的數值</li>
+      <li>Per-instance Debugging：可以以 GameObject 為單位來 debug，不用在程式碼中寫 debug 訊息</li>
+    </ul>
+  </li>
+  <li>漸近重構
+    <ul>
+      <li>實驗期：在小地方嘗試，先展現價值</li>
+      <li>推動期：新內容用新規格作。舊的東西有 bug 或想調整太難做的話，也替換成新架構</li>
+      <li>能動的東西就不要改!</li>
+    </ul>
+  </li>
+  <li>團隊應該集中在「遊戲體驗」上，作工具就是為了加速迭代</li>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。]]></summary></entry><entry><title type="html">[開發日誌 #2] A 需要跑步但 B 只要走路</title><link href="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/" rel="alternate" type="text/html" title="[開發日誌 #2] A 需要跑步但 B 只要走路" /><published>2025-06-04T00:00:00+08:00</published><updated>2025-06-04T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-general-module</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/"><![CDATA[<p>在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。</p>
 
 <h2 id="通用模組的問題">通用模組的問題</h2>
 
@@ -535,537 +1057,4 @@
 <p>喜歡獨立遊戲的話，BitSummit 非常值得來逛一次，可以感受到來自世界各地的開發者的熱情，很有「祭典」的氛圍。會後也公布了 2025 年的 BitSummit 在 7/18 ~ 7/20 舉辦，副標題為「XIII」，也呼應下一次是第十三屆。而這時間也恰逢日本三大祭之一「祇園祭」的期間，有機會的話，不妨安排一趟京都之旅。</p>
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">HOT NEWS (literally)<br /><br />BitSummit XIII⛩️<br />July 18, 19, 20, 2025<br /><br />SAVE THE DATES! <br /><br />SEE YOU NEXT YEAR EVERYONE &lt;3 <a href="https://t.co/1JnvSuTwxI">pic.twitter.com/1JnvSuTwxI</a></p>&mdash; BitSummit (@BitSummit) <a href="https://twitter.com/BitSummit/status/1814944601741939104?ref_src=twsrc%5Etfw">July 21, 2024</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="遊記" /><category term="遊戲展" /><summary type="html"><![CDATA[去年 9 月逛了東京電玩展之後，就決定今年要來日本最大的獨立遊戲展ーBitSummit。BitSummit 每年夏天固定在京都市勸業館舉辦，為期三天，吸引世界各地的開發者與發行商來參加。而今年舉辦在 7/19 ~ 7/21（第一天為商務日），副標題為「Drift」。]]></summary></entry><entry><title type="html">[閱讀] 布莉琪．柯林斯《裝幀師》</title><link href="https://lankudot.airfishlab.com/blog/2024-07-the-binding/" rel="alternate" type="text/html" title="[閱讀] 布莉琪．柯林斯《裝幀師》" /><published>2024-07-07T00:00:00+08:00</published><updated>2024-07-07T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-binding</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-07-the-binding/"><![CDATA[<p>當回憶可以被「裝幀」到書中，自此忘卻這段痛苦的經歷，從而開始新的人生，對一個人來說或許是救贖。但如果被有心人用來裝幀受害者的回憶，抑或是這些不想記起的回憶成為收藏家的玩物時，這童話故事般的能力對被裝幀的人來說是慈悲與救贖，還是自私與痛苦。</p>
-
-<p><img src="/assets/images/blog/2024/2024-07-07-the-binding/cover-image.jpg" alt="cover-image" /></p>
-
-<p>主角艾墨特天生擁有裝幀師的能力，但是生長的地方卻把書視為詛咒之物，碰到書只有挨打的份。然而艾墨特生了一場重病，才發現患有「裝幀師熱」，家人在萬般不願意之下，只能將他送到裝幀所當學老裝幀師ー瑟芮狄絲ー的學徒。雖然艾墨特在成為學徒後，症狀逐漸改善，瑟芮狄絲卻遲遲不教導他關於「裝幀」的技術。隨著日子推移，艾墨特發病時會夢到的景象也越來越清晰，然而卻發現這個夢似乎是解答自己遭遇的關鍵，這背後隱藏著更大的事件。</p>
-
-<p>一個故事讓人想要繼續閱讀，就是因為有許多問號等著解答。在知道解答時，會有種「原來是這樣啊」的感覺，但《裝幀師》在解答問題的時候，則是讓人有「什麼！居然是這樣」的感覺。意識到原來前面只知道真相的一半，對劇情的認知是錯的，每個人物看似平常的行為，其實背後都是有原因的。當初進入解答的篇章時，還一直來回對照前面的劇情，看得速度也越來越快，就是希望快點知道整個事件的全貌。</p>
-
-<p>《裝幀師》故事分成三個篇章，鋪陳與事件篇、解答篇、解決篇，個人覺得解答篇是全書的高潮，但進入解答篇之前放的劇情高點更是畫龍點睛，從這裡才意識到「有什麼認真的要來了」。而解決篇也很有趣，是從另一個人的觀點繼續把故事延續下去，同時也在收束前面的伏筆。在看之前，原本以為《裝幀師》是奇幻故事，看了才發現是一個充滿人心黑暗的故事。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="閱讀" /><category term="心得" /><summary type="html"><![CDATA[當回憶可以被「裝幀」到書中，自此忘卻這段痛苦的經歷，從而開始新的人生，對一個人來說或許是救贖。但如果被有心人用來裝幀受害者的回憶，抑或是這些不想記起的回憶成為收藏家的玩物時，這童話故事般的能力對被裝幀的人來說是慈悲與救贖，還是自私與痛苦。]]></summary></entry><entry><title type="html">[Unity] 事件訂閱與問題（下）- C# 介面</title><link href="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/" rel="alternate" type="text/html" title="[Unity] 事件訂閱與問題（下）- C# 介面" /><published>2024-04-13T00:00:00+08:00</published><updated>2024-04-13T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/unity-event-subscription-and-problem-2</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/"><![CDATA[<p>本篇繼續<a href="/blog/2024-04-unity-event-subscription-and-problem-1/">上一篇</a>的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。</p>
-
-<h2 id="c-介面">C# 介面</h2>
-
-<p>使用 C# 介面讓物件提供事件的處理函式，並把物件註冊到事件系統上以訂閱事件。在 Unity 的 <code class="language-plaintext highlighter-rouge">EventSystems</code> 中就是使用 C# 介面讓物件訂閱操作事件。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">UIPuzzleImage</span> <span class="p">:</span> <span class="n">MonoBehaviour</span><span class="p">,</span>
-    <span class="n">IBeginDragHandler</span><span class="p">,</span> <span class="n">IDragHandler</span><span class="p">,</span> <span class="n">IEndDragHandler</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">OnBeginDrag</span><span class="p">(</span><span class="n">PointerEventData</span> <span class="n">data</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnBeginDrag"</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">OnDrag</span><span class="p">(</span><span class="n">PointerEventData</span> <span class="n">data</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnDrag"</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">OnEndDrag</span><span class="p">(</span><span class="n">PointerEventData</span> <span class="n">data</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnEndDrag"</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="實作事件系統">實作事件系統</h3>
-
-<p>使用 C# 介面做為事件訂閱的方式，還需要自行管理訂閱的物件，以觸發事件。這邊使用 <code class="language-plaintext highlighter-rouge">HashSet</code> 來儲存訂閱的物件，好處是就算物件重複訂閱，在 <code class="language-plaintext highlighter-rouge">HashSet</code> 中也不會出現兩個物件。而且如果有需要，還可以先檢查該物件有沒有先訂閱了，而輸出警告訊息甚至是 exception。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">interface</span> <span class="nc">ILevelEventHandler</span>
-<span class="p">{</span>
-    <span class="k">void</span> <span class="nf">OnLevelStart</span><span class="p">();</span>
-<span class="p">}</span>
-
-<span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">static</span> <span class="n">LevelManager</span> <span class="n">Instance</span><span class="p">;</span>
-
-    <span class="k">private</span> <span class="k">readonly</span> <span class="n">HashSet</span><span class="p">&lt;</span><span class="n">ILevelEventHandler</span><span class="p">&gt;</span> <span class="n">_levelEventHandlers</span> <span class="p">=</span> <span class="k">new</span> <span class="p">();</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">Awake</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">Instance</span> <span class="p">=</span> <span class="k">this</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">SubscribeLevelEvent</span><span class="p">(</span><span class="n">ILevelEventHandler</span> <span class="n">handler</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="c1">// 也可不檢查</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">_levelEventHandlers</span><span class="p">.</span><span class="nf">Contains</span><span class="p">(</span><span class="n">handler</span><span class="p">))</span>
-        <span class="p">{</span>
-            <span class="n">Debug</span><span class="p">.</span><span class="nf">Warning</span><span class="p">(</span><span class="s">$"</span><span class="p">{</span><span class="n">handler</span><span class="p">}</span><span class="s"> 已經被註冊過了"</span><span class="p">);</span>
-            <span class="k">return</span><span class="p">;</span>
-        <span class="p">}</span>
-
-        <span class="n">_levelEventHandlers</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="n">handler</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">UnsubscribeLevelEvent</span><span class="p">(</span><span class="n">ILevelEventHandler</span> <span class="n">handler</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">_levelEventHandlers</span><span class="p">.</span><span class="nf">Remove</span><span class="p">(</span><span class="n">handler</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">LevelStart</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">handler</span> <span class="k">in</span> <span class="n">_levelEventHandlers</span><span class="p">)</span>
-            <span class="n">handler</span><span class="p">.</span><span class="nf">OnLevelStart</span><span class="p">();</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>而用 C# 介面訂閱事件的優點是不能用匿名函式訂閱事件，一定要是物件中明確實作的函式。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">Enemy</span> <span class="p">:</span> <span class="n">MonoBehaviour</span><span class="p">,</span> <span class="n">ILevelEventHandler</span>
-<span class="p">{</span>
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="nf">SubscribeLevelEvent</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnDestory</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="nf">UnsubscribeLevelEvent</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="c1">// 明確介面實作，讓事件函式只能透過 ILevelEventHandler 介面呼叫</span>
-    <span class="k">void</span> <span class="n">ILevelEventHandler</span><span class="p">.</span><span class="nf">OnLevelStart</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnLevelStart"</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="c-介面的問題">C# 介面的問題</h3>
-
-<h4 id="讓訂閱物件提供過多的-public-函式">讓訂閱物件提供過多的 <code class="language-plaintext highlighter-rouge">public</code> 函式</h4>
-
-<p>會發現使用介面可能會讓物件提供過多的 <code class="language-plaintext highlighter-rouge">public</code> 函式，但是可以透過明確介面實作，讓實作的介面函式，只能透過介面型別呼叫。要注意在明確介面實作中，實作的函式是沒有 <code class="language-plaintext highlighter-rouge">public</code> 的。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">UIPuzzleImage</span> <span class="p">:</span> <span class="n">MonoBehaviour</span><span class="p">,</span>
-    <span class="n">IBeginDragHandler</span><span class="p">,</span> <span class="n">IDragHandler</span><span class="p">,</span> <span class="n">IEndDragHandler</span>
-<span class="p">{</span>
-    <span class="k">void</span> <span class="n">IBeginDragHandler</span><span class="p">.</span><span class="nf">OnBeginDrag</span><span class="p">(</span><span class="n">PointerEventData</span> <span class="n">data</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnBeginDrag"</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="k">void</span> <span class="n">IDragHandler</span><span class="p">.</span><span class="nf">OnDrag</span><span class="p">(</span><span class="n">PointerEventData</span> <span class="n">data</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnDrag"</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="k">void</span> <span class="n">IEndDragHandler</span><span class="p">.</span><span class="nf">OnEndDrag</span><span class="p">(</span><span class="n">PointerEventData</span> <span class="n">data</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnEndDrag"</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="k">public</span> <span class="k">class</span> <span class="nc">SomeClass</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span>
-    <span class="k">private</span> <span class="n">UIPuzzleImage</span> <span class="n">_puzzleImage</span><span class="p">;</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">SomeFunc</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="c1">// Error</span>
-        <span class="c1">//_puzzleImage.OnDrag(null);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h2 id="事件觸發測試">事件觸發測試</h2>
-
-<p>以下在 Unity 中，以生成 1000 個物件測試觸發事件時的秏時。測試方式為一次觸發事件 10 次，取平均運行時間。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">private</span> <span class="n">StopWatch</span> <span class="n">_stopWatch</span> <span class="p">=</span> <span class="k">new</span> <span class="p">();</span>
-
-<span class="k">public</span> <span class="k">void</span> <span class="nf">InvokeEvent</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="kt">var</span> <span class="n">ticks</span> <span class="p">=</span> <span class="m">0L</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">var</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="m">10</span><span class="p">;</span> <span class="p">++</span><span class="n">i</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">_stopWatch</span><span class="p">.</span><span class="nf">Restart</span><span class="p">();</span>
-        <span class="c1">// 如果是 C# 介面則用 foreach 去逐個觸發事件</span>
-        <span class="n">_onEvent</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">();</span>
-        <span class="n">_stopWatch</span><span class="p">.</span><span class="nf">Stop</span><span class="p">();</span>
-        <span class="n">ticks</span> <span class="p">+=</span> <span class="n">_stopWatch</span><span class="p">.</span><span class="n">ElapsedTicks</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">$"</span><span class="p">{</span><span class="n">ticks</span> <span class="p">/</span> <span class="m">10f</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>而首次執行中，因為 JIT 編譯器要轉換 IL 成可執行的機器碼，所以會比較花時間，因此分別列出：</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center"> </th>
-      <th style="text-align: center">[在編輯器]<br />首次執行</th>
-      <th style="text-align: center">[在編輯器]<br />首次之後</th>
-      <th style="text-align: center">[執行檔]<br />首次執行</th>
-      <th style="text-align: center">[執行檔]<br />首次之後</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">UnityEvent</code></td>
-      <td style="text-align: center">257.7 ticks</td>
-      <td style="text-align: center">175.5 ticks</td>
-      <td style="text-align: center">248.4 ticks</td>
-      <td style="text-align: center">153.4 ticks</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">C# <code class="language-plaintext highlighter-rouge">event</code></td>
-      <td style="text-align: center">127.3 ticks</td>
-      <td style="text-align: center">31.2 ticks</td>
-      <td style="text-align: center">194.2 ticks</td>
-      <td style="text-align: center">28.7 ticks</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">C# 介面</td>
-      <td style="text-align: center">150.9 ticks</td>
-      <td style="text-align: center">35.1 ticks</td>
-      <td style="text-align: center">260 ticks</td>
-      <td style="text-align: center">32.9 ticks</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>可以發現除了在執行檔中，第一次執行時，C# 介面會比較慢之外，執行的速度由快到慢為：C# <code class="language-plaintext highlighter-rouge">event</code>、C# 介面、<code class="language-plaintext highlighter-rouge">UnityEvent</code>。</p>
-
-<h2 id="總結">總結</h2>
-
-<p>整理這三種訂閱事件方式的問題比較表：</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center"> </th>
-      <th style="text-align: center">過多<br /><code class="language-plaintext highlighter-rouge">public</code> 函式</th>
-      <th style="text-align: center">被外部<br />觸發事件</th>
-      <th style="text-align: center">重複訂閱</th>
-      <th style="text-align: center">註冊<br />匿名函式</th>
-      <th style="text-align: center">處理速度</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">UnityEvent</code></td>
-      <td style="text-align: center">會</td>
-      <td style="text-align: center">僅 <code class="language-plaintext highlighter-rouge">public</code></td>
-      <td style="text-align: center">可</td>
-      <td style="text-align: center">可</td>
-      <td style="text-align: center">慢</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">C# <code class="language-plaintext highlighter-rouge">event</code></td>
-      <td style="text-align: center">不會</td>
-      <td style="text-align: center">不可</td>
-      <td style="text-align: center">可</td>
-      <td style="text-align: center">可</td>
-      <td style="text-align: center">快</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">C# 介面</td>
-      <td style="text-align: center">會，可避免</td>
-      <td style="text-align: center">僅 <code class="language-plaintext highlighter-rouge">public</code></td>
-      <td style="text-align: center">不可</td>
-      <td style="text-align: center">不可</td>
-      <td style="text-align: center">次快</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Unity 事件訂閱方式有各自的好處，但相對的也有各自的問題。如果沒注意事件訂閱的管理的話，只要遊戲規模一大，就很容易出問題，而且還很難找出原因。而在這三種方法中，我會推薦使用 C# 介面做為事件訂閱的方法，因為相比其它兩種方式比較不容易出錯。而且追蹤有訂閱的物件也方便，只要找出有實作該介面的類別就可以了。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="Unity" /><category term="C#" /><summary type="html"><![CDATA[本篇繼續上一篇的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。]]></summary></entry><entry><title type="html">[Unity] 事件訂閱與問題（上）- `UnityEvent` 與 C# `event`</title><link href="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-1/" rel="alternate" type="text/html" title="[Unity] 事件訂閱與問題（上）- `UnityEvent` 與 C# `event`" /><published>2024-04-08T00:00:00+08:00</published><updated>2024-04-08T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/unity-event-subscription-and-problem-1</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-1/"><![CDATA[<p>在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 與 C# <code class="language-plaintext highlighter-rouge">event</code> 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 與 C# <code class="language-plaintext highlighter-rouge">event</code>，並講解可能的問題，而下篇則會介紹利用 C# 介面做為事件介面的第三種方式。</p>
-
-<h2 id="unityevent"><code class="language-plaintext highlighter-rouge">UnityEvent</code></h2>
-
-<p><code class="language-plaintext highlighter-rouge">UnityEvent</code> 在 Unity 中是最常見的訂閱事件方法，好處是讓其它物件可以在 inspector 上直接設定事件的處理函式（event handler）。通常在設計套件時，會經常使用 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 來讓使用者可以從介面設定處理函式，但這也是 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 的唯一好處了。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span>
-    <span class="k">private</span> <span class="n">UnityEvent</span> <span class="n">_onLevelStart</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="unityevent-的問題"><code class="language-plaintext highlighter-rouge">UnityEvent</code> 的問題</h3>
-
-<h4 id="讓訂閱的物件提供過多的-public-函式">讓訂閱的物件提供過多的 <code class="language-plaintext highlighter-rouge">public</code> 函式</h4>
-
-<p>使用 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 的一個大問題就是想要訂閱事件的物件得要提供 <code class="language-plaintext highlighter-rouge">public</code> 函式才能在 inspector 中設置處理函式，這會讓其它物件也有機會去呼叫這個處理函式。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">Enemy</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">OnLevelStart</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnLevelStart"</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>例如：敵人物件為了在 inspector 上能訂閱關卡開始的事件，就得要提供一個 <code class="language-plaintext highlighter-rouge">public</code> 的函式，這讓其它有參考這個敵人的物件也有機會呼叫 <code class="language-plaintext highlighter-rouge">OnLevelStart</code>。</p>
-
-<p>而且如果該物件需要接入不同的事件時，這些 <code class="language-plaintext highlighter-rouge">public</code> 函式就會越來越多。在寫程式時，就會多出許多不必要的候選函式，造成困擾。</p>
-
-<h4 id="外部物件能觸發事件">外部物件能觸發事件</h4>
-
-<p>除了透過 inspector 設置處理函式之外，通常也會讓處理函式能在程式中設置。雖然可以讓要訂閱事件的物件在自己內部訂閱，而能將處理函式設為 <code class="language-plaintext highlighter-rouge">private</code> 的，但為此將 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 設為 <code class="language-plaintext highlighter-rouge">public</code> 的話，反而會讓其它物件有機會呼叫 <code class="language-plaintext highlighter-rouge">Invoke()</code> 來觸發事件。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">static</span> <span class="n">LevelManager</span> <span class="n">Instance</span><span class="p">;</span>
-
-    <span class="k">public</span> <span class="n">UnityEvent</span> <span class="n">OnLevelStart</span><span class="p">;</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">Awake</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">Instance</span> <span class="p">=</span> <span class="k">this</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="k">public</span> <span class="k">class</span> <span class="nc">Enemy</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnLevelStart</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnLevelStart</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnLevelStart"</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="k">public</span> <span class="k">class</span> <span class="nc">SomeObject</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">SomeFunc</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="c1">// 不相關的物件可以呼叫</span>
-        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">();</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>例如：為了能在程式中訂閱事件，<code class="language-plaintext highlighter-rouge">LevelManager</code> 將 <code class="language-plaintext highlighter-rouge">OnLevelStart</code> 事件設為 <code class="language-plaintext highlighter-rouge">public</code>，雖然可以讓 <code class="language-plaintext highlighter-rouge">Eneny</code> 物件在程式中訂閱事件，但可能讓其它物件不小心觸發到關卡開始的事件，造成意外的結果。</p>
-
-<p>要避免這種情況的話，就還是把 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 物件宣告為 <code class="language-plaintext highlighter-rouge">private</code> 的，並讓物件提供訂閱事件的函式。如果還是要保留在 inspector 設置處理函式的功能，則加上 <code class="language-plaintext highlighter-rouge">SerializeField</code> 屬性。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span>
-    <span class="k">private</span> <span class="n">UnityEvent</span> <span class="n">_onLevelStart</span><span class="p">;</span>
-
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">SubscribeOnLevelStart</span><span class="p">(</span><span class="n">UnityAction</span> <span class="n">callback</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">_onLevelStart</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">callback</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">UnsubscribeOnLevelStart</span><span class="p">(</span><span class="n">UnityAction</span> <span class="n">callback</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="n">_onLevelStart</span><span class="p">.</span><span class="nf">RemoveListener</span><span class="p">(</span><span class="n">callback</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h4 id="重複訂閱事件">重複訂閱事件</h4>
-
-<p>無論是透過 inspector 還是 <code class="language-plaintext highlighter-rouge">AddListener()</code> 來訂閱事件，都有可能會重複訂閱，造成同一個事件處理函式被呼叫數次。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">PlayerInputManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">static</span> <span class="n">PlayerInputManager</span> <span class="n">Instance</span><span class="p">;</span>
-
-    <span class="p">[</span><span class="n">NonSerialized</span><span class="p">]</span>
-    <span class="k">public</span> <span class="n">UnityEvent</span> <span class="n">OnFire</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">UnityEvent</span><span class="p">();</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">Awake</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">Instance</span> <span class="p">=</span> <span class="k">this</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">Update</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">Input</span><span class="p">.</span><span class="nf">GetKeyDown</span><span class="p">(</span><span class="n">KeyCode</span><span class="p">.</span><span class="n">F</span><span class="p">))</span>
-            <span class="n">OnFire</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">();</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="k">public</span> <span class="k">class</span> <span class="nc">Player</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">PlayerInputManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnFire</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnPlayerFire</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">Init</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="c1">// 重複訂閱</span>
-        <span class="n">PlayerInputManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnFire</span><span class="p">.</span><span class="nf">AddListener</span><span class="p">(</span><span class="n">OnPlayerFire</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnPlayerFire</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnPlayerFire"</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>例如：在 <code class="language-plaintext highlighter-rouge">Player</code> 物件在訂閱玩家的輸入事件時，不小心在 <code class="language-plaintext highlighter-rouge">Start()</code> 跟給外部呼叫的 <code class="language-plaintext highlighter-rouge">Init()</code> 中各訂閱一次 <code class="language-plaintext highlighter-rouge">OnFire</code> 事件，讓玩家在按下發射按鍵時，執行兩次發射行為。而且更有可能在玩家復活時，呼叫 <code class="language-plaintext highlighter-rouge">Init()</code> 來重置 <code class="language-plaintext highlighter-rouge">Player</code> 物件的狀態，造成每次復活後，會執行更多次發射行為。</p>
-
-<h2 id="c-event">C# <code class="language-plaintext highlighter-rouge">event</code></h2>
-
-<p>在 Unity 中，另一個訂閱事件的方式是使用 C# 的 <code class="language-plaintext highlighter-rouge">event</code>。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">static</span> <span class="n">LevelManager</span> <span class="n">Instance</span><span class="p">;</span>
-
-    <span class="k">public</span> <span class="k">event</span> <span class="n">Action</span> <span class="n">OnLevelStart</span><span class="p">;</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">Awake</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">Instance</span> <span class="p">=</span> <span class="k">this</span><span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>C# <code class="language-plaintext highlighter-rouge">event</code> 的優點是外部物件只能訂閱事件，而無法觸發事件，只能由宣告事件的物件呼叫 <code class="language-plaintext highlighter-rouge">Invoke()</code>：</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">LevelStart</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">OnLevelStart</span><span class="p">?.</span><span class="nf">Invoke</span><span class="p">();</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-
-<span class="k">public</span> <span class="k">class</span> <span class="nc">Enemy</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span> <span class="p">+=</span> <span class="n">OnLevelStart</span><span class="p">;</span>
-        <span class="c1">// 無法呼叫 Invoke</span>
-        <span class="c1">// LevelManager.Instance.OnLevelStart.Invoke();</span>
-    <span class="p">}</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnLevelStart</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnLevelStart"</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>而且比起 <code class="language-plaintext highlighter-rouge">UnityEvent</code>，C# <code class="language-plaintext highlighter-rouge">event</code> 呼叫處理函式的時間相對少很多。</p>
-
-<h3 id="c-event-的問題">C# <code class="language-plaintext highlighter-rouge">event</code> 的問題</h3>
-
-<h4 id="重複訂閱事件-1">重複訂閱事件</h4>
-
-<p>不過 C# <code class="language-plaintext highlighter-rouge">event</code> 還是會發生重複訂閱事件的問題，如果同一個處理函式被重複訂閱，一樣會被呼叫數次。另一個問題是，在取消訂閱時，重複訂閱的函式只會被移除一個。但是這個情況在 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 中反而不會發生，因為呼叫 <code class="language-plaintext highlighter-rouge">RemoveListener()</code> 取消訂閱時，重複的訂閱函式都會被移除。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">Enemy</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span> <span class="p">+=</span> <span class="n">OnLevelStart</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">Init</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span> <span class="p">+=</span> <span class="n">OnLevelStart</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnDisable</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="c1">// 只會移除其中一個處理函式</span>
-        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span> <span class="p">-=</span> <span class="n">OnLevelStart</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnLevelStart</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnLevelStart"</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>例如：<code class="language-plaintext highlighter-rouge">Enemy</code> 物件在 <code class="language-plaintext highlighter-rouge">Start()</code> 跟 <code class="language-plaintext highlighter-rouge">Init()</code> 各訂閱一次 <code class="language-plaintext highlighter-rouge">OnLevelStart</code> 事件，在 <code class="language-plaintext highlighter-rouge">OnDisable</code> 中取消訂閱時，就只會移除一個處理函式。當 <code class="language-plaintext highlighter-rouge">OnLevelStart</code> 事件觸發時，還是會看到有訊息輸出，讓原本被關閉的 <code class="language-plaintext highlighter-rouge">Enemy</code> 物件又開始執行。</p>
-
-<h4 id="無物件訂閱">無物件訂閱</h4>
-
-<p>在觸發 C# <code class="language-plaintext highlighter-rouge">event</code> 時，要注意如果該 event 沒有任何物件訂閱，或是因為取消訂閱到空時，此時事件物件會被設為 <code class="language-plaintext highlighter-rouge">null</code>，如果這時觸發事件會出現 null reference exception，所以最好以 <code class="language-plaintext highlighter-rouge">onEvent?.Invoke()</code> 來觸發事件。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">event</span> <span class="n">Action</span> <span class="n">OnLevelStart</span><span class="p">;</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">LevelStart</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">OnLevelStart</span><span class="p">?.</span><span class="nf">Invoke</span><span class="p">();</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h4 id="匿名函式">匿名函式</h4>
-
-<p>如果以匿名函式訂閱事件時，該函式就再也無法被取消訂閱了，這也會發生在 <code class="language-plaintext highlighter-rouge">UnityEvent</code> 上。因為就算內容完全一樣，在不同地方宣告的匿名函式是不同的。所以應該要避免用匿名函式訂閱事件。</p>
-
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">Enemy</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
-<span class="p">{</span>
-    <span class="k">public</span> <span class="k">void</span> <span class="nf">Init</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span> <span class="p">+=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnLevelStart"</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnDisable</span><span class="p">()</span>
-    <span class="p">{</span>
-        <span class="c1">// 無法取消在 Init() 訂閱的事件</span>
-        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="n">OnLevelStart</span> <span class="p">-=</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnLevelStart"</span><span class="p">);</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>例如：敵人物件在 <code class="language-plaintext highlighter-rouge">Init()</code> 用匿名函式訂閱了 <code class="language-plaintext highlighter-rouge">OnLevelStart</code> 事件，但在 <code class="language-plaintext highlighter-rouge">OnDisable()</code> 取消訂閱時，無法移除前面用來訂閱的函式。</p>
-
-<h2 id="小結">小結</h2>
-
-<p>這邊小結這兩種事件訂閱方式的優點與要注意的問題：</p>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">UnityEvent</code>
-    <ul>
-      <li>優點
-        <ul>
-          <li>可以在 inspector 中設定處理函式</li>
-        </ul>
-      </li>
-      <li>問題
-        <ul>
-          <li>讓訂閱的物件提供過多的 <code class="language-plaintext highlighter-rouge">public</code> 函式</li>
-          <li>外部物件能觸發事件</li>
-          <li>重複註冊</li>
-          <li>可以用匿名函式註冊</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>C# <code class="language-plaintext highlighter-rouge">event</code>
-    <ul>
-      <li>優點
-        <ul>
-          <li>只有宣告事件的物件才能觸發事件</li>
-          <li>執行速度快</li>
-        </ul>
-      </li>
-      <li>問題
-        <ul>
-          <li>重複註冊</li>
-          <li>無物件訂閱時，會是 <code class="language-plaintext highlighter-rouge">null</code></li>
-          <li>可以用匿名函式註冊</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="筆記" /><category term="Unity" /><category term="C#" /><summary type="html"><![CDATA[在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 UnityEvent 與 C# event 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 UnityEvent 與 C# event，並講解可能的問題，而下篇則會介紹利用 C# 介面做為事件介面的第三種方式。]]></summary></entry></feed>
+<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="遊記" /><category term="遊戲展" /><summary type="html"><![CDATA[去年 9 月逛了東京電玩展之後，就決定今年要來日本最大的獨立遊戲展ーBitSummit。BitSummit 每年夏天固定在京都市勸業館舉辦，為期三天，吸引世界各地的開發者與發行商來參加。而今年舉辦在 7/19 ~ 7/21（第一天為商務日），副標題為「Drift」。]]></summary></entry></feed>

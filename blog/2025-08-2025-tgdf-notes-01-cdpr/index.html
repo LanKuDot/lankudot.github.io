@@ -1,0 +1,880 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="zh-TW" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[分享] 2025 TGDF 筆記 - CDPR 篇 | 烏龜漫遊 2.0</title>
+<meta name="description" content="今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。">
+
+
+  <meta name="author" content="烏龜">
+  
+  <meta property="article:author" content="烏龜">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="烏龜漫遊 2.0">
+<meta property="og:title" content="[分享] 2025 TGDF 筆記 - CDPR 篇">
+<meta property="og:url" content="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/">
+
+
+  <meta property="og:description" content="今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。">
+
+
+
+  <meta property="og:image" content="https://lankudot.airfishlab.com/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/key-visual-design.png">
+
+
+
+  <meta name="twitter:site" content="@LanKuDot">
+  <meta name="twitter:title" content="[分享] 2025 TGDF 筆記 - CDPR 篇">
+  <meta name="twitter:description" content="今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。">
+  <meta name="twitter:url" content="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://lankudot.airfishlab.com/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/key-visual-design.png">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2025-08-18T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="烏龜漫遊 2.0 Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+</style>
+
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">轉至主導航欄</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">轉至内容</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">轉至頁脚</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          烏龜漫遊 2.0
+          <span class="site-subtitle">遊戲、程式、心得</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/blog/"
+                
+                
+              >部落格</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切換選單</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://lankudot.airfishlab.com/">
+        <img src="/assets/images/bio-photo.jpg" alt="烏龜" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://lankudot.airfishlab.com/" itemprop="url">烏龜</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>喜歡玩與作遊戲的工程師，對 shader 領域充滿好奇。喜歡爵士樂、反烏托邦小說與電影</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">追蹤</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Taiwan</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:kyle.li@airfishlab.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-youtube" aria-hidden="true"></i><span class="label">Youtube</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/LanKuDot" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/LanKuDot" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://assetstore.unity.com/publishers/52019" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-unity" aria-hidden="true"></i><span class="label">Unity</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[分享] 2025 TGDF 筆記 - CDPR 篇">
+    <meta itemprop="description" content="今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。">
+    <meta itemprop="datePublished" content="2025-08-18T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/" itemprop="url">[分享] 2025 TGDF 筆記 - CDPR 篇
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-08-18T00:00:00+08:00">August 18, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 本頁</h4></header>
+              <ul class="toc__menu"><li><a href="#電馭叛客-2077解碼電影動畫的祕密">《電馭叛客 2077》：解碼電影動畫的祕密</a><ul><li><a href="#模擬現實互動">模擬現實互動</a></li><li><a href="#動畫技術">動畫技術</a></li><li><a href="#劇情動畫製作流程">劇情動畫製作流程</a></li></ul></li><li><a href="#解鎖隱藏價值cdpr-式最終產品背後的-ux">解鎖隱藏價值：CDPR 式「最終產品背後的 UX」</a><ul><li><a href="#好的開發環境造就好的遊戲體驗">好的開發環境造就好的遊戲體驗</a></li><li><a href="#了解問題">了解問題</a></li><li><a href="#工具與-ux">工具與 UX</a></li></ul></li></ul>
+            </nav>
+          </aside>
+        
+        <p>今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。</p>
+
+<p><img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/pass.png" alt="參加證" /></p>
+
+<h2 id="電馭叛客-2077解碼電影動畫的祕密">《電馭叛客 2077》：解碼電影動畫的祕密</h2>
+
+<p>這場演講是 CDPR 帶來的兩場演講之一。首席電影動畫師 David Cordero Iglesias 介紹在《電馭叛客 2077》中，如何讓 NPC 更生動自然，以及更真實的第一人稱敘事運鏡，讓玩家更有沉浸感。</p>
+
+<h3 id="模擬現實互動">模擬現實互動</h3>
+
+<ul>
+  <li>減少黑幕切換
+    <ul>
+      <li>NPC 在場景中會自然對話，直到玩家進來互動後，會自然結束跟其它 NPC 的對話，並轉頭過來開始跟玩家的劇情對話</li>
+      <li>利用牆面設置位置來避免玩家看到 NPC 重置的不連續感。例如：在一個追逐從後門逃跑的 NPC 的劇情中，玩家可以選擇追上去，或是從前門繞路追上他，而 NPC 一定會在暗巷中被夥伴給攔住。利用牆面的 90 度轉角，讓玩家走過牆面後，才會看到事件發生。</li>
+      <li>但遊戲中還是會為了玩家昏厥或是醒來的情境使用黑幕</li>
+    </ul>
+  </li>
+  <li>玩家控制角色的能力可以分成四個層級，增強敘事能力
+    <ul>
+      <li>第一階：玩家可以自由控制角色</li>
+      <li>第二階：部份控制被限制。例如：搬重物時，移動速度變慢</li>
+      <li>第三階：只能移動視角，而且角度有限制。例如：被壓制在地上時</li>
+      <li>第四階：劇情控制，玩家完全無法操作</li>
+    </ul>
+  </li>
+  <li>NPC 自然動作
+    <ul>
+      <li>NPC 的動作反應這個 NPC 的個性</li>
+      <li>NPC 在等待玩家回答時，會繼續做手邊正在做的事情，例如：吃一口飯、繼續看雜誌，而不會呆呆看著你</li>
+    </ul>
+  </li>
+  <li>敘事運鏡要視野清晰
+    <ul>
+      <li>要避免 3D 暈，可以找會 3D 暈的同事來測試 :D</li>
+      <li>利用 Framing（決定什麼內容要出現在畫面中） 與 Composition（排列在畫面中的這些內容），讓玩家快速理解目前正在發生的事情。例如：在跑酷劇情下，讓手腳一部份出現在畫面中，提示動作的來源，並用攝影機的位移來呈現慣性</li>
+    </ul>
+  </li>
+  <li>身體意識
+    <ul>
+      <li>玩家坐定後，仍然可以自由移動視角，模擬現實談話人會亂看</li>
+      <li>在劇情拿槍時，攝影機會照向拿槍的手，模擬現實的視線移動</li>
+      <li>被 NPC 拉著走時，無法控制位移或是視角</li>
+    </ul>
+  </li>
+  <li>環境意識
+    <ul>
+      <li>角色會自然看向環境中可以互動的物件</li>
+      <li>在場景中也要標記這些可互動的物件，及如何互動</li>
+    </ul>
+  </li>
+  <li>手指細節
+    <ul>
+      <li>真實的手指反應，例如：把完拿取的物件，或是彈吉它時的手指行為</li>
+      <li>有一整個手指資料庫</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="動畫技術">動畫技術</h3>
+
+<ul>
+  <li>動捕很重要
+    <ul>
+      <li>自然真實的動畫源自現實的動作</li>
+      <li>即使是第一人稱視角遊戲，還是會錄玩家角色的動作</li>
+    </ul>
+  </li>
+  <li>還是有 key frame 動畫
+    <ul>
+      <li>機具行為，車輛的互動</li>
+      <li>整理動捕資料</li>
+    </ul>
+  </li>
+  <li>提供跨軟體平台的整合資料庫
+    <ul>
+      <li>動畫師可以自由選擇製作的動畫軟體</li>
+    </ul>
+  </li>
+  <li>動畫類型可以分成待機動作（Idle Animation）與象徵動作（Gesture Animation）
+    <ul>
+      <li>以抽煙來說，待機動作是拿著煙，而象徵動作則可以是吸一口煙或是丟煙等動作</li>
+      <li>動作之間也會設定轉換（Transition）</li>
+      <li>也有完全設定好的客制動畫，例如：彈吉他、劇情用動畫</li>
+      <li>在《電馭叛客 2077》中有七千多個待機動作，三萬五千多個象徵作，以及更多的動畫轉換</li>
+    </ul>
+  </li>
+  <li>有內部工具來管理與編輯動畫的轉換
+    <ul>
+      <li>角色的動畫為 workspot，編輯工具可以設置轉換條件與觸發來效果</li>
+      <li>workspot 之間的互動也可以編輯，例如：兩個 NPC 在聊天時的動作</li>
+      <li>在開放世界中，讓 workspot 自行決定要做的事情，讓玩家經過同一個地方時，NPC 的行為也會不一樣</li>
+      <li>在劇情場景中，workspot 可以在玩家回答前，自由播放待機動畫，使 NPC 更自然</li>
+    </ul>
+  </li>
+  <li>臉部動畫也有對應的待機動作及象徵動作
+    <ul>
+      <li>對於有真實演員的 NPC，也會把臉部變化（如皺紋）key frame 進去</li>
+    </ul>
+  </li>
+  <li>嘴型會隨輸入聲音變化，不同語言的語音會呈現不同嘴型</li>
+</ul>
+
+<h3 id="劇情動畫製作流程">劇情動畫製作流程</h3>
+
+<ol>
+  <li>分鏡：簡單場景設置與運鏡來驗證劇情動畫的觸發流程</li>
+  <li>動捕：分段拍攝劇情所需的動畫</li>
+  <li>Alpha：直接把動捕資料套入場景中並加入運鏡</li>
+  <li>Beta：消除鏡頭過度晃動，套入 IK 並跟場景物件互動</li>
+  <li>加入失敗動畫，如 QTE 失敗後的結果</li>
+</ol>
+
+<h2 id="解鎖隱藏價值cdpr-式最終產品背後的-ux">解鎖隱藏價值：CDPR 式「最終產品背後的 UX」</h2>
+
+<p>CDPR 的第二場演講則是以內部工具的 UX 體驗為主題，資深 UX/UI 設計師 Anna Nojek 認為，有好的內部開發工具，能讓開發人員能有好的開發體驗，進而能開發出好的遊戲。</p>
+
+<h3 id="好的開發環境造就好的遊戲體驗">好的開發環境造就好的遊戲體驗</h3>
+
+<ul>
+  <li>讓玩家能享受遊戲的要素很多，像是故事、玩法、挑戰性等，但對開發者來說讓玩家能享受遊戲的要素是來自好的開發體驗。以開發體驗為優先，能讓開發者發揮能力，最後做出好的遊戲體驗。</li>
+  <li>以往開發環境的問題
+    <ul>
+      <li>資源及知識過於分散：asset 散佈在不同平台且不同格式，要找一個 asset 很困難</li>
+      <li>資訊透明度差：大家各自做各自的</li>
+      <li>客制的開發流程：鎖碎及複雜的開發流程，甚至佔了開發 50% 的時間</li>
+      <li>過度依賴其它人：如果一個人卡住了，其它人也不能做事</li>
+      <li>只專注在功能：開發工具的人不熟使用者的習慣，只專注在實作功能上，讓工具不好使用</li>
+    </ul>
+  </li>
+  <li>當開發者面臨的問題沒有解決的話，會感到挫折，讓作品延期、容易出 bug，甚至感到心累，最後產出不好玩的遊戲</li>
+</ul>
+
+<h3 id="了解問題">了解問題</h3>
+
+<ul>
+  <li>製作工具先暫時處理問題，再改善解法
+    <ul>
+      <li>情境：企劃要找一個素材得要問一堆人才找的到</li>
+      <li>暫時解法：開一個共用的 excel 表單，請製作人員匯出素材時，去更新表單的狀態</li>
+      <li>長期解法：製作人員匯出素材後，自動更新資料庫</li>
+      <li>暫時解法得由人工操作，但可以暫時解決企劃要依賴他人的問題。而長期解法則是自動化，是改善後的解法，一樣解決依賴問題，也讓製作人員不用手動更新</li>
+      <li>會先有暫時解法，等待時機成熟後，再實作長期解法</li>
+    </ul>
+  </li>
+  <li>開發出內部用的素材管理工具：Asset Hive
+    <ul>
+      <li>支援集中管理，能搜尋、複用、預覽素材的工具</li>
+    </ul>
+  </li>
+  <li>工具是提供問題的解法，但如果不了解問題，則作出工具也不能解決
+    <ul>
+      <li>要去了解、觀察、討論才能知道真正的問題所在</li>
+      <li>也不要只追隨請求，而是問為何需要這個請求</li>
+      <li>當有人傾聽別人的請求時，別人也會更有動力，且更積極</li>
+    </ul>
+  </li>
+  <li>作出好的工具讓開發人員能專注在創造工作，改善遊戲成品。透過使用體驗回報，也能培養反饋與支援的氛圍</li>
+</ul>
+
+<h3 id="工具與-ux">工具與 UX</h3>
+
+<ul>
+  <li>UX 是為了簡化執行某個特別任務的手段</li>
+  <li>UX 開發流程，每個階段都有機會退回上個階段
+    <ol>
+      <li>有人提出問題</li>
+      <li>討論、分析、面談問題</li>
+      <li>設計工具需要的功能有什麼</li>
+      <li>測試</li>
+      <li>設計介面</li>
+      <li>測試</li>
+      <li>交由工程人員開發功能</li>
+      <li>測試</li>
+    </ol>
+  </li>
+  <li>以使用者為中心的溝通
+    <ul>
+      <li>同理心地圖（Empathy Map）：展示使用者在使用工具時的想法、行為、言論、感受</li>
+      <li>使用者體驗地圖（User Journey Map）：展示使用者在使用工具達成任務時的使用流程，並標示每個階段的情緒、優缺點，以及如何改善</li>
+    </ul>
+  </li>
+  <li>省下來的時間 = 原本所需要的時間 - 改善後的時間 - 開發工具所需要的時間</li>
+  <li>UX 與所有人相關
+    <ul>
+      <li>團隊的製程：製程的架構流程</li>
+      <li>明確的目標：什麼樣的目標才算成功/完成</li>
+      <li>透明度與反饋回圈：工具一定是持續迭代的過程</li>
+    </ul>
+  </li>
+  <li>回到一開始的問題：是什麼要素讓玩家能享受遊戲? 所有創作遊戲的人</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 標籤: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#%E5%88%86%E4%BA%AB" class="page__taxonomy-item p-category" rel="tag">分享</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 分類: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#blog" class="page__taxonomy-item p-category" rel="tag">blog</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新時間:</strong> <time class="dt-published" datetime="2025-08-18T00:00:00+08:00">August 18, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">分享到</h4>
+
+  <a href="https://x.com/intent/tweet?via=LanKuDot&text=%5B%E5%88%86%E4%BA%AB%5D+2025+TGDF+%E7%AD%86%E8%A8%98+-+CDPR+%E7%AF%87%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2025-08-2025-tgdf-notes-01-cdpr%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2025-08-2025-tgdf-notes-01-cdpr%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=%5B%E5%88%86%E4%BA%AB%5D+2025+TGDF+%E7%AD%86%E8%A8%98+-+CDPR+%E7%AF%87%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2025-08-2025-tgdf-notes-01-cdpr%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/blog/2025-06-refactor-general-module/" class="pagination--pager" title="[開發日誌 #2] A 需要跑步但 B 只要走路">前一頁</a>
+    
+    
+      <a href="/blog/2025-08-2025-tgdf-notes-02-nine-sols/" class="pagination--pager" title="[分享] 2025 TGDF 筆記 - 九日篇">後一頁</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+      
+        <div class="page__comments">
+  
+  
+      <script src="https://giscus.app/client.js"
+        data-repo="LanKuDot/lankudot.github.io"
+        data-repo-id="R_kgDOGYHitw"
+        data-category="Page comments"
+        data-category-id="DIC_kwDOGYHit84B_-lB"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-TW"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  
+</div>
+
+      
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">猜您有與趣</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/key-visual-design.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2025-08-2025-tgdf-notes-03-game-design/" rel="permalink">[分享] 2025 TGDF 筆記 - 遊戲設計篇
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-08-18T00:00:00+08:00">August 18, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。
+
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/key-visual-design.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2025-08-2025-tgdf-notes-02-nine-sols/" rel="permalink">[分享] 2025 TGDF 筆記 - 九日篇
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-08-18T00:00:00+08:00">August 18, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。
+
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2025-06-refactor-general-module/" rel="permalink">[開發日誌 #2] A 需要跑步但 B 只要走路
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-06-04T00:00:00+08:00">June 4, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動...</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2025-05-fight-with-state-machine/" rel="permalink">[開發日誌 #1] 狀態機奮鬥記
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-05-08T00:00:00+08:00">May 8, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">時光荏苒，參與新專案到現在也超過半年了。因為是第一次做動作遊戲，面對沒開發過的機制，看了許多資料，也踩了不少的坑，就覺得應該來寫個開發日誌，多少記錄一下開發過程的酸甜苦辣鹹。開張第一篇先來分享開發狀態機時的碰壁。
+
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <div class="page__footer-cc4-0">
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
+    本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">創用 CC 姓名標示 4.0 國際 授權條款</a>授權
+</div>
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>追蹤:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/LanKuDot" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/LanKuDot" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://assetstore.unity.com/publishers/52019" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-unity" aria-hidden="true"></i> Unity</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> RSS Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2025 <a href="https://lankudot.airfishlab.com">烏龜漫遊 2.0</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VXPNSTXB5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VXPNSTXB5L', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+    <!-- start custom comments scripts -->
+
+<!-- end custom comments scripts -->
+
+
+
+
+
+  </body>
+</html>

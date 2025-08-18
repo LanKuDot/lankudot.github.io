@@ -1,0 +1,853 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="zh-TW" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[分享] 2025 TGDF 筆記 - 九日篇 | 烏龜漫遊 2.0</title>
+<meta name="description" content="今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。">
+
+
+  <meta name="author" content="烏龜">
+  
+  <meta property="article:author" content="烏龜">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="烏龜漫遊 2.0">
+<meta property="og:title" content="[分享] 2025 TGDF 筆記 - 九日篇">
+<meta property="og:url" content="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/">
+
+
+  <meta property="og:description" content="今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。">
+
+
+
+  <meta property="og:image" content="https://lankudot.airfishlab.com/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/key-visual-design.png">
+
+
+
+  <meta name="twitter:site" content="@LanKuDot">
+  <meta name="twitter:title" content="[分享] 2025 TGDF 筆記 - 九日篇">
+  <meta name="twitter:description" content="今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。">
+  <meta name="twitter:url" content="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://lankudot.airfishlab.com/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/key-visual-design.png">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2025-08-18T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="烏龜漫遊 2.0 Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+</style>
+
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">轉至主導航欄</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">轉至内容</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">轉至頁脚</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          烏龜漫遊 2.0
+          <span class="site-subtitle">遊戲、程式、心得</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/blog/"
+                
+                
+              >部落格</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切換選單</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://lankudot.airfishlab.com/">
+        <img src="/assets/images/bio-photo.jpg" alt="烏龜" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://lankudot.airfishlab.com/" itemprop="url">烏龜</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>喜歡玩與作遊戲的工程師，對 shader 領域充滿好奇。喜歡爵士樂、反烏托邦小說與電影</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">追蹤</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Taiwan</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:kyle.li@airfishlab.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-youtube" aria-hidden="true"></i><span class="label">Youtube</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/LanKuDot" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/LanKuDot" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://assetstore.unity.com/publishers/52019" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-unity" aria-hidden="true"></i><span class="label">Unity</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[分享] 2025 TGDF 筆記 - 九日篇">
+    <meta itemprop="description" content="今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。">
+    <meta itemprop="datePublished" content="2025-08-18T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/" itemprop="url">[分享] 2025 TGDF 筆記 - 九日篇
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-08-18T00:00:00+08:00">August 18, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 本頁</h4></header>
+              <ul class="toc__menu"><li><a href="#兩年的噩夢找尋九日類隻狼系統的誕生">兩年的噩夢找尋，九日類隻狼系統的誕生</a></li><li><a href="#九日戰鬥設計雜談">《九日》戰鬥設計雜談</a></li><li><a href="#為九日而研發的狀態機架構monofsm">為《九日》而研發的狀態機架構《MonoFSM》</a></li></ul>
+            </nav>
+          </aside>
+        
+        <p>今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。</p>
+
+<h2 id="兩年的噩夢找尋九日類隻狼系統的誕生">兩年的噩夢找尋，九日類隻狼系統的誕生</h2>
+
+<p>這場分享《九日》是如何找到現在的類隻狼玩法，要找到突破點花了相當多的時間，其中的過程也很辛苦。</p>
+
+<ul>
+  <li>世界觀設定
+    <ul>
+      <li>「道龐克」</li>
+      <li>一個太陽對九個太陽的復仇</li>
+      <li>外星人來到地球留下了道教科技與故事</li>
+    </ul>
+  </li>
+  <li>想到以動作加上銀河戰士的玩法
+    <ul>
+      <li>九個太陽所在的九個區域對應他們各自的設定</li>
+    </ul>
+  </li>
+  <li>八個月就完成有基本玩法與畫面的「Hollow Cat」</li>
+  <li>但為了避免 Hollow Knight 感花了一陣子，也打掉第一版，並重新思考機制
+    <ul>
+      <li>2D 版隻狼？但慢節奏、沒 Y 軸戰鬥、沒平台挑戰</li>
+      <li>參考《Katana Zero》為了要快節奏，不加入對峙，也沒有體幹值</li>
+      <li>想要有平台挑戰，加入空中格擋</li>
+      <li>但如《Katana Zero》的快節奏，敵人看一兩次就被打倒，與隻狼要對招一兩次所帶來的深度不同</li>
+    </ul>
+  </li>
+  <li>又回到類銀河的玩法上，但把體幹值改成點數制
+    <ul>
+      <li>要格擋才有氣能貼符</li>
+      <li>為了避免等格擋時機而太被動，加入普攻來算節奏</li>
+      <li>為了以格擋為主，普攻的攻擊力比貼符還要低很多</li>
+      <li>避免一直按普攻，普攻三連擊的第三下無法直接進入格擋</li>
+      <li>敵人被普攻打中後，會減攻擊 cd，讓敵人更容易主動攻擊，來讓玩家有機會格擋</li>
+    </ul>
+  </li>
+  <li>加入潛行？
+    <ul>
+      <li>2D 畫面視野很小，而且角色動很快不適合潛行，而且每個敵人也要設計暗殺動畫</li>
+      <li>最後改成「背襲」</li>
+      <li>但關卡還是有潛行的設計，如被電之後行動不便，只能潛行</li>
+    </ul>
+  </li>
+  <li>貼符的體驗
+    <ul>
+      <li>貼符到懸崖邊會自動停住，避免瞬移距離過長而掉落</li>
+      <li>在地面貼符時，會先瞬步到敵人前再貼符，再繼續瞬步一段距離，但是在空中貼符則會直接貼</li>
+    </ul>
+  </li>
+  <li>把技能樹當教學用
+    <ul>
+      <li>例如：點了背襲技能，知道可以背襲</li>
+    </ul>
+  </li>
+  <li>大家對技能功效有不同的想像，有人想加有人不想，做成玉石系統來讓玩家自已選</li>
+  <li>如何知道找到醬汁了？成功讓玩家想要一做再做</li>
+</ul>
+
+<h2 id="九日戰鬥設計雜談">《九日》戰鬥設計雜談</h2>
+
+<p>這場一樣有分享到《九日》開案時的構想，並且著重在怪物行為的設計，以及攻擊模式的小技巧，讓戰鬥更豐富。</p>
+
+<ul>
+  <li>開案起源
+    <ul>
+      <li>《返校》跟《還願》還是以華語圈為主，新作方向能否打入歐美市場？</li>
+      <li>以玩法為核心能否有文化穿透力？像《Dead Cells》跟《Hollow Knight》</li>
+    </ul>
+  </li>
+  <li>參考《Hollow Knight》，但是不是只能做出劣化版的《Hollow Knight》</li>
+  <li>風格找尋：<br />
+<img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/nine-sols-style-coordinate.svg" alt="nine-sols-style-coordinate" />
+    <ul>
+      <li>當然在 2D 以格擋為主的風格下，還是有其它遊戲</li>
+    </ul>
+  </li>
+  <li>以格擋為主，所以要引導玩家用格擋
+    <ul>
+      <li>普攻傷害低，貼符有大傷害 ← 要格擋才有氣能貼符</li>
+    </ul>
+  </li>
+  <li>怪物製作流程，實際執行時沒有清楚細分步驟，但為了演講還是整理出大致統程
+    <ol>
+      <li>前期溝通：確定怪物定位，如：難度、外貌、參考對象</li>
+      <li>灰盒驗證：設計戰鬥的 fantasy（要帶來什麼樣的感覺）
+        <ul>
+          <li>讓玩家要用什麼 pattern 來對應</li>
+          <li>Boss 攻擊前的動作能不能讓玩家找到對招時機</li>
+          <li>這時就會在 animation clip 上做怪物行為</li>
+        </ul>
+      </li>
+      <li>美術原型：在 animation clip 上套皮，看感覺</li>
+      <li>程式美術整合：在套皮後重調數值，再看感覺</li>
+      <li>內部測試：內部回饋、改善</li>
+      <li>後期：套音效、特效</li>
+      <li>外測：玩家公開測試</li>
+    </ol>
+  </li>
+  <li>在量產期會做前五個步驟，但是在打磨階段才會做後期與外測</li>
+  <li>戰鬥難，讓玩家克服時有成就感，感覺「原來我可以做到」</li>
+  <li>怪的攻擊有一定節奏，但是後期怪的攻擊脫離前面的節奏會帶來難度，也會有新奇感</li>
+  <li>一些攻擊模式的技巧
+    <ul>
+      <li>利用位移來做攻擊前置動作，如：水鬼</li>
+      <li>過身：攻擊時，怪物會穿過玩家到另一邊</li>
+      <li>脫手攻擊：出招後，那招會延遲攻擊（如：緩慢的投射物），讓怪物可以再開其它招</li>
+      <li>以預期讓玩家的輸入 pattern 來設計招式</li>
+      <li>玩家一直按格擋會縮段精準格擋的窗口</li>
+      <li>終結技可以輸出大傷害，作為獎勵
+        <ul>
+          <li>boss 打完一輪的休息窗口，讓玩家可以輸出大量傷害</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="為九日而研發的狀態機架構monofsm">為《九日》而研發的狀態機架構《MonoFSM》</h2>
+
+<p>最近在開發上在煩惱角色狀態機的設計，所以這場也是有興趣的演講之一。演講主要圍繞在 MonoFSM 為什麼會誕生，雖然沒有著墨太多技術上的細節，但是在製作 prototype 時的經驗分享也很受用。</p>
+
+<ul>
+  <li>第一階段為了開發要快而硬 A，使出戰術龍捲風！
+    <ul>
+      <li>但當內容一多就開始 A 不動，程式碼耦合重、bug 不好修，而且很難加入新功能</li>
+    </ul>
+  </li>
+  <li>遊戲開發架構金字塔由底層到塔頂依序為：
+    <ul>
+      <li>引擎：開發使用的遊戲引擎</li>
+      <li>系統：為遊戲功能開發的功能</li>
+      <li>資料：功能所需要的設定、數值、素材等</li>
+      <li>設計：遊戲玩法、功能、行為等</li>
+      <li>體驗：遊戲給玩家的殘體驗</li>
+    </ul>
+  </li>
+  <li>而戰術龍捲風就是把系統、資料、設計全部混在一起做</li>
+  <li>第二階段開始把資料抽離出來，利用 animation clip 來綁定動畫及開關元件或事件（絕對不要用 Event 來開關）
+    <ul>
+      <li>好處是可以在同一個地方編輯動畫及事件，也可以視覺化資料</li>
+    </ul>
+  </li>
+  <li>到量產期後發現需要重新設計架構
+    <ul>
+      <li>參考 visual scripting 把邏輯跟系統分離</li>
+      <li>要支援 prefab</li>
+      <li>可以通用的 FSM 設計</li>
+    </ul>
+  </li>
+  <li>用 MonoBehaviour 來描述狀態與狀態轉換，且基於 prefab 的 MonoFSM 誕生了
+    <ul>
+      <li>在 Hierarchy 顯示 FSM 的狀態及相關變數的數值</li>
+      <li>Per-instance Debugging：可以以 GameObject 為單位來 debug，不用在程式碼中寫 debug 訊息</li>
+    </ul>
+  </li>
+  <li>漸近重構
+    <ul>
+      <li>實驗期：在小地方嘗試，先展現價值</li>
+      <li>推動期：新內容用新規格作。舊的東西有 bug 或想調整太難做的話，也替換成新架構</li>
+      <li>能動的東西就不要改!</li>
+    </ul>
+  </li>
+  <li>團隊應該集中在「遊戲體驗」上，作工具就是為了加速迭代</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 標籤: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#%E5%88%86%E4%BA%AB" class="page__taxonomy-item p-category" rel="tag">分享</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 分類: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#blog" class="page__taxonomy-item p-category" rel="tag">blog</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新時間:</strong> <time class="dt-published" datetime="2025-08-18T00:00:00+08:00">August 18, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">分享到</h4>
+
+  <a href="https://x.com/intent/tweet?via=LanKuDot&text=%5B%E5%88%86%E4%BA%AB%5D+2025+TGDF+%E7%AD%86%E8%A8%98+-+%E4%B9%9D%E6%97%A5%E7%AF%87%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2025-08-2025-tgdf-notes-02-nine-sols%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2025-08-2025-tgdf-notes-02-nine-sols%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=%5B%E5%88%86%E4%BA%AB%5D+2025+TGDF+%E7%AD%86%E8%A8%98+-+%E4%B9%9D%E6%97%A5%E7%AF%87%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2025-08-2025-tgdf-notes-02-nine-sols%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/blog/2025-08-2025-tgdf-notes-01-cdpr/" class="pagination--pager" title="[分享] 2025 TGDF 筆記 - CDPR 篇">前一頁</a>
+    
+    
+      <a href="/blog/2025-08-2025-tgdf-notes-03-game-design/" class="pagination--pager" title="[分享] 2025 TGDF 筆記 - 遊戲設計篇">後一頁</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+      
+        <div class="page__comments">
+  
+  
+      <script src="https://giscus.app/client.js"
+        data-repo="LanKuDot/lankudot.github.io"
+        data-repo-id="R_kgDOGYHitw"
+        data-category="Page comments"
+        data-category-id="DIC_kwDOGYHit84B_-lB"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-TW"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+
+  
+</div>
+
+      
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">猜您有與趣</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/key-visual-design.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2025-08-2025-tgdf-notes-03-game-design/" rel="permalink">[分享] 2025 TGDF 筆記 - 遊戲設計篇
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-08-18T00:00:00+08:00">August 18, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。
+
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/key-visual-design.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2025-08-2025-tgdf-notes-01-cdpr/" rel="permalink">[分享] 2025 TGDF 筆記 - CDPR 篇
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-08-18T00:00:00+08:00">August 18, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。
+
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2025-06-refactor-general-module/" rel="permalink">[開發日誌 #2] A 需要跑步但 B 只要走路
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-06-04T00:00:00+08:00">June 4, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動...</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2025-05-fight-with-state-machine/" rel="permalink">[開發日誌 #1] 狀態機奮鬥記
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-05-08T00:00:00+08:00">May 8, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">時光荏苒，參與新專案到現在也超過半年了。因為是第一次做動作遊戲，面對沒開發過的機制，看了許多資料，也踩了不少的坑，就覺得應該來寫個開發日誌，多少記錄一下開發過程的酸甜苦辣鹹。開張第一篇先來分享開發狀態機時的碰壁。
+
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <div class="page__footer-cc4-0">
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
+    本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">創用 CC 姓名標示 4.0 國際 授權條款</a>授權
+</div>
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>追蹤:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/LanKuDot" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/LanKuDot" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://assetstore.unity.com/publishers/52019" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-unity" aria-hidden="true"></i> Unity</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> RSS Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2025 <a href="https://lankudot.airfishlab.com">烏龜漫遊 2.0</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VXPNSTXB5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VXPNSTXB5L', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+    <!-- start custom comments scripts -->
+
+<!-- end custom comments scripts -->
+
+
+
+
+
+  </body>
+</html>
