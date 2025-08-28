@@ -1,4 +1,358 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2025-08-18T23:46:46+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[分享] 2025 TGDF 筆記 - CDPR 篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - CDPR 篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-01-cdpr</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/"><![CDATA[<p>今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2025-08-28T22:45:19+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[開發日誌 #3] 先求有，但別繞路</title><link href="https://lankudot.airfishlab.com/blog/2025-08-seek-first-to-have-but-do-not-take-long-way-around/" rel="alternate" type="text/html" title="[開發日誌 #3] 先求有，但別繞路" /><published>2025-08-28T00:00:00+08:00</published><updated>2025-08-28T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/seek-first-to-have-but-do-not-take-long-way-around</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-seek-first-to-have-but-do-not-take-long-way-around/"><![CDATA[<p>很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。</p>
+
+<p><img src="/assets/images/blog/2025/2025-08-28-seek-first-to-have-but-do-not-take-long-way-around/cover-image.png" alt="cover-image" /></p>
+
+<h2 id="發現白做">發現白做</h2>
+
+<p>這次開發的遊戲中，戰鬥事件的時機跟動畫有很大的關係，像是閃避時，在哪一段時間中是無敵的，或是攻擊時，什麼時候進行傷害判定等等。在開發初期時，因為動畫還沒開始製作，所以選擇先用秒數來表達這些事件的時機點，一開始也覺得這是很直覺的作法。而隨著戰鬥規格的發展，這套參數系統也越來越複雜，最近還花了兩個月把它整理一番。</p>
+
+<p><img src="/assets/images/blog/2025/2025-08-28-seek-first-to-have-but-do-not-take-long-way-around/dash-config-using-timing.png" alt="dash-config-using-timing" />
+<em>使用秒數來表達時機，指定在前幾秒的時間內，可以觸發</em></p>
+
+<p>然而在開始套動畫之後，發覺這套以時間為主的參數系統完全無法使用。因為透過動畫趨動的事件是以開關為主，像是閃避無敵可以透過在動畫開頭開啟無敵狀態，接著在後面某個影格關閉來定義無敵的時間，或是攻擊的傷害判定時機，也可以在對應的影格上放置事件就好。</p>
+
+<p><img src="/assets/images/blog/2025/2025-08-28-seek-first-to-have-but-do-not-take-long-way-around/dash-config-using-animation-clip.png" alt="dash-config-using-animation-clip.png" />
+<em>使用動畫來控制變數來表達時機，在指定變數為 true 的時候，就是可以觸發的時候</em></p>
+
+<p>這才意識到，既然已經知道戰鬥系統會跟動畫關聯，當初就應該以動畫為基礎去製作戰鬥系統，而不是先做一個之後用不到的暫代版本。因為到頭來，花在暫代版本的時間都會白費之外，還要重做一套全新的版本。如果有其它功能是基於暫代版本去做的話，還要一併修改，也得再確認一次這些功能有沒有 bug，所花的時間不會只有開發新版本的時間。</p>
+
+<p><img src="/assets/images/blog/2025/2025-08-28-seek-first-to-have-but-do-not-take-long-way-around/time-spent.png" alt="time-spent" />
+<em>除了開發新版本的時間，其餘都是白花的</em></p>
+
+<h2 id="先求有但別繞路">先求有，但別繞路</h2>
+
+<p>所以如果知道要做的功能未來會怎樣時，最好一開始就以此為方向來開發功能，還沒有所需資料或素材就用暫代的。像戰鬥系統就算還沒有動畫，可以先用幾何形狀拉簡單示意動作，如果不用幾何形狀，也可以先把動作的時長用兩個 keyframe 簡單表示就好。因為前期的重點是把戰鬥事件實作出來，先驗證這些事件在遊戲中如何運作比較好。等到可以套上動畫之後，就可以以此為基礎，去調整事件的功能。想想如果當初就這樣做的話，就可以少花這兩個月的時間了 :cry:。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 九日篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 九日篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-02-nine-sols</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/"><![CDATA[<p>今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。</p>
+
+<h2 id="兩年的噩夢找尋九日類隻狼系統的誕生">兩年的噩夢找尋，九日類隻狼系統的誕生</h2>
+
+<p>這場分享《九日》是如何找到現在的類隻狼玩法，要找到突破點花了相當多的時間，其中的過程也很辛苦。</p>
+
+<ul>
+  <li>世界觀設定
+    <ul>
+      <li>「道龐克」</li>
+      <li>一個太陽對九個太陽的復仇</li>
+      <li>外星人來到地球留下了道教科技與故事</li>
+    </ul>
+  </li>
+  <li>想到以動作加上銀河戰士的玩法
+    <ul>
+      <li>九個太陽所在的九個區域對應他們各自的設定</li>
+    </ul>
+  </li>
+  <li>八個月就完成有基本玩法與畫面的「Hollow Cat」</li>
+  <li>但為了避免 Hollow Knight 感花了一陣子，也打掉第一版，並重新思考機制
+    <ul>
+      <li>2D 版隻狼？但慢節奏、沒 Y 軸戰鬥、沒平台挑戰</li>
+      <li>參考《Katana Zero》為了要快節奏，不加入對峙，也沒有體幹值</li>
+      <li>想要有平台挑戰，加入空中格擋</li>
+      <li>但如《Katana Zero》的快節奏，敵人看一兩次就被打倒，與隻狼要對招一兩次所帶來的深度不同</li>
+    </ul>
+  </li>
+  <li>又回到類銀河的玩法上，但把體幹值改成點數制
+    <ul>
+      <li>要格擋才有氣能貼符</li>
+      <li>為了避免等格擋時機而太被動，加入普攻來算節奏</li>
+      <li>為了以格擋為主，普攻的攻擊力比貼符還要低很多</li>
+      <li>避免一直按普攻，普攻三連擊的第三下無法直接進入格擋</li>
+      <li>敵人被普攻打中後，會減攻擊 cd，讓敵人更容易主動攻擊，來讓玩家有機會格擋</li>
+    </ul>
+  </li>
+  <li>加入潛行？
+    <ul>
+      <li>2D 畫面視野很小，而且角色動很快不適合潛行，而且每個敵人也要設計暗殺動畫</li>
+      <li>最後改成「背襲」</li>
+      <li>但關卡還是有潛行的設計，如被電之後行動不便，只能潛行</li>
+    </ul>
+  </li>
+  <li>貼符的體驗
+    <ul>
+      <li>貼符到懸崖邊會自動停住，避免瞬移距離過長而掉落</li>
+      <li>在地面貼符時，會先瞬步到敵人前再貼符，再繼續瞬步一段距離，但是在空中貼符則會直接貼</li>
+    </ul>
+  </li>
+  <li>把技能樹當教學用
+    <ul>
+      <li>例如：點了背襲技能，知道可以背襲</li>
+    </ul>
+  </li>
+  <li>大家對技能功效有不同的想像，有人想加有人不想，做成玉石系統來讓玩家自已選</li>
+  <li>如何知道找到醬汁了？成功讓玩家想要一做再做</li>
+</ul>
+
+<h2 id="九日戰鬥設計雜談">《九日》戰鬥設計雜談</h2>
+
+<p>這場一樣有分享到《九日》開案時的構想，並且著重在怪物行為的設計，以及攻擊模式的小技巧，讓戰鬥更豐富。</p>
+
+<ul>
+  <li>開案起源
+    <ul>
+      <li>《返校》跟《還願》還是以華語圈為主，新作方向能否打入歐美市場？</li>
+      <li>以玩法為核心能否有文化穿透力？像《Dead Cells》跟《Hollow Knight》</li>
+    </ul>
+  </li>
+  <li>參考《Hollow Knight》，但是不是只能做出劣化版的《Hollow Knight》</li>
+  <li>風格找尋：<br />
+<img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/nine-sols-style-coordinate.svg" alt="nine-sols-style-coordinate" />
+    <ul>
+      <li>當然在 2D 以格擋為主的風格下，還是有其它遊戲</li>
+    </ul>
+  </li>
+  <li>以格擋為主，所以要引導玩家用格擋
+    <ul>
+      <li>普攻傷害低，貼符有大傷害 ← 要格擋才有氣能貼符</li>
+    </ul>
+  </li>
+  <li>怪物製作流程，實際執行時沒有清楚細分步驟，但為了演講還是整理出大致統程
+    <ol>
+      <li>前期溝通：確定怪物定位，如：難度、外貌、參考對象</li>
+      <li>灰盒驗證：設計戰鬥的 fantasy（要帶來什麼樣的感覺）
+        <ul>
+          <li>讓玩家要用什麼 pattern 來對應</li>
+          <li>Boss 攻擊前的動作能不能讓玩家找到對招時機</li>
+          <li>這時就會在 animation clip 上做怪物行為</li>
+        </ul>
+      </li>
+      <li>美術原型：在 animation clip 上套皮，看感覺</li>
+      <li>程式美術整合：在套皮後重調數值，再看感覺</li>
+      <li>內部測試：內部回饋、改善</li>
+      <li>後期：套音效、特效</li>
+      <li>外測：玩家公開測試</li>
+    </ol>
+  </li>
+  <li>在量產期會做前五個步驟，但是在打磨階段才會做後期與外測</li>
+  <li>戰鬥難，讓玩家克服時有成就感，感覺「原來我可以做到」</li>
+  <li>怪的攻擊有一定節奏，但是後期怪的攻擊脫離前面的節奏會帶來難度，也會有新奇感</li>
+  <li>一些攻擊模式的技巧
+    <ul>
+      <li>利用位移來做攻擊前置動作，如：水鬼</li>
+      <li>過身：攻擊時，怪物會穿過玩家到另一邊</li>
+      <li>脫手攻擊：出招後，那招會延遲攻擊（如：緩慢的投射物），讓怪物可以再開其它招</li>
+      <li>以預期讓玩家的輸入 pattern 來設計招式</li>
+      <li>玩家一直按格擋會縮段精準格擋的窗口</li>
+      <li>終結技可以輸出大傷害，作為獎勵
+        <ul>
+          <li>boss 打完一輪的休息窗口，讓玩家可以輸出大量傷害</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="為九日而研發的狀態機架構monofsm">為《九日》而研發的狀態機架構《MonoFSM》</h2>
+
+<p>最近在開發上在煩惱角色狀態機的設計，所以這場也是有興趣的演講之一。演講主要圍繞在 MonoFSM 為什麼會誕生，雖然沒有著墨太多技術上的細節，但是在製作 prototype 時的經驗分享也很受用。</p>
+
+<ul>
+  <li>第一階段為了開發要快而硬 A，使出戰術龍捲風！
+    <ul>
+      <li>但當內容一多就開始 A 不動，程式碼耦合重、bug 不好修，而且很難加入新功能</li>
+    </ul>
+  </li>
+  <li>遊戲開發架構金字塔由底層到塔頂依序為：
+    <ul>
+      <li>引擎：開發使用的遊戲引擎</li>
+      <li>系統：為遊戲功能開發的功能</li>
+      <li>資料：功能所需要的設定、數值、素材等</li>
+      <li>設計：遊戲玩法、功能、行為等</li>
+      <li>體驗：遊戲給玩家的殘體驗</li>
+    </ul>
+  </li>
+  <li>而戰術龍捲風就是把系統、資料、設計全部混在一起做</li>
+  <li>第二階段開始把資料抽離出來，利用 animation clip 來綁定動畫及開關元件或事件（絕對不要用 Event 來開關）
+    <ul>
+      <li>好處是可以在同一個地方編輯動畫及事件，也可以視覺化資料</li>
+    </ul>
+  </li>
+  <li>到量產期後發現需要重新設計架構
+    <ul>
+      <li>參考 visual scripting 把邏輯跟系統分離</li>
+      <li>要支援 prefab</li>
+      <li>可以通用的 FSM 設計</li>
+    </ul>
+  </li>
+  <li>用 MonoBehaviour 來描述狀態與狀態轉換，且基於 prefab 的 MonoFSM 誕生了
+    <ul>
+      <li>在 Hierarchy 顯示 FSM 的狀態及相關變數的數值</li>
+      <li>Per-instance Debugging：可以以 GameObject 為單位來 debug，不用在程式碼中寫 debug 訊息</li>
+    </ul>
+  </li>
+  <li>漸近重構
+    <ul>
+      <li>實驗期：在小地方嘗試，先展現價值</li>
+      <li>推動期：新內容用新規格作。舊的東西有 bug 或想調整太難做的話，也替換成新架構</li>
+      <li>能動的東西就不要改!</li>
+    </ul>
+  </li>
+  <li>團隊應該集中在「遊戲體驗」上，作工具就是為了加速迭代</li>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 遊戲設計篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 遊戲設計篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-03-game-design</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/"><![CDATA[<p>這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。</p>
+
+<h2 id="當敵人先出剪刀淺談戰鬥關卡設計的四個層級與選擇引導">當敵人先出剪刀：淺談戰鬥關卡設計的四個層級與選擇引導</h2>
+
+<p>侍達遊戲的戰鬥設計部主管帶來的這場演講，介紹如何設計遊戲中的戰鬥，讓玩家有跡可遁而能做出對應的策略。</p>
+
+<ul>
+  <li>什麼是戰鬥設計？
+    <ul>
+      <li>戰鬥是什麼？是勝負，像是擊敗敵人、審判攻防，甚至克服地形也可以是戰鬥</li>
+      <li>設計是什麼？有資訊讓玩家判斷如何贏，以及有對錯，玩家有輸的風險，答對則讓玩家有成就感</li>
+    </ul>
+  </li>
+  <li>以剪刀石頭布為例：
+    <ul>
+      <li>1/3 隨機出拳 → 玩家不知道如何對應，不是設計</li>
+      <li>看到敵人要出剪刀 → 玩家可以選擇出石頭，是設計</li>
+      <li>看到敵人要出剪刀，但敵人很狡猾 → 玩家可以改出剪刀，是設計</li>
+    </ul>
+  </li>
+  <li>所以戰鬥設計是：有勝負、有資訊（判斷他要做什麼）、有對錯（知道什麼選擇是對的）</li>
+  <li>戰鬥設計的四個層級
+    <ul>
+      <li>設計什麼：想像力是你的超能力
+        <ul>
+          <li>把非戰鬥情境變成戰鬥情境</li>
+          <li>選定戰鬥主題，例如：「按摩」</li>
+        </ul>
+      </li>
+      <li>如何設計：如何表現「按摩」的戰鬥
+        <ul>
+          <li>按摩要合適的力道 → 傷害要恰當 → 每回合的傷害控制</li>
+        </ul>
+      </li>
+      <li>玩法打磨：以提問建構內容
+        <ul>
+          <li>如何判斷按摩力道？傷害區間</li>
+          <li>玩家如何知道要控制力道？敵人說教，傷害太高 → 按太大力 → 「太痛了吧！」</li>
+          <li>玩家如何知道具體區間？包裝成管家指南，指示傷害值對應的力道</li>
+          <li>被按摩者會攻擊嗎？不會，現實中被按摩的人也不會打按摩師</li>
+          <li>但確立核心要避免機械解法，要避免讓玩家一直以 10% 傷害攻擊
+            <ul>
+              <li>要讓核心有變化</li>
+              <li>代入現實體驗，痠的地方要按的力一點</li>
+              <li>再發展成機制，加入傷害 buff，所以傷害要高一點</li>
+            </ul>
+          </li>
+          <li>答對能對敵人造成傷害，但答錯要如何懲罰？
+            <ul>
+              <li>錯三次才會失敗，但是有漏洞</li>
+              <li>玩家可以打兩次大傷害，再打一個成功的傷害 → 修正：打太大力直接失敗</li>
+              <li>打太小，慢慢打完 → 回合限制及每回合回血</li>
+            </ul>
+          </li>
+          <li>強制完家每次都要控傷害</li>
+        </ul>
+      </li>
+      <li>驗證 × 觀察 × 修正
+        <ul>
+          <li>正向測試：以預期方式去測，看有無符合預期</li>
+          <li>反向測試：以預期外方式去測，看要不要修漏洞</li>
+          <li>觀察：體驗不如預期時，先記錄感受，不要提示及反駁</li>
+          <li>分析修正：整理問題，思考原因，並改善</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>玩家體驗是準則，如果不符預期，就要改變設計</li>
+</ul>
+
+<h2 id="patricks-parabox的解謎設計挑戰">《Patrick’s Parabox》的解謎設計挑戰</h2>
+
+<p>《Patrick’s Parabox》是一款以遞迴為主題的解謎遊戲，講者 Patrick Traynor 分享開發過程中遇到的困難，以及如何精煉關卡，讓玩家在解題過程中能一直得到新鮮感。</p>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/HAvS-RwkjdA" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<ul>
+  <li>動機：我有個很酷的系統想秀給朋友看，及玩家想看酷系統如何發揮</li>
+  <li>核心系統：遞迴與自我參照</li>
+  <li>花了四年的時間迭代遊戲玩法
+    <ul>
+      <li>一開始是兩人的倉庫番解謎，但兩人玩家在不同的尺度下運作</li>
+      <li>變成三人的倉庫番解謎，且尺度更多層</li>
+      <li>改成單人，而且玩家自己可以穿越不同的尺度</li>
+      <li>不同的尺度間都有個自己，而且尺度空間是一樣的（就像俄羅斯娃娃），只要移動，不同尺度的自己都會移動</li>
+    </ul>
+  </li>
+  <li>如果觸發悖論要怎麼辦？
+    <ul>
+      <li>直接設計一個悖論發生場景，而且不能再回原來的場景</li>
+      <li>等同於跟玩家說你贏了！比起不能發生還要更好</li>
+      <li>而且還可以用悖論做為機制來設計新關卡</li>
+    </ul>
+  </li>
+  <li>背景音樂符合關卡的調性，音效也很重要</li>
+  <li>關卡設計
+    <ul>
+      <li>玩家是來玩機制的！</li>
+      <li>專注在機制上，<strong>簡單</strong>，不混合大量不同機制，也不堆疊謎題難度
+        <ul>
+          <li>玩家是來玩遞迴的謎題，而不是很難走出去的迷宮</li>
+          <li>設計者覺得很棒，但是困難的關卡可以放在支線關卡中，讓玩家可跳過，想挑戰的人可以去玩</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>在新機制出現時，先放直覺的教學關來教玩家機制，才放真的想讓玩家玩的關卡及支線關卡</li>
+  <li>刪除不好的關卡也很重要！
+    <ul>
+      <li>遊戲中一共有 364 個關卡，但也有 600 多個沒用上的關卡</li>
+      <li>持續試錯，找到最好的謎題</li>
+    </ul>
+  </li>
+  <li>幫助思考的法則
+    <ul>
+      <li>夠自然嗎？</li>
+      <li>要多少關卡才有樂趣？</li>
+      <li>做關卡簡單嗎？</li>
+      <li>夠豐富嗎？能做越少得越多嗎？</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="玩音樂節奏遊戲之外的更多可能">玩音樂：節奏遊戲之外的更多可能</h2>
+
+<p>這場演講是線上日的議程之一（<a href="https://www.twitch.tv/videos/2511224346?t=03h53m14s">Twitch 連結</a>），身為一名節奏遊戲的愛好者，所以也對這場演講很有興趣。講者 Ferran 擁有豐富的音樂遊戲開發經驗，對這類遊戲的研究也很有經驗，分享音樂遊戲不只有節奏遊戲，還有更多的探索方向。</p>
+
+<ul>
+  <li>雖然電玩的英文是「Video Game」，但音樂也一直存在在電玩遊戲之中</li>
+  <li>聲音場景（Soundscape）：背景音樂 + 音效</li>
+  <li>音樂遊戲一開始想到的就是「節奏遊戲」
+    <ul>
+      <li>在正確的時間按下正確的按鍵</li>
+      <li>再來有下落式，甚至跳脫按鍵，以觸控為主</li>
+      <li>除了手指之外，這有全身舞動的玩法</li>
+      <li>後來發展越來展多元，將節奏遊戲與不同遊戲類型結合，像結合彈幕的《Just Shape &amp; Beats》、結合策略的《Patapon》</li>
+      <li>甚至強調格檔的動作遊戲也可以是節奏遊戲，如《九日》</li>
+    </ul>
+  </li>
+  <li>節奏遊戲可以算是動作遊戲的一類，是即時的、需要配合時機</li>
+  <li>但音樂不只有「節奏」，音樂遊戲不是只有節奏遊戲，如《Ape Out》猩猩角色的動作會影響音樂的組成</li>
+  <li>而且音樂也不只是「背景」，如：瑪利歐 wii 版，敵人會隨音樂反應，是世界的一部份</li>
+  <li>不止節奏
+    <ul>
+      <li>用玩具形式「創作」出一首音樂，如《ODDADA》、《Poly-60》</li>
+      <li>探索弦律線
+        <ul>
+          <li>玩家可以自由創造弦律，而遊戲會配合弦律演奏，如《Wii Music》的 Instrument Improv 模式</li>
+          <li>非同步錄製，玩家只能演奏一個樂器，然後跟其它人合，如《10 Second Mixtape》</li>
+        </ul>
+      </li>
+      <li>探索和聲，在基礎弦律上找出正確和聲，如《Blob Opera》、《Pianobots》</li>
+      <li>探索歌詞，即時選擇歌詞，遊戲隨選擇演唱，如《Kentucky Route Zero》的第三幕、《Evergreen Blues》</li>
+      <li>互動式音樂專輯，每首歌是一個互動小遊戲，如《Off-Score: A game of songs》</li>
+    </ul>
+  </li>
+  <li>遊戲是互動媒體，讓玩家可以玩你的音樂，而且音樂不只有節奏</li>
+  <li>如果遊戲中有音樂的話
+    <ul>
+      <li>越早加入越好（包含音效），讓音樂能激發靈感，也可以讓早期遊戲像個遊戲</li>
+      <li>讓遊戲會對音樂互動</li>
+    </ul>
+  </li>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - CDPR 篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - CDPR 篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-01-cdpr</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/"><![CDATA[<p>今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。</p>
 
 <p><img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/pass.png" alt="參加證" /></p>
 
@@ -189,338 +543,7 @@
     </ul>
   </li>
   <li>回到一開始的問題：是什麼要素讓玩家能享受遊戲? 所有創作遊戲的人</li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 遊戲設計篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 遊戲設計篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-03-game-design</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/"><![CDATA[<p>這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。</p>
-
-<h2 id="當敵人先出剪刀淺談戰鬥關卡設計的四個層級與選擇引導">當敵人先出剪刀：淺談戰鬥關卡設計的四個層級與選擇引導</h2>
-
-<p>侍達遊戲的戰鬥設計部主管帶來的這場演講，介紹如何設計遊戲中的戰鬥，讓玩家有跡可遁而能做出對應的策略。</p>
-
-<ul>
-  <li>什麼是戰鬥設計？
-    <ul>
-      <li>戰鬥是什麼？是勝負，像是擊敗敵人、審判攻防，甚至克服地形也可以是戰鬥</li>
-      <li>設計是什麼？有資訊讓玩家判斷如何贏，以及有對錯，玩家有輸的風險，答對則讓玩家有成就感</li>
-    </ul>
-  </li>
-  <li>以剪刀石頭布為例：
-    <ul>
-      <li>1/3 隨機出拳 → 玩家不知道如何對應，不是設計</li>
-      <li>看到敵人要出剪刀 → 玩家可以選擇出石頭，是設計</li>
-      <li>看到敵人要出剪刀，但敵人很狡猾 → 玩家可以改出剪刀，是設計</li>
-    </ul>
-  </li>
-  <li>所以戰鬥設計是：有勝負、有資訊（判斷他要做什麼）、有對錯（知道什麼選擇是對的）</li>
-  <li>戰鬥設計的四個層級
-    <ul>
-      <li>設計什麼：想像力是你的超能力
-        <ul>
-          <li>把非戰鬥情境變成戰鬥情境</li>
-          <li>選定戰鬥主題，例如：「按摩」</li>
-        </ul>
-      </li>
-      <li>如何設計：如何表現「按摩」的戰鬥
-        <ul>
-          <li>按摩要合適的力道 → 傷害要恰當 → 每回合的傷害控制</li>
-        </ul>
-      </li>
-      <li>玩法打磨：以提問建構內容
-        <ul>
-          <li>如何判斷按摩力道？傷害區間</li>
-          <li>玩家如何知道要控制力道？敵人說教，傷害太高 → 按太大力 → 「太痛了吧！」</li>
-          <li>玩家如何知道具體區間？包裝成管家指南，指示傷害值對應的力道</li>
-          <li>被按摩者會攻擊嗎？不會，現實中被按摩的人也不會打按摩師</li>
-          <li>但確立核心要避免機械解法，要避免讓玩家一直以 10% 傷害攻擊
-            <ul>
-              <li>要讓核心有變化</li>
-              <li>代入現實體驗，痠的地方要按的力一點</li>
-              <li>再發展成機制，加入傷害 buff，所以傷害要高一點</li>
-            </ul>
-          </li>
-          <li>答對能對敵人造成傷害，但答錯要如何懲罰？
-            <ul>
-              <li>錯三次才會失敗，但是有漏洞</li>
-              <li>玩家可以打兩次大傷害，再打一個成功的傷害 → 修正：打太大力直接失敗</li>
-              <li>打太小，慢慢打完 → 回合限制及每回合回血</li>
-            </ul>
-          </li>
-          <li>強制完家每次都要控傷害</li>
-        </ul>
-      </li>
-      <li>驗證 × 觀察 × 修正
-        <ul>
-          <li>正向測試：以預期方式去測，看有無符合預期</li>
-          <li>反向測試：以預期外方式去測，看要不要修漏洞</li>
-          <li>觀察：體驗不如預期時，先記錄感受，不要提示及反駁</li>
-          <li>分析修正：整理問題，思考原因，並改善</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>玩家體驗是準則，如果不符預期，就要改變設計</li>
-</ul>
-
-<h2 id="patricks-parabox的解謎設計挑戰">《Patrick’s Parabox》的解謎設計挑戰</h2>
-
-<p>《Patrick’s Parabox》是一款以遞迴為主題的解謎遊戲，講者 Patrick Traynor 分享開發過程中遇到的困難，以及如何精煉關卡，讓玩家在解題過程中能一直得到新鮮感。</p>
-
-<!-- Courtesy of embedresponsively.com -->
-
-<div class="responsive-video-container">
-    <iframe src="https://www.youtube-nocookie.com/embed/HAvS-RwkjdA" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-
-<ul>
-  <li>動機：我有個很酷的系統想秀給朋友看，及玩家想看酷系統如何發揮</li>
-  <li>核心系統：遞迴與自我參照</li>
-  <li>花了四年的時間迭代遊戲玩法
-    <ul>
-      <li>一開始是兩人的倉庫番解謎，但兩人玩家在不同的尺度下運作</li>
-      <li>變成三人的倉庫番解謎，且尺度更多層</li>
-      <li>改成單人，而且玩家自己可以穿越不同的尺度</li>
-      <li>不同的尺度間都有個自己，而且尺度空間是一樣的（就像俄羅斯娃娃），只要移動，不同尺度的自己都會移動</li>
-    </ul>
-  </li>
-  <li>如果觸發悖論要怎麼辦？
-    <ul>
-      <li>直接設計一個悖論發生場景，而且不能再回原來的場景</li>
-      <li>等同於跟玩家說你贏了！比起不能發生還要更好</li>
-      <li>而且還可以用悖論做為機制來設計新關卡</li>
-    </ul>
-  </li>
-  <li>背景音樂符合關卡的調性，音效也很重要</li>
-  <li>關卡設計
-    <ul>
-      <li>玩家是來玩機制的！</li>
-      <li>專注在機制上，<strong>簡單</strong>，不混合大量不同機制，也不堆疊謎題難度
-        <ul>
-          <li>玩家是來玩遞迴的謎題，而不是很難走出去的迷宮</li>
-          <li>設計者覺得很棒，但是困難的關卡可以放在支線關卡中，讓玩家可跳過，想挑戰的人可以去玩</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>在新機制出現時，先放直覺的教學關來教玩家機制，才放真的想讓玩家玩的關卡及支線關卡</li>
-  <li>刪除不好的關卡也很重要！
-    <ul>
-      <li>遊戲中一共有 364 個關卡，但也有 600 多個沒用上的關卡</li>
-      <li>持續試錯，找到最好的謎題</li>
-    </ul>
-  </li>
-  <li>幫助思考的法則
-    <ul>
-      <li>夠自然嗎？</li>
-      <li>要多少關卡才有樂趣？</li>
-      <li>做關卡簡單嗎？</li>
-      <li>夠豐富嗎？能做越少得越多嗎？</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="玩音樂節奏遊戲之外的更多可能">玩音樂：節奏遊戲之外的更多可能</h2>
-
-<p>這場演講是線上日的議程之一（<a href="https://www.twitch.tv/videos/2511224346?t=03h53m14s">Twitch 連結</a>），身為一名節奏遊戲的愛好者，所以也對這場演講很有興趣。講者 Ferran 擁有豐富的音樂遊戲開發經驗，對這類遊戲的研究也很有經驗，分享音樂遊戲不只有節奏遊戲，還有更多的探索方向。</p>
-
-<ul>
-  <li>雖然電玩的英文是「Video Game」，但音樂也一直存在在電玩遊戲之中</li>
-  <li>聲音場景（Soundscape）：背景音樂 + 音效</li>
-  <li>音樂遊戲一開始想到的就是「節奏遊戲」
-    <ul>
-      <li>在正確的時間按下正確的按鍵</li>
-      <li>再來有下落式，甚至跳脫按鍵，以觸控為主</li>
-      <li>除了手指之外，這有全身舞動的玩法</li>
-      <li>後來發展越來展多元，將節奏遊戲與不同遊戲類型結合，像結合彈幕的《Just Shape &amp; Beats》、結合策略的《Patapon》</li>
-      <li>甚至強調格檔的動作遊戲也可以是節奏遊戲，如《九日》</li>
-    </ul>
-  </li>
-  <li>節奏遊戲可以算是動作遊戲的一類，是即時的、需要配合時機</li>
-  <li>但音樂不只有「節奏」，音樂遊戲不是只有節奏遊戲，如《Ape Out》猩猩角色的動作會影響音樂的組成</li>
-  <li>而且音樂也不只是「背景」，如：瑪利歐 wii 版，敵人會隨音樂反應，是世界的一部份</li>
-  <li>不止節奏
-    <ul>
-      <li>用玩具形式「創作」出一首音樂，如《ODDADA》、《Poly-60》</li>
-      <li>探索弦律線
-        <ul>
-          <li>玩家可以自由創造弦律，而遊戲會配合弦律演奏，如《Wii Music》的 Instrument Improv 模式</li>
-          <li>非同步錄製，玩家只能演奏一個樂器，然後跟其它人合，如《10 Second Mixtape》</li>
-        </ul>
-      </li>
-      <li>探索和聲，在基礎弦律上找出正確和聲，如《Blob Opera》、《Pianobots》</li>
-      <li>探索歌詞，即時選擇歌詞，遊戲隨選擇演唱，如《Kentucky Route Zero》的第三幕、《Evergreen Blues》</li>
-      <li>互動式音樂專輯，每首歌是一個互動小遊戲，如《Off-Score: A game of songs》</li>
-    </ul>
-  </li>
-  <li>遊戲是互動媒體，讓玩家可以玩你的音樂，而且音樂不只有節奏</li>
-  <li>如果遊戲中有音樂的話
-    <ul>
-      <li>越早加入越好（包含音效），讓音樂能激發靈感，也可以讓早期遊戲像個遊戲</li>
-      <li>讓遊戲會對音樂互動</li>
-    </ul>
-  </li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 九日篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 九日篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-02-nine-sols</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/"><![CDATA[<p>今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。</p>
-
-<h2 id="兩年的噩夢找尋九日類隻狼系統的誕生">兩年的噩夢找尋，九日類隻狼系統的誕生</h2>
-
-<p>這場分享《九日》是如何找到現在的類隻狼玩法，要找到突破點花了相當多的時間，其中的過程也很辛苦。</p>
-
-<ul>
-  <li>世界觀設定
-    <ul>
-      <li>「道龐克」</li>
-      <li>一個太陽對九個太陽的復仇</li>
-      <li>外星人來到地球留下了道教科技與故事</li>
-    </ul>
-  </li>
-  <li>想到以動作加上銀河戰士的玩法
-    <ul>
-      <li>九個太陽所在的九個區域對應他們各自的設定</li>
-    </ul>
-  </li>
-  <li>八個月就完成有基本玩法與畫面的「Hollow Cat」</li>
-  <li>但為了避免 Hollow Knight 感花了一陣子，也打掉第一版，並重新思考機制
-    <ul>
-      <li>2D 版隻狼？但慢節奏、沒 Y 軸戰鬥、沒平台挑戰</li>
-      <li>參考《Katana Zero》為了要快節奏，不加入對峙，也沒有體幹值</li>
-      <li>想要有平台挑戰，加入空中格擋</li>
-      <li>但如《Katana Zero》的快節奏，敵人看一兩次就被打倒，與隻狼要對招一兩次所帶來的深度不同</li>
-    </ul>
-  </li>
-  <li>又回到類銀河的玩法上，但把體幹值改成點數制
-    <ul>
-      <li>要格擋才有氣能貼符</li>
-      <li>為了避免等格擋時機而太被動，加入普攻來算節奏</li>
-      <li>為了以格擋為主，普攻的攻擊力比貼符還要低很多</li>
-      <li>避免一直按普攻，普攻三連擊的第三下無法直接進入格擋</li>
-      <li>敵人被普攻打中後，會減攻擊 cd，讓敵人更容易主動攻擊，來讓玩家有機會格擋</li>
-    </ul>
-  </li>
-  <li>加入潛行？
-    <ul>
-      <li>2D 畫面視野很小，而且角色動很快不適合潛行，而且每個敵人也要設計暗殺動畫</li>
-      <li>最後改成「背襲」</li>
-      <li>但關卡還是有潛行的設計，如被電之後行動不便，只能潛行</li>
-    </ul>
-  </li>
-  <li>貼符的體驗
-    <ul>
-      <li>貼符到懸崖邊會自動停住，避免瞬移距離過長而掉落</li>
-      <li>在地面貼符時，會先瞬步到敵人前再貼符，再繼續瞬步一段距離，但是在空中貼符則會直接貼</li>
-    </ul>
-  </li>
-  <li>把技能樹當教學用
-    <ul>
-      <li>例如：點了背襲技能，知道可以背襲</li>
-    </ul>
-  </li>
-  <li>大家對技能功效有不同的想像，有人想加有人不想，做成玉石系統來讓玩家自已選</li>
-  <li>如何知道找到醬汁了？成功讓玩家想要一做再做</li>
-</ul>
-
-<h2 id="九日戰鬥設計雜談">《九日》戰鬥設計雜談</h2>
-
-<p>這場一樣有分享到《九日》開案時的構想，並且著重在怪物行為的設計，以及攻擊模式的小技巧，讓戰鬥更豐富。</p>
-
-<ul>
-  <li>開案起源
-    <ul>
-      <li>《返校》跟《還願》還是以華語圈為主，新作方向能否打入歐美市場？</li>
-      <li>以玩法為核心能否有文化穿透力？像《Dead Cells》跟《Hollow Knight》</li>
-    </ul>
-  </li>
-  <li>參考《Hollow Knight》，但是不是只能做出劣化版的《Hollow Knight》</li>
-  <li>風格找尋：<br />
-<img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/nine-sols-style-coordinate.svg" alt="nine-sols-style-coordinate" />
-    <ul>
-      <li>當然在 2D 以格擋為主的風格下，還是有其它遊戲</li>
-    </ul>
-  </li>
-  <li>以格擋為主，所以要引導玩家用格擋
-    <ul>
-      <li>普攻傷害低，貼符有大傷害 ← 要格擋才有氣能貼符</li>
-    </ul>
-  </li>
-  <li>怪物製作流程，實際執行時沒有清楚細分步驟，但為了演講還是整理出大致統程
-    <ol>
-      <li>前期溝通：確定怪物定位，如：難度、外貌、參考對象</li>
-      <li>灰盒驗證：設計戰鬥的 fantasy（要帶來什麼樣的感覺）
-        <ul>
-          <li>讓玩家要用什麼 pattern 來對應</li>
-          <li>Boss 攻擊前的動作能不能讓玩家找到對招時機</li>
-          <li>這時就會在 animation clip 上做怪物行為</li>
-        </ul>
-      </li>
-      <li>美術原型：在 animation clip 上套皮，看感覺</li>
-      <li>程式美術整合：在套皮後重調數值，再看感覺</li>
-      <li>內部測試：內部回饋、改善</li>
-      <li>後期：套音效、特效</li>
-      <li>外測：玩家公開測試</li>
-    </ol>
-  </li>
-  <li>在量產期會做前五個步驟，但是在打磨階段才會做後期與外測</li>
-  <li>戰鬥難，讓玩家克服時有成就感，感覺「原來我可以做到」</li>
-  <li>怪的攻擊有一定節奏，但是後期怪的攻擊脫離前面的節奏會帶來難度，也會有新奇感</li>
-  <li>一些攻擊模式的技巧
-    <ul>
-      <li>利用位移來做攻擊前置動作，如：水鬼</li>
-      <li>過身：攻擊時，怪物會穿過玩家到另一邊</li>
-      <li>脫手攻擊：出招後，那招會延遲攻擊（如：緩慢的投射物），讓怪物可以再開其它招</li>
-      <li>以預期讓玩家的輸入 pattern 來設計招式</li>
-      <li>玩家一直按格擋會縮段精準格擋的窗口</li>
-      <li>終結技可以輸出大傷害，作為獎勵
-        <ul>
-          <li>boss 打完一輪的休息窗口，讓玩家可以輸出大量傷害</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="為九日而研發的狀態機架構monofsm">為《九日》而研發的狀態機架構《MonoFSM》</h2>
-
-<p>最近在開發上在煩惱角色狀態機的設計，所以這場也是有興趣的演講之一。演講主要圍繞在 MonoFSM 為什麼會誕生，雖然沒有著墨太多技術上的細節，但是在製作 prototype 時的經驗分享也很受用。</p>
-
-<ul>
-  <li>第一階段為了開發要快而硬 A，使出戰術龍捲風！
-    <ul>
-      <li>但當內容一多就開始 A 不動，程式碼耦合重、bug 不好修，而且很難加入新功能</li>
-    </ul>
-  </li>
-  <li>遊戲開發架構金字塔由底層到塔頂依序為：
-    <ul>
-      <li>引擎：開發使用的遊戲引擎</li>
-      <li>系統：為遊戲功能開發的功能</li>
-      <li>資料：功能所需要的設定、數值、素材等</li>
-      <li>設計：遊戲玩法、功能、行為等</li>
-      <li>體驗：遊戲給玩家的殘體驗</li>
-    </ul>
-  </li>
-  <li>而戰術龍捲風就是把系統、資料、設計全部混在一起做</li>
-  <li>第二階段開始把資料抽離出來，利用 animation clip 來綁定動畫及開關元件或事件（絕對不要用 Event 來開關）
-    <ul>
-      <li>好處是可以在同一個地方編輯動畫及事件，也可以視覺化資料</li>
-    </ul>
-  </li>
-  <li>到量產期後發現需要重新設計架構
-    <ul>
-      <li>參考 visual scripting 把邏輯跟系統分離</li>
-      <li>要支援 prefab</li>
-      <li>可以通用的 FSM 設計</li>
-    </ul>
-  </li>
-  <li>用 MonoBehaviour 來描述狀態與狀態轉換，且基於 prefab 的 MonoFSM 誕生了
-    <ul>
-      <li>在 Hierarchy 顯示 FSM 的狀態及相關變數的數值</li>
-      <li>Per-instance Debugging：可以以 GameObject 為單位來 debug，不用在程式碼中寫 debug 訊息</li>
-    </ul>
-  </li>
-  <li>漸近重構
-    <ul>
-      <li>實驗期：在小地方嘗試，先展現價值</li>
-      <li>推動期：新內容用新規格作。舊的東西有 bug 或想調整太難做的話，也替換成新架構</li>
-      <li>能動的東西就不要改!</li>
-    </ul>
-  </li>
-  <li>團隊應該集中在「遊戲體驗」上，作工具就是為了加速迭代</li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。]]></summary></entry><entry><title type="html">[開發日誌 #2] A 需要跑步但 B 只要走路</title><link href="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/" rel="alternate" type="text/html" title="[開發日誌 #2] A 需要跑步但 B 只要走路" /><published>2025-06-04T00:00:00+08:00</published><updated>2025-06-04T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-general-module</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/"><![CDATA[<p>在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。</p>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。]]></summary></entry><entry><title type="html">[開發日誌 #2] A 需要跑步但 B 只要走路</title><link href="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/" rel="alternate" type="text/html" title="[開發日誌 #2] A 需要跑步但 B 只要走路" /><published>2025-06-04T00:00:00+08:00</published><updated>2025-06-04T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-general-module</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/"><![CDATA[<p>在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。</p>
 
 <h2 id="通用模組的問題">通用模組的問題</h2>
 
@@ -1024,37 +1047,4 @@
 
 <h2 id="生於憂患">生於憂患</h2>
 
-<p>總覺得在體驗過什麼是不好的之後，才知道什麼是好的。在這段時間中，確實是挺煎熬的過程，但也是在這樣環境中才開始思考為什麼這樣的情況是不好的，以及如何改善這樣的情況。如果能帶到下一個可以發揮的環境的話，會是很好的養份。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="雜談" /><summary type="html"><![CDATA[之前工作參與的專案規模不大，或是能切分出互不影響的功能，讓每個人各自負責，所以程式功能只要顧好自己的部份就好。在進入大公司後，專案規模變大，開發勢必得要多人一起進行。然而一人開發與多人開發的情景完全不同，大公司專案專注的面向也不一樣，理所當然，就面臨了不少價值觀的衝擊。]]></summary></entry><entry><title type="html">[遊記] 來去逛逛 2024 BitSummit</title><link href="https://lankudot.airfishlab.com/blog/2024-08-visit-bitsummit/" rel="alternate" type="text/html" title="[遊記] 來去逛逛 2024 BitSummit" /><published>2024-08-03T00:00:00+08:00</published><updated>2024-08-03T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/visit-bitsummit</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-08-visit-bitsummit/"><![CDATA[<p>去年 9 月逛了東京電玩展之後，就決定今年要來日本最大的獨立遊戲展ーBitSummit。BitSummit 每年夏天固定在京都市勸業館舉辦，為期三天，吸引世界各地的開發者與發行商來參加。而今年舉辦在 7/19 ~ 7/21（第一天為商務日），副標題為「Drift」。</p>
-
-<p><img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/cover-image.jpg" alt="cover-image" /></p>
-
-<p>勸業館地點就位在平安神宮附近，搭公車就可以抵達。一般入場票為 2000 日圓，門票在一般公開日的這兩天都可以入場，要事先在網路上購票，再到日本的 7-11 請店員把票券印出來，而現場也有販售當日門票。參觀時間從早上 10 點到下午 5 點，以體驗來說算是相當超值。這次會場在場館的一樓與三樓，一樓攤位有合作夥伴、學校、桌遊、Game Jam 發表等，而三樓攤位則有主舞台、開發者、發行商等。這次跟同行友人主要目標就是三樓的攤位。</p>
-
-<p><img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/torii-gate.jpg" alt="torii-gate" />
-<em>搭公車的話，就會看到平安神宮的巨大鳥居</em></p>
-
-<p>來現場的好處一個是可以先玩到還沒發售的遊戲，另一個就是可以跟開發者交流了。交流語言的話，體感英文 7 成，日文 3 成，當然也有會中文的開發者。話題的部份，可以聊聊遊戲開發了多久、用什麼遊戲引擎開發、當初是怎麼開始的等，或是自己喜歡遊戲的哪個部份或機制，開發者都很樂意分享自己的經驗，或是接受玩家的意見。我在這過程中，才後悔自己的英文能力怎麼那麼差，不能順利表達自己有多喜歡他們的遊戲，這次回來要多多加強口說能力了:laughing:。</p>
-
-<p><img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/motionrec-1.jpg" alt="motionrec-1" />
-<img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/motionrec-2.jpg" alt="motionrec-2" />
-<em>這次在會場先玩到一直有在關注的《MOTIONREC》</em></p>
-
-<p>這兩天下來，也試玩了十幾款遊戲，因為個人喜好大多是解謎類的遊戲。像是以錄製角色移動路徑，再播放路徑讓角色移動到原本無法到達的地方的<a href="https://store.steampowered.com/app/2602230/MOTIONREC/" target="_blank">《MOTIONREC》</a>。自己是顆易碎的蛋，要怎麼安全地跳到高處，或是下降到低處的<a href="https://store.steampowered.com/app/2617090/Fowl_Damage/" target="_blank">《Fowl Damage》</a>。還有非常喜歡日本工學院專門學校蒲田校的遊戲設計科的兩款遊戲：一個是結合倉庫番與光與影，透過移動箱子與光源，利用箱子的陰影在上方形成平台，讓影之貓可以抵達目標門的<a href="https://www.youtube.com/watch?v=fafYsxdEn04" target="_blank">《迷暗》</a>。另一個是透過複製一部份區域，來取代另一部份區域，以開啟不能通過的地方的<a href="https://www.youtube.com/watch?v=nKVWYKYurAc" target="_blank">《うつルーム》</a>。同行友人與開發者聊過之後，才知道他們是直接以 C++ 寫成遊戲，物理碰撞也都是自己寫的，真心佩服。</p>
-
-<p><img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/miann.jpg" alt="miann" />
-<img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/utsu-room.jpg" alt="utsu-room" />
-<em>由學生製作的《迷暗》與《うつルーム》除了機制很吸引人之外，關卡設計也很用心</em></p>
-
-<p>會場空間不會太擁擠，在開發者區就算兩側有人排隊，中間還是有足夠空間讓一個人通過，整天逛下來很舒服。而且很多攤位有準備二台以上的試玩設備，所以如果當下想玩的遊戲需要等待的話，先去逛其它攤位再回來都還有機會玩到。另外在一樓入場後，會拿到一個主辦發的提袋，最大可以裝下 A4 L 夾，拿來裝各家文宣相當方便，不用擔心折到，也可以不用在試玩時，煩惱要如何暫放文宣品。比較可惜的是，現場並沒有宣傳袋子中有可以拿來投最喜歡遊戲的貼紙，位在三樓的投票板上的貼紙數很少，而且如果直接到三樓會場的話，也不會拿到袋子。開發《迷暗》的學生說如果有拿到人氣獎的話，就有機會出版了，感到有點可惜。</p>
-
-<p><img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/nice-bag.jpg" alt="nice-bag" /></p>
-
-<p>最後飲食的部份，在一樓會場內有食物攤，會場外也有餐車，附近只有一間小小的全家。午餐時間人很多，在外面排食物也很熱。如果本來就打算一整天就在會場，建議事先就買好午餐跟飲料。</p>
-
-<p><img src="/assets/images/blog/2024/2024-08-03-visit-bitsummit/heian-shrine.jpg" alt="heian-shrine" />
-<em>BitSummit 逛完不妨到平安神宮參拜</em></p>
-
-<p>喜歡獨立遊戲的話，BitSummit 非常值得來逛一次，可以感受到來自世界各地的開發者的熱情，很有「祭典」的氛圍。會後也公布了 2025 年的 BitSummit 在 7/18 ~ 7/20 舉辦，副標題為「XIII」，也呼應下一次是第十三屆。而這時間也恰逢日本三大祭之一「祇園祭」的期間，有機會的話，不妨安排一趟京都之旅。</p>
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">HOT NEWS (literally)<br /><br />BitSummit XIII⛩️<br />July 18, 19, 20, 2025<br /><br />SAVE THE DATES! <br /><br />SEE YOU NEXT YEAR EVERYONE &lt;3 <a href="https://t.co/1JnvSuTwxI">pic.twitter.com/1JnvSuTwxI</a></p>&mdash; BitSummit (@BitSummit) <a href="https://twitter.com/BitSummit/status/1814944601741939104?ref_src=twsrc%5Etfw">July 21, 2024</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="遊記" /><category term="遊戲展" /><summary type="html"><![CDATA[去年 9 月逛了東京電玩展之後，就決定今年要來日本最大的獨立遊戲展ーBitSummit。BitSummit 每年夏天固定在京都市勸業館舉辦，為期三天，吸引世界各地的開發者與發行商來參加。而今年舉辦在 7/19 ~ 7/21（第一天為商務日），副標題為「Drift」。]]></summary></entry></feed>
+<p>總覺得在體驗過什麼是不好的之後，才知道什麼是好的。在這段時間中，確實是挺煎熬的過程，但也是在這樣環境中才開始思考為什麼這樣的情況是不好的，以及如何改善這樣的情況。如果能帶到下一個可以發揮的環境的話，會是很好的養份。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="雜談" /><summary type="html"><![CDATA[之前工作參與的專案規模不大，或是能切分出互不影響的功能，讓每個人各自負責，所以程式功能只要顧好自己的部份就好。在進入大公司後，專案規模變大，開發勢必得要多人一起進行。然而一人開發與多人開發的情景完全不同，大公司專案專注的面向也不一樣，理所當然，就面臨了不少價值觀的衝擊。]]></summary></entry></feed>
