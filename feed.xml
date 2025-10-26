@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2025-08-28T22:45:19+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[開發日誌 #3] 先求有，但別繞路</title><link href="https://lankudot.airfishlab.com/blog/2025-08-seek-first-to-have-but-do-not-take-long-way-around/" rel="alternate" type="text/html" title="[開發日誌 #3] 先求有，但別繞路" /><published>2025-08-28T00:00:00+08:00</published><updated>2025-08-28T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/seek-first-to-have-but-do-not-take-long-way-around</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-seek-first-to-have-but-do-not-take-long-way-around/"><![CDATA[<p>很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2025-10-26T19:39:58+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[開發日誌 #4] 原型時期的程式開發方式</title><link href="https://lankudot.airfishlab.com/blog/2025-10-programming-tips-in-prototyping-stage/" rel="alternate" type="text/html" title="[開發日誌 #4] 原型時期的程式開發方式" /><published>2025-10-26T00:00:00+08:00</published><updated>2025-10-26T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/programming-tips-in-prototyping-stage</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-10-programming-tips-in-prototyping-stage/"><![CDATA[<p>在開發遊戲原型時，最重要的是盡快實現遊戲玩法，但一開始自己走了許多歪路，反而花更多心力在不重要的地方。在 TDGF 上聽到分享與請教朋友之後，學到不少在原型階段的開發方式，就透過這篇文章來分享減少走錯路的方法。</p>
+
+<h2 id="能動就先用不急著重構">能動就先用，不急著重構</h2>
+
+<p>開發時總是會想要重構程式碼，可能是因為覺得有更好的作法，或是覺得現在的架構不適合新的功能。但是在開始重構之前最好先評估要花多久，以及牽涉到的範圍有多廣。因為在原型時期的遊戲規格變動很快，如果花了大把時間重構的功能要再修改，甚至被打掉的話，花的時間就白費了（<a href="/blog/2025-08-seek-first-to-have-but-do-not-take-long-way-around/">上一篇的悲慘經驗</a>）。所以當需要增加或是修改功能時，先順著繼有的架構去作，等功能確定之後才來重構，此時的規格也比較完整，重構才有效益。</p>
+
+<h2 id="嘗試不同作法的好時機">嘗試不同作法的好時機</h2>
+
+<p>在原型階段，程式結構還沒有很複雜，是可以嘗試用不同作法或是新套件來開發功能的好時機。可能是在之前的開發中遇到的問題有更好的作法，或是知道有不錯的套件可以使用。在這個階段多多嘗試與實驗，知道使用的作法或套件的極限到哪裡，如果不合適的話，替換掉的成本也相對低。</p>
+
+<p>這次開發的遊戲為了能更方便管理與播放角色動畫，就嘗試使用 <a href="https://assetstore.unity.com/packages/tools/animation/animancer-pro-v8-293522">Animancer</a> 套件來製作相關的功能。一開始我先列出想要這個套件實現的功能，然後花兩三天的時間「玩」這個套件，看看有哪些功能可以實現，哪些要自己實作，而且要花多久時間實作。評估這個套件合適後，才導入到專案中。</p>
+
+<h2 id="新內容用新功能">新內容用新功能</h2>
+
+<p>那如果是開發到一半，發現有更好的作法時要怎麼辦？那最好的作法是只在新的內容用新的功能，一來可以不用先花時間重構既有的功能，二來也可以驗證新的作法是不是真的比較好。如果不合適，那也只有新的內容會受到影響。如果合適的話，則在舊內容需要修改時，或是時機成熟時，像是用新作法的內容製作流程確立，再改成使用新作法，慢慢取代掉舊功能。</p>
+
+<p>這次開發的遊戲中有不同的敵人，在戰鬥邏輯上就使用這樣的開發方式。原本的戰鬥邏輯是使用 ScriptableObject 來設定數值與時機，但後來為了配合角色動畫，這些資訊得改成由播放的動畫提供。所以我只有先在新的敵人上使用動畫來控制戰鬥邏輯，而既有的敵人就先不動，等到需要的時候，就直接用新功能來做擁有同樣能力的敵人，直接取代舊的敵人。</p>
+
+<h2 id="功能要有隨時被改掉的覺悟">功能要有隨時被改掉的覺悟</h2>
+
+<blockquote>
+  <p>我要修改… 部份規格!!! ー《大東京玩具箱》</p>
+</blockquote>
+
+<p>在原型階段最常發生的事情就是規格改變。所以不要過度設計功能，不要想著這功能要囊括所有可能性，或是未來的需求。否則花了大把時間精心設計的功能，因為測試後覺得在遊戲中不好玩，而要被拿掉的話，只有滿滿的失落感，勞神又傷心。因此功能能解決現階段的需求就可以了，製作時間也不用花太多，先拿出來被驗證才是首要目標。</p>
+
+<h2 id="永遠考慮時間是否夠用">永遠考慮時間是否夠用</h2>
+
+<p>寫程式沒辦法兼顧「快」與「好」，在原型階段只能做取捨，就是以快速實現遊戲玩法為主要目標。所以在製作功能或是重構前，先評估要花多久時間才能完成。如果時間可以接受，就能開始動工。如果不行，就看瓶頸在哪邊，有沒有方法可以先繞過那部份，又可以掌握在可以控制的程度。再真的沒辦法，就是跟團隊討論，看能否縮減規格，或是能接受花時間下去製作。</p>
+
+<p>在程式的架構設計上我以功能為單位來切割元件，一個元件（不一定只有一個程式碼檔）專門負責一個功能（一個功能下面也可能有子功能），呼叫功能的角色不用在意其中做了什麼事，只要控制什麼時候呼叫就可以了。這樣程式碼混雜的地方就只會集中在各自的元件內，無論是要替換或是修改，受影響的範圍就不大。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[在開發遊戲原型時，最重要的是盡快實現遊戲玩法，但一開始自己走了許多歪路，反而花更多心力在不重要的地方。在 TDGF 上聽到分享與請教朋友之後，學到不少在原型階段的開發方式，就透過這篇文章來分享減少走錯路的方法。]]></summary></entry><entry><title type="html">[開發日誌 #3] 先求有，但別繞路</title><link href="https://lankudot.airfishlab.com/blog/2025-08-seek-first-to-have-but-do-not-take-long-way-around/" rel="alternate" type="text/html" title="[開發日誌 #3] 先求有，但別繞路" /><published>2025-08-28T00:00:00+08:00</published><updated>2025-08-28T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/seek-first-to-have-but-do-not-take-long-way-around</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-seek-first-to-have-but-do-not-take-long-way-around/"><![CDATA[<p>很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。</p>
 
 <p><img src="/assets/images/blog/2025/2025-08-28-seek-first-to-have-but-do-not-take-long-way-around/cover-image.png" alt="cover-image" /></p>
 
@@ -21,171 +51,7 @@
 
 <h2 id="先求有但別繞路">先求有，但別繞路</h2>
 
-<p>所以如果知道要做的功能未來會怎樣時，最好一開始就以此為方向來開發功能，還沒有所需資料或素材就用暫代的。像戰鬥系統就算還沒有動畫，可以先用幾何形狀拉簡單示意動作，如果不用幾何形狀，也可以先把動作的時長用兩個 keyframe 簡單表示就好。因為前期的重點是把戰鬥事件實作出來，先驗證這些事件在遊戲中如何運作比較好。等到可以套上動畫之後，就可以以此為基礎，去調整事件的功能。想想如果當初就這樣做的話，就可以少花這兩個月的時間了 :cry:。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 九日篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 九日篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-02-nine-sols</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/"><![CDATA[<p>今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。</p>
-
-<h2 id="兩年的噩夢找尋九日類隻狼系統的誕生">兩年的噩夢找尋，九日類隻狼系統的誕生</h2>
-
-<p>這場分享《九日》是如何找到現在的類隻狼玩法，要找到突破點花了相當多的時間，其中的過程也很辛苦。</p>
-
-<ul>
-  <li>世界觀設定
-    <ul>
-      <li>「道龐克」</li>
-      <li>一個太陽對九個太陽的復仇</li>
-      <li>外星人來到地球留下了道教科技與故事</li>
-    </ul>
-  </li>
-  <li>想到以動作加上銀河戰士的玩法
-    <ul>
-      <li>九個太陽所在的九個區域對應他們各自的設定</li>
-    </ul>
-  </li>
-  <li>八個月就完成有基本玩法與畫面的「Hollow Cat」</li>
-  <li>但為了避免 Hollow Knight 感花了一陣子，也打掉第一版，並重新思考機制
-    <ul>
-      <li>2D 版隻狼？但慢節奏、沒 Y 軸戰鬥、沒平台挑戰</li>
-      <li>參考《Katana Zero》為了要快節奏，不加入對峙，也沒有體幹值</li>
-      <li>想要有平台挑戰，加入空中格擋</li>
-      <li>但如《Katana Zero》的快節奏，敵人看一兩次就被打倒，與隻狼要對招一兩次所帶來的深度不同</li>
-    </ul>
-  </li>
-  <li>又回到類銀河的玩法上，但把體幹值改成點數制
-    <ul>
-      <li>要格擋才有氣能貼符</li>
-      <li>為了避免等格擋時機而太被動，加入普攻來算節奏</li>
-      <li>為了以格擋為主，普攻的攻擊力比貼符還要低很多</li>
-      <li>避免一直按普攻，普攻三連擊的第三下無法直接進入格擋</li>
-      <li>敵人被普攻打中後，會減攻擊 cd，讓敵人更容易主動攻擊，來讓玩家有機會格擋</li>
-    </ul>
-  </li>
-  <li>加入潛行？
-    <ul>
-      <li>2D 畫面視野很小，而且角色動很快不適合潛行，而且每個敵人也要設計暗殺動畫</li>
-      <li>最後改成「背襲」</li>
-      <li>但關卡還是有潛行的設計，如被電之後行動不便，只能潛行</li>
-    </ul>
-  </li>
-  <li>貼符的體驗
-    <ul>
-      <li>貼符到懸崖邊會自動停住，避免瞬移距離過長而掉落</li>
-      <li>在地面貼符時，會先瞬步到敵人前再貼符，再繼續瞬步一段距離，但是在空中貼符則會直接貼</li>
-    </ul>
-  </li>
-  <li>把技能樹當教學用
-    <ul>
-      <li>例如：點了背襲技能，知道可以背襲</li>
-    </ul>
-  </li>
-  <li>大家對技能功效有不同的想像，有人想加有人不想，做成玉石系統來讓玩家自已選</li>
-  <li>如何知道找到醬汁了？成功讓玩家想要一做再做</li>
-</ul>
-
-<h2 id="九日戰鬥設計雜談">《九日》戰鬥設計雜談</h2>
-
-<p>這場一樣有分享到《九日》開案時的構想，並且著重在怪物行為的設計，以及攻擊模式的小技巧，讓戰鬥更豐富。</p>
-
-<ul>
-  <li>開案起源
-    <ul>
-      <li>《返校》跟《還願》還是以華語圈為主，新作方向能否打入歐美市場？</li>
-      <li>以玩法為核心能否有文化穿透力？像《Dead Cells》跟《Hollow Knight》</li>
-    </ul>
-  </li>
-  <li>參考《Hollow Knight》，但是不是只能做出劣化版的《Hollow Knight》</li>
-  <li>風格找尋：<br />
-<img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/nine-sols-style-coordinate.svg" alt="nine-sols-style-coordinate" />
-    <ul>
-      <li>當然在 2D 以格擋為主的風格下，還是有其它遊戲</li>
-    </ul>
-  </li>
-  <li>以格擋為主，所以要引導玩家用格擋
-    <ul>
-      <li>普攻傷害低，貼符有大傷害 ← 要格擋才有氣能貼符</li>
-    </ul>
-  </li>
-  <li>怪物製作流程，實際執行時沒有清楚細分步驟，但為了演講還是整理出大致統程
-    <ol>
-      <li>前期溝通：確定怪物定位，如：難度、外貌、參考對象</li>
-      <li>灰盒驗證：設計戰鬥的 fantasy（要帶來什麼樣的感覺）
-        <ul>
-          <li>讓玩家要用什麼 pattern 來對應</li>
-          <li>Boss 攻擊前的動作能不能讓玩家找到對招時機</li>
-          <li>這時就會在 animation clip 上做怪物行為</li>
-        </ul>
-      </li>
-      <li>美術原型：在 animation clip 上套皮，看感覺</li>
-      <li>程式美術整合：在套皮後重調數值，再看感覺</li>
-      <li>內部測試：內部回饋、改善</li>
-      <li>後期：套音效、特效</li>
-      <li>外測：玩家公開測試</li>
-    </ol>
-  </li>
-  <li>在量產期會做前五個步驟，但是在打磨階段才會做後期與外測</li>
-  <li>戰鬥難，讓玩家克服時有成就感，感覺「原來我可以做到」</li>
-  <li>怪的攻擊有一定節奏，但是後期怪的攻擊脫離前面的節奏會帶來難度，也會有新奇感</li>
-  <li>一些攻擊模式的技巧
-    <ul>
-      <li>利用位移來做攻擊前置動作，如：水鬼</li>
-      <li>過身：攻擊時，怪物會穿過玩家到另一邊</li>
-      <li>脫手攻擊：出招後，那招會延遲攻擊（如：緩慢的投射物），讓怪物可以再開其它招</li>
-      <li>以預期讓玩家的輸入 pattern 來設計招式</li>
-      <li>玩家一直按格擋會縮段精準格擋的窗口</li>
-      <li>終結技可以輸出大傷害，作為獎勵
-        <ul>
-          <li>boss 打完一輪的休息窗口，讓玩家可以輸出大量傷害</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="為九日而研發的狀態機架構monofsm">為《九日》而研發的狀態機架構《MonoFSM》</h2>
-
-<p>最近在開發上在煩惱角色狀態機的設計，所以這場也是有興趣的演講之一。演講主要圍繞在 MonoFSM 為什麼會誕生，雖然沒有著墨太多技術上的細節，但是在製作 prototype 時的經驗分享也很受用。</p>
-
-<ul>
-  <li>第一階段為了開發要快而硬 A，使出戰術龍捲風！
-    <ul>
-      <li>但當內容一多就開始 A 不動，程式碼耦合重、bug 不好修，而且很難加入新功能</li>
-    </ul>
-  </li>
-  <li>遊戲開發架構金字塔由底層到塔頂依序為：
-    <ul>
-      <li>引擎：開發使用的遊戲引擎</li>
-      <li>系統：為遊戲功能開發的功能</li>
-      <li>資料：功能所需要的設定、數值、素材等</li>
-      <li>設計：遊戲玩法、功能、行為等</li>
-      <li>體驗：遊戲給玩家的殘體驗</li>
-    </ul>
-  </li>
-  <li>而戰術龍捲風就是把系統、資料、設計全部混在一起做</li>
-  <li>第二階段開始把資料抽離出來，利用 animation clip 來綁定動畫及開關元件或事件（絕對不要用 Event 來開關）
-    <ul>
-      <li>好處是可以在同一個地方編輯動畫及事件，也可以視覺化資料</li>
-    </ul>
-  </li>
-  <li>到量產期後發現需要重新設計架構
-    <ul>
-      <li>參考 visual scripting 把邏輯跟系統分離</li>
-      <li>要支援 prefab</li>
-      <li>可以通用的 FSM 設計</li>
-    </ul>
-  </li>
-  <li>用 MonoBehaviour 來描述狀態與狀態轉換，且基於 prefab 的 MonoFSM 誕生了
-    <ul>
-      <li>在 Hierarchy 顯示 FSM 的狀態及相關變數的數值</li>
-      <li>Per-instance Debugging：可以以 GameObject 為單位來 debug，不用在程式碼中寫 debug 訊息</li>
-    </ul>
-  </li>
-  <li>漸近重構
-    <ul>
-      <li>實驗期：在小地方嘗試，先展現價值</li>
-      <li>推動期：新內容用新規格作。舊的東西有 bug 或想調整太難做的話，也替換成新架構</li>
-      <li>能動的東西就不要改!</li>
-    </ul>
-  </li>
-  <li>團隊應該集中在「遊戲體驗」上，作工具就是為了加速迭代</li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 遊戲設計篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 遊戲設計篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-03-game-design</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/"><![CDATA[<p>這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。</p>
+<p>所以如果知道要做的功能未來會怎樣時，最好一開始就以此為方向來開發功能，還沒有所需資料或素材就用暫代的。像戰鬥系統就算還沒有動畫，可以先用幾何形狀拉簡單示意動作，如果不用幾何形狀，也可以先把動作的時長用兩個 keyframe 簡單表示就好。因為前期的重點是把戰鬥事件實作出來，先驗證這些事件在遊戲中如何運作比較好。等到可以套上動畫之後，就可以以此為基礎，去調整事件的功能。想想如果當初就這樣做的話，就可以少花這兩個月的時間了 :cry:。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 遊戲設計篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 遊戲設計篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-03-game-design</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/"><![CDATA[<p>這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。</p>
 
 <h2 id="當敵人先出剪刀淺談戰鬥關卡設計的四個層級與選擇引導">當敵人先出剪刀：淺談戰鬥關卡設計的四個層級與選擇引導</h2>
 
@@ -543,7 +409,171 @@
     </ul>
   </li>
   <li>回到一開始的問題：是什麼要素讓玩家能享受遊戲? 所有創作遊戲的人</li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。]]></summary></entry><entry><title type="html">[開發日誌 #2] A 需要跑步但 B 只要走路</title><link href="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/" rel="alternate" type="text/html" title="[開發日誌 #2] A 需要跑步但 B 只要走路" /><published>2025-06-04T00:00:00+08:00</published><updated>2025-06-04T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-general-module</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/"><![CDATA[<p>在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。</p>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 九日篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 九日篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-02-nine-sols</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/"><![CDATA[<p>今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。</p>
+
+<h2 id="兩年的噩夢找尋九日類隻狼系統的誕生">兩年的噩夢找尋，九日類隻狼系統的誕生</h2>
+
+<p>這場分享《九日》是如何找到現在的類隻狼玩法，要找到突破點花了相當多的時間，其中的過程也很辛苦。</p>
+
+<ul>
+  <li>世界觀設定
+    <ul>
+      <li>「道龐克」</li>
+      <li>一個太陽對九個太陽的復仇</li>
+      <li>外星人來到地球留下了道教科技與故事</li>
+    </ul>
+  </li>
+  <li>想到以動作加上銀河戰士的玩法
+    <ul>
+      <li>九個太陽所在的九個區域對應他們各自的設定</li>
+    </ul>
+  </li>
+  <li>八個月就完成有基本玩法與畫面的「Hollow Cat」</li>
+  <li>但為了避免 Hollow Knight 感花了一陣子，也打掉第一版，並重新思考機制
+    <ul>
+      <li>2D 版隻狼？但慢節奏、沒 Y 軸戰鬥、沒平台挑戰</li>
+      <li>參考《Katana Zero》為了要快節奏，不加入對峙，也沒有體幹值</li>
+      <li>想要有平台挑戰，加入空中格擋</li>
+      <li>但如《Katana Zero》的快節奏，敵人看一兩次就被打倒，與隻狼要對招一兩次所帶來的深度不同</li>
+    </ul>
+  </li>
+  <li>又回到類銀河的玩法上，但把體幹值改成點數制
+    <ul>
+      <li>要格擋才有氣能貼符</li>
+      <li>為了避免等格擋時機而太被動，加入普攻來算節奏</li>
+      <li>為了以格擋為主，普攻的攻擊力比貼符還要低很多</li>
+      <li>避免一直按普攻，普攻三連擊的第三下無法直接進入格擋</li>
+      <li>敵人被普攻打中後，會減攻擊 cd，讓敵人更容易主動攻擊，來讓玩家有機會格擋</li>
+    </ul>
+  </li>
+  <li>加入潛行？
+    <ul>
+      <li>2D 畫面視野很小，而且角色動很快不適合潛行，而且每個敵人也要設計暗殺動畫</li>
+      <li>最後改成「背襲」</li>
+      <li>但關卡還是有潛行的設計，如被電之後行動不便，只能潛行</li>
+    </ul>
+  </li>
+  <li>貼符的體驗
+    <ul>
+      <li>貼符到懸崖邊會自動停住，避免瞬移距離過長而掉落</li>
+      <li>在地面貼符時，會先瞬步到敵人前再貼符，再繼續瞬步一段距離，但是在空中貼符則會直接貼</li>
+    </ul>
+  </li>
+  <li>把技能樹當教學用
+    <ul>
+      <li>例如：點了背襲技能，知道可以背襲</li>
+    </ul>
+  </li>
+  <li>大家對技能功效有不同的想像，有人想加有人不想，做成玉石系統來讓玩家自已選</li>
+  <li>如何知道找到醬汁了？成功讓玩家想要一做再做</li>
+</ul>
+
+<h2 id="九日戰鬥設計雜談">《九日》戰鬥設計雜談</h2>
+
+<p>這場一樣有分享到《九日》開案時的構想，並且著重在怪物行為的設計，以及攻擊模式的小技巧，讓戰鬥更豐富。</p>
+
+<ul>
+  <li>開案起源
+    <ul>
+      <li>《返校》跟《還願》還是以華語圈為主，新作方向能否打入歐美市場？</li>
+      <li>以玩法為核心能否有文化穿透力？像《Dead Cells》跟《Hollow Knight》</li>
+    </ul>
+  </li>
+  <li>參考《Hollow Knight》，但是不是只能做出劣化版的《Hollow Knight》</li>
+  <li>風格找尋：<br />
+<img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/nine-sols-style-coordinate.svg" alt="nine-sols-style-coordinate" />
+    <ul>
+      <li>當然在 2D 以格擋為主的風格下，還是有其它遊戲</li>
+    </ul>
+  </li>
+  <li>以格擋為主，所以要引導玩家用格擋
+    <ul>
+      <li>普攻傷害低，貼符有大傷害 ← 要格擋才有氣能貼符</li>
+    </ul>
+  </li>
+  <li>怪物製作流程，實際執行時沒有清楚細分步驟，但為了演講還是整理出大致統程
+    <ol>
+      <li>前期溝通：確定怪物定位，如：難度、外貌、參考對象</li>
+      <li>灰盒驗證：設計戰鬥的 fantasy（要帶來什麼樣的感覺）
+        <ul>
+          <li>讓玩家要用什麼 pattern 來對應</li>
+          <li>Boss 攻擊前的動作能不能讓玩家找到對招時機</li>
+          <li>這時就會在 animation clip 上做怪物行為</li>
+        </ul>
+      </li>
+      <li>美術原型：在 animation clip 上套皮，看感覺</li>
+      <li>程式美術整合：在套皮後重調數值，再看感覺</li>
+      <li>內部測試：內部回饋、改善</li>
+      <li>後期：套音效、特效</li>
+      <li>外測：玩家公開測試</li>
+    </ol>
+  </li>
+  <li>在量產期會做前五個步驟，但是在打磨階段才會做後期與外測</li>
+  <li>戰鬥難，讓玩家克服時有成就感，感覺「原來我可以做到」</li>
+  <li>怪的攻擊有一定節奏，但是後期怪的攻擊脫離前面的節奏會帶來難度，也會有新奇感</li>
+  <li>一些攻擊模式的技巧
+    <ul>
+      <li>利用位移來做攻擊前置動作，如：水鬼</li>
+      <li>過身：攻擊時，怪物會穿過玩家到另一邊</li>
+      <li>脫手攻擊：出招後，那招會延遲攻擊（如：緩慢的投射物），讓怪物可以再開其它招</li>
+      <li>以預期讓玩家的輸入 pattern 來設計招式</li>
+      <li>玩家一直按格擋會縮段精準格擋的窗口</li>
+      <li>終結技可以輸出大傷害，作為獎勵
+        <ul>
+          <li>boss 打完一輪的休息窗口，讓玩家可以輸出大量傷害</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="為九日而研發的狀態機架構monofsm">為《九日》而研發的狀態機架構《MonoFSM》</h2>
+
+<p>最近在開發上在煩惱角色狀態機的設計，所以這場也是有興趣的演講之一。演講主要圍繞在 MonoFSM 為什麼會誕生，雖然沒有著墨太多技術上的細節，但是在製作 prototype 時的經驗分享也很受用。</p>
+
+<ul>
+  <li>第一階段為了開發要快而硬 A，使出戰術龍捲風！
+    <ul>
+      <li>但當內容一多就開始 A 不動，程式碼耦合重、bug 不好修，而且很難加入新功能</li>
+    </ul>
+  </li>
+  <li>遊戲開發架構金字塔由底層到塔頂依序為：
+    <ul>
+      <li>引擎：開發使用的遊戲引擎</li>
+      <li>系統：為遊戲功能開發的功能</li>
+      <li>資料：功能所需要的設定、數值、素材等</li>
+      <li>設計：遊戲玩法、功能、行為等</li>
+      <li>體驗：遊戲給玩家的殘體驗</li>
+    </ul>
+  </li>
+  <li>而戰術龍捲風就是把系統、資料、設計全部混在一起做</li>
+  <li>第二階段開始把資料抽離出來，利用 animation clip 來綁定動畫及開關元件或事件（絕對不要用 Event 來開關）
+    <ul>
+      <li>好處是可以在同一個地方編輯動畫及事件，也可以視覺化資料</li>
+    </ul>
+  </li>
+  <li>到量產期後發現需要重新設計架構
+    <ul>
+      <li>參考 visual scripting 把邏輯跟系統分離</li>
+      <li>要支援 prefab</li>
+      <li>可以通用的 FSM 設計</li>
+    </ul>
+  </li>
+  <li>用 MonoBehaviour 來描述狀態與狀態轉換，且基於 prefab 的 MonoFSM 誕生了
+    <ul>
+      <li>在 Hierarchy 顯示 FSM 的狀態及相關變數的數值</li>
+      <li>Per-instance Debugging：可以以 GameObject 為單位來 debug，不用在程式碼中寫 debug 訊息</li>
+    </ul>
+  </li>
+  <li>漸近重構
+    <ul>
+      <li>實驗期：在小地方嘗試，先展現價值</li>
+      <li>推動期：新內容用新規格作。舊的東西有 bug 或想調整太難做的話，也替換成新架構</li>
+      <li>能動的東西就不要改!</li>
+    </ul>
+  </li>
+  <li>團隊應該集中在「遊戲體驗」上，作工具就是為了加速迭代</li>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。]]></summary></entry><entry><title type="html">[開發日誌 #2] A 需要跑步但 B 只要走路</title><link href="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/" rel="alternate" type="text/html" title="[開發日誌 #2] A 需要跑步但 B 只要走路" /><published>2025-06-04T00:00:00+08:00</published><updated>2025-06-04T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-general-module</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/"><![CDATA[<p>在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。</p>
 
 <h2 id="通用模組的問題">通用模組的問題</h2>
 
@@ -997,54 +1027,4 @@
 
 <p>因此能在開發階段主動取得玩家的意見，對於開發方向有很大的幫助。在幾次的 beta 測試中，問卷的滿意程度也大幅提升。相比前作只有 26% 的 25 歲以下的玩家，在 GGST 中則達到 72%，讓 GGST 成為 ARC System Works 第一款擁有 300 萬玩家的格鬥遊戲，成功留下系列作玩家，也吸引了新玩家。該遊戲也在 2021 年的 TGA 中獲得最佳格鬥遊戲的獎項。</p>
 
-<p>製作人最後提到，雖然成功模式不能直接複製，但是如果可以帶來幫助的話是再好也不過。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[在台北電玩展舉行期間，也會同時進行亞太遊戲高峰會。高峰會邀請遊戲業相關商業人士前來分享經驗，議題涵蓋開發、技術、行銷、社群推廣等。不過對我來說，與其說是去聽演講，不如說是粉絲見面會。而今年最有興趣的演講之一是 GGST 的製作人宮內健的分享，在這場演講中也獲益良多，所以用這篇文章來分享演講的內容。]]></summary></entry><entry><title type="html">[雜談] 理想與現實：大公司的價值觀洗禮</title><link href="https://lankudot.airfishlab.com/blog/2024-12-work-experience-in-big-company/" rel="alternate" type="text/html" title="[雜談] 理想與現實：大公司的價值觀洗禮" /><published>2024-12-02T00:00:00+08:00</published><updated>2024-12-02T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/work-experience-in-big-company</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2024-12-work-experience-in-big-company/"><![CDATA[<p>之前工作參與的專案規模不大，或是能切分出互不影響的功能，讓每個人各自負責，所以程式功能只要顧好自己的部份就好。在進入大公司後，專案規模變大，開發勢必得要多人一起進行。然而一人開發與多人開發的情景完全不同，大公司專案專注的面向也不一樣，理所當然，就面臨了不少價值觀的衝擊。</p>
-
-<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/ideal-vs-reality.png" alt="ideal-vs-reality" /></p>
-
-<h2 id="程式風格混亂">程式風格混亂</h2>
-
-<p>起初專案並沒有明確規範程式風格，也沒有進行 code review，造成專案中充斥著不同的程式風格。然而專案為了方便維護程式碼，即使那個是不好的風格，還是被要求跟著該功能既有的程式風格撰寫程式。</p>
-
-<p>剛加入專案那時，一直苦惱縮排到底是用 tab 還是 space，一行 200 字元的程式碼要不要幫忙換行，或是巢狀階層多到可以打波動拳了，要不要拆出函式等。起先在加新功能的時候，我會順手改掉原本程式碼中不好的風格。但後來被阻止了，原因是如果該功能出錯，會找最後一個改動的人負責任。直到這個問題變成技術債之後，專案才開始重視程式風格，慢慢明確規範程式寫法。想想如果當初在修改前，先跟主管提出程式風格的問題的話，應該可以提前重視這個問題。</p>
-
-<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/choose-between-tab-and-space.png" alt="choose-between-tab-and-space" />
-<em>程式碼風格不一致讓人無所適從</em></p>
-
-<p>在多人開發專案中，能有統一的程式風格相當重要，即使那個功能不是自己開發的，也能快速理解功用。另外現今編輯器可以設定程式風格的檢查，包含強制換行、變數命名格式、縮排、行尾空白等。更嚴格一點還可以搭配 git hook，只要不合規範，就不能推上去。</p>
-
-<h2 id="功能先有最重要">功能先有最重要</h2>
-
-<p>因為專案的性質，需要定期推出新功能，因此功能能否即時上線是最重要的，程式碼寫得好不好並不重視。加上能開發的時間不足，為了追趕時程，也為了不影響既有的功能，只能省略架構設計，直接參考既有的程式碼撰寫，或甚至直接複製一份出來改，最慘的是連驗證的時間都不足。雖然功能即時上線了，但品質卻脆弱不堪。</p>
-
-<p>用這個方式開發的後果就是增加後續維護的難度。同一個功能被複製了好幾份，修了其中一份的 bug 後，才發現其他地方還有相同的 bug。或是要更新某個功能時，得要找出所有複製出來的功能一併修改。為了追趕一個又一個的上線時程，這樣的技術債只會越堆越高。現在省下來的時間，後來就加倍還回去了。</p>
-
-<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/lot-of-bug-because-of-no-time.png" alt="lot-of-bug-because-of-no-time" />
-<em>趕時間開發的功能最後帶來解不完的 bug</em></p>
-
-<p>理想的開發模式是先規劃好功能需要哪些元件，元件之間要如何互動，再去撰寫程式碼。如果是在既有功能上製作，則要再加上理解原本架構的部份。然而要能執行這樣的開發模式，除了得有足夠的開發時間，更重要的是要有健康的專案架構。但現實是專案過了好幾手之後，功能相互交雜，牽一髮而動全身。為了避免擴大麻煩，繞過原本的功能去做新功能反而是最保險的作法。</p>
-
-<h2 id="重構永遠是最後選項">重構永遠是最後選項</h2>
-
-<p>開發新功能時，原有的架構不敷需求的話，就一定需要重構，然而對上線的功能來說「能動的就不要動」，要重構就得要冒著既有功能壞掉的風險。當開發與驗證時間不足的時候，想要重構也無能為力，就會出現前面所說的，只能繞路或是擱置問題。</p>
-
-<p>只是當技術債累積到不得不面對的程度，就還是得進行重構。在參與專案的期間負責過兩次大型重構，當時各花兩個月在上面：一次是因為某個底層功能太複雜，以致於影響執行效能；另一次是幾個重要機制被複製了數次，為了讓即將開發的新功能也能使用那些機制，與後續方便維護，把它們整理出來，作為共用功能。</p>
-
-<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/code-debt.png" alt="code-debt" />
-<em>技術債終究是要還的</em></p>
-
-<p>無論重構規模的大小，只要有重構就得驗證所有相關的功能是否正常。重構前先確認影響的範圍，如果影響範圍太大，就得思考拆分重構的規模，一次只重構一部分。好處是容易掌握需要驗證的功能，出 bug 時容易找到出問題的地方。另外重構時，通常專案也在開發，能儘早把重構後的功能合併回專案的話，也能避免該功能仍然以舊方法開發，造成還要再度重構。</p>
-
-<h2 id="還是有收穫">還是有收穫</h2>
-
-<p>不過參與大公司的專案可以體驗到單人專案無法體驗的事情，其中之一是可以跟其它程式交流。當不知道功能如何設計比較好時，就可以詢問其它程式的意見，往往會得到不錯的想法。另外 code review 也是很適合交換意見的時候，除了可以分享自己的做法與建議之外，也可以看到其它人的思維，做為未來寫程式時的參考。</p>
-
-<p>另外一個就是可以訓練溝通能力。在多人專案中，當遇到不是自己做的功能，就得要詢問當初做或比較熟那個功能的人。雖然可以靠自己閱讀程式碼來理解，但如果先問相關的程式碼與執行流程，反而更能快速上手，也更能專注在要實作的功能上。反之亦然，其它人也會來問自己做的功能，能夠清楚地解釋自己的程式碼，也是很實用的能力。</p>
-
-<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/conversation.png" alt="conversation" />
-<em>能學習跟其它人溝通是最大的收獲</em></p>
-
-<p>除了跟程式討論之外，也會時常跟不同部門的人討論。對方詢問問題時，得先釐清真正想問的內容，最好是能將自己理解的問題內容講給對方聽，確認理解的是不是一樣的。另一方面，也盡量以對方能理解的方式講解。否則很常雞同鴨講，最後搞得雙方都很混亂。</p>
-
-<h2 id="生於憂患">生於憂患</h2>
-
-<p>總覺得在體驗過什麼是不好的之後，才知道什麼是好的。在這段時間中，確實是挺煎熬的過程，但也是在這樣環境中才開始思考為什麼這樣的情況是不好的，以及如何改善這樣的情況。如果能帶到下一個可以發揮的環境的話，會是很好的養份。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="雜談" /><summary type="html"><![CDATA[之前工作參與的專案規模不大，或是能切分出互不影響的功能，讓每個人各自負責，所以程式功能只要顧好自己的部份就好。在進入大公司後，專案規模變大，開發勢必得要多人一起進行。然而一人開發與多人開發的情景完全不同，大公司專案專注的面向也不一樣，理所當然，就面臨了不少價值觀的衝擊。]]></summary></entry></feed>
+<p>製作人最後提到，雖然成功模式不能直接複製，但是如果可以帶來幫助的話是再好也不過。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[在台北電玩展舉行期間，也會同時進行亞太遊戲高峰會。高峰會邀請遊戲業相關商業人士前來分享經驗，議題涵蓋開發、技術、行銷、社群推廣等。不過對我來說，與其說是去聽演講，不如說是粉絲見面會。而今年最有興趣的演講之一是 GGST 的製作人宮內健的分享，在這場演講中也獲益良多，所以用這篇文章來分享演講的內容。]]></summary></entry></feed>

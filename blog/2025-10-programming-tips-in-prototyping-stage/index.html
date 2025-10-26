@@ -10,8 +10,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[分享] 獨立遊戲在 Steam 頁面上的宣傳影片建議 | 烏龜漫遊 2.0</title>
-<meta name="description" content="在推特上看到貼文分享一則在 Reddit 的討論串，討論串的樓主問其它人是不是也一樣，在逛 Steam 遊戲頁面時，會跳過宣傳影片直接去看遊戲擷圖或是評論。結果許多人回覆都有類似的習慣，因為覺得宣傳影片沒有傳達出遊戲玩法，所以直接去看遊戲擷圖的話，反而可以更快知道這個遊戲合不合自己的胃口。原推的作者就分享獨立遊戲要如何避免這種情況，讓玩家能在宣傳影片上停留久一點，增加購買或是加入願望清單的機會。">
+<!-- begin _includes/seo.html --><title>[開發日誌 #4] 原型時期的程式開發方式 | 烏龜漫遊 2.0</title>
+<meta name="description" content="在開發遊戲原型時，最重要的是盡快實現遊戲玩法，但一開始自己走了許多歪路，反而花更多心力在不重要的地方。在 TDGF 上聽到分享與請教朋友之後，學到不少在原型階段的開發方式，就透過這篇文章來分享減少走錯路的方法。">
 
 
   <meta name="author" content="烏龜">
@@ -23,11 +23,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:site_name" content="烏龜漫遊 2.0">
-<meta property="og:title" content="[分享] 獨立遊戲在 Steam 頁面上的宣傳影片建議">
-<meta property="og:url" content="https://lankudot.airfishlab.com/blog/2023-05-slow-trailer-is-not-good-for-indie-game/">
+<meta property="og:title" content="[開發日誌 #4] 原型時期的程式開發方式">
+<meta property="og:url" content="https://lankudot.airfishlab.com/blog/2025-10-programming-tips-in-prototyping-stage/">
 
 
-  <meta property="og:description" content="在推特上看到貼文分享一則在 Reddit 的討論串，討論串的樓主問其它人是不是也一樣，在逛 Steam 遊戲頁面時，會跳過宣傳影片直接去看遊戲擷圖或是評論。結果許多人回覆都有類似的習慣，因為覺得宣傳影片沒有傳達出遊戲玩法，所以直接去看遊戲擷圖的話，反而可以更快知道這個遊戲合不合自己的胃口。原推的作者就分享獨立遊戲要如何避免這種情況，讓玩家能在宣傳影片上停留久一點，增加購買或是加入願望清單的機會。">
+  <meta property="og:description" content="在開發遊戲原型時，最重要的是盡快實現遊戲玩法，但一開始自己走了許多歪路，反而花更多心力在不重要的地方。在 TDGF 上聽到分享與請教朋友之後，學到不少在原型階段的開發方式，就透過這篇文章來分享減少走錯路的方法。">
 
 
 
@@ -36,9 +36,9 @@
 
 
   <meta name="twitter:site" content="@LanKuDot">
-  <meta name="twitter:title" content="[分享] 獨立遊戲在 Steam 頁面上的宣傳影片建議">
-  <meta name="twitter:description" content="在推特上看到貼文分享一則在 Reddit 的討論串，討論串的樓主問其它人是不是也一樣，在逛 Steam 遊戲頁面時，會跳過宣傳影片直接去看遊戲擷圖或是評論。結果許多人回覆都有類似的習慣，因為覺得宣傳影片沒有傳達出遊戲玩法，所以直接去看遊戲擷圖的話，反而可以更快知道這個遊戲合不合自己的胃口。原推的作者就分享獨立遊戲要如何避免這種情況，讓玩家能在宣傳影片上停留久一點，增加購買或是加入願望清單的機會。">
-  <meta name="twitter:url" content="https://lankudot.airfishlab.com/blog/2023-05-slow-trailer-is-not-good-for-indie-game/">
+  <meta name="twitter:title" content="[開發日誌 #4] 原型時期的程式開發方式">
+  <meta name="twitter:description" content="在開發遊戲原型時，最重要的是盡快實現遊戲玩法，但一開始自己走了許多歪路，反而花更多心力在不重要的地方。在 TDGF 上聽到分享與請教朋友之後，學到不少在原型階段的開發方式，就透過這篇文章來分享減少走錯路的方法。">
+  <meta name="twitter:url" content="https://lankudot.airfishlab.com/blog/2025-10-programming-tips-in-prototyping-stage/">
 
   
     <meta name="twitter:card" content="summary">
@@ -51,7 +51,7 @@
 
 
 
-  <meta property="article:published_time" content="2023-05-01T00:00:00+08:00">
+  <meta property="article:published_time" content="2025-10-26T00:00:00+08:00">
 
 
 
@@ -62,7 +62,7 @@
   
 
 
-<link rel="canonical" href="https://lankudot.airfishlab.com/blog/2023-05-slow-trailer-is-not-good-for-indie-game/">
+<link rel="canonical" href="https://lankudot.airfishlab.com/blog/2025-10-programming-tips-in-prototyping-stage/">
 
 
 
@@ -273,16 +273,16 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[分享] 獨立遊戲在 Steam 頁面上的宣傳影片建議">
-    <meta itemprop="description" content="在推特上看到貼文分享一則在 Reddit 的討論串，討論串的樓主問其它人是不是也一樣，在逛 Steam 遊戲頁面時，會跳過宣傳影片直接去看遊戲擷圖或是評論。結果許多人回覆都有類似的習慣，因為覺得宣傳影片沒有傳達出遊戲玩法，所以直接去看遊戲擷圖的話，反而可以更快知道這個遊戲合不合自己的胃口。原推的作者就分享獨立遊戲要如何避免這種情況，讓玩家能在宣傳影片上停留久一點，增加購買或是加入願望清單的機會。">
-    <meta itemprop="datePublished" content="2023-05-01T00:00:00+08:00">
+    <meta itemprop="headline" content="[開發日誌 #4] 原型時期的程式開發方式">
+    <meta itemprop="description" content="在開發遊戲原型時，最重要的是盡快實現遊戲玩法，但一開始自己走了許多歪路，反而花更多心力在不重要的地方。在 TDGF 上聽到分享與請教朋友之後，學到不少在原型階段的開發方式，就透過這篇文章來分享減少走錯路的方法。">
+    <meta itemprop="datePublished" content="2025-10-26T00:00:00+08:00">
     
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title" itemprop="headline">
-            <a href="https://lankudot.airfishlab.com/blog/2023-05-slow-trailer-is-not-good-for-indie-game/" itemprop="url">[分享] 獨立遊戲在 Steam 頁面上的宣傳影片建議
+            <a href="https://lankudot.airfishlab.com/blog/2025-10-programming-tips-in-prototyping-stage/" itemprop="url">[開發日誌 #4] 原型時期的程式開發方式
 </a>
           </h1>
           
@@ -293,7 +293,7 @@
       <span class="page__meta-date">
         <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-        <time datetime="2023-05-01T00:00:00+08:00">May 1, 2023</time>
+        <time datetime="2025-10-26T00:00:00+08:00">October 26, 2025</time>
       </span>
     
 
@@ -311,43 +311,41 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 本頁</h4></header>
-              <ul class="toc__menu"><li><a href="#202355-追記">2023/5/5 追記</a></li></ul>
+              <ul class="toc__menu"><li><a href="#能動就先用不急著重構">能動就先用，不急著重構</a></li><li><a href="#嘗試不同作法的好時機">嘗試不同作法的好時機</a></li><li><a href="#新內容用新功能">新內容用新功能</a></li><li><a href="#功能要有隨時被改掉的覺悟">功能要有隨時被改掉的覺悟</a></li><li><a href="#永遠考慮時間是否夠用">永遠考慮時間是否夠用</a></li></ul>
             </nav>
           </aside>
         
-        <p>在推特上看到<a href="https://twitter.com/Derek_Lieu/status/1650504969970147331">貼文</a>分享一則在 <a href="https://www.reddit.com/r/Steam/comments/12raw4o/anybody_else_skips_the_videos_and_jumps_straight/?utm_name=iossmf">Reddit 的討論串</a>，討論串的樓主問其它人是不是也一樣，在逛 Steam 遊戲頁面時，會跳過宣傳影片直接去看遊戲擷圖或是評論。結果許多人回覆都有類似的習慣，因為覺得宣傳影片沒有傳達出遊戲玩法，所以直接去看遊戲擷圖的話，反而可以更快知道這個遊戲合不合自己的胃口。原推的作者就分享獨立遊戲要如何避免這種情況，讓玩家能在宣傳影片上停留久一點，增加購買或是加入願望清單的機會。</p>
+        <p>在開發遊戲原型時，最重要的是盡快實現遊戲玩法，但一開始自己走了許多歪路，反而花更多心力在不重要的地方。在 TDGF 上聽到分享與請教朋友之後，學到不少在原型階段的開發方式，就透過這篇文章來分享減少走錯路的方法。</p>
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Here&#39;s your wake up call if you have a trailer with a slow intro and lots of logos on your Steam page.<br /><br />This post is full of people who skip past the trailers to click on the screenshots because it&#39;s quicker and they assume the trailer won&#39;t show gameplay.<a href="https://t.co/bptoFu1c94">https://t.co/bptoFu1c94</a></p>&mdash; Derek Lieu (@Derek_Lieu) <a href="https://twitter.com/Derek_Lieu/status/1650504969970147331?ref_src=twsrc%5Etfw">April 24, 2023</a></blockquote>
-<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<h2 id="能動就先用不急著重構">能動就先用，不急著重構</h2>
 
-<p>在 Reddit 討論串的回覆提到，大多對宣傳影片中提到「榮獲XXX獎」、「媒體評分XX分」等得獎資訊，或是「這是一個扣人心弦的故事」這類劇情式宣傳沒有興趣，會快速跳到中段可能有遊戲畫面的部份；或是發現看了整個影片還是不知道這款遊戲在玩什麼，最後就選擇直接跳過宣傳影片。</p>
+<p>開發時總是會想要重構程式碼，可能是因為覺得有更好的作法，或是覺得現在的架構不適合新的功能。但是在開始重構之前最好先評估要花多久，以及牽涉到的範圍有多廣。因為在原型時期的遊戲規格變動很快，如果花了大把時間重構的功能要再修改，甚至被打掉的話，花的時間就白費了（<a href="/blog/2025-08-seek-first-to-have-but-do-not-take-long-way-around/">上一篇的悲慘經驗</a>）。所以當需要增加或是修改功能時，先順著繼有的架構去作，等功能確定之後才來重構，此時的規格也比較完整，重構才有效益。</p>
 
-<p>原推主在自己的遊戲上也遇到這樣的情況，他認為玩家在 Steam 上逛遊戲的時，就像在逛櫥窗商品，會停留的時間很短，所以建議在宣傳影片的開頭 5 到 10 秒就揭示遊戲的玩法或是遊戲畫面，來增加玩家的興趣。推主在他的<a href="https://www.derek-lieu.com/blog/2022/12/3/why-indie-game-trailers-shouldnt-take-inspiration-from-aaa-games">文章</a>中建議獨立遊戲在 Steam 上的宣傳影片不要學 3A 大作的宣傳影片，因為玩家對大廠出的遊戲有一定的熟悉度，其宣傳影片的畫面細緻華麗，另外影片登場平台也不一樣（在 YouTube 或是遊戲展上），玩家會願意看完整個宣傳影片。</p>
+<h2 id="嘗試不同作法的好時機">嘗試不同作法的好時機</h2>
 
-<p>但也不是要完全捨棄這類電影式宣傳影片（slow trailer），而是可以針對在 Steam 上的宣傳影片做點修改。推文中舉例的<a href="https://store.steampowered.com/app/1201270/__A_Space_for_the_Unbound/">《A Space for the Unbound》</a>這款遊戲，在 Steam 上的宣傳影片比起在 YouTube 上的 PS 與 NS 宣傳影片，開頭多了一段遊戲畫面，接著才是劇情式的內容，而得獎資訊則是放在最後面。</p>
+<p>在原型階段，程式結構還沒有很複雜，是可以嘗試用不同作法或是新套件來開發功能的好時機。可能是在之前的開發中遇到的問題有更好的作法，或是知道有不錯的套件可以使用。在這個階段多多嘗試與實驗，知道使用的作法或套件的極限到哪裡，如果不合適的話，替換掉的成本也相對低。</p>
 
-<!-- Courtesy of embedresponsively.com -->
+<p>這次開發的遊戲為了能更方便管理與播放角色動畫，就嘗試使用 <a href="https://assetstore.unity.com/packages/tools/animation/animancer-pro-v8-293522">Animancer</a> 套件來製作相關的功能。一開始我先列出想要這個套件實現的功能，然後花兩三天的時間「玩」這個套件，看看有哪些功能可以實現，哪些要自己實作，而且要花多久時間實作。評估這個套件合適後，才導入到專案中。</p>
 
-<div class="responsive-video-container">
-    <iframe src="https://www.youtube-nocookie.com/embed/5QYVQhVd_-M" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
+<h2 id="新內容用新功能">新內容用新功能</h2>
 
-<p>因此如果不想讓玩家跳過自己辛辛苦苦做好的宣傳影片的話，不妨在影片一開頭就放上遊戲的畫面，讓玩家可以快速知道遊戲的類型或玩法，增加宣傳的效益。</p>
+<p>那如果是開發到一半，發現有更好的作法時要怎麼辦？那最好的作法是只在新的內容用新的功能，一來可以不用先花時間重構既有的功能，二來也可以驗證新的作法是不是真的比較好。如果不合適，那也只有新的內容會受到影響。如果合適的話，則在舊內容需要修改時，或是時機成熟時，像是用新作法的內容製作流程確立，再改成使用新作法，慢慢取代掉舊功能。</p>
 
-<h4 id="202355-追記">2023/5/5 追記</h4>
+<p>這次開發的遊戲中有不同的敵人，在戰鬥邏輯上就使用這樣的開發方式。原本的戰鬥邏輯是使用 ScriptableObject 來設定數值與時機，但後來為了配合角色動畫，這些資訊得改成由播放的動畫提供。所以我只有先在新的敵人上使用動畫來控制戰鬥邏輯，而既有的敵人就先不動，等到需要的時候，就直接用新功能來做擁有同樣能力的敵人，直接取代舊的敵人。</p>
 
-<p>結果 Steam 在 5 月 3 日發布<a href="https://steamcommunity.com/groups/steamworks/announcements/detail/5358762517221792489">新的宣傳片規範與指導原則</a>，有兩點更動：</p>
-
-<ol>
-  <li>遊戲頁面中，最前面只會有兩部影片，剩下的會在遊戲擷圖之後；</li>
-  <li>宣傳片可以指定標題與類型，類型有：一般/劇情、預告、玩法、訪談/日誌。玩家在影片左上角會看到這些資訊</li>
-</ol>
-
-<p>另外也一樣建議宣傳影片開頭就先揭示玩法：</p>
+<h2 id="功能要有隨時被改掉的覺悟">功能要有隨時被改掉的覺悟</h2>
 
 <blockquote>
-  <p>理想情況下，應該讓玩家們能夠在最短的時間內清楚瞭解遊戲的玩法。 我們建議第一支宣傳片主要展示遊戲玩法，清楚地示範玩家會在遊戲中進行哪些活動及他們會和你打造的世界有什麼樣的互動。 在吸引到玩家的注意後，再把公司的標誌和敘事劇情放在宣傳片後段。</p>
+  <p>我要修改… 部份規格!!! ー《大東京玩具箱》</p>
 </blockquote>
+
+<p>在原型階段最常發生的事情就是規格改變。所以不要過度設計功能，不要想著這功能要囊括所有可能性，或是未來的需求。否則花了大把時間精心設計的功能，因為測試後覺得在遊戲中不好玩，而要被拿掉的話，只有滿滿的失落感，勞神又傷心。因此功能能解決現階段的需求就可以了，製作時間也不用花太多，先拿出來被驗證才是首要目標。</p>
+
+<h2 id="永遠考慮時間是否夠用">永遠考慮時間是否夠用</h2>
+
+<p>寫程式沒辦法兼顧「快」與「好」，在原型階段只能做取捨，就是以快速實現遊戲玩法為主要目標。所以在製作功能或是重構前，先評估要花多久時間才能完成。如果時間可以接受，就能開始動工。如果不行，就看瓶頸在哪邊，有沒有方法可以先繞過那部份，又可以掌握在可以控制的程度。再真的沒辦法，就是跟團隊討論，看能否縮減規格，或是能接受花時間下去製作。</p>
+
+<p>在程式的架構設計上我以功能為單位來切割元件，一個元件（不一定只有一個程式碼檔）專門負責一個功能（一個功能下面也可能有子功能），呼叫功能的角色不用在意其中做了什麼事，只要控制什麼時候呼叫就可以了。這樣程式碼混雜的地方就只會集中在各自的元件內，無論是要替換或是修改，受影響的範圍就不大。</p>
 
         
       </section>
@@ -364,7 +362,7 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 標籤: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#%E5%88%86%E4%BA%AB" class="page__taxonomy-item p-category" rel="tag">分享</a>
+      <a href="/tags/#%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C" class="page__taxonomy-item p-category" rel="tag">開發日誌</a>
     
     </span>
   </p>
@@ -389,26 +387,26 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新時間:</strong> <time class="dt-published" datetime="2023-05-01T00:00:00+08:00">May 1, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新時間:</strong> <time class="dt-published" datetime="2025-10-26T00:00:00+08:00">October 26, 2025</time></p>
 
       </footer>
 
       <section class="page__share">
   <h4 class="page__share-title">分享到</h4>
 
-  <a href="https://x.com/intent/tweet?via=LanKuDot&text=%5B%E5%88%86%E4%BA%AB%5D+%E7%8D%A8%E7%AB%8B%E9%81%8A%E6%88%B2%E5%9C%A8+Steam+%E9%A0%81%E9%9D%A2%E4%B8%8A%E7%9A%84%E5%AE%A3%E5%82%B3%E5%BD%B1%E7%89%87%E5%BB%BA%E8%AD%B0%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2023-05-slow-trailer-is-not-good-for-indie-game%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 X">
+  <a href="https://x.com/intent/tweet?via=LanKuDot&text=%5B%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C+%234%5D+%E5%8E%9F%E5%9E%8B%E6%99%82%E6%9C%9F%E7%9A%84%E7%A8%8B%E5%BC%8F%E9%96%8B%E7%99%BC%E6%96%B9%E5%BC%8F%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2025-10-programming-tips-in-prototyping-stage%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 X">
     <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
   </a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2023-05-slow-trailer-is-not-good-for-indie-game%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2025-10-programming-tips-in-prototyping-stage%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Facebook">
     <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
   </a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lankudot.airfishlab.com/blog/2023-05-slow-trailer-is-not-good-for-indie-game/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 LinkedIn">
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lankudot.airfishlab.com/blog/2025-10-programming-tips-in-prototyping-stage/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 LinkedIn">
     <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
   </a>
 
-  <a href="https://bsky.app/intent/compose?text=%5B%E5%88%86%E4%BA%AB%5D+%E7%8D%A8%E7%AB%8B%E9%81%8A%E6%88%B2%E5%9C%A8+Steam+%E9%A0%81%E9%9D%A2%E4%B8%8A%E7%9A%84%E5%AE%A3%E5%82%B3%E5%BD%B1%E7%89%87%E5%BB%BA%E8%AD%B0%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2023-05-slow-trailer-is-not-good-for-indie-game%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Bluesky">
+  <a href="https://bsky.app/intent/compose?text=%5B%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C+%234%5D+%E5%8E%9F%E5%9E%8B%E6%99%82%E6%9C%9F%E7%9A%84%E7%A8%8B%E5%BC%8F%E9%96%8B%E7%99%BC%E6%96%B9%E5%BC%8F%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2025-10-programming-tips-in-prototyping-stage%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Bluesky">
     <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
   </a>
 </section>
@@ -417,10 +415,10 @@
       
   <nav class="pagination">
     
-      <a href="/blog/2023-04-kons-tone/" class="pagination--pager" title="[閱讀] 今敏《Kon’s Tone 「千年女優」之道》">前一頁</a>
+      <a href="/blog/2025-08-seek-first-to-have-but-do-not-take-long-way-around/" class="pagination--pager" title="[開發日誌 #3] 先求有，但別繞路">前一頁</a>
     
     
-      <a href="/blog/2023-06-persona-5-scramble/" class="pagination--pager" title="[遊戲] 女神異聞錄5 亂戰：魅影攻手 P5S">後一頁</a>
+      <a href="#" class="pagination--pager disabled">後一頁</a>
     
   </nav>
 
@@ -464,45 +462,6 @@
   
   <h2 class="page__related-title">猜您有與趣</h2>
   <div class="grid__wrapper">
-    
-      
-      
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/2025-10-programming-tips-in-prototyping-stage/" rel="permalink">[開發日誌 #4] 原型時期的程式開發方式
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2025-10-26T00:00:00+08:00">October 26, 2025</time>
-      </span>
-    
-
-    
-
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">在開發遊戲原型時，最重要的是盡快實現遊戲玩法，但一開始自己走了許多歪路，反而花更多心力在不重要的地方。在 TDGF 上聽到分享與請教朋友之後，學到不少在原型階段的開發方式，就透過這篇文章來分享減少走錯路的方法。
-
-</p>
-  </article>
-</div>
-
     
       
       
@@ -627,6 +586,49 @@
 
 
     <p class="archive__item-excerpt" itemprop="description">今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。
+
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/key-visual-design.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/2025-08-2025-tgdf-notes-01-cdpr/" rel="permalink">[分享] 2025 TGDF 筆記 - CDPR 篇
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2025-08-18T00:00:00+08:00">August 18, 2025</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。
 
 </p>
   </article>
