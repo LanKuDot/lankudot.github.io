@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2025-10-26T19:39:58+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[開發日誌 #4] 原型時期的程式開發方式</title><link href="https://lankudot.airfishlab.com/blog/2025-10-programming-tips-in-prototyping-stage/" rel="alternate" type="text/html" title="[開發日誌 #4] 原型時期的程式開發方式" /><published>2025-10-26T00:00:00+08:00</published><updated>2025-10-26T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/programming-tips-in-prototyping-stage</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-10-programming-tips-in-prototyping-stage/"><![CDATA[<p>在開發遊戲原型時，最重要的是盡快實現遊戲玩法，但一開始自己走了許多歪路，反而花更多心力在不重要的地方。在 TDGF 上聽到分享與請教朋友之後，學到不少在原型階段的開發方式，就透過這篇文章來分享減少走錯路的方法。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2025-12-14T23:27:27+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[遊記] Montreux Jazz Festival Japan 2025</title><link href="https://lankudot.airfishlab.com/blog/2025-12-mjfj-2025/" rel="alternate" type="text/html" title="[遊記] Montreux Jazz Festival Japan 2025" /><published>2025-12-14T00:00:00+08:00</published><updated>2025-12-14T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/mjfj-2025</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-12-mjfj-2025/"><![CDATA[<p>人生第一次參加爵士音樂節就給了 MJFJ 2025，除了為了心心念念的 Persona 5 Big Band 之外，還有著名的大師 Nate Smith 跟 Herbie Hancock 也有參演這次的音樂節。由六組表演組成長達 9 小時演出，對於初次體驗的我來說相當滿足。</p>
+
+<p><img src="/assets/images/blog/2025/2025-12-14-mjfj-2025/key-visual-2.png" alt="key-visual-2" />
+<img src="/assets/images/blog/2025/2025-12-14-mjfj-2025/posters.png" alt="posters" />
+<em>前幾屆 MJFJ 的海報也有在會場內展示</em></p>
+
+<p>今年 MJFJ 舉辦在橫濱的 PIA Arena MM，不愧是經常舉辦演唱會的日本，體驗跟在台灣完全不一樣。PIA Arena MM 場地超大音響輸出也很有力，可惜的是因為是演唱會設置，大鼓與電 Bass 的聲音太沉，而且延音很長，低頻的聲音完全混在一起，要形容的話，就是耳朵溺水，對爵士樂來說體驗差了一點。</p>
+
+<p><img src="/assets/images/blog/2025/2025-12-14-mjfj-2025/pia-arena-mm-2f-view.png" alt="pia-arena-mm-2f-view" />
+<em>從 2 樓看可以發覺場地真的很大</em></p>
+
+<p><img src="/assets/images/blog/2025/2025-12-14-mjfj-2025/my-seat-view.png" alt="my-seat-view" />
+<em>這次抽到的位置很棒，1 樓中間，也可以清楚看到舞臺上的演出</em></p>
+
+<p>前兩團 Shuta Hasunuma Phil 與 L’Osmose 感覺都是實驗性質的音樂，弦律會持續很久，然後一直再疊不同的音色上來，最後達到最滿的狀態，讓人感覺很迷幻。</p>
+
+<p>再來是 MJFJ TB×ER UNIT with BIGYUKI，薩克斯風手馬場智章是在《藍色巨星》動畫電影中，擔任角色宮本大的音樂演出，而特別來賓的鼓手石若駿同是擔任電影角色玉田俊二的音樂演出。在開始演出之前，我對他們的印象就是來自電影，但沒想到他們的音樂風格會是混和 DJ、電音、嘻哈。馬場智章會搭配錄音介面，錄製再重播上一段演奏，彷彿同時有好幾把薩克斯風同時在演奏，石若駿的演奏也相當狂野。聽下來氣氛很嗨，而且還有聽眾站起來跟著音樂一起搖擺，還以為來到音樂祭了。</p>
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6D2FjYhr2L8XhOcuQ5mlzT?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0uniIrDLtvdypzbMtmLmVV?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<p class="video-caption"><em>馬場智章的音樂跟在電影中的風格一樣奔放</em></p>
+
+<p>Persona 5 Special Big Band 是我想參加 MJFJ 的主要原因。當初 P5BB 的專場演出抽了 4 次票都沒中，後續一直關注相關消息，就看到他們也有要在 MJFJ 上演出。P5BB 由原有歌曲的主唱 Lyn，與來自日本與海外的音樂好手組成，這麼豪華的陣容怎麼可以錯過。第一首《Wake Up, Get Up, Get Out There》前奏一下就開始起雞皮疙瘩，當然也少不了《Life Will Change》，而在我最喜歡的《Beneath the Mask》中 Lyn 更是展現爵士的唱歌功力。另外沒想到《Hymn of the Soul》是用小號做為主奏，也別有一番滋味。讓人驚奇的是指揮居然擔崗一部份的吉他演奏跟打擊樂器，第一次看到這麼忙的指揮。這場演出無疑是我最喜歡的演出，好希望他們的專場演出會出 BD 或是 CD。</p>
+
+<p><img src="/assets/images/blog/2025/2025-12-14-mjfj-2025/p5bb-booklet.png" alt="p5bb-booklet" />
+<em>在會場買了 P5BB 專場的小冊子，才知道專場一共演奏了 20 首音樂</em></p>
+
+<p>最後分別是 Nate Smith 與 Herbie Hancock 這兩位爵士大師帶來的演出。Nate Smith 和融合爵士樂團 Snarky Puppy 的 leader Michael League 與 James Francies 一起演出。Nate Smith 的爵士鼓演出很迷人，尤其是在 solo 的時候，還會讓人覺得鼓的節拍稍微慢了一點，再接回原本的速度。而 Herbie Hancock 很喜歡用合成器與取樣的聲音做為音源，讓他的音樂充滿電子聲響，這也是讓我喜歡上的原因。像是《Butterfly》與《Rockit》再加上即興，在現場聽跟聽 CD 又有不同的感覺。而最後一首跟馬場智章、石若駿、小曾根真一起演出，聽到《Chameleon》的前奏一下時，感動到不行，真的是不能少了這首經典音樂。整首音樂 Herbie Hancock 拿著 Keytar 在舞臺上跟每個樂手進行 solo 對話，其中還有做了開合跳，沒想到 85 歲高齡的他還是這麼活潑，一直在「玩」音樂。當然這首把整個活動帶到最高潮，結束後，全場無不起立鼓掌。</p>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/L_XJ_s5IsQc" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p class="video-caption"><em>Snarky Puppy 中我最喜歡的音樂之一</em></p>
+
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4Ce66JznW8QbeyTdSzdGwR?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<p class="video-caption"><em>能在現場聽到 Chameleon 既興奮又感動</em></p>
+
+<p>從下午 1 點入場到晚上 10 點才離開，能夠如願聽到 P5BB 的演出，又能看到大師的表演，這 9 個小時的體驗真的很棒，之後還會想到日本參加類似的活動。而 MJFJ 也有製作一份這次演出的樂團與樂手的經典曲目的播放清單，有興趣的話值得一聽。</p>
+<iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1llb2E2iYWsdft4113xpp7?utm_source=generator" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="遊記" /><summary type="html"><![CDATA[人生第一次參加爵士音樂節就給了 MJFJ 2025，除了為了心心念念的 Persona 5 Big Band 之外，還有著名的大師 Nate Smith 跟 Herbie Hancock 也有參演這次的音樂節。由六組表演組成長達 9 小時演出，對於初次體驗的我來說相當滿足。]]></summary></entry><entry><title type="html">[開發日誌 #4] 原型時期的程式開發方式</title><link href="https://lankudot.airfishlab.com/blog/2025-10-programming-tips-in-prototyping-stage/" rel="alternate" type="text/html" title="[開發日誌 #4] 原型時期的程式開發方式" /><published>2025-10-26T00:00:00+08:00</published><updated>2025-10-26T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/programming-tips-in-prototyping-stage</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-10-programming-tips-in-prototyping-stage/"><![CDATA[<p>在開發遊戲原型時，最重要的是盡快實現遊戲玩法，但一開始自己走了許多歪路，反而花更多心力在不重要的地方。在 TDGF 上聽到分享與請教朋友之後，學到不少在原型階段的開發方式，就透過這篇文章來分享減少走錯路的方法。</p>
 
 <h2 id="能動就先用不急著重構">能動就先用，不急著重構</h2>
 
@@ -51,7 +93,171 @@
 
 <h2 id="先求有但別繞路">先求有，但別繞路</h2>
 
-<p>所以如果知道要做的功能未來會怎樣時，最好一開始就以此為方向來開發功能，還沒有所需資料或素材就用暫代的。像戰鬥系統就算還沒有動畫，可以先用幾何形狀拉簡單示意動作，如果不用幾何形狀，也可以先把動作的時長用兩個 keyframe 簡單表示就好。因為前期的重點是把戰鬥事件實作出來，先驗證這些事件在遊戲中如何運作比較好。等到可以套上動畫之後，就可以以此為基礎，去調整事件的功能。想想如果當初就這樣做的話，就可以少花這兩個月的時間了 :cry:。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 遊戲設計篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 遊戲設計篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-03-game-design</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/"><![CDATA[<p>這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。</p>
+<p>所以如果知道要做的功能未來會怎樣時，最好一開始就以此為方向來開發功能，還沒有所需資料或素材就用暫代的。像戰鬥系統就算還沒有動畫，可以先用幾何形狀拉簡單示意動作，如果不用幾何形狀，也可以先把動作的時長用兩個 keyframe 簡單表示就好。因為前期的重點是把戰鬥事件實作出來，先驗證這些事件在遊戲中如何運作比較好。等到可以套上動畫之後，就可以以此為基礎，去調整事件的功能。想想如果當初就這樣做的話，就可以少花這兩個月的時間了 :cry:。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 九日篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 九日篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-02-nine-sols</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/"><![CDATA[<p>今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。</p>
+
+<h2 id="兩年的噩夢找尋九日類隻狼系統的誕生">兩年的噩夢找尋，九日類隻狼系統的誕生</h2>
+
+<p>這場分享《九日》是如何找到現在的類隻狼玩法，要找到突破點花了相當多的時間，其中的過程也很辛苦。</p>
+
+<ul>
+  <li>世界觀設定
+    <ul>
+      <li>「道龐克」</li>
+      <li>一個太陽對九個太陽的復仇</li>
+      <li>外星人來到地球留下了道教科技與故事</li>
+    </ul>
+  </li>
+  <li>想到以動作加上銀河戰士的玩法
+    <ul>
+      <li>九個太陽所在的九個區域對應他們各自的設定</li>
+    </ul>
+  </li>
+  <li>八個月就完成有基本玩法與畫面的「Hollow Cat」</li>
+  <li>但為了避免 Hollow Knight 感花了一陣子，也打掉第一版，並重新思考機制
+    <ul>
+      <li>2D 版隻狼？但慢節奏、沒 Y 軸戰鬥、沒平台挑戰</li>
+      <li>參考《Katana Zero》為了要快節奏，不加入對峙，也沒有體幹值</li>
+      <li>想要有平台挑戰，加入空中格擋</li>
+      <li>但如《Katana Zero》的快節奏，敵人看一兩次就被打倒，與隻狼要對招一兩次所帶來的深度不同</li>
+    </ul>
+  </li>
+  <li>又回到類銀河的玩法上，但把體幹值改成點數制
+    <ul>
+      <li>要格擋才有氣能貼符</li>
+      <li>為了避免等格擋時機而太被動，加入普攻來算節奏</li>
+      <li>為了以格擋為主，普攻的攻擊力比貼符還要低很多</li>
+      <li>避免一直按普攻，普攻三連擊的第三下無法直接進入格擋</li>
+      <li>敵人被普攻打中後，會減攻擊 cd，讓敵人更容易主動攻擊，來讓玩家有機會格擋</li>
+    </ul>
+  </li>
+  <li>加入潛行？
+    <ul>
+      <li>2D 畫面視野很小，而且角色動很快不適合潛行，而且每個敵人也要設計暗殺動畫</li>
+      <li>最後改成「背襲」</li>
+      <li>但關卡還是有潛行的設計，如被電之後行動不便，只能潛行</li>
+    </ul>
+  </li>
+  <li>貼符的體驗
+    <ul>
+      <li>貼符到懸崖邊會自動停住，避免瞬移距離過長而掉落</li>
+      <li>在地面貼符時，會先瞬步到敵人前再貼符，再繼續瞬步一段距離，但是在空中貼符則會直接貼</li>
+    </ul>
+  </li>
+  <li>把技能樹當教學用
+    <ul>
+      <li>例如：點了背襲技能，知道可以背襲</li>
+    </ul>
+  </li>
+  <li>大家對技能功效有不同的想像，有人想加有人不想，做成玉石系統來讓玩家自已選</li>
+  <li>如何知道找到醬汁了？成功讓玩家想要一做再做</li>
+</ul>
+
+<h2 id="九日戰鬥設計雜談">《九日》戰鬥設計雜談</h2>
+
+<p>這場一樣有分享到《九日》開案時的構想，並且著重在怪物行為的設計，以及攻擊模式的小技巧，讓戰鬥更豐富。</p>
+
+<ul>
+  <li>開案起源
+    <ul>
+      <li>《返校》跟《還願》還是以華語圈為主，新作方向能否打入歐美市場？</li>
+      <li>以玩法為核心能否有文化穿透力？像《Dead Cells》跟《Hollow Knight》</li>
+    </ul>
+  </li>
+  <li>參考《Hollow Knight》，但是不是只能做出劣化版的《Hollow Knight》</li>
+  <li>風格找尋：<br />
+<img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/nine-sols-style-coordinate.svg" alt="nine-sols-style-coordinate" />
+    <ul>
+      <li>當然在 2D 以格擋為主的風格下，還是有其它遊戲</li>
+    </ul>
+  </li>
+  <li>以格擋為主，所以要引導玩家用格擋
+    <ul>
+      <li>普攻傷害低，貼符有大傷害 ← 要格擋才有氣能貼符</li>
+    </ul>
+  </li>
+  <li>怪物製作流程，實際執行時沒有清楚細分步驟，但為了演講還是整理出大致統程
+    <ol>
+      <li>前期溝通：確定怪物定位，如：難度、外貌、參考對象</li>
+      <li>灰盒驗證：設計戰鬥的 fantasy（要帶來什麼樣的感覺）
+        <ul>
+          <li>讓玩家要用什麼 pattern 來對應</li>
+          <li>Boss 攻擊前的動作能不能讓玩家找到對招時機</li>
+          <li>這時就會在 animation clip 上做怪物行為</li>
+        </ul>
+      </li>
+      <li>美術原型：在 animation clip 上套皮，看感覺</li>
+      <li>程式美術整合：在套皮後重調數值，再看感覺</li>
+      <li>內部測試：內部回饋、改善</li>
+      <li>後期：套音效、特效</li>
+      <li>外測：玩家公開測試</li>
+    </ol>
+  </li>
+  <li>在量產期會做前五個步驟，但是在打磨階段才會做後期與外測</li>
+  <li>戰鬥難，讓玩家克服時有成就感，感覺「原來我可以做到」</li>
+  <li>怪的攻擊有一定節奏，但是後期怪的攻擊脫離前面的節奏會帶來難度，也會有新奇感</li>
+  <li>一些攻擊模式的技巧
+    <ul>
+      <li>利用位移來做攻擊前置動作，如：水鬼</li>
+      <li>過身：攻擊時，怪物會穿過玩家到另一邊</li>
+      <li>脫手攻擊：出招後，那招會延遲攻擊（如：緩慢的投射物），讓怪物可以再開其它招</li>
+      <li>以預期讓玩家的輸入 pattern 來設計招式</li>
+      <li>玩家一直按格擋會縮段精準格擋的窗口</li>
+      <li>終結技可以輸出大傷害，作為獎勵
+        <ul>
+          <li>boss 打完一輪的休息窗口，讓玩家可以輸出大量傷害</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="為九日而研發的狀態機架構monofsm">為《九日》而研發的狀態機架構《MonoFSM》</h2>
+
+<p>最近在開發上在煩惱角色狀態機的設計，所以這場也是有興趣的演講之一。演講主要圍繞在 MonoFSM 為什麼會誕生，雖然沒有著墨太多技術上的細節，但是在製作 prototype 時的經驗分享也很受用。</p>
+
+<ul>
+  <li>第一階段為了開發要快而硬 A，使出戰術龍捲風！
+    <ul>
+      <li>但當內容一多就開始 A 不動，程式碼耦合重、bug 不好修，而且很難加入新功能</li>
+    </ul>
+  </li>
+  <li>遊戲開發架構金字塔由底層到塔頂依序為：
+    <ul>
+      <li>引擎：開發使用的遊戲引擎</li>
+      <li>系統：為遊戲功能開發的功能</li>
+      <li>資料：功能所需要的設定、數值、素材等</li>
+      <li>設計：遊戲玩法、功能、行為等</li>
+      <li>體驗：遊戲給玩家的殘體驗</li>
+    </ul>
+  </li>
+  <li>而戰術龍捲風就是把系統、資料、設計全部混在一起做</li>
+  <li>第二階段開始把資料抽離出來，利用 animation clip 來綁定動畫及開關元件或事件（絕對不要用 Event 來開關）
+    <ul>
+      <li>好處是可以在同一個地方編輯動畫及事件，也可以視覺化資料</li>
+    </ul>
+  </li>
+  <li>到量產期後發現需要重新設計架構
+    <ul>
+      <li>參考 visual scripting 把邏輯跟系統分離</li>
+      <li>要支援 prefab</li>
+      <li>可以通用的 FSM 設計</li>
+    </ul>
+  </li>
+  <li>用 MonoBehaviour 來描述狀態與狀態轉換，且基於 prefab 的 MonoFSM 誕生了
+    <ul>
+      <li>在 Hierarchy 顯示 FSM 的狀態及相關變數的數值</li>
+      <li>Per-instance Debugging：可以以 GameObject 為單位來 debug，不用在程式碼中寫 debug 訊息</li>
+    </ul>
+  </li>
+  <li>漸近重構
+    <ul>
+      <li>實驗期：在小地方嘗試，先展現價值</li>
+      <li>推動期：新內容用新規格作。舊的東西有 bug 或想調整太難做的話，也替換成新架構</li>
+      <li>能動的東西就不要改!</li>
+    </ul>
+  </li>
+  <li>團隊應該集中在「遊戲體驗」上，作工具就是為了加速迭代</li>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 遊戲設計篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 遊戲設計篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-03-game-design</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/"><![CDATA[<p>這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。</p>
 
 <h2 id="當敵人先出剪刀淺談戰鬥關卡設計的四個層級與選擇引導">當敵人先出剪刀：淺談戰鬥關卡設計的四個層級與選擇引導</h2>
 
@@ -409,171 +615,7 @@
     </ul>
   </li>
   <li>回到一開始的問題：是什麼要素讓玩家能享受遊戲? 所有創作遊戲的人</li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 九日篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 九日篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-02-nine-sols</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/"><![CDATA[<p>今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。</p>
-
-<h2 id="兩年的噩夢找尋九日類隻狼系統的誕生">兩年的噩夢找尋，九日類隻狼系統的誕生</h2>
-
-<p>這場分享《九日》是如何找到現在的類隻狼玩法，要找到突破點花了相當多的時間，其中的過程也很辛苦。</p>
-
-<ul>
-  <li>世界觀設定
-    <ul>
-      <li>「道龐克」</li>
-      <li>一個太陽對九個太陽的復仇</li>
-      <li>外星人來到地球留下了道教科技與故事</li>
-    </ul>
-  </li>
-  <li>想到以動作加上銀河戰士的玩法
-    <ul>
-      <li>九個太陽所在的九個區域對應他們各自的設定</li>
-    </ul>
-  </li>
-  <li>八個月就完成有基本玩法與畫面的「Hollow Cat」</li>
-  <li>但為了避免 Hollow Knight 感花了一陣子，也打掉第一版，並重新思考機制
-    <ul>
-      <li>2D 版隻狼？但慢節奏、沒 Y 軸戰鬥、沒平台挑戰</li>
-      <li>參考《Katana Zero》為了要快節奏，不加入對峙，也沒有體幹值</li>
-      <li>想要有平台挑戰，加入空中格擋</li>
-      <li>但如《Katana Zero》的快節奏，敵人看一兩次就被打倒，與隻狼要對招一兩次所帶來的深度不同</li>
-    </ul>
-  </li>
-  <li>又回到類銀河的玩法上，但把體幹值改成點數制
-    <ul>
-      <li>要格擋才有氣能貼符</li>
-      <li>為了避免等格擋時機而太被動，加入普攻來算節奏</li>
-      <li>為了以格擋為主，普攻的攻擊力比貼符還要低很多</li>
-      <li>避免一直按普攻，普攻三連擊的第三下無法直接進入格擋</li>
-      <li>敵人被普攻打中後，會減攻擊 cd，讓敵人更容易主動攻擊，來讓玩家有機會格擋</li>
-    </ul>
-  </li>
-  <li>加入潛行？
-    <ul>
-      <li>2D 畫面視野很小，而且角色動很快不適合潛行，而且每個敵人也要設計暗殺動畫</li>
-      <li>最後改成「背襲」</li>
-      <li>但關卡還是有潛行的設計，如被電之後行動不便，只能潛行</li>
-    </ul>
-  </li>
-  <li>貼符的體驗
-    <ul>
-      <li>貼符到懸崖邊會自動停住，避免瞬移距離過長而掉落</li>
-      <li>在地面貼符時，會先瞬步到敵人前再貼符，再繼續瞬步一段距離，但是在空中貼符則會直接貼</li>
-    </ul>
-  </li>
-  <li>把技能樹當教學用
-    <ul>
-      <li>例如：點了背襲技能，知道可以背襲</li>
-    </ul>
-  </li>
-  <li>大家對技能功效有不同的想像，有人想加有人不想，做成玉石系統來讓玩家自已選</li>
-  <li>如何知道找到醬汁了？成功讓玩家想要一做再做</li>
-</ul>
-
-<h2 id="九日戰鬥設計雜談">《九日》戰鬥設計雜談</h2>
-
-<p>這場一樣有分享到《九日》開案時的構想，並且著重在怪物行為的設計，以及攻擊模式的小技巧，讓戰鬥更豐富。</p>
-
-<ul>
-  <li>開案起源
-    <ul>
-      <li>《返校》跟《還願》還是以華語圈為主，新作方向能否打入歐美市場？</li>
-      <li>以玩法為核心能否有文化穿透力？像《Dead Cells》跟《Hollow Knight》</li>
-    </ul>
-  </li>
-  <li>參考《Hollow Knight》，但是不是只能做出劣化版的《Hollow Knight》</li>
-  <li>風格找尋：<br />
-<img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/nine-sols-style-coordinate.svg" alt="nine-sols-style-coordinate" />
-    <ul>
-      <li>當然在 2D 以格擋為主的風格下，還是有其它遊戲</li>
-    </ul>
-  </li>
-  <li>以格擋為主，所以要引導玩家用格擋
-    <ul>
-      <li>普攻傷害低，貼符有大傷害 ← 要格擋才有氣能貼符</li>
-    </ul>
-  </li>
-  <li>怪物製作流程，實際執行時沒有清楚細分步驟，但為了演講還是整理出大致統程
-    <ol>
-      <li>前期溝通：確定怪物定位，如：難度、外貌、參考對象</li>
-      <li>灰盒驗證：設計戰鬥的 fantasy（要帶來什麼樣的感覺）
-        <ul>
-          <li>讓玩家要用什麼 pattern 來對應</li>
-          <li>Boss 攻擊前的動作能不能讓玩家找到對招時機</li>
-          <li>這時就會在 animation clip 上做怪物行為</li>
-        </ul>
-      </li>
-      <li>美術原型：在 animation clip 上套皮，看感覺</li>
-      <li>程式美術整合：在套皮後重調數值，再看感覺</li>
-      <li>內部測試：內部回饋、改善</li>
-      <li>後期：套音效、特效</li>
-      <li>外測：玩家公開測試</li>
-    </ol>
-  </li>
-  <li>在量產期會做前五個步驟，但是在打磨階段才會做後期與外測</li>
-  <li>戰鬥難，讓玩家克服時有成就感，感覺「原來我可以做到」</li>
-  <li>怪的攻擊有一定節奏，但是後期怪的攻擊脫離前面的節奏會帶來難度，也會有新奇感</li>
-  <li>一些攻擊模式的技巧
-    <ul>
-      <li>利用位移來做攻擊前置動作，如：水鬼</li>
-      <li>過身：攻擊時，怪物會穿過玩家到另一邊</li>
-      <li>脫手攻擊：出招後，那招會延遲攻擊（如：緩慢的投射物），讓怪物可以再開其它招</li>
-      <li>以預期讓玩家的輸入 pattern 來設計招式</li>
-      <li>玩家一直按格擋會縮段精準格擋的窗口</li>
-      <li>終結技可以輸出大傷害，作為獎勵
-        <ul>
-          <li>boss 打完一輪的休息窗口，讓玩家可以輸出大量傷害</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="為九日而研發的狀態機架構monofsm">為《九日》而研發的狀態機架構《MonoFSM》</h2>
-
-<p>最近在開發上在煩惱角色狀態機的設計，所以這場也是有興趣的演講之一。演講主要圍繞在 MonoFSM 為什麼會誕生，雖然沒有著墨太多技術上的細節，但是在製作 prototype 時的經驗分享也很受用。</p>
-
-<ul>
-  <li>第一階段為了開發要快而硬 A，使出戰術龍捲風！
-    <ul>
-      <li>但當內容一多就開始 A 不動，程式碼耦合重、bug 不好修，而且很難加入新功能</li>
-    </ul>
-  </li>
-  <li>遊戲開發架構金字塔由底層到塔頂依序為：
-    <ul>
-      <li>引擎：開發使用的遊戲引擎</li>
-      <li>系統：為遊戲功能開發的功能</li>
-      <li>資料：功能所需要的設定、數值、素材等</li>
-      <li>設計：遊戲玩法、功能、行為等</li>
-      <li>體驗：遊戲給玩家的殘體驗</li>
-    </ul>
-  </li>
-  <li>而戰術龍捲風就是把系統、資料、設計全部混在一起做</li>
-  <li>第二階段開始把資料抽離出來，利用 animation clip 來綁定動畫及開關元件或事件（絕對不要用 Event 來開關）
-    <ul>
-      <li>好處是可以在同一個地方編輯動畫及事件，也可以視覺化資料</li>
-    </ul>
-  </li>
-  <li>到量產期後發現需要重新設計架構
-    <ul>
-      <li>參考 visual scripting 把邏輯跟系統分離</li>
-      <li>要支援 prefab</li>
-      <li>可以通用的 FSM 設計</li>
-    </ul>
-  </li>
-  <li>用 MonoBehaviour 來描述狀態與狀態轉換，且基於 prefab 的 MonoFSM 誕生了
-    <ul>
-      <li>在 Hierarchy 顯示 FSM 的狀態及相關變數的數值</li>
-      <li>Per-instance Debugging：可以以 GameObject 為單位來 debug，不用在程式碼中寫 debug 訊息</li>
-    </ul>
-  </li>
-  <li>漸近重構
-    <ul>
-      <li>實驗期：在小地方嘗試，先展現價值</li>
-      <li>推動期：新內容用新規格作。舊的東西有 bug 或想調整太難做的話，也替換成新架構</li>
-      <li>能動的東西就不要改!</li>
-    </ul>
-  </li>
-  <li>團隊應該集中在「遊戲體驗」上，作工具就是為了加速迭代</li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。]]></summary></entry><entry><title type="html">[開發日誌 #2] A 需要跑步但 B 只要走路</title><link href="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/" rel="alternate" type="text/html" title="[開發日誌 #2] A 需要跑步但 B 只要走路" /><published>2025-06-04T00:00:00+08:00</published><updated>2025-06-04T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-general-module</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/"><![CDATA[<p>在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。</p>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。]]></summary></entry><entry><title type="html">[開發日誌 #2] A 需要跑步但 B 只要走路</title><link href="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/" rel="alternate" type="text/html" title="[開發日誌 #2] A 需要跑步但 B 只要走路" /><published>2025-06-04T00:00:00+08:00</published><updated>2025-06-04T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-general-module</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/"><![CDATA[<p>在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。</p>
 
 <h2 id="通用模組的問題">通用模組的問題</h2>
 
@@ -957,74 +999,4 @@
 
 <p>不過滿喜歡電影前半的部份，使用歌舞做為小丑的內心幻想或是情緒延續。歌曲用在美國脫口秀中由 house band 演奏的那類爵士樂，搭配戲謔的歌詞，以及一直在背景的不協調單音。雖然充滿脫口秀的那種戲謔歡樂氣氛，但不協調的單音也帶著壓抑感，彷彿說著這一切只不過是個「Joke」。但是這種穿插歌舞表演的形式到了後半反而變成一種濫用，一到需要表達內心情感的時候，就開始唱歌，反而相當破壞節奏，甚至覺得有點煩燥。不知道是不是為了配合 Lady Gaga，才用歌舞表演的形式呈現。只是具體地把情感用歌詞唱出來，反而覺得有點多此一舉，畢竟不是所有情緒表現都適合用歌舞呈現。不過在只有小丑的幾場戲中，瓦昆還是有只用演出，就把小丑的內心狀態直接帶給觀眾，當下覺得瓦昆的演技真的很厲害。</p>
 
-<p>從劇情來看，這版的小丑不會是以往大家對小丑的印象，雖然看起來是還想要有續集，但是亞瑟的故事應該是到這裡為止了。如果想看小丑發揮的話，這部電影不是個好選擇。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="心得" /><summary type="html"><![CDATA[去年因為工作變得比較繁重，所以電影看的不多，不過這樣反而可以寫得比較詳細。為了篇幅，就簡單分成真人電影與動畫電影兩篇，這篇就記錄真人電影的部份。去年最喜歡的電影就是《沙丘：第二部》了，去二刷的時候還選了 IMAX 的版本，對於太空科幻的題材真的愛不釋手啊。]]></summary></entry><entry><title type="html">[分享] 2025 亞太遊戲高峰會 -《聖騎士之戰 -奮戰-》的全球化挑戰</title><link href="https://lankudot.airfishlab.com/blog/2025-01-2025-apgs-ggst-share/" rel="alternate" type="text/html" title="[分享] 2025 亞太遊戲高峰會 -《聖騎士之戰 -奮戰-》的全球化挑戰" /><published>2025-01-30T00:00:00+08:00</published><updated>2025-01-30T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-apgs-ggst-share</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-01-2025-apgs-ggst-share/"><![CDATA[<p>在台北電玩展舉行期間，也會同時進行亞太遊戲高峰會。高峰會邀請遊戲業相關商業人士前來分享經驗，議題涵蓋開發、技術、行銷、社群推廣等。不過對我來說，與其說是去聽演講，不如說是粉絲見面會。而今年最有興趣的演講之一是 GGST 的製作人宮內健的分享，在這場演講中也獲益良多，所以用這篇文章來分享演講的內容。</p>
-
-<p><img src="/assets/images/blog/2025/2025-01-30-2025-apgs-ggst-share/ggst-cover-image.jpg" alt="ggst-cover-image" /></p>
-
-<p>製作人宮內健在這場演講中主要分享在開發《聖騎士之戰 -奮戰-》（GGST）中，為了能吸引新玩家，又要兼顧舊玩家，所做的改變以及面臨的問題。</p>
-
-<h2 id="格鬥遊戲的困境">格鬥遊戲的困境</h2>
-
-<p>以往格鬥遊戲給人難度很高的印象，緒如只要逮到就會被連段到底，無法反擊、招式又多又複雜、需要即時反應以應對場上情況。造成格鬥遊戲很難吸引新玩家，也有玩家年齡越來越高的趨勢。在 GGST 一次封測的問券調查中，有前作遊玩經驗的人高達約 95%，而且這當中有約 74% 是 25 歲以上的玩家，而剩下的 5% 沒玩過的人中，有約 60% 是 25 歲以下的玩家。為了能讓續作繼續下去，吸引新玩家變得很重要。</p>
-
-<h2 id="內外在進行改變">內外在進行改變</h2>
-
-<p>為了能夠吸引新玩家，在 GGST 的外在與內在都做了改變。外在的部份是讓遊戲畫面變得乾淨，該玩家容易搞清楚場上發生的狀況。內在則是不用連段或是必殺技就可以打出高傷或是華麗的招式，而在角色的攻略影片中也避免給連段的攻略，讓玩家覺得這種程度的控制我也可以。</p>
-
-<p><img src="/assets/images/blog/2025/2025-01-30-2025-apgs-ggst-share/ggxrd-gameplay.png" alt="ggxrd-gameplay" />
-<img src="/assets/images/blog/2025/2025-01-30-2025-apgs-ggst-share/ggst-gameplay.png" alt="ggst-gameplay" />
-<em>與前作相比，GGST 的介面變得簡潔。上圖擷圖<a href="https://youtu.be/Mis6bx43XII">來源</a>，下圖擷圖<a href="https://youtu.be/Yr-PY1K0j_8">來源</a></em></p>
-
-<!-- Courtesy of embedresponsively.com -->
-
-<div class="responsive-video-container">
-    <iframe src="https://www.youtube-nocookie.com/embed/H0ha3-S926k" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-
-<p class="video-caption"><em>在官方的角色攻略影片中介紹單招及簡單的指令</em></p>
-
-<h2 id="注重線上對戰">注重線上對戰</h2>
-
-<p>在對戰環境上也要順應線上對戰變為主流的趨勢。日本的機廳文化較為盛行，習慣面對面的對戰，所以線下的本地對戰容易進行。但是在美國地域廣大，要進行線下對戰就得長途跋涉。在線上的部份，網路狀態好的地方也相對有優勢，但美國的網路在各地也有差別。然而玩家比較喜歡找到同樣程度的人對戰，如果對戰一面倒的話，贏家沒有成就感，輸家也會覺得遊戲太難，因而留不住玩家。因此在 GGST 中也導入 Rollback Netcode，它可以讓網路環境不好的玩家也能有順暢的遊戲體驗，在疫情期間舉辦的線上賽也獲得好評。</p>
-
-<!-- Courtesy of embedresponsively.com -->
-
-<div class="responsive-video-container">
-    <iframe src="https://www.youtube-nocookie.com/embed/7yVrUcav6DI" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-
-<p class="video-caption"><em>Rollback Netcode 在收到下個指令之前，先假設玩家沒有改變輸入的指令，直到收到下個指令。如果跟預測一樣，就不改變角色的行為，如果不一樣，則柔順地將角色轉到對應的動作。避免以往沒收到指令角色就不動作所造成的卡頓感</em></p>
-
-<h2 id="現代化的角色形象">現代化的角色形象</h2>
-
-<p>再來就是角色外觀的喜好也在改變，而且歐美人覺得美少女互歐是一件很奇怪的事情。因此在 GGST 中讓角色的視覺形象現代化，只保留覺得「很酷」的元素，也在角色年齡與服裝上做改變。而在劇情中加入對應的故事，讓角色的改變合理化。</p>
-
-<p><img src="/assets/images/blog/2025/2025-01-30-2025-apgs-ggst-share/may-appearance-changing.png" alt="may-appearance-changing" />
-<img src="/assets/images/blog/2025/2025-01-30-2025-apgs-ggst-share/dizzy-appearance-changing.png" alt="dizzy_appearance-changing" />
-<em>可以看到 May 與 Dizzy 這兩個角色在前作 GGXrd 與續作 GGST 的形象改變，服裝也以日常服為為主，但還是保留主要元素</em></p>
-
-<h2 id="與老玩家溝通">與老玩家溝通</h2>
-
-<p>但這些改動可能會違背老玩家想要的內容，老玩家因自己喜歡的遊戲元素被去除了而反彈，造成遊戲評價下降。所以在遊戲開發階段就開始傳達想要改變的消息，透過官網（<a href="https://www.guiltygear.com/ggst/en/news/post-category/column/">開發者後花園</a>）、社群平台、媒體等管道來發佈創作意圖與未來方針。並利用問卷調查與 beta 測試，來與玩家共同討論意見，並且會公布調查結果與開發者意見。</p>
-
-<h2 id="消費者鴻溝">消費者鴻溝</h2>
-
-<p>他們在問卷調查中也發現了「消費者鴻溝」（<a href="https://www.business-to-you.com/crossing-the-chasm-technology-adoption-life-cycle/">The Chasm</a>）的現象。消費者對新產品的消費習慣可以分成五個族群，這邊用遊戲做為例子：</p>
-
-<ul>
-  <li>創新者（Innovators）：只要是新遊戲就一定會玩，而且會是遊戲的改進來源</li>
-  <li>早期採用者（Early Adopters）：與創新者類似，但他們會依賴自己的直覺來挑選遊戲，通常也不太在意價格，而且很樂意作為其它消費者的參考對象</li>
-  <li>早期大眾（Early Majority）：不會立刻玩新遊戲，而且會參考其它人的意見來決定要不要玩這款遊戲</li>
-  <li>晚期大眾（Late Majority）：等遊戲有穩定評價以及價格符合期望時，才會決定玩這款遊戲</li>
-  <li>落後者（Laggards）：完全不會玩新遊戲的人</li>
-</ul>
-
-<p><img src="/assets/images/blog/2025/2025-01-30-2025-apgs-ggst-share/the-chasm.png" alt="the-chasm" /></p>
-
-<p>這些族群的人數分佈呈現常態分佈，但是可以看到早期採用者與早期大眾之間有一個間隔，被稱為「消費者鴻溝」。這是因為早期採用者的意見會成為早期大眾的參考，如果早期採用者給出負評的話，早期大眾就不會購買這款遊戲，進而流失這部份的客群。</p>
-
-<h2 id="總結">總結</h2>
-
-<p>因此能在開發階段主動取得玩家的意見，對於開發方向有很大的幫助。在幾次的 beta 測試中，問卷的滿意程度也大幅提升。相比前作只有 26% 的 25 歲以下的玩家，在 GGST 中則達到 72%，讓 GGST 成為 ARC System Works 第一款擁有 300 萬玩家的格鬥遊戲，成功留下系列作玩家，也吸引了新玩家。該遊戲也在 2021 年的 TGA 中獲得最佳格鬥遊戲的獎項。</p>
-
-<p>製作人最後提到，雖然成功模式不能直接複製，但是如果可以帶來幫助的話是再好也不過。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[在台北電玩展舉行期間，也會同時進行亞太遊戲高峰會。高峰會邀請遊戲業相關商業人士前來分享經驗，議題涵蓋開發、技術、行銷、社群推廣等。不過對我來說，與其說是去聽演講，不如說是粉絲見面會。而今年最有興趣的演講之一是 GGST 的製作人宮內健的分享，在這場演講中也獲益良多，所以用這篇文章來分享演講的內容。]]></summary></entry></feed>
+<p>從劇情來看，這版的小丑不會是以往大家對小丑的印象，雖然看起來是還想要有續集，但是亞瑟的故事應該是到這裡為止了。如果想看小丑發揮的話，這部電影不是個好選擇。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="心得" /><summary type="html"><![CDATA[去年因為工作變得比較繁重，所以電影看的不多，不過這樣反而可以寫得比較詳細。為了篇幅，就簡單分成真人電影與動畫電影兩篇，這篇就記錄真人電影的部份。去年最喜歡的電影就是《沙丘：第二部》了，去二刷的時候還選了 IMAX 的版本，對於太空科幻的題材真的愛不釋手啊。]]></summary></entry></feed>
