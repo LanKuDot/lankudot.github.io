@@ -1,14 +1,19 @@
+
+
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
-  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 
 <html lang="zh-TW" class="no-js">
   <head>
-    <meta charset="utf-8">
+    
+<meta charset="utf-8">
+
 
 <!-- begin _includes/seo.html --><title>烏龜漫遊 2.0 | 頁面 4</title>
 <meta name="description" content="記錄分享在 Unity 上製作遊戲的筆記與心得">
@@ -30,6 +35,7 @@
 
 
   <meta property="og:image" content="https://lankudot.airfishlab.com/assets/images/bio-photo.jpg">
+  
 
 
 
@@ -42,10 +48,13 @@
     <meta name="twitter:card" content="summary">
     
       <meta name="twitter:image" content="https://lankudot.airfishlab.com/assets/images/bio-photo.jpg">
+      
     
   
 
   
+
+
 
 
 
@@ -102,7 +111,8 @@
   </head>
 
   <body class="layout--home" dir="ltr">
-    <nav class="skip-links">
+    
+<nav class="skip-links" aria-label="Skip links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">轉至主導航欄</a></li>
     <li><a href="#main" class="screen-reader-shortcut">轉至内容</a></li>
@@ -112,10 +122,11 @@
 
     
 
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
         
         <a class="site-title" href="/">
           烏龜漫遊 2.0
@@ -145,10 +156,13 @@
 
 
 
+
+
 <div id="main" role="main">
   
   <div class="sidebar">
   
+
 
 
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
@@ -178,7 +192,7 @@
     <ul class="author__urls social-icons">
       
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Taiwan</span>
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Taiwan</span>
         </li>
       
 
@@ -275,6 +289,8 @@
       <h1 id="page-title" class="page__title"></h1>
     
     
+
+
 <p>| <a href="/posts/" class="btn btn--inverse">所有文章</a> |
 <a href="/tags/" class="btn btn--inverse">依標籤檢視</a> |</p>
 
@@ -296,16 +312,57 @@
 
 
 
+
+
 <div class="list__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
       
-        <a href="/blog/2024-04-unity-event-subscription-and-problem-1/" rel="permalink">[Unity] 事件訂閱與問題（上）- <code class="language-plaintext highlighter-rouge">UnityEvent</code> 與 C# <code class="language-plaintext highlighter-rouge">event</code>
+        <a class="u-url" href="/blog/2024-04-unity-event-subscription-and-problem-2/" rel="permalink">[Unity] 事件訂閱與問題（下）- C# 介面
 </a>
       
     </h2>
     
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2024-04-13T00:00:00+08:00">April 13, 2024</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">本篇繼續上一篇的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。
+
+</p>
+  </article>
+</div>
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/2024-04-unity-event-subscription-and-problem-1/" rel="permalink">[Unity] 事件訂閱與問題（上）- <code class="language-plaintext highlighter-rouge">UnityEvent</code> 與 C# <code class="language-plaintext highlighter-rouge">event</code>
+</a>
+      
+    </h2>
+    
+
 
   <p class="page__meta">
     
@@ -323,9 +380,10 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 UnityEvent 與 C# event 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 UnityEvent...</p>
+    <p class="archive__item-excerpt p-summary" itemprop="description">在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 UnityEvent 與 C# event 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 UnityEvent...</p>
   </article>
 </div>
+
 
 
 
@@ -333,13 +391,14 @@
 <div class="list__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
       
-        <a href="/blog/2024-02-watched-movies-at-home-in-2023/" rel="permalink">[電影] 2023 年在家裡看過的那些電影們
+        <a class="u-url" href="/blog/2024-02-watched-movies-at-home-in-2023/" rel="permalink">[電影] 2023 年在家裡看過的那些電影們
 </a>
       
     </h2>
     
+
 
   <p class="page__meta">
     
@@ -357,7 +416,7 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">2023 年除了在電影院看了許多電影外，也透過 Netflix 等串流平台收看了經典以及想要補齊的電影。就用這篇來整理這段時間的心得。
+    <p class="archive__item-excerpt p-summary" itemprop="description">2023 年除了在電影院看了許多電影外，也透過 Netflix 等串流平台收看了經典以及想要補齊的電影。就用這篇來整理這段時間的心得。
 
 </p>
   </article>
@@ -366,16 +425,18 @@
 
 
 
+
 <div class="list__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
       
-        <a href="/blog/2024-01-watched-movies-in-theater-in-2023/" rel="permalink">[電影] 2023 年進電影院看過的那些電影們
+        <a class="u-url" href="/blog/2024-01-watched-movies-in-theater-in-2023/" rel="permalink">[電影] 2023 年進電影院看過的那些電影們
 </a>
       
     </h2>
     
+
 
   <p class="page__meta">
     
@@ -393,7 +454,7 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">回想去年看的電影比起以往還要來得多，沒想到也漸漸喜歡看電影的感覺。就想來記錄去年看過的電影，以後也可以回味喜歡的作品。
+    <p class="archive__item-excerpt p-summary" itemprop="description">回想去年看的電影比起以往還要來得多，沒想到也漸漸喜歡看電影的感覺。就想來記錄去年看過的電影，以後也可以回味喜歡的作品。
 
 </p>
   </article>
@@ -402,16 +463,18 @@
 
 
 
+
 <div class="list__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
       
-        <a href="/blog/2023-11-dive-into-font-design-in-train-station/" rel="permalink">[閱讀] 石川祐基 - 解構鐵道文字設計
+        <a class="u-url" href="/blog/2023-11-dive-into-font-design-in-train-station/" rel="permalink">[閱讀] 石川祐基 - 解構鐵道文字設計
 </a>
       
     </h2>
     
+
 
   <p class="page__meta">
     
@@ -429,54 +492,20 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">不知道從何時開始，就一直對鐵道很有興趣，去日本都會拜訪當地的鐵道博物館，或是搭乘比較獨特的鐵路路線，偶爾看到列車經過平交道時，也會想拍下它行經的過程。但是對於車站內的站牌卻沒有特別留意，在快速取得上面的資訊後，就沒有再看過一眼了，直到我在書店遇到這本《解構鐵道文字設計》。
-
-</p>
-  </article>
-</div>
-
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/blog/2023-10-collaboration-of-programming/" rel="permalink">[雜談] 程式專案的一人負責與多人協作
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-10-23T00:00:00+08:00">October 23, 2023</time>
-      </span>
-    
-
-    
-
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">之前的工作模式偏向個人負責一個專案或一個完整的功能，跟別人的互動主要是確認需求、處理反饋。現在的工作參與專案的規模則大上許多，一個元件或功能會由不同人接手，模式跟以往大不相同。這兩個月因為專案上線，所以從系統架構的工作轉去支援功能的維護。這段時間體驗到許多觀念衝擊，就在思考為什麼會如此適應不良。
+    <p class="archive__item-excerpt p-summary" itemprop="description">不知道從何時開始，就一直對鐵道很有興趣，去日本都會拜訪當地的鐵道博物館，或是搭乘比較獨特的鐵路路線，偶爾看到列車經過平交道時，也會想拍下它行經的過程。但是對於車站內的站牌卻沒有特別留意，在快速取得上面的資訊後，就沒有再看過一眼了，直到我在書店遇到這本《解構鐵道文字設計》。
 
 </p>
   </article>
 </div>
 
 </div>
+
 
 
   
     
-<nav class="pagination">
+
+<nav class="pagination" aria-label="Pagination">
   
   
   <ul>
@@ -577,6 +606,7 @@
 </div>
         
 
+
 <div class="page__footer-follow">
   <ul class="social-icons">
     
@@ -604,18 +634,19 @@
     
 
     
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> RSS Feed</a></li>
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> RSS Feed</a></li>
     
   </ul>
 </div>
 
 
-<div class="page__footer-copyright">&copy; 2025 <a href="https://lankudot.airfishlab.com">烏龜漫遊 2.0</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 <a href="https://lankudot.airfishlab.com">烏龜漫遊 2.0</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
 
     
+
   <script src="/assets/js/main.min.js"></script>
 
 
@@ -633,6 +664,7 @@
 
   gtag('config', 'G-VXPNSTXB5L', { 'anonymize_ip': false});
 </script>
+
 
 
 

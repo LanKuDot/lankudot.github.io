@@ -1,14 +1,19 @@
+
+
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
-  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 
 <html lang="zh-TW" class="no-js">
   <head>
-    <meta charset="utf-8">
+    
+<meta charset="utf-8">
+
 
 <!-- begin _includes/seo.html --><title>烏龜漫遊 2.0 | 頁面 8</title>
 <meta name="description" content="記錄分享在 Unity 上製作遊戲的筆記與心得">
@@ -30,6 +35,7 @@
 
 
   <meta property="og:image" content="https://lankudot.airfishlab.com/assets/images/bio-photo.jpg">
+  
 
 
 
@@ -42,10 +48,13 @@
     <meta name="twitter:card" content="summary">
     
       <meta name="twitter:image" content="https://lankudot.airfishlab.com/assets/images/bio-photo.jpg">
+      
     
   
 
   
+
+
 
 
 
@@ -100,7 +109,8 @@
   </head>
 
   <body class="layout--home" dir="ltr">
-    <nav class="skip-links">
+    
+<nav class="skip-links" aria-label="Skip links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">轉至主導航欄</a></li>
     <li><a href="#main" class="screen-reader-shortcut">轉至内容</a></li>
@@ -110,10 +120,11 @@
 
     
 
+
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
         
         <a class="site-title" href="/">
           烏龜漫遊 2.0
@@ -143,10 +154,13 @@
 
 
 
+
+
 <div id="main" role="main">
   
   <div class="sidebar">
   
+
 
 
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
@@ -176,7 +190,7 @@
     <ul class="author__urls social-icons">
       
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Taiwan</span>
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Taiwan</span>
         </li>
       
 
@@ -273,6 +287,8 @@
       <h1 id="page-title" class="page__title"></h1>
     
     
+
+
 <p>| <a href="/posts/" class="btn btn--inverse">所有文章</a> |
 <a href="/tags/" class="btn btn--inverse">依標籤檢視</a> |</p>
 
@@ -294,16 +310,57 @@
 
 
 
+
+
 <div class="list__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
       
-        <a href="/blog/2022-01-advice-for-tool-developers/" rel="permalink">[雜談] 身為工具開發者的二三事
+        <a class="u-url" href="/blog/2022-02-csharp-inheritance-member-accessing/" rel="permalink">[C#] 類別成員存取關係一覧
 </a>
       
     </h2>
     
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-02-16T00:00:00+08:00">February 16, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">本篇用圖表來介紹 C# 類別成員的存取關係，有 private、protected、public，跟跨組件的成員存取，有 internal、protected internal、private protected。以及比較一般繼承與多型繼承中，會取得什麼版本的方法。
+
+</p>
+  </article>
+</div>
+
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/2022-01-advice-for-tool-developers/" rel="permalink">[雜談] 身為工具開發者的二三事
+</a>
+      
+    </h2>
+    
+
 
   <p class="page__meta">
     
@@ -321,7 +378,7 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">最近終於有機會可以跟到大專案，而專案中有一人負責提供開發工具。為了方便進行 code review，所有成員要使用該工具。但沒有想到才剛使用一週，就遇上開發者大改架構，而且連個事前通知都沒有，一個禮拜的進度化為烏有。崩潰之餘只好來寫一下自己認知中，身為工具開發者時應該要有的觀念。
+    <p class="archive__item-excerpt p-summary" itemprop="description">最近終於有機會可以跟到大專案，而專案中有一人負責提供開發工具。為了方便進行 code review，所有成員要使用該工具。但沒有想到才剛使用一週，就遇上開發者大改架構，而且連個事前通知都沒有，一個禮拜的進度化為烏有。崩潰之餘只好來寫一下自己認知中，身為工具開發者時應該要有的觀念。
 
 </p>
   </article>
@@ -330,16 +387,18 @@
 
 
 
+
 <div class="list__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
       
-        <a href="/blog/2021-12-switch-to-boshiamy/" rel="permalink">[雜談] 轉換到嘸蝦米半年心得
+        <a class="u-url" href="/blog/2021-12-switch-to-boshiamy/" rel="permalink">[雜談] 轉換到嘸蝦米半年心得
 </a>
       
     </h2>
     
+
 
   <p class="page__meta">
     
@@ -357,7 +416,7 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">在受不了輸入法神奇的選字跟換了沒有方向鍵的 60% 鍵盤的因素下，決定學習新的輸入法，享受不用選字的爽感。在以字形為主的輸入法中，最後選擇嘸蝦米，這篇分享學習方法與使用半年的心得。
+    <p class="archive__item-excerpt p-summary" itemprop="description">在受不了輸入法神奇的選字跟換了沒有方向鍵的 60% 鍵盤的因素下，決定學習新的輸入法，享受不用選字的爽感。在以字形為主的輸入法中，最後選擇嘸蝦米，這篇分享學習方法與使用半年的心得。
 
 </p>
   </article>
@@ -366,16 +425,18 @@
 
 
 
+
 <div class="list__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
-    <h2 class="archive__item-title no_toc" itemprop="headline">
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
       
-        <a href="/blog/2021-12-csharp-boxing-and-unboxing/" rel="permalink">[C#] 避免 Boxing/Unboxing 效能問題
+        <a class="u-url" href="/blog/2021-12-csharp-boxing-and-unboxing/" rel="permalink">[C#] 避免 Boxing/Unboxing 效能問題
 </a>
       
     </h2>
     
+
 
   <p class="page__meta">
     
@@ -393,7 +454,7 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">之前在撰寫 Unity 套件的時候，因為不知道使用者會用什麼類別來傳資料，所以都轉成 object 型別來傳遞，後來發現這會有效能上的問題。本篇文章就來探討這個問題以及解法。
+    <p class="archive__item-excerpt p-summary" itemprop="description">之前在撰寫 Unity 套件的時候，因為不知道使用者會用什麼類別來傳資料，所以都轉成 object 型別來傳遞，後來發現這會有效能上的問題。本篇文章就來探討這個問題以及解法。
 
 </p>
   </article>
@@ -402,9 +463,11 @@
 </div>
 
 
+
   
     
-<nav class="pagination">
+
+<nav class="pagination" aria-label="Pagination">
   
   
   <ul>
@@ -482,6 +545,7 @@
 </div>
         
 
+
 <div class="page__footer-follow">
   <ul class="social-icons">
     
@@ -509,18 +573,19 @@
     
 
     
-      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> RSS Feed</a></li>
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> RSS Feed</a></li>
     
   </ul>
 </div>
 
 
-<div class="page__footer-copyright">&copy; 2025 <a href="https://lankudot.airfishlab.com">烏龜漫遊 2.0</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2026 <a href="https://lankudot.airfishlab.com">烏龜漫遊 2.0</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
 
     
+
   <script src="/assets/js/main.min.js"></script>
 
 
@@ -538,6 +603,7 @@
 
   gtag('config', 'G-VXPNSTXB5L', { 'anonymize_ip': false});
 </script>
+
 
 
 
