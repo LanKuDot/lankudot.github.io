@@ -1,8 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2026-04-15T11:01:34+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[電影] 2024 看過的那些動畫電影們</title><link href="https://lankudot.airfishlab.com/blog/2026-04-watched-animation-movies-in-2024/" rel="alternate" type="text/html" title="[電影] 2024 看過的那些動畫電影們" /><published>2026-04-15T00:00:00+08:00</published><updated>2026-04-15T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/watched-animation-movies-in-2024</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-04-watched-animation-movies-in-2024/"><![CDATA[<p>2024 年看的動畫電影一共 4 部，最喜歡的莫過於以蒸氣龐克為主題的《蒸氣男孩》了，也很喜歡充滿百合香氣的《莉茲與青鳥》。另外還有兩人從小一起創作漫畫到長大被迫別離的《驀然回首》，以及在聖誕節幸福氛圍中帶點危機的《SPY×FAMILY CODE: White》。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2026-05-10T23:20:28+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[電影]《超時空輝耀姬！》科幻 x 百合 x 竹取物語</title><link href="https://lankudot.airfishlab.com/blog/2026-05-cosmic-princess-kaguya/" rel="alternate" type="text/html" title="[電影]《超時空輝耀姬！》科幻 x 百合 x 竹取物語" /><published>2026-05-10T00:00:00+08:00</published><updated>2026-05-10T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/cosmic-princess-kaguya</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-05-cosmic-princess-kaguya/"><![CDATA[<p>如果竹取物語發生在科技進步的世界中，那會怎麼發展？不僅角色設計豐富、作畫細緻、動作場面靈活，而且還有百合要素！如果還有經歷過 V 家繁盛時期，那一定要看看《超時空輝耀姬！》。</p>
+
+<p><img src="/assets/images/blog/2026/2026-05-10-cosmic-princess-kaguya/poster-thumb.jpg" alt="poster-thumb" /></p>
+
+<p>在不遠的未來，人們可以透過隱形眼鏡直接在虛擬空間「月讀」體驗不同的生活。對在東京獨立生活的女高中生彩葉來說，月讀是個可以抽離生活、盡情舒壓的空間，最推的 VTuber 八千代兼月讀管理員也時常在裡面舉辦活動與演唱會。某日在彩葉打工回家的路上，一道流星打下，附近的電線桿發出七彩電競光芒，冒出的竹門緩緩打開，裡面居然有一名嬰兒。萬般無奈的彩葉只好把嬰兒帶回撫養，沒想到才三四天的時間，這名嬰兒迅速長成青少女。一問之下這名少女真的是從月球來的外星人，因為月球上的生活很無聊而逃出來，彩葉覺得簡直跟竹取物語一模一樣，而把這名少女取名「輝耀姬」。</p>
+
+<p>輝耀姬透過彩葉知道月讀之後，就立刻喜歡上這個地方。恰巧八千代正舉辦大型活動，一段時間內粉絲數成長最多的直播主可以與八千代共同演出演唱會。輝耀姬慫恿彩葉，並說服她重拾作曲的能力，為她製作一首又一首的原唱曲，為自己的頻道衝刺。然而就像竹取物語一樣，當月圓的日子到來，月球就會派人把公主接回去，這次還能寫出不一樣的故事嗎?</p>
+
+<p>這部由 Netfilx 出資的動畫電影，完全可以體會到財力雄厚。不僅作畫細緻，角色表情動作靈活，連打鬥場面也不馬虎。我很喜歡角色的設計，無論是彩葉和輝耀姬的現實服裝還是在月讀中的虛擬分身造型，還是八千代的造型都相當吸引人。月讀的世界設計則是日式奇幻主題，劇情第一次進入月讀世界時，以鳥居作為登入口，進入有著宏大的建物、豐富的市集、形形色色的虛擬分身的遼闊空間，帶出這裡是一個能夠自由自在生活的另一個世界。音樂部份請來 V 家著名的作曲家，像是 ryo、HoneyWorks、40mP 等。劇中由聲優親自演唱的多首原創曲之外，也有 cover 曲，尤其是以《World Is Mine》為頭的組曲，開頭一出來就令人起雞皮疙瘩了。當中也不乏彩蛋，像是月讀主打遊戲是三對三的 LOL，還有大戰中用 Beat Saber 的方式擊敗來襲的敵人。另外我第一次聽到這麼活潑的早見沙織，最近對她的印象就是間諜家家酒的約兒，沒想到在這裡情緒非常高昂，而且歌聲很好聽。</p>
+
+<p>劇情的部份就比較四平八穩，但感人的部份還是會想流淚，尤其是輝耀姬對著彩葉說我愛妳那一幕。可惜的是結尾部份有點硬，不過跳出下一部 Netflix 影片的假結束我還滿喜歡的，當下還以為真的結束了。但重要的是有滿滿的勝者早餐！以作畫、演出、音樂的品質，自己還滿希望可以在電影院中再體驗一次。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="心得" /><summary type="html"><![CDATA[如果竹取物語發生在科技進步的世界中，那會怎麼發展？不僅角色設計豐富、作畫細緻、動作場面靈活，而且還有百合要素！如果還有經歷過 V 家繁盛時期，那一定要看看《超時空輝耀姬！》。]]></summary></entry><entry><title type="html">[電影] 2024 看過的那些動畫電影們</title><link href="https://lankudot.airfishlab.com/blog/2026-04-watched-animation-movies-in-2024/" rel="alternate" type="text/html" title="[電影] 2024 看過的那些動畫電影們" /><published>2026-04-15T00:00:00+08:00</published><updated>2026-04-15T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/watched-animation-movies-in-2024</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-04-watched-animation-movies-in-2024/"><![CDATA[<p>2024 年看的動畫電影一共 4 部，最喜歡的莫過於以蒸氣龐克為主題的《蒸氣男孩》了，也很喜歡充滿百合香氣的《莉茲與青鳥》。另外還有兩人從小一起創作漫畫到長大被迫別離的《驀然回首》，以及在聖誕節幸福氛圍中帶點危機的《SPY×FAMILY CODE: White》。</p>
 
 <h2 id="蒸氣男孩">蒸氣男孩</h2>
 
-<p><img src="/assets/images/blog/2026/2026-04-15-watched-animation-movies-in-2024/steam-boy-poster.png" alt="steam-boy-poster" /></p>
+<p><img src="/assets/images/blog/2026/2026-04-15-watched-animation-movies-in-2024/poster-steamboy-thumb.jpg" alt="poster-steamboy-thumb" /></p>
 
 <p>如果有種液體在氣化時能提供大量蒸氣，那把它壓縮儲存在小鐵球中的話，就可以提供比擬數個巨大鍋爐的能量，電影如此把核能的概念投射到蒸氣世界中。面對這麼夢幻的能源，主角雷的爸爸愛德華與爺爺洛伊德想法開始分歧。一方是醉心實現夢想而被財團利用，一方則是發覺技術被惡魔化而想辦法阻止。雷原本也是位無邪的天才發明家，相信科學就是用來造福人們的，但在捲入事件後，想法也開始改變。英國、蒸氣、工業革命、科學與惡魔，《蒸氣男孩》就是一部典型的蒸氣龐克電影。</p>
 
@@ -12,7 +22,7 @@
 
 <h2 id="莉茲與青鳥">莉茲與青鳥</h2>
 
-<p><img src="/assets/images/blog/2026/2026-04-15-watched-animation-movies-in-2024/liz-and-the-blue-bird-poster.png" alt="liz-and-the-blue-bird-poster" /></p>
+<p><img src="/assets/images/blog/2026/2026-04-15-watched-animation-movies-in-2024/poster-liz-and-the-blue-bird-thumb.jpg" alt="poster-liz-and-the-blue-bird-thumb" /></p>
 
 <p>這就是「勝者的早餐，百合的滋味」嗎？一部電影可以一而再、再而三地販售百合劇情嗎，真的是太…香了。</p>
 
@@ -28,7 +38,7 @@
 
 <h2 id="驀然回首">驀然回首</h2>
 
-<p><img src="/assets/images/blog/2026/2026-04-15-watched-animation-movies-in-2024/look-back-poster.png" alt="look-back-poster" /></p>
+<p><img src="/assets/images/blog/2026/2026-04-15-watched-animation-movies-in-2024/poster-lookback-thumb.jpg" alt="poster-lookback-thumb" /></p>
 
 <p>創作受同學喜歡的四格漫畫的藤野，發現新刊的風景四格更受同學歡迎，才知道是由長期不來上學的京本所畫的。不甘風采被搶走的藤野，開始磨練畫技，然而即使努力了多年，還是比不上京本的畫技。原本打算放棄畫畫的她，在被委託拿畢業證書到京本家的機會下，才發現京本非常崇拜自己，自此兩個人成為摯友，並開始一起創作漫畫。然而就在被詢問要不要一起出連載時，覺得自己追不上藤野腳步的京本卻拒絕了，且決定去就讀美術大學。但這個決定，卻讓京本後來遇到隨機殺人犯，從此天人永隔。</p>
 
@@ -36,7 +46,7 @@
 
 <h2 id="spyfamily-code-white">SPY×FAMILY CODE: White</h2>
 
-<p><img src="/assets/images/blog/2026/2026-04-15-watched-animation-movies-in-2024/spy-family-code-white-poster.png" alt="spy-family-code-white-poster" /></p>
+<p><img src="/assets/images/blog/2026/2026-04-15-watched-animation-movies-in-2024/poster-spy-family-code-white-thumb.jpg" alt="poster-spy-family-code-white-thumb" /></p>
 
 <p>為了在學園的甜點實習上獲得校長的青睞，以讓阿尼亞獲得星星，黃昏決定帶上全家一起到北方的弗利吉斯旅行，並尋找校長愛吃的甜點「梅勒梅勒」，想要重現那個味道。在前往當地的火車上，阿尼亞偶然吃下軍人原本要運送的唯一一顆「可以顛覆東西兩國平衡」的夢幻巧克力。好在約兒即時發現，痛打被當作巧克力怪盜的軍人，阿尼亞才免得被抓走。</p>
 
@@ -141,7 +151,198 @@
 
 <h2 id="先求有但別繞路">先求有，但別繞路</h2>
 
-<p>所以如果知道要做的功能未來會怎樣時，最好一開始就以此為方向來開發功能，還沒有所需資料或素材就用暫代的。像戰鬥系統就算還沒有動畫，可以先用幾何形狀拉簡單示意動作，如果不用幾何形狀，也可以先把動作的時長用兩個 keyframe 簡單表示就好。因為前期的重點是把戰鬥事件實作出來，先驗證這些事件在遊戲中如何運作比較好。等到可以套上動畫之後，就可以以此為基礎，去調整事件的功能。想想如果當初就這樣做的話，就可以少花這兩個月的時間了 :cry:。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 遊戲設計篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 遊戲設計篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-03-game-design</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/"><![CDATA[<p>這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。</p>
+<p>所以如果知道要做的功能未來會怎樣時，最好一開始就以此為方向來開發功能，還沒有所需資料或素材就用暫代的。像戰鬥系統就算還沒有動畫，可以先用幾何形狀拉簡單示意動作，如果不用幾何形狀，也可以先把動作的時長用兩個 keyframe 簡單表示就好。因為前期的重點是把戰鬥事件實作出來，先驗證這些事件在遊戲中如何運作比較好。等到可以套上動畫之後，就可以以此為基礎，去調整事件的功能。想想如果當初就這樣做的話，就可以少花這兩個月的時間了 :cry:。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - CDPR 篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - CDPR 篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-01-cdpr</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/"><![CDATA[<p>今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。</p>
+
+<p><img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/pass.png" alt="參加證" /></p>
+
+<h2 id="電馭叛客-2077解碼電影動畫的祕密">《電馭叛客 2077》：解碼電影動畫的祕密</h2>
+
+<p>這場演講是 CDPR 帶來的兩場演講之一。首席電影動畫師 David Cordero Iglesias 介紹在《電馭叛客 2077》中，如何讓 NPC 更生動自然，以及更真實的第一人稱敘事運鏡，讓玩家更有沉浸感。</p>
+
+<h3 id="模擬現實互動">模擬現實互動</h3>
+
+<ul>
+  <li>減少黑幕切換
+    <ul>
+      <li>NPC 在場景中會自然對話，直到玩家進來互動後，會自然結束跟其它 NPC 的對話，並轉頭過來開始跟玩家的劇情對話</li>
+      <li>利用牆面設置位置來避免玩家看到 NPC 重置的不連續感。例如：在一個追逐從後門逃跑的 NPC 的劇情中，玩家可以選擇追上去，或是從前門繞路追上他，而 NPC 一定會在暗巷中被夥伴給攔住。利用牆面的 90 度轉角，讓玩家走過牆面後，才會看到事件發生。</li>
+      <li>但遊戲中還是會為了玩家昏厥或是醒來的情境使用黑幕</li>
+    </ul>
+  </li>
+  <li>玩家控制角色的能力可以分成四個層級，增強敘事能力
+    <ul>
+      <li>第一階：玩家可以自由控制角色</li>
+      <li>第二階：部份控制被限制。例如：搬重物時，移動速度變慢</li>
+      <li>第三階：只能移動視角，而且角度有限制。例如：被壓制在地上時</li>
+      <li>第四階：劇情控制，玩家完全無法操作</li>
+    </ul>
+  </li>
+  <li>NPC 自然動作
+    <ul>
+      <li>NPC 的動作反應這個 NPC 的個性</li>
+      <li>NPC 在等待玩家回答時，會繼續做手邊正在做的事情，例如：吃一口飯、繼續看雜誌，而不會呆呆看著你</li>
+    </ul>
+  </li>
+  <li>敘事運鏡要視野清晰
+    <ul>
+      <li>要避免 3D 暈，可以找會 3D 暈的同事來測試 :D</li>
+      <li>利用 Framing（決定什麼內容要出現在畫面中） 與 Composition（排列在畫面中的這些內容），讓玩家快速理解目前正在發生的事情。例如：在跑酷劇情下，讓手腳一部份出現在畫面中，提示動作的來源，並用攝影機的位移來呈現慣性</li>
+    </ul>
+  </li>
+  <li>身體意識
+    <ul>
+      <li>玩家坐定後，仍然可以自由移動視角，模擬現實談話人會亂看</li>
+      <li>在劇情拿槍時，攝影機會照向拿槍的手，模擬現實的視線移動</li>
+      <li>被 NPC 拉著走時，無法控制位移或是視角</li>
+    </ul>
+  </li>
+  <li>環境意識
+    <ul>
+      <li>角色會自然看向環境中可以互動的物件</li>
+      <li>在場景中也要標記這些可互動的物件，及如何互動</li>
+    </ul>
+  </li>
+  <li>手指細節
+    <ul>
+      <li>真實的手指反應，例如：把完拿取的物件，或是彈吉它時的手指行為</li>
+      <li>有一整個手指資料庫</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="動畫技術">動畫技術</h3>
+
+<ul>
+  <li>動捕很重要
+    <ul>
+      <li>自然真實的動畫源自現實的動作</li>
+      <li>即使是第一人稱視角遊戲，還是會錄玩家角色的動作</li>
+    </ul>
+  </li>
+  <li>還是有 key frame 動畫
+    <ul>
+      <li>機具行為，車輛的互動</li>
+      <li>整理動捕資料</li>
+    </ul>
+  </li>
+  <li>提供跨軟體平台的整合資料庫
+    <ul>
+      <li>動畫師可以自由選擇製作的動畫軟體</li>
+    </ul>
+  </li>
+  <li>動畫類型可以分成待機動作（Idle Animation）與象徵動作（Gesture Animation）
+    <ul>
+      <li>以抽煙來說，待機動作是拿著煙，而象徵動作則可以是吸一口煙或是丟煙等動作</li>
+      <li>動作之間也會設定轉換（Transition）</li>
+      <li>也有完全設定好的客制動畫，例如：彈吉他、劇情用動畫</li>
+      <li>在《電馭叛客 2077》中有七千多個待機動作，三萬五千多個象徵作，以及更多的動畫轉換</li>
+    </ul>
+  </li>
+  <li>有內部工具來管理與編輯動畫的轉換
+    <ul>
+      <li>角色的動畫為 workspot，編輯工具可以設置轉換條件與觸發來效果</li>
+      <li>workspot 之間的互動也可以編輯，例如：兩個 NPC 在聊天時的動作</li>
+      <li>在開放世界中，讓 workspot 自行決定要做的事情，讓玩家經過同一個地方時，NPC 的行為也會不一樣</li>
+      <li>在劇情場景中，workspot 可以在玩家回答前，自由播放待機動畫，使 NPC 更自然</li>
+    </ul>
+  </li>
+  <li>臉部動畫也有對應的待機動作及象徵動作
+    <ul>
+      <li>對於有真實演員的 NPC，也會把臉部變化（如皺紋）key frame 進去</li>
+    </ul>
+  </li>
+  <li>嘴型會隨輸入聲音變化，不同語言的語音會呈現不同嘴型</li>
+</ul>
+
+<h3 id="劇情動畫製作流程">劇情動畫製作流程</h3>
+
+<ol>
+  <li>分鏡：簡單場景設置與運鏡來驗證劇情動畫的觸發流程</li>
+  <li>動捕：分段拍攝劇情所需的動畫</li>
+  <li>Alpha：直接把動捕資料套入場景中並加入運鏡</li>
+  <li>Beta：消除鏡頭過度晃動，套入 IK 並跟場景物件互動</li>
+  <li>加入失敗動畫，如 QTE 失敗後的結果</li>
+</ol>
+
+<h2 id="解鎖隱藏價值cdpr-式最終產品背後的-ux">解鎖隱藏價值：CDPR 式「最終產品背後的 UX」</h2>
+
+<p>CDPR 的第二場演講則是以內部工具的 UX 體驗為主題，資深 UX/UI 設計師 Anna Nojek 認為，有好的內部開發工具，能讓開發人員能有好的開發體驗，進而能開發出好的遊戲。</p>
+
+<h3 id="好的開發環境造就好的遊戲體驗">好的開發環境造就好的遊戲體驗</h3>
+
+<ul>
+  <li>讓玩家能享受遊戲的要素很多，像是故事、玩法、挑戰性等，但對開發者來說讓玩家能享受遊戲的要素是來自好的開發體驗。以開發體驗為優先，能讓開發者發揮能力，最後做出好的遊戲體驗。</li>
+  <li>以往開發環境的問題
+    <ul>
+      <li>資源及知識過於分散：asset 散佈在不同平台且不同格式，要找一個 asset 很困難</li>
+      <li>資訊透明度差：大家各自做各自的</li>
+      <li>客制的開發流程：鎖碎及複雜的開發流程，甚至佔了開發 50% 的時間</li>
+      <li>過度依賴其它人：如果一個人卡住了，其它人也不能做事</li>
+      <li>只專注在功能：開發工具的人不熟使用者的習慣，只專注在實作功能上，讓工具不好使用</li>
+    </ul>
+  </li>
+  <li>當開發者面臨的問題沒有解決的話，會感到挫折，讓作品延期、容易出 bug，甚至感到心累，最後產出不好玩的遊戲</li>
+</ul>
+
+<h3 id="了解問題">了解問題</h3>
+
+<ul>
+  <li>製作工具先暫時處理問題，再改善解法
+    <ul>
+      <li>情境：企劃要找一個素材得要問一堆人才找的到</li>
+      <li>暫時解法：開一個共用的 excel 表單，請製作人員匯出素材時，去更新表單的狀態</li>
+      <li>長期解法：製作人員匯出素材後，自動更新資料庫</li>
+      <li>暫時解法得由人工操作，但可以暫時解決企劃要依賴他人的問題。而長期解法則是自動化，是改善後的解法，一樣解決依賴問題，也讓製作人員不用手動更新</li>
+      <li>會先有暫時解法，等待時機成熟後，再實作長期解法</li>
+    </ul>
+  </li>
+  <li>開發出內部用的素材管理工具：Asset Hive
+    <ul>
+      <li>支援集中管理，能搜尋、複用、預覽素材的工具</li>
+    </ul>
+  </li>
+  <li>工具是提供問題的解法，但如果不了解問題，則作出工具也不能解決
+    <ul>
+      <li>要去了解、觀察、討論才能知道真正的問題所在</li>
+      <li>也不要只追隨請求，而是問為何需要這個請求</li>
+      <li>當有人傾聽別人的請求時，別人也會更有動力，且更積極</li>
+    </ul>
+  </li>
+  <li>作出好的工具讓開發人員能專注在創造工作，改善遊戲成品。透過使用體驗回報，也能培養反饋與支援的氛圍</li>
+</ul>
+
+<h3 id="工具與-ux">工具與 UX</h3>
+
+<ul>
+  <li>UX 是為了簡化執行某個特別任務的手段</li>
+  <li>UX 開發流程，每個階段都有機會退回上個階段
+    <ol>
+      <li>有人提出問題</li>
+      <li>討論、分析、面談問題</li>
+      <li>設計工具需要的功能有什麼</li>
+      <li>測試</li>
+      <li>設計介面</li>
+      <li>測試</li>
+      <li>交由工程人員開發功能</li>
+      <li>測試</li>
+    </ol>
+  </li>
+  <li>以使用者為中心的溝通
+    <ul>
+      <li>同理心地圖（Empathy Map）：展示使用者在使用工具時的想法、行為、言論、感受</li>
+      <li>使用者體驗地圖（User Journey Map）：展示使用者在使用工具達成任務時的使用流程，並標示每個階段的情緒、優缺點，以及如何改善</li>
+    </ul>
+  </li>
+  <li>省下來的時間 = 原本所需要的時間 - 改善後的時間 - 開發工具所需要的時間</li>
+  <li>UX 與所有人相關
+    <ul>
+      <li>團隊的製程：製程的架構流程</li>
+      <li>明確的目標：什麼樣的目標才算成功/完成</li>
+      <li>透明度與反饋回圈：工具一定是持續迭代的過程</li>
+    </ul>
+  </li>
+  <li>回到一開始的問題：是什麼要素讓玩家能享受遊戲? 所有創作遊戲的人</li>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 遊戲設計篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 遊戲設計篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-03-game-design</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/"><![CDATA[<p>這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。</p>
 
 <h2 id="當敵人先出剪刀淺談戰鬥關卡設計的四個層級與選擇引導">當敵人先出剪刀：淺談戰鬥關卡設計的四個層級與選擇引導</h2>
 
@@ -472,198 +673,7 @@
     </ul>
   </li>
   <li>團隊應該集中在「遊戲體驗」上，作工具就是為了加速迭代</li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - CDPR 篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - CDPR 篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-01-cdpr</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/"><![CDATA[<p>今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。</p>
-
-<p><img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/pass.png" alt="參加證" /></p>
-
-<h2 id="電馭叛客-2077解碼電影動畫的祕密">《電馭叛客 2077》：解碼電影動畫的祕密</h2>
-
-<p>這場演講是 CDPR 帶來的兩場演講之一。首席電影動畫師 David Cordero Iglesias 介紹在《電馭叛客 2077》中，如何讓 NPC 更生動自然，以及更真實的第一人稱敘事運鏡，讓玩家更有沉浸感。</p>
-
-<h3 id="模擬現實互動">模擬現實互動</h3>
-
-<ul>
-  <li>減少黑幕切換
-    <ul>
-      <li>NPC 在場景中會自然對話，直到玩家進來互動後，會自然結束跟其它 NPC 的對話，並轉頭過來開始跟玩家的劇情對話</li>
-      <li>利用牆面設置位置來避免玩家看到 NPC 重置的不連續感。例如：在一個追逐從後門逃跑的 NPC 的劇情中，玩家可以選擇追上去，或是從前門繞路追上他，而 NPC 一定會在暗巷中被夥伴給攔住。利用牆面的 90 度轉角，讓玩家走過牆面後，才會看到事件發生。</li>
-      <li>但遊戲中還是會為了玩家昏厥或是醒來的情境使用黑幕</li>
-    </ul>
-  </li>
-  <li>玩家控制角色的能力可以分成四個層級，增強敘事能力
-    <ul>
-      <li>第一階：玩家可以自由控制角色</li>
-      <li>第二階：部份控制被限制。例如：搬重物時，移動速度變慢</li>
-      <li>第三階：只能移動視角，而且角度有限制。例如：被壓制在地上時</li>
-      <li>第四階：劇情控制，玩家完全無法操作</li>
-    </ul>
-  </li>
-  <li>NPC 自然動作
-    <ul>
-      <li>NPC 的動作反應這個 NPC 的個性</li>
-      <li>NPC 在等待玩家回答時，會繼續做手邊正在做的事情，例如：吃一口飯、繼續看雜誌，而不會呆呆看著你</li>
-    </ul>
-  </li>
-  <li>敘事運鏡要視野清晰
-    <ul>
-      <li>要避免 3D 暈，可以找會 3D 暈的同事來測試 :D</li>
-      <li>利用 Framing（決定什麼內容要出現在畫面中） 與 Composition（排列在畫面中的這些內容），讓玩家快速理解目前正在發生的事情。例如：在跑酷劇情下，讓手腳一部份出現在畫面中，提示動作的來源，並用攝影機的位移來呈現慣性</li>
-    </ul>
-  </li>
-  <li>身體意識
-    <ul>
-      <li>玩家坐定後，仍然可以自由移動視角，模擬現實談話人會亂看</li>
-      <li>在劇情拿槍時，攝影機會照向拿槍的手，模擬現實的視線移動</li>
-      <li>被 NPC 拉著走時，無法控制位移或是視角</li>
-    </ul>
-  </li>
-  <li>環境意識
-    <ul>
-      <li>角色會自然看向環境中可以互動的物件</li>
-      <li>在場景中也要標記這些可互動的物件，及如何互動</li>
-    </ul>
-  </li>
-  <li>手指細節
-    <ul>
-      <li>真實的手指反應，例如：把完拿取的物件，或是彈吉它時的手指行為</li>
-      <li>有一整個手指資料庫</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="動畫技術">動畫技術</h3>
-
-<ul>
-  <li>動捕很重要
-    <ul>
-      <li>自然真實的動畫源自現實的動作</li>
-      <li>即使是第一人稱視角遊戲，還是會錄玩家角色的動作</li>
-    </ul>
-  </li>
-  <li>還是有 key frame 動畫
-    <ul>
-      <li>機具行為，車輛的互動</li>
-      <li>整理動捕資料</li>
-    </ul>
-  </li>
-  <li>提供跨軟體平台的整合資料庫
-    <ul>
-      <li>動畫師可以自由選擇製作的動畫軟體</li>
-    </ul>
-  </li>
-  <li>動畫類型可以分成待機動作（Idle Animation）與象徵動作（Gesture Animation）
-    <ul>
-      <li>以抽煙來說，待機動作是拿著煙，而象徵動作則可以是吸一口煙或是丟煙等動作</li>
-      <li>動作之間也會設定轉換（Transition）</li>
-      <li>也有完全設定好的客制動畫，例如：彈吉他、劇情用動畫</li>
-      <li>在《電馭叛客 2077》中有七千多個待機動作，三萬五千多個象徵作，以及更多的動畫轉換</li>
-    </ul>
-  </li>
-  <li>有內部工具來管理與編輯動畫的轉換
-    <ul>
-      <li>角色的動畫為 workspot，編輯工具可以設置轉換條件與觸發來效果</li>
-      <li>workspot 之間的互動也可以編輯，例如：兩個 NPC 在聊天時的動作</li>
-      <li>在開放世界中，讓 workspot 自行決定要做的事情，讓玩家經過同一個地方時，NPC 的行為也會不一樣</li>
-      <li>在劇情場景中，workspot 可以在玩家回答前，自由播放待機動畫，使 NPC 更自然</li>
-    </ul>
-  </li>
-  <li>臉部動畫也有對應的待機動作及象徵動作
-    <ul>
-      <li>對於有真實演員的 NPC，也會把臉部變化（如皺紋）key frame 進去</li>
-    </ul>
-  </li>
-  <li>嘴型會隨輸入聲音變化，不同語言的語音會呈現不同嘴型</li>
-</ul>
-
-<h3 id="劇情動畫製作流程">劇情動畫製作流程</h3>
-
-<ol>
-  <li>分鏡：簡單場景設置與運鏡來驗證劇情動畫的觸發流程</li>
-  <li>動捕：分段拍攝劇情所需的動畫</li>
-  <li>Alpha：直接把動捕資料套入場景中並加入運鏡</li>
-  <li>Beta：消除鏡頭過度晃動，套入 IK 並跟場景物件互動</li>
-  <li>加入失敗動畫，如 QTE 失敗後的結果</li>
-</ol>
-
-<h2 id="解鎖隱藏價值cdpr-式最終產品背後的-ux">解鎖隱藏價值：CDPR 式「最終產品背後的 UX」</h2>
-
-<p>CDPR 的第二場演講則是以內部工具的 UX 體驗為主題，資深 UX/UI 設計師 Anna Nojek 認為，有好的內部開發工具，能讓開發人員能有好的開發體驗，進而能開發出好的遊戲。</p>
-
-<h3 id="好的開發環境造就好的遊戲體驗">好的開發環境造就好的遊戲體驗</h3>
-
-<ul>
-  <li>讓玩家能享受遊戲的要素很多，像是故事、玩法、挑戰性等，但對開發者來說讓玩家能享受遊戲的要素是來自好的開發體驗。以開發體驗為優先，能讓開發者發揮能力，最後做出好的遊戲體驗。</li>
-  <li>以往開發環境的問題
-    <ul>
-      <li>資源及知識過於分散：asset 散佈在不同平台且不同格式，要找一個 asset 很困難</li>
-      <li>資訊透明度差：大家各自做各自的</li>
-      <li>客制的開發流程：鎖碎及複雜的開發流程，甚至佔了開發 50% 的時間</li>
-      <li>過度依賴其它人：如果一個人卡住了，其它人也不能做事</li>
-      <li>只專注在功能：開發工具的人不熟使用者的習慣，只專注在實作功能上，讓工具不好使用</li>
-    </ul>
-  </li>
-  <li>當開發者面臨的問題沒有解決的話，會感到挫折，讓作品延期、容易出 bug，甚至感到心累，最後產出不好玩的遊戲</li>
-</ul>
-
-<h3 id="了解問題">了解問題</h3>
-
-<ul>
-  <li>製作工具先暫時處理問題，再改善解法
-    <ul>
-      <li>情境：企劃要找一個素材得要問一堆人才找的到</li>
-      <li>暫時解法：開一個共用的 excel 表單，請製作人員匯出素材時，去更新表單的狀態</li>
-      <li>長期解法：製作人員匯出素材後，自動更新資料庫</li>
-      <li>暫時解法得由人工操作，但可以暫時解決企劃要依賴他人的問題。而長期解法則是自動化，是改善後的解法，一樣解決依賴問題，也讓製作人員不用手動更新</li>
-      <li>會先有暫時解法，等待時機成熟後，再實作長期解法</li>
-    </ul>
-  </li>
-  <li>開發出內部用的素材管理工具：Asset Hive
-    <ul>
-      <li>支援集中管理，能搜尋、複用、預覽素材的工具</li>
-    </ul>
-  </li>
-  <li>工具是提供問題的解法，但如果不了解問題，則作出工具也不能解決
-    <ul>
-      <li>要去了解、觀察、討論才能知道真正的問題所在</li>
-      <li>也不要只追隨請求，而是問為何需要這個請求</li>
-      <li>當有人傾聽別人的請求時，別人也會更有動力，且更積極</li>
-    </ul>
-  </li>
-  <li>作出好的工具讓開發人員能專注在創造工作，改善遊戲成品。透過使用體驗回報，也能培養反饋與支援的氛圍</li>
-</ul>
-
-<h3 id="工具與-ux">工具與 UX</h3>
-
-<ul>
-  <li>UX 是為了簡化執行某個特別任務的手段</li>
-  <li>UX 開發流程，每個階段都有機會退回上個階段
-    <ol>
-      <li>有人提出問題</li>
-      <li>討論、分析、面談問題</li>
-      <li>設計工具需要的功能有什麼</li>
-      <li>測試</li>
-      <li>設計介面</li>
-      <li>測試</li>
-      <li>交由工程人員開發功能</li>
-      <li>測試</li>
-    </ol>
-  </li>
-  <li>以使用者為中心的溝通
-    <ul>
-      <li>同理心地圖（Empathy Map）：展示使用者在使用工具時的想法、行為、言論、感受</li>
-      <li>使用者體驗地圖（User Journey Map）：展示使用者在使用工具達成任務時的使用流程，並標示每個階段的情緒、優缺點，以及如何改善</li>
-    </ul>
-  </li>
-  <li>省下來的時間 = 原本所需要的時間 - 改善後的時間 - 開發工具所需要的時間</li>
-  <li>UX 與所有人相關
-    <ul>
-      <li>團隊的製程：製程的架構流程</li>
-      <li>明確的目標：什麼樣的目標才算成功/完成</li>
-      <li>透明度與反饋回圈：工具一定是持續迭代的過程</li>
-    </ul>
-  </li>
-  <li>回到一開始的問題：是什麼要素讓玩家能享受遊戲? 所有創作遊戲的人</li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。]]></summary></entry><entry><title type="html">[開發日誌 #2] A 需要跑步但 B 只要走路</title><link href="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/" rel="alternate" type="text/html" title="[開發日誌 #2] A 需要跑步但 B 只要走路" /><published>2025-06-04T00:00:00+08:00</published><updated>2025-06-04T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-general-module</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/"><![CDATA[<p>在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。</p>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。]]></summary></entry><entry><title type="html">[開發日誌 #2] A 需要跑步但 B 只要走路</title><link href="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/" rel="alternate" type="text/html" title="[開發日誌 #2] A 需要跑步但 B 只要走路" /><published>2025-06-04T00:00:00+08:00</published><updated>2025-06-04T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-general-module</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/"><![CDATA[<p>在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。</p>
 
 <h2 id="通用模組的問題">通用模組的問題</h2>
 
@@ -806,209 +816,4 @@
 
 <p>唉呀，繞了一圈，結果還是做最典型的狀態機就好了啊：</p>
 
-<p><img src="/assets/images/blog/2025/2025-05-08-fight-with-state-machine/state-machine-redesign.svg" alt="state-machine-redesign" /></p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[時光荏苒，參與新專案到現在也超過半年了。因為是第一次做動作遊戲，面對沒開發過的機制，看了許多資料，也踩了不少的坑，就覺得應該來寫個開發日誌，多少記錄一下開發過程的酸甜苦辣鹹。開張第一篇先來分享開發狀態機時的碰壁。]]></summary></entry><entry><title type="html">[遊記] 2025 F1 日本大獎賽 - 行程準備</title><link href="https://lankudot.airfishlab.com/blog/2025-05-f1-japan-grand-prix-trip-planning/" rel="alternate" type="text/html" title="[遊記] 2025 F1 日本大獎賽 - 行程準備" /><published>2025-05-03T00:00:00+08:00</published><updated>2025-05-03T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/f1-japan-grand-prix-trip-planning</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-05-f1-japan-grand-prix-trip-planning/"><![CDATA[<p>自 2020 年入坑以來，看 F1 也進入第 6 年了。大概從前年萌生到現場看比賽的念頭，也看了一些現場觀賽的分享文後，毅然決然選定了今年的日本大獎賽。選擇日本場的原因除了日本旅遊環境友善之外，比賽舉辦的時間剛好落在清明連假，賽道當地的鈴鹿與鄰近的名古屋也是櫻花季的時期，因此這趟現地之旅就成行了。受惠於前人的分享文，所以這篇文章也來分享如何規劃行程。</p>
-
-<p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/suzuka-circuit-gp-entrance.png" alt="suzuka-circuit-gp-entrance" /></p>
-
-<h2 id="門票">門票</h2>
-
-<p>通常在比賽舉辦日的半年前開始售票，像今年日本大獎賽辦在 4 月初，去年 10 月中開放購票。所以在去年公布今年的賽曆之後，就開始關注售票的資訊了。購買 F1 日本大獎賽門票的管道有兩個：<a href="https://tickets.formula1.com/en" target="_blank">F1 官網</a>與賽道方使用的 <a href="https://ticket.mobilitystation.jp/" target="_blank">Mobility Station</a>，雖然 F1 官網會比賽道方還要早開放售票，但是只能選區域不能選座位，而且價格也貴上許多。而賽道官網則是有限制可以購買的國家，但今年台灣可以從賽道官網購票，此外還可以選擇位置，所以我這次是透過賽道官網購票。</p>
-
-<p>在開放售票前就可以先研究要買哪一區，在<a href="https://www.suzukacircuit.jp/zh-tw/course_s/" target="_blank">賽道官網</a>上可以看到每一區的視野與影片。位置選擇的話可以考量：</p>
-
-<ul>
-  <li>視野好不好：能看到賽車經過的時間有多久，另外下層座位可能被護欄和鐵網擋到</li>
-  <li>能不能看到螢幕：鈴鹿賽道一圈約 1 分半，大約有 1 分鐘沒有賽車經過，所以能看到螢幕的話，就可以知道其它地方發生了什麼事，上面也有即時的排名與秒差。在賽道官網的視野地圖上也有標出螢幕的設置位置</li>
-  <li>超車熱點：比賽最刺激的就是看超車攻防，通常會發生在 DRS 區的尾端</li>
-</ul>
-
-<p>我偏向超車熱點，以鈴鹿賽道來說就是大直線的尾端的 A2 區或是第 1, 2 彎的 B2 區，比賽大部份的超車都發生在這裡，也是起跑後的第一個攻防點。此外這兩個區可以完整看到賽車入彎到出彎，另外鈴鹿賽道的第 1 彎的入彎速度也很快，可以體驗到速度感。而 A2 區還可以看到賽車出 pit lane，當然這兩區的價格上也不便宜。如果有預算上的限制，在選擇上可以以能不能看到螢幕為優先選擇。</p>
-
-<p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/a2-zone-in-map.png" alt="a2-zone-in-map" />
-<em>F1 舉行時會增設看臺，A2 區就是其中之一</em></p>
-
-<p>在門票開賣那天，理所當然會湧入大量購票者，Mobility Station 也會有流量管制。但進入排隊也不用覺得沒希望，而且也可能提前進入購買頁面（顯示 90 分鐘以上等待，但沒多久就進入頁面了），所以要時時留意排隊狀況。然而如果一開始瞄準的是熱門區域的話，最好要有備案。我這次排了 1 小時之後，B2 區售罄，但 A2 區還是有很多位置可以選，最後就選了 A2 區後排，也可以看到螢幕的位置。</p>
-
-<p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/a2-zone-view-1.png" alt="a2-zone-view-1" />
-<img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/a2-zone-view-2.png" alt="a2-zone-view-2" />
-<em>A2 區的視野，可以看到 pit 出口以及第 1, 2 彎，這邊也是超車熱點</em></p>
-
-<p>使用 Mobility Station 購買門票會是電子票券，當天進場就直接用票券顯示的 QR Code 即可，在比賽日進入座位區也要再出示座位資訊，如果不放心也可以印出來備用。</p>
-
-<h2 id="行程安排">行程安排</h2>
-
-<p>F1 日本站賽程一樣為期三天，週五的練習，週六的練習與排位賽，跟週日的重頭戲正賽。另外，鈴鹿賽道在週四早上 9 點到 12 點還有開放參觀賽道的起點大直線與 pit lane，可以走在賽道上及看到車隊在車庫整備，是不容錯過的機會，所以可以從週四開始安排行程。而鈴鹿賽道鄰近名古屋，在沒有看比賽的時間也可以在名古屋旅遊。我這次的行程安排是這樣：</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>日期</th>
-      <th>行程</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>4/2 (三)</td>
-      <td>中午抵達日本</td>
-    </tr>
-    <tr>
-      <td>4/3 (四)</td>
-      <td>早上參加賽道日、下午回名古屋</td>
-    </tr>
-    <tr>
-      <td>4/4 (五)</td>
-      <td>名古屋</td>
-    </tr>
-    <tr>
-      <td>4/5 (六)</td>
-      <td>鈴鹿賽道</td>
-    </tr>
-    <tr>
-      <td>4/6 (日)</td>
-      <td>鈴鹿賽道</td>
-    </tr>
-    <tr>
-      <td>4/7 (一)</td>
-      <td>中午回台灣</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>基本上到了賽道後，就會整天待在那邊，所以除了觀看 F1 之外，還可以安排其它活動。像是同期間也會有其它賽事，這次有保時捷卡雷拉盃（Porsche Carrera Cup）跟法拉利挑戰賽（Ferrari Challenge）的賽程，可以體驗不同賽車車種的音浪。戶外廣場有車手週邊與活動攤位，主舞臺也有車手訪談與知識分享，在官方網站中都會公佈相關時間表，可以在比賽間隔前去聆聽。此外鈴鹿賽道裡還有遊樂園與本田博物館，遊樂園的摩天輪可以飽覽整個賽道，博物館則有展出許多經典的 F1 賽車。不過主舞臺、遊樂園、博物館都在離在正門比較近的區域，如果觀賽座位在比較遠的地方，可以在進場之後，先去逛這些地方，下午再到座位上觀賽。</p>
-
-<p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/ferris-wheel.png" alt="ferris-wheel" />
-<img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/view-from-ferris-wheel.png" alt="view-from-ferris-wheel" />
-<em>摩天輪一圈約 15 分鐘，可以一覽整個園區</em></p>
-
-<p>非常推薦在週四就到賽道，除了賽道日活動之外，因為人潮不多，遊樂園或是活動攤位很好排，是體驗這些設施的好時間。另外這天就可以購買車手與賽道的週邊，除了商品充足之外，一樣也不太需要排隊，比賽日也不需要大包小包。而且這天的座位區不用驗票，所以也可以去看看在大直道的座位體驗是什麼感覺。</p>
-
-<p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/v-zone-view.png" alt="v-zone-view" />
-<em>在賽道日去了 V 區坐了一下，可以看到 pit 的工作情況</em></p>
-
-<h2 id="機票與飯店">機票與飯店</h2>
-
-<p>因為是清明連假期間，所以即使是廉航，票價一樣不便宜。像這次是搭虎航，來回就要 2 萬 4，後續關注價格也越來越貴，但說不定其實後來有促消特價，只是考慮到連假機票比較搶手，所以在一開賣就購買機票了。不過如果可以提前幾天出發或是晚幾天回來的話，機票價格就可以少掉一半。</p>
-
-<p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/window-view-from-airplane.png" alt="window-view-from-airplane" />
-<em>一直很想坐窗邊的位子，這次終於圓夢了</em></p>
-
-<p>至於飯店的部份，地點首選是名古屋。除了方便抵達賽道之外，週圍行程也很好安排，另外晚上從賽道回來也還有地方可以吃晚餐。我這次是住在榮附近的飯店，搭地鐵到名古屋站不到 10 分鐘，而且榮地鐵站也是重要節點，搭乘到其它地方也相當方便。</p>
-
-<p>然而因為會有十幾萬人來參加 F1 賽事，所以飯店也是非常搶手，另外價格也會比平常高。這次在訂完 F1 門票之後才開始找飯店，但發現交通比較方便又價格可以接受的選擇不多了。建議可以提前找能夠退訂的飯店，選擇應該會比較多，而且到時沒有搶到 F1 門票的話，也可以再退訂就好。</p>
-
-<p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/nagoya-prime-central-tower.png" alt="nagoya-prime-central-tower" />
-<em>中部電力塔就在住宿飯店附近</em></p>
-
-<h2 id="交通">交通</h2>
-
-<p>到賽道可以選擇自駕或是搭乘大眾交通工具，而我只能選擇大眾交通。從名古屋到賽道有兩個選擇，一個是從名古屋站搭乘近鐵線到白子車站，再轉搭接駁車到賽道，是我這次的搭乘方式；另一個是從名古屋站搭 JR 線到四日市站，再轉乘伊勢鐵道到鈴鹿稻生站，最後走路到賽道。這兩個的差別主要是前者可以不用走太多路，也不用轉乘，而後者則是可以從一號彎門入場，不過也可以再走到正門入場。</p>
-
-<p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/train-and-bus-access-information.png" alt="train-and-bus-access-information" /></p>
-
-<p>搭乘近鐵可以事先在近鐵的<a href="https://www.ticket.kintetsu.co.jp/vs/en/T/TZZ/TZZ10.do?op=tDisplayVisitorMenu">官方網站</a>上預訂特急的車票，搭乘特急的好處是有位子坐之外，停的車站也比較少，特急約 40 分鐘，而急行則是要 1 小時。近鐵的特急車票是由普通車票與特急乘車券兩張車票構成，可以想成一張是基本費用，另一張則是升等特急車廂的車票。從名古屋到白子的費用是基本車資 1000 日元加上特急車資 920 日元。而能在官網預訂的只有特急乘車券，而且只提供電子證明（沒有 QR Code，也不能領實體票），所以預訂完成後要將座位資訊擷圖下來供查票用，但進站時不用特別出示。普通車票則是在進站時刷 IC 卡或是在車站購買車票，但不建議用電子車票，因為現場出站人潮多，然而 QR Code 掃描機數量不多，很容易塞住。</p>
-
-<p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/shiroko-station.png" alt="shiroko-station" />
-<em>白子車站前圓環的歡迎布條</em></p>
-
-<p>到白子車站後，跟著人群走就會到接駁車的等待隊伍。我分別在週六 9 點與週日 8 點抵達車站，排隊隊伍算順暢，大約 15 ~ 20 分鐘後上接駁車，車程約 30 分鐘。接駁車車資 500 日元，是在接駁車下車處支付，可以用 IC 卡也可以付現，所以不用在上車時付錢。而下車處是在賽道外的停車場，所以還要再走 20 分鐘才會到正門。不過週四的接駁車不太一樣，因為非比賽日，所以班次比較少，雖然人也不多，但是我剛好遇到沒班的時間，等了 1 小時多才搭到，不過下車處在正門口，另外是在乘車處支付票錢。</p>
-
-<p>這次去程的時間是這樣：</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>時間</th>
-      <th>名古屋出發</th>
-      <th>白子抵達</th>
-      <th>接駁車上車</th>
-      <th>抵達賽道正門</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>週四</td>
-      <td>(四日市出發，急行)</td>
-      <td>9:20</td>
-      <td>10:35</td>
-      <td>11:10</td>
-    </tr>
-    <tr>
-      <td>週六</td>
-      <td>8:10</td>
-      <td>8:49</td>
-      <td>9:10</td>
-      <td>10:00</td>
-    </tr>
-    <tr>
-      <td>週日</td>
-      <td>7:30</td>
-      <td>8:09</td>
-      <td>8:30</td>
-      <td>9:20</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/ticket-booth.png" alt="ticket-booth" />
-<em>接駁車下車處的付錢處，左邊是付現買票，右邊則是刷 IC 卡</em></p>
-
-<p>當然越晚出發人潮越多，等待時間就越久。為了避免花太多時間在排隊上，比較建議比賽日早上 7 點到白子車站，早一點到賽道就可以好好逛逛，而且在主舞臺週五週六兩天的車手訪談分別是在 10 點跟 9 點半開始，晚到就錯過了。而週四賽道日則建議 8 點到白子車站，因為賽道與 pit lane 參觀的開放時間只到中午 12 點，我這次 11 點到賽道差點來不及。</p>
-
-<p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/saturday-morning-crowd.png" alt="saturday-morning-crowd" />
-<em>早上入場還算順暢，但是場內的攤位已經需要排隊了</em></p>
-
-<p>至於從賽道的回程，因為沒辦法預估什麼時候能到車站，所以沒有預訂特急車票，而是到車站後搭急行（不要選到普通車，等同於台灣的區間車，會站站停）。比賽日離場的人很多，因此等待接駁車的時間會很久。我這次買在 A2 席，所以可以在排位賽跟正賽結束的時候，早一點到接駁車的乘車處，但週日還是等了 1 小時多，想當然如果更晚離開就得要等更久，我在比賽日這兩天還可以回到名古屋吃晚餐。至於週四賽道日則是在正門搭乘接駁車，人不多也不用等待，只是下午 1 點才有回程的接駁車。</p>
-
-<p>回程的時間是這樣：</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>時間</th>
-      <th>離場</th>
-      <th>抵達乘車處</th>
-      <th>接駁車上車</th>
-      <th>抵達白子</th>
-      <th>上火車</th>
-      <th>抵達名古屋</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>週六</td>
-      <td>16:00</td>
-      <td>16:25</td>
-      <td>16:50</td>
-      <td>17:10</td>
-      <td>17:28</td>
-      <td>18:23</td>
-    </tr>
-    <tr>
-      <td>週日</td>
-      <td>15:40</td>
-      <td>16:15</td>
-      <td>17:30</td>
-      <td>17:50</td>
-      <td>18:14</td>
-      <td>19:10</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/returning-crowd.png" alt="returning-crowd" />
-<img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/waiting-line.png" alt="waiting-line" />
-<em>比賽日回程的人潮很恐怖，聽說有些人不想等車，直接徒步回白子車站</em></p>
-
-<h2 id="飲食">飲食</h2>
-
-<p>賽道園區內會有賣食物與飲料的攤販，只是價格會比較高，而且品質不穩定。可以事先採買好午餐、零食、飲料，再帶到園區內，現場也不時可以看到有人提著一袋食物入場。但如果想要吃點鹹的熱的，還是可以到攤販區逛一下，只是要找到好吃的得碰運氣。</p>
-
-<p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/normal-bentou.png" alt="normal-bentou" />
-<em>因為嘴饞買了這個 1200 日元的便當，但不好吃QQ</em></p>
-
-<h2 id="總結">總結</h2>
-
-<p>這篇文章除了記錄這次的行程規劃之外，如果之後要再次衝現地的話，也可以作為改善行程的參考，也希望這篇文章能幫助到有需要的人。這趟旅程也是做好行前準備，才能在比賽週好好體驗賽道慶典，留下很棒的回憶。</p>
-
-<p><img src="/assets/images/blog/2025/2025-05-03-f1-japan-grand-prix-trip-planning/sakura.png" alt="sakura" />
-<em>賽道也種植許多櫻花，看比賽與看櫻花一次滿足</em></p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="遊記" /><summary type="html"><![CDATA[自 2020 年入坑以來，看 F1 也進入第 6 年了。大概從前年萌生到現場看比賽的念頭，也看了一些現場觀賽的分享文後，毅然決然選定了今年的日本大獎賽。選擇日本場的原因除了日本旅遊環境友善之外，比賽舉辦的時間剛好落在清明連假，賽道當地的鈴鹿與鄰近的名古屋也是櫻花季的時期，因此這趟現地之旅就成行了。受惠於前人的分享文，所以這篇文章也來分享如何規劃行程。]]></summary></entry></feed>
+<p><img src="/assets/images/blog/2025/2025-05-08-fight-with-state-machine/state-machine-redesign.svg" alt="state-machine-redesign" /></p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[時光荏苒，參與新專案到現在也超過半年了。因為是第一次做動作遊戲，面對沒開發過的機制，看了許多資料，也踩了不少的坑，就覺得應該來寫個開發日誌，多少記錄一下開發過程的酸甜苦辣鹹。開張第一篇先來分享開發狀態機時的碰壁。]]></summary></entry></feed>

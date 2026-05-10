@@ -423,7 +423,7 @@
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">Foo</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="kt">uint</span> <span class="n">MaxHP</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="n">init</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">MaxHP</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">init</span><span class="p">;</span> <span class="p">}</span>
 
     <span class="k">public</span> <span class="nf">Foo</span><span class="p">(</span><span class="kt">uint</span> <span class="n">maxHP</span><span class="p">)</span>
     <span class="p">{</span>
@@ -439,7 +439,7 @@
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">Foo</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="kt">uint</span> <span class="n">MaxHP</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="n">init</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">MaxHP</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">init</span><span class="p">;</span> <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="kt">var</span> <span class="n">foo</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Foo</span> <span class="p">{</span>
@@ -469,7 +469,7 @@
 
 <p>要宣告 <code class="language-plaintext highlighter-rouge">record</code> 類型，最簡單的形式是用 positional syntax：</p>
 
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">record</span> <span class="nf">PlayerData</span><span class="p">(</span><span class="kt">string</span> <span class="n">Name</span><span class="p">,</span> <span class="kt">uint</span> <span class="n">MaxHP</span><span class="p">);</span>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">record</span> <span class="nc">PlayerData</span><span class="p">(</span><span class="kt">string</span> <span class="n">Name</span><span class="p">,</span> <span class="kt">uint</span> <span class="n">MaxHP</span><span class="p">);</span>
 </code></pre></div></div>
 
 <p>用 positional syntax 宣告 <code class="language-plaintext highlighter-rouge">record</code> 類型，編譯器會：</p>
@@ -491,10 +491,10 @@
 
 <p>如果要預設值就可以像宣告一般屬性的形式那樣：</p>
 
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">record</span> <span class="n">PlayerData</span>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">record</span> <span class="nc">PlayerData</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="n">init</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="k">default</span><span class="p">!;</span>
-    <span class="k">public</span> <span class="kt">uint</span> <span class="n">MaxHP</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="n">init</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="m">100</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">init</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="k">default</span><span class="p">!;</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">MaxHP</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">init</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="m">100</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
@@ -509,11 +509,11 @@
 
 <p>另外，預設值也可以用 <code class="language-plaintext highlighter-rouge">static</code> 函式設置：</p>
 
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">record</span> <span class="n">PlayerData</span>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">record</span> <span class="nc">PlayerData</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="kt">uint</span> <span class="n">Id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="n">init</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="nf">GetNextId</span><span class="p">();</span>
-    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="n">init</span><span class="p">;</span> <span class="p">}</span>
-    <span class="k">public</span> <span class="kt">uint</span> <span class="n">MaxHP</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="n">init</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">Id</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">init</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="nf">GetNextId</span><span class="p">();</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">init</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">MaxHP</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">init</span><span class="p">;</span> <span class="p">}</span>
 
     <span class="k">private</span> <span class="k">static</span> <span class="kt">uint</span> <span class="n">_curId</span><span class="p">;</span>
     <span class="k">private</span> <span class="k">static</span> <span class="kt">uint</span> <span class="nf">GetNextId</span><span class="p">()</span> <span class="p">=&gt;</span> <span class="p">++</span><span class="n">_curId</span><span class="p">;</span>
@@ -526,7 +526,7 @@
 
 <p>而 <code class="language-plaintext highlighter-rouge">record</code> 類型並沒有限制屬性不能修改，如果要宣告成可修改的屬性，就用 <code class="language-plaintext highlighter-rouge">set</code>：</p>
 
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">record</span> <span class="n">PlayerData</span>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">record</span> <span class="nc">PlayerData</span>
 <span class="p">{</span>
     <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="k">default</span><span class="p">!;</span>
     <span class="k">public</span> <span class="kt">uint</span> <span class="n">MaxHP</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="m">100</span><span class="p">;</span>
@@ -602,8 +602,8 @@
 <p>使用 <code class="language-plaintext highlighter-rouge">with</code> 可以複製既有的 <code class="language-plaintext highlighter-rouge">record</code> 物件，即使有屬性是 init-only，還是可以更改部份的值，稱為非破壞性更動（Nondestructive Mutation）：</p>
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kt">var</span> <span class="n">data1</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">PlayerData</span><span class="p">(</span><span class="s">"PlayerA"</span><span class="p">,</span> <span class="m">100</span><span class="p">);</span>
-<span class="kt">var</span> <span class="n">data2</span> <span class="p">=</span> <span class="n">data1</span> <span class="n">with</span> <span class="p">{</span> <span class="n">Name</span> <span class="p">=</span> <span class="s">"PlayerB"</span> <span class="p">};</span>
-<span class="kt">var</span> <span class="n">data3</span> <span class="p">=</span> <span class="n">data1</span> <span class="n">with</span> <span class="p">{</span> <span class="p">};</span>
+<span class="kt">var</span> <span class="n">data2</span> <span class="p">=</span> <span class="n">data1</span> <span class="k">with</span> <span class="p">{</span> <span class="n">Name</span> <span class="p">=</span> <span class="s">"PlayerB"</span> <span class="p">};</span>
+<span class="kt">var</span> <span class="n">data3</span> <span class="p">=</span> <span class="n">data1</span> <span class="k">with</span> <span class="p">{</span> <span class="p">};</span>
 
 <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="n">data1</span> <span class="p">==</span> <span class="n">data2</span><span class="p">);</span>                  <span class="c1">// False</span>
 <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="nf">ReferenceEquals</span><span class="p">(</span><span class="n">data1</span><span class="p">,</span> <span class="n">data2</span><span class="p">));</span>   <span class="c1">// False</span>
@@ -628,8 +628,8 @@
 
 <p><code class="language-plaintext highlighter-rouge">record</code> 類型可以被繼承，也可以宣告為 <code class="language-plaintext highlighter-rouge">abstract</code>：</p>
 
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">abstract</span> <span class="n">record</span> <span class="nf">ItemData</span><span class="p">(</span><span class="kt">string</span> <span class="n">Name</span><span class="p">,</span> <span class="kt">uint</span> <span class="n">MaxNum</span><span class="p">);</span>
-<span class="k">public</span> <span class="n">record</span> <span class="nf">HPItemData</span><span class="p">(</span><span class="kt">string</span> <span class="n">Name</span><span class="p">,</span> <span class="kt">uint</span> <span class="n">MaxNum</span><span class="p">,</span> <span class="kt">uint</span> <span class="n">RecoveryAmount</span><span class="p">)</span>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">abstract</span> <span class="k">record</span> <span class="nc">ItemData</span><span class="p">(</span><span class="kt">string</span> <span class="n">Name</span><span class="p">,</span> <span class="kt">uint</span> <span class="n">MaxNum</span><span class="p">);</span>
+<span class="k">public</span> <span class="k">record</span> <span class="nc">HPItemData</span><span class="p">(</span><span class="kt">string</span> <span class="n">Name</span><span class="p">,</span> <span class="kt">uint</span> <span class="n">MaxNum</span><span class="p">,</span> <span class="kt">uint</span> <span class="n">RecoveryAmount</span><span class="p">)</span>
     <span class="p">:</span> <span class="nf">ItemData</span><span class="p">(</span><span class="kt">string</span> <span class="n">Name</span><span class="p">,</span> <span class="kt">uint</span> <span class="n">MaxNum</span><span class="p">);</span>
 
 <span class="kt">var</span> <span class="n">data</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">HPItemData</span><span class="p">(</span><span class="s">"SmallHPRecovery"</span><span class="p">,</span> <span class="m">100</span><span class="p">,</span> <span class="m">50</span><span class="p">);</span>
@@ -637,14 +637,14 @@
 
 <p>或是：</p>
 
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">record</span> <span class="n">EnemyData</span>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">record</span> <span class="nc">EnemyData</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="n">init</span><span class="p">;</span> <span class="p">}</span>
-    <span class="k">public</span> <span class="kt">uint</span> <span class="n">MaxHP</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="n">init</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">init</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">MaxHP</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">init</span><span class="p">;</span> <span class="p">}</span>
 <span class="p">}</span>
-<span class="k">public</span> <span class="n">record</span> <span class="n">RangedEmemyData</span> <span class="p">:</span> <span class="n">EnemyData</span>
+<span class="k">public</span> <span class="k">record</span> <span class="nc">RangedEmemyData</span> <span class="p">:</span> <span class="n">EnemyData</span>
 <span class="p">{</span>
-    <span class="k">public</span> <span class="kt">uint</span> <span class="n">Range</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="n">init</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">uint</span> <span class="n">Range</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">init</span><span class="p">;</span> <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="kt">var</span> <span class="n">data</span> <span class="p">=</span> <span class="k">new</span> <span class="n">RangedEnemyData</span> <span class="p">{</span>
@@ -669,7 +669,7 @@
 <p>透過新樣式可以寫成：</p>
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="nf">IsLetter</span><span class="p">(</span><span class="k">this</span> <span class="kt">char</span> <span class="n">c</span><span class="p">)</span> <span class="p">=&gt;</span>
-    <span class="n">c</span> <span class="k">is</span> <span class="p">&gt;=</span> <span class="sc">'a'</span> <span class="n">and</span> <span class="p">&lt;=</span> <span class="sc">'z'</span> <span class="n">or</span> <span class="p">&gt;=</span> <span class="sc">'A'</span> <span class="n">and</span> <span class="p">&lt;=</span> <span class="sc">'Z'</span><span class="p">;</span>
+    <span class="n">c</span> <span class="k">is</span> <span class="p">&gt;=</span> <span class="sc">'a'</span> <span class="k">and</span> <span class="p">&lt;=</span> <span class="sc">'z'</span> <span class="n">or</span> <span class="p">&gt;=</span> <span class="sc">'A'</span> <span class="k">and</span> <span class="p">&lt;=</span> <span class="sc">'Z'</span><span class="p">;</span>
 </code></pre></div></div>
 
 <p><code class="language-plaintext highlighter-rouge">and</code> 的優先度跟 <code class="language-plaintext highlighter-rouge">&amp;&amp;</code> 一樣，比 <code class="language-plaintext highlighter-rouge">or</code> 和 <code class="language-plaintext highlighter-rouge">||</code> 高。</p>
@@ -697,10 +697,10 @@
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">Grade</span> <span class="nf">GetGrade</span><span class="p">(</span><span class="kt">int</span> <span class="n">score</span><span class="p">)</span> <span class="p">=&gt;</span>
     <span class="n">score</span> <span class="k">switch</span> <span class="p">{</span>
-        <span class="p">&gt;=</span> <span class="m">90</span> <span class="n">and</span> <span class="p">&lt;=</span> <span class="m">100</span> <span class="p">=&gt;</span> <span class="n">Grade</span><span class="p">.</span><span class="n">S</span><span class="p">,</span>
-        <span class="p">&gt;=</span> <span class="m">80</span> <span class="n">and</span> <span class="p">&lt;</span> <span class="m">90</span> <span class="p">=&gt;</span> <span class="n">Grade</span><span class="p">.</span><span class="n">A</span><span class="p">,</span>
-        <span class="p">&gt;=</span> <span class="m">70</span> <span class="n">and</span> <span class="p">&lt;</span> <span class="m">80</span> <span class="p">=&gt;</span> <span class="n">Grade</span><span class="p">.</span><span class="n">B</span><span class="p">,</span>
-        <span class="p">&gt;=</span> <span class="m">0</span> <span class="n">and</span> <span class="p">&lt;</span> <span class="m">70</span> <span class="p">=&gt;</span> <span class="n">Grade</span><span class="p">.</span><span class="n">C</span><span class="p">,</span>
+        <span class="p">&gt;=</span> <span class="m">90</span> <span class="k">and</span> <span class="p">&lt;=</span> <span class="m">100</span> <span class="p">=&gt;</span> <span class="n">Grade</span><span class="p">.</span><span class="n">S</span><span class="p">,</span>
+        <span class="p">&gt;=</span> <span class="m">80</span> <span class="k">and</span> <span class="p">&lt;</span> <span class="m">90</span> <span class="p">=&gt;</span> <span class="n">Grade</span><span class="p">.</span><span class="n">A</span><span class="p">,</span>
+        <span class="p">&gt;=</span> <span class="m">70</span> <span class="k">and</span> <span class="p">&lt;</span> <span class="m">80</span> <span class="p">=&gt;</span> <span class="n">Grade</span><span class="p">.</span><span class="n">B</span><span class="p">,</span>
+        <span class="p">&gt;=</span> <span class="m">0</span> <span class="k">and</span> <span class="p">&lt;</span> <span class="m">70</span> <span class="p">=&gt;</span> <span class="n">Grade</span><span class="p">.</span><span class="n">C</span><span class="p">,</span>
         <span class="n">_</span> <span class="p">=&gt;</span> <span class="n">Grade</span><span class="p">.</span><span class="n">Invalid</span>
     <span class="p">};</span>
 </code></pre></div></div>
@@ -720,14 +720,14 @@
 <p>要注意的是 <code class="language-plaintext highlighter-rouge">not</code> 的優先度上面提到的樣式高，優先度是：<code class="language-plaintext highlighter-rouge">not</code> → <code class="language-plaintext highlighter-rouge">&gt;=</code>、<code class="language-plaintext highlighter-rouge">&lt;</code> 等關係運算子 → <code class="language-plaintext highlighter-rouge">and</code> → <code class="language-plaintext highlighter-rouge">or</code>。所以可以用括號樣式（parenthesized patterns）來確保運算正確：</p>
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="kt">bool</span> <span class="nf">IsOutOfRange</span><span class="p">(</span><span class="kt">int</span> <span class="k">value</span><span class="p">)</span> <span class="p">=&gt;</span>
-    <span class="k">value</span> <span class="k">is</span> <span class="nf">not</span> <span class="p">(&gt;=</span> <span class="m">0</span> <span class="n">and</span> <span class="p">&lt;=</span> <span class="m">100</span><span class="p">);</span>
+    <span class="k">value</span> <span class="k">is</span> <span class="nf">not</span> <span class="p">(&gt;=</span> <span class="m">0</span> <span class="k">and</span> <span class="p">&lt;=</span> <span class="m">100</span><span class="p">);</span>
 </code></pre></div></div>
 
 <p>如果沒有加括號的話，結果就會是錯誤的：</p>
 
-<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">value</span> <span class="k">is</span> <span class="n">not</span> <span class="p">&gt;=</span> <span class="m">0</span> <span class="n">and</span> <span class="p">&lt;=</span> <span class="m">100</span>
-<span class="p">...</span> <span class="k">value</span> <span class="k">is</span> <span class="p">(</span><span class="n">not</span> <span class="p">&gt;=</span> <span class="m">0</span><span class="p">)</span> <span class="n">and</span> <span class="p">&lt;=</span> <span class="m">100</span>
-<span class="p">...</span> <span class="k">value</span> <span class="k">is</span> <span class="p">&lt;</span> <span class="m">0</span> <span class="n">and</span> <span class="p">&lt;=</span> <span class="m">100</span>
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">value</span> <span class="k">is</span> <span class="n">not</span> <span class="p">&gt;=</span> <span class="m">0</span> <span class="k">and</span> <span class="p">&lt;=</span> <span class="m">100</span>
+<span class="p">...</span> <span class="k">value</span> <span class="k">is</span> <span class="p">(</span><span class="n">not</span> <span class="p">&gt;=</span> <span class="m">0</span><span class="p">)</span> <span class="k">and</span> <span class="p">&lt;=</span> <span class="m">100</span>
+<span class="p">...</span> <span class="k">value</span> <span class="k">is</span> <span class="p">&lt;</span> <span class="m">0</span> <span class="k">and</span> <span class="p">&lt;=</span> <span class="m">100</span>
 <span class="p">...</span> <span class="k">value</span> <span class="k">is</span> <span class="p">&lt;</span> <span class="m">0</span>
 </code></pre></div></div>
 
@@ -736,7 +736,7 @@
 <p>pattern matching 是用變數對定值做比較，而不能對變數，否則會出錯：</p>
 
 <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="kt">bool</span> <span class="nf">IsOutOfRange</span><span class="p">(</span><span class="kt">int</span> <span class="k">value</span><span class="p">,</span> <span class="kt">int</span> <span class="n">min</span><span class="p">,</span> <span class="kt">int</span> <span class="n">max</span><span class="p">)</span> <span class="p">=&gt;</span>
-    <span class="k">value</span> <span class="k">is</span> <span class="nf">not</span> <span class="p">(&gt;=</span> <span class="n">min</span> <span class="n">and</span> <span class="p">&lt;=</span> <span class="n">max</span><span class="p">);</span>   <span class="c1">// error CS0150: A constant value is expected</span>
+    <span class="k">value</span> <span class="k">is</span> <span class="nf">not</span> <span class="p">(&gt;=</span> <span class="n">min</span> <span class="k">and</span> <span class="p">&lt;=</span> <span class="n">max</span><span class="p">);</span>   <span class="c1">// error CS0150: A constant value is expected</span>
 </code></pre></div></div>
 
 <h2 id="參考資料">參考資料</h2>
@@ -878,6 +878,50 @@
 <div class="grid__item">
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
     
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2026/2026-05-10-cosmic-princess-kaguya/poster-thumb.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/2026-05-cosmic-princess-kaguya/" rel="permalink">[電影]《超時空輝耀姬！》科幻 x 百合 x 竹取物語
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-05-10T00:00:00+08:00">May 10, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">如果竹取物語發生在科技進步的世界中，那會怎麼發展？不僅角色設計豐富、作畫細緻、動作場面靈活，而且還有百合要素！如果還有經歷過 V 家繁盛時期，那一定要看看《超時空輝耀姬！》。
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
     <h2 class="archive__item-title no_toc p-name" itemprop="headline">
       
         <a class="u-url" href="/blog/2026-04-watched-animation-movies-in-2024/" rel="permalink">[電影] 2024 看過的那些動畫電影們
@@ -904,7 +948,6 @@
 
 
     <p class="archive__item-excerpt p-summary" itemprop="description">2024 年看的動畫電影一共 4 部，最喜歡的莫過於以蒸氣龐克為主題的《蒸氣男孩》了，也很喜歡充滿百合香氣的《莉茲與青鳥》。另外還有兩人從小一起創作漫畫到長大被迫別離的《驀然回首》，以及在聖誕節幸福氛圍中帶點危機的《SPY×FAMILY CODE: White》。
-
 </p>
   </article>
 </div>
@@ -949,7 +992,6 @@
 
 
     <p class="archive__item-excerpt p-summary" itemprop="description">人生第一次參加爵士音樂節就給了 MJFJ 2025，除了為了心心念念的 Persona 5 Big Band 之外，還有著名的大師 Nate Smith 跟 Herbie Hancock 也有參演這次的音樂節。由六組表演組成長達 9 小時演出，對於初次體驗的我來說相當滿足。
-
 </p>
   </article>
 </div>
@@ -990,52 +1032,6 @@
 
 
     <p class="archive__item-excerpt p-summary" itemprop="description">在開發遊戲原型時，最重要的是盡快實現遊戲玩法，但一開始自己走了許多歪路，反而花更多心力在不重要的地方。在 TDGF 上聽到分享與請教朋友之後，學到不少在原型階段的開發方式，就透過這篇文章來分享減少走錯路的方法。
-
-</p>
-  </article>
-</div>
-
-    
-      
-      
-
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="/assets/images/blog/2025/2025-08-28-seek-first-to-have-but-do-not-take-long-way-around/cover-image.png" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
-      
-        <a class="u-url" href="/blog/2025-08-seek-first-to-have-but-do-not-take-long-way-around/" rel="permalink">[開發日誌 #3] 先求有，但別繞路
-</a>
-      
-    </h2>
-    
-
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2025-08-28T00:00:00+08:00">August 28, 2025</time>
-      </span>
-    
-
-    
-
-    
-  </p>
-
-
-    <p class="archive__item-excerpt p-summary" itemprop="description">很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。
-
 </p>
   </article>
 </div>
