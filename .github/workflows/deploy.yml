@@ -23,8 +23,11 @@ jobs:
           curl -H "Content-Type: application/json" \
                -X POST \
                -d "$(jq -n \
-                  --args sha       "${{ github.event.build.commit }}" \
-                  --args build_url "${{ github.event.build.url }}" \
+                  --arg title     "$TITLE" \
+                  --argjson col    $COLOR \
+                  --arg sha       "${{ github.event.build.commit }}" \
+                  --arg build_url "${{ github.event.build.url }}" \
+                  --arg msg       "$MSG" \
                   '{
                     username: "Blog Deploy Notify",
                     embeds: [{
@@ -32,7 +35,7 @@ jobs:
                       color: $col,
                       fields: [
                         {name: "Commit", value: ("[`" + $sha[0:7] + "`](" + $build_url + ")"), inline: true},
-                        {name: "Detail", value: $MSG}
+                        {name: "Detail", value: $msg}
                       ]
                     }]
                   }')" \
