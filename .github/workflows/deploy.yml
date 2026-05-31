@@ -1,0 +1,39 @@
+name: Notify Discord on Pages Build
+
+on:
+  page_build
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Discord
+        env:
+          SITE_URL: https://lankudot.airfishlab.com/
+        run: |
+          if [ "${{ github.event.build.status }}" == "built" ]; then
+            COLOR=3066993
+            TITLE="Success"
+            MSG="Deployed on ${{ env.SITE_URL }}"
+          else
+            COLOR=15158332
+            TITLE="Failed"
+            MSG=${{ github.event.build.error.message }}
+          fi
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d "$(jq -n \
+                  --args sha       "${{ github.event.build.commit }}" \
+                  --args build_url "${{ github.event.build.url }}" \
+                  '{
+                    username: "Blog Deploy Notify",
+                    embeds: [{
+                      title: $title,
+                      color: $col,
+                      fields: [
+                        {name: "Commit", value: ("[`" + $sha[0:7] + "`](" + $build_url + ")"), inline: true},
+                        {name: "Detail", value: $MSG}
+                      ]
+                    }]
+                  }')" \
+                "${{ secrets.DISCORD_WEBHOOK }}"
