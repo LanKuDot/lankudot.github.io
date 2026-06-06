@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2026-05-31T22:58:22+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[電影]《John 錯就錯》</title><link href="https://lankudot.airfishlab.com/blog/2026-05-the-last-viking/" rel="alternate" type="text/html" title="[電影]《John 錯就錯》" /><published>2026-05-30T00:00:00+08:00</published><updated>2026-05-30T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-last-viking</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-05-the-last-viking/"><![CDATA[<p>這次 2026 年的金馬奇幻影展選擇《John 錯就錯》（The Last Viking）的原因不外乎就是麥叔了。不同於以往給人殺氣騰騰、充滿威壓的形象，在這部電影中的麥叔飾演內心封閉且不善交流的角色，但麥叔的演技仍完美讓人理解這個角色的內在情緒，真佩服他的戲路如此之廣。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2026-06-06T22:24:21+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[電影]《花綠青綻放之時》- 事物都會結束，但重點是要怎麼結束</title><link href="https://lankudot.airfishlab.com/blog/2026-06-the-new-dawn/" rel="alternate" type="text/html" title="[電影]《花綠青綻放之時》- 事物都會結束，但重點是要怎麼結束" /><published>2026-06-06T00:00:00+08:00</published><updated>2026-06-06T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-new-dawn</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-06-the-new-dawn/"><![CDATA[<p>《花綠青綻放之時》也是 2026 金馬影展的開幕片，原本也想在影展觀賞這部電影，可惜播放時段都無法參加，好在這部片後來也上院線，當然就把握機會囉。</p>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/X2UZrtggmM4" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>主角帶刀一家經營的「帶刀煙火店」擁有 330 年的歷史，一直以來不只守護著傳統文化，也承載著當地過去的故事。然而近幾年因為人口外移，煙火季典也隨之停辦，導致需求不在，再加上店舖所在的海灣被選為太陽能板建置的預定地，成為釘子戶的老店面臨拆遷的命運。身為店主的主角爸爸認為，如果能夠施放傳說中的煙火「守破離」的話，一定能再次拯救這個地方，而「花綠青」正是「守破離」所需的重要煙火材料，也因此這部電影的片名為《花綠青綻放之時》。</p>
+
+<h2 id="面對危機的不同想法">面對危機的不同想法</h2>
+
+<p>但這部電影並不是走，一家人與當地居民齊心協力，成功復辦活動，說服政府取消開發案的熱血又激厲人心的路線。劇中就只剩帶刀一家在抵抗開發案，主角父親也遲遲製造不出「守破離」，面臨一生事業就要消失的無力感，主角三人代表著面對危機的不同態度。弟弟帶刀敬太郎是激進派，店在人在，店亡人亡。打算在拆除令執行的那天，施放最大的煙火，並跟著傳統文化一起消亡。哥哥帶刀千太郎則是屬於留得青山在，不怕沒柴燒的那一派。即使不能施放真正的煙火，用聲光投影也可以保留住煙火文化，而且人要活著，故事才能延續下去。而青梅竹馬式森薰是逃避派，幾年前離開這個地方到東京生活，後來被千太郎找回來要說服敬太郎不要再堅持守住店舖。</p>
+
+<h2 id="在二次元中看見三次元">在二次元中看見三次元！？</h2>
+
+<p>電影中我最喜歡的部份，就是用真實素材表現醉酒的人看到的世界。三人在放有店舖週遭地形模型的長桌前討論作戰計劃時，為了不讓哥哥阻止計劃，故意把他灌醉。結果從哥哥視角看到的模型開始魔幻了起來，原本 2D 作畫地形模型全部變成真實素材，瓦楞紙拼成的地形、玩具工程車、用麻將做成的可愛小人，連移動小人的手都變成真人的手，後來更是用定格動畫讓小人與道具活靈活現地動了起來。而且 2D 作畫與真實表現這兩者之間還能流暢切換。</p>
+
+<h2 id="花綠青綻放之時">花綠青綻放之時</h2>
+
+<p>當然電影中的高潮還得是「守破離」的施放，要進入高潮就得要先有前面的舖陳。拆除大隊大舉進攻，只能靠路障暫時堵住拆除行動，又遇上颱風帶來的狂風暴雨，主角們緊張地等著施放的最佳時刻。好在颱風眼正好抵達當地，風雨停止，所謂「就是現在」的時刻來了！煙火施放的瞬間，所有聲音與音樂戛然而止，觀眾在內的所有人屏住氣息看著煙火一路往上飛。「嘣！」既壯闊又漂亮的青綠色在昏暗的天空綻放開來，華麗的煙火倒映在整片的太陽能板上，構成一副完整的「守破離」景象。原來古代能施放出「守破離」就是因為當時的海灣可以映照出煙火的形狀。這一幕讓我想到《王立宇宙軍》經典的火箭發射那一幕，在火箭發射的時，原本為了火箭進行大戰的軍隊完全停了下來，整個空間就只剩火箭發射的壯闊景象。</p>
+
+<p>就像一開始提到的，這不是一部只要熱血就能成功的電影。所以導演還是讓煙火的施放帶點遺憾，因為颱風風勢與雲層的關係，「守破離」的形狀並沒有完整呈現。雖然後來店舖還是沒能保住，開發案也持續進行。但如同薰所說的「每個事物都會結束，但重點是要怎麼結束」。這一發煙火還是讓大家留下深刻的印象，哥哥也開始運用自己的力量連署請求煙火慶典復辦。結局算是總合三人的想法，煙火成功施放，但也要活下去才能再次看到煙火在天空綻放。</p>
+
+<h2 id="情感不連續情緒起起伏伏">情感不連續，情緒起起伏伏</h2>
+
+<p>可惜電影的缺點也很明顯，敬太郎與薰的配音沒有情緒起伏，棒讀感很重。查了一下兩位都是演員，所以可能在配音上比較沒有經驗。再加上前半的劇情節奏很差，角色常常話講到一半，就進入情緒空間中。沉澱一陣子後，才又繼續講，但當下還跟不上情緒的時候，就會覺得節奏斷斷續續的。也因此電影前半對我來說還滿痛苦的。</p>
+
+<p>另外弟弟敬太郎就外表的第一印象會覺得他是內向寡言又固執已見的角色，然而他情緒卻跟雲宵飛車一樣大起大落。有一幕是他威脅如果薰要他離開這裡的話，他就要跳下去，薰邊拉住他邊說服時，敬太郎也對以冷漠的態度。直到薰同意他的想法時，敬太郎才意識到他正要掉下去，露出炸毛的驚訝害怕反應。感覺是為了笑點而放，但這個反應與他的角色形象衝突，讓人無法共感角色的心情。</p>
+
+<h2 id="小結">小結</h2>
+
+<p>跟朋友聊過發覺這部電影可能是實驗性電影，除了特別的表現手法，作畫也非常細緻。也因此優缺點很明顯，對這部電影有喜歡也有不喜歡的部份。隨著觀影體驗逐漸轉往串流的時代，在電影院的觀影體驗還是很重要。在電影院中不會被其它事物分心，再加上是買票進來看的，所以能夠專心地看完一部電影。但如果是在家裡用串流看到這部電影的話，我可能在前半就會放棄了。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="心得" /><summary type="html"><![CDATA[《花綠青綻放之時》也是 2026 金馬影展的開幕片，原本也想在影展觀賞這部電影，可惜播放時段都無法參加，好在這部片後來也上院線，當然就把握機會囉。]]></summary></entry><entry><title type="html">[電影]《John 錯就錯》- 真不愧是麥叔！</title><link href="https://lankudot.airfishlab.com/blog/2026-05-the-last-viking/" rel="alternate" type="text/html" title="[電影]《John 錯就錯》- 真不愧是麥叔！" /><published>2026-05-30T00:00:00+08:00</published><updated>2026-05-30T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-last-viking</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-05-the-last-viking/"><![CDATA[<p>這次 2026 年的金馬奇幻影展選擇《John 錯就錯》（The Last Viking）的原因不外乎就是麥叔了。不同於以往給人殺氣騰騰、充滿威壓的形象，在這部電影中的麥叔飾演內心封閉且不善交流的角色，但麥叔的演技仍完美讓人理解這個角色的內在情緒，真佩服他的戲路如此之廣。</p>
 
 <!-- Courtesy of embedresponsively.com -->
 
@@ -10,15 +42,21 @@
 
 <p class="notice--warning">本篇有劇透！</p>
 
+<h2 id="我就是約翰">我就是「約翰」</h2>
+
 <p>麥叔飾演弟弟曼弗，在電影前段就可以發現曼弗的日常反應與一般人不同，像是拼圖只收集想要的顏色、慶祝用的麵包得要疊成一座小山、覺得別人養的狗被強迫與主人生活，跟他在一起才會快樂。而當年因搶案入獄的哥哥安克，假釋出獄回到家中，發現叫弟弟「曼弗」都不理他。他們的大姊瑪格麗特告訴安克，現在曼弗是「約翰」，約翰．藍儂的那個「約翰」。</p>
 
 <p><img src="/assets/images/blog/2026/2026-05-30-the-last-viking/screenshot_01.png" alt="screenshot_01" /></p>
 
 <p>然而當下安克不把這個情況當一回事，再加上以前的同伴佛蘭明前來威脅討錢，一心只想取回當初拜託曼弗藏在舊家的贓款。每次追問弟弟埋藏位置時，反射性地直接叫他「曼弗」，但弟弟只要聽到這個名字就會起排斥反應。剛好當下旁邊都有個敞開的窗戶，無論在身在幾樓弟弟就直接往外跳。又或是在車上時，無論車速多快，也會直接開門跳車。到了醫院就醫才被診斷出患有解離性身分疾患。</p>
 
+<h2 id="治療方式就是來組樂團吧">治療方式就是來組樂團吧</h2>
+
 <p>在治療機構遇到的醫生表示，如果能讓曼弗處在他所希望的環境下，就能讓他解除心防，也就是說為了他組一個「披頭四」樂團。興致勃勃的醫生在安克還半信半疑時，就開始著手安排實驗了。然而現代不可能找到其它團員來組成樂團，所以醫生決定從其它醫院找尋同樣有解離性身分疾患的患者，而且「目前的」人格是披頭四團員之一。一場荒繆的實驗行動就這樣開始了，這時也算是中文標題「John 錯就錯」的回收了。</p>
 
 <p><img src="/assets/images/blog/2026/2026-05-30-the-last-viking/screenshot_02.png" alt="screenshot_02" /></p>
+
+<h2 id="大家都有病">大家都有病</h2>
 
 <p>安克帶著曼弗回到現在由一對夫妻經營著民宿的舊家，準備私下去找出埋藏的地方，順便住宿幾晚，也希望曼弗在這段時間能回想起來。只是沒想到這對夫妻的關係也不太好，一位是失敗的服裝設計師，正努力成為一名小說家，另一位則是只當過手部模特兒的模特兒。兩人聊著聊著就會開始酸彼此的不是，搞得安克只能尷尬陪笑。</p>
 
@@ -28,6 +66,8 @@
 
 <p>雖然安克只在意能不能拿回錢，但從一些動作看得出他還是關心曼弗。像是在醫生解釋病因時，安克轉身看著在治療區的弟弟，醫生的話漸漸成為背景。或是在車上為睡著的弟弟蓋上外套。這兩幕雖然沒有台詞，但可以感受到安克對曼弗的情感。</p>
 
+<h2 id="被遺忘的過去">被遺忘的過去</h2>
+
 <p>在安克回到舊家的這段時間，不斷回想起小時候在這邊發生的事。原來兩兄弟小時候經常被父親家暴。曼弗從小就有交流障礙，經常想成為一名維京人，學習他們的習俗。然而他們父親非常討厭曼弗扮成維京人，告誡安克在學校要阻止曼弗，否則會讓他被同學欺負。然而每次曼弗在學校這樣做時，安克都會護著他，想當然回家兩人都會被父親痛打一頓，並痛罵安克沒有阻止曼弗。</p>
 
 <p>在這之前安克完全沒有印象，因為小時候的他防衛性地遺忘掉這些創傷記憶了。但曼弗都還記得這些事，這段時間他告訴安克的地點，都是以前埋藏東西的地方，就是希望安克想起以前他為了保護曼弗受了多少苦。當最後挖出的是裝有父親護照與衣物的行李箱時，安克才想起他一直認為小時候就拋棄他們離開家庭的父親，其實是他在盛怒之下把父親殺死了。事件發生時曼弗也在場，鏡頭也帶到那時的電視機正播放著約翰．藍儂被瘋狂粉絲槍殺的消息，這也揭露為什麼曼弗的人格會是約翰。安克事後自己埋藏屍體並清理現場，告訴曼弗這件事要成為兩人永遠的秘密。</p>
@@ -36,13 +76,17 @@
 
 <p>我覺得在幽默的劇情中，開始揭露主角擁有痛苦的過去時，所帶來的情感衝擊會更加強烈。通常電影到這邊也會進入反轉高潮的階段。在知道他們的過去後，再回頭看這一切顯得更加悲傷。安克為什麼會有易怒的性格，會去搶銀行，連假釋機會都是靠演出來的。曼弗因為長期遭受家暴，而產生防衛性人格。最可憐的是他們的大姊瑪格麗特，當時在外讀書，一直以來都被瞞在鼓裡。</p>
 
+<h2 id="這次換我保護你">這次換我保護你</h2>
+
 <p>電影最後想要討錢的佛蘭明找到他們老家來，但這次換成曼弗來保護安克了。曼弗騙佛蘭明得要開車才能到藏錢的地方，而佛蘭明為了確保曼弗不會中途逃跑，要求由曼弗開車。原本曼弗想要直踩油門讓車子爆衝，但想阻止的佛蘭明脫口而出「曼弗」這個名字，想當然曼弗反射性地開門跳車，而佛蘭明就跟著車一起撞向路樹。我很喜歡前面出現的設定在後面成為解決問題的手段，帶來「沒想到可以這樣解決」的驚喜感，又保有幽默的調性。</p>
 
 <p>意想不到的幽默，讓人心疼的過去，加上感人的反轉，最後當然少不了溫馨的收尾。我覺得導演在劇情情緒的安排上拿捏的很好。幽默感出現地恰到好處，讓嚴肅的氛圍不會延續太久。不過在揭露重要過去時，也沒有一昧地想把氣氛變輕鬆，反而是轉以感人的路線，讓情緒昇華。好在最後是溫馨結局，否則離開影廳時，心情一定很不好。而電影的幽默感還延續到結尾名單上，組團成員中有一名擁有上百個人格，在名單跑動時，會看到他釋演的角色一直在改變。</p>
 
 <p><img src="/assets/images/blog/2026/2026-05-30-the-last-viking/screenshot_05.png" alt="screenshot_05" /></p>
 
-<p>最後覺得麥叔真的很厲害，他在這部電影中完全沒有平常的嚴肅臉，而是表現出緊張、害怕、無法直視別人的樣子。除了演技之外，麥叔的肢體動作也表達出這個角色不善與人交流。在這部電影中麥叔的氣場也沒有壓過其它人，再加上所有角色都有各自特色，所以電影結束後對每個角色都還是印象深刻。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="心得" /><summary type="html"><![CDATA[這次 2026 年的金馬奇幻影展選擇《John 錯就錯》（The Last Viking）的原因不外乎就是麥叔了。不同於以往給人殺氣騰騰、充滿威壓的形象，在這部電影中的麥叔飾演內心封閉且不善交流的角色，但麥叔的演技仍完美讓人理解這個角色的內在情緒，真佩服他的戲路如此之廣。]]></summary></entry><entry><title type="html">[電影]《超時空輝耀姬！》科幻 x 百合 x 竹取物語</title><link href="https://lankudot.airfishlab.com/blog/2026-05-cosmic-princess-kaguya/" rel="alternate" type="text/html" title="[電影]《超時空輝耀姬！》科幻 x 百合 x 竹取物語" /><published>2026-05-10T00:00:00+08:00</published><updated>2026-05-10T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/cosmic-princess-kaguya</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-05-cosmic-princess-kaguya/"><![CDATA[<p>如果竹取物語發生在科技進步的世界中，那會怎麼發展？不僅角色設計豐富、作畫細緻、動作場面靈活，而且還有百合要素！如果還有經歷過 V 家繁盛時期，那一定要看看《超時空輝耀姬！》。</p>
+<h2 id="小結">小結</h2>
+
+<p>最後覺得麥叔真的很厲害，他在這部電影中完全沒有平常的嚴肅臉，而是表現出緊張、害怕、無法直視別人的樣子。除了演技之外，麥叔的肢體動作也表達出這個角色不善與人交流。在這部電影中麥叔的氣場也沒有壓過其它人，再加上所有角色都有各自特色，所以電影結束後對每個角色都還是印象深刻。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="心得" /><summary type="html"><![CDATA[這次 2026 年的金馬奇幻影展選擇《John 錯就錯》（The Last Viking）的原因不外乎就是麥叔了。不同於以往給人殺氣騰騰、充滿威壓的形象，在這部電影中的麥叔飾演內心封閉且不善交流的角色，但麥叔的演技仍完美讓人理解這個角色的內在情緒，真佩服他的戲路如此之廣。]]></summary></entry><entry><title type="html">[電影]《超時空輝耀姬！》- 科幻 x 百合 x 竹取物語</title><link href="https://lankudot.airfishlab.com/blog/2026-05-cosmic-princess-kaguya/" rel="alternate" type="text/html" title="[電影]《超時空輝耀姬！》- 科幻 x 百合 x 竹取物語" /><published>2026-05-10T00:00:00+08:00</published><updated>2026-05-10T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/cosmic-princess-kaguya</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-05-cosmic-princess-kaguya/"><![CDATA[<p>如果竹取物語發生在科技進步的世界中，那會怎麼發展？不僅角色設計豐富、作畫細緻、動作場面靈活，而且還有百合要素！如果還有經歷過 V 家繁盛時期，那一定要看看《超時空輝耀姬！》。</p>
 
 <p><img src="/assets/images/blog/2026/2026-05-10-cosmic-princess-kaguya/poster-thumb.jpg" alt="poster-thumb" /></p>
 
@@ -195,198 +239,7 @@
 
 <h2 id="先求有但別繞路">先求有，但別繞路</h2>
 
-<p>所以如果知道要做的功能未來會怎樣時，最好一開始就以此為方向來開發功能，還沒有所需資料或素材就用暫代的。像戰鬥系統就算還沒有動畫，可以先用幾何形狀拉簡單示意動作，如果不用幾何形狀，也可以先把動作的時長用兩個 keyframe 簡單表示就好。因為前期的重點是把戰鬥事件實作出來，先驗證這些事件在遊戲中如何運作比較好。等到可以套上動畫之後，就可以以此為基礎，去調整事件的功能。想想如果當初就這樣做的話，就可以少花這兩個月的時間了 :cry:。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - CDPR 篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - CDPR 篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-01-cdpr</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/"><![CDATA[<p>今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。</p>
-
-<p><img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/pass.png" alt="參加證" /></p>
-
-<h2 id="電馭叛客-2077解碼電影動畫的祕密">《電馭叛客 2077》：解碼電影動畫的祕密</h2>
-
-<p>這場演講是 CDPR 帶來的兩場演講之一。首席電影動畫師 David Cordero Iglesias 介紹在《電馭叛客 2077》中，如何讓 NPC 更生動自然，以及更真實的第一人稱敘事運鏡，讓玩家更有沉浸感。</p>
-
-<h3 id="模擬現實互動">模擬現實互動</h3>
-
-<ul>
-  <li>減少黑幕切換
-    <ul>
-      <li>NPC 在場景中會自然對話，直到玩家進來互動後，會自然結束跟其它 NPC 的對話，並轉頭過來開始跟玩家的劇情對話</li>
-      <li>利用牆面設置位置來避免玩家看到 NPC 重置的不連續感。例如：在一個追逐從後門逃跑的 NPC 的劇情中，玩家可以選擇追上去，或是從前門繞路追上他，而 NPC 一定會在暗巷中被夥伴給攔住。利用牆面的 90 度轉角，讓玩家走過牆面後，才會看到事件發生。</li>
-      <li>但遊戲中還是會為了玩家昏厥或是醒來的情境使用黑幕</li>
-    </ul>
-  </li>
-  <li>玩家控制角色的能力可以分成四個層級，增強敘事能力
-    <ul>
-      <li>第一階：玩家可以自由控制角色</li>
-      <li>第二階：部份控制被限制。例如：搬重物時，移動速度變慢</li>
-      <li>第三階：只能移動視角，而且角度有限制。例如：被壓制在地上時</li>
-      <li>第四階：劇情控制，玩家完全無法操作</li>
-    </ul>
-  </li>
-  <li>NPC 自然動作
-    <ul>
-      <li>NPC 的動作反應這個 NPC 的個性</li>
-      <li>NPC 在等待玩家回答時，會繼續做手邊正在做的事情，例如：吃一口飯、繼續看雜誌，而不會呆呆看著你</li>
-    </ul>
-  </li>
-  <li>敘事運鏡要視野清晰
-    <ul>
-      <li>要避免 3D 暈，可以找會 3D 暈的同事來測試 :D</li>
-      <li>利用 Framing（決定什麼內容要出現在畫面中） 與 Composition（排列在畫面中的這些內容），讓玩家快速理解目前正在發生的事情。例如：在跑酷劇情下，讓手腳一部份出現在畫面中，提示動作的來源，並用攝影機的位移來呈現慣性</li>
-    </ul>
-  </li>
-  <li>身體意識
-    <ul>
-      <li>玩家坐定後，仍然可以自由移動視角，模擬現實談話人會亂看</li>
-      <li>在劇情拿槍時，攝影機會照向拿槍的手，模擬現實的視線移動</li>
-      <li>被 NPC 拉著走時，無法控制位移或是視角</li>
-    </ul>
-  </li>
-  <li>環境意識
-    <ul>
-      <li>角色會自然看向環境中可以互動的物件</li>
-      <li>在場景中也要標記這些可互動的物件，及如何互動</li>
-    </ul>
-  </li>
-  <li>手指細節
-    <ul>
-      <li>真實的手指反應，例如：把完拿取的物件，或是彈吉它時的手指行為</li>
-      <li>有一整個手指資料庫</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="動畫技術">動畫技術</h3>
-
-<ul>
-  <li>動捕很重要
-    <ul>
-      <li>自然真實的動畫源自現實的動作</li>
-      <li>即使是第一人稱視角遊戲，還是會錄玩家角色的動作</li>
-    </ul>
-  </li>
-  <li>還是有 key frame 動畫
-    <ul>
-      <li>機具行為，車輛的互動</li>
-      <li>整理動捕資料</li>
-    </ul>
-  </li>
-  <li>提供跨軟體平台的整合資料庫
-    <ul>
-      <li>動畫師可以自由選擇製作的動畫軟體</li>
-    </ul>
-  </li>
-  <li>動畫類型可以分成待機動作（Idle Animation）與象徵動作（Gesture Animation）
-    <ul>
-      <li>以抽煙來說，待機動作是拿著煙，而象徵動作則可以是吸一口煙或是丟煙等動作</li>
-      <li>動作之間也會設定轉換（Transition）</li>
-      <li>也有完全設定好的客制動畫，例如：彈吉他、劇情用動畫</li>
-      <li>在《電馭叛客 2077》中有七千多個待機動作，三萬五千多個象徵作，以及更多的動畫轉換</li>
-    </ul>
-  </li>
-  <li>有內部工具來管理與編輯動畫的轉換
-    <ul>
-      <li>角色的動畫為 workspot，編輯工具可以設置轉換條件與觸發來效果</li>
-      <li>workspot 之間的互動也可以編輯，例如：兩個 NPC 在聊天時的動作</li>
-      <li>在開放世界中，讓 workspot 自行決定要做的事情，讓玩家經過同一個地方時，NPC 的行為也會不一樣</li>
-      <li>在劇情場景中，workspot 可以在玩家回答前，自由播放待機動畫，使 NPC 更自然</li>
-    </ul>
-  </li>
-  <li>臉部動畫也有對應的待機動作及象徵動作
-    <ul>
-      <li>對於有真實演員的 NPC，也會把臉部變化（如皺紋）key frame 進去</li>
-    </ul>
-  </li>
-  <li>嘴型會隨輸入聲音變化，不同語言的語音會呈現不同嘴型</li>
-</ul>
-
-<h3 id="劇情動畫製作流程">劇情動畫製作流程</h3>
-
-<ol>
-  <li>分鏡：簡單場景設置與運鏡來驗證劇情動畫的觸發流程</li>
-  <li>動捕：分段拍攝劇情所需的動畫</li>
-  <li>Alpha：直接把動捕資料套入場景中並加入運鏡</li>
-  <li>Beta：消除鏡頭過度晃動，套入 IK 並跟場景物件互動</li>
-  <li>加入失敗動畫，如 QTE 失敗後的結果</li>
-</ol>
-
-<h2 id="解鎖隱藏價值cdpr-式最終產品背後的-ux">解鎖隱藏價值：CDPR 式「最終產品背後的 UX」</h2>
-
-<p>CDPR 的第二場演講則是以內部工具的 UX 體驗為主題，資深 UX/UI 設計師 Anna Nojek 認為，有好的內部開發工具，能讓開發人員能有好的開發體驗，進而能開發出好的遊戲。</p>
-
-<h3 id="好的開發環境造就好的遊戲體驗">好的開發環境造就好的遊戲體驗</h3>
-
-<ul>
-  <li>讓玩家能享受遊戲的要素很多，像是故事、玩法、挑戰性等，但對開發者來說讓玩家能享受遊戲的要素是來自好的開發體驗。以開發體驗為優先，能讓開發者發揮能力，最後做出好的遊戲體驗。</li>
-  <li>以往開發環境的問題
-    <ul>
-      <li>資源及知識過於分散：asset 散佈在不同平台且不同格式，要找一個 asset 很困難</li>
-      <li>資訊透明度差：大家各自做各自的</li>
-      <li>客制的開發流程：鎖碎及複雜的開發流程，甚至佔了開發 50% 的時間</li>
-      <li>過度依賴其它人：如果一個人卡住了，其它人也不能做事</li>
-      <li>只專注在功能：開發工具的人不熟使用者的習慣，只專注在實作功能上，讓工具不好使用</li>
-    </ul>
-  </li>
-  <li>當開發者面臨的問題沒有解決的話，會感到挫折，讓作品延期、容易出 bug，甚至感到心累，最後產出不好玩的遊戲</li>
-</ul>
-
-<h3 id="了解問題">了解問題</h3>
-
-<ul>
-  <li>製作工具先暫時處理問題，再改善解法
-    <ul>
-      <li>情境：企劃要找一個素材得要問一堆人才找的到</li>
-      <li>暫時解法：開一個共用的 excel 表單，請製作人員匯出素材時，去更新表單的狀態</li>
-      <li>長期解法：製作人員匯出素材後，自動更新資料庫</li>
-      <li>暫時解法得由人工操作，但可以暫時解決企劃要依賴他人的問題。而長期解法則是自動化，是改善後的解法，一樣解決依賴問題，也讓製作人員不用手動更新</li>
-      <li>會先有暫時解法，等待時機成熟後，再實作長期解法</li>
-    </ul>
-  </li>
-  <li>開發出內部用的素材管理工具：Asset Hive
-    <ul>
-      <li>支援集中管理，能搜尋、複用、預覽素材的工具</li>
-    </ul>
-  </li>
-  <li>工具是提供問題的解法，但如果不了解問題，則作出工具也不能解決
-    <ul>
-      <li>要去了解、觀察、討論才能知道真正的問題所在</li>
-      <li>也不要只追隨請求，而是問為何需要這個請求</li>
-      <li>當有人傾聽別人的請求時，別人也會更有動力，且更積極</li>
-    </ul>
-  </li>
-  <li>作出好的工具讓開發人員能專注在創造工作，改善遊戲成品。透過使用體驗回報，也能培養反饋與支援的氛圍</li>
-</ul>
-
-<h3 id="工具與-ux">工具與 UX</h3>
-
-<ul>
-  <li>UX 是為了簡化執行某個特別任務的手段</li>
-  <li>UX 開發流程，每個階段都有機會退回上個階段
-    <ol>
-      <li>有人提出問題</li>
-      <li>討論、分析、面談問題</li>
-      <li>設計工具需要的功能有什麼</li>
-      <li>測試</li>
-      <li>設計介面</li>
-      <li>測試</li>
-      <li>交由工程人員開發功能</li>
-      <li>測試</li>
-    </ol>
-  </li>
-  <li>以使用者為中心的溝通
-    <ul>
-      <li>同理心地圖（Empathy Map）：展示使用者在使用工具時的想法、行為、言論、感受</li>
-      <li>使用者體驗地圖（User Journey Map）：展示使用者在使用工具達成任務時的使用流程，並標示每個階段的情緒、優缺點，以及如何改善</li>
-    </ul>
-  </li>
-  <li>省下來的時間 = 原本所需要的時間 - 改善後的時間 - 開發工具所需要的時間</li>
-  <li>UX 與所有人相關
-    <ul>
-      <li>團隊的製程：製程的架構流程</li>
-      <li>明確的目標：什麼樣的目標才算成功/完成</li>
-      <li>透明度與反饋回圈：工具一定是持續迭代的過程</li>
-    </ul>
-  </li>
-  <li>回到一開始的問題：是什麼要素讓玩家能享受遊戲? 所有創作遊戲的人</li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 九日篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 九日篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-02-nine-sols</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/"><![CDATA[<p>今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。</p>
+<p>所以如果知道要做的功能未來會怎樣時，最好一開始就以此為方向來開發功能，還沒有所需資料或素材就用暫代的。像戰鬥系統就算還沒有動畫，可以先用幾何形狀拉簡單示意動作，如果不用幾何形狀，也可以先把動作的時長用兩個 keyframe 簡單表示就好。因為前期的重點是把戰鬥事件實作出來，先驗證這些事件在遊戲中如何運作比較好。等到可以套上動畫之後，就可以以此為基礎，去調整事件的功能。想想如果當初就這樣做的話，就可以少花這兩個月的時間了 :cry:。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 九日篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 九日篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-02-nine-sols</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/"><![CDATA[<p>今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。</p>
 
 <h2 id="兩年的噩夢找尋九日類隻狼系統的誕生">兩年的噩夢找尋，九日類隻狼系統的誕生</h2>
 
@@ -717,106 +570,195 @@
       <li>讓遊戲會對音樂互動</li>
     </ul>
   </li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。]]></summary></entry><entry><title type="html">[開發日誌 #2] A 需要跑步但 B 只要走路</title><link href="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/" rel="alternate" type="text/html" title="[開發日誌 #2] A 需要跑步但 B 只要走路" /><published>2025-06-04T00:00:00+08:00</published><updated>2025-06-04T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/refactor-general-module</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-06-refactor-general-module/"><![CDATA[<p>在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。</p>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - CDPR 篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - CDPR 篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-01-cdpr</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/"><![CDATA[<p>今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。</p>
 
-<h2 id="通用模組的問題">通用模組的問題</h2>
+<p><img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/pass.png" alt="參加證" /></p>
 
-<p>一開始通用模組設計如下圖：</p>
+<h2 id="電馭叛客-2077解碼電影動畫的祕密">《電馭叛客 2077》：解碼電影動畫的祕密</h2>
 
-<p><img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/original-design-uml.svg" alt="original-design-uml" /></p>
+<p>這場演講是 CDPR 帶來的兩場演講之一。首席電影動畫師 David Cordero Iglesias 介紹在《電馭叛客 2077》中，如何讓 NPC 更生動自然，以及更真實的第一人稱敘事運鏡，讓玩家更有沉浸感。</p>
+
+<h3 id="模擬現實互動">模擬現實互動</h3>
 
 <ul>
-  <li>通用移動模組 <code class="language-plaintext highlighter-rouge">CharacterMovementModule</code> 中提供不同的移動方式的子模組：
+  <li>減少黑幕切換
     <ul>
-      <li>靜止的 <code class="language-plaintext highlighter-rouge">IdleMovement</code></li>
-      <li>以速度向量為主的 <code class="language-plaintext highlighter-rouge">VelocityMovement</code></li>
-      <li>以距離為主的 <code class="language-plaintext highlighter-rouge">DashMovement</code></li>
-      <li>以路徑為主的 <code class="language-plaintext highlighter-rouge">PathMovement</code></li>
+      <li>NPC 在場景中會自然對話，直到玩家進來互動後，會自然結束跟其它 NPC 的對話，並轉頭過來開始跟玩家的劇情對話</li>
+      <li>利用牆面設置位置來避免玩家看到 NPC 重置的不連續感。例如：在一個追逐從後門逃跑的 NPC 的劇情中，玩家可以選擇追上去，或是從前門繞路追上他，而 NPC 一定會在暗巷中被夥伴給攔住。利用牆面的 90 度轉角，讓玩家走過牆面後，才會看到事件發生。</li>
+      <li>但遊戲中還是會為了玩家昏厥或是醒來的情境使用黑幕</li>
     </ul>
   </li>
-  <li>移動模組同時只會有一個子模組在執行，當子模組執行結束後（如：移動路徑走完了），會自動轉到 <code class="language-plaintext highlighter-rouge">IdleMovement</code></li>
-  <li>尋路用的模組 <code class="language-plaintext highlighter-rouge">PathFindingModule</code></li>
+  <li>玩家控制角色的能力可以分成四個層級，增強敘事能力
+    <ul>
+      <li>第一階：玩家可以自由控制角色</li>
+      <li>第二階：部份控制被限制。例如：搬重物時，移動速度變慢</li>
+      <li>第三階：只能移動視角，而且角度有限制。例如：被壓制在地上時</li>
+      <li>第四階：劇情控制，玩家完全無法操作</li>
+    </ul>
+  </li>
+  <li>NPC 自然動作
+    <ul>
+      <li>NPC 的動作反應這個 NPC 的個性</li>
+      <li>NPC 在等待玩家回答時，會繼續做手邊正在做的事情，例如：吃一口飯、繼續看雜誌，而不會呆呆看著你</li>
+    </ul>
+  </li>
+  <li>敘事運鏡要視野清晰
+    <ul>
+      <li>要避免 3D 暈，可以找會 3D 暈的同事來測試 :D</li>
+      <li>利用 Framing（決定什麼內容要出現在畫面中） 與 Composition（排列在畫面中的這些內容），讓玩家快速理解目前正在發生的事情。例如：在跑酷劇情下，讓手腳一部份出現在畫面中，提示動作的來源，並用攝影機的位移來呈現慣性</li>
+    </ul>
+  </li>
+  <li>身體意識
+    <ul>
+      <li>玩家坐定後，仍然可以自由移動視角，模擬現實談話人會亂看</li>
+      <li>在劇情拿槍時，攝影機會照向拿槍的手，模擬現實的視線移動</li>
+      <li>被 NPC 拉著走時，無法控制位移或是視角</li>
+    </ul>
+  </li>
+  <li>環境意識
+    <ul>
+      <li>角色會自然看向環境中可以互動的物件</li>
+      <li>在場景中也要標記這些可互動的物件，及如何互動</li>
+    </ul>
+  </li>
+  <li>手指細節
+    <ul>
+      <li>真實的手指反應，例如：把完拿取的物件，或是彈吉它時的手指行為</li>
+      <li>有一整個手指資料庫</li>
+    </ul>
+  </li>
 </ul>
 
-<h3 id="提供用不到的功能">提供用不到的功能</h3>
-
-<p>這是遊戲中各類角色需要的移動功能：</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>移動方式</th>
-      <th>玩家角色</th>
-      <th>敵人角色</th>
-      <th>NPC</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>靜止</td>
-      <td>:heavy_check_mark:</td>
-      <td>:heavy_check_mark:</td>
-      <td>:heavy_check_mark:</td>
-    </tr>
-    <tr>
-      <td>速度向量</td>
-      <td>:heavy_check_mark:</td>
-      <td>:x:</td>
-      <td>:x:</td>
-    </tr>
-    <tr>
-      <td>距離</td>
-      <td>:heavy_check_mark:</td>
-      <td>:heavy_check_mark:</td>
-      <td>:x:</td>
-    </tr>
-    <tr>
-      <td>路徑</td>
-      <td>:heavy_check_mark:（路徑更新一次）</td>
-      <td>:heavy_check_mark:（路徑定期更新）</td>
-      <td>:heavy_check_mark:（一次跟定期更新都要）</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>設計成通用模組的問題是，使用的角色會有用不到的功能。敵人角色用不到速度向量的移動功能，而 NPC 一樣用不到速度向量的移動功能之外，也用不到距離為主的移動功能。</p>
-
-<h3 id="不易擴充">不易擴充</h3>
-
-<p>另外從上面的表可以看到，以路徑移動的形式有兩種：只要更新一次路徑（移動到指定位置）跟定期更新路徑（持續追隨）。為了讓移動模組能「通用」，所以只提供傳入路徑再移動的功能。這時玩家角色需要實作讓尋路模組來找路徑後傳入移動模組的功能，而敵人角色則需要實作定期更新路徑的功能，然而 NPC 卻兩種形式都要，所以就得要再各實作一次一樣的功能。雖然可以把這兩種路徑移動形式連同尋路模組一起整合到移動模組內，但這樣移動模組就會相依於尋路模組，而且爾後有需要其它模組的移動方式的話，都會讓移動模組相依更多模組。如果有新的角色是不需要路徑移動方式的話，為了移動模組還要再生成尋路模組就顯得多餘了。</p>
-
-<p><img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/original-design-coupling.svg" alt="original-design-coupling" />
-<em>讓模組相依於其它模組的問題是無論用不用的到對應的模組，都得要生成依賴的模組</em></p>
-
-<h2 id="重構版本">重構版本</h2>
-
-<p>這是重構後的版本：</p>
-
-<p><img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/refactor-design-player-uml.svg" alt="refactor-design-player-uml" /></p>
+<h3 id="動畫技術">動畫技術</h3>
 
 <ul>
-  <li>移動方式各自獨立成外部子模組，繼承自 <code class="language-plaintext highlighter-rouge">IMovement</code>，並自行提供所需要的建構子與初始化函式</li>
-  <li><code class="language-plaintext highlighter-rouge">CharacterMovementModule</code> 只保留移動方式切換的功能，透過 <code class="language-plaintext highlighter-rouge">IMovment</code> 介面存取移動方式子模組</li>
-  <li>角色需要實作自己所需的移動模組，像玩家要實作 <code class="language-plaintext highlighter-rouge">PlayerMovementModule</code>，在裡面建立與初始化所需的移動方式子模組，並註冊給 <code class="language-plaintext highlighter-rouge">CharacterMovementModule</code> 管理</li>
-  <li>角色自己的移動模組也會存建立的移動方式子模組，在需要切換移動方式時，先設置好參數，再切換移動方式</li>
+  <li>動捕很重要
+    <ul>
+      <li>自然真實的動畫源自現實的動作</li>
+      <li>即使是第一人稱視角遊戲，還是會錄玩家角色的動作</li>
+    </ul>
+  </li>
+  <li>還是有 key frame 動畫
+    <ul>
+      <li>機具行為，車輛的互動</li>
+      <li>整理動捕資料</li>
+    </ul>
+  </li>
+  <li>提供跨軟體平台的整合資料庫
+    <ul>
+      <li>動畫師可以自由選擇製作的動畫軟體</li>
+    </ul>
+  </li>
+  <li>動畫類型可以分成待機動作（Idle Animation）與象徵動作（Gesture Animation）
+    <ul>
+      <li>以抽煙來說，待機動作是拿著煙，而象徵動作則可以是吸一口煙或是丟煙等動作</li>
+      <li>動作之間也會設定轉換（Transition）</li>
+      <li>也有完全設定好的客制動畫，例如：彈吉他、劇情用動畫</li>
+      <li>在《電馭叛客 2077》中有七千多個待機動作，三萬五千多個象徵作，以及更多的動畫轉換</li>
+    </ul>
+  </li>
+  <li>有內部工具來管理與編輯動畫的轉換
+    <ul>
+      <li>角色的動畫為 workspot，編輯工具可以設置轉換條件與觸發來效果</li>
+      <li>workspot 之間的互動也可以編輯，例如：兩個 NPC 在聊天時的動作</li>
+      <li>在開放世界中，讓 workspot 自行決定要做的事情，讓玩家經過同一個地方時，NPC 的行為也會不一樣</li>
+      <li>在劇情場景中，workspot 可以在玩家回答前，自由播放待機動畫，使 NPC 更自然</li>
+    </ul>
+  </li>
+  <li>臉部動畫也有對應的待機動作及象徵動作
+    <ul>
+      <li>對於有真實演員的 NPC，也會把臉部變化（如皺紋）key frame 進去</li>
+    </ul>
+  </li>
+  <li>嘴型會隨輸入聲音變化，不同語言的語音會呈現不同嘴型</li>
 </ul>
 
-<p>如此一來，通用移動模組就不用依賴其它模組了，而是由角色自己的移動模組傳入需要的模組。另外移動方式獨立成子模組後，就可以像積木一樣，由角色自己的移動模組拼出所需要的移動功能。如敵人與 NPC 的移動模組會像這樣：</p>
+<h3 id="劇情動畫製作流程">劇情動畫製作流程</h3>
 
-<p><img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/refactor-design-enemy-uml.svg" alt="refactor-design-enemy-uml" />
-<img src="/assets/images/blog/2025/2025-06-04-refactor-general-module/refactor-design-npc-uml.svg" alt="refactor-design-npc-uml" /></p>
+<ol>
+  <li>分鏡：簡單場景設置與運鏡來驗證劇情動畫的觸發流程</li>
+  <li>動捕：分段拍攝劇情所需的動畫</li>
+  <li>Alpha：直接把動捕資料套入場景中並加入運鏡</li>
+  <li>Beta：消除鏡頭過度晃動，套入 IK 並跟場景物件互動</li>
+  <li>加入失敗動畫，如 QTE 失敗後的結果</li>
+</ol>
 
-<p>另外兩種不同的路徑移動方式也分成路徑走一次的 <code class="language-plaintext highlighter-rouge">PathMovement</code> 與路徑定期更新的 <code class="language-plaintext highlighter-rouge">FollowMovement</code>，而這兩個移動方式的共同邏輯則是取出做成一個 <code class="language-plaintext highlighter-rouge">PathHelper</code> 來幫助執行路徑移動。</p>
+<h2 id="解鎖隱藏價值cdpr-式最終產品背後的-ux">解鎖隱藏價值：CDPR 式「最終產品背後的 UX」</h2>
 
-<h2 id="總結">總結</h2>
+<p>CDPR 的第二場演講則是以內部工具的 UX 體驗為主題，資深 UX/UI 設計師 Anna Nojek 認為，有好的內部開發工具，能讓開發人員能有好的開發體驗，進而能開發出好的遊戲。</p>
 
-<p>使用情境差不多的話，做成通用模組是合適的方法，而且一開始規格還不明確的時候，太早設計成這樣也可能殺雞用牛刀。但當出現一些清況，就得要開始思考這樣做適不適合了，像是：</p>
+<h3 id="好的開發環境造就好的遊戲體驗">好的開發環境造就好的遊戲體驗</h3>
 
 <ul>
-  <li>有部份功能只是為了某些使用者存在</li>
-  <li>模組是不是開始相依其它模組的功能</li>
-  <li>每次加入新功能時，模組邏輯是否得要大幅修改</li>
-  <li>為了配合新功能，其它使用者是否也要改變使用方式</li>
+  <li>讓玩家能享受遊戲的要素很多，像是故事、玩法、挑戰性等，但對開發者來說讓玩家能享受遊戲的要素是來自好的開發體驗。以開發體驗為優先，能讓開發者發揮能力，最後做出好的遊戲體驗。</li>
+  <li>以往開發環境的問題
+    <ul>
+      <li>資源及知識過於分散：asset 散佈在不同平台且不同格式，要找一個 asset 很困難</li>
+      <li>資訊透明度差：大家各自做各自的</li>
+      <li>客制的開發流程：鎖碎及複雜的開發流程，甚至佔了開發 50% 的時間</li>
+      <li>過度依賴其它人：如果一個人卡住了，其它人也不能做事</li>
+      <li>只專注在功能：開發工具的人不熟使用者的習慣，只專注在實作功能上，讓工具不好使用</li>
+    </ul>
+  </li>
+  <li>當開發者面臨的問題沒有解決的話，會感到挫折，讓作品延期、容易出 bug，甚至感到心累，最後產出不好玩的遊戲</li>
 </ul>
 
-<p>如果有這樣的情況就得要考慮重構了。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[在這次開發的遊戲中，角色有不同的移動方式，像是玩家角色會以方向做為移動輸入，而敵人角色則是以路徑做為移動目標，而這兩者又有以距離為主的移動方式，如：瞬步、攻擊墊步。所以一開始做了通用的移動模組來整合這些方式，讓所有角色使用。但隨著敵人角色的移動方式增加，為了讓模組能保持「通用」，部份功能只能做在模組之外，造成移動方式無法集中管理。最後受不了重新設計移動模組一番，讓模組能夠為不同的角色提供各自需要的功能，又可以保持增加移動方式的彈性。]]></summary></entry></feed>
+<h3 id="了解問題">了解問題</h3>
+
+<ul>
+  <li>製作工具先暫時處理問題，再改善解法
+    <ul>
+      <li>情境：企劃要找一個素材得要問一堆人才找的到</li>
+      <li>暫時解法：開一個共用的 excel 表單，請製作人員匯出素材時，去更新表單的狀態</li>
+      <li>長期解法：製作人員匯出素材後，自動更新資料庫</li>
+      <li>暫時解法得由人工操作，但可以暫時解決企劃要依賴他人的問題。而長期解法則是自動化，是改善後的解法，一樣解決依賴問題，也讓製作人員不用手動更新</li>
+      <li>會先有暫時解法，等待時機成熟後，再實作長期解法</li>
+    </ul>
+  </li>
+  <li>開發出內部用的素材管理工具：Asset Hive
+    <ul>
+      <li>支援集中管理，能搜尋、複用、預覽素材的工具</li>
+    </ul>
+  </li>
+  <li>工具是提供問題的解法，但如果不了解問題，則作出工具也不能解決
+    <ul>
+      <li>要去了解、觀察、討論才能知道真正的問題所在</li>
+      <li>也不要只追隨請求，而是問為何需要這個請求</li>
+      <li>當有人傾聽別人的請求時，別人也會更有動力，且更積極</li>
+    </ul>
+  </li>
+  <li>作出好的工具讓開發人員能專注在創造工作，改善遊戲成品。透過使用體驗回報，也能培養反饋與支援的氛圍</li>
+</ul>
+
+<h3 id="工具與-ux">工具與 UX</h3>
+
+<ul>
+  <li>UX 是為了簡化執行某個特別任務的手段</li>
+  <li>UX 開發流程，每個階段都有機會退回上個階段
+    <ol>
+      <li>有人提出問題</li>
+      <li>討論、分析、面談問題</li>
+      <li>設計工具需要的功能有什麼</li>
+      <li>測試</li>
+      <li>設計介面</li>
+      <li>測試</li>
+      <li>交由工程人員開發功能</li>
+      <li>測試</li>
+    </ol>
+  </li>
+  <li>以使用者為中心的溝通
+    <ul>
+      <li>同理心地圖（Empathy Map）：展示使用者在使用工具時的想法、行為、言論、感受</li>
+      <li>使用者體驗地圖（User Journey Map）：展示使用者在使用工具達成任務時的使用流程，並標示每個階段的情緒、優缺點，以及如何改善</li>
+    </ul>
+  </li>
+  <li>省下來的時間 = 原本所需要的時間 - 改善後的時間 - 開發工具所需要的時間</li>
+  <li>UX 與所有人相關
+    <ul>
+      <li>團隊的製程：製程的架構流程</li>
+      <li>明確的目標：什麼樣的目標才算成功/完成</li>
+      <li>透明度與反饋回圈：工具一定是持續迭代的過程</li>
+    </ul>
+  </li>
+  <li>回到一開始的問題：是什麼要素讓玩家能享受遊戲? 所有創作遊戲的人</li>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。]]></summary></entry></feed>
