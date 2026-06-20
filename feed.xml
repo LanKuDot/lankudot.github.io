@@ -1,4 +1,237 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2026-06-06T22:24:21+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[電影]《花綠青綻放之時》- 事物都會結束，但重點是要怎麼結束</title><link href="https://lankudot.airfishlab.com/blog/2026-06-the-new-dawn/" rel="alternate" type="text/html" title="[電影]《花綠青綻放之時》- 事物都會結束，但重點是要怎麼結束" /><published>2026-06-06T00:00:00+08:00</published><updated>2026-06-06T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-new-dawn</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-06-the-new-dawn/"><![CDATA[<p>《花綠青綻放之時》也是 2026 金馬影展的開幕片，原本也想在影展觀賞這部電影，可惜播放時段都無法參加，好在這部片後來也上院線，當然就把握機會囉。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2026-06-20T22:17:15+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[電影] 2025 看過的那些電影們</title><link href="https://lankudot.airfishlab.com/blog/2026-06-watched-movies-in-2025/" rel="alternate" type="text/html" title="[電影] 2025 看過的那些電影們" /><published>2026-06-20T22:15:00+08:00</published><updated>2026-06-20T22:15:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/watched-movies-in-2025</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-06-watched-movies-in-2025/"><![CDATA[<p>終於也把在 2025 年看過的電影整理出來了！在這一年一共看了 17 部電影，當中最喜歡的就是《五星主廚快餐車》，相當喜歡這部電影的音樂、劇情與料理過程。這一年也看了比較多的日本電影，其中《八犬傳》與《超時空武士》也相當喜歡。另外也趁著影展又再次看了湯淺政明的《心靈遊戲》與 Wes Andserson 的《犬之島》，這兩位導演也是我最喜歡導演之二。</p>
+
+<h2 id="新里見八犬傳">新．里見八犬傳</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/se6sqqP_Yxo" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>邪惡的蟇田家前來報百年前被里見家消滅的仇，里見家被屠殺，只有公主里見靜姬喬裝逃出。在逃亡途中她遇到兩位見義勇為的義士，才知道他們是百年前，捨身保護靈犬八房而中槍的里見伏姬公主臨死前飛出的八個靈珠之二。他們是幫助里見家破除蟇田家阻咒的八位犬士，其名字中都帶有犬字。於是靜姬踏上找尋八犬士的旅程，決心要徹底消滅蟇田家。</p>
+
+<p>沒想到這部 1983 年的電影充滿 RPG 要素，典型的勇者收集伙伴去攻打魔王的劇情。八犬士的設定放在遊戲中也不違和，有作為介紹背景故事的、有互為仇人的、解任務找到的，還有在敵軍陣營裡的。想當然一直陪在靜姬旁邊的男主角親兵衛也是八犬之一。擔任該角色的年輕真田廣之完全認不出來，跟現在的氣質差太多了，在電影中完全是一個吊兒啷噹的角色。</p>
+
+<h2 id="八犬傳">八犬傳</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/1iolMTBXNdA" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>看了改篇的《新．里見八犬傳》當然接著來看八犬傳是如何成書的《八犬傳》。劇情著重在八犬傳的作者瀧澤馬琴與葛飾北齋身上，瀧澤馬琴在講述故事的構想時，就會演出那一段劇情。聽完（觀眾是看完）的葛飾北齋就會為那段劇情畫幾張草圖。做畫的同時對也聊起他的看法與最近的事情，或是為什麼要從事創作，時而鬥嘴時而相互憐惜。但每次葛飾北齋聊完就會把草圖撕掉，不給瀧澤馬琴用，讓瀧澤又氣又惋惜。</p>
+
+<p>對瀧澤來說，創作八犬傳就是因為有正義必勝、邪惡必敗的信念。但是現實卻在捉弄他，孩子宗伯英年早逝，瀧澤的雙眼也漸漸開始失明，連葛飾畫了一張騙他上面有八犬士集結的圖都沒意識到。但宗伯的妻子土岐村路極力勸說瀧澤不要放棄，就算自己不會寫漢字，也願意為他代筆，邊寫邊學習。最後這部連載 28 年的《八犬傳》終於完成。</p>
+
+<p>雖然是電影，但是劇情的節奏偏向日劇的節奏，較為緩慢。而且在演出八犬傳的劇情時，人物都很直接地出現，也很直接地加入討伐團。但想想這是瀧澤在劇情大綱，所以故事沒有舖陳也是很正常XD 不過因為我之前看了有改過劇情的《新．里見八犬傳》，所以在看原版劇情時，腦袋會打結。最後讓瀧澤與八犬士真的相遇的畫面，也是我整部電影最喜歡的一段，努力堅持下去的作品終於有了最好的結局。</p>
+
+<h2 id="哥吉拉--10">哥吉拉 -1.0</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/2C7VNeK7SlM" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>《哥吉拉 -1.0》是我第一次觀看的哥吉拉電影，在這之前就有聽過經典的哥吉拉登場音樂，也大概知道哥吉拉的設定，有機會的話也想補之前的經典的作品。在《哥吉拉 -1.0》中，最讓人印象深刻的就是哥吉拉在發動攻擊時的集氣過程了，從尾部的背鰭開始逐一發出螢光藍色，並向上展起。待所有背鰭都展開後，從喉嚨發出更強烈的螢光藍色，最後由口中噴出射線，造成碩大的傷害。整個集氣過程讓人屏息，尤其是知道之後會有強力的攻擊時，會為在攻擊範圍內的人感到緊張。另外也有呈現出在發出射線後，哥吉拉的臉部也會被射線灼傷的設定。</p>
+
+<p>電影中比較可惜的是特效的物理感沒有做出來，反而讓體驗沒有那麼好。像是飛機直接衝向哥吉拉的嘴裡時，飛機是直接定住在那邊，沒有慣性，也沒有噴飛零件或是帶點煙塵。又或是電車被哥吉拉翻起而墜落後的物理呈現也沒有那麼合理。不過在這部《哥吉拉 -1.0》中也難得看到所有人想要一齊對付哥吉拉，在二戰後日本還很脆弱的狀態下，還可以想出有趣的方法來攻擊牠。雖然最後成功擊沉哥吉拉，但是電影最後也帶到下沉中的屍體開始恢復，應該是暗示還會有續集吧。</p>
+
+<h2 id="喵的奇幻漂流">喵的奇幻漂流</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/SuAw1ejdi6M" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>如同電影標題，劇情著重在漂流的「過程」，而不是因一個目標而出去漂流。主角貓生活的地方因為遭遇洪水，不得不逃到漂流的船上，隨著水流到處漂流，發現一個又一個被洪水淹沒人類遺跡，一直獨自生活的牠，同時在旅程上學習認識不同的動物朋友。</p>
+
+<p>當初看到預告的時候，就知道這部電影不會有台詞了。靠著動物豐富的肢體動作、表情與音樂來傳達情感狀態與劇情。有趣的是劇中的動物個性是大家對牠的刻版印象，所以更容易投射情感：</p>
+
+<ul>
+  <li>主角貓就是我行我素，但又有恐懼的事物</li>
+  <li>狗則是天真單純，只想跟貓作好朋友</li>
+  <li>水豚看似呆呆笨笨，但是個體貼的大哥</li>
+  <li>狐猴則是充滿慾望的小氣鬼</li>
+  <li>鶴(?)則是最有智慧又最 carry 的那位</li>
+</ul>
+
+<p>這是部輕量電影，也沒有嘗試講什麼大道理，單純想呈現旅程發生了什麼有趣的事情。可以帶著在週末想要放鬆，在咖啡廳讀點輕小說的那種心情去看，只是結尾前鶴的升天實在是太意識流了，摸不著頭緒XD</p>
+
+<h2 id="米奇-17-號">米奇 17 號</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/muo0ulMNENQ" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>相比電影的改編，我比較喜歡原作小說《米奇 7 號》，更黑色幽默，角色的動機與背景也更豐富，尤其是關於複製人的由來更是有趣。電影前半以獨白的方式來交代背景，但是畫面很少在動，讓節奏變得很慢。如果能像 Wes Anderson 在《亨利休格的傳奇故事》中，讓角色隨著獨白的內容動作的話，就會更有趣。</p>
+
+<p>不過我比較喜歡電影的結局，原作是反高潮的結局，在你以為要搞大事的時候就縮了。跟朋友聊過後，才覺得電影主要是突顯就算是複製人，兩個米奇是不同的米奇，就算分享同樣的記憶，個性不同的話，作事方式就會不同。</p>
+
+<h2 id="電影版孤獨的美食家">電影版孤獨的美食家</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/-SSG_Mgokfc" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>說好不想繼續參與《孤獨的美食家》拍攝的松重豐居然自編自導自演《電影版孤獨的美食家》。與平常在影集中是因為到當地出差而品嚐食物不一樣，電影以「湯」為主題貫穿全劇，從尋找客戶記憶中的「一將湯」開始，無論是主動探尋還是因為意外發現，五郎體驗到法國、韓國、日本在地的湯料理，甚至在遇難時也嘗試自己做出野味湯，雖然最後因為蘑菇而食物中毒。</p>
+
+<p>在電影中另一個主線則是幫助失意潦倒的拉麵店長找回妻子發明的拉麵湯頭。在拉麵店成功復歸後，電影中的「孤獨的美食家」的劇組也前往這間店拍攝，但電影中的「五郎」是另一個五郎，看著這個五郎說著經典台詞，而真正的五郎在旁邊當配角的情景，真的還滿有趣的。</p>
+
+<h2 id="心靈遊戲">心靈遊戲</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/i-pYc_GXWk0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>《心靈遊戲》是我接觸湯淺政明導演的第一部作品。當初看的時候對畫面呈現相當衝擊，怎麼手繪感跟真人素材混用。看到一半決定把大腦關閉，無腦接收電影給我的資訊，然後就看懂了XD 這次因為早已習慣湯淺的風格，可以更容易理解劇情和角色的故事，但也少了第一次看的驚喜。仰視角跑步、斑斕的顏色變換、奇異的角色形象都是經典的湯淺風格，也是從這部電影開始喜歡這位導演。</p>
+
+<h2 id="犬之島">犬之島</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/PNyjMN2hLkU" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>雖然是定格動畫電影，但是人物與狗的微動作很多，讓角色動起來相當自然，環境也會跟角色有互動，完全不會有定格動畫的僵硬感。這部電影 Wes Anderson 的個人風格比較沒有那麼強烈，不是每個場景都要對稱，即使有一貫的色調統一，但用色沒有很強烈。看了第二次發覺 Anderson 真的很會處理獨白場景，很容易專注在畫面中講話的角色，也不會覺得無聊，或許他不會把角色填滿整個畫面是原因之一？如果有 Wes Anderson 電影的馬拉松我一定參加。</p>
+
+<h2 id="minecraft-麥塊電影">MINECRAFT 麥塊電影</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/AOaXXJUdXds" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>身為玩了麥塊幾十年的玩家，對於麥塊 IP 能影視化也是很期待，但這部電影對我來說還滿失望的。這部電影基本上就是由迷因構成的，Jack Black 動不動就開始唱迷因歌，或是讓兩個漢子做出愚蠢的行為，沒什麼劇情成份。進到麥塊世界的四人也對這個世界格格不入，雖然是被拖進麥塊世界的，想說會學習這個世界的穿著，或是能想出有趣的合成配方，但幾乎是拿現成的道具直接使用與戰鬥，只有主角有在「玩」。或許因為目標客群的關係？有迷因就可以讓電影超受歡迎了吧。</p>
+
+<h2 id="不可能的任務最終清算">不可能的任務：最終清算</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/f1RNAslZPlY" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>現在看不可能的任務就是看阿湯哥秀新的特技演出了。在雙翼機的機翼上到處攀爬，被風壓吹到頭髮跟臉都變形。讓人完全感受到在飛機上面有多快，如果在棚內的話就完全無法表現這種風壓感。下一幕降落傘被燒掉的特技也是讓人屏息。</p>
+
+<p>但劇情上就顯得普通，因為對手是控制全世界網路而且可以預測行動的 AI。阿湯哥在說服高層一律相信我之術，但我不能跟你說計劃，都是 AI 刻意讓我們有猜疑啦。連對策討論也開始推疊聽起來很高科技的名詞，越看越不想理解對策合不合理，也不懂最後為何在一個無法通訊的地方可以做到訊號同步，反正 it works。而且這一次導演很喜歡用你一句我一句他一句的方式來討論對策，或是在做出決定時，一群人一句一句跟你說風險。雖然可以避免解說太無聊，也有戲劇性，但濫用的結果就是很出戲。</p>
+
+<p>看一看覺得就算做近未來有高科技的設定，武力最高點還是只有核武，我還期待說其實外太空有衛星軌道砲被 AI 控制，可以直接從外太空打擊人類。</p>
+
+<h2 id="超時空武士">超時空武士</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/5gYsv_bODtk" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>幕末時期，屬於擁幕派的高坂新左衛門奉命刺殺倒幕派的山形彦九郎。在對決時一場大雨襲來，高舉武士刀的高坂被大雷劈到，醒來時發覺自己身在時代劇的片場裡。不知所措的他，以為正在拍戲的村女正被壞蛋纏上，上前拔刀相助，搞得大家一頭霧水。但也誤打誤撞，靠一身武打底子與武士氣質（就是武士XD），在這個現代社會開始了扮演武士臨演的生涯。</p>
+
+<p>看劇名會以為這是一部主打古代人跑到現代，不適應現代生活的搞笑電影。但其實是探討的是認同事物的消失與如何再堅持自己的武士道，有歡笑也有淚水。剛被傳送到現代時的不安，認同之物突然消失的無力感，一心只想再回到幕末與同袍一同作戰。隨著劇情推進，從黑船來襲展覽的海報，得知幕府早就倒台。主角開始也接受這一切，並樂於擔任武打臨演，後來甚至得到男二的角色。後來遇到另一位也被傳送過來的幕末人士，但前後相差 30 年，對於回去幕末也早就不再考慮。最後在一次演出的劇本中知道擁幕派的下場悽慘。主角才發覺認同之物完全消失，也沒能守護同袍，而自己只能生活在這個武士道完全沒有用處時代。既然無法回去，於是決心在時代劇裡，把武士精神傳遞下去。</p>
+
+<p>雖然還是少不了因為時代不同造成的搞笑橋段。不過整部電影中，主角即使融入現代生活，還是保持自己的武士風度，而不是變成一位普通現代人。滿喜歡他與另一位被傳送過來的幕末人辦論放棄自己所信之物的這段戲。。甚至還拒絕接下成為電影男二的機會，但現代朋友卻要他別那麼傻。從信念衝突，到接受，到發覺不該放棄，以及最後選擇能保持信念的方式，非常好看。</p>
+
+<h2 id="腓尼基計劃">腓尼基計劃</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/GL7_9piv2UU" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>之前錯過《小行星城》，這次看到 Wes Anderson 的《腓尼基計劃》要上映當然抓緊時間去看。不過相比於之前的作品，我覺得《腓尼基計劃》就只剩 Wes Anderson 的對稱了。劇情的部份不知道是不是因為受限電影長度的關係，很多配角出現一兩幕就沒了，感覺只是為了劇情能繼續下去而存在，所以在搞清楚狀況前就過了。而且幽默感也相比之前沒那麼多，有些場景或劇情是有趣的，但不會到讓人會心一笑。</p>
+
+<h2 id="f1-電影">F1 電影</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/HZVkIQui-Hc" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>身為 F1 粉絲當然沒錯過這部電影，而且趁著這次看《F1 電影》順便體驗 ScreenX 影廳。ScreenX 是由一個主螢幕搭配兩個延伸到後排的副螢幕組成。兩片副螢幕的畫面其實不會太精細，是用來模擬人的視野可以看到的內容，來增強觀影體驗，觀看時還是一樣專注在主螢幕的內容就可以。</p>
+
+<p><img src="/assets/images/blog/2026/2026-06-20-watched-movies-in-2025/screen-x.png" alt="screen-x" />
+<em>ScreenX 是由主螢幕（較白的部份）跟兩個副螢幕（較灰的部份）組成</em></p>
+
+<p>《F1 電影》這次所有賽車片段都有 ScreenX 的畫面，在沒有 ScreenX 的情況下會用淡入淡出來避免突兀感，比較可惜的是 ScreenX 的畫面呈現還是很平面，所以你不會看到旁邊的車子從左右兩邊出來，畢竟不是用 360 度攝影機拍攝的。至於音效還是強調引擎聲，如果在杜比廳體驗應該更好。但沒有把壓路緣石跟刮柏油的聲音弄出來也是有點可惜，不過對我來說，再怎麼作還是比不上現場體驗好哈哈。</p>
+
+<p>至於劇情部分就是老套路線，傳奇突然消失，被好友找回來拯救瀕臨脫手的車隊，順便教教桀驁不馴的年輕隊友。很棒的是親熱戲只有兩個畫面（我真的很討厭這種英雄式電影放床戲），六成時間都在賽車，體驗上還算不錯。只是對我這個 F1 粉絲來說，主角的開車手法太髒了，而且這樣搞是有可能被取消資格的。然後壞人為了車隊能順利脫手假造文件上報 FIA，也不是說說我們發現假造，然後就沒事了。但樂趣就是看到 F1 車手，而且還請賓士、法拉利、麥拉倫的車隊總監出來尬講幾句。岡瑟小寶貝也有客串，可惜沒有台詞，本來還希望聽到他罵的髒話的XD</p>
+
+<h2 id="塗鴉日記">塗鴉日記</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/IsMEdPChZnM" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>感謝朋友找我去看《塗鴉日記》電影版，沒想到還是作者特別場！</p>
+
+<p><img src="/assets/images/blog/2026/2026-06-20-watched-movies-in-2025/movie-blank-canvas-special-event.png" alt="movie-blank-canvas-special-event" />
+<em>作者親臨現場，也分享很多幕後故事</em></p>
+
+<p>原作是作者東村明子的半自傳漫畫，講述高中時遇到日高老師後，如何因此讓她趟上成為漫畫家的道路。電影版劇情主要專注在她和老師的互動上，聽說漫畫原作還有很多關於創作的過程。</p>
+
+<p>雖然劇情就是挺典型的日劇路線，誤打誤撞認識老師 → 不服老師 → 發生爭吵決定逃避 → 後悔 → 解開心結。也把老師的刀子口，豆腐心呈現地很好，老師罵歸罵，但主角有困難還是會伸手幫忙，連到了作者到外地讀大學時，也一直打電話關心。當然前面吵得越大，後面就哭得越厲害。直到老師生病得座輪椅時，還是心心念念作者有沒有繼續練習，而且說好要一起辦的聯展。</p>
+
+<p><img src="/assets/images/blog/2026/2026-06-20-watched-movies-in-2025/signed-poster.png" alt="signed-poster" />
+<em>沒想到還有作者的親簽海報！</em></p>
+
+<p>而作者上美術大學後一直蹺課這點實在過於真實了，有上過大學都能體會到這一點。作者在電影結束後的 QA 中也有說到，用占卜法來過術科測驗的事情也是真的，沒想到考試猜題真的可以靠玄學。無論有沒有看過原作，喜歡日劇的話都值得一看！</p>
+
+<h2 id="小林家的龍女僕害怕寂寞的龍">小林家的龍女僕：害怕寂寞的龍</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/I8qNmENLSeQ" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>這次電影的主角是康娜，並揭露她在龍世界的身世以及與父親的關係。康娜與父親原本很親近，但是自從龍族之間的關係箭拔弩張後，身為軍團首領的父親就很少與康娜互動了。當時的康娜為了讓父親不要在專注在戰爭上，而故意把聚集魔力的「龍玉」給破壞掉，但此舉也讓康娜被趕出龍族，而來到人類的世界。到了劇場版的時間點，康娜的父親帶著軍師一同到訪小林家，很不客氣地要小林把康娜還給他，而且要康娜製作新的龍玉，以為了大戰作準備。想當然身為幹練社會人的小林覺得事有蹊蹺，也不希望康娜再度受到傷害，決定進到龍世界「修復」婦女之間的關係。</p>
+
+<p>從電影標題就可以知道康娜渴望父愛，但害怕激怒父親的她，這份感情一直説不出口。最喜歡的一幕是康娜坐在小林的大腿上談心，談到最後康娜默而不語，接著帶到一旁的水龍頭滴下一滴水。這一幕雖然只有康娜的側臉，但透過水龍頭滴水的意象來暗示康娜最後流淚了，很喜歡京阿尼用借代的手法來呈現情感。康娜要返回龍世界前ㄧㄧ向認識的朋友道別也是越看越揪心。</p>
+
+<p>當然不難知道整個事件的幕後主使者是誰，龍族之間也是因為被妖言惑眾而互相猜忌，覺得龍的本性真的太過善良了。身為人類的小林這次在龍世界的表現也相當活躍，為了讓小林不要太快出場出來解決事情，還讓她在龍世界大大冒險一番。這次的驚喜是片尾曲由一樣姓「小林」的演歌天后小林幸子演唱，她也有為其中一個配角獻聲，電影片尾曲配上演歌也是很新奇的體驗。</p>
+
+<h2 id="五星主廚快餐車">五星主廚快餐車</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/EA7XbrK7b50" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>第一次知道《五星主廚快餐車》這部電影，是在 YouTube 上被推了他們第一次做古巴三明治的片段，從那時候就一直對這部電影有興趣。</p>
+
+<p>一直只能做「經典料理」的主廚卡爾，在一次評論家來餐廳用過餐後，在推特上評論他的料理只想請求可憐、了無新意。卡爾看到後氣奮地在推特上跟他筆戰，並下戰帖說要再給評論家嚐嚐他真正的獨創料理。然而到了當天，還是被老闆要求一樣只能做經典料理，卡爾一氣之下離開餐廳。沒了工作又成為網路迷因的卡爾回到邁阿密後，品嚐到道地的古巴三明治。決定自己來經營餐車，從美國東岸一路開回西岸，除了能貫徹自己的料理信念，做出自己喜歡與為了客人的料理，也為了彌補因為工作而疏於照顧的親子關係。</p>
+
+<p>整部電影有六成的畫面都在做料理，而且細節拍得很清楚，看得真的很過癮。也很喜歡用做料理的過程來帶入卡爾的心情，像是愉快的夜晚做一道料理給女同事，或是在離開餐廳的那晚，回到自己的廚房做了一大堆自己原本想做的料理。另外音樂也很過癮，選曲全是拉丁爵士、紐奧良爵士、藍調，只要音樂一下，就知道接下來有料理畫面可以一起享受了。看完後，就決定把這部電影列入我最喜歡的電影之一了XD</p>
+
+<h2 id="8-號出口">8 號出口</h2>
+
+<!-- Courtesy of embedresponsively.com -->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/79h2dx6bDMQ" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>不玩恐怖遊戲的我因為覺得《8 號出口》的機制很有趣，就算會被嚇到還是硬著頭皮下去玩了。雖然之前看過實況，知道其中幾個異常，但在遊戲中遇到時還是會起雞皮疙瘩，尤其我對 jump scare 的抗性趨近於零啊。</p>
+
+<p>這個同名改編電影也有復刻遊戲中經典的異常，但也多了不少的獨創異常。電影把《8 號出口》設計成是一個心靈空間，暗指一個人如果逃避問題的話，就會一直陷入痛苦循環。主角就是為了逃避催婚與女友又懷孕的事實，而被困在 8 號出口的迴廊中。在電影中比較有趣的設定是那位每次都會經過你身邊的大叔，居然是上一輪循環的失敗者。電影鏡頭隨著這位大叔走到轉角後，原本以為是 NPC 的他，居然大喘一口氣放鬆下來，順暢地把主線拉到大叔當時遭遇的循環。大叔當時就是因為走不出去，而成為機制的一部分了。另外一個有趣的設定是，這個空間似乎還是一個時空交錯的地方，在第三段的視角中，主角還與一位可能是主角小時候的人相遇了，這個小男孩也成為主角能夠離開 8 號出口的關鍵。</p>
+
+<p>可惜的是電影在氛圍的呈現上會讓人出戲。應該是為了營造玩遊戲當下的氣氛感，前面就看著主角一直在裡面繞圈圈，對有玩過遊戲的人來說，節奏就有點慢。還好在就快要不耐煩的時候，才把主線拉到大叔身上。再加上主角有氣喘的設定，所以為了表達主角現在很緊張，就會一直看著他瘋狂喘氣。另外特效也表現也不太好，所以有些異常看起來反而更荒繆。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="電影" /><category term="心得" /><summary type="html"><![CDATA[終於也把在 2025 年看過的電影整理出來了！在這一年一共看了 17 部電影，當中最喜歡的就是《五星主廚快餐車》，相當喜歡這部電影的音樂、劇情與料理過程。這一年也看了比較多的日本電影，其中《八犬傳》與《超時空武士》也相當喜歡。另外也趁著影展又再次看了湯淺政明的《心靈遊戲》與 Wes Andserson 的《犬之島》，這兩位導演也是我最喜歡導演之二。]]></summary></entry><entry><title type="html">[電影]《花綠青綻放之時》- 事物都會結束，但重點是要怎麼結束</title><link href="https://lankudot.airfishlab.com/blog/2026-06-the-new-dawn/" rel="alternate" type="text/html" title="[電影]《花綠青綻放之時》- 事物都會結束，但重點是要怎麼結束" /><published>2026-06-06T00:00:00+08:00</published><updated>2026-06-06T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-new-dawn</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-06-the-new-dawn/"><![CDATA[<p>《花綠青綻放之時》也是 2026 金馬影展的開幕片，原本也想在影展觀賞這部電影，可惜播放時段都無法參加，好在這部片後來也上院線，當然就把握機會囉。</p>
 
 <!-- Courtesy of embedresponsively.com -->
 
@@ -239,171 +472,7 @@
 
 <h2 id="先求有但別繞路">先求有，但別繞路</h2>
 
-<p>所以如果知道要做的功能未來會怎樣時，最好一開始就以此為方向來開發功能，還沒有所需資料或素材就用暫代的。像戰鬥系統就算還沒有動畫，可以先用幾何形狀拉簡單示意動作，如果不用幾何形狀，也可以先把動作的時長用兩個 keyframe 簡單表示就好。因為前期的重點是把戰鬥事件實作出來，先驗證這些事件在遊戲中如何運作比較好。等到可以套上動畫之後，就可以以此為基礎，去調整事件的功能。想想如果當初就這樣做的話，就可以少花這兩個月的時間了 :cry:。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 九日篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 九日篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-02-nine-sols</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/"><![CDATA[<p>今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。</p>
-
-<h2 id="兩年的噩夢找尋九日類隻狼系統的誕生">兩年的噩夢找尋，九日類隻狼系統的誕生</h2>
-
-<p>這場分享《九日》是如何找到現在的類隻狼玩法，要找到突破點花了相當多的時間，其中的過程也很辛苦。</p>
-
-<ul>
-  <li>世界觀設定
-    <ul>
-      <li>「道龐克」</li>
-      <li>一個太陽對九個太陽的復仇</li>
-      <li>外星人來到地球留下了道教科技與故事</li>
-    </ul>
-  </li>
-  <li>想到以動作加上銀河戰士的玩法
-    <ul>
-      <li>九個太陽所在的九個區域對應他們各自的設定</li>
-    </ul>
-  </li>
-  <li>八個月就完成有基本玩法與畫面的「Hollow Cat」</li>
-  <li>但為了避免 Hollow Knight 感花了一陣子，也打掉第一版，並重新思考機制
-    <ul>
-      <li>2D 版隻狼？但慢節奏、沒 Y 軸戰鬥、沒平台挑戰</li>
-      <li>參考《Katana Zero》為了要快節奏，不加入對峙，也沒有體幹值</li>
-      <li>想要有平台挑戰，加入空中格擋</li>
-      <li>但如《Katana Zero》的快節奏，敵人看一兩次就被打倒，與隻狼要對招一兩次所帶來的深度不同</li>
-    </ul>
-  </li>
-  <li>又回到類銀河的玩法上，但把體幹值改成點數制
-    <ul>
-      <li>要格擋才有氣能貼符</li>
-      <li>為了避免等格擋時機而太被動，加入普攻來算節奏</li>
-      <li>為了以格擋為主，普攻的攻擊力比貼符還要低很多</li>
-      <li>避免一直按普攻，普攻三連擊的第三下無法直接進入格擋</li>
-      <li>敵人被普攻打中後，會減攻擊 cd，讓敵人更容易主動攻擊，來讓玩家有機會格擋</li>
-    </ul>
-  </li>
-  <li>加入潛行？
-    <ul>
-      <li>2D 畫面視野很小，而且角色動很快不適合潛行，而且每個敵人也要設計暗殺動畫</li>
-      <li>最後改成「背襲」</li>
-      <li>但關卡還是有潛行的設計，如被電之後行動不便，只能潛行</li>
-    </ul>
-  </li>
-  <li>貼符的體驗
-    <ul>
-      <li>貼符到懸崖邊會自動停住，避免瞬移距離過長而掉落</li>
-      <li>在地面貼符時，會先瞬步到敵人前再貼符，再繼續瞬步一段距離，但是在空中貼符則會直接貼</li>
-    </ul>
-  </li>
-  <li>把技能樹當教學用
-    <ul>
-      <li>例如：點了背襲技能，知道可以背襲</li>
-    </ul>
-  </li>
-  <li>大家對技能功效有不同的想像，有人想加有人不想，做成玉石系統來讓玩家自已選</li>
-  <li>如何知道找到醬汁了？成功讓玩家想要一做再做</li>
-</ul>
-
-<h2 id="九日戰鬥設計雜談">《九日》戰鬥設計雜談</h2>
-
-<p>這場一樣有分享到《九日》開案時的構想，並且著重在怪物行為的設計，以及攻擊模式的小技巧，讓戰鬥更豐富。</p>
-
-<ul>
-  <li>開案起源
-    <ul>
-      <li>《返校》跟《還願》還是以華語圈為主，新作方向能否打入歐美市場？</li>
-      <li>以玩法為核心能否有文化穿透力？像《Dead Cells》跟《Hollow Knight》</li>
-    </ul>
-  </li>
-  <li>參考《Hollow Knight》，但是不是只能做出劣化版的《Hollow Knight》</li>
-  <li>風格找尋：<br />
-<img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/nine-sols-style-coordinate.svg" alt="nine-sols-style-coordinate" />
-    <ul>
-      <li>當然在 2D 以格擋為主的風格下，還是有其它遊戲</li>
-    </ul>
-  </li>
-  <li>以格擋為主，所以要引導玩家用格擋
-    <ul>
-      <li>普攻傷害低，貼符有大傷害 ← 要格擋才有氣能貼符</li>
-    </ul>
-  </li>
-  <li>怪物製作流程，實際執行時沒有清楚細分步驟，但為了演講還是整理出大致統程
-    <ol>
-      <li>前期溝通：確定怪物定位，如：難度、外貌、參考對象</li>
-      <li>灰盒驗證：設計戰鬥的 fantasy（要帶來什麼樣的感覺）
-        <ul>
-          <li>讓玩家要用什麼 pattern 來對應</li>
-          <li>Boss 攻擊前的動作能不能讓玩家找到對招時機</li>
-          <li>這時就會在 animation clip 上做怪物行為</li>
-        </ul>
-      </li>
-      <li>美術原型：在 animation clip 上套皮，看感覺</li>
-      <li>程式美術整合：在套皮後重調數值，再看感覺</li>
-      <li>內部測試：內部回饋、改善</li>
-      <li>後期：套音效、特效</li>
-      <li>外測：玩家公開測試</li>
-    </ol>
-  </li>
-  <li>在量產期會做前五個步驟，但是在打磨階段才會做後期與外測</li>
-  <li>戰鬥難，讓玩家克服時有成就感，感覺「原來我可以做到」</li>
-  <li>怪的攻擊有一定節奏，但是後期怪的攻擊脫離前面的節奏會帶來難度，也會有新奇感</li>
-  <li>一些攻擊模式的技巧
-    <ul>
-      <li>利用位移來做攻擊前置動作，如：水鬼</li>
-      <li>過身：攻擊時，怪物會穿過玩家到另一邊</li>
-      <li>脫手攻擊：出招後，那招會延遲攻擊（如：緩慢的投射物），讓怪物可以再開其它招</li>
-      <li>以預期讓玩家的輸入 pattern 來設計招式</li>
-      <li>玩家一直按格擋會縮段精準格擋的窗口</li>
-      <li>終結技可以輸出大傷害，作為獎勵
-        <ul>
-          <li>boss 打完一輪的休息窗口，讓玩家可以輸出大量傷害</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="為九日而研發的狀態機架構monofsm">為《九日》而研發的狀態機架構《MonoFSM》</h2>
-
-<p>最近在開發上在煩惱角色狀態機的設計，所以這場也是有興趣的演講之一。演講主要圍繞在 MonoFSM 為什麼會誕生，雖然沒有著墨太多技術上的細節，但是在製作 prototype 時的經驗分享也很受用。</p>
-
-<ul>
-  <li>第一階段為了開發要快而硬 A，使出戰術龍捲風！
-    <ul>
-      <li>但當內容一多就開始 A 不動，程式碼耦合重、bug 不好修，而且很難加入新功能</li>
-    </ul>
-  </li>
-  <li>遊戲開發架構金字塔由底層到塔頂依序為：
-    <ul>
-      <li>引擎：開發使用的遊戲引擎</li>
-      <li>系統：為遊戲功能開發的功能</li>
-      <li>資料：功能所需要的設定、數值、素材等</li>
-      <li>設計：遊戲玩法、功能、行為等</li>
-      <li>體驗：遊戲給玩家的殘體驗</li>
-    </ul>
-  </li>
-  <li>而戰術龍捲風就是把系統、資料、設計全部混在一起做</li>
-  <li>第二階段開始把資料抽離出來，利用 animation clip 來綁定動畫及開關元件或事件（絕對不要用 Event 來開關）
-    <ul>
-      <li>好處是可以在同一個地方編輯動畫及事件，也可以視覺化資料</li>
-    </ul>
-  </li>
-  <li>到量產期後發現需要重新設計架構
-    <ul>
-      <li>參考 visual scripting 把邏輯跟系統分離</li>
-      <li>要支援 prefab</li>
-      <li>可以通用的 FSM 設計</li>
-    </ul>
-  </li>
-  <li>用 MonoBehaviour 來描述狀態與狀態轉換，且基於 prefab 的 MonoFSM 誕生了
-    <ul>
-      <li>在 Hierarchy 顯示 FSM 的狀態及相關變數的數值</li>
-      <li>Per-instance Debugging：可以以 GameObject 為單位來 debug，不用在程式碼中寫 debug 訊息</li>
-    </ul>
-  </li>
-  <li>漸近重構
-    <ul>
-      <li>實驗期：在小地方嘗試，先展現價值</li>
-      <li>推動期：新內容用新規格作。舊的東西有 bug 或想調整太難做的話，也替換成新架構</li>
-      <li>能動的東西就不要改!</li>
-    </ul>
-  </li>
-  <li>團隊應該集中在「遊戲體驗」上，作工具就是為了加速迭代</li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 遊戲設計篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 遊戲設計篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-03-game-design</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/"><![CDATA[<p>這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。</p>
+<p>所以如果知道要做的功能未來會怎樣時，最好一開始就以此為方向來開發功能，還沒有所需資料或素材就用暫代的。像戰鬥系統就算還沒有動畫，可以先用幾何形狀拉簡單示意動作，如果不用幾何形狀，也可以先把動作的時長用兩個 keyframe 簡單表示就好。因為前期的重點是把戰鬥事件實作出來，先驗證這些事件在遊戲中如何運作比較好。等到可以套上動畫之後，就可以以此為基礎，去調整事件的功能。想想如果當初就這樣做的話，就可以少花這兩個月的時間了 :cry:。</p>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="開發日誌" /><summary type="html"><![CDATA[很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 遊戲設計篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 遊戲設計篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-03-game-design</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-03-game-design/"><![CDATA[<p>這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。</p>
 
 <h2 id="當敵人先出剪刀淺談戰鬥關卡設計的四個層級與選擇引導">當敵人先出剪刀：淺談戰鬥關卡設計的四個層級與選擇引導</h2>
 
@@ -570,195 +639,168 @@
       <li>讓遊戲會對音樂互動</li>
     </ul>
   </li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - CDPR 篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - CDPR 篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-01-cdpr</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-01-cdpr/"><![CDATA[<p>今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。</p>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[這篇包含了三場演講，侍達遊戲的戰鬥設計主管分享如何設計戰鬥，而《Patrick’s Parabox》則分享開發過程與如何設計解謎遊戲，最後是 Ferran 分享音樂遊戲不只有節奏遊戲，還有更多可以探索的方向。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 九日篇</title><link href="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 九日篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/2025-tgdf-notes-02-nine-sols</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-2025-tgdf-notes-02-nine-sols/"><![CDATA[<p>今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。</p>
 
-<p><img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/pass.png" alt="參加證" /></p>
+<h2 id="兩年的噩夢找尋九日類隻狼系統的誕生">兩年的噩夢找尋，九日類隻狼系統的誕生</h2>
 
-<h2 id="電馭叛客-2077解碼電影動畫的祕密">《電馭叛客 2077》：解碼電影動畫的祕密</h2>
-
-<p>這場演講是 CDPR 帶來的兩場演講之一。首席電影動畫師 David Cordero Iglesias 介紹在《電馭叛客 2077》中，如何讓 NPC 更生動自然，以及更真實的第一人稱敘事運鏡，讓玩家更有沉浸感。</p>
-
-<h3 id="模擬現實互動">模擬現實互動</h3>
+<p>這場分享《九日》是如何找到現在的類隻狼玩法，要找到突破點花了相當多的時間，其中的過程也很辛苦。</p>
 
 <ul>
-  <li>減少黑幕切換
+  <li>世界觀設定
     <ul>
-      <li>NPC 在場景中會自然對話，直到玩家進來互動後，會自然結束跟其它 NPC 的對話，並轉頭過來開始跟玩家的劇情對話</li>
-      <li>利用牆面設置位置來避免玩家看到 NPC 重置的不連續感。例如：在一個追逐從後門逃跑的 NPC 的劇情中，玩家可以選擇追上去，或是從前門繞路追上他，而 NPC 一定會在暗巷中被夥伴給攔住。利用牆面的 90 度轉角，讓玩家走過牆面後，才會看到事件發生。</li>
-      <li>但遊戲中還是會為了玩家昏厥或是醒來的情境使用黑幕</li>
+      <li>「道龐克」</li>
+      <li>一個太陽對九個太陽的復仇</li>
+      <li>外星人來到地球留下了道教科技與故事</li>
     </ul>
   </li>
-  <li>玩家控制角色的能力可以分成四個層級，增強敘事能力
+  <li>想到以動作加上銀河戰士的玩法
     <ul>
-      <li>第一階：玩家可以自由控制角色</li>
-      <li>第二階：部份控制被限制。例如：搬重物時，移動速度變慢</li>
-      <li>第三階：只能移動視角，而且角度有限制。例如：被壓制在地上時</li>
-      <li>第四階：劇情控制，玩家完全無法操作</li>
+      <li>九個太陽所在的九個區域對應他們各自的設定</li>
     </ul>
   </li>
-  <li>NPC 自然動作
+  <li>八個月就完成有基本玩法與畫面的「Hollow Cat」</li>
+  <li>但為了避免 Hollow Knight 感花了一陣子，也打掉第一版，並重新思考機制
     <ul>
-      <li>NPC 的動作反應這個 NPC 的個性</li>
-      <li>NPC 在等待玩家回答時，會繼續做手邊正在做的事情，例如：吃一口飯、繼續看雜誌，而不會呆呆看著你</li>
+      <li>2D 版隻狼？但慢節奏、沒 Y 軸戰鬥、沒平台挑戰</li>
+      <li>參考《Katana Zero》為了要快節奏，不加入對峙，也沒有體幹值</li>
+      <li>想要有平台挑戰，加入空中格擋</li>
+      <li>但如《Katana Zero》的快節奏，敵人看一兩次就被打倒，與隻狼要對招一兩次所帶來的深度不同</li>
     </ul>
   </li>
-  <li>敘事運鏡要視野清晰
+  <li>又回到類銀河的玩法上，但把體幹值改成點數制
     <ul>
-      <li>要避免 3D 暈，可以找會 3D 暈的同事來測試 :D</li>
-      <li>利用 Framing（決定什麼內容要出現在畫面中） 與 Composition（排列在畫面中的這些內容），讓玩家快速理解目前正在發生的事情。例如：在跑酷劇情下，讓手腳一部份出現在畫面中，提示動作的來源，並用攝影機的位移來呈現慣性</li>
+      <li>要格擋才有氣能貼符</li>
+      <li>為了避免等格擋時機而太被動，加入普攻來算節奏</li>
+      <li>為了以格擋為主，普攻的攻擊力比貼符還要低很多</li>
+      <li>避免一直按普攻，普攻三連擊的第三下無法直接進入格擋</li>
+      <li>敵人被普攻打中後，會減攻擊 cd，讓敵人更容易主動攻擊，來讓玩家有機會格擋</li>
     </ul>
   </li>
-  <li>身體意識
+  <li>加入潛行？
     <ul>
-      <li>玩家坐定後，仍然可以自由移動視角，模擬現實談話人會亂看</li>
-      <li>在劇情拿槍時，攝影機會照向拿槍的手，模擬現實的視線移動</li>
-      <li>被 NPC 拉著走時，無法控制位移或是視角</li>
+      <li>2D 畫面視野很小，而且角色動很快不適合潛行，而且每個敵人也要設計暗殺動畫</li>
+      <li>最後改成「背襲」</li>
+      <li>但關卡還是有潛行的設計，如被電之後行動不便，只能潛行</li>
     </ul>
   </li>
-  <li>環境意識
+  <li>貼符的體驗
     <ul>
-      <li>角色會自然看向環境中可以互動的物件</li>
-      <li>在場景中也要標記這些可互動的物件，及如何互動</li>
+      <li>貼符到懸崖邊會自動停住，避免瞬移距離過長而掉落</li>
+      <li>在地面貼符時，會先瞬步到敵人前再貼符，再繼續瞬步一段距離，但是在空中貼符則會直接貼</li>
     </ul>
   </li>
-  <li>手指細節
+  <li>把技能樹當教學用
     <ul>
-      <li>真實的手指反應，例如：把完拿取的物件，或是彈吉它時的手指行為</li>
-      <li>有一整個手指資料庫</li>
+      <li>例如：點了背襲技能，知道可以背襲</li>
     </ul>
   </li>
+  <li>大家對技能功效有不同的想像，有人想加有人不想，做成玉石系統來讓玩家自已選</li>
+  <li>如何知道找到醬汁了？成功讓玩家想要一做再做</li>
 </ul>
 
-<h3 id="動畫技術">動畫技術</h3>
+<h2 id="九日戰鬥設計雜談">《九日》戰鬥設計雜談</h2>
+
+<p>這場一樣有分享到《九日》開案時的構想，並且著重在怪物行為的設計，以及攻擊模式的小技巧，讓戰鬥更豐富。</p>
 
 <ul>
-  <li>動捕很重要
+  <li>開案起源
     <ul>
-      <li>自然真實的動畫源自現實的動作</li>
-      <li>即使是第一人稱視角遊戲，還是會錄玩家角色的動作</li>
+      <li>《返校》跟《還願》還是以華語圈為主，新作方向能否打入歐美市場？</li>
+      <li>以玩法為核心能否有文化穿透力？像《Dead Cells》跟《Hollow Knight》</li>
     </ul>
   </li>
-  <li>還是有 key frame 動畫
+  <li>參考《Hollow Knight》，但是不是只能做出劣化版的《Hollow Knight》</li>
+  <li>風格找尋：<br />
+<img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/nine-sols-style-coordinate.svg" alt="nine-sols-style-coordinate" />
     <ul>
-      <li>機具行為，車輛的互動</li>
-      <li>整理動捕資料</li>
+      <li>當然在 2D 以格擋為主的風格下，還是有其它遊戲</li>
     </ul>
   </li>
-  <li>提供跨軟體平台的整合資料庫
+  <li>以格擋為主，所以要引導玩家用格擋
     <ul>
-      <li>動畫師可以自由選擇製作的動畫軟體</li>
+      <li>普攻傷害低，貼符有大傷害 ← 要格擋才有氣能貼符</li>
     </ul>
   </li>
-  <li>動畫類型可以分成待機動作（Idle Animation）與象徵動作（Gesture Animation）
-    <ul>
-      <li>以抽煙來說，待機動作是拿著煙，而象徵動作則可以是吸一口煙或是丟煙等動作</li>
-      <li>動作之間也會設定轉換（Transition）</li>
-      <li>也有完全設定好的客制動畫，例如：彈吉他、劇情用動畫</li>
-      <li>在《電馭叛客 2077》中有七千多個待機動作，三萬五千多個象徵作，以及更多的動畫轉換</li>
-    </ul>
-  </li>
-  <li>有內部工具來管理與編輯動畫的轉換
-    <ul>
-      <li>角色的動畫為 workspot，編輯工具可以設置轉換條件與觸發來效果</li>
-      <li>workspot 之間的互動也可以編輯，例如：兩個 NPC 在聊天時的動作</li>
-      <li>在開放世界中，讓 workspot 自行決定要做的事情，讓玩家經過同一個地方時，NPC 的行為也會不一樣</li>
-      <li>在劇情場景中，workspot 可以在玩家回答前，自由播放待機動畫，使 NPC 更自然</li>
-    </ul>
-  </li>
-  <li>臉部動畫也有對應的待機動作及象徵動作
-    <ul>
-      <li>對於有真實演員的 NPC，也會把臉部變化（如皺紋）key frame 進去</li>
-    </ul>
-  </li>
-  <li>嘴型會隨輸入聲音變化，不同語言的語音會呈現不同嘴型</li>
-</ul>
-
-<h3 id="劇情動畫製作流程">劇情動畫製作流程</h3>
-
-<ol>
-  <li>分鏡：簡單場景設置與運鏡來驗證劇情動畫的觸發流程</li>
-  <li>動捕：分段拍攝劇情所需的動畫</li>
-  <li>Alpha：直接把動捕資料套入場景中並加入運鏡</li>
-  <li>Beta：消除鏡頭過度晃動，套入 IK 並跟場景物件互動</li>
-  <li>加入失敗動畫，如 QTE 失敗後的結果</li>
-</ol>
-
-<h2 id="解鎖隱藏價值cdpr-式最終產品背後的-ux">解鎖隱藏價值：CDPR 式「最終產品背後的 UX」</h2>
-
-<p>CDPR 的第二場演講則是以內部工具的 UX 體驗為主題，資深 UX/UI 設計師 Anna Nojek 認為，有好的內部開發工具，能讓開發人員能有好的開發體驗，進而能開發出好的遊戲。</p>
-
-<h3 id="好的開發環境造就好的遊戲體驗">好的開發環境造就好的遊戲體驗</h3>
-
-<ul>
-  <li>讓玩家能享受遊戲的要素很多，像是故事、玩法、挑戰性等，但對開發者來說讓玩家能享受遊戲的要素是來自好的開發體驗。以開發體驗為優先，能讓開發者發揮能力，最後做出好的遊戲體驗。</li>
-  <li>以往開發環境的問題
-    <ul>
-      <li>資源及知識過於分散：asset 散佈在不同平台且不同格式，要找一個 asset 很困難</li>
-      <li>資訊透明度差：大家各自做各自的</li>
-      <li>客制的開發流程：鎖碎及複雜的開發流程，甚至佔了開發 50% 的時間</li>
-      <li>過度依賴其它人：如果一個人卡住了，其它人也不能做事</li>
-      <li>只專注在功能：開發工具的人不熟使用者的習慣，只專注在實作功能上，讓工具不好使用</li>
-    </ul>
-  </li>
-  <li>當開發者面臨的問題沒有解決的話，會感到挫折，讓作品延期、容易出 bug，甚至感到心累，最後產出不好玩的遊戲</li>
-</ul>
-
-<h3 id="了解問題">了解問題</h3>
-
-<ul>
-  <li>製作工具先暫時處理問題，再改善解法
-    <ul>
-      <li>情境：企劃要找一個素材得要問一堆人才找的到</li>
-      <li>暫時解法：開一個共用的 excel 表單，請製作人員匯出素材時，去更新表單的狀態</li>
-      <li>長期解法：製作人員匯出素材後，自動更新資料庫</li>
-      <li>暫時解法得由人工操作，但可以暫時解決企劃要依賴他人的問題。而長期解法則是自動化，是改善後的解法，一樣解決依賴問題，也讓製作人員不用手動更新</li>
-      <li>會先有暫時解法，等待時機成熟後，再實作長期解法</li>
-    </ul>
-  </li>
-  <li>開發出內部用的素材管理工具：Asset Hive
-    <ul>
-      <li>支援集中管理，能搜尋、複用、預覽素材的工具</li>
-    </ul>
-  </li>
-  <li>工具是提供問題的解法，但如果不了解問題，則作出工具也不能解決
-    <ul>
-      <li>要去了解、觀察、討論才能知道真正的問題所在</li>
-      <li>也不要只追隨請求，而是問為何需要這個請求</li>
-      <li>當有人傾聽別人的請求時，別人也會更有動力，且更積極</li>
-    </ul>
-  </li>
-  <li>作出好的工具讓開發人員能專注在創造工作，改善遊戲成品。透過使用體驗回報，也能培養反饋與支援的氛圍</li>
-</ul>
-
-<h3 id="工具與-ux">工具與 UX</h3>
-
-<ul>
-  <li>UX 是為了簡化執行某個特別任務的手段</li>
-  <li>UX 開發流程，每個階段都有機會退回上個階段
+  <li>怪物製作流程，實際執行時沒有清楚細分步驟，但為了演講還是整理出大致統程
     <ol>
-      <li>有人提出問題</li>
-      <li>討論、分析、面談問題</li>
-      <li>設計工具需要的功能有什麼</li>
-      <li>測試</li>
-      <li>設計介面</li>
-      <li>測試</li>
-      <li>交由工程人員開發功能</li>
-      <li>測試</li>
+      <li>前期溝通：確定怪物定位，如：難度、外貌、參考對象</li>
+      <li>灰盒驗證：設計戰鬥的 fantasy（要帶來什麼樣的感覺）
+        <ul>
+          <li>讓玩家要用什麼 pattern 來對應</li>
+          <li>Boss 攻擊前的動作能不能讓玩家找到對招時機</li>
+          <li>這時就會在 animation clip 上做怪物行為</li>
+        </ul>
+      </li>
+      <li>美術原型：在 animation clip 上套皮，看感覺</li>
+      <li>程式美術整合：在套皮後重調數值，再看感覺</li>
+      <li>內部測試：內部回饋、改善</li>
+      <li>後期：套音效、特效</li>
+      <li>外測：玩家公開測試</li>
     </ol>
   </li>
-  <li>以使用者為中心的溝通
+  <li>在量產期會做前五個步驟，但是在打磨階段才會做後期與外測</li>
+  <li>戰鬥難，讓玩家克服時有成就感，感覺「原來我可以做到」</li>
+  <li>怪的攻擊有一定節奏，但是後期怪的攻擊脫離前面的節奏會帶來難度，也會有新奇感</li>
+  <li>一些攻擊模式的技巧
     <ul>
-      <li>同理心地圖（Empathy Map）：展示使用者在使用工具時的想法、行為、言論、感受</li>
-      <li>使用者體驗地圖（User Journey Map）：展示使用者在使用工具達成任務時的使用流程，並標示每個階段的情緒、優缺點，以及如何改善</li>
+      <li>利用位移來做攻擊前置動作，如：水鬼</li>
+      <li>過身：攻擊時，怪物會穿過玩家到另一邊</li>
+      <li>脫手攻擊：出招後，那招會延遲攻擊（如：緩慢的投射物），讓怪物可以再開其它招</li>
+      <li>以預期讓玩家的輸入 pattern 來設計招式</li>
+      <li>玩家一直按格擋會縮段精準格擋的窗口</li>
+      <li>終結技可以輸出大傷害，作為獎勵
+        <ul>
+          <li>boss 打完一輪的休息窗口，讓玩家可以輸出大量傷害</li>
+        </ul>
+      </li>
     </ul>
   </li>
-  <li>省下來的時間 = 原本所需要的時間 - 改善後的時間 - 開發工具所需要的時間</li>
-  <li>UX 與所有人相關
+</ul>
+
+<h2 id="為九日而研發的狀態機架構monofsm">為《九日》而研發的狀態機架構《MonoFSM》</h2>
+
+<p>最近在開發上在煩惱角色狀態機的設計，所以這場也是有興趣的演講之一。演講主要圍繞在 MonoFSM 為什麼會誕生，雖然沒有著墨太多技術上的細節，但是在製作 prototype 時的經驗分享也很受用。</p>
+
+<ul>
+  <li>第一階段為了開發要快而硬 A，使出戰術龍捲風！
     <ul>
-      <li>團隊的製程：製程的架構流程</li>
-      <li>明確的目標：什麼樣的目標才算成功/完成</li>
-      <li>透明度與反饋回圈：工具一定是持續迭代的過程</li>
+      <li>但當內容一多就開始 A 不動，程式碼耦合重、bug 不好修，而且很難加入新功能</li>
     </ul>
   </li>
-  <li>回到一開始的問題：是什麼要素讓玩家能享受遊戲? 所有創作遊戲的人</li>
-</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。]]></summary></entry></feed>
+  <li>遊戲開發架構金字塔由底層到塔頂依序為：
+    <ul>
+      <li>引擎：開發使用的遊戲引擎</li>
+      <li>系統：為遊戲功能開發的功能</li>
+      <li>資料：功能所需要的設定、數值、素材等</li>
+      <li>設計：遊戲玩法、功能、行為等</li>
+      <li>體驗：遊戲給玩家的殘體驗</li>
+    </ul>
+  </li>
+  <li>而戰術龍捲風就是把系統、資料、設計全部混在一起做</li>
+  <li>第二階段開始把資料抽離出來，利用 animation clip 來綁定動畫及開關元件或事件（絕對不要用 Event 來開關）
+    <ul>
+      <li>好處是可以在同一個地方編輯動畫及事件，也可以視覺化資料</li>
+    </ul>
+  </li>
+  <li>到量產期後發現需要重新設計架構
+    <ul>
+      <li>參考 visual scripting 把邏輯跟系統分離</li>
+      <li>要支援 prefab</li>
+      <li>可以通用的 FSM 設計</li>
+    </ul>
+  </li>
+  <li>用 MonoBehaviour 來描述狀態與狀態轉換，且基於 prefab 的 MonoFSM 誕生了
+    <ul>
+      <li>在 Hierarchy 顯示 FSM 的狀態及相關變數的數值</li>
+      <li>Per-instance Debugging：可以以 GameObject 為單位來 debug，不用在程式碼中寫 debug 訊息</li>
+    </ul>
+  </li>
+  <li>漸近重構
+    <ul>
+      <li>實驗期：在小地方嘗試，先展現價值</li>
+      <li>推動期：新內容用新規格作。舊的東西有 bug 或想調整太難做的話，也替換成新架構</li>
+      <li>能動的東西就不要改!</li>
+    </ul>
+  </li>
+  <li>團隊應該集中在「遊戲體驗」上，作工具就是為了加速迭代</li>
+</ul>]]></content><author><name>烏龜</name></author><category term="blog" /><category term="分享" /><summary type="html"><![CDATA[今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。]]></summary></entry></feed>
