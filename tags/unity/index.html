@@ -1,0 +1,701 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="zh-TW" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>Unity | 烏龜漫遊 2.0</title>
+<meta name="description" content="記錄分享在 Unity 上製作遊戲的筆記與心得">
+
+
+  <meta name="author" content="烏龜">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="烏龜漫遊 2.0">
+<meta property="og:title" content="Unity">
+<meta property="og:url" content="https://lankudot.airfishlab.com/tags/unity/">
+
+
+  <meta property="og:description" content="記錄分享在 Unity 上製作遊戲的筆記與心得">
+
+
+
+  <meta property="og:image" content="https://lankudot.airfishlab.com/assets/images/bio-photo.jpg">
+  
+
+
+
+  <meta name="twitter:site" content="@LanKuDot">
+  <meta name="twitter:title" content="Unity">
+  <meta name="twitter:description" content="記錄分享在 Unity 上製作遊戲的筆記與心得">
+  <meta name="twitter:url" content="https://lankudot.airfishlab.com/tags/unity/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://lankudot.airfishlab.com/assets/images/bio-photo.jpg">
+      
+    
+  
+
+  
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://lankudot.airfishlab.com/tags/unity/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="烏龜漫遊 2.0 Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+</style>
+
+
+  </head>
+
+  <body class="layout--tag" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">轉至主導航欄</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">轉至内容</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">轉至頁脚</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          烏龜漫遊 2.0
+          <span class="site-subtitle">遊戲、程式、心得</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item has-children">
+                <span class="menu-folder" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false"
+                  
+                >精選系列</span>
+                <ul class="submenu"><li>
+                      <a href="/movies/"
+                        
+                        
+                      >電影日誌</a>
+                    </li><li>
+                      <a href="/tags/%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C/"
+                        
+                        
+                      >開發日誌</a>
+                    </li></ul>
+              </li><li class="masthead__menu-item has-children">
+                <span class="menu-folder" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false"
+                  
+                >文章分類</span>
+                <ul class="submenu"><li>
+                      <a href="/posts/"
+                        
+                        
+                      >所有文章</a>
+                    </li><li>
+                      <a href="/categories/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/"
+                        
+                        
+                      >遊戲開發</a>
+                    </li><li>
+                      <a href="/categories/%E5%BD%B1%E8%A6%96%E9%96%B1%E8%AE%80/"
+                        
+                        
+                      >影視閱讀</a>
+                    </li><li>
+                      <a href="/categories/%E9%81%8A%E8%A8%98/"
+                        
+                        
+                      >遊記</a>
+                    </li><li>
+                      <a href="/categories/%E9%9B%9C%E8%AB%87/"
+                        
+                        
+                      >雜談</a>
+                    </li></ul>
+              </li><li class="masthead__menu-item">
+                <a
+                  href="/tags/"
+                  
+                  
+                >標籤</a>
+              </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切換選單</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar">
+  
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://lankudot.airfishlab.com/">
+        <img src="/assets/images/bio-photo.jpg" alt="烏龜" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://lankudot.airfishlab.com/" itemprop="url">烏龜</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>喜歡玩與作遊戲的工程師，對 shader 領域充滿好奇。喜歡爵士樂、反烏托邦小說與電影</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">追蹤</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Taiwan</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:kyle.li@airfishlab.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-youtube" aria-hidden="true"></i><span class="label">Youtube</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/LanKuDot" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/LanKuDot" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://assetstore.unity.com/publishers/52019" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-unity" aria-hidden="true"></i><span class="label">Unity</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">Unity</h1>
+    
+    
+
+
+
+<h3 class="archive__subtitle--nav">
+  7 篇文章
+  <a href="/tags/" class="btn btn--inverse btn--small"><i class="fas fa-tags" aria-hidden="true"></i> 所有標籤</a>
+</h3>
+
+  
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/2024-04-unity-event-subscription-and-problem-2/" rel="permalink">[Unity] 事件訂閱與問題（下）- C# 介面
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2024-04-13T00:00:00+08:00">April 13, 2024</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">本篇繼續上一篇的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。
+</p>
+  </article>
+</div>
+
+
+  
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/2024-04-unity-event-subscription-and-problem-1/" rel="permalink">[Unity] 事件訂閱與問題（上）- <code class="language-plaintext highlighter-rouge">UnityEvent</code> 與 C# <code class="language-plaintext highlighter-rouge">event</code>
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2024-04-08T00:00:00+08:00">April 8, 2024</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">在遊戲開發中，一個物件經常需要訂閱另一個物件的事件，以在事件發生時，執行對應的動作，像是玩家輸入、觸發機關、關卡管理等。而在 Unity 中，常見的方式是使用 UnityEvent 與 C# event 來讓物件提供事件介面，讓其它物件訂閱，但這兩者各自問題，反而讓程式容易出錯。本篇文章整理 UnityEvent...</p>
+  </article>
+</div>
+
+
+  
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/2022-10-csharp-9-in-unity-2021/" rel="permalink">[Unity] Unity 2021 LTS - C# 9.0 的新語法
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-10-08T00:00:00+08:00">October 8, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">Unity 2021 LTS 也出來好一陣子了，在 2021.2 版後就開始導入 C# 9.0。使用了半年後，發覺 C# 9.0 當中新增的語法可以讓程式碼更加簡潔易讀，整理成本篇來介紹個人常用的語法。
+</p>
+  </article>
+</div>
+
+
+  
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/2022-08-csharp-use-attribute-to-provide-varient-static-member/" rel="permalink">[C#] 利用 Attribute 為繼承類別給與不同的 Static 成員值
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-08-23T00:00:00+08:00">August 23, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">在專案開發上遇到這樣的問題：每個繼承類別要提供類似的 static 函式，功能差不多，但只有要取用的值不一樣。就在想能不能把 static 函式拉到基礎類別上，但又可以依照繼承類別給與不同的 static 成員值。
+</p>
+  </article>
+</div>
+
+
+  
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/2022-05-csharp-simulating-multi-class-inheritance/" rel="permalink">[C#] 用 interface 模擬多類別繼承
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-05-14T00:00:00+08:00">May 14, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">最近負責的 Unity 專案中，有很多 UI 有返回的按鈕，而這些按鈕也要可以透過程式觸發。如果為每個 UI 撰寫觸發的函式，一但觸發的邏輯改變，修改會是個大工程。如果為了這個小功能撰寫基礎類別，又顯得大才小用，而且 C# 的類別只能同時繼承一個類別，擴充性也不高。但 C# 類別可以繼承多個 interface，...</p>
+  </article>
+</div>
+
+
+  
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/2022-04-prevent-android-from-backing-up-playerprefs-unity/" rel="permalink">[Unity] 設定 Android 不要備份 PlayerPrefs
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-04-23T00:00:00+08:00">April 23, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">用 Unity 開發 Android 上的遊戲時，如果有用到 PlayerPrefs 儲存使用者的資料，可能會發現在重新安裝後，這些資料還是存在。這是因為在 Android 6.0 以上的版本，Android 都會自動備份應用程式的資料，在重新安裝後會恢復這些資料。
+</p>
+  </article>
+</div>
+
+
+  
+
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/2021-12-csharp-boxing-and-unboxing/" rel="permalink">[C#] 避免 Boxing/Unboxing 效能問題
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2021-12-01T00:00:00+08:00">December 1, 2021</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">之前在撰寫 Unity 套件的時候，因為不知道使用者會用什麼類別來傳資料，所以都轉成 object 型別來傳遞，後來發現這會有效能上的問題。本篇文章就來探討這個問題以及解法。
+</p>
+  </article>
+</div>
+
+
+
+  </div>
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <div class="page__footer-cc4-0">
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
+    本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">創用 CC 姓名標示 4.0 國際 授權條款</a>授權
+</div>
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>追蹤:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/LanKuDot" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/LanKuDot" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://assetstore.unity.com/publishers/52019" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-unity" aria-hidden="true"></i> Unity</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> RSS Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="https://lankudot.airfishlab.com">烏龜漫遊 2.0</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VXPNSTXB5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VXPNSTXB5L', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+
+
+  
+    <script src="/assets/js/nav-dropdown.js"></script>
+  
+
+
+  </body>
+</html>
