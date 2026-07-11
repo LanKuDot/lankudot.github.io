@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2026-07-05T17:16:36+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[電影] 2025 看過的那些電影們</title><link href="https://lankudot.airfishlab.com/%E5%BD%B1%E8%A6%96%E9%96%B1%E8%AE%80/2026-06-watched-movies-in-2025/" rel="alternate" type="text/html" title="[電影] 2025 看過的那些電影們" /><published>2026-06-20T22:15:00+08:00</published><updated>2026-06-20T22:15:00+08:00</updated><id>https://lankudot.airfishlab.com/%E5%BD%B1%E8%A6%96%E9%96%B1%E8%AE%80/watched-movies-in-2025</id><content type="html" xml:base="https://lankudot.airfishlab.com/%E5%BD%B1%E8%A6%96%E9%96%B1%E8%AE%80/2026-06-watched-movies-in-2025/"><![CDATA[<p>終於也把在 2025 年看過的電影整理出來了！在這一年一共看了 17 部電影，當中最喜歡的就是《五星主廚快餐車》，相當喜歡這部電影的音樂、劇情與料理過程。這一年也看了比較多的日本電影，其中《八犬傳》與《超時空武士》也相當喜歡。另外也趁著影展又再次看了湯淺政明的《心靈遊戲》與 Wes Andserson 的《犬之島》，這兩位導演也是我最喜歡導演之二。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2026-07-11T20:05:31+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[雜談] 部落格更新ㄧ一切都是為了電影</title><link href="https://lankudot.airfishlab.com/%E9%9B%9C%E8%AB%87/2026-07-blog-renew-for-movie-posts/" rel="alternate" type="text/html" title="[雜談] 部落格更新ㄧ一切都是為了電影" /><published>2026-07-11T20:00:00+08:00</published><updated>2026-07-11T20:00:00+08:00</updated><id>https://lankudot.airfishlab.com/%E9%9B%9C%E8%AB%87/blog-renew-for-movie-posts</id><content type="html" xml:base="https://lankudot.airfishlab.com/%E9%9B%9C%E8%AB%87/2026-07-blog-renew-for-movie-posts/"><![CDATA[<p>有天在寫電影心得的時候，腦中忽然有個想法：「如果可以有一個頁面能一次展示看過的電影的話，那看起來不是很棒嗎」。於是<a href="/movies/">電影日誌</a>就誕生了:tada:。</p>
+
+<p><img src="/assets/images/blog/2026/2026-07-11-blog-renew-for-movie-posts/movies-page-screenshot.jpg" alt="movies-page-screenshoot" />
+<em>擷圖時有些電影的文章還沒完成，但先讓我假裝寫好了XD</em></p>
+
+<p>就像電影看板那樣，以電影海報羅列出看過的電影，點海報也可以連結到對應的心得文章。好處是能方便知道每一年看了多少部電影，而且最重要的是賞心悅目！但缺點就是我得要先寫好文章，才能在日誌上面呈現出來，這陣子都是電影相關的文章也是為了充實這個頁面。但我寫文章的速度實在是太慢了，嗚嗚嗚。</p>
+
+<p>電影海報基本上是從 <a href="https://www.themoviedb.org/">The Movie Database</a> 上找的，我也刻意挑選只含標題的海報，不然大部份的海報充滿演員導演名字、獎項、上映日期的文字，放在一起的話，版面會太雜亂，而且這些資訊也只有上映當下才有意義。不過也有例外，像是《醉好的時光》的海報是因為喜歡中文標題的文字設計，所以選擇這個版本。</p>
+
+<p class="text-center">…</p>
+
+<p>自從部落格建立以來，都是直接使用主題預設的功能，也沒想過要改它。直到做了這個頁面後，就覺得應該要好好地讓它可以被找到。沒有這方面經驗，當然就是去看看其它人怎麼做了。</p>
+
+<p>朋友的部落格<a href="https://travlog.wei-lee.me/">《那些沒人在乎的事》</a>給了我折疊式選項（是這樣說？）的想法，可以分類呈現導覽列的選項，也不會因為一次列出來反而找不到。另外也參考<a href="https://kalan.blog/">《日名遊實 | 一起探索最真實的日本》</a>的精選標籤的作法，加上精選系列的選項，讓我可以列出最想要讀者去看的內容。理所當然，電影日誌就是其中之一了。</p>
+
+<p><img src="/assets/images/blog/2026/2026-07-11-blog-renew-for-movie-posts/navigation-bar.png" alt="navigation-bar" />
+<em>部落格右上的導覽列更新，把最想要給讀者看的內容放進去</em></p>
+
+<p>這次更新部落格多少充了一點寫文章的動力，這陣子也覺得有好多文章的想法。只是目前寫文章的速度還是好慢，怕那個動力過了，又開始推拖拉了，哈哈。</p>]]></content><author><name>烏龜</name></author><category term="雜談" /><category term="部落格" /><summary type="html"><![CDATA[有天在寫電影心得的時候，腦中忽然有個想法：「如果可以有一個頁面能一次展示看過的電影的話，那看起來不是很棒嗎」。於是電影日誌就誕生了:tada:。]]></summary></entry><entry><title type="html">[電影] 2025 看過的那些電影們</title><link href="https://lankudot.airfishlab.com/%E5%BD%B1%E8%A6%96%E9%96%B1%E8%AE%80/2026-06-watched-movies-in-2025/" rel="alternate" type="text/html" title="[電影] 2025 看過的那些電影們" /><published>2026-06-20T22:15:00+08:00</published><updated>2026-06-20T22:15:00+08:00</updated><id>https://lankudot.airfishlab.com/%E5%BD%B1%E8%A6%96%E9%96%B1%E8%AE%80/watched-movies-in-2025</id><content type="html" xml:base="https://lankudot.airfishlab.com/%E5%BD%B1%E8%A6%96%E9%96%B1%E8%AE%80/2026-06-watched-movies-in-2025/"><![CDATA[<p>終於也把在 2025 年看過的電影整理出來了！在這一年一共看了 17 部電影，當中最喜歡的就是《五星主廚快餐車》，相當喜歡這部電影的音樂、劇情與料理過程。這一年也看了比較多的日本電影，其中《八犬傳》與《超時空武士》也相當喜歡。另外也趁著影展又再次看了湯淺政明的《心靈遊戲》與 Wes Andserson 的《犬之島》，這兩位導演也是我最喜歡導演之二。</p>
 
 <h2 id="新里見八犬傳">新．里見八犬傳</h2>
 
@@ -663,168 +681,4 @@
     </ul>
   </li>
   <li>回到一開始的問題：是什麼要素讓玩家能享受遊戲? 所有創作遊戲的人</li>
-</ul>]]></content><author><name>烏龜</name></author><category term="遊戲開發" /><category term="分享" /><category term="TGDF" /><summary type="html"><![CDATA[今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。]]></summary></entry><entry><title type="html">[分享] 2025 TGDF 筆記 - 九日篇</title><link href="https://lankudot.airfishlab.com/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/2025-08-2025-tgdf-notes-02-nine-sols/" rel="alternate" type="text/html" title="[分享] 2025 TGDF 筆記 - 九日篇" /><published>2025-08-18T00:00:00+08:00</published><updated>2025-08-18T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/2025-tgdf-notes-02-nine-sols</id><content type="html" xml:base="https://lankudot.airfishlab.com/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/2025-08-2025-tgdf-notes-02-nine-sols/"><![CDATA[<p>今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。</p>
-
-<h2 id="兩年的噩夢找尋九日類隻狼系統的誕生">兩年的噩夢找尋，九日類隻狼系統的誕生</h2>
-
-<p>這場分享《九日》是如何找到現在的類隻狼玩法，要找到突破點花了相當多的時間，其中的過程也很辛苦。</p>
-
-<ul>
-  <li>世界觀設定
-    <ul>
-      <li>「道龐克」</li>
-      <li>一個太陽對九個太陽的復仇</li>
-      <li>外星人來到地球留下了道教科技與故事</li>
-    </ul>
-  </li>
-  <li>想到以動作加上銀河戰士的玩法
-    <ul>
-      <li>九個太陽所在的九個區域對應他們各自的設定</li>
-    </ul>
-  </li>
-  <li>八個月就完成有基本玩法與畫面的「Hollow Cat」</li>
-  <li>但為了避免 Hollow Knight 感花了一陣子，也打掉第一版，並重新思考機制
-    <ul>
-      <li>2D 版隻狼？但慢節奏、沒 Y 軸戰鬥、沒平台挑戰</li>
-      <li>參考《Katana Zero》為了要快節奏，不加入對峙，也沒有體幹值</li>
-      <li>想要有平台挑戰，加入空中格擋</li>
-      <li>但如《Katana Zero》的快節奏，敵人看一兩次就被打倒，與隻狼要對招一兩次所帶來的深度不同</li>
-    </ul>
-  </li>
-  <li>又回到類銀河的玩法上，但把體幹值改成點數制
-    <ul>
-      <li>要格擋才有氣能貼符</li>
-      <li>為了避免等格擋時機而太被動，加入普攻來算節奏</li>
-      <li>為了以格擋為主，普攻的攻擊力比貼符還要低很多</li>
-      <li>避免一直按普攻，普攻三連擊的第三下無法直接進入格擋</li>
-      <li>敵人被普攻打中後，會減攻擊 cd，讓敵人更容易主動攻擊，來讓玩家有機會格擋</li>
-    </ul>
-  </li>
-  <li>加入潛行？
-    <ul>
-      <li>2D 畫面視野很小，而且角色動很快不適合潛行，而且每個敵人也要設計暗殺動畫</li>
-      <li>最後改成「背襲」</li>
-      <li>但關卡還是有潛行的設計，如被電之後行動不便，只能潛行</li>
-    </ul>
-  </li>
-  <li>貼符的體驗
-    <ul>
-      <li>貼符到懸崖邊會自動停住，避免瞬移距離過長而掉落</li>
-      <li>在地面貼符時，會先瞬步到敵人前再貼符，再繼續瞬步一段距離，但是在空中貼符則會直接貼</li>
-    </ul>
-  </li>
-  <li>把技能樹當教學用
-    <ul>
-      <li>例如：點了背襲技能，知道可以背襲</li>
-    </ul>
-  </li>
-  <li>大家對技能功效有不同的想像，有人想加有人不想，做成玉石系統來讓玩家自已選</li>
-  <li>如何知道找到醬汁了？成功讓玩家想要一做再做</li>
-</ul>
-
-<h2 id="九日戰鬥設計雜談">《九日》戰鬥設計雜談</h2>
-
-<p>這場一樣有分享到《九日》開案時的構想，並且著重在怪物行為的設計，以及攻擊模式的小技巧，讓戰鬥更豐富。</p>
-
-<ul>
-  <li>開案起源
-    <ul>
-      <li>《返校》跟《還願》還是以華語圈為主，新作方向能否打入歐美市場？</li>
-      <li>以玩法為核心能否有文化穿透力？像《Dead Cells》跟《Hollow Knight》</li>
-    </ul>
-  </li>
-  <li>參考《Hollow Knight》，但是不是只能做出劣化版的《Hollow Knight》</li>
-  <li>風格找尋：<br />
-<img src="/assets/images/blog/2025/2025-08-18-2025-tgdf-notes/nine-sols-style-coordinate.svg" alt="nine-sols-style-coordinate" />
-    <ul>
-      <li>當然在 2D 以格擋為主的風格下，還是有其它遊戲</li>
-    </ul>
-  </li>
-  <li>以格擋為主，所以要引導玩家用格擋
-    <ul>
-      <li>普攻傷害低，貼符有大傷害 ← 要格擋才有氣能貼符</li>
-    </ul>
-  </li>
-  <li>怪物製作流程，實際執行時沒有清楚細分步驟，但為了演講還是整理出大致統程
-    <ol>
-      <li>前期溝通：確定怪物定位，如：難度、外貌、參考對象</li>
-      <li>灰盒驗證：設計戰鬥的 fantasy（要帶來什麼樣的感覺）
-        <ul>
-          <li>讓玩家要用什麼 pattern 來對應</li>
-          <li>Boss 攻擊前的動作能不能讓玩家找到對招時機</li>
-          <li>這時就會在 animation clip 上做怪物行為</li>
-        </ul>
-      </li>
-      <li>美術原型：在 animation clip 上套皮，看感覺</li>
-      <li>程式美術整合：在套皮後重調數值，再看感覺</li>
-      <li>內部測試：內部回饋、改善</li>
-      <li>後期：套音效、特效</li>
-      <li>外測：玩家公開測試</li>
-    </ol>
-  </li>
-  <li>在量產期會做前五個步驟，但是在打磨階段才會做後期與外測</li>
-  <li>戰鬥難，讓玩家克服時有成就感，感覺「原來我可以做到」</li>
-  <li>怪的攻擊有一定節奏，但是後期怪的攻擊脫離前面的節奏會帶來難度，也會有新奇感</li>
-  <li>一些攻擊模式的技巧
-    <ul>
-      <li>利用位移來做攻擊前置動作，如：水鬼</li>
-      <li>過身：攻擊時，怪物會穿過玩家到另一邊</li>
-      <li>脫手攻擊：出招後，那招會延遲攻擊（如：緩慢的投射物），讓怪物可以再開其它招</li>
-      <li>以預期讓玩家的輸入 pattern 來設計招式</li>
-      <li>玩家一直按格擋會縮段精準格擋的窗口</li>
-      <li>終結技可以輸出大傷害，作為獎勵
-        <ul>
-          <li>boss 打完一輪的休息窗口，讓玩家可以輸出大量傷害</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="為九日而研發的狀態機架構monofsm">為《九日》而研發的狀態機架構《MonoFSM》</h2>
-
-<p>最近在開發上在煩惱角色狀態機的設計，所以這場也是有興趣的演講之一。演講主要圍繞在 MonoFSM 為什麼會誕生，雖然沒有著墨太多技術上的細節，但是在製作 prototype 時的經驗分享也很受用。</p>
-
-<ul>
-  <li>第一階段為了開發要快而硬 A，使出戰術龍捲風！
-    <ul>
-      <li>但當內容一多就開始 A 不動，程式碼耦合重、bug 不好修，而且很難加入新功能</li>
-    </ul>
-  </li>
-  <li>遊戲開發架構金字塔由底層到塔頂依序為：
-    <ul>
-      <li>引擎：開發使用的遊戲引擎</li>
-      <li>系統：為遊戲功能開發的功能</li>
-      <li>資料：功能所需要的設定、數值、素材等</li>
-      <li>設計：遊戲玩法、功能、行為等</li>
-      <li>體驗：遊戲給玩家的殘體驗</li>
-    </ul>
-  </li>
-  <li>而戰術龍捲風就是把系統、資料、設計全部混在一起做</li>
-  <li>第二階段開始把資料抽離出來，利用 animation clip 來綁定動畫及開關元件或事件（絕對不要用 Event 來開關）
-    <ul>
-      <li>好處是可以在同一個地方編輯動畫及事件，也可以視覺化資料</li>
-    </ul>
-  </li>
-  <li>到量產期後發現需要重新設計架構
-    <ul>
-      <li>參考 visual scripting 把邏輯跟系統分離</li>
-      <li>要支援 prefab</li>
-      <li>可以通用的 FSM 設計</li>
-    </ul>
-  </li>
-  <li>用 MonoBehaviour 來描述狀態與狀態轉換，且基於 prefab 的 MonoFSM 誕生了
-    <ul>
-      <li>在 Hierarchy 顯示 FSM 的狀態及相關變數的數值</li>
-      <li>Per-instance Debugging：可以以 GameObject 為單位來 debug，不用在程式碼中寫 debug 訊息</li>
-    </ul>
-  </li>
-  <li>漸近重構
-    <ul>
-      <li>實驗期：在小地方嘗試，先展現價值</li>
-      <li>推動期：新內容用新規格作。舊的東西有 bug 或想調整太難做的話，也替換成新架構</li>
-      <li>能動的東西就不要改!</li>
-    </ul>
-  </li>
-  <li>團隊應該集中在「遊戲體驗」上，作工具就是為了加速迭代</li>
-</ul>]]></content><author><name>烏龜</name></author><category term="遊戲開發" /><category term="分享" /><category term="TGDF" /><summary type="html"><![CDATA[今年《九日》相關的議程也很多，從開案時期的探索，到如何設計讓玩家能享受的遊戲機制，遊戲的設計秘辛亳無保留地分享出來。]]></summary></entry></feed>
+</ul>]]></content><author><name>烏龜</name></author><category term="遊戲開發" /><category term="分享" /><category term="TGDF" /><summary type="html"><![CDATA[今年是第三次參加 TGDF，經過兩天的英聽訓練後，才發覺自己的英聽能力一點也沒進步，低頭做完筆記後，就完全跟不上臺上講者的進度了。話雖如此，這次的 TGDF 還是收獲良多，從遊戲設計到專案管理的分享都有，對於正在參與開發的遊戲也有很大的幫助。這次的筆記就整理成 CDPR、九日、遊戲設計三篇文章。]]></summary></entry></feed>

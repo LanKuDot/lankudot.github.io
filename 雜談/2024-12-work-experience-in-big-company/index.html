@@ -132,58 +132,42 @@
           烏龜漫遊 2.0
           <span class="site-subtitle">遊戲、程式、心得</span>
         </a>
-        <ul class="visible-links"><li class="masthead__menu-item has-children">
-                <span class="menu-folder" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false"
-                  
-                >精選系列</span>
-                <ul class="submenu"><li>
-                      <a href="/movies/"
-                        
-                        
-                      >電影日誌</a>
-                    </li><li>
-                      <a href="/tags/%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C/"
-                        
-                        
-                      >開發日誌</a>
-                    </li></ul>
-              </li><li class="masthead__menu-item has-children">
-                <span class="menu-folder" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false"
-                  
-                >文章分類</span>
-                <ul class="submenu"><li>
-                      <a href="/posts/"
-                        
-                        
-                      >所有文章</a>
-                    </li><li>
-                      <a href="/categories/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/"
-                        
-                        
-                      >遊戲開發</a>
-                    </li><li>
-                      <a href="/categories/%E5%BD%B1%E8%A6%96%E9%96%B1%E8%AE%80/"
-                        
-                        
-                      >影視閱讀</a>
-                    </li><li>
-                      <a href="/categories/%E9%81%8A%E8%A8%98/"
-                        
-                        
-                      >遊記</a>
-                    </li><li>
-                      <a href="/categories/%E9%9B%9C%E8%AB%87/"
-                        
-                        
-                      >雜談</a>
-                    </li></ul>
-              </li><li class="masthead__menu-item">
-                <a
-                  href="/tags/"
-                  
-                  
-                >標籤</a>
-              </li></ul>
+        <ul class="visible-links">
+<li class="masthead__menu-item has-children">
+                <span class="menu-folder" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false">精選系列</span>
+                <ul class="submenu">
+<li>
+                      <a href="/movies/">電影日誌</a>
+                    </li>
+<li>
+                      <a href="/tags/%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C/">開發日誌</a>
+                    </li>
+</ul>
+              </li>
+<li class="masthead__menu-item has-children">
+                <span class="menu-folder" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false">文章分類</span>
+                <ul class="submenu">
+<li>
+                      <a href="/posts/">所有文章</a>
+                    </li>
+<li>
+                      <a href="/categories/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/">遊戲開發</a>
+                    </li>
+<li>
+                      <a href="/categories/%E5%BD%B1%E8%A6%96%E9%96%B1%E8%AE%80/">影視閱讀</a>
+                    </li>
+<li>
+                      <a href="/categories/%E9%81%8A%E8%A8%98/">遊記</a>
+                    </li>
+<li>
+                      <a href="/categories/%E9%9B%9C%E8%AB%87/">雜談</a>
+                    </li>
+</ul>
+              </li>
+<li class="masthead__menu-item">
+                <a href="/tags/">標籤</a>
+              </li>
+</ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">切換選單</span>
@@ -370,14 +354,21 @@
         
           <aside class="sidebar__right sticky">
             <nav class="toc" aria-label="Table of contents">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 本頁</h4></header>
-              <ul class="toc__menu"><li><a href="#程式風格混亂">程式風格混亂</a></li><li><a href="#功能先有最重要">功能先有最重要</a></li><li><a href="#重構永遠是最後選項">重構永遠是最後選項</a></li><li><a href="#還是有收穫">還是有收穫</a></li><li><a href="#生於憂患">生於憂患</a></li></ul>
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> 本頁</h4></header>
+              <ul class="toc__menu">
+<li><a href="#%E7%A8%8B%E5%BC%8F%E9%A2%A8%E6%A0%BC%E6%B7%B7%E4%BA%82">程式風格混亂</a></li>
+<li><a href="#%E5%8A%9F%E8%83%BD%E5%85%88%E6%9C%89%E6%9C%80%E9%87%8D%E8%A6%81">功能先有最重要</a></li>
+<li><a href="#%E9%87%8D%E6%A7%8B%E6%B0%B8%E9%81%A0%E6%98%AF%E6%9C%80%E5%BE%8C%E9%81%B8%E9%A0%85">重構永遠是最後選項</a></li>
+<li><a href="#%E9%82%84%E6%98%AF%E6%9C%89%E6%94%B6%E7%A9%AB">還是有收穫</a></li>
+<li><a href="#%E7%94%9F%E6%96%BC%E6%86%82%E6%82%A3">生於憂患</a></li>
+</ul>
             </nav>
           </aside>
         
         <p>之前工作參與的專案規模不大，或是能切分出互不影響的功能，讓每個人各自負責，所以程式功能只要顧好自己的部份就好。在進入大公司後，專案規模變大，開發勢必得要多人一起進行。然而一人開發與多人開發的情景完全不同，大公司專案專注的面向也不一樣，理所當然，就面臨了不少價值觀的衝擊。</p>
 
-<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/ideal-vs-reality.png" alt="ideal-vs-reality" /></p>
+<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/ideal-vs-reality.png" alt="ideal-vs-reality"></p>
 
 <h2 id="程式風格混亂">程式風格混亂</h2>
 
@@ -385,7 +376,7 @@
 
 <p>剛加入專案那時，一直苦惱縮排到底是用 tab 還是 space，一行 200 字元的程式碼要不要幫忙換行，或是巢狀階層多到可以打波動拳了，要不要拆出函式等。起先在加新功能的時候，我會順手改掉原本程式碼中不好的風格。但後來被阻止了，原因是如果該功能出錯，會找最後一個改動的人負責任。直到這個問題變成技術債之後，專案才開始重視程式風格，慢慢明確規範程式寫法。想想如果當初在修改前，先跟主管提出程式風格的問題的話，應該可以提前重視這個問題。</p>
 
-<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/choose-between-tab-and-space.png" alt="choose-between-tab-and-space" />
+<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/choose-between-tab-and-space.png" alt="choose-between-tab-and-space">
 <em>程式碼風格不一致讓人無所適從</em></p>
 
 <p>在多人開發專案中，能有統一的程式風格相當重要，即使那個功能不是自己開發的，也能快速理解功用。另外現今編輯器可以設定程式風格的檢查，包含強制換行、變數命名格式、縮排、行尾空白等。更嚴格一點還可以搭配 git hook，只要不合規範，就不能推上去。</p>
@@ -396,7 +387,7 @@
 
 <p>用這個方式開發的後果就是增加後續維護的難度。同一個功能被複製了好幾份，修了其中一份的 bug 後，才發現其他地方還有相同的 bug。或是要更新某個功能時，得要找出所有複製出來的功能一併修改。為了追趕一個又一個的上線時程，這樣的技術債只會越堆越高。現在省下來的時間，後來就加倍還回去了。</p>
 
-<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/lot-of-bug-because-of-no-time.png" alt="lot-of-bug-because-of-no-time" />
+<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/lot-of-bug-because-of-no-time.png" alt="lot-of-bug-because-of-no-time">
 <em>趕時間開發的功能最後帶來解不完的 bug</em></p>
 
 <p>理想的開發模式是先規劃好功能需要哪些元件，元件之間要如何互動，再去撰寫程式碼。如果是在既有功能上製作，則要再加上理解原本架構的部份。然而要能執行這樣的開發模式，除了得有足夠的開發時間，更重要的是要有健康的專案架構。但現實是專案過了好幾手之後，功能相互交雜，牽一髮而動全身。為了避免擴大麻煩，繞過原本的功能去做新功能反而是最保險的作法。</p>
@@ -407,7 +398,7 @@
 
 <p>只是當技術債累積到不得不面對的程度，就還是得進行重構。在參與專案的期間負責過兩次大型重構，當時各花兩個月在上面：一次是因為某個底層功能太複雜，以致於影響執行效能；另一次是幾個重要機制被複製了數次，為了讓即將開發的新功能也能使用那些機制，與後續方便維護，把它們整理出來，作為共用功能。</p>
 
-<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/code-debt.png" alt="code-debt" />
+<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/code-debt.png" alt="code-debt">
 <em>技術債終究是要還的</em></p>
 
 <p>無論重構規模的大小，只要有重構就得驗證所有相關的功能是否正常。重構前先確認影響的範圍，如果影響範圍太大，就得思考拆分重構的規模，一次只重構一部分。好處是容易掌握需要驗證的功能，出 bug 時容易找到出問題的地方。另外重構時，通常專案也在開發，能儘早把重構後的功能合併回專案的話，也能避免該功能仍然以舊方法開發，造成還要再度重構。</p>
@@ -418,7 +409,7 @@
 
 <p>另外一個就是可以訓練溝通能力。在多人專案中，當遇到不是自己做的功能，就得要詢問當初做或比較熟那個功能的人。雖然可以靠自己閱讀程式碼來理解，但如果先問相關的程式碼與執行流程，反而更能快速上手，也更能專注在要實作的功能上。反之亦然，其它人也會來問自己做的功能，能夠清楚地解釋自己的程式碼，也是很實用的能力。</p>
 
-<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/conversation.png" alt="conversation" />
+<p><img src="/assets/images/blog/2024/2024-12-02-work-experience-in-big-company/conversation.png" alt="conversation">
 <em>能學習跟其它人溝通是最大的收獲</em></p>
 
 <p>除了跟程式討論之外，也會時常跟不同部門的人討論。對方詢問問題時，得先釐清真正想問的內容，最好是能將自己理解的問題內容講給對方聽，確認理解的是不是一樣的。另一方面，也盡量以對方能理解的方式講解。否則很常雞同鴨講，最後搞得雙方都很混亂。</p>
@@ -487,7 +478,7 @@
 <section class="page__share">
   <h4 class="page__share-title">分享到</h4>
 
-  <a href="https://x.com/intent/tweet?via=LanKuDot&text=%5B%E9%9B%9C%E8%AB%87%5D+%E7%90%86%E6%83%B3%E8%88%87%E7%8F%BE%E5%AF%A6%EF%BC%9A%E5%A4%A7%E5%85%AC%E5%8F%B8%E7%9A%84%E5%83%B9%E5%80%BC%E8%A7%80%E6%B4%97%E7%A6%AE%20https%3A%2F%2Flankudot.airfishlab.com%2F%25E9%259B%259C%25E8%25AB%2587%2F2024-12-work-experience-in-big-company%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 X">
+  <a href="https://x.com/intent/tweet?via=LanKuDot&amp;text=%5B%E9%9B%9C%E8%AB%87%5D+%E7%90%86%E6%83%B3%E8%88%87%E7%8F%BE%E5%AF%A6%EF%BC%9A%E5%A4%A7%E5%85%AC%E5%8F%B8%E7%9A%84%E5%83%B9%E5%80%BC%E8%A7%80%E6%B4%97%E7%A6%AE%20https%3A%2F%2Flankudot.airfishlab.com%2F%25E9%259B%259C%25E8%25AB%2587%2F2024-12-work-experience-in-big-company%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 X">
     <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
   </a>
 
@@ -495,7 +486,7 @@
     <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
   </a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://lankudot.airfishlab.com/%E9%9B%9C%E8%AB%87/2024-12-work-experience-in-big-company/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 LinkedIn">
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://lankudot.airfishlab.com/%E9%9B%9C%E8%AB%87/2024-12-work-experience-in-big-company/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 LinkedIn">
     <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
   </a>
 
@@ -525,21 +516,7 @@
 <div class="page__comments">
   
   
-      <script src="https://giscus.app/client.js"
-        data-repo="LanKuDot/lankudot.github.io"
-        data-repo-id="R_kgDOGYHitw"
-        data-category="Page comments"
-        data-category-id="DIC_kwDOGYHit84B_-lB"
-        data-mapping="title"
-        data-strict="1"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="light"
-        data-lang="zh-TW"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
+      <script src="https://giscus.app/client.js" data-repo="LanKuDot/lankudot.github.io" data-repo-id="R_kgDOGYHitw" data-category="Page comments" data-category-id="DIC_kwDOGYHit84B_-lB" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="zh-TW" data-loading="lazy" crossorigin="anonymous" async>
 </script>
 
 
@@ -558,6 +535,50 @@
   
   <h2 class="page__related-title">猜您有與趣</h2>
   <div class="grid__wrapper">
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2026/2026-07-11-blog-renew-for-movie-posts/teaser-image.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/%E9%9B%9C%E8%AB%87/2026-07-blog-renew-for-movie-posts/" rel="permalink">[雜談] 部落格更新ㄧ一切都是為了電影
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-07-11T20:00:00+08:00">July 11, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">有天在寫電影心得的時候，腦中忽然有個想法：「如果可以有一個頁面能一次展示看過的電影的話，那看起來不是很棒嗎」。於是電影日誌就誕生了<img class="emoji" title=":tada:" alt=":tada:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png" height="20" width="20">。
+</p>
+  </article>
+</div>
+
     
       
       
@@ -686,50 +707,6 @@
 </div>
 
     
-      
-      
-
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src="/assets/images/blog/2026/2026-05-10-cosmic-princess-kaguya/teaser-image.jpg" alt="">
-      </div>
-    
-    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
-      
-        <a class="u-url" href="/%E5%BD%B1%E8%A6%96%E9%96%B1%E8%AE%80/2026-05-cosmic-princess-kaguya/" rel="permalink">[電影]《超時空輝耀姬！》- 科幻 x 百合 x 竹取物語
-</a>
-      
-    </h2>
-    
-
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2026-05-10T00:00:00+08:00">May 10, 2026</time>
-      </span>
-    
-
-    
-
-    
-  </p>
-
-
-    <p class="archive__item-excerpt p-summary" itemprop="description">如果竹取物語發生在科技進步的世界中，那會怎麼發展？不僅角色設計豐富、作畫細緻、動作場面靈活，而且還有百合要素！如果還有經歷過 V 家繁盛時期，那一定要看看《超時空輝耀姬！》。
-</p>
-  </article>
-</div>
-
-    
   </div>
 </div>
 
@@ -745,7 +722,7 @@
     <div id="footer" class="page__footer">
       <footer>
         <div class="page__footer-cc4-0">
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>
     本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">創用 CC 姓名標示 4.0 國際 授權條款</a>授權
 </div>
         
@@ -784,7 +761,7 @@
 </div>
 
 
-<div class="page__footer-copyright">&copy; 2026 <a href="https://lankudot.airfishlab.com">烏龜漫遊 2.0</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">© 2026 <a href="https://lankudot.airfishlab.com">烏龜漫遊 2.0</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
