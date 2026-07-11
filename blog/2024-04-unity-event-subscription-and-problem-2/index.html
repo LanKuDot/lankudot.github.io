@@ -1,0 +1,1004 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="zh-TW" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>[Unity] 事件訂閱與問題（下）- C# 介面 | 烏龜漫遊 2.0</title>
+<meta name="description" content="本篇繼續上一篇的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。">
+
+
+  <meta name="author" content="烏龜">
+  
+  <meta property="article:author" content="烏龜">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="烏龜漫遊 2.0">
+<meta property="og:title" content="[Unity] 事件訂閱與問題（下）- C# 介面">
+<meta property="og:url" content="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/">
+
+
+  <meta property="og:description" content="本篇繼續上一篇的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。">
+
+
+
+  <meta property="og:image" content="https://lankudot.airfishlab.com/assets/images/bio-photo.jpg">
+  
+
+
+
+  <meta name="twitter:site" content="@LanKuDot">
+  <meta name="twitter:title" content="[Unity] 事件訂閱與問題（下）- C# 介面">
+  <meta name="twitter:description" content="本篇繼續上一篇的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。">
+  <meta name="twitter:url" content="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://lankudot.airfishlab.com/assets/images/bio-photo.jpg">
+      
+    
+  
+
+  
+
+
+
+
+
+  <meta property="article:published_time" content="2024-04-13T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="烏龜漫遊 2.0 Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+</style>
+
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">轉至主導航欄</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">轉至内容</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">轉至頁脚</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          烏龜漫遊 2.0
+          <span class="site-subtitle">遊戲、程式、心得</span>
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item has-children">
+                <span class="menu-folder" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false">精選系列</span>
+                <ul class="submenu">
+<li>
+                      <a href="/movies/">電影日誌</a>
+                    </li>
+<li>
+                      <a href="/tags/%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C/">開發日誌</a>
+                    </li>
+</ul>
+              </li>
+<li class="masthead__menu-item has-children">
+                <span class="menu-folder" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false">文章分類</span>
+                <ul class="submenu">
+<li>
+                      <a href="/posts/">所有文章</a>
+                    </li>
+<li>
+                      <a href="/categories/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/">遊戲開發</a>
+                    </li>
+<li>
+                      <a href="/categories/%E5%BD%B1%E8%A6%96%E9%96%B1%E8%AE%80/">影視閱讀</a>
+                    </li>
+<li>
+                      <a href="/categories/%E9%81%8A%E8%A8%98/">遊記</a>
+                    </li>
+<li>
+                      <a href="/categories/%E9%9B%9C%E8%AB%87/">雜談</a>
+                    </li>
+</ul>
+              </li>
+<li class="masthead__menu-item">
+                <a href="/tags/">標籤</a>
+              </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切換選單</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar">
+  
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://lankudot.airfishlab.com/">
+        <img src="/assets/images/bio-photo.jpg" alt="烏龜" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://lankudot.airfishlab.com/" itemprop="url">烏龜</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>喜歡玩與作遊戲的工程師，對 shader 領域充滿好奇。喜歡爵士樂、反烏托邦小說與電影</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">追蹤</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Taiwan</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:kyle.li@airfishlab.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-youtube" aria-hidden="true"></i><span class="label">Youtube</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/LanKuDot" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/LanKuDot" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://assetstore.unity.com/publishers/52019" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-unity" aria-hidden="true"></i><span class="label">Unity</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[Unity] 事件訂閱與問題（下）- C# 介面">
+    <meta itemprop="description" content="本篇繼續上一篇的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。">
+    <meta itemprop="datePublished" content="2024-04-13T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/" itemprop="url">[Unity] 事件訂閱與問題（下）- C# 介面
+</a>
+          </h1>
+          
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2024-04-13T00:00:00+08:00">April 13, 2024</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc" aria-label="Table of contents">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> 本頁</h4></header>
+              <ul class="toc__menu">
+<li>
+<a href="#c-%E4%BB%8B%E9%9D%A2">C# 介面</a><ul>
+<li><a href="#%E5%AF%A6%E4%BD%9C%E4%BA%8B%E4%BB%B6%E7%B3%BB%E7%B5%B1">實作事件系統</a></li>
+<li>
+<a href="#c-%E4%BB%8B%E9%9D%A2%E7%9A%84%E5%95%8F%E9%A1%8C">C# 介面的問題</a><ul><li><a href="#%E8%AE%93%E8%A8%82%E9%96%B1%E7%89%A9%E4%BB%B6%E6%8F%90%E4%BE%9B%E9%81%8E%E5%A4%9A%E7%9A%84-public-%E5%87%BD%E5%BC%8F">讓訂閱物件提供過多的 public 函式</a></li></ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E4%BA%8B%E4%BB%B6%E8%A7%B8%E7%99%BC%E6%B8%AC%E8%A9%A6">事件觸發測試</a></li>
+<li><a href="#%E7%B8%BD%E7%B5%90">總結</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p>本篇繼續<a href="/blog/2024-04-unity-event-subscription-and-problem-1/">上一篇</a>的內容來介紹第三種事件訂閱的方式：C# 介面。並在最後比較這三種訂閱方式。</p>
+
+<h2 id="c-介面">C# 介面</h2>
+
+<p>使用 C# 介面讓物件提供事件的處理函式，並把物件註冊到事件系統上以訂閱事件。在 Unity 的 <code class="language-plaintext highlighter-rouge">EventSystems</code> 中就是使用 C# 介面讓物件訂閱操作事件。</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">UIPuzzleImage</span> <span class="p">:</span> <span class="n">MonoBehaviour</span><span class="p">,</span>
+    <span class="n">IBeginDragHandler</span><span class="p">,</span> <span class="n">IDragHandler</span><span class="p">,</span> <span class="n">IEndDragHandler</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">OnBeginDrag</span><span class="p">(</span><span class="n">PointerEventData</span> <span class="n">data</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnBeginDrag"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">OnDrag</span><span class="p">(</span><span class="n">PointerEventData</span> <span class="n">data</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnDrag"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">OnEndDrag</span><span class="p">(</span><span class="n">PointerEventData</span> <span class="n">data</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnEndDrag"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="實作事件系統">實作事件系統</h3>
+
+<p>使用 C# 介面做為事件訂閱的方式，還需要自行管理訂閱的物件，以觸發事件。這邊使用 <code class="language-plaintext highlighter-rouge">HashSet</code> 來儲存訂閱的物件，好處是就算物件重複訂閱，在 <code class="language-plaintext highlighter-rouge">HashSet</code> 中也不會出現兩個物件。而且如果有需要，還可以先檢查該物件有沒有先訂閱了，而輸出警告訊息甚至是 exception。</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">interface</span> <span class="nc">ILevelEventHandler</span>
+<span class="p">{</span>
+    <span class="k">void</span> <span class="nf">OnLevelStart</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">LevelManager</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="n">LevelManager</span> <span class="n">Instance</span><span class="p">;</span>
+
+    <span class="k">private</span> <span class="k">readonly</span> <span class="n">HashSet</span><span class="p">&lt;</span><span class="n">ILevelEventHandler</span><span class="p">&gt;</span> <span class="n">_levelEventHandlers</span> <span class="p">=</span> <span class="k">new</span> <span class="p">();</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">Awake</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Instance</span> <span class="p">=</span> <span class="k">this</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">SubscribeLevelEvent</span><span class="p">(</span><span class="n">ILevelEventHandler</span> <span class="n">handler</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">// 也可不檢查</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">_levelEventHandlers</span><span class="p">.</span><span class="nf">Contains</span><span class="p">(</span><span class="n">handler</span><span class="p">))</span>
+        <span class="p">{</span>
+            <span class="n">Debug</span><span class="p">.</span><span class="nf">Warning</span><span class="p">(</span><span class="s">$"</span><span class="p">{</span><span class="n">handler</span><span class="p">}</span><span class="s"> 已經被註冊過了"</span><span class="p">);</span>
+            <span class="k">return</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="n">_levelEventHandlers</span><span class="p">.</span><span class="nf">Add</span><span class="p">(</span><span class="n">handler</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">public</span> <span class="k">void</span> <span class="nf">UnsubscribeLevelEvent</span><span class="p">(</span><span class="n">ILevelEventHandler</span> <span class="n">handler</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">_levelEventHandlers</span><span class="p">.</span><span class="nf">Remove</span><span class="p">(</span><span class="n">handler</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">LevelStart</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">handler</span> <span class="k">in</span> <span class="n">_levelEventHandlers</span><span class="p">)</span>
+            <span class="n">handler</span><span class="p">.</span><span class="nf">OnLevelStart</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>而用 C# 介面訂閱事件的優點是不能用匿名函式訂閱事件，一定要是物件中明確實作的函式。</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">Enemy</span> <span class="p">:</span> <span class="n">MonoBehaviour</span><span class="p">,</span> <span class="n">ILevelEventHandler</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">Start</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="nf">SubscribeLevelEvent</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">OnDestory</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">LevelManager</span><span class="p">.</span><span class="n">Instance</span><span class="p">.</span><span class="nf">UnsubscribeLevelEvent</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1">// 明確介面實作，讓事件函式只能透過 ILevelEventHandler 介面呼叫</span>
+    <span class="k">void</span> <span class="n">ILevelEventHandler</span><span class="p">.</span><span class="nf">OnLevelStart</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnLevelStart"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="c-介面的問題">C# 介面的問題</h3>
+
+<h4 id="讓訂閱物件提供過多的-public-函式">讓訂閱物件提供過多的 <code class="language-plaintext highlighter-rouge">public</code> 函式</h4>
+
+<p>會發現使用介面可能會讓物件提供過多的 <code class="language-plaintext highlighter-rouge">public</code> 函式，但是可以透過明確介面實作，讓實作的介面函式，只能透過介面型別呼叫。要注意在明確介面實作中，實作的函式是沒有 <code class="language-plaintext highlighter-rouge">public</code> 的。</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">class</span> <span class="nc">UIPuzzleImage</span> <span class="p">:</span> <span class="n">MonoBehaviour</span><span class="p">,</span>
+    <span class="n">IBeginDragHandler</span><span class="p">,</span> <span class="n">IDragHandler</span><span class="p">,</span> <span class="n">IEndDragHandler</span>
+<span class="p">{</span>
+    <span class="k">void</span> <span class="n">IBeginDragHandler</span><span class="p">.</span><span class="nf">OnBeginDrag</span><span class="p">(</span><span class="n">PointerEventData</span> <span class="n">data</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnBeginDrag"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">void</span> <span class="n">IDragHandler</span><span class="p">.</span><span class="nf">OnDrag</span><span class="p">(</span><span class="n">PointerEventData</span> <span class="n">data</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnDrag"</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="k">void</span> <span class="n">IEndDragHandler</span><span class="p">.</span><span class="nf">OnEndDrag</span><span class="p">(</span><span class="n">PointerEventData</span> <span class="n">data</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">"OnEndDrag"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">SomeClass</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+<span class="p">{</span>
+    <span class="p">[</span><span class="n">SerializeField</span><span class="p">]</span>
+    <span class="k">private</span> <span class="n">UIPuzzleImage</span> <span class="n">_puzzleImage</span><span class="p">;</span>
+
+    <span class="k">private</span> <span class="k">void</span> <span class="nf">SomeFunc</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// Error</span>
+        <span class="c1">//_puzzleImage.OnDrag(null);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="事件觸發測試">事件觸發測試</h2>
+
+<p>以下在 Unity 中，以生成 1000 個物件測試觸發事件時的秏時。測試方式為一次觸發事件 10 次，取平均運行時間。</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">private</span> <span class="n">StopWatch</span> <span class="n">_stopWatch</span> <span class="p">=</span> <span class="k">new</span> <span class="p">();</span>
+
+<span class="k">public</span> <span class="k">void</span> <span class="nf">InvokeEvent</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">var</span> <span class="n">ticks</span> <span class="p">=</span> <span class="m">0L</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">var</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="m">10</span><span class="p">;</span> <span class="p">++</span><span class="n">i</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">_stopWatch</span><span class="p">.</span><span class="nf">Restart</span><span class="p">();</span>
+        <span class="c1">// 如果是 C# 介面則用 foreach 去逐個觸發事件</span>
+        <span class="n">_onEvent</span><span class="p">.</span><span class="nf">Invoke</span><span class="p">();</span>
+        <span class="n">_stopWatch</span><span class="p">.</span><span class="nf">Stop</span><span class="p">();</span>
+        <span class="n">ticks</span> <span class="p">+=</span> <span class="n">_stopWatch</span><span class="p">.</span><span class="n">ElapsedTicks</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="s">$"</span><span class="p">{</span><span class="n">ticks</span> <span class="p">/</span> <span class="m">10f</span><span class="p">}</span><span class="s">"</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>而首次執行中，因為 JIT 編譯器要轉換 IL 成可執行的機器碼，所以會比較花時間，因此分別列出：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">[在編輯器]<br>首次執行</th>
+      <th style="text-align: center">[在編輯器]<br>首次之後</th>
+      <th style="text-align: center">[執行檔]<br>首次執行</th>
+      <th style="text-align: center">[執行檔]<br>首次之後</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">UnityEvent</code></td>
+      <td style="text-align: center">257.7 ticks</td>
+      <td style="text-align: center">175.5 ticks</td>
+      <td style="text-align: center">248.4 ticks</td>
+      <td style="text-align: center">153.4 ticks</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">C# <code class="language-plaintext highlighter-rouge">event</code>
+</td>
+      <td style="text-align: center">127.3 ticks</td>
+      <td style="text-align: center">31.2 ticks</td>
+      <td style="text-align: center">194.2 ticks</td>
+      <td style="text-align: center">28.7 ticks</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">C# 介面</td>
+      <td style="text-align: center">150.9 ticks</td>
+      <td style="text-align: center">35.1 ticks</td>
+      <td style="text-align: center">260 ticks</td>
+      <td style="text-align: center">32.9 ticks</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>可以發現除了在執行檔中，第一次執行時，C# 介面會比較慢之外，執行的速度由快到慢為：C# <code class="language-plaintext highlighter-rouge">event</code>、C# 介面、<code class="language-plaintext highlighter-rouge">UnityEvent</code>。</p>
+
+<h2 id="總結">總結</h2>
+
+<p>整理這三種訂閱事件方式的問題比較表：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">過多<br><code class="language-plaintext highlighter-rouge">public</code> 函式</th>
+      <th style="text-align: center">被外部<br>觸發事件</th>
+      <th style="text-align: center">重複訂閱</th>
+      <th style="text-align: center">註冊<br>匿名函式</th>
+      <th style="text-align: center">處理速度</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code class="language-plaintext highlighter-rouge">UnityEvent</code></td>
+      <td style="text-align: center">會</td>
+      <td style="text-align: center">僅 <code class="language-plaintext highlighter-rouge">public</code>
+</td>
+      <td style="text-align: center">可</td>
+      <td style="text-align: center">可</td>
+      <td style="text-align: center">慢</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">C# <code class="language-plaintext highlighter-rouge">event</code>
+</td>
+      <td style="text-align: center">不會</td>
+      <td style="text-align: center">不可</td>
+      <td style="text-align: center">可</td>
+      <td style="text-align: center">可</td>
+      <td style="text-align: center">快</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">C# 介面</td>
+      <td style="text-align: center">會，可避免</td>
+      <td style="text-align: center">僅 <code class="language-plaintext highlighter-rouge">public</code>
+</td>
+      <td style="text-align: center">不可</td>
+      <td style="text-align: center">不可</td>
+      <td style="text-align: center">次快</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Unity 事件訂閱方式有各自的好處，但相對的也有各自的問題。如果沒注意事件訂閱的管理的話，只要遊戲規模一大，就很容易出問題，而且還很難找出原因。而在這三種方法中，我會推薦使用 C# 介面做為事件訂閱的方法，因為相比其它兩種方式比較不容易出錯。而且追蹤有訂閱的物件也方便，只要找出有實作該介面的類別就可以了。</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 標籤: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/c" class="page__taxonomy-item p-category" rel="tag">C#</a><span class="sep">, </span>
+    
+      <a href="/tags/unity" class="page__taxonomy-item p-category" rel="tag">Unity</a><span class="sep">, </span>
+    
+      <a href="/tags/%E7%AD%86%E8%A8%98" class="page__taxonomy-item p-category" rel="tag">筆記</a>
+    
+    </span>
+  </p>
+
+
+  
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 分類: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC" class="page__taxonomy-item p-category" rel="tag">遊戲開發</a>
+    
+    </span>
+  </p>
+
+
+  
+
+
+        
+
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新時間:</strong> <time class="dt-published" datetime="2024-04-13T00:00:00+08:00">April 13, 2024</time></p>
+
+
+      </footer>
+
+      
+<section class="page__share">
+  <h4 class="page__share-title">分享到</h4>
+
+  <a href="https://x.com/intent/tweet?via=LanKuDot&amp;text=%5BUnity%5D+%E4%BA%8B%E4%BB%B6%E8%A8%82%E9%96%B1%E8%88%87%E5%95%8F%E9%A1%8C%EF%BC%88%E4%B8%8B%EF%BC%89-+C%23+%E4%BB%8B%E9%9D%A2%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2024-04-unity-event-subscription-and-problem-2%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2024-04-unity-event-subscription-and-problem-2%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://lankudot.airfishlab.com/blog/2024-04-unity-event-subscription-and-problem-2/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=%5BUnity%5D+%E4%BA%8B%E4%BB%B6%E8%A8%82%E9%96%B1%E8%88%87%E5%95%8F%E9%A1%8C%EF%BC%88%E4%B8%8B%EF%BC%89-+C%23+%E4%BB%8B%E9%9D%A2%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2024-04-unity-event-subscription-and-problem-2%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+
+  <nav class="pagination" aria-label="Post pagination">
+    
+      <a href="/blog/2024-04-unity-event-subscription-and-problem-1/" class="pagination--pager" title="[Unity] 事件訂閱與問題（上）- UnityEvent 與 C# event">前一頁</a>
+    
+    
+      <a href="/blog/2024-07-the-binding/" class="pagination--pager" title="[閱讀] 布莉琪．柯林斯《裝幀師》">後一頁</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+      
+        
+<div class="page__comments">
+  
+  
+      <script src="https://giscus.app/client.js" data-repo="LanKuDot/lankudot.github.io" data-repo-id="R_kgDOGYHitw" data-category="Page comments" data-category-id="DIC_kwDOGYHit84B_-lB" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="zh-TW" data-loading="lazy" crossorigin="anonymous" async>
+</script>
+
+
+  
+</div>
+
+      
+    
+  </article>
+
+  
+  
+    
+
+<div class="page__related">
+  
+  <h2 class="page__related-title">猜您有與趣</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2026/2026-07-11-blog-renew-for-movie-posts/teaser-image.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/2026-07-blog-renew-for-movie-posts/" rel="permalink">[雜談] 部落格更新ㄧ一切都是為了電影
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-07-11T20:00:00+08:00">July 11, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">有天在寫電影心得的時候，腦中忽然有個想法：「如果可以有一個頁面能一次展示看過的電影的話，那看起來不是很棒嗎」。於是電影日誌就誕生了<img class="emoji" title=":tada:" alt=":tada:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png" height="20" width="20">。
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/2026-06-watched-movies-in-2025/" rel="permalink">[電影] 2025 看過的那些電影們
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-06-20T22:15:00+08:00">June 20, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">終於也把在 2025 年看過的電影整理出來了！在這一年一共看了 17 部電影，當中最喜歡的就是《五星主廚快餐車》，相當喜歡這部電影的音樂、劇情與料理過程。這一年也看了比較多的日本電影，其中《八犬傳》與《超時空武士》也相當喜歡。另外也趁著影展又再次看了湯淺政明的《心靈遊戲》與 Wes Andserson 的《犬之島...</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2026/2026-06-06-the-new-dawn/teaser-image.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/2026-06-the-new-dawn/" rel="permalink">[電影]《花綠青綻放之時》- 事物都會結束，但重點是要怎麼結束
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-06-06T00:00:00+08:00">June 6, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">《花綠青綻放之時》也是 2026 金馬影展的開幕片，原本也想在影展觀賞這部電影，可惜播放時段都無法參加，好在這部片後來也上院線，當然就把握機會囉。
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2026/2026-05-30-the-last-viking/teaser-image.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/2026-05-the-last-viking/" rel="permalink">[電影]《John 錯就錯》- 真不愧是麥叔！
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-05-30T00:00:00+08:00">May 30, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">這次 2026 年的金馬奇幻影展選擇《John 錯就錯》（The Last Viking）的原因不外乎就是麥叔了。不同於以往給人殺氣騰騰、充滿威壓的形象，在這部電影中的麥叔飾演內心封閉且不善交流的角色，但麥叔的演技仍完美讓人理解這個角色的內在情緒，真佩服他的戲路如此之廣。
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <div class="page__footer-cc4-0">
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>
+    本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">創用 CC 姓名標示 4.0 國際 授權條款</a>授權
+</div>
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>追蹤:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/LanKuDot" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/LanKuDot" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://assetstore.unity.com/publishers/52019" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-unity" aria-hidden="true"></i> Unity</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> RSS Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">© 2026 <a href="https://lankudot.airfishlab.com">烏龜漫遊 2.0</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VXPNSTXB5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VXPNSTXB5L', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+
+    <!-- start custom comments scripts -->
+
+<!-- end custom comments scripts -->
+
+
+
+
+  
+    <script src="/assets/js/nav-dropdown.js"></script>
+  
+
+
+  </body>
+</html>

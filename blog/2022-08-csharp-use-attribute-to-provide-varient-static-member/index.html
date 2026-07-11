@@ -1,0 +1,856 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.0 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="zh-TW" class="no-js">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>[C#] 利用 Attribute 為繼承類別給與不同的 Static 成員值 | 烏龜漫遊 2.0</title>
+<meta name="description" content="在專案開發上遇到這樣的問題：每個繼承類別要提供類似的 static 函式，功能差不多，但只有要取用的值不一樣。就在想能不能把 static 函式拉到基礎類別上，但又可以依照繼承類別給與不同的 static 成員值。">
+
+
+  <meta name="author" content="烏龜">
+  
+  <meta property="article:author" content="烏龜">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="烏龜漫遊 2.0">
+<meta property="og:title" content="[C#] 利用 Attribute 為繼承類別給與不同的 Static 成員值">
+<meta property="og:url" content="https://lankudot.airfishlab.com/blog/2022-08-csharp-use-attribute-to-provide-varient-static-member/">
+
+
+  <meta property="og:description" content="在專案開發上遇到這樣的問題：每個繼承類別要提供類似的 static 函式，功能差不多，但只有要取用的值不一樣。就在想能不能把 static 函式拉到基礎類別上，但又可以依照繼承類別給與不同的 static 成員值。">
+
+
+
+  <meta property="og:image" content="https://lankudot.airfishlab.com/assets/images/bio-photo.jpg">
+  
+
+
+
+  <meta name="twitter:site" content="@LanKuDot">
+  <meta name="twitter:title" content="[C#] 利用 Attribute 為繼承類別給與不同的 Static 成員值">
+  <meta name="twitter:description" content="在專案開發上遇到這樣的問題：每個繼承類別要提供類似的 static 函式，功能差不多，但只有要取用的值不一樣。就在想能不能把 static 函式拉到基礎類別上，但又可以依照繼承類別給與不同的 static 成員值。">
+  <meta name="twitter:url" content="https://lankudot.airfishlab.com/blog/2022-08-csharp-use-attribute-to-provide-varient-static-member/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://lankudot.airfishlab.com/assets/images/bio-photo.jpg">
+      
+    
+  
+
+  
+
+
+
+
+
+  <meta property="article:published_time" content="2022-08-23T00:00:00+08:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://lankudot.airfishlab.com/blog/2022-08-csharp-use-attribute-to-provide-varient-static-member/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="烏龜漫遊 2.0 Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+</style>
+
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">轉至主導航欄</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">轉至内容</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">轉至頁脚</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/">
+          烏龜漫遊 2.0
+          <span class="site-subtitle">遊戲、程式、心得</span>
+        </a>
+        <ul class="visible-links">
+<li class="masthead__menu-item has-children">
+                <span class="menu-folder" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false">精選系列</span>
+                <ul class="submenu">
+<li>
+                      <a href="/movies/">電影日誌</a>
+                    </li>
+<li>
+                      <a href="/tags/%E9%96%8B%E7%99%BC%E6%97%A5%E8%AA%8C/">開發日誌</a>
+                    </li>
+</ul>
+              </li>
+<li class="masthead__menu-item has-children">
+                <span class="menu-folder" tabindex="0" role="button" aria-haspopup="true" aria-expanded="false">文章分類</span>
+                <ul class="submenu">
+<li>
+                      <a href="/posts/">所有文章</a>
+                    </li>
+<li>
+                      <a href="/categories/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC/">遊戲開發</a>
+                    </li>
+<li>
+                      <a href="/categories/%E5%BD%B1%E8%A6%96%E9%96%B1%E8%AE%80/">影視閱讀</a>
+                    </li>
+<li>
+                      <a href="/categories/%E9%81%8A%E8%A8%98/">遊記</a>
+                    </li>
+<li>
+                      <a href="/categories/%E9%9B%9C%E8%AB%87/">雜談</a>
+                    </li>
+</ul>
+              </li>
+<li class="masthead__menu-item">
+                <a href="/tags/">標籤</a>
+              </li>
+</ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">切換選單</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar">
+  
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://lankudot.airfishlab.com/">
+        <img src="/assets/images/bio-photo.jpg" alt="烏龜" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://lankudot.airfishlab.com/" itemprop="url">烏龜</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>喜歡玩與作遊戲的工程師，對 shader 領域充滿好奇。喜歡爵士樂、反烏托邦小說與電影</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">追蹤</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-location-dot" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Taiwan</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:kyle.li@airfishlab.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-youtube" aria-hidden="true"></i><span class="label">Youtube</span></a></li>
+          
+        
+          
+            <li><a href="https://twitter.com/LanKuDot" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i><span class="label">Twitter</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/LanKuDot" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://assetstore.unity.com/publishers/52019" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-unity" aria-hidden="true"></i><span class="label">Unity</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[C#] 利用 Attribute 為繼承類別給與不同的 Static 成員值">
+    <meta itemprop="description" content="在專案開發上遇到這樣的問題：每個繼承類別要提供類似的 static 函式，功能差不多，但只有要取用的值不一樣。就在想能不能把 static 函式拉到基礎類別上，但又可以依照繼承類別給與不同的 static 成員值。">
+    <meta itemprop="datePublished" content="2022-08-23T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://lankudot.airfishlab.com/blog/2022-08-csharp-use-attribute-to-provide-varient-static-member/" itemprop="url">[C#] 利用 Attribute 為繼承類別給與不同的 Static 成員值
+</a>
+          </h1>
+          
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2022-08-23T00:00:00+08:00">August 23, 2022</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc" aria-label="Table of contents">
+              <header><h4 class="nav__title">
+<i class="fas fa-file-alt"></i> 本頁</h4></header>
+              <ul class="toc__menu">
+<li><a href="#%E5%AF%A6%E4%BD%9C">實作</a></li>
+<li><a href="#%E6%87%89%E7%94%A8">應用</a></li>
+<li><a href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%96%99">參考資料</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <p>在專案開發上遇到這樣的問題：每個繼承類別要提供類似的 static 函式，功能差不多，但只有要取用的值不一樣。就在想能不能把 static 函式拉到基礎類別上，但又可以依照繼承類別給與不同的 static 成員值。</p>
+
+<p>如果把 static 函式放在繼承類別上，就得每個繼承類別寫類似的函式。如果把 static 函式放在基礎類別，又不能在基礎類別上取得繼承類別的 static 成員值，因為 static 函式不能宣告為 <code class="language-plaintext highlighter-rouge">abstract</code> 或是 <code class="language-plaintext highlighter-rouge">virtual</code>，所以基礎類別無法知道繼承類別有那個 static 成員。最後想到的方法是透過 attribute 配合 reflection 來取得繼承類別上的不同 static 成員值。</p>
+
+<h2 id="實作">實作</h2>
+
+<p>在專案中，每個 Unity 場景都有一個啟動的程式碼，程式碼會提供對應的場景名稱。在場景載入後，就要執行這個程式碼。所以載入場景跟執行啟動程式碼的功能放在基礎類別上，而對應的場景名稱就在繼承類別上指定。</p>
+
+<p>首先建立一個 attribute 類別用來儲存場景名稱的資訊，並限制 <code class="language-plaintext highlighter-rouge">TargetSceneAttribute</code> 只能用在類別上：</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nf">AttributeUsage</span><span class="p">(</span><span class="n">AttributeTargets</span><span class="p">.</span><span class="n">Class</span><span class="p">)]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">TargetSceneAttribute</span> <span class="p">:</span> <span class="n">Attribute</span>
+<span class="p">{</span>
+  <span class="k">public</span> <span class="k">readonly</span> <span class="kt">string</span> <span class="n">SceneName</span><span class="p">;</span>
+
+  <span class="k">public</span> <span class="nf">TargetSceneAttribute</span><span class="p">(</span><span class="kt">string</span> <span class="n">sceneName</span><span class="p">)</span>
+  <span class="p">{</span>
+    <span class="n">SceneName</span> <span class="p">=</span> <span class="n">sceneName</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>接著在基礎類別上的 static 函式取得繼承類別上的 attribute 值。attribute 只是記錄資訊而已，要透過 reflection 來取得上面的值：</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">abstract</span> <span class="k">class</span> <span class="nc">EntryPoint</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+  <span class="k">where</span> <span class="n">T</span> <span class="p">:</span> <span class="n">EntryPoint</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;</span>
+<span class="p">{</span>
+  <span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">GetSceneName</span><span class="p">()</span>
+  <span class="p">{</span>
+    <span class="kt">var</span> <span class="n">attrs</span> <span class="p">=</span> <span class="n">Attribute</span><span class="p">.</span><span class="nf">GetCustomAttributes</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">T</span><span class="p">));</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">attr</span> <span class="k">in</span> <span class="n">attrs</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">attr</span> <span class="k">is</span> <span class="n">TargetSceneAttribute</span> <span class="n">targetSceneAttr</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">targetSceneAttr</span><span class="p">.</span><span class="n">SceneName</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">throw</span> <span class="k">new</span> <span class="nf">MissingMemberException</span><span class="p">(</span>
+      <span class="s">"The class which inherits from the 'EntryPoint' "</span> <span class="p">+</span>
+      <span class="s">"must have the 'TargetScene' attribute"</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>最後在繼承的類別上加上指定場景名稱的屬性：</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nf">TargetScene</span><span class="p">(</span><span class="s">"Home"</span><span class="p">)]</span>
+<span class="k">public</span> <span class="k">class</span> <span class="nc">HomeEntryPoint</span> <span class="p">:</span> <span class="n">EntryPoint</span><span class="p">&lt;</span><span class="n">HomeEntryPoint</span><span class="p">&gt;</span>
+<span class="p">{}</span>
+</code></pre></div></div>
+
+<p>這樣基礎類別就可以透過它的 static 函式去取得繼承類別上的 static 成員了：</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Debug</span><span class="p">.</span><span class="nf">Log</span><span class="p">(</span><span class="n">HomeEntryPoint</span><span class="p">.</span><span class="nf">GetSceneName</span><span class="p">());</span> <span class="c1">// "Home"</span>
+</code></pre></div></div>
+
+<p>如果有一系列的繼承類別擁有不同的 static 成員值，就可以透過這樣的方式，由基礎類別提供 static 函式來取得值或是做後續處理。</p>
+
+<h2 id="應用">應用</h2>
+
+<p>例如在專案中，在載入場景後就要去執行起始的程式碼，所以就在 <code class="language-plaintext highlighter-rouge">EntryPoint</code> 提供這樣的功能：</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">abstract</span> <span class="k">class</span> <span class="nc">EntryPoint</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;</span> <span class="p">:</span> <span class="n">MonoBehaviour</span>
+  <span class="k">where</span> <span class="n">T</span> <span class="p">:</span> <span class="n">EntryPoint</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;</span>
+<span class="p">{</span>
+  <span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">GetSceneName</span><span class="p">()</span>
+  <span class="p">{</span>
+    <span class="kt">var</span> <span class="n">attrs</span> <span class="p">=</span> <span class="n">Attribute</span><span class="p">.</span><span class="nf">GetCustomAttributes</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">T</span><span class="p">));</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">attr</span> <span class="k">in</span> <span class="n">attrs</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="p">(</span><span class="n">attr</span> <span class="k">is</span> <span class="n">TargetSceneAttribute</span> <span class="n">targetSceneAttr</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">targetSceneAttr</span><span class="p">.</span><span class="n">SceneName</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">throw</span> <span class="k">new</span> <span class="nf">MissingMemberException</span><span class="p">(</span>
+      <span class="s">"The class which inherits from the 'EntryPoint' "</span> <span class="p">+</span>
+      <span class="s">"must have the 'TargetScene' attribute"</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="c1">// Load the target scene and execute the entry point</span>
+  <span class="k">public</span> <span class="k">static</span> <span class="kt">string</span> <span class="nf">LoadScene</span><span class="p">()</span>
+  <span class="p">{</span>
+    <span class="n">SceneManager</span><span class="p">.</span><span class="nf">LoadScene</span><span class="p">(</span><span class="nf">GetSceneName</span><span class="p">());</span>
+    <span class="kt">var</span> <span class="n">entryPoint</span> <span class="p">=</span> <span class="p">(</span><span class="n">T</span><span class="p">)</span><span class="nf">FindObjectOfType</span><span class="p">(</span><span class="k">typeof</span><span class="p">(</span><span class="n">T</span><span class="p">));</span>
+    <span class="n">entryPoint</span><span class="p">.</span><span class="nf">StartCoroutine</span><span class="p">(</span><span class="nf">Execute</span><span class="p">());</span>
+  <span class="p">}</span>
+
+  <span class="k">public</span> <span class="k">abstract</span> <span class="n">IEnumerator</span> <span class="nf">Execute</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>這樣就可以透過基礎類別提供的 static 函式來載入場景跟對應的程式碼，而不用為每一個類別寫 static 的載入函式了：</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">HomeEntryPoint</span><span class="p">.</span><span class="nf">LoadScene</span><span class="p">();</span>
+</code></pre></div></div>
+
+<h2 id="參考資料">參考資料</h2>
+
+<ul>
+  <li><a href="https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/attributes/">屬性(C#) - Microsoft Docs</a></li>
+  <li><a href="https://docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection">使用反射存取屬性(C#) - Microsoft Docs</a></li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 標籤: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/c" class="page__taxonomy-item p-category" rel="tag">C#</a><span class="sep">, </span>
+    
+      <a href="/tags/unity" class="page__taxonomy-item p-category" rel="tag">Unity</a><span class="sep">, </span>
+    
+      <a href="/tags/%E7%AD%86%E8%A8%98" class="page__taxonomy-item p-category" rel="tag">筆記</a>
+    
+    </span>
+  </p>
+
+
+  
+
+  
+    
+
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 分類: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/%E9%81%8A%E6%88%B2%E9%96%8B%E7%99%BC" class="page__taxonomy-item p-category" rel="tag">遊戲開發</a>
+    
+    </span>
+  </p>
+
+
+  
+
+
+        
+
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 更新時間:</strong> <time class="dt-published" datetime="2022-08-23T00:00:00+08:00">August 23, 2022</time></p>
+
+
+      </footer>
+
+      
+<section class="page__share">
+  <h4 class="page__share-title">分享到</h4>
+
+  <a href="https://x.com/intent/tweet?via=LanKuDot&amp;text=%5BC%23%5D+%E5%88%A9%E7%94%A8+Attribute+%E7%82%BA%E7%B9%BC%E6%89%BF%E9%A1%9E%E5%88%A5%E7%B5%A6%E8%88%87%E4%B8%8D%E5%90%8C%E7%9A%84+Static+%E6%88%90%E5%93%A1%E5%80%BC%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2022-08-csharp-use-attribute-to-provide-varient-static-member%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2022-08-csharp-use-attribute-to-provide-varient-static-member%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://lankudot.airfishlab.com/blog/2022-08-csharp-use-attribute-to-provide-varient-static-member/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=%5BC%23%5D+%E5%88%A9%E7%94%A8+Attribute+%E7%82%BA%E7%B9%BC%E6%89%BF%E9%A1%9E%E5%88%A5%E7%B5%A6%E8%88%87%E4%B8%8D%E5%90%8C%E7%9A%84+Static+%E6%88%90%E5%93%A1%E5%80%BC%20https%3A%2F%2Flankudot.airfishlab.com%2Fblog%2F2022-08-csharp-use-attribute-to-provide-varient-static-member%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="分享到 Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+
+  <nav class="pagination" aria-label="Post pagination">
+    
+      <a href="/blog/2022-05-csharp-simulating-multi-class-inheritance/" class="pagination--pager" title="[C#] 用 interface 模擬多類別繼承">前一頁</a>
+    
+    
+      <a href="/blog/2022-10-csharp-9-in-unity-2021/" class="pagination--pager" title="[Unity] Unity 2021 LTS - C# 9.0 的新語法">後一頁</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+      
+        
+<div class="page__comments">
+  
+  
+      <script src="https://giscus.app/client.js" data-repo="LanKuDot/lankudot.github.io" data-repo-id="R_kgDOGYHitw" data-category="Page comments" data-category-id="DIC_kwDOGYHit84B_-lB" data-mapping="title" data-strict="1" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="zh-TW" data-loading="lazy" crossorigin="anonymous" async>
+</script>
+
+
+  
+</div>
+
+      
+    
+  </article>
+
+  
+  
+    
+
+<div class="page__related">
+  
+  <h2 class="page__related-title">猜您有與趣</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2026/2026-07-11-blog-renew-for-movie-posts/teaser-image.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/2026-07-blog-renew-for-movie-posts/" rel="permalink">[雜談] 部落格更新ㄧ一切都是為了電影
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-07-11T20:00:00+08:00">July 11, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">有天在寫電影心得的時候，腦中忽然有個想法：「如果可以有一個頁面能一次展示看過的電影的話，那看起來不是很棒嗎」。於是電影日誌就誕生了<img class="emoji" title=":tada:" alt=":tada:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png" height="20" width="20">。
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/2026-06-watched-movies-in-2025/" rel="permalink">[電影] 2025 看過的那些電影們
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-06-20T22:15:00+08:00">June 20, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">終於也把在 2025 年看過的電影整理出來了！在這一年一共看了 17 部電影，當中最喜歡的就是《五星主廚快餐車》，相當喜歡這部電影的音樂、劇情與料理過程。這一年也看了比較多的日本電影，其中《八犬傳》與《超時空武士》也相當喜歡。另外也趁著影展又再次看了湯淺政明的《心靈遊戲》與 Wes Andserson 的《犬之島...</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2026/2026-06-06-the-new-dawn/teaser-image.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/2026-06-the-new-dawn/" rel="permalink">[電影]《花綠青綻放之時》- 事物都會結束，但重點是要怎麼結束
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-06-06T00:00:00+08:00">June 6, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">《花綠青綻放之時》也是 2026 金馬影展的開幕片，原本也想在影展觀賞這部電影，可惜播放時段都無法參加，好在這部片後來也上院線，當然就把握機會囉。
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/blog/2026/2026-05-30-the-last-viking/teaser-image.jpg" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc p-name" itemprop="headline">
+      
+        <a class="u-url" href="/blog/2026-05-the-last-viking/" rel="permalink">[電影]《John 錯就錯》- 真不愧是麥叔！
+</a>
+      
+    </h2>
+    
+
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2026-05-30T00:00:00+08:00">May 30, 2026</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt p-summary" itemprop="description">這次 2026 年的金馬奇幻影展選擇《John 錯就錯》（The Last Viking）的原因不外乎就是麥叔了。不同於以往給人殺氣騰騰、充滿威壓的形象，在這部電影中的麥叔飾演內心封閉且不善交流的角色，但麥叔的演技仍完美讓人理解這個角色的內在情緒，真佩服他的戲路如此之廣。
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <div class="page__footer-cc4-0">
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>
+    本著作係採用<a rel="license" href="http://creativecommons.org/licenses/by/4.0/">創用 CC 姓名標示 4.0 國際 授權條款</a>授權
+</div>
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>追蹤:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://www.youtube.com/channel/UCz1UX9vRJUt6f0ssn5f1-uA" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+        
+          <li><a href="https://twitter.com/LanKuDot" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/LanKuDot" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://assetstore.unity.com/publishers/52019" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-unity" aria-hidden="true"></i> Unity</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-square-rss" aria-hidden="true"></i> RSS Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">© 2026 <a href="https://lankudot.airfishlab.com">烏龜漫遊 2.0</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VXPNSTXB5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VXPNSTXB5L', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+
+    <!-- start custom comments scripts -->
+
+<!-- end custom comments scripts -->
+
+
+
+
+  
+    <script src="/assets/js/nav-dropdown.js"></script>
+  
+
+
+  </body>
+</html>
