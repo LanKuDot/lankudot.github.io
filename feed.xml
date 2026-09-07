@@ -1,4 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2026-08-30T18:08:27+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[雜談] 想要一個能好好寫文章的地方</title><link href="https://lankudot.airfishlab.com/blog/2026-08-a-place-good-for-writing/" rel="alternate" type="text/html" title="[雜談] 想要一個能好好寫文章的地方" /><published>2026-08-30T18:00:00+08:00</published><updated>2026-08-30T18:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/a-place-good-for-writing</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-08-a-place-good-for-writing/"><![CDATA[<p>想寫的文章越來越多，但寫的速度卻遠遠跟不上，而且時間一久，寫那篇文章的感覺也沒了，接著寫文章的動力跟著下降。惡性循環的結果就是未完成，甚至沒開始寫的文章越積越多。</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://lankudot.airfishlab.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://lankudot.airfishlab.com/" rel="alternate" type="text/html" /><updated>2026-09-07T22:21:51+08:00</updated><id>https://lankudot.airfishlab.com/feed.xml</id><title type="html">烏龜漫遊 2.0</title><subtitle>記錄分享在 Unity 上製作遊戲的筆記與心得</subtitle><author><name>烏龜</name></author><entry><title type="html">[電影]《吉伊卡哇 人魚島的秘密》ー這個秘密夠黑暗</title><link href="https://lankudot.airfishlab.com/blog/2026-09-chiikawa/" rel="alternate" type="text/html" title="[電影]《吉伊卡哇 人魚島的秘密》ー這個秘密夠黑暗" /><published>2026-09-07T22:00:00+08:00</published><updated>2026-09-07T22:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/chiikawa</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-09-chiikawa/"><![CDATA[<p>一直聽到這是一部看完「小孩很喜歡，大人很悲傷」的電影，實在過於好奇，忍不住就進電影院看了。</p>
+
+<h2 id="意外地開始">意外地開始</h2>
+
+<p>其實那天原本沒有看電影的打算，一開始只是為了尋找新的早午餐店而出門。然而我卻上錯公車，只好趕緊在車上查路線上有沒有有興趣的店家。還在郊外下了車，走了一小段路才抵達那間店。想了想既然都跑遠了，打算再晃一下才回去。看了地圖，意外地發現這裡離電影院不遠，騎 YouBike 就可以到，再查了電影時間表，又剛好可以看到這部電影，於是順水推舟，就成為行程之一了。</p>
+
+<p><img src="/assets/images/blog/2026/2026-09-07-chiikawa/goat.png" alt="goat" />
+<em>在郊外還看到放養的山羊</em></p>
+
+<p>這部電影是我第一次接觸《吉伊卡哇》的作品，在這之前也只知道角色的形象。後來查資料才發現原來我一直搞錯誰是吉伊卡哇，有藍色花紋而且會講日文的其實是小八貓，白色的角色才是吉伊卡哇本「鼠」。不過烏薩奇就很好認，畢竟名字就是兔子的日文，而且「嗚啦」「呀哈～」太有記憶點了。</p>
+
+<p>不過不用擔心沒看過《吉伊卡哇》也不了解世界觀而去看電影版會看不懂。《吉伊卡哇 人魚島的秘密》的劇情完全是獨立的故事，角色在劇中的互動也很快就可以知道彼此之間的關係。我覺得有趣的是，因為吉伊卡哇跟烏薩奇都只有擬聲詞，所以小八貓成為解說役的存在，負責向觀眾解釋他們想表達的事情。那小八貓不在的場合呢？就是用頭頂泡泡來示意了。因為小八貓講的日文不是完整的句子，聽說還被稱為「吉伊卡哇文法」。</p>
+
+<h2 id="可愛就可以為所欲為">可愛就可以為所欲為</h2>
+
+<p>我平常沒有接觸《吉伊卡哇》這類<a href="https://zh.wikipedia.org/wiki/%E7%A9%BA%E6%B0%A3%E7%B3%BB">空氣系</a>的作品。發現就算每一幕的資訊量很低，但只要看著它們互動很可愛，也會覺得沒有關係啦。在這樣的氛圍下，即使出現無厘頭的情節，不但不會突兀，反而還有加分的效果。像是劇中賽蓮的人魚夥伴為賽蓮合聲能夠加強她的能力，結果烏薩奇唐突開始 RAP，讓現場成為烏薩奇的舞臺，連人魚夥伴也開始幫他合聲，進而阻止賽蓮的攻擊。「伊呀 呀哈 呀哈 嗚啦 哈哈哈呀 嗚啦～」，只能說可愛真的可以為所欲為。</p>
+
+<p><img src="/assets/images/blog/2026/2026-09-07-chiikawa/poster-usagi.png" alt="poster-usagi" />
+<em>這次入場的特典拿到兔哥，我覺得整部電影的 MVP 非他莫屬了</em></p>
+
+<p>但如果太為所欲為的話，還是會讓人討厭的吧。可以理解為什麼很多人討厭小桃鼠的行為，我也不喜歡電影中出現搞事角色。這個角色完全自我中心，不要臉地討別人的東西來吃，對他沒好處後拍拍屁股走人，更討厭的是還在關鍵時刻搗蛋。在營救被賽蓮抓住的同伴時，需要小聲行動才能避免賽蓮被吵醒，但小桃當下卻大聲吵著要吃東西，差點讓營救行動失敗，當下沒有被一棒打昏帶走真是可惜。</p>
+
+<h2 id="黑暗的小島真相">黑暗的小島真相</h2>
+
+<p>開頭是吉伊卡哇他們收到了來自人魚島的狩獵邀請，並以豐盛的食物做為誘因，請求狩獵會吃掉島民的美人魚賽蓮。但劇情上並沒有安排讓主角們發現真相，而是讓他們很熱血地趕走賽蓮。然而電影後段用另一個視角來揭露事件真相時，我覺得變成表面上雖然是好結局，但實際上非常沉重。</p>
+
+<p>人魚島原本沒有人魚居住，有一天賽蓮與她的三個人魚夥伴來到這座小島，引起島民的恐慌，因而主動向她進貢各式好吃的食物。吃到如此好吃的食物的賽蓮，會快樂地唱起歌，島民也發現賽蓮的歌聲能讓作物生長的更好，因此島民就維持與賽蓮的微妙關係。</p>
+
+<p>有天島民一葉與二葉（電影中他們並沒有名字，只好用頭上的特徵作為名字）在海上釣魚，然而在附近玩耍的賽蓮與人魚們並沒有注意到他們，結果玩的太興奮，產生的海浪直接把他們的木船打壞。被沖上岸的二葉發現一葉奄奄一息，為了救一葉，二葉想起書中提到吃人魚肉能夠永生。於是帶著恨意與恐懼，二葉趁著賽蓮與人魚們晚上熟睡時，把其中一隻人魚引誘出來殺害，並把它料理成魚湯。</p>
+
+<p>吃下人魚肉的一葉身體發出閃耀的光芒，奇績似地活了過來。知道吃下人魚肉的一葉並沒有感到快樂，反而害怕了起來，害怕獲得永生的他，到最後會只剩他孤伶伶地活著。所以一葉也強迫讓二葉吃下人魚肉，一起獲得永生的能力，並發誓要守住這個秘密。</p>
+
+<p>但此舉也是人魚島的災難的開始。發現人魚夥伴失蹤的賽蓮懷疑兇手就在島民之中，開始反過來吃島民，直到她找到兇手，所以島民才會發出狩獵請求。我覺得整起事件就是哀傷的仇恨連鎖，而最無辜的就屬島民了。</p>
+
+<p>有趣的是作者表達永生的方式，居然是在背後會長出一個三號電池孔，只要裝上電池就可以繼續活動，不錯的是初次生成就裝好一顆電池了。也難怪一開始賽蓮抓住師父時，有檢查他的背後有沒有東西，當下還不能理解這個行為。</p>
+
+<p>在最後的辣咖哩作戰中，吃下超辣咖哩的賽蓮發瘋似地甩動尾巴，大喊著「我知道了！我知道了！」一開始還以為是她答應不再吃島民了，結果是她的尾色剛好打中二葉，賽蓮也看到電池噴飛出來，所以那句話其實是指她知道兇手是誰了。這個橋段的設計我覺得很精妙。</p>
+
+<p>主角群中也只有吉伊卡哇知道兇手是誰，先是在他們家中看到那本圖鑑，又撿到從櫥櫃飄出來的人魚鱗片，最後還看到一葉幫二葉換上新的電池，但她後來在慶助會上也選擇不說出來。電影最後一幕帶到賽蓮游往一葉二葉打算想獨立生活的小島，結局之後的事情我想也不用多說了。</p>]]></content><author><name>烏龜</name></author><category term="影視閱讀" /><category term="電影" /><summary type="html"><![CDATA[一直聽到這是一部看完「小孩很喜歡，大人很悲傷」的電影，實在過於好奇，忍不住就進電影院看了。]]></summary></entry><entry><title type="html">[雜談] 想要一個能好好寫文章的地方</title><link href="https://lankudot.airfishlab.com/blog/2026-08-a-place-good-for-writing/" rel="alternate" type="text/html" title="[雜談] 想要一個能好好寫文章的地方" /><published>2026-08-30T18:00:00+08:00</published><updated>2026-08-30T18:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/a-place-good-for-writing</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-08-a-place-good-for-writing/"><![CDATA[<p>想寫的文章越來越多，但寫的速度卻遠遠跟不上，而且時間一久，寫那篇文章的感覺也沒了，接著寫文章的動力跟著下降。惡性循環的結果就是未完成，甚至沒開始寫的文章越積越多。</p>
 
 <p>想想最常寫到一半就中斷的原因就是不知道該怎麼寫。要怎麼讓這段讀起來有趣，前後要怎麼安排才能通順，或是要如何用文字表達出想講的事情。卡住之後就開始分心，接著開了 YT，然後時間就過去了。在寫電影心得相關的文章時更是如此，想要把劇情寫進去，但忘了當時的感覺；想寫短，但越寫越覺得想講的內容好多。</p>
 
@@ -261,7 +299,7 @@
 
 <p>這個同名改編電影也有復刻遊戲中經典的異常，但也多了不少的獨創異常。電影把《8 號出口》設計成是一個心靈空間，暗指一個人如果逃避問題的話，就會一直陷入痛苦循環。主角就是為了逃避催婚與女友又懷孕的事實，而被困在 8 號出口的迴廊中。在電影中比較有趣的設定是那位每次都會經過你身邊的大叔，居然是上一輪循環的失敗者。電影鏡頭隨著這位大叔走到轉角後，原本以為是 NPC 的他，居然大喘一口氣放鬆下來，順暢地把主線拉到大叔當時遭遇的循環。大叔當時就是因為走不出去，而成為機制的一部分了。另外一個有趣的設定是，這個空間似乎還是一個時空交錯的地方，在第三段的視角中，主角還與一位可能是主角小時候的人相遇了，這個小男孩也成為主角能夠離開 8 號出口的關鍵。</p>
 
-<p>可惜的是電影在氛圍的呈現上會讓人出戲。應該是為了營造玩遊戲當下的氣氛感，前面就看著主角一直在裡面繞圈圈，對有玩過遊戲的人來說，節奏就有點慢。還好在就快要不耐煩的時候，才把主線拉到大叔身上。再加上主角有氣喘的設定，所以為了表達主角現在很緊張，就會一直看著他瘋狂喘氣。另外特效也表現也不太好，所以有些異常看起來反而更荒繆。</p>]]></content><author><name>烏龜</name></author><category term="影視閱讀" /><category term="電影" /><summary type="html"><![CDATA[終於也把在 2025 年看過的電影整理出來了！在這一年一共看了 17 部電影，當中最喜歡的就是《五星主廚快餐車》，相當喜歡這部電影的音樂、劇情與料理過程。這一年也看了比較多的日本電影，其中《八犬傳》與《超時空武士》也相當喜歡。另外也趁著影展又再次看了湯淺政明的《心靈遊戲》與 Wes Andserson 的《犬之島》，這兩位導演也是我最喜歡導演之二。]]></summary></entry><entry><title type="html">[電影]《花綠青綻放之時》- 事物都會結束，但重點是要怎麼結束</title><link href="https://lankudot.airfishlab.com/blog/2026-06-the-new-dawn/" rel="alternate" type="text/html" title="[電影]《花綠青綻放之時》- 事物都會結束，但重點是要怎麼結束" /><published>2026-06-06T00:00:00+08:00</published><updated>2026-06-06T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-new-dawn</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-06-the-new-dawn/"><![CDATA[<p>《花綠青綻放之時》也是 2026 金馬影展的開幕片，原本也想在影展觀賞這部電影，可惜播放時段都無法參加，好在這部片後來也上院線，當然就把握機會囉。</p>
+<p>可惜的是電影在氛圍的呈現上會讓人出戲。應該是為了營造玩遊戲當下的氣氛感，前面就看著主角一直在裡面繞圈圈，對有玩過遊戲的人來說，節奏就有點慢。還好在就快要不耐煩的時候，才把主線拉到大叔身上。再加上主角有氣喘的設定，所以為了表達主角現在很緊張，就會一直看著他瘋狂喘氣。另外特效也表現也不太好，所以有些異常看起來反而更荒繆。</p>]]></content><author><name>烏龜</name></author><category term="影視閱讀" /><category term="電影" /><summary type="html"><![CDATA[終於也把在 2025 年看過的電影整理出來了！在這一年一共看了 17 部電影，當中最喜歡的就是《五星主廚快餐車》，相當喜歡這部電影的音樂、劇情與料理過程。這一年也看了比較多的日本電影，其中《八犬傳》與《超時空武士》也相當喜歡。另外也趁著影展又再次看了湯淺政明的《心靈遊戲》與 Wes Andserson 的《犬之島》，這兩位導演也是我最喜歡導演之二。]]></summary></entry><entry><title type="html">[電影]《花綠青綻放之時》ー事物都會結束，但重點是要怎麼結束</title><link href="https://lankudot.airfishlab.com/blog/2026-06-the-new-dawn/" rel="alternate" type="text/html" title="[電影]《花綠青綻放之時》ー事物都會結束，但重點是要怎麼結束" /><published>2026-06-06T00:00:00+08:00</published><updated>2026-06-06T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-new-dawn</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-06-the-new-dawn/"><![CDATA[<p>《花綠青綻放之時》也是 2026 金馬影展的開幕片，原本也想在影展觀賞這部電影，可惜播放時段都無法參加，好在這部片後來也上院線，當然就把握機會囉。</p>
 
 <!-- Courtesy of embedresponsively.com -->
 
@@ -293,7 +331,7 @@
 
 <h2 id="小結">小結</h2>
 
-<p>跟朋友聊過發覺這部電影可能是實驗性電影，除了特別的表現手法，作畫也非常細緻。也因此優缺點很明顯，對這部電影有喜歡也有不喜歡的部份。隨著觀影體驗逐漸轉往串流的時代，在電影院的觀影體驗還是很重要。在電影院中不會被其它事物分心，再加上是買票進來看的，所以能夠專心地看完一部電影。但如果是在家裡用串流看到這部電影的話，我可能在前半就會放棄了。</p>]]></content><author><name>烏龜</name></author><category term="影視閱讀" /><category term="電影" /><summary type="html"><![CDATA[《花綠青綻放之時》也是 2026 金馬影展的開幕片，原本也想在影展觀賞這部電影，可惜播放時段都無法參加，好在這部片後來也上院線，當然就把握機會囉。]]></summary></entry><entry><title type="html">[電影]《John 錯就錯》- 真不愧是麥叔！</title><link href="https://lankudot.airfishlab.com/blog/2026-05-the-last-viking/" rel="alternate" type="text/html" title="[電影]《John 錯就錯》- 真不愧是麥叔！" /><published>2026-05-30T00:00:00+08:00</published><updated>2026-05-30T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-last-viking</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-05-the-last-viking/"><![CDATA[<p>這次 2026 年的金馬奇幻影展選擇《John 錯就錯》（The Last Viking）的原因不外乎就是麥叔了。不同於以往給人殺氣騰騰、充滿威壓的形象，在這部電影中的麥叔飾演內心封閉且不善交流的角色，但麥叔的演技仍完美讓人理解這個角色的內在情緒，真佩服他的戲路如此之廣。</p>
+<p>跟朋友聊過發覺這部電影可能是實驗性電影，除了特別的表現手法，作畫也非常細緻。也因此優缺點很明顯，對這部電影有喜歡也有不喜歡的部份。隨著觀影體驗逐漸轉往串流的時代，在電影院的觀影體驗還是很重要。在電影院中不會被其它事物分心，再加上是買票進來看的，所以能夠專心地看完一部電影。但如果是在家裡用串流看到這部電影的話，我可能在前半就會放棄了。</p>]]></content><author><name>烏龜</name></author><category term="影視閱讀" /><category term="電影" /><summary type="html"><![CDATA[《花綠青綻放之時》也是 2026 金馬影展的開幕片，原本也想在影展觀賞這部電影，可惜播放時段都無法參加，好在這部片後來也上院線，當然就把握機會囉。]]></summary></entry><entry><title type="html">[電影]《John 錯就錯》ー真不愧是麥叔！</title><link href="https://lankudot.airfishlab.com/blog/2026-05-the-last-viking/" rel="alternate" type="text/html" title="[電影]《John 錯就錯》ー真不愧是麥叔！" /><published>2026-05-30T00:00:00+08:00</published><updated>2026-05-30T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/the-last-viking</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-05-the-last-viking/"><![CDATA[<p>這次 2026 年的金馬奇幻影展選擇《John 錯就錯》（The Last Viking）的原因不外乎就是麥叔了。不同於以往給人殺氣騰騰、充滿威壓的形象，在這部電影中的麥叔飾演內心封閉且不善交流的角色，但麥叔的演技仍完美讓人理解這個角色的內在情緒，真佩服他的戲路如此之廣。</p>
 
 <!-- Courtesy of embedresponsively.com -->
 
@@ -349,7 +387,7 @@
 
 <h2 id="小結">小結</h2>
 
-<p>最後覺得麥叔真的很厲害，他在這部電影中完全沒有平常的嚴肅臉，而是表現出緊張、害怕、無法直視別人的樣子。除了演技之外，麥叔的肢體動作也表達出這個角色不善與人交流。在這部電影中麥叔的氣場也沒有壓過其它人，再加上所有角色都有各自特色，所以電影結束後對每個角色都還是印象深刻。</p>]]></content><author><name>烏龜</name></author><category term="影視閱讀" /><category term="電影" /><summary type="html"><![CDATA[這次 2026 年的金馬奇幻影展選擇《John 錯就錯》（The Last Viking）的原因不外乎就是麥叔了。不同於以往給人殺氣騰騰、充滿威壓的形象，在這部電影中的麥叔飾演內心封閉且不善交流的角色，但麥叔的演技仍完美讓人理解這個角色的內在情緒，真佩服他的戲路如此之廣。]]></summary></entry><entry><title type="html">[電影]《超時空輝耀姬！》- 科幻 x 百合 x 竹取物語</title><link href="https://lankudot.airfishlab.com/blog/2026-05-cosmic-princess-kaguya/" rel="alternate" type="text/html" title="[電影]《超時空輝耀姬！》- 科幻 x 百合 x 竹取物語" /><published>2026-05-10T00:00:00+08:00</published><updated>2026-05-10T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/cosmic-princess-kaguya</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-05-cosmic-princess-kaguya/"><![CDATA[<p>如果竹取物語發生在科技進步的世界中，那會怎麼發展？不僅角色設計豐富、作畫細緻、動作場面靈活，而且還有百合要素！如果還有經歷過 V 家繁盛時期，那一定要看看《超時空輝耀姬！》。</p>
+<p>最後覺得麥叔真的很厲害，他在這部電影中完全沒有平常的嚴肅臉，而是表現出緊張、害怕、無法直視別人的樣子。除了演技之外，麥叔的肢體動作也表達出這個角色不善與人交流。在這部電影中麥叔的氣場也沒有壓過其它人，再加上所有角色都有各自特色，所以電影結束後對每個角色都還是印象深刻。</p>]]></content><author><name>烏龜</name></author><category term="影視閱讀" /><category term="電影" /><summary type="html"><![CDATA[這次 2026 年的金馬奇幻影展選擇《John 錯就錯》（The Last Viking）的原因不外乎就是麥叔了。不同於以往給人殺氣騰騰、充滿威壓的形象，在這部電影中的麥叔飾演內心封閉且不善交流的角色，但麥叔的演技仍完美讓人理解這個角色的內在情緒，真佩服他的戲路如此之廣。]]></summary></entry><entry><title type="html">[電影]《超時空輝耀姬！》ー科幻 x 百合 x 竹取物語</title><link href="https://lankudot.airfishlab.com/blog/2026-05-cosmic-princess-kaguya/" rel="alternate" type="text/html" title="[電影]《超時空輝耀姬！》ー科幻 x 百合 x 竹取物語" /><published>2026-05-10T00:00:00+08:00</published><updated>2026-05-10T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/cosmic-princess-kaguya</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2026-05-cosmic-princess-kaguya/"><![CDATA[<p>如果竹取物語發生在科技進步的世界中，那會怎麼發展？不僅角色設計豐富、作畫細緻、動作場面靈活，而且還有百合要素！如果還有經歷過 V 家繁盛時期，那一定要看看《超時空輝耀姬！》。</p>
 
 <p><img src="/assets/images/blog/2026/2026-05-10-cosmic-princess-kaguya/poster-thumb.jpg" alt="poster-thumb" /></p>
 
@@ -479,27 +517,4 @@
 
 <p>寫程式沒辦法兼顧「快」與「好」，在原型階段只能做取捨，就是以快速實現遊戲玩法為主要目標。所以在製作功能或是重構前，先評估要花多久時間才能完成。如果時間可以接受，就能開始動工。如果不行，就看瓶頸在哪邊，有沒有方法可以先繞過那部份，又可以掌握在可以控制的程度。再真的沒辦法，就是跟團隊討論，看能否縮減規格，或是能接受花時間下去製作。</p>
 
-<p>在程式的架構設計上我以功能為單位來切割元件，一個元件（不一定只有一個程式碼檔）專門負責一個功能（一個功能下面也可能有子功能），呼叫功能的角色不用在意其中做了什麼事，只要控制什麼時候呼叫就可以了。這樣程式碼混雜的地方就只會集中在各自的元件內，無論是要替換或是修改，受影響的範圍就不大。</p>]]></content><author><name>烏龜</name></author><category term="遊戲開發" /><category term="開發日誌" /><summary type="html"><![CDATA[在開發遊戲原型時，最重要的是盡快實現遊戲玩法，但一開始自己走了許多歪路，反而花更多心力在不重要的地方。在 TDGF 上聽到分享與請教朋友之後，學到不少在原型階段的開發方式，就透過這篇文章來分享減少走錯路的方法。]]></summary></entry><entry><title type="html">[開發日誌 #3] 先求有，但別繞路</title><link href="https://lankudot.airfishlab.com/blog/2025-08-seek-first-to-have-but-do-not-take-long-way-around/" rel="alternate" type="text/html" title="[開發日誌 #3] 先求有，但別繞路" /><published>2025-08-28T00:00:00+08:00</published><updated>2025-08-28T00:00:00+08:00</updated><id>https://lankudot.airfishlab.com/blog/seek-first-to-have-but-do-not-take-long-way-around</id><content type="html" xml:base="https://lankudot.airfishlab.com/blog/2025-08-seek-first-to-have-but-do-not-take-long-way-around/"><![CDATA[<p>很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。</p>
-
-<p><img src="/assets/images/blog/2025/2025-08-28-seek-first-to-have-but-do-not-take-long-way-around/cover-image.png" alt="cover-image" /></p>
-
-<h2 id="發現白做">發現白做</h2>
-
-<p>這次開發的遊戲中，戰鬥事件的時機跟動畫有很大的關係，像是閃避時，在哪一段時間中是無敵的，或是攻擊時，什麼時候進行傷害判定等等。在開發初期時，因為動畫還沒開始製作，所以選擇先用秒數來表達這些事件的時機點，一開始也覺得這是很直覺的作法。而隨著戰鬥規格的發展，這套參數系統也越來越複雜，最近還花了兩個月把它整理一番。</p>
-
-<p><img src="/assets/images/blog/2025/2025-08-28-seek-first-to-have-but-do-not-take-long-way-around/dash-config-using-timing.png" alt="dash-config-using-timing" />
-<em>使用秒數來表達時機，指定在前幾秒的時間內，可以觸發</em></p>
-
-<p>然而在開始套動畫之後，發覺這套以時間為主的參數系統完全無法使用。因為透過動畫趨動的事件是以開關為主，像是閃避無敵可以透過在動畫開頭開啟無敵狀態，接著在後面某個影格關閉來定義無敵的時間，或是攻擊的傷害判定時機，也可以在對應的影格上放置事件就好。</p>
-
-<p><img src="/assets/images/blog/2025/2025-08-28-seek-first-to-have-but-do-not-take-long-way-around/dash-config-using-animation-clip.png" alt="dash-config-using-animation-clip.png" />
-<em>使用動畫來控制變數來表達時機，在指定變數為 true 的時候，就是可以觸發的時候</em></p>
-
-<p>這才意識到，既然已經知道戰鬥系統會跟動畫關聯，當初就應該以動畫為基礎去製作戰鬥系統，而不是先做一個之後用不到的暫代版本。因為到頭來，花在暫代版本的時間都會白費之外，還要重做一套全新的版本。如果有其它功能是基於暫代版本去做的話，還要一併修改，也得再確認一次這些功能有沒有 bug，所花的時間不會只有開發新版本的時間。</p>
-
-<p><img src="/assets/images/blog/2025/2025-08-28-seek-first-to-have-but-do-not-take-long-way-around/time-spent.png" alt="time-spent" />
-<em>除了開發新版本的時間，其餘都是白花的</em></p>
-
-<h2 id="先求有但別繞路">先求有，但別繞路</h2>
-
-<p>所以如果知道要做的功能未來會怎樣時，最好一開始就以此為方向來開發功能，還沒有所需資料或素材就用暫代的。像戰鬥系統就算還沒有動畫，可以先用幾何形狀拉簡單示意動作，如果不用幾何形狀，也可以先把動作的時長用兩個 keyframe 簡單表示就好。因為前期的重點是把戰鬥事件實作出來，先驗證這些事件在遊戲中如何運作比較好。等到可以套上動畫之後，就可以以此為基礎，去調整事件的功能。想想如果當初就這樣做的話，就可以少花這兩個月的時間了 :cry:。</p>]]></content><author><name>烏龜</name></author><category term="遊戲開發" /><category term="開發日誌" /><summary type="html"><![CDATA[很常聽到在專案開發初期，做功能最好是「先求有，再求好」。在發覺做了兩個月的白工後，才體會到這句話的意思應該是「先求有，以此為基礎，再求好」，而不是「先求有，之後再做一個全新且更好的」。]]></summary></entry></feed>
+<p>在程式的架構設計上我以功能為單位來切割元件，一個元件（不一定只有一個程式碼檔）專門負責一個功能（一個功能下面也可能有子功能），呼叫功能的角色不用在意其中做了什麼事，只要控制什麼時候呼叫就可以了。這樣程式碼混雜的地方就只會集中在各自的元件內，無論是要替換或是修改，受影響的範圍就不大。</p>]]></content><author><name>烏龜</name></author><category term="遊戲開發" /><category term="開發日誌" /><summary type="html"><![CDATA[在開發遊戲原型時，最重要的是盡快實現遊戲玩法，但一開始自己走了許多歪路，反而花更多心力在不重要的地方。在 TDGF 上聽到分享與請教朋友之後，學到不少在原型階段的開發方式，就透過這篇文章來分享減少走錯路的方法。]]></summary></entry></feed>
