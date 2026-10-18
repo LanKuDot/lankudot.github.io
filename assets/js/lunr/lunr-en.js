@@ -35,7 +35,7 @@ $(document).ready(function() {
         })
       });
     resultdiv.empty();
-    resultdiv.prepend('<p class="results__found">'+result.length+' 條匹配的記錄</p>');
+    resultdiv.prepend('<p class="results__found">'+result.length+' 找到結果</p>');
     for (var item in result) {
       var ref = result[item].ref;
       if(store[ref].teaser){

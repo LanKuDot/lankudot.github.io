@@ -1,15 +1,4 @@
-/* Folder-style dropdown menus in the masthead.
- *
- * The theme's greedy-nav (jquery.greedy-navigation.js) moves overflowing
- * <li> items — including our folder items — into the ".hidden-links" overflow
- * panel that opens from the "toggle menu" button. In that panel there is no
- * :hover (touch), and any click inside it closes the whole panel. So the
- * hover/focus-only CSS dropdown never opens once folded.
- *
- * This adds an explicit tap/click toggle that works in both the visible bar
- * and the overflow panel, and stops the folder tap from bubbling to the
- * greedy-nav handler that would otherwise close the overflow panel.
- */
+/* Folder-style dropdown menus in the masthead: click/keyboard toggle */
 (function () {
   "use strict";
 
@@ -36,12 +25,7 @@
       folder.setAttribute("aria-expanded", willOpen ? "true" : "false");
     }
 
-    // Delegate so it keeps working after greedy-nav relocates the <li>.
-    // Use the CAPTURE phase: greedy-nav binds its "close the overflow panel"
-    // handler on ".hidden-links", which is a *child* of #site-nav. On bubbling
-    // that inner handler fires first and closes the panel before we could stop
-    // it. Capturing on the ancestor runs before any descendant bubble handler,
-    // so stopPropagation() here actually prevents the close.
+    // Delegated, capture phase
     nav.addEventListener(
       "click",
       function (e) {
@@ -71,11 +55,7 @@
       if (!nav.contains(e.target)) closeAll(null);
     });
 
-    // Greedy-nav (jquery.greedy-navigation.js) only decides how many items to
-    // fold into the overflow button on load and on window "resize". Its first
-    // measurement can run before web fonts / final layout settle — especially
-    // with CJK fonts — which leaves items un-collapsed and the title wrapped.
-    // Re-trigger its check() by dispatching a resize once things have settled.
+    // Re-run greedy-nav's measurement after load and web fonts
     function renudge() {
       window.dispatchEvent(new Event("resize"));
     }
